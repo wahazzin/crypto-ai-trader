@@ -1,0 +1,24 @@
+# Secrets -- never commit. Keys live in GitHub Secrets (Settings > Secrets and variables > Actions)
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local experiment state (the real state lives on the crypto-ai-data branch)
+crypto_ai_state*/
+state/
+*.tmp
+*.log
+
+# Editors / tools
+.vscode/
+.idea/
+.claude/
+.DS_Store
