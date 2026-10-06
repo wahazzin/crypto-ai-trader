@@ -91,7 +91,7 @@ def execute(pf, asset, side, notional_usd, quote, cfg, now, cause, cycle_id="",
     return _fill_row(pf, cycle_id, now, asset, side, qty, fill_px, mid, fee, spread_cost, slip_cost, cause)
 
 
-def replay_stops(pf, hourly_by_asset, snapshot_assets, cfg, now, cycle_id="", since_ts=None):
+def replay_stops(pf, hourly_by_asset, snapshot_assets, cfg, now, cycle_id="", since_ts=None, granularity=3600):
     """Walk hourly candles (already closed) and trigger stops. Returns a list of fill rows.
     since_ts (unix seconds): only candles that CLOSED after this time are checked, i.e. candles
     not already examined by the previous cycle. Without it, tightening a stop could be triggered
@@ -106,7 +106,7 @@ def replay_stops(pf, hourly_by_asset, snapshot_assets, cfg, now, cycle_id="", si
         for c in hourly_by_asset.get(asset, []):
             if c["t"] < opened:
                 continue                                   # candle began before we owned it
-            if since_ts is not None and c["t"] + 3600 <= since_ts:
+            if since_ts is not None and c["t"] + granularity <= since_ts:
                 continue                                   # already checked last cycle
             if c["open"] <= stop:
                 ref = c["open"]                            # gapped through the stop
@@ -122,7 +122,7 @@ def replay_stops(pf, hourly_by_asset, snapshot_assets, cfg, now, cycle_id="", si
             fee = gross * fee_rate
             pf.cash += gross - fee
             del pf.positions[asset]
-            ts = min(now, datetime.fromtimestamp(c["t"] + 3600, tz=timezone.utc))
+            ts = min(now, datetime.fromtimestamp(c["t"] + granularity, tz=timezone.utc))
             _finish(pf, ts, gross, fee, qty * ref * half_spread, qty * ref * slip, "stop")
             row = _fill_row(pf, cycle_id, ts, asset, "sell", qty, fill_px, ref, fee,
                             qty * ref * half_spread, qty * ref * slip, "stop")

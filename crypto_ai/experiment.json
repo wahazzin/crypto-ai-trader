@@ -1,9 +1,25 @@
 {
   "experiment_id": "crypto_ai_v0_1",
-  "universe": ["BTC-USD", "ETH-USD", "SOL-USD", "XRP-USD", "ADA-USD", "LINK-USD", "AVAX-USD", "LTC-USD"],
-  "majors": ["BTC-USD", "ETH-USD"],
-  "cadence": {"cycle_hours": 6},
-  "capital": {"initial_cash_usd": 10000.0},
+  "universe": [
+    "BTC-USD",
+    "ETH-USD",
+    "SOL-USD",
+    "XRP-USD",
+    "ADA-USD",
+    "LINK-USD",
+    "AVAX-USD",
+    "LTC-USD"
+  ],
+  "majors": [
+    "BTC-USD",
+    "ETH-USD"
+  ],
+  "cadence": {
+    "cycle_hours": 6
+  },
+  "capital": {
+    "initial_cash_usd": 10000.0
+  },
   "data": {
     "source": "coinbase_exchange_public",
     "hourly_candles": 336,
@@ -15,13 +31,16 @@
     "slippage_bps_major": 2.0,
     "slippage_bps_alt": 6.0,
     "impact_coeff": 0.5,
-    "sensitivity_fee_bps": [10.0, 60.0]
+    "sensitivity_fee_bps": [
+      10.0,
+      60.0
+    ]
   },
   "risk": {
     "max_weight_major": 0.35,
     "max_weight_alt": 0.15,
-    "max_gross_exposure": 0.80,
-    "max_alt_cluster": 0.40,
+    "max_gross_exposure": 0.8,
+    "max_alt_cluster": 0.4,
     "max_stop_pct": 18.0,
     "min_stop_pct": 5.0,
     "max_risk_per_position_equity_pct": 5.0,
@@ -37,12 +56,26 @@
     "provider": "openai_compat",
     "model": "gpt-oss-120b (open weights)",
     "endpoints": [
-      {"name": "groq", "url": "https://api.groq.com/openai/v1/chat/completions",
-       "key_env": "GROQ_API_KEY", "model": "openai/gpt-oss-120b",
-       "extra_body": {"reasoning_effort": "medium"}},
-      {"name": "openrouter", "url": "https://openrouter.ai/api/v1/chat/completions",
-       "key_env": "OPENROUTER_API_KEY", "model": "openai/gpt-oss-120b:free",
-       "extra_body": {"reasoning": {"effort": "medium"}}}
+      {
+        "name": "groq",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "key_env": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "extra_body": {
+          "reasoning_effort": "medium"
+        }
+      },
+      {
+        "name": "openrouter",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "key_env": "OPENROUTER_API_KEY",
+        "model": "openai/gpt-oss-120b:free",
+        "extra_body": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      }
     ],
     "temperature": 0,
     "max_tokens": 8000,
@@ -51,16 +84,61 @@
     "parse_retries": 1
   },
   "arms": {
-    "ai_pv": {"kind": "ai", "info_menu": "price_volume", "constrained": true},
-    "btc_hold": {"kind": "buy_hold", "asset": "BTC-USD", "constrained": false},
-    "eth_hold": {"kind": "buy_hold", "asset": "ETH-USD", "constrained": false},
-    "ew_basket": {"kind": "equal_weight", "rebalance": "monthly", "constrained": false},
-    "trend_quant": {"kind": "trend", "sma_days": 50, "band": 0.05, "constrained": true}
+    "ai_pv": {
+      "kind": "ai",
+      "info_menu": "price_volume",
+      "constrained": true
+    },
+    "btc_hold": {
+      "kind": "buy_hold",
+      "asset": "BTC-USD",
+      "constrained": false
+    },
+    "eth_hold": {
+      "kind": "buy_hold",
+      "asset": "ETH-USD",
+      "constrained": false
+    },
+    "ew_basket": {
+      "kind": "equal_weight",
+      "rebalance": "monthly",
+      "constrained": false
+    },
+    "trend_quant": {
+      "kind": "trend",
+      "sma_days": 50,
+      "band": 0.05,
+      "constrained": true
+    }
   },
   "evaluation": {
-    "ic_horizons_cycles": {"24h": 4, "72h": 12},
+    "ic_horizons_cycles": {
+      "24h": 4,
+      "72h": 12
+    },
     "nw_lag_days": 5,
     "min_cycles_for_decision": 1240,
-    "decision_months": [12, 24]
+    "decision_months": [
+      12,
+      24
+    ]
+  },
+  "scanner": {
+    "interval_minutes": 5,
+    "candle_granularity_s": 300,
+    "cycle_grace_minutes": 2,
+    "triggers": {
+      "exit_below": true,
+      "review_above": true,
+      "move_1h_pct": 4.0,
+      "volume_spike_ratio": 4.0,
+      "volume_spike_min_move_pct": 1.5
+    },
+    "cooldown_minutes": 180,
+    "max_event_calls_per_day": 20,
+    "min_minutes_between_event_calls": 30,
+    "quiet_minutes_before_cycle": 30,
+    "heartbeat_minutes": 60,
+    "_note": "Budget: Groq free tier 200k tokens/day; ~5.6k tokens per call; 4 scheduled + 20 events + retries stays under it."
   }
 }
