@@ -16,11 +16,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "run = one cycle | lock = start the experiment clock (ONCE) | report = print report"
+        description: "run = one cycle | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state)"
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report]
+        options: [run, lock, report, smoke]
 
 concurrency:
   group: crypto-ai-state          # never two runs writing state at once
@@ -69,11 +69,22 @@ jobs:
           case "${{ github.event.inputs.action || 'run' }}" in
             lock)   python -m crypto_ai.lock --create --state-dir ../state ;;
             report) python -m crypto_ai.analytics.report --state-dir ../state ;;
+            smoke)  python -m crypto_ai.runner --state-dir ../smoke --smoke
+                    python -m crypto_ai.inspect_state --state-dir ../smoke || true ;;
             *)      python -m crypto_ai.runner --state-dir ../state ;;
           esac
 
+      - name: Save smoke output (separate branch, never mixed with experiment state)
+        if: always() && github.event.inputs.action == 'smoke'
+        run: |
+          [ -d smoke ] || exit 0
+          cd smoke && git init -q && git checkout -q -b crypto-ai-smoke
+          git config user.name "crypto-ai-bot"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "smoke test $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-smoke
+
       - name: Commit state
-        if: always()
+        if: always() && github.event.inputs.action != 'smoke'
         working-directory: state
         run: |
           git config user.name "crypto-ai-bot"

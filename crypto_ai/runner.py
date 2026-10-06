@@ -218,10 +218,16 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--state-dir", required=True)
     ap.add_argument("--dry-run", action="store_true", help="mock LLM, no lock required, no alerts")
+    ap.add_argument("--smoke", action="store_true",
+                    help="REAL LLM, no lock required. Pre-lock plumbing test only: must use a throwaway "
+                         "state dir, never the experiment's. Results are not part of the experiment.")
     a = ap.parse_args()
+    if a.smoke and os.path.exists(os.path.join(a.state_dir, "lock.json")):
+        sys.exit("--smoke refuses to write into a locked experiment state dir")
     cfg = load_config()
     llm = make_llm(cfg, "mock" if a.dry_run else None)
-    out = run_cycle(a.state_dir, cfg, CoinbaseClient(), llm, dry_run=a.dry_run, require_lock=not a.dry_run)
+    out = run_cycle(a.state_dir, cfg, CoinbaseClient(), llm, dry_run=a.dry_run,
+                    require_lock=not (a.dry_run or a.smoke))
     print(BANNER)
     print({k: v for k, v in out.items() if k != "events"})
     for e in out.get("events", []) or []:
