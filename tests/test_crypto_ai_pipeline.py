@@ -31,10 +31,43 @@ CID = "2026-10-01T12:00Z"
 def good(**over):
     obj = {"cycle_id": CID, "outlook": {a: 0 for a in UNI},
            "decisions": [{"asset": "BTC-USD", "action": "BUY", "target_weight": 0.1,
-                          "reasons": ["r"], "invalidation": ["i"], "confidence": 60}],
+                          "reasons": ["r"], "invalidation": ["i"], "confidence": 60,
+                          "exit_below": 50000}],
            "thesis_updates": [], "portfolio_note": ""}
     obj.update(over)
     return obj
+
+
+class TestExitLevels(unittest.TestCase):
+    """A thesis must be checkable: BUY/ADD carries a numeric price that proves it wrong."""
+
+    def test_buy_without_exit_below_rejected(self):
+        o = good(); del o["decisions"][0]["exit_below"]
+        parsed, errors = validate(json.dumps(o), CFG, CID)
+        self.assertIsNone(parsed)
+        self.assertTrue(any("exit_below" in e for e in errors))
+
+    def test_exit_below_must_be_under_price(self):
+        parsed, errors = validate(json.dumps(good()), CFG, CID, {"BTC-USD": 40000})
+        self.assertIsNone(parsed)
+        self.assertTrue(any("below the current price" in e for e in errors))
+        parsed, _ = validate(json.dumps(good()), CFG, CID, {"BTC-USD": 60000})
+        self.assertIsNotNone(parsed)
+
+    def test_levels_stored_in_thesis(self):
+        parsed, _ = validate(json.dumps(good(review_above=None)), CFG, CID)
+        th, _ = apply_thesis_updates({}, parsed, CID)
+        self.assertEqual(th["BTC-USD"]["exit_below"], 50000)
+
+    def test_breach_flag_shown_to_ai(self):
+        from crypto_ai.agents.trader import build_user_prompt
+        from crypto_ai.portfolio.state import Portfolio
+        import datetime as dt
+        snap = {"assets": {"BTC-USD": {"mid": 45000.0, "spread_bps": 1.0, "volume_24h_usd": 1e9,
+                                       "features": {}}}}
+        txt = build_user_prompt(CID, snap, Portfolio("ai_pv", 10000), {"BTC-USD": {"exit_below": 50000}},
+                                {}, CFG, dt.datetime(2026, 10, 1, 12, tzinfo=dt.timezone.utc))
+        self.assertIn('"exit_below_breached": true', txt)
 
 
 class TestSchema(unittest.TestCase):

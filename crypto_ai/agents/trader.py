@@ -82,9 +82,18 @@ def build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now):
                  "turnover_used_24h_pct": round(100 * pf.traded_last_24h(now) / eq, 2) if eq > 0 else 0,
                  "turnover_limit_24h_pct": 100 * rk["max_turnover_24h"],
                  "buys_blocked_until": pf.no_buys_until, "halted_until": pf.halted_until}
+    theses_view = {}
+    for a, t in (theses or {}).items():
+        tv = dict(t)
+        px = mids.get(a)
+        if px is not None and t.get("exit_below") is not None:
+            tv["exit_below_breached"] = px < t["exit_below"]
+        if px is not None and t.get("review_above") is not None:
+            tv["review_above_reached"] = px >= t["review_above"]
+        theses_view[a] = tv
     payload = {"cycle_id": cycle_id, "time_utc": cycle_id,
                "note": "Returns/vol/distances are in PERCENT. Features use closed candles only.",
-               "market": market, "portfolio": portfolio, "open_theses": theses,
+               "market": market, "portfolio": portfolio, "open_theses": theses_view,
                "last_cycle_feedback": feedback}
     return ("Current state (JSON). Decide and respond with the JSON object only.\n\n"
             + json.dumps(payload, indent=1, sort_keys=True))
@@ -99,7 +108,7 @@ def decide(llm, cfg, cycle_id, snapshot, pf, theses, feedback, now):
     attempts, parsed, errors = [], None, []
     for _ in range(1 + cfg["llm"]["parse_retries"]):
         resp = llm.complete(system, user, ctx)
-        parsed, errors = validate(resp["text"], cfg, cycle_id)
+        parsed, errors = validate(resp["text"], cfg, cycle_id, mids)
         attempts.append({"raw": resp["text"], "errors": errors, "model_id": resp.get("model_id"),
                          "provider": resp.get("provider"), "endpoint_errors": resp.get("endpoint_errors"),
                          "stop_reason": resp.get("stop_reason"), "tokens_in": resp.get("tokens_in"),
@@ -122,6 +131,8 @@ def apply_thesis_updates(theses, parsed, cycle_id):
     in the history log forever."""
     theses = json.loads(json.dumps(theses))
     conf = {d["asset"]: d.get("confidence") for d in parsed["decisions"]}
+    levels = {d["asset"]: {k: d[k] for k in ("exit_below", "review_above") if d.get(k) is not None}
+              for d in parsed["decisions"] if d["action"] in ("BUY", "ADD")}
     history = []
     for u in parsed["thesis_updates"]:
         a = u["asset"]
@@ -132,7 +143,15 @@ def apply_thesis_updates(theses, parsed, cycle_id):
         t = theses.get(a, {"opened_cycle": cycle_id, "confidence_history": []})
         t.update({"status": u["status"], "updated_cycle": cycle_id, "summary": u.get("summary", ""),
                   "reasons": u.get("reasons", []), "invalidation": u.get("invalidation", [])})
+        t.update(levels.get(a, {}))
+        t.update({k: u[k] for k in ("exit_below", "review_above") if u.get(k) is not None})
         if conf.get(a) is not None:
             t["confidence_history"] = (t["confidence_history"] + [{"cycle": cycle_id, "confidence": conf[a]}])[-20:]
         theses[a] = t
+    for a, lv in levels.items():          # a BUY/ADD without a thesis_update still records its levels
+        if a in theses:
+            theses[a].update(lv)
+        else:
+            theses[a] = {"opened_cycle": cycle_id, "updated_cycle": cycle_id, "status": "bullish",
+                         "summary": "", "reasons": [], "invalidation": [], "confidence_history": [], **lv}
     return theses, history

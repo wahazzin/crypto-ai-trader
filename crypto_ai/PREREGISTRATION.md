@@ -35,10 +35,10 @@ so a null result can't be reframed later as "the AI just needs more data."
 | Universe (frozen) | BTC, ETH, SOL, XRP, ADA, LINK, AVAX, LTC (all `-USD`, Coinbase Exchange) |
 | Universe rule | Top-tier non-stablecoin, non-memecoin, ≥350 days USD trading history, Coinbase 24h USD volume ≥ $15M at selection. DOGE excluded (memecoin), DOT excluded (volume $5M). Chosen by structural rules, never by returns. |
 | Data | Coinbase Exchange public REST. Closed candles only (never the in-progress candle). |
-| Cadence | Decision cycles at 00:00, 06:00, 12:00, 18:00 UTC ⚑ |
+| Cadence | Decision cycles at 00:00, 06:00, 12:00, 18:00 UTC ⚑ (owner wants faster scanning; proposed design in ROADMAP.md §4 keeps these fixed 6h cycles as the scored ones) |
 | Capital | $10,000 simulated per arm, all arms start at the same first-cycle snapshot |
 | Instrument | Spot, long-only, no leverage, no shorting, USD cash only, market orders only |
-| Costs ⚑ | 40 bps fee/side + measured half-spread + slippage (2 bps BTC/ETH, 6 bps alts + size impact). Sensitivity re-runs at 10 and 60 bps |
+| Costs (confirmed by owner 2026-10-06) | 40 bps fee/side + measured half-spread + slippage (2 bps BTC/ETH, 6 bps alts + size impact). Sensitivity re-runs at 10 and 60 bps |
 | Fills | Priced from a quote fetched AFTER the LLM response returns — never at the price the AI saw |
 | Model | `gpt-oss-120b`, open weights, via free API tiers (Groq primary, OpenRouter backup serving the SAME weights). Never falls back to a different model. Provider + returned model id logged on every call |
 | Randomness | temperature 0; prompt and full response logged |
@@ -91,6 +91,9 @@ thesis invalidation usefulness, stop-outs, risk-engine rejection reasons, token 
 ---
 
 ## 6. Power analysis — why the primary test is IC, and why 12 months is the minimum
+
+⚑ Owner deferred choosing the run length (2026-10-06). It must be fixed **before the lock**; after the
+lock it may only be extended, never shortened, so results can't decide when we stop.
 
 Computed before writing any threshold (80% power, 5% two-sided):
 

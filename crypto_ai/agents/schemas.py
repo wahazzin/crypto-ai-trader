@@ -25,7 +25,7 @@ def _str_list(x):
     return isinstance(x, list) and len(x) > 0 and all(isinstance(s, str) and s.strip() for s in x)
 
 
-def validate(raw, cfg, cycle_id):
+def validate(raw, cfg, cycle_id, mids=None):
     errors = []
     text = (raw or "").strip()
     fence_stripped = False
@@ -84,6 +84,14 @@ def validate(raw, cfg, cycle_id):
                 errors.append(f"{tag} {act} needs non-empty reasons")
             if not _str_list(d.get("invalidation")):
                 errors.append(f"{tag} {act} needs non-empty invalidation")
+            xb = d.get("exit_below")
+            if not (_num(xb) and xb > 0):
+                errors.append(f"{tag} {act} needs exit_below: a price (number) that proves the thesis wrong")
+            elif mids and a in mids and xb >= mids[a]:
+                errors.append(f"{tag} exit_below {xb} must be below the current price {mids[a]}")
+        ra = d.get("review_above")
+        if ra is not None and not (_num(ra) and ra > 0):
+            errors.append(f"{tag} review_above must be a positive number")
         sl = d.get("stop_loss_pct")
         if sl is not None and not (_num(sl) and sl > 0):
             errors.append(f"{tag} stop_loss_pct must be a positive number")
@@ -98,6 +106,10 @@ def validate(raw, cfg, cycle_id):
     for i, u in enumerate(updates):
         if not isinstance(u, dict) or u.get("asset") not in uni or u.get("status") not in THESIS_STATUS:
             errors.append(f"thesis_updates[{i}] needs a known asset and status in {sorted(THESIS_STATUS)}")
+            continue
+        for k in ("exit_below", "review_above"):
+            if u.get(k) is not None and not (_num(u[k]) and u[k] > 0):
+                errors.append(f"thesis_updates[{i}] {k} must be a positive number")
 
     if errors:
         return None, errors

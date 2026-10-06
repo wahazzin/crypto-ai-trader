@@ -128,6 +128,7 @@ class MockLLM:
         if weights.get("BTC-USD", 0.0) < 1e-4:
             decisions.append({"asset": "BTC-USD", "action": "BUY", "target_weight": 0.10,
                               "stop_loss_pct": 12, "confidence": 50,
+                              "exit_below": round(snap["assets"]["BTC-USD"]["mid"] * 0.9, 2),
                               "reasons": ["mock: plumbing test position"],
                               "invalidation": ["mock: none, this is a test"]})
         else:
