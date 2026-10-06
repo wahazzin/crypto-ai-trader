@@ -13,12 +13,19 @@ apparatus that will find out whether it has any skill. "No evidence" is a legiti
 |---|---|
 | [`ROADMAP.md`](ROADMAP.md) | Where we are, hard constraints, next build, open decisions |
 | [`RESEARCH_LOG.md`](RESEARCH_LOG.md) | Dated record of what was done and measured |
+| [`TOOLS_BACKLOG.md`](TOOLS_BACKLOG.md) | Outside GitHub projects we'll use, and when |
 | [`crypto_ai/PREREGISTRATION.md`](crypto_ai/PREREGISTRATION.md) | The test: hypotheses, verdict rules, ways we could fool ourselves |
 | [`crypto_ai/SPEC_v0.1.md`](crypto_ai/SPEC_v0.1.md) | Architecture, risk rules R1–R14, data flow |
 
 ---
 
-## How one cycle works
+## How it runs
+
+Every **5 minutes**, plain code (free) checks stops, circuit breakers and triggers. Every **6 hours**
+the AI makes its full, scored decision. Between cycles the code wakes the AI only when something
+happens: one of its exit prices is crossed, a 4%+ move in an hour, or a real volume spike.
+
+### One AI decision
 
 ```
 Coinbase prices ──► features ──► AI (gpt-oss-120b, free)
@@ -56,9 +63,9 @@ dynamics and thin volume respectively.
 2. **Local dry run (fake AI, no key needed):**
    `python -m crypto_ai.runner --state-dir crypto_ai_state_dryrun --dry-run`
 3. **On GitHub:** Actions → *crypto_ai paper trader* → Run workflow → pick an action:
-   - `smoke` — real AI, throwaway state (saved to the `crypto-ai-smoke` branch)
+   - `smoke` — real AI: one cycle + one forced wake-up, throwaway state (`crypto-ai-smoke` branch)
    - `lock` — freeze the rules and start the clock (**once**)
-   - `run` — one real cycle (refuses until locked)
+   - `run` — one scanner tick; runs the 6h cycle when due (refuses until locked)
    - `report` — print performance (interim = informational only)
 
 The experiment's real state lives on the `crypto-ai-data` branch, written only by GitHub Actions.

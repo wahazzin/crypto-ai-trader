@@ -51,3 +51,26 @@ It's validated by code (missing or above-price → response rejected). Each cycl
 **Constraint measured:** at ~5,600 tokens per call and Groq's 200,000 tokens/day free limit,
 the AI can be asked at most ~35 times per day. That rules out calling the AI every few minutes
 and shaped the scanner proposal in ROADMAP.md §4.
+
+## 2026-10-06 — Scanner built (owner: "it should scan every few minutes")
+
+- Asking the AI every 5 minutes is impossible on the free tier (C2) and trading that often bleeds
+  fees (C1). Built a hybrid instead: free code checks every 5 minutes, AI woken only on triggers.
+- Single entry point (`crypto_ai.scanner`) so the 6h cycle and the scans can never write the
+  state at the same time.
+- Wake-ups are logged separately (`event_decisions.jsonl`) so the pre-registered IC test only ever
+  sees the regular 6h outlooks.
+- 12 new tests (82 total): due-cycle handling, quiet scans write nothing, lock required, level
+  triggers fire once, daily cap, spacing, quiet window before cycles, stops on 5-min candles,
+  move/volume detection.
+
+**Smoke test on GitHub with the real AI (2026-10-06 11:07 UTC):**
+
+| Step | Result |
+|---|---|
+| Scheduled cycle | OK, 3,257 in / 2,055 out tokens, 14 paper fills across the 5 arms |
+| Forced trigger | Fake "AVAX crossed its exit level" → scanner woke the AI |
+| AI wake-up answer | Valid first try, 4.5 s. Held AVAX, reset `exit_below` to $10.50 and set `review_above` $12.50 |
+| Scanner state | Budget counted (1/20 today), trigger marked fired, heartbeat written |
+
+Interpretation: plumbing only. Two decisions say nothing about skill.

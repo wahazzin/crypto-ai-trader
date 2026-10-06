@@ -35,7 +35,7 @@ so a null result can't be reframed later as "the AI just needs more data."
 | Universe (frozen) | BTC, ETH, SOL, XRP, ADA, LINK, AVAX, LTC (all `-USD`, Coinbase Exchange) |
 | Universe rule | Top-tier non-stablecoin, non-memecoin, ≥350 days USD trading history, Coinbase 24h USD volume ≥ $15M at selection. DOGE excluded (memecoin), DOT excluded (volume $5M). Chosen by structural rules, never by returns. |
 | Data | Coinbase Exchange public REST. Closed candles only (never the in-progress candle). |
-| Cadence | Decision cycles at 00:00, 06:00, 12:00, 18:00 UTC ⚑ (owner wants faster scanning; proposed design in ROADMAP.md §4 keeps these fixed 6h cycles as the scored ones) |
+| Cadence | Scored decision cycles at 00:00, 06:00, 12:00, 18:00 UTC. Plus a 5-minute code scanner (stops, breakers, triggers) that may wake the AI between cycles: ≤20/day, ≥30 min apart (`experiment.json → scanner`, ROADMAP §4). Wake-up decisions are logged to `event_*.jsonl`, are NOT part of the IC test, and their trades DO count in AI P&L |
 | Capital | $10,000 simulated per arm, all arms start at the same first-cycle snapshot |
 | Instrument | Spot, long-only, no leverage, no shorting, USD cash only, market orders only |
 | Costs (confirmed by owner 2026-10-06) | 40 bps fee/side + measured half-spread + slippage (2 bps BTC/ETH, 6 bps alts + size impact). Sensitivity re-runs at 10 and 60 bps |
@@ -153,6 +153,12 @@ Final labels: `NOT EVALUABLE` · `NO EVIDENCE` · `HARMFUL` · `PREDICTIVE, NOT 
 | Quiet human intervention | Every intervention is an amendment; git history is public and timestamped |
 | Confidence treated as probability | Logged only; never read by risk engine or execution |
 | Good month → "it works" | Banner in §10; no changes based on interim results |
+
+**Scanner asymmetry (added 2026-10-06, before lock).** The AI arm can act between cycles when
+woken; `trend_quant` acts only at cycles. Both arms get identical 5-minute stop checks. The primary
+test (IC of scheduled outlooks) is unaffected. For the secondary P&L comparison we additionally
+report the AI's P&L from scheduled-cycle trades only vs including wake-up trades, so we can see
+whether wake-ups helped or hurt.
 
 ## 9. Amendments
 

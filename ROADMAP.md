@@ -15,8 +15,8 @@ cannot override.
 The deliverable is **evidence** of whether that AI is any good, not profits. It trades paper money
 only, next to simple baselines, and it is scored by a test written down *before* it started.
 
-**Current honest status: nothing is proven. The bot has made one test decision. No edge exists
-until the pre-registered test says so.**
+**Current honest status: nothing is proven. The bot has only made smoke-test decisions. No edge
+exists until the pre-registered test says so.**
 
 ### Where this fits (the three projects)
 
@@ -33,12 +33,12 @@ until the pre-registered test says so.**
 | Phase | Status |
 |---|---|
 | 0 — Pre-registration + spec (`crypto_ai/PREREGISTRATION.md`, `SPEC_v0.1.md`) | ✅ Drafted, ⚑ items open |
-| 1 — Core: data, features, portfolio, paper exchange, risk engine (R1–R14) | ✅ Built, 70 tests |
+| 1 — Core: data, features, portfolio, paper exchange, risk engine (R1–R14) | ✅ Built |
 | 2 — AI decision layer (free gpt-oss-120b via Groq, OpenRouter backup) | ✅ Built, smoke test passed |
 | 3 — Baselines in parallel (BTC hold, ETH hold, equal-weight, trend rule) | ✅ Built |
 | 4 — Numeric invalidation levels (`exit_below`, `review_above`) | ✅ Built 2026-10-06 |
-| 5 — **Fast scanner (every 5 min, code only) + AI woken on events** | ⬜ **Proposed — waiting for owner OK (§4)** |
-| 6 — Lock the experiment, turn on the schedule | ⬜ Blocked on §6 decisions |
+| 5 — Fast scanner (every 5 min, code only) + AI woken on events | ✅ Built 2026-10-06, 82 tests, smoke-tested with the real AI |
+| 6 — **Lock the experiment, turn on the schedule** | ⬜ **Next. Blocked only on D3 (run length)** |
 | 7 — Alpaca paper mirror (order-flow rehearsal, not the scorer) | ⬜ After lock |
 | 8 — Random-policy arms (is the AI better than luck?) | ⬜ Planned v0.2 |
 | 9 — New inputs, one at a time (news → sentiment → on-chain) | ⬜ Each tested alone first |
@@ -71,7 +71,7 @@ mirror our trades but **cannot be the scorekeeper**; our stricter simulator is.
 
 ---
 
-## 4. PROPOSED NEXT BUILD: fast scanner + event-woken AI
+## 4. THE SCANNER (built 2026-10-06): fast code checks + event-woken AI
 
 The idea: watch the market every few minutes **for free with plain code**, and only wake the AI
 when something is worth thinking about.
@@ -91,12 +91,24 @@ Why this shape:
 - It respects C1 (looking ≠ trading) and C2 (the AI budget).
 - It turns `exit_below` from words into something the bot actually acts on within minutes.
 
-**Open questions for the owner:** OK to build? Trigger thresholds start as proposals and get
-fixed before the lock.
+Code: `crypto_ai/scanner.py`. Settings: `experiment.json → scanner`. One GitHub schedule every
+5 minutes runs it; it runs the 6h cycle itself when one is due, so two jobs never write at once.
+
+| Setting | Value |
+|---|---|
+| Big move trigger | ≥ 4% in the last hour |
+| Volume spike trigger | ≥ 4× the median hourly volume of the last 24h, with ≥ 1.5% move |
+| Level triggers | Held coin crosses its `exit_below` or `review_above` (fires once per level) |
+| Cooldown (move/volume) | 3 hours per coin |
+| AI budget | ≤ 20 wake-ups/day, ≥ 30 min apart, none in the 30 min before a cycle |
+| Quiet scans | Write nothing (no commit). Heartbeat once an hour |
+
+Known asymmetry (recorded in PREREGISTRATION): the AI gets extra decision chances between
+cycles; `trend_quant` doesn't. Both get the same 5-minute stop checks.
 
 ---
 
-## 5. HOW WE USE OUTSIDE GITHUB PROJECTS
+## 5. HOW WE USE OUTSIDE GITHUB PROJECTS (full list: [`TOOLS_BACKLOG.md`](TOOLS_BACKLOG.md))
 
 We don't install anything "just in case". Each tool comes in only when a phase needs it, and gets
 tested alone first (project rule 9).
@@ -120,7 +132,7 @@ keys. Never run one with a real key, never install one without reading it, paper
 | # | Question | Status |
 |---|---|---|
 | D1 | Fee assumption 0.4%/side | ✅ Confirmed 2026-10-06 |
-| D2 | Build the fast scanner (§4)? | ⏳ Waiting |
+| D2 | Build the fast scanner (§4)? | ✅ Built 2026-10-06 |
 | D3 | Run length / first decision point | ⏳ Deferred by owner. **Must be set before the lock**, then only extendable |
 | D4 | Alpaca: create a new, separate crypto paper account | ⏳ Owner action, after lock |
 
