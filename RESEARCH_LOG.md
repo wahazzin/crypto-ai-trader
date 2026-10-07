@@ -278,3 +278,33 @@ fundamentals remain strong…"). Design 2022 → 2024-06 (4,464 coin-days), hold
 **Decision (per the pre-registration):** no `ai_news` arm. Phase 16's news step is closed. Next
 information candidates stay in the roadmap (sentiment from social data, on-chain), each with its
 own pre-registration.
+
+## 2026-10-07 — Research R2: short-term (day-trading) price rules — **NO EVIDENCE** after costs
+
+Rules pre-registered in `research/DAYTRADE_PREREG.md` (before data). 25 coins, Coinbase hourly
+candles 2022-01 → 2026-09, fill at the next hour's open, one open trade per coin per rule, live cost
+model (~0.9–1.1% round trip). Full output: `daytrade/R2_results.md` on `crypto-ai-research`.
+
+| Rule | After-cost expectancy per trade, design / holdout | Edge vs random entry (per day, t), design / holdout | Verdict |
+|---|---|---|---|
+| D1 24h momentum (+5%, hold 24h) | −0.88% / −0.67% | −0.62% (−2.91) / −0.53% (−2.62) | NO EVIDENCE |
+| D2 Prior-day breakout (to 00:00) | −1.07% / −0.73% | −0.62% (−5.32) / −0.65% (−4.81) | NO EVIDENCE |
+| D3 1h flush ≤ −3%, hold 6h | −0.89% / −0.78% | **+0.43% (+3.31) / +0.44% (+2.83)** | NO EVIDENCE (cost-killed) |
+| D4 Volume spike + 2%, hold 6h | −0.85% / −0.67% | −0.05% (−0.41) / −0.07% (−0.60) | NO EVIDENCE |
+
+**What it says:**
+1. **Every rule loses money after Coinbase-retail costs, in both periods, by a lot** (t from −3.7 to −14).
+   At these fees, day trading on simple price rules is structurally a losing game.
+2. **One real effect: short-term reversal (D3).** Buying a coin right after a ≥3% one-hour drop beats a
+   random entry by ~+0.4% per trade, in design AND the sealed holdout (t +3.3, +2.8). It is real, but
+   about half the round-trip cost; even at 10 bps fees it's only break-even (+0.02%). Same story as the
+   equities program's short-term reversal (Test 3): real, but eaten by costs.
+3. **Chasing short-term strength is worse than random** (D1, D2: negative edge, t −2.6 to −5.3): buying
+   after a pop tends to buy local tops. D4 (the same pattern the live scanner uses to wake the AI) has
+   no edge either way. That's fine for a wake-up (it's attention, not an order), and it's a useful prior
+   for judging the AI's wake-up trades in the phase 14 checks.
+4. Win rates of 30–40% with avg win > avg loss still lose: rule 6 again, expectancy is what matters.
+
+**Decision (per pre-registration):** no day-trading arm from these rules. A day-trading module only
+becomes worth testing with near-zero trading costs (maker orders / low-fee venue): that's a venue
+question for the go-live discussion, logged in the roadmap, not something to fake in a backtest.

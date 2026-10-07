@@ -59,7 +59,7 @@ Every new component is tested alone before it's combined with anything (project 
 | 14 — Analysis tools promised in the prereg | Make the verdict computable | Random-policy challengers (is the AI better than luck?), wake-up vs scheduled P&L split, confidence calibration (rule 11) | Report shows all three | ✅ Built 2026-10-07 (`analytics/diagnostics.py`), part of every weekly check-in. Meaningful after ~a month of cycles |
 | 15 — "Learner" AI (learning from failure, properly) | Test whether lessons help | AI writes a review of each closed trade; weekly, code turns all reviews into statistics; a NEW `ai_learner` arm gets those lessons, next to an identical arm without them | Pre-registered via amendment, both arms started together | Month 2 |
 | 16 — New information, one at a time | Does news / sentiment / on-chain add anything? | Each tested ALONE first (pre-registered); only a passing source becomes its own AI arm | Each source has its own result | **News: ✅ tested 2026-10-07 → NO EVIDENCE (R1), no news arm.** Social / on-chain: later |
-| 17 — Day-trading module | Shorter trades, price signals only (rule 8) | Separate pre-registration; freqtrade/vectorbt for backtests; same risk engine | Own verdict | After phase 14 |
+| 17 — Day-trading module | Shorter trades, price signals only (rule 8) | Separate pre-registration; same risk engine | Own verdict | **✅ R2 tested 2026-10-07 → NO EVIDENCE: all 4 rules lose after retail costs; short-term reversal is real (+0.4%/trade vs random, both splits) but smaller than costs. Revisit only with near-zero fees (maker / low-fee venue)** |
 | **18 — Decision point** | Verdict | Final report by the pre-registered rules | **12 months after lock** (24 if extended once) | Month 12 |
 
 **Real money is not on this roadmap.** It can only be discussed after phase 18, if the verdict is
@@ -95,6 +95,10 @@ run immediately); an hourly cron only restarts the chain if it breaks. Public re
 **C6 — The free AI can only read so much at once.** Groq free tier caps one minute at 8,000
 tokens. 8 coins already use ~5,300 per call, so the AI can only look at **roughly 12–15 coins**
 per decision. Wider scanning has to be done by code (the strategy toolbox), not the AI.
+
+**C7 — Retail fees kill day trading.** R2 (2026-10-07): four classic short-term rules all lose
+0.7–1.1% per trade after Coinbase-retail costs, in design and holdout. The one real short-term effect
+(reversal after a 1h flush, +0.4%/trade) is smaller than the round trip.
 
 **C5 — Alpaca paper fills are optimistic.** Alpaca's own docs: paper trading ignores market
 impact and slippage, and fills orders larger than the real available liquidity. So Alpaca can
