@@ -84,12 +84,18 @@ $5M a day. Run the screen any time with the `screen` action.
    - `backtest` — test each toolbox strategy alone on past data (results on the `crypto-ai-research` branch)
 
 The experiment's real state lives on the `crypto-ai-data` branch, written only by GitHub Actions.
+**24/7:** `crypto_ai_loop.yml` scans every 5 minutes around the clock and restarts itself.
+**Weekly check-in:** every Monday, `reports/weekly/<week>.md` on that branch (trades, win rate, avg
+win vs avg loss, expectancy, drawdown, vs BTC and SPY). Preview any time with `weekly_preview`.
+**Alpaca mirror:** `ai_large`'s trades are copied to the Alpaca *paper* account for the 13 coins it
+lists; `mirror/fills.jsonl` compares Alpaca's fill price with ours. Our simulator stays the scorer.
 
 ## Secrets (GitHub → Settings → Secrets and variables → Actions)
 
 | Secret | Needed? |
 |---|---|
 | `GROQ_API_KEY` | Yes (free) |
+| `ALPACA_API_KEY`, `ALPACA_SECRET_KEY` | Separate crypto **paper** account: SPY benchmark + mirror |
 | `OPENROUTER_API_KEY` | Optional backup, same model |
 | `DISCORD_WEBHOOK_URL` | Optional circuit-breaker alerts |
 

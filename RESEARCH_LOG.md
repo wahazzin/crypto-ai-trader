@@ -201,3 +201,19 @@ The 6h cycles need >= 85% completion for the verdict (>= 1,240/yr), so an extern
 then dispatch the successor; hourly cron as backup restarter; one concurrency group so there's never
 a second writer). First tick wrote a heartbeat at 07:48 UTC. cron-job.org (external trigger) was
 the alternative; its verification email never arrived, and the loop needs no third party or token.
+
+## 2026-10-07 — Weekly check-in report + Alpaca mirror
+
+- **Weekly report** (`crypto_ai/analytics/weekly.py`, project rule 2): per portfolio, this week and
+  since start: return, vs SPY, vs BTC, drawdown now / max, fills, closed round trips, win rate, avg
+  win $ vs avg loss $, expectancy $ per trade (all fees included), fees; plus cycle-completion health.
+  Written by the live loop every Monday into `reports/weekly/`. A preview at ~1.5 h after go-live
+  showed every portfolio down by exactly its fees so far (−0.18% to −0.46%), as expected.
+- **Paper-only guard refined:** it forbade the word "alpaca" anywhere in the package, which also
+  blocked read-only SPY prices. It now forbids order code and trading endpoints specifically.
+- **Alpaca mirror** (`mirror/alpaca_mirror.py`, outside the experiment package): copies `ai_large`'s
+  fills to the Alpaca PAPER account (hard-coded paper endpoint), skips coins Alpaca doesn't list,
+  logs Alpaca-vs-simulated fill price per order. Started after order row 37 (no history replay).
+- On 1-minute scanning: rejected for this project. Stops already use each candle's true low, and
+  decisions are 6-hourly with multi-day holds, so 1-minute checks add API load and nothing else.
+  Sub-minute speed belongs to project 3 (memecoins, live price stream).
