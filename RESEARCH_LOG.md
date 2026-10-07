@@ -242,3 +242,39 @@ mid coin that no portfolio holds now just leaves that coin out (event COINS_LEFT
 coins, BTC and any held coin still block, as before. Recorded as amendment **A1** through the new
 request mechanism (`crypto_ai/amendment_requests.json` → applied and logged by the live loop into
 lock.json + AMENDMENTS.md). Made on day 0, before any result existed. 114 tests.
+
+## 2026-10-07 — Research R1: crypto news vs returns — **NO EVIDENCE** (clean null)
+
+Rules pre-registered in `research/NEWS_PREREG.md` (commit 6ee0a97, before any data). Full output:
+`news/R1_results.md` on the `crypto-ai-research` branch.
+
+**Data:** 29,764 Alpaca/Benzinga headlines tagged with our 25 coins, 2021-03 → 2026-09 (real coverage
+starts 2022; 12 headlines in 2021). Very uneven: BTC 21,432, ETH 13,670, SOL 3,518, XRP 2,723, most
+others 15–800. 35% of headlines tag more than one coin. 27,833 unique headlines scored by FinBERT;
+sanity check passed (most negative: "Bitdeer reports net loss…"; most positive: "Solana's technical
+fundamentals remain strong…"). Design 2022 → 2024-06 (4,464 coin-days), holdout 2024-07 → 2026-09
+(4,015 coin-days).
+
+| Test | Design t | Holdout t | Verdict |
+|---|---|---|---|
+| T1 avg sentiment → next 1d excess return | +0.40 | −0.53 | NO EVIDENCE |
+| T1 → next 3d | −0.47 | +0.94 | NO EVIDENCE |
+| T2 cross-sectional IC, next 1d | −1.06 | −0.37 | NO EVIDENCE |
+| T2 cross-sectional IC, next 3d | −1.61 | +0.04 | NO EVIDENCE |
+| T3 attention shocks (declustered), next 1d | −1.33 | +1.33 | NO EVIDENCE (sign flips) |
+| T3 → next 3d | +0.48 | −0.73 | NO EVIDENCE |
+| T3 → next 7d | −0.31 | −0.39 | NO EVIDENCE |
+
+**Reading it:**
+1. Same result as the equities program (Tests 13–14): headline sentiment doesn't predict returns,
+   in design or holdout, at 1 or 3 days, pooled or cross-sectionally.
+2. Two tempting-looking things that are NOT findings: the holdout's raw 1-day shock effect (t +2.00)
+   dies when declustered (t +1.33) and has the opposite sign in design; and the positive-sentiment
+   tercile at 7 days is positive in both periods (+1.3%, +1.8%) but on 25 and 16 events, and terciles
+   were descriptive, not a pre-registered test. Chasing either would be data-mining.
+3. Limits: FinBERT is a proxy for "can text predict anything"; an LLM reads better. But with zero
+   signal from sentiment AND from attention, the prior that headlines add value is now very low.
+
+**Decision (per the pre-registration):** no `ai_news` arm. Phase 16's news step is closed. Next
+information candidates stay in the roadmap (sentiment from social data, on-chain), each with its
+own pre-registration.
