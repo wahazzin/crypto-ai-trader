@@ -167,3 +167,38 @@ class TestFindTriggers(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StaleCoinClient:
+    """Wraps FakeClient; one coin's last trade is 10 minutes old."""
+    def __init__(self, inner, stale):
+        self.inner, self.stale = inner, stale
+
+    def ticker(self, p):
+        t = self.inner.ticker(p)
+        if p == self.stale:
+            t = dict(t, time=t["time"] - timedelta(minutes=10))
+        return t
+
+    def candles(self, p, g):
+        return self.inner.candles(p, g)
+
+
+class TestThinCoins(ScannerBase):
+
+    def test_stale_unheld_mid_coin_is_left_out_not_fatal(self):
+        mid = CFG["mid"][0]
+        out = run_scan(self.dir, self.cfg, StaleCoinClient(FakeClient(T0), mid), MockLLM(), now=T0,
+                       dry_run=True, require_lock=False)
+        self.assertEqual(out["status"], "OK", out)
+        ev = [e for e in self.j.read("events.jsonl") if e["type"] == "COINS_LEFT_OUT"]
+        self.assertEqual(ev[0]["coins"], [mid])
+        t = T0 + timedelta(minutes=10)
+        out = run_scan(self.dir, self.cfg, StaleCoinClient(FakeClient(t), mid), MockLLM(), now=t,
+                       dry_run=True, require_lock=False)
+        self.assertNotEqual(out["status"], "DATA_FAULT")
+
+    def test_stale_large_coin_still_blocks_the_cycle(self):
+        out = run_scan(self.dir, self.cfg, StaleCoinClient(FakeClient(T0), CFG["large"][1]), MockLLM(), now=T0,
+                       dry_run=True, require_lock=False)
+        self.assertEqual(out["status"], "DATA_FAULT")

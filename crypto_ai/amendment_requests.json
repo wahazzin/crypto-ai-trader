@@ -1,0 +1,6 @@
+[
+  {
+    "id": "A1-thin-coin-quotes",
+    "reason": "Data-fault policy refined (day 0, before any result was looked at). A thin MID-tier coin can go >180 s without a trade, so its ticker looks stale; that used to abort the whole scan or 6h cycle (seen 2026-10-07 08:33 UTC: VVV-USD). Now a stale/invalid quote on a mid coin that NO arm holds leaves just that coin out for that tick/cycle (logged as COINS_LEFT_OUT). A stale quote on any LARGE-tier coin, on BTC, or on any held coin still blocks the cycle exactly as before, so the scored cross-section and every stop check are unchanged. Code: market_data/features.py, scanner.py, runner.py (none of the fingerprinted files)."
+  }
+]

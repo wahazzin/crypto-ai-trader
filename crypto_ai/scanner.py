@@ -62,16 +62,22 @@ def cycle_due(j, cfg, now):
     return not any(r.get("cycle_id") == cid and r.get("status") != "DATA_FAULT" for r in j.read("cycles.jsonl"))
 
 
-def _market(cfg, client, now):
-    """Live quotes + closed 5-minute candles for the whole universe. Raises DataFault."""
+def _market(cfg, client, now, held=()):
+    """Live quotes + closed 5-minute candles. A coin with a stale/invalid quote (thin coins can go
+    minutes without a trade) is skipped for this tick, its stop is checked next tick. Raises
+    DataFault if BTC, a coin some arm HOLDS (its stop must be checkable), or more than half the coins
+    are bad (a real outage)."""
     g = cfg["scanner"]["candle_granularity_s"]
     now_ts = int(now.timestamp())
-    quotes, candles = {}, {}
+    quotes, candles, bad = {}, {}, []
     for p in cfg["universe"]:
         tk = client.ticker(p)
         age = (now - tk["time"]).total_seconds()
         if abs(age) > cfg["data"]["max_quote_age_seconds"] or not (0 < tk["bid"] <= tk["ask"]):
-            raise DataFault(f"{p}: stale or invalid quote")
+            bad.append(p)
+            if p == "BTC-USD" or p in held or len(bad) > len(cfg["universe"]) / 2:
+                raise DataFault(f"{p}: stale or invalid quote ({len(bad)} bad so far)")
+            continue
         mid = (tk["bid"] + tk["ask"]) / 2
         quotes[p] = {"mid": mid, "bid": tk["bid"], "ask": tk["ask"],
                      "spread_bps": (tk["ask"] - tk["bid"]) / mid * 1e4,
@@ -175,7 +181,7 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
     ccfg = U.cycle_config(cfg, uni, {a for pf in arms.values() for a in pf.positions})
 
     try:
-        quotes, candles = _market(ccfg, client, now)
+        quotes, candles = _market(ccfg, client, now, {a for pf in arms.values() for a in pf.positions})
     except DataFault as e:
         st["scans_since_heartbeat"] += 1
         st["last_data_fault"] = {"ts": iso(now), "error": str(e)}
@@ -268,7 +274,8 @@ def _wake_ai(j, ccfg, client, llm, now, sid, arms, to_wake, dry_run):
     same validation, risk engine and fills as a scheduled cycle."""
     eid = f"{sid}-event"
     try:
-        snap, _ = build_snapshot(ccfg, client, now)
+        held = {a for pf in arms.values() for a in pf.positions}
+        snap, _ = build_snapshot(ccfg, client, now, [m for m in ccfg["mid"] if m not in held])
     except DataFault as e:
         for arm, _t in to_wake:
             j.append("event_decisions.jsonl", {"event_id": eid, "ts": iso(now), "arm": arm,

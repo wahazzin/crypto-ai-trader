@@ -62,20 +62,26 @@ def compute_features(tk, hourly, daily, btc_daily_logret):
     return {k: (None if v is None else round(float(v), 6)) for k, v in f.items()}
 
 
-def build_snapshot(cfg, client, now):
+def build_snapshot(cfg, client, now, droppable=()):
     """Returns (snapshot, hourly_by_asset). hourly candles are kept in memory for stop replay
-    and are not persisted (they are public and refetchable)."""
+    and are not persisted (they are public and refetchable).
+    `droppable`: coins that may be LEFT OUT of this cycle if their quote is stale/invalid (thin
+    mid-tier coins can go minutes without a trade). Any other coin with a bad quote is a DataFault.
+    Left-out coins are listed in snapshot["dropped"]."""
     now_ts = int(now.timestamp())
     max_age = cfg["data"]["max_quote_age_seconds"]
     uni = cfg["universe"]
-    tick, hourly, daily = {}, {}, {}
+    tick, hourly, daily, dropped = {}, {}, {}, []
     for p in uni:
         tk = client.ticker(p)
         age = (now - tk["time"]).total_seconds()
-        if abs(age) > max_age:
-            raise DataFault(f"{p}: quote age {age:.0f}s exceeds {max_age}s")
-        if not (0 < tk["bid"] <= tk["ask"]):
-            raise DataFault(f"{p}: crossed/invalid book bid={tk['bid']} ask={tk['ask']}")
+        problem = (f"{p}: quote age {age:.0f}s exceeds {max_age}s" if abs(age) > max_age else
+                   f"{p}: crossed/invalid book bid={tk['bid']} ask={tk['ask']}" if not (0 < tk["bid"] <= tk["ask"]) else None)
+        if problem:
+            if p in droppable:
+                dropped.append(p)
+                continue
+            raise DataFault(problem)
         tick[p] = tk
         hourly[p] = closed_only(client.candles(p, 3600), 3600, now_ts)[-cfg["data"]["hourly_candles"]:]
         daily[p] = closed_only(client.candles(p, 86400), 86400, now_ts)[-cfg["data"]["daily_candles"]:]
@@ -84,7 +90,7 @@ def build_snapshot(cfg, client, now):
     btc_dc = np.array([c["close"] for c in daily[btc]])
     btc_lr = np.diff(np.log(btc_dc[-31:]))
     assets = {}
-    for p in uni:
+    for p in tick:
         tk = tick[p]
         mid = (tk["bid"] + tk["ask"]) / 2
         assets[p] = {
@@ -95,7 +101,7 @@ def build_snapshot(cfg, client, now):
             "features": compute_features(tk, hourly[p], daily[p], btc_lr),
         }
     # daily candles ride along (not logged) so the strategy toolbox uses exactly the same data
-    return {"assets": assets, "daily": daily}, hourly
+    return {"assets": assets, "daily": daily, "dropped": dropped}, hourly
 
 
 def fresh_quotes(cfg, client, assets, now):

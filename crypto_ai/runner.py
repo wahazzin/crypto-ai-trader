@@ -214,10 +214,14 @@ def run_cycle(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock
         events.append(uev)
     held = {a for pf in arms.values() for a in pf.positions}
     ccfg = U.cycle_config(cfg, uni, held)
+    droppable = [m for m in ccfg["mid"] if m not in held]          # never the scored large tier or a holding
     try:
-        snap, hourly = build_snapshot(ccfg, client, now)
+        snap, hourly = build_snapshot(ccfg, client, now, droppable)
     except DataFault as e:
         return data_fault(e)
+    if snap["dropped"]:
+        events.append({"type": "COINS_LEFT_OUT", "coins": snap["dropped"], "why": "stale/invalid quote"})
+        ccfg = U.cycle_config(cfg, {"large": uni["large"], "mid": [m for m in uni["mid"] if m not in snap["dropped"]]}, held)
     j.append("snapshots.jsonl", {"cycle_id": cid, "ts": iso(now), "assets": snap["assets"],
                                  "large": ccfg["large"], "mid": ccfg["mid"]})
     mids = {a: v["mid"] for a, v in snap["assets"].items()}

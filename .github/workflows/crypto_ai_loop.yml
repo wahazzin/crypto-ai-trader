@@ -63,6 +63,7 @@ jobs:
           while [ $SECONDS -lt $end ]; do
             t0=$SECONDS
             n=$((n + 1))
+            ( cd code && python -m crypto_ai.lock --apply-requests --state-dir ../state ) || echo "tick $n: amendment apply failed"
             ( cd code && timeout 900 python -m crypto_ai.scanner --state-dir ../state ) || echo "tick $n: scanner exited non-zero (logged in state)"
             ( cd code && timeout 900 python -m crypto_ai.analytics.weekly --state-dir ../state --if-due ) || echo "tick $n: weekly report failed"
             ( cd code && timeout 120 python -m mirror.alpaca_mirror --state-dir ../state --arm ai_large ) || echo "tick $n: mirror failed (bot unaffected)"

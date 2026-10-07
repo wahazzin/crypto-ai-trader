@@ -101,19 +101,38 @@ def verify_lock(state_dir, pkg_dir=PKG_DIR):
     return (not problems), problems
 
 
-def amend(state_dir, reason, pkg_dir=PKG_DIR):
+def apply_requests(state_dir, pkg_dir=PKG_DIR):
+    """Applies amendment requests committed to the repo (amendment_requests.json: [{"id", "reason"}])
+    that the lock hasn't recorded yet. This is how a change gets logged from GitHub without a human
+    running a command: the request is public in git history, the application is in lock.json and
+    AMENDMENTS.md. Returns the newly applied entries."""
+    path = os.path.join(pkg_dir, "amendment_requests.json")
+    lock = Journal(state_dir).load_json("lock.json")
+    if lock is None or not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        reqs = json.load(f)
+    done = {a.get("id") for a in lock["amendments"]}
+    out = []
+    for r in reqs:
+        if r["id"] not in done:
+            out.append(amend(state_dir, r["reason"], pkg_dir, amendment_id=r["id"]))
+    return out
+
+
+def amend(state_dir, reason, pkg_dir=PKG_DIR, amendment_id=None):
     if not reason or len(reason.strip()) < 10:
         raise ValueError("An amendment needs a real reason (10+ characters).")
     j = Journal(state_dir)
     lock = j.load_json("lock.json")
     if lock is None:
         raise RuntimeError("No lock to amend.")
-    entry = {"at": iso(now_utc()), "reason": reason.strip(), "hashes": compute_hashes(pkg_dir),
+    entry = {"at": iso(now_utc()), "id": amendment_id, "reason": reason.strip(), "hashes": compute_hashes(pkg_dir),
              "code_git_sha": _git_sha(pkg_dir)}
     lock["amendments"].append(entry)
     j.save_json("lock.json", lock)
     with open(j.path("AMENDMENTS.md"), "a", encoding="utf-8", newline="\n") as f:
-        f.write(f"- {entry['at']}: {entry['reason']}\n")
+        f.write(f"- {entry['at']}{' [' + amendment_id + ']' if amendment_id else ''}: {entry['reason']}\n")
     return entry
 
 
@@ -124,9 +143,13 @@ if __name__ == "__main__":
     g.add_argument("--create", action="store_true")
     g.add_argument("--verify", action="store_true")
     g.add_argument("--amend", metavar="REASON")
+    g.add_argument("--apply-requests", action="store_true")
     a = ap.parse_args()
     if a.create:
         print(json.dumps(create_lock(a.state_dir), indent=2))
+    elif a.apply_requests:
+        for e in apply_requests(a.state_dir):
+            print("applied amendment", e["id"], ":", e["reason"][:100])
     elif a.verify:
         ok, problems = verify_lock(a.state_dir)
         print("LOCK OK" if ok else "LOCK PROBLEMS: " + "; ".join(problems))

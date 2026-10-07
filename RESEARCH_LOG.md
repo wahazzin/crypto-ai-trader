@@ -232,3 +232,13 @@ the alternative; its verification email never arrived, and the loop needs no thi
 Tests use synthetic markets: an AI that buys the only rising coin beats > 80% of random policies;
 calibration and wake-up attribution are checked on hand-built cases. 112 tests.
 First data point: both AIs' first buys were 80–85% confidence (ai_large) and 70–79% (ai_largemid).
+
+## 2026-10-07 — Amendment A1: thin mid coins no longer block a scan or cycle
+
+At 08:33 UTC one scan was skipped as a DATA_FAULT because VVV-USD (mid tier) had no trade for more
+than 180 s, so its ticker looked stale. The same rule applied to the 6h cycle: one quiet mid coin
+could cost a scored cycle (the verdict needs >= 85% of cycles). Fix: a stale/invalid quote on a
+mid coin that no portfolio holds now just leaves that coin out (event COINS_LEFT_OUT). Large-tier
+coins, BTC and any held coin still block, as before. Recorded as amendment **A1** through the new
+request mechanism (`crypto_ai/amendment_requests.json` → applied and logged by the live loop into
+lock.json + AMENDMENTS.md). Made on day 0, before any result existed. 114 tests.
