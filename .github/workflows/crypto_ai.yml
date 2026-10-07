@@ -12,7 +12,7 @@ on:
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report, smoke, screen, backtest, alpaca_probe, weekly_preview, news_fetch, news_score, news_test, daytrade_fetch, daytrade_test]
+        options: [run, lock, report, smoke, screen, backtest, alpaca_probe, weekly_preview, news_fetch, news_score, news_test, daytrade_fetch, daytrade_test, onchain_probe]
 
 concurrency:
   # state-writing actions share the loop's group (never two writers); research actions run freely
@@ -45,7 +45,7 @@ jobs:
           fi
 
       - name: Restore earlier research outputs (research actions)
-        if: (startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_'))
+        if: (startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_') || startsWith(github.event.inputs.action, 'onchain_'))
         run: |
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           if git ls-remote --exit-code --heads "$url" crypto-ai-research >/dev/null 2>&1; then
@@ -91,6 +91,7 @@ jobs:
             news_test)  python -m research.news_r1 test ;;
             daytrade_fetch) python -m research.daytrade_r2 fetch ;;
             daytrade_test)  python -m research.daytrade_r2 test ;;
+            onchain_probe)  python -m research.onchain_probe ;;
             weekly_preview) python -m crypto_ai.analytics.weekly --state-dir ../state --preview research/out/weekly_preview.md ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
           esac
@@ -105,7 +106,7 @@ jobs:
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-smoke
 
       - name: Save research output (separate branch, keeps earlier results)
-        if: always() && (github.event.inputs.action == 'screen' || github.event.inputs.action == 'backtest' || github.event.inputs.action == 'alpaca_probe' || github.event.inputs.action == 'weekly_preview' || (startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_')))
+        if: always() && (github.event.inputs.action == 'screen' || github.event.inputs.action == 'backtest' || github.event.inputs.action == 'alpaca_probe' || github.event.inputs.action == 'weekly_preview' || (startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_') || startsWith(github.event.inputs.action, 'onchain_')))
         run: |
           [ -d code/research/out ] || exit 0
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
@@ -120,7 +121,7 @@ jobs:
           git push -q origin crypto-ai-research
 
       - name: Commit state
-        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen' && github.event.inputs.action != 'backtest' && github.event.inputs.action != 'alpaca_probe' && github.event.inputs.action != 'weekly_preview' && !(startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_'))
+        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen' && github.event.inputs.action != 'backtest' && github.event.inputs.action != 'alpaca_probe' && github.event.inputs.action != 'weekly_preview' && !(startsWith(github.event.inputs.action, 'news_') || startsWith(github.event.inputs.action, 'daytrade_') || startsWith(github.event.inputs.action, 'onchain_'))
         working-directory: state
         run: |
           git config user.name "crypto-ai-bot"
