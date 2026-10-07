@@ -38,27 +38,28 @@ def main():
     u = screen(CoinbaseClient(), load_config()["universe_rule"], datetime.now(timezone.utc))
     coins = [c.split("-")[0].lower() for c in u["large"] + u["mid"]]
     lines = [f"# On-chain data probe ({datetime.now(timezone.utc):%Y-%m-%d %H:%M UTC}) — Coin Metrics Community", ""]
-    code, cat = get("/catalog-v2/asset-metrics", {"assets": ",".join(coins), "page_size": 10000})
-    if code != 200:
-        lines.append(f"catalog HTTP {code}: {str(cat)[:300]}")
-    else:
-        lines += ["| Coin | # daily metrics | Wanted metrics available (from) |", "|---|---|---|"]
-        for a in cat.get("data", []):
-            daily = {}
-            for m in a.get("metrics", []):
-                for f in m.get("frequencies", []):
-                    if f.get("frequency") == "1d":
-                        daily[m["metric"]] = f.get("min_time", "")[:10]
-            have = [f"{w} ({daily[w]})" for w in WANT if w in daily]
-            lines.append(f"| {a['asset'].upper()} | {len(daily)} | {', '.join(have) or '—'} |")
-        missing = sorted(set(coins) - {a["asset"] for a in cat.get("data", [])})
-        lines += ["", f"Coins with no community data at all: {', '.join(c.upper() for c in missing) or 'none'}", ""]
+    lines += ["| Coin | # daily metrics | Wanted metrics available (from) |", "|---|---|---|"]
+    missing = []
+    for c in coins:                                       # one at a time: unknown coins make a batch fail
+        code, cat = get("/catalog-v2/asset-metrics", {"assets": c, "page_size": 10000})
+        if code != 200 or not cat.get("data"):
+            missing.append(c.upper())
+            continue
+        daily = {}
+        for m in cat["data"][0].get("metrics", []):
+            for f in m.get("frequencies", []):
+                if f.get("frequency") == "1d":
+                    daily[m["metric"]] = f.get("min_time", "")[:10]
+        have = [f"{w} ({daily[w]})" for w in WANT if w in daily]
+        lines.append(f"| {c.upper()} | {len(daily)} | {', '.join(have) or '—'} |")
+        time.sleep(0.7)
+    lines += ["", f"Coins with no community data at all: {', '.join(missing) or 'none'}", ""]
     # spot check: can we actually pull a long daily series?
-    lines += ["## Spot check: BTC & ETH daily series since 2021", ""]
+    lines += ["## Spot check: BTC & ETH daily series (asked from 2015)", ""]
     for asset in ("btc", "eth"):
-        for m in ("FlowInExNtv", "SplyExNtv", "AdrActCnt"):
+        for m in ("FlowInExNtv", "FlowOutExNtv", "SplyExNtv", "AdrActCnt"):
             code, js = get("/timeseries/asset-metrics", {"assets": asset, "metrics": m, "frequency": "1d",
-                                                         "start_time": "2021-01-01", "page_size": 10000})
+                                                         "start_time": "2015-01-01", "page_size": 10000})
             if code == 200 and js.get("data"):
                 d = js["data"]
                 lines.append(f"- {asset.upper()} {m}: {len(d)} days, {d[0]['time'][:10]} → {d[-1]['time'][:10]}, "
