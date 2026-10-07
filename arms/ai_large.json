@@ -5,10 +5,10 @@
   "extra": {},
   "fees_usd": 10.010159752027443,
   "halted_until": null,
-  "last_ts": "2026-10-07T19:57:02Z",
+  "last_ts": "2026-10-07T20:57:24Z",
   "name": "ai_large",
   "no_buys_until": null,
-  "peak_equity": 10005.66613014182,
+  "peak_equity": 10037.312935605321,
   "positions": {
     "NEAR-USD": {
       "avg_cost": 5.245586075635193,
