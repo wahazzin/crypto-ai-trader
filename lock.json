@@ -1,5 +1,20 @@
 {
-  "amendments": [],
+  "amendments": [
+    {
+      "at": "2026-10-07T09:01:38Z",
+      "code_git_sha": "f9bd29549e80ef354ee3b49d14284cfd473af0c0",
+      "hashes": {
+        "PREREGISTRATION.md": "6deee855a1d7734f4b5dff39f9bee8ac24c0de60329a6d4c9667cd60f8a48d47",
+        "experiment.json": "8539191876f8f4dc59c6f135b948dd36abd1a41ca3b4ba4190e90fad9249cfa0",
+        "prompts/trader_system_v1.md": "d9efac02154671c45d7c2ec245225f7dff2b2fc22ca593dcf1c9bd754e5fe907",
+        "risk/engine.py": "5bbdfe9fe5e030e60772b5c9e907c453ec6e45c7b311325f8e1c7a4822dfcee6",
+        "strategies/toolbox.py": "c449141eeff8a4fb30f9c4ee07fb12f5b080dd7c31fea44f82865e436318f85d",
+        "universe.py": "35ac0c3f4a594064cceac53b46a98d15757c6a51a0f2dd7becb86c8c4b45ece7"
+      },
+      "id": "A1-thin-coin-quotes",
+      "reason": "Data-fault policy refined (day 0, before any result was looked at). A thin MID-tier coin can go >180 s without a trade, so its ticker looks stale; that used to abort the whole scan or 6h cycle (seen 2026-10-07 08:33 UTC: VVV-USD). Now a stale/invalid quote on a mid coin that NO arm holds leaves just that coin out for that tick/cycle (logged as COINS_LEFT_OUT). A stale quote on any LARGE-tier coin, on BTC, or on any held coin still blocks the cycle exactly as before, so the scored cross-section and every stop check are unchanged. Code: market_data/features.py, scanner.py, runner.py (none of the fingerprinted files)."
+    }
+  ],
   "code_git_sha": "ab4ee29d80041e663737348cb12c8793ad64ed4f",
   "experiment_id": "crypto_ai_v0_2",
   "hashes": {
