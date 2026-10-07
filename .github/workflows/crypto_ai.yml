@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state) | screen = universe eligibility screen | backtest = toolbox strategies alone | alpaca_probe = read-only Alpaca account check"
+        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state) | screen = universe eligibility screen | backtest = toolbox strategies alone | alpaca_probe = read-only Alpaca account check | weekly_preview = weekly check-in so far"
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report, smoke, screen, backtest, alpaca_probe]
+        options: [run, lock, report, smoke, screen, backtest, alpaca_probe, weekly_preview]
 
 concurrency:
   # state-writing actions share the loop's group (never two writers); research actions run freely
@@ -73,6 +73,7 @@ jobs:
             screen)   python -m research.universe_screen ;;
             backtest) python -m research.backtest_toolbox ;;
             alpaca_probe) python -m research.alpaca_probe ;;
+            weekly_preview) python -m crypto_ai.analytics.weekly --state-dir ../state --preview research/out/weekly_preview.md ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
           esac
 
@@ -86,7 +87,7 @@ jobs:
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-smoke
 
       - name: Save research output (separate branch, keeps earlier results)
-        if: always() && (github.event.inputs.action == 'screen' || github.event.inputs.action == 'backtest' || github.event.inputs.action == 'alpaca_probe')
+        if: always() && (github.event.inputs.action == 'screen' || github.event.inputs.action == 'backtest' || github.event.inputs.action == 'alpaca_probe' || github.event.inputs.action == 'weekly_preview')
         run: |
           [ -d code/research/out ] || exit 0
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
@@ -101,7 +102,7 @@ jobs:
           git push -q origin crypto-ai-research
 
       - name: Commit state
-        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen' && github.event.inputs.action != 'backtest' && github.event.inputs.action != 'alpaca_probe'
+        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen' && github.event.inputs.action != 'backtest' && github.event.inputs.action != 'alpaca_probe' && github.event.inputs.action != 'weekly_preview'
         working-directory: state
         run: |
           git config user.name "crypto-ai-bot"
