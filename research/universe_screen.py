@@ -25,14 +25,10 @@ import time
 
 from crypto_ai.market_data.coinbase import CoinbaseClient, DataFault
 
-STABLE = {"USDT", "USDC", "DAI", "PYUSD", "EURC", "GUSD", "PAX", "USDP", "USDS", "FDUSD", "TUSD",
-          "BUSD", "LUSD", "GYEN", "RLUSD", "USD1", "EUR", "GBP", "PAXG", "XAUT"}  # incl. gold-backed
-WRAPPED = {"WBTC", "CBBTC", "CBETH", "WSTETH", "RETH", "STETH", "MSOL", "JITOSOL", "LSETH", "WETH",
-           "WAXL", "TBTC", "LBTC"}
-MEME = {"DOGE", "SHIB", "PEPE", "BONK", "WIF", "FLOKI", "MOG", "TRUMP", "POPCAT", "PENGU", "BRETT",
-        "MEW", "TURBO", "FARTCOIN", "SPX", "GIGA", "PNUT", "MOODENG", "NEIRO", "DEGEN", "TOSHI",
-        "MELANIA", "WOJAK", "BOME", "MOTHER", "PONKE",
-        "USELESS", "PUMP"}  # PUMP = pump.fun launchpad token: memecoin-economy exposure
+from crypto_ai.lock import load_config
+
+_EX = load_config()["universe_rule"]["exclude"]          # one source of truth with the live rule
+STABLE, WRAPPED, MEME = (set(_EX["stablecoin"]), set(_EX["wrapped_or_staked"]), set(_EX["memecoin_project3"]))
 
 MIN_DAYS = 300
 MID_MIN_DAILY_USD = 5e6

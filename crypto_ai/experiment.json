@@ -1,15 +1,100 @@
 {
-  "experiment_id": "crypto_ai_v0_1",
-  "universe": [
-    "BTC-USD",
-    "ETH-USD",
-    "SOL-USD",
-    "XRP-USD",
-    "ADA-USD",
-    "LINK-USD",
-    "AVAX-USD",
-    "LTC-USD"
-  ],
+  "experiment_id": "crypto_ai_v0_2",
+  "universe_rule": {
+    "mode": "screen",
+    "_note": "See crypto_ai/universe.py. Rule uses no past returns. Refreshed monthly.",
+    "large_n": 10,
+    "mid_max_rank": 30,
+    "mid_min_daily_usd": 5000000,
+    "min_history_days": 300,
+    "exclude": {
+      "stablecoin": [
+        "USDT",
+        "USDC",
+        "DAI",
+        "PYUSD",
+        "EURC",
+        "GUSD",
+        "PAX",
+        "USDP",
+        "USDS",
+        "FDUSD",
+        "TUSD",
+        "BUSD",
+        "LUSD",
+        "GYEN",
+        "RLUSD",
+        "USD1",
+        "EUR",
+        "GBP",
+        "PAXG",
+        "XAUT"
+      ],
+      "wrapped_or_staked": [
+        "WBTC",
+        "CBBTC",
+        "CBETH",
+        "WSTETH",
+        "RETH",
+        "STETH",
+        "MSOL",
+        "JITOSOL",
+        "LSETH",
+        "WETH",
+        "WAXL",
+        "TBTC",
+        "LBTC"
+      ],
+      "memecoin_project3": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "BONK",
+        "WIF",
+        "FLOKI",
+        "MOG",
+        "TRUMP",
+        "POPCAT",
+        "PENGU",
+        "BRETT",
+        "MEW",
+        "TURBO",
+        "FARTCOIN",
+        "SPX",
+        "GIGA",
+        "PNUT",
+        "MOODENG",
+        "NEIRO",
+        "DEGEN",
+        "TOSHI",
+        "MELANIA",
+        "WOJAK",
+        "BOME",
+        "MOTHER",
+        "PONKE",
+        "USELESS",
+        "PUMP"
+      ]
+    },
+    "fixed_large": [
+      "BTC-USD",
+      "ETH-USD",
+      "XRP-USD",
+      "ZEC-USD",
+      "SOL-USD",
+      "NEAR-USD",
+      "SUI-USD",
+      "QNT-USD",
+      "LINK-USD",
+      "ADA-USD"
+    ],
+    "fixed_mid": [
+      "UNI-USD",
+      "AVAX-USD",
+      "LTC-USD"
+    ],
+    "_fixed_note": "fixed_* = offline tests/dry runs only; lock.py refuses mode=fixed"
+  },
   "majors": [
     "BTC-USD",
     "ETH-USD"
@@ -34,7 +119,8 @@
     "sensitivity_fee_bps": [
       10.0,
       60.0
-    ]
+    ],
+    "slippage_bps_mid": 10.0
   },
   "risk": {
     "max_weight_major": 0.35,
@@ -50,7 +136,8 @@
     "max_spread_bps": 50.0,
     "daily_loss_limit_pct": 8.0,
     "drawdown_halt_pct": 25.0,
-    "halt_lockout_days": 14
+    "halt_lockout_days": 14,
+    "max_weight_mid": 0.1
   },
   "llm": {
     "provider": "openai_compat",
@@ -81,12 +168,19 @@
     "max_tokens": 8000,
     "timeout_seconds": 120,
     "prompt_file": "prompts/trader_system_v1.md",
-    "parse_retries": 1
+    "parse_retries": 1,
+    "min_seconds_between_calls": 65
   },
   "arms": {
-    "ai_pv": {
+    "ai_large": {
       "kind": "ai",
-      "info_menu": "price_volume",
+      "view": "large",
+      "constrained": true
+    },
+    "ai_largemid": {
+      "kind": "ai",
+      "view": "large_mid",
+      "max_mid_candidates": 5,
       "constrained": true
     },
     "btc_hold": {
@@ -101,12 +195,31 @@
     },
     "ew_basket": {
       "kind": "equal_weight",
+      "over": "large",
       "rebalance": "monthly",
       "constrained": false
     },
-    "trend_quant": {
-      "kind": "trend",
-      "sma_days": 50,
+    "s_trend": {
+      "kind": "strategy",
+      "strategy": "trend",
+      "band": 0.05,
+      "constrained": true
+    },
+    "s_breakout": {
+      "kind": "strategy",
+      "strategy": "breakout",
+      "band": 0.05,
+      "constrained": true
+    },
+    "s_dip": {
+      "kind": "strategy",
+      "strategy": "dip",
+      "band": 0.05,
+      "constrained": true
+    },
+    "s_rotation": {
+      "kind": "strategy",
+      "strategy": "rotation",
       "band": 0.05,
       "constrained": true
     }
@@ -121,7 +234,12 @@
     "decision_months": [
       12,
       24
-    ]
+    ],
+    "scored_ai_arms": [
+      "ai_large",
+      "ai_largemid"
+    ],
+    "scored_assets": "large"
   },
   "scanner": {
     "interval_minutes": 5,
@@ -135,10 +253,35 @@
       "volume_spike_min_move_pct": 1.5
     },
     "cooldown_minutes": 180,
-    "max_event_calls_per_day": 20,
+    "max_event_calls_per_day": 10,
     "min_minutes_between_event_calls": 30,
     "quiet_minutes_before_cycle": 30,
     "heartbeat_minutes": 60,
-    "_note": "Budget: Groq free tier 200k tokens/day; ~5.6k tokens per call; 4 scheduled + 20 events + retries stays under it."
+    "_note": "Per AI arm. Budget: Groq free tier 200k tokens/day and 8k tokens/min; ~5-7k tokens per call; 2 arms x (4 scheduled + 10 events) + retries stays under it. Calls are spaced >= 65 s apart."
+  },
+  "strategies": {
+    "_note": "Textbook defaults, fixed before any test. Not tuned. See crypto_ai/strategies/toolbox.py.",
+    "trend": {
+      "sma_days": 50,
+      "slope_lookback_days": 10
+    },
+    "breakout": {
+      "entry_high_days": 20,
+      "exit_low_days": 10,
+      "volume_mult": 1.5
+    },
+    "dip": {
+      "trend_sma_days": 50,
+      "slope_lookback_days": 10,
+      "drop_days": 3,
+      "drop_pct": 8.0,
+      "max_below_sma_pct": 10.0,
+      "exit_sma_days": 10,
+      "max_hold_days": 10
+    },
+    "rotation": {
+      "lookback_days": 28,
+      "top_n": 3
+    }
   }
 }

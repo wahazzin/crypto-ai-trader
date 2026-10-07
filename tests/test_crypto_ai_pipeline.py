@@ -23,7 +23,8 @@ from crypto_ai.lock import load_config
 from crypto_ai.market_data.coinbase import DataFault, closed_only
 from crypto_ai.runner import cycle_id_for, run_cycle
 
-CFG = load_config()
+from tests.helpers import test_cfg
+CFG = test_cfg()
 UNI = CFG["universe"]
 CID = "2026-10-01T12:00Z"
 
@@ -196,18 +197,18 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(self.run_at(self.t0 + timedelta(minutes=30))["status"], "ALREADY_DONE")
         r2 = self.run_at(self.t0 + timedelta(hours=6))
         self.assertEqual(r2["status"], "OK")
-        ai_buys = [o for o in self.j.read("orders.jsonl") if o["arm"] == "ai_pv" and o["side"] == "buy"]
+        ai_buys = [o for o in self.j.read("orders.jsonl") if o["arm"] == "ai_large" and o["side"] == "buy"]
         self.assertEqual(len(ai_buys), 1)                  # mock HOLDs on cycle 2, no double buy
         bh = [o for o in self.j.read("orders.jsonl") if o["arm"] == "btc_hold"]
         self.assertEqual(len(bh), 1)                       # buy-and-hold really holds
-        self.assertTrue(os.path.exists(os.path.join(self.dir, "theses.json")))
-        fb = self.j.load_json("ai_feedback.json")
-        self.assertEqual(fb["from_cycle"], "2026-10-01T18:00Z")
+        for arm in ("ai_large", "ai_largemid"):
+            self.assertTrue(os.path.exists(os.path.join(self.dir, "theses", f"{arm}.json")))
+            self.assertEqual(self.j.load_json(f"feedback/{arm}.json")["from"], "2026-10-01T18:00Z")
 
     def test_bad_llm_output_means_no_ai_trades_but_baselines_run(self):
         r = self.run_at(self.t0, llm=BadLLM())
         self.assertEqual(r["status"], "OK_AI_FAULT")
-        self.assertFalse(any(o["arm"] == "ai_pv" for o in self.j.read("orders.jsonl")))
+        self.assertFalse(any(o["arm"] == "ai_large" for o in self.j.read("orders.jsonl")))
         self.assertTrue(any(o["arm"] == "btc_hold" for o in self.j.read("orders.jsonl")))
         p = self.j.read("prompts.jsonl")[0]
         self.assertEqual(len(p["attempts"]), 1 + CFG["llm"]["parse_retries"])
@@ -226,9 +227,9 @@ class TestEndToEnd(unittest.TestCase):
 
     def test_every_ai_decision_and_risk_outcome_is_logged(self):
         self.run_at(self.t0)
-        rows = [r for r in self.j.read("decisions.jsonl") if r["arm"] == "ai_pv"]
+        rows = [r for r in self.j.read("decisions.jsonl") if r["arm"] == "ai_large"]
         self.assertEqual(len(rows), 1)
-        self.assertEqual(set(rows[0]["outlook"]), set(UNI))
+        self.assertEqual(set(rows[0]["outlook"]), set(CFG["large"]))
         self.assertTrue(all("status" in d and "codes" in d for d in rows[0]["risk_decisions"]))
 
 

@@ -60,6 +60,21 @@ class CoinbaseClient:
         except (KeyError, ValueError) as e:
             raise DataFault(f"{product} ticker malformed: {e}")
 
+    def products(self):
+        """Every product listed on the exchange (used by the universe screen)."""
+        rows = self._get("/products")
+        if not isinstance(rows, list):
+            raise DataFault("products: unexpected response")
+        return rows
+
+    def stats(self, product):
+        """24h and 30-day volume (in base currency)."""
+        j = self._get(f"/products/{product}/stats")
+        try:
+            return {"volume_30day": float(j.get("volume_30day") or 0), "last": float(j.get("last") or 0)}
+        except (TypeError, ValueError) as e:
+            raise DataFault(f"{product} stats malformed: {e}")
+
     def candles(self, product, granularity):
         rows = self._get(f"/products/{product}/candles", {"granularity": granularity})
         out = [{"t": int(r[0]), "low": float(r[1]), "high": float(r[2]), "open": float(r[3]),

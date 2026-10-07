@@ -21,7 +21,8 @@ from crypto_ai.lock import load_config
 from crypto_ai.portfolio.state import Portfolio, Position
 from crypto_ai.risk.engine import Proposal, evaluate, update_breakers
 
-CFG = load_config()
+from tests.helpers import test_cfg
+CFG = test_cfg()
 # Rule-isolation config: turnover cap effectively off, so position/exposure caps can be tested
 # on their own. Turnover behaviour (R6) is tested separately against the REAL config.
 CFG_LOOSE = json.loads(json.dumps(CFG))
@@ -299,9 +300,10 @@ class TestLockAndIsolation(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
         self.pkg = os.path.join(self.tmp, "pkg")
-        os.makedirs(os.path.join(self.pkg, "prompts"))
+        for d in ("prompts", "strategies", "risk"):
+            os.makedirs(os.path.join(self.pkg, d))
         src = lockmod.PKG_DIR
-        for f in ["PREREGISTRATION.md", "experiment.json", os.path.join("prompts", "trader_system_v1.md")]:
+        for f in ["PREREGISTRATION.md", "experiment.json", os.path.join("prompts", "trader_system_v1.md")] + lockmod.LOCKED_CODE:
             shutil.copy(os.path.join(src, f), os.path.join(self.pkg, f))
         self.state = os.path.join(self.tmp, "state")
 

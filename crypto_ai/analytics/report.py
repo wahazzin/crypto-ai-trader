@@ -69,16 +69,20 @@ def build_report(state_dir, cfg, now=None):
 
     dec, snaps = j.read("decisions.jsonl"), j.read("snapshots.jsonl")
     lag = cfg["evaluation"]["nw_lag_days"]
-    ic24 = M.daily_ic_stats(M.ic_series(dec, snaps, 24), lag)
-    ic72 = M.daily_ic_stats(M.ic_series(dec, snaps, 72), lag)
+    verdicts = {}
     lines.append("")
-    lines.append("PRIMARY TEST -- AI outlook vs next return (cross-sectional Spearman IC)")
-    for name, s in (("24h", ic24), ("72h", ic72)):
-        lines.append(f"  IC{name}: mean={_f(s['mean_ic'], d=4)}  NW t={_f(s['t_nw'])}  days={s['n_days']}  "
-                     f"cycles={s['n_cycles']}  undefined(all-equal outlook)={s['n_undefined']}")
+    lines.append("PRIMARY TEST -- AI outlook vs next return (cross-sectional Spearman IC, large tier)")
+    for arm in cfg["evaluation"].get("scored_ai_arms", ["ai_pv"]):
+        ic24 = M.daily_ic_stats(M.ic_series(dec, snaps, 24, arm), lag)
+        ic72 = M.daily_ic_stats(M.ic_series(dec, snaps, 72, arm), lag)
+        verdicts[arm] = (ic24, ic72)
+        for name, s_ in (("24h", ic24), ("72h", ic72)):
+            lines.append(f"  {arm:12} IC{name}: mean={_f(s_['mean_ic'], d=4)}  NW t={_f(s_['t_nw'])}  "
+                         f"days={s_['n_days']}  cycles={s_['n_cycles']}  undefined={s_['n_undefined']}")
     lines.append("")
     if at_decision:
-        lines.append(f"DECISION POINT ({decision} months) -- primary verdict: {M.primary_verdict(ic24, ic72)}")
+        for arm, (ic24, ic72) in verdicts.items():
+            lines.append(f"DECISION POINT ({decision} months) -- {arm} primary verdict: {M.primary_verdict(ic24, ic72)}")
         lines.append("Secondary (economic) test applies only if primary = PREDICTIVE; see PREREGISTRATION.md s7.")
     else:
         need = cfg["evaluation"]["decision_months"][0]

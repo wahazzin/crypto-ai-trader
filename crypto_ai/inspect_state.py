@@ -35,12 +35,20 @@ if __name__ == "__main__":
             fw = None if x["final_weight"] is None else round(x["final_weight"], 4)
             print(f"  {r['arm']:12} {x['action']:6} {x['asset']:9} {x['status']:8} "
                   f"req={x['requested_weight']} final={fw} codes={x['codes']}")
-        if r["arm"] == "ai_pv":
-            print(f"  ai outlook: {r.get('outlook')}")
+        if "outlook" in r or "view" in r:
+            print(f"  {r['arm']} sees: {r.get('view')}")
+            print(f"  {r['arm']} outlook: {r.get('outlook')}")
             if r.get("errors"):
-                print(f"  ai ERRORS: {r['errors']}")
+                print(f"  {r['arm']} ERRORS: {r['errors']}")
     print("\n-- events --")
     for e in [e for e in j.read("events.jsonl") if e.get("cycle_id") == cid]:
         print(" ", e)
-    snap = [s for s in j.read("snapshots.jsonl") if s["cycle_id"] == cid][-1]["assets"]["BTC-USD"]
-    print("\n-- BTC features --\n ", json.dumps(snap["features"]))
+    u = j.load_json("universe.json") or {}
+    print(f"\n-- universe ({u.get('asof_month')}) --\n  large: {u.get('large')}\n  mid:   {u.get('mid')}")
+    sig = [s for s in j.read("signals.jsonl") if s["cycle_id"] == cid]
+    if sig:
+        print("\n-- toolbox signals (coins with any signal on) --")
+        for a, s in sig[-1]["signals"].items():
+            on = [n for n in ("trend", "breakout", "dip") if s[n].get("on")] + (["rotation"] if s["rotation"].get("pick") else [])
+            if on:
+                print(f"  {a:10} {', '.join(on)}")

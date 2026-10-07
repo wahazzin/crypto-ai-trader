@@ -87,21 +87,22 @@ def spearman(a, b):
     return float(a.rank().corr(b.rank()))
 
 
-def ic_series(decision_rows, snapshot_rows, horizon_hours):
+def ic_series(decision_rows, snapshot_rows, horizon_hours, arm="ai_pv"):
     """Per-cycle cross-sectional IC between AI outlook and forward return over horizon_hours.
     Forward return uses the snapshot EXACTLY horizon_hours later; if that cycle was skipped,
     the observation is dropped (never interpolated)."""
     mids = {s["cycle_id"]: {a: v["mid"] for a, v in s["assets"].items()} for s in snapshot_rows}
     out = []
     for d in decision_rows:
-        if d.get("arm") != "ai_pv" or not d.get("outlook"):
+        if d.get("arm") != arm or not d.get("outlook"):
             continue
         t0 = parse_iso(d["cycle_id"].replace("Z", ":00Z"))
         c1 = (t0 + timedelta(hours=horizon_hours)).strftime("%Y-%m-%dT%H:00Z")
         if d["cycle_id"] not in mids or c1 not in mids:
             continue
         m0, m1 = mids[d["cycle_id"]], mids[c1]
-        assets = [a for a in d["outlook"] if a in m0 and a in m1]
+        scored = set(d.get("scored_assets") or d["outlook"])     # the large tier only
+        assets = [a for a in d["outlook"] if a in scored and a in m0 and a in m1]
         ic = spearman([d["outlook"][a] for a in assets], [m1[a] / m0[a] - 1 for a in assets])
         out.append({"cycle_id": d["cycle_id"], "date": t0.date(), "ic": ic})
     return out

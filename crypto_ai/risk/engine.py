@@ -145,6 +145,8 @@ def evaluate(proposals, pf, snap, cfg, now):
             out.append(_dec(p, "REJECTED", ["R13_HALTED"])); continue
         if nobuy:
             out.append(_dec(p, "REJECTED", ["R9_DAILY_LOSS_NO_BUYS"])); continue
+        if cfg.get("eligible") is not None and a not in cfg["eligible"]:
+            out.append(_dec(p, "REJECTED", ["R15_NOT_ELIGIBLE"])); continue
         if assets[a]["spread_bps"] > rk["max_spread_bps"]:
             out.append(_dec(p, "REJECTED", ["R8_SPREAD_TOO_WIDE"])); continue
 
@@ -153,7 +155,9 @@ def evaluate(proposals, pf, snap, cfg, now):
         if abs(sp - req) > EPS:
             codes.append("R5_STOP_ADJUSTED")
 
-        cap_asset = rk["max_weight_major"] if a in majors else rk["max_weight_alt"]
+        cap_asset = (rk["max_weight_major"] if a in majors else
+                     rk.get("max_weight_mid", rk["max_weight_alt"]) if a in cfg.get("mid", ()) else
+                     rk["max_weight_alt"])
         cap_risk = rk["max_risk_per_position_equity_pct"] / sp
         tw = p.target_weight
         if tw > min(cap_asset, cap_risk) + EPS:

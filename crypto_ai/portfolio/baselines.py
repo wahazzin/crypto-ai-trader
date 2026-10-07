@@ -53,9 +53,10 @@ def reference_targets(arm, pf, cfg, now):
         if pf.extra.get("last_rebalance_month") == month:
             return None
         pf.extra["last_rebalance_month"] = month
-        n = len(cfg["universe"])
+        coins = cfg.get(cfg["arms"][arm].get("over", "universe"), cfg["universe"])
+        n = len(coins)
         # 1/n minus a hair so fees on the buys don't make the last order fail for lack of cash
-        return {a: (1.0 / n) * 0.995 for a in cfg["universe"]}
+        return {a: (1.0 / n) * 0.995 for a in coins}
     raise ValueError(f"not a reference arm: {arm}")
 
 

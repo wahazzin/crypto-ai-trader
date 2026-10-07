@@ -94,7 +94,8 @@ def build_snapshot(cfg, client, now):
             "quote_age_s": round((now - tk["time"]).total_seconds(), 1),
             "features": compute_features(tk, hourly[p], daily[p], btc_lr),
         }
-    return {"assets": assets}, hourly
+    # daily candles ride along (not logged) so the strategy toolbox uses exactly the same data
+    return {"assets": assets, "daily": daily}, hourly
 
 
 def fresh_quotes(cfg, client, assets, now):

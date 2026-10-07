@@ -36,6 +36,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from crypto_ai.journal import Journal, iso, now_utc
 
 PKG_DIR = os.path.dirname(os.path.abspath(__file__))
+# Code whose behaviour IS the experiment: strategy rules, risk rules, the universe rule.
+# Editing these after the lock (even a "harmless" tweak) needs a logged amendment.
+LOCKED_CODE = [os.path.join("strategies", "toolbox.py"), os.path.join("risk", "engine.py"), "universe.py"]
 
 
 def load_config(pkg_dir=PKG_DIR):
@@ -51,7 +54,7 @@ def _sha(path):
 
 def compute_hashes(pkg_dir=PKG_DIR):
     cfg = load_config(pkg_dir)
-    names = ["PREREGISTRATION.md", "experiment.json", cfg["llm"]["prompt_file"]]
+    names = ["PREREGISTRATION.md", "experiment.json", cfg["llm"]["prompt_file"]] + LOCKED_CODE
     return {n: _sha(os.path.join(pkg_dir, n)) for n in names}
 
 
@@ -73,6 +76,8 @@ def create_lock(state_dir, pkg_dir=PKG_DIR):
     cfg = load_config(pkg_dir)
     if cfg["llm"]["provider"] == "mock":
         raise RuntimeError("Refusing to lock with the mock LLM provider.")
+    if cfg["universe_rule"]["mode"] != "screen":
+        raise RuntimeError("Refusing to lock with a fixed (test) universe; the rule must pick the coins.")
     lock = {
         "experiment_id": cfg["experiment_id"],
         "locked_at": iso(now_utc()),

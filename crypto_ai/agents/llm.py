@@ -25,6 +25,12 @@ class LLMError(Exception):
     pass
 
 
+class RateLimited(LLMError):
+    def __init__(self, msg, wait):
+        super().__init__(msg)
+        self.wait = wait
+
+
 class AnthropicLLM:
     def __init__(self, cfg):
         self.c = cfg["llm"]
@@ -77,6 +83,8 @@ class OpenAICompatLLM:
     def __init__(self, cfg):
         self.c = cfg["llm"]
         self.endpoints = [e for e in self.c["endpoints"] if os.environ.get(e["key_env"])]
+        self.min_gap = self.c.get("min_seconds_between_calls", 0)   # free tier: 8k tokens/MINUTE
+        self._last_call = 0.0
         if not self.endpoints:
             raise LLMError("no API key set for any endpoint: " +
                            ", ".join(e["key_env"] for e in self.c["endpoints"]))
@@ -89,6 +97,12 @@ class OpenAICompatLLM:
         headers = {"Authorization": f"Bearer {os.environ[ep['key_env']]}",
                    "Content-Type": "application/json"}
         r = requests.post(ep["url"], headers=headers, json=body, timeout=self.c["timeout_seconds"])
+        if r.status_code == 429:
+            try:
+                wait = min(float((getattr(r, "headers", None) or {}).get("retry-after", 30)), 70)
+            except ValueError:
+                wait = 30
+            raise RateLimited(f"{ep['name']} HTTP 429 (rate limit), retry after {wait:.0f}s", wait)
         if r.status_code != 200:
             raise LLMError(f"{ep['name']} HTTP {r.status_code}: {r.text[:300]}")
         j = r.json()
@@ -100,14 +114,21 @@ class OpenAICompatLLM:
                 "tokens_in": u.get("prompt_tokens"), "tokens_out": u.get("completion_tokens")}
 
     def complete(self, system, user, ctx=None):
+        gap = self.min_gap - (time.time() - self._last_call)
+        if gap > 0:
+            time.sleep(gap)                      # keep two AI arms from sharing one token-minute
         t0, errors = time.time(), []
         for ep in self.endpoints:
             for attempt in range(2):
                 try:
+                    self._last_call = time.time()
                     out = self._call(ep, system, user)
                     out["latency_s"] = round(time.time() - t0, 2)
                     out["endpoint_errors"] = errors
                     return out
+                except RateLimited as e:
+                    errors.append(str(e)[:300])
+                    time.sleep(e.wait)
                 except (LLMError, requests.RequestException) as e:
                     errors.append(str(e)[:300])
                     time.sleep(4 * (attempt + 1))

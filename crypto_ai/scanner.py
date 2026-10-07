@@ -36,15 +36,17 @@ import sys
 import time
 from datetime import timedelta
 
-from crypto_ai.agents.llm import LLMError, make_llm
-from crypto_ai.agents.trader import apply_thesis_updates, decide
+from crypto_ai import universe as U
+from crypto_ai.agents.llm import make_llm
 from crypto_ai.execution.paper_exchange import execute, replay_stops
 from crypto_ai.journal import Journal, iso, now_utc, parse_iso
 from crypto_ai.lock import load_config, verify_lock
 from crypto_ai.market_data.coinbase import CoinbaseClient, DataFault, closed_only
 from crypto_ai.market_data.features import build_snapshot, fresh_quotes
-from crypto_ai.risk.engine import evaluate, update_breakers
-from crypto_ai.runner import _alert, _execute_decisions, _load_arms, cycle_id_for, run_cycle
+from crypto_ai.risk.engine import update_breakers
+from crypto_ai.runner import (_alert, _load_arms, ai_arms, ai_decide, ai_execute, cycle_id_for,
+                              run_cycle, save_feedback)
+from crypto_ai.strategies import toolbox
 
 
 def _slot_start(now):
@@ -78,9 +80,10 @@ def _market(cfg, client, now):
     return quotes, candles
 
 
-def find_triggers(cfg, quotes, candles, ai_pf, theses):
+def find_triggers(cfg, quotes, candles, ai_pf, theses, watch=None):
     """Pure function: what (if anything) is worth waking the AI for. Returns a list of dicts,
-    each with a dedupe `key`."""
+    each with a dedupe `key`. `watch` limits the move/volume checks to the coins this AI arm
+    can see; its own exit/review levels are always checked."""
     sc, tr = cfg["scanner"], cfg["scanner"]["triggers"]
     per_hour = 3600 // sc["candle_granularity_s"]
     out = []
@@ -94,7 +97,7 @@ def find_triggers(cfg, quotes, candles, ai_pf, theses):
             out.append({"key": f"{a}:review_above:{t['review_above']}", "asset": a, "type": "REVIEW_ABOVE_REACHED",
                         "price": mid, "level": t["review_above"], "once": True})
         c = candles.get(a, [])
-        if len(c) < per_hour:
+        if len(c) < per_hour or (watch is not None and a not in watch and not held):
             continue
         move = mid / c[-per_hour]["open"] - 1
         if abs(move) * 100 >= tr["move_1h_pct"]:
@@ -138,6 +141,14 @@ def _budget_block(st, now, cfg):
     return None
 
 
+def _arm_watch(arm, ccfg, pf):
+    spec = ccfg["arms"][arm]
+    w = set(ccfg["large"]) | set(pf.positions)
+    if spec["view"] == "large_mid":
+        w |= set(ccfg["mid"])
+    return w
+
+
 def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=True):
     t0 = time.time()
     now = now or now_utc()
@@ -151,14 +162,20 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
     if cycle_due(j, cfg, now):
         out = run_cycle(state_dir, cfg, client, llm, now, dry_run=dry_run, require_lock=require_lock)
         return {"mode": "cycle", **out}
+    uni = j.load_json("universe.json")
+    if uni is None:                       # nothing to watch until the first cycle has run
+        return {"mode": "scan", "status": "QUIET", "note": "no cycle yet"}
 
-    st = j.load_json("scanner_state.json", {"fired": {}, "calls_day": None, "calls_today": 0,
-                                             "last_call": None, "last_heartbeat": None, "scans_since_heartbeat": 0})
+    st = j.load_json("scanner_state.json", {"fired": {}, "arms": {}, "last_heartbeat": None,
+                                             "scans_since_heartbeat": 0})
+    st.setdefault("arms", {})
     sid = f"{now:%Y-%m-%dT%H:%MZ}"
     scan_id = f"scan:{sid}"
+    arms = _load_arms(j, cfg)
+    ccfg = U.cycle_config(cfg, uni, {a for pf in arms.values() for a in pf.positions})
 
     try:
-        quotes, candles = _market(cfg, client, now)
+        quotes, candles = _market(ccfg, client, now)
     except DataFault as e:
         st["scans_since_heartbeat"] += 1
         st["last_data_fault"] = {"ts": iso(now), "error": str(e)}
@@ -166,7 +183,6 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
         return {"mode": "scan", "status": "DATA_FAULT", "error": str(e)}
 
     mids = {a: q["mid"] for a, q in quotes.items()}
-    arms = _load_arms(j, cfg)
     fills, events = [], []
 
     # ---- a/b. stops and breakers, every constrained arm alike ------------------------------------
@@ -174,7 +190,7 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
         if not cfg["arms"][name]["constrained"]:
             continue
         since = parse_iso(pf.last_ts).timestamp() if pf.last_ts else None
-        for f in replay_stops(pf, candles, quotes, cfg, now, scan_id, since_ts=since,
+        for f in replay_stops(pf, candles, quotes, ccfg, now, scan_id, since_ts=since,
                               granularity=cfg["scanner"]["candle_granularity_s"]):
             fills.append(f)
             events.append({"type": "STOP_TRIGGERED", "arm": name, "asset": f["asset"],
@@ -183,31 +199,43 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
         events += [{**e, "source": "scanner"} for e in evs]
         if liquidate:
             for a in list(pf.positions):
-                f = execute(pf, a, "sell", 0, quotes[a], cfg, now, "breaker", scan_id, full_exit=True)
+                f = execute(pf, a, "sell", 0, quotes[a], ccfg, now, "breaker", scan_id, full_exit=True)
                 if f:
                     fills.append(f)
             _alert(f"{name}: drawdown halt (scanner), liquidated, buys locked until {pf.halted_until}", dry_run)
 
-    # ---- c. triggers -------------------------------------------------------------------------------
-    ai = arms["ai_pv"]
-    theses = j.load_json("theses.json", {})
-    trig = _new_triggers(find_triggers(cfg, quotes, candles, ai, theses), st, now, cfg)
-    woke = None
-    if trig:
-        block = _budget_block(st, now, cfg)
-        if ai.halted_until:
-            block = "ARM_HALTED"
-        events.append({"type": "SCANNER_TRIGGER", "triggers": [{k: v for k, v in t.items() if k != "once"} for t in trig],
+    # ---- c. triggers, per AI arm -------------------------------------------------------------------
+    to_wake = []
+    for arm in ai_arms(cfg):
+        pf = arms[arm]
+        ast = st["arms"].setdefault(arm, {"calls_day": None, "calls_today": 0, "last_call": None})
+        theses = j.load_json(f"theses/{arm}.json", {})
+        trig = find_triggers(ccfg, quotes, candles, pf, theses, watch=_arm_watch(arm, ccfg, pf))
+        for t in trig:
+            t["key"] = f"{arm}|{t['key']}"
+        trig = _new_triggers(trig, st, now, cfg)
+        if not trig:
+            continue
+        block = "ARM_HALTED" if pf.halted_until else _budget_block(ast, now, cfg)
+        events.append({"type": "SCANNER_TRIGGER", "arm": arm,
+                       "triggers": [{k: v for k, v in t.items() if k != "once"} for t in trig],
                        "woke_ai": block is None, "blocked_by": block})
         if block is None:
-            woke = _wake_ai(j, cfg, client, llm, now, sid, ai, theses, trig, dry_run)
-            fills += woke["fills"]
-            events += woke["events"]
+            to_wake.append((arm, trig))
+
+    woke = []
+    if to_wake:
+        woke = _wake_ai(j, ccfg, client, llm, now, sid, arms, to_wake, dry_run)
+        for arm, trig in to_wake:
+            ast = st["arms"][arm]
             day = now.strftime("%Y-%m-%d")
-            st["calls_today"] = st["calls_today"] + 1 if st["calls_day"] == day else 1
-            st["calls_day"], st["last_call"] = day, iso(now)
+            ast["calls_today"] = ast["calls_today"] + 1 if ast["calls_day"] == day else 1
+            ast["calls_day"], ast["last_call"] = day, iso(now)
             for t in trig:
                 st["fired"][t["key"]] = iso(now)
+        for w in woke:
+            fills += w["fills"]
+            events += w["events"]
 
     # ---- persist (only if something happened, or heartbeat due) ---------------------------------
     st["scans_since_heartbeat"] += 1
@@ -231,61 +259,40 @@ def run_scan(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock=
     st["fired"] = {k: v for k, v in st["fired"].items() if now - parse_iso(v) < timedelta(days=30)}
     j.save_json("scanner_state.json", st)
     return {"mode": "scan", "status": "ACTIVE" if (fills or events) else "HEARTBEAT",
-            "fills": len(fills), "events": events, "woke_ai": woke is not None,
+            "fills": len(fills), "events": events, "woke_ai": [a for a, _ in to_wake],
             "duration_s": round(time.time() - t0, 1)}
 
 
-def _wake_ai(j, cfg, client, llm, now, sid, ai, theses, triggers, dry_run):
-    """One event-driven AI decision. Same validation, same risk engine, same fills as a cycle."""
+def _wake_ai(j, ccfg, client, llm, now, sid, arms, to_wake, dry_run):
+    """Event-driven decisions for the woken AI arms. One shared snapshot and toolbox, then the
+    same validation, risk engine and fills as a scheduled cycle."""
     eid = f"{sid}-event"
-    wake = {"reason": [{k: v for k, v in t.items() if k not in ("once", "key")} for t in triggers],
-            "note": "Woken between scheduled cycles by the code scanner. Act only if this matters. "
-                    "DO_NOTHING is fine. Outlook required but not scored."}
-    row = {"event_id": eid, "ts": iso(now), "arm": "ai_pv", "wake": wake}
-    fills, events, decs = [], [], []
     try:
-        snap, _ = build_snapshot(cfg, client, now)
+        snap, _ = build_snapshot(ccfg, client, now)
     except DataFault as e:
-        row.update({"ok": False, "errors": [f"snapshot: {e}"]})
+        for arm, _t in to_wake:
+            j.append("event_decisions.jsonl", {"event_id": eid, "ts": iso(now), "arm": arm,
+                                               "ok": False, "errors": [f"snapshot: {e}"]})
+        return [{"fills": [], "events": [{"type": "EVENT_DATA_FAULT", "error": str(e)}]}]
+    signals = toolbox.compute_signals(snap["daily"], ccfg["eligible"], ccfg)
+    ctxs = []
+    for arm, trig in to_wake:
+        wake = {"reason": [{k: v for k, v in t.items() if k not in ("once", "key")} for t in trig],
+                "note": "Woken between scheduled cycles by the code scanner. Act only if this matters. "
+                        "DO_NOTHING is fine. Outlook required but not scored."}
+        c = ai_decide(j, arm, ccfg, llm, eid, snap, arms[arm], signals, now, wake=wake)
+        c["row"]["wake"] = wake
+        ctxs.append(c)
+    quotes = fresh_quotes(ccfg, client, ccfg["universe"], now_utc() if not dry_run else now)
+    out = []
+    for c in ctxs:
+        fills, decs = ai_execute(j, c, arms[c["arm"]], quotes, now, eid, "ai_event", "event_prompts.jsonl")
+        row = dict(c["row"], event_id=eid)
         j.append("event_decisions.jsonl", row)
-        return {"fills": [], "events": [{"type": "EVENT_DATA_FAULT", "error": str(e)}]}
-    feedback = j.load_json("ai_feedback.json", {"note": "no feedback yet"})
-    try:
-        result = decide(llm, cfg, eid, snap, ai, theses, feedback, now, wake=wake)
-        last = result["attempts"][-1]
-        j.append("event_prompts.jsonl", {"event_id": eid, "system_sha256": result["system_sha256"],
-                                         "prompt_sha256": result["prompt_sha256"],
-                                         "user_prompt": result["user_prompt"], "attempts": result["attempts"]})
-        row.update({"ok": result["ok"], "errors": result["errors"], "model_id": last["model_id"],
-                    "tokens_in": sum(a["tokens_in"] or 0 for a in result["attempts"]),
-                    "tokens_out": sum(a["tokens_out"] or 0 for a in result["attempts"]),
-                    "latency_s": last["latency_s"], "n_attempts": len(result["attempts"])})
-        if result["ok"]:
-            quotes = fresh_quotes(cfg, client, cfg["universe"], now_utc() if not dry_run else now)
-            decs = evaluate(result["proposals"], ai, snap, cfg, now)
-            fills = _execute_decisions(ai, decs, quotes, cfg, now, eid, "ai_event")
-            new_theses, hist = apply_thesis_updates(theses, result["parsed"], eid)
-            for h in hist:
-                j.append("theses_history.jsonl", {**h, "source": "event"})
-            j.save_json("theses.json", new_theses)
-            p = result["parsed"]
-            row.update({"outlook": p["outlook"], "decisions": p["decisions"],
-                        "thesis_updates": p["thesis_updates"], "portfolio_note": p["portfolio_note"]})
-        else:
-            events.append({"type": "AI_FAULT", "errors": result["errors"], "source": "event"})
-    except LLMError as e:
-        row.update({"ok": False, "errors": [str(e)]})
-        events.append({"type": "AI_FAULT", "errors": [str(e)], "source": "event"})
-    row["risk_decisions"] = decs
-    j.append("event_decisions.jsonl", row)
-    if decs or fills:
-        j.save_json("ai_feedback.json", {
-            "from_event": eid,
-            "risk_engine": [{k: d[k] for k in ("asset", "action", "status", "codes", "requested_weight", "final_weight")}
-                            for d in decs],
-            "your_fills": [{k: f[k] for k in ("asset", "side", "qty", "price", "cause")} for f in fills],
-            "events": []})
-    return {"fills": fills, "events": events}
+        if decs or fills:
+            save_feedback(j, c["arm"], eid, decs, fills, [])
+        out.append({"fills": fills, "events": [dict(e, source="event") for e in c["events"]]})
+    return out
 
 
 if __name__ == "__main__":

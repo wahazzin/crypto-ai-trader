@@ -56,6 +56,7 @@ class Journal:
 
     def save_json(self, name, obj):
         final = self.path(name)
+        os.makedirs(os.path.dirname(final), exist_ok=True)
         tmp = final + ".tmp"
         with open(tmp, "w", encoding="utf-8", newline="\n") as f:
             json.dump(obj, f, indent=2, sort_keys=True, default=str)

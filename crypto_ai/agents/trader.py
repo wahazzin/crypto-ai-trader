@@ -53,7 +53,7 @@ def _pct(x):
     return None if x is None else round(100 * x, 2)
 
 
-def build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake=None):
+def build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake=None, extra=None):
     assets = snapshot["assets"]
     mids = {a: v["mid"] for a, v in assets.items()}
     eq = pf.equity(mids)
@@ -95,16 +95,18 @@ def build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake=N
                "note": "Returns/vol/distances are in PERCENT. Features use closed candles only.",
                "market": market, "portfolio": portfolio, "open_theses": theses_view,
                "last_cycle_feedback": feedback}
+    if extra:
+        payload.update(extra)
     if wake:
         payload["wake"] = wake
     return ("Current state (JSON). Decide and respond with the JSON object only.\n\n"
             + json.dumps(payload, indent=1, sort_keys=True))
 
 
-def decide(llm, cfg, cycle_id, snapshot, pf, theses, feedback, now, wake=None):
+def decide(llm, cfg, cycle_id, snapshot, pf, theses, feedback, now, wake=None, extra=None, arm="ai_pv"):
     """Returns a result dict. Never raises for bad model output -- it degrades to DO_NOTHING."""
     system = render_system_prompt(cfg)
-    user = build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake)
+    user = build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake, extra)
     mids = {a: v["mid"] for a, v in snapshot["assets"].items()}
     ctx = {"cycle_id": cycle_id, "snapshot": snapshot, "weights": pf.weights(mids)}
     attempts, parsed, errors = [], None, []
@@ -120,7 +122,7 @@ def decide(llm, cfg, cycle_id, snapshot, pf, theses, feedback, now, wake=None):
     proposals = []
     if parsed is not None:
         for d in parsed["decisions"]:
-            proposals.append(Proposal("ai_pv", d["asset"], d["action"], d.get("target_weight"),
+            proposals.append(Proposal(arm, d["asset"], d["action"], d.get("target_weight"),
                                       d.get("stop_loss_pct"), "ai"))
     return {"ok": parsed is not None, "parsed": parsed, "errors": errors, "attempts": attempts,
             "proposals": proposals, "user_prompt": user,

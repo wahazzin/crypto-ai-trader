@@ -24,7 +24,9 @@ from crypto_ai.portfolio.state import Position
 
 def slippage_bps(cfg, asset, notional, volume_24h_usd):
     c = cfg["costs"]
-    base = c["slippage_bps_major"] if asset in cfg["majors"] else c["slippage_bps_alt"]
+    base = (c["slippage_bps_major"] if asset in cfg["majors"] else
+            c.get("slippage_bps_mid", c["slippage_bps_alt"]) if asset in cfg.get("mid", ()) else
+            c["slippage_bps_alt"])
     impact = c["impact_coeff"] * (notional / volume_24h_usd) * 1e4 if volume_24h_usd > 0 else 0.0
     return base + impact
 
