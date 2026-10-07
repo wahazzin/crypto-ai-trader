@@ -40,8 +40,17 @@ Coinbase prices ──► features ──► AI (gpt-oss-120b, free)
                     next cycle, the AI sees what happened
 ```
 
-Next to the AI, four baselines trade the same market: **BTC hold, ETH hold, equal-weight basket,
-simple trend rule**. If the AI can't beat these, it isn't good.
+**Nine paper portfolios run side by side**, all with $10k:
+
+| Portfolio | What it is |
+|---|---|
+| `ai_large` | The AI, looking at the 10 largest coins |
+| `ai_largemid` | The AI, also shown up to 5 smaller coins the strategies flag |
+| `s_trend`, `s_breakout`, `s_dip`, `s_rotation` | Four fixed code strategies, each trading alone (no AI) |
+| `btc_hold`, `eth_hold`, `ew_basket` | Just holding: BTC, ETH, or the 10 large coins equally |
+
+The AI sees the four strategies' signals as evidence. If it can't beat the best of them trading
+alone, the AI adds nothing.
 
 ## What the AI can and can't do
 
@@ -52,10 +61,12 @@ simple trend rule**. If the AI can't beat these, it isn't good.
 | Hold, add, reduce, exit, or do nothing | Stop-losses, daily-loss and drawdown circuit breakers |
 | A confidence number (logged, never trusted) | Liquidity, spread and turnover limits |
 
-## Universe
+## Which coins
 
-BTC, ETH, SOL, XRP, ADA, LINK, AVAX, LTC (USD pairs). DOGE and DOT were excluded: memecoin
-dynamics and thin volume respectively.
+Picked by a written rule each month (`crypto_ai/universe.py`), never by hand or by past returns:
+Coinbase USD pairs, no stablecoins / wrapped coins / memecoins, at least 300 days of history,
+ranked by 30-day trading volume. **Large** = top 10. **Mid** = the next 20, if they trade at least
+$5M a day. Run the screen any time with the `screen` action.
 
 ## Run it
 
@@ -67,6 +78,8 @@ dynamics and thin volume respectively.
    - `lock` — freeze the rules and start the clock (**once**)
    - `run` — one scanner tick; runs the 6h cycle when due (refuses until locked)
    - `report` — print performance (interim = informational only)
+   - `screen` — run the coin-selection rule now
+   - `backtest` — test each toolbox strategy alone on past data (results on the `crypto-ai-research` branch)
 
 The experiment's real state lives on the `crypto-ai-data` branch, written only by GitHub Actions.
 

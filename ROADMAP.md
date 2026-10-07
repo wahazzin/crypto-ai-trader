@@ -38,7 +38,9 @@ exists until the pre-registered test says so.**
 | 3 — Baselines in parallel (BTC hold, ETH hold, equal-weight, trend rule) | ✅ Built |
 | 4 — Numeric invalidation levels (`exit_below`, `review_above`) | ✅ Built 2026-10-06 |
 | 5 — Fast scanner (every 5 min, code only) + AI woken on events | ✅ Built 2026-10-06, 82 tests, smoke-tested with the real AI |
-| 6 — **Lock the experiment, turn on the schedule** | ⬜ **Next. Blocked only on D3 (run length)** |
+| 5b — Rule-based universe (large 10 + mid), strategy toolbox, two AI portfolios | ✅ Built 2026-10-07, 99 tests, smoke-tested with the real AI |
+| 5c — Toolbox backtest, each strategy alone, sealed holdout | ✅ Done 2026-10-07 (RESEARCH_LOG). Dip lost money in both periods → D7 |
+| 6 — **Lock the experiment, turn on the schedule** | ⬜ **Next. Blocked on D3 (run length) and D7 (dip)** |
 | 7 — Alpaca paper mirror (order-flow rehearsal, not the scorer) | ⬜ After lock |
 | 8 — Random-policy arms (is the AI better than luck?) | ⬜ Planned v0.2 |
 | 9 — New inputs, one at a time (news → sentiment → on-chain) | ⬜ Each tested alone first |
@@ -108,7 +110,7 @@ Code: `crypto_ai/scanner.py`. Settings: `experiment.json → scanner`. One GitHu
 | Quiet scans | Write nothing (no commit). Heartbeat once an hour |
 
 Known asymmetry (recorded in PREREGISTRATION): the AI gets extra decision chances between
-cycles; `trend_quant` doesn't. Both get the same 5-minute stop checks.
+cycles; the strategy arms don't. All constrained arms get the same 5-minute stop checks.
 
 ---
 
@@ -140,7 +142,9 @@ keys. Never run one with a real key, never install one without reading it, paper
 | D3 | Run length / first decision point | ⏳ Deferred by owner. **Must be set before the lock**, then only extendable |
 | D4 | Alpaca: create a new, separate crypto paper account | ⏳ Owner action, after lock |
 | D5 | Strategy toolbox: code computes 3–5 known strategies, shows signals to the AI, each strategy also trades alone | ✅ Owner approved 2026-10-07. Start list: trend, breakout+volume, dip-in-uptrend, relative-strength rotation. More strategies later via research |
-| D6 | Universe: chosen by a written rule (`research/universe_screen.py`), not by hand or by past returns | ⏳ Rule proposed 2026-10-07, owner to confirm size |
+| D6 | Universe: chosen by a written rule (`crypto_ai/universe.py`), not by hand or by past returns | ✅ Owner chose BOTH tiers 2026-10-07 → two AI portfolios: `ai_large`, `ai_largemid` |
+| D7 | The dip strategy lost money in both backtest periods. Keep it, drop it, or replace it? | ⏳ Waiting |
+| D8 | Add an SPY comparison (project rule 5) before any go-live discussion | ⏳ Planned, needs a non-Coinbase data source |
 
 ---
 

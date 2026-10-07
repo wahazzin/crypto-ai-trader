@@ -102,3 +102,50 @@ like a recent volume burst.
 
 New constraint (C6): Groq free tier = 8,000 tokens/minute, so the AI can read roughly 12–15 coins
 per decision. A wider universe must be scanned by code.
+
+## 2026-10-07 — v0.2 lineup built: rule-based universe, strategy toolbox, two AI portfolios
+
+Owner approved: coins by rule (large 10 + mid tier), a "strategy toolbox" whose signals the AI
+sees, each strategy also trading alone, and two AI portfolios (large only vs large + mid) so the
+mid-cap question gets its own answer. 99 tests.
+
+**Smoke test on GitHub (real data, real AI, throwaway state):**
+
+| Item | Result |
+|---|---|
+| Universe rule | 25 eligible coins: large = BTC, ETH, XRP, ZEC, SOL, NEAR, SUI, QNT, LINK, ADA; 15 mid |
+| Cycle | OK in 158 s (incl. 65 s spacing between the two AI calls) |
+| ai_large | Valid first try (4.6k in / 2.6k out tokens). Bought ADA, NEAR, SUI, SOL at 10% each, each with a numeric exit level |
+| ai_largemid | Valid first try (6.0k in / 2.0k out). Saw 5 mid candidates (ZRO, ENA, ONDO, AERO, UNI); bought QNT and NEAR |
+| Strategy arms | All 4 traded; 9 portfolios total |
+| Forced wake-up | ai_largemid answered (8.6 s). ai_large hit Groq **HTTP 413: 8,000 tokens/minute exceeded**. Cause: the smoke test fires the wake-up seconds after the cycle's last AI call, from a new process. Fix: a tokens-per-minute 413 now waits 62 s and retries (test added). On the real schedule, cycle and scans are >= 5 min apart. |
+
+## 2026-10-07 — Toolbox backtest: each strategy alone (rule 9), design vs sealed holdout (rule 3)
+
+`research/backtest_toolbox.py` on GitHub, 25 coins (today's eligible set), daily, the live
+signal functions on the same 120-day window, live sizing caps, 18% stop, costs 40 bps fee +
+5 bps half-spread + 2/6/10 bps slippage per side. Parameters fixed before the run, never tuned.
+
+**Signal audit:** recomputed by hand from raw candles for BTC, UNI and AERO: signals match.
+"Breakout on almost everywhere" in the live run is real (broad September rally on high volume).
+Over all years, breakout is on 31% of coin-days, trend 34%, rotation 15%, dip 12%.
+
+| Strategy | Design 2020–23 Sharpe | Holdout 2024– Sharpe | Holdout total | Holdout max DD | Holdout expectancy/trade | Beats EW hold (design / holdout) |
+|---|---|---|---|---|---|---|
+| btc_hold | 1.00 | 0.74 | +93% | −53% | — | — |
+| ew_hold (same coins) | 0.93 | 0.57 | +57% | −61% | — | — |
+| trend | 0.95 | 1.02 | +133% | −35% | +0.2% (win rate 18%) | no / YES |
+| **breakout** | **1.42** | **1.16** | **+159%** | **−35%** | **+1.7%** (win rate 33%) | **YES / YES** |
+| dip | −0.38 | −0.83 | −45% | −51% | −0.3% (win rate 62%) | no / no |
+| rotation | 1.09 | 0.84 | +86% | −39% | +4.9% | no / YES |
+
+**What this does and doesn't say:**
+1. **dip lost money in both periods** despite winning 58–62% of trades: small wins, bigger losses.
+   Textbook case of rule 6: win rate alone is meaningless.
+2. **breakout is the only one that beat holding the same coins in both periods**, with lower drawdown
+   than BTC. Promising, not proven: one history, one parameter set.
+3. trend wins only 18–20% of trades but is roughly break-even per trade: few large wins.
+4. **Survivorship bias inflates every absolute number.** Only coins alive today are included. The
+   EW-hold comparison carries the same bias, which is why it's the yardstick.
+5. Not yet compared with SPY (project rule 5). Coinbase has no SPY. To add before any go-live talk.
+6. This backtest informs; it does not unlock anything. The live forward test decides.

@@ -97,6 +97,11 @@ class OpenAICompatLLM:
         headers = {"Authorization": f"Bearer {os.environ[ep['key_env']]}",
                    "Content-Type": "application/json"}
         r = requests.post(ep["url"], headers=headers, json=body, timeout=self.c["timeout_seconds"])
+        if r.status_code == 413 and "tokens per minute" in r.text.lower():
+            # Groq answers 413 when THIS minute's token budget is used up (e.g. a previous process
+            # just made a call). Waiting out the minute is the fix; a request that is too big on
+            # its own would fail again and end as an AI_FAULT.
+            raise RateLimited(f"{ep['name']} HTTP 413 (tokens-per-minute budget), waiting 62s", 62)
         if r.status_code == 429:
             try:
                 wait = min(float((getattr(r, "headers", None) or {}).get("retry-after", 30)), 70)

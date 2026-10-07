@@ -258,6 +258,24 @@ class TestFreeProvider(unittest.TestCase):
             if v is not None:
                 os.environ[k] = v
 
+    def test_tokens_per_minute_413_waits_then_retries_same_provider(self):
+        os.environ["GROQ_API_KEY"] = "g"
+        calls, waits = [], []
+        self.L.time.sleep = waits.append
+
+        def post(url, headers, json, timeout):
+            calls.append(url)
+            if len(calls) == 1:
+                return self.Resp(413, {"error": {"message": "Limit on tokens per minute (TPM): Limit 8000"}})
+            return self.Resp(200, {"model": json["model"], "choices": [{"message": {"content": "{}"},
+                                   "finish_reason": "stop"}], "usage": {"prompt_tokens": 5, "completion_tokens": 2}})
+
+        self.L.requests.post = post
+        out = self.L.make_llm(CFG).complete("s", "u")
+        self.assertEqual(len(calls), 2)
+        self.assertIn(62, waits)
+        self.assertEqual(out["provider"], "groq")
+
     def test_no_keys_fails_loudly(self):
         with self.assertRaises(self.L.LLMError):
             self.L.make_llm(CFG)
