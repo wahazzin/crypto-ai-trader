@@ -16,11 +16,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state) | screen = universe eligibility screen"
+        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state) | screen = universe eligibility screen | backtest = toolbox strategies alone"
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report, smoke, screen]
+        options: [run, lock, report, smoke, screen, backtest]
 
 concurrency:
   group: crypto-ai-state          # never two runs writing state at once
@@ -32,7 +32,7 @@ permissions:
 jobs:
   cycle:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - name: Checkout code (main)
         uses: actions/checkout@v5
@@ -73,9 +73,10 @@ jobs:
                     # crossed its exit level, so the event path is tested with the real AI too
                     python -m crypto_ai.scanner --state-dir ../smoke --smoke
                     python -m crypto_ai.inspect_state --state-dir ../smoke || true
-                    python -c "import json,glob;[(lambda p,t:[v.update(exit_below=1e12) for v in t.values()] or json.dump(t,open(p,'w')))(p,json.load(open(p))) for p in glob.glob('../smoke/theses/*.json')]"
+                    python research/force_wake.py ../smoke
                     python -m crypto_ai.scanner --state-dir ../smoke --smoke ;;
-            screen) python -m research.universe_screen ;;
+            screen)   python -m research.universe_screen ;;
+            backtest) python -m research.backtest_toolbox ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
           esac
 
@@ -88,17 +89,23 @@ jobs:
           git add -A && git commit -q -m "smoke test $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-smoke
 
-      - name: Save research output (separate branch)
-        if: always() && github.event.inputs.action == 'screen'
+      - name: Save research output (separate branch, keeps earlier results)
+        if: always() && (github.event.inputs.action == 'screen' || github.event.inputs.action == 'backtest')
         run: |
           [ -d code/research/out ] || exit 0
-          mkdir res && cp -r code/research/out/* res/ && cd res && git init -q && git checkout -q -b crypto-ai-research
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$url" crypto-ai-research >/dev/null 2>&1; then
+            git clone -q --depth 1 --branch crypto-ai-research "$url" res
+          else
+            mkdir res && cd res && git init -q && git checkout -q -b crypto-ai-research && git remote add origin "$url" && cd ..
+          fi
+          cp -r code/research/out/* res/ && cd res
           git config user.name "crypto-ai-bot"; git config user.email "actions@github.com"
-          git add -A && git commit -q -m "universe screen $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-research
+          git add -A && git commit -q -m "${{ github.event.inputs.action }} $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push -q origin crypto-ai-research
 
       - name: Commit state
-        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen'
+        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen' && github.event.inputs.action != 'backtest'
         working-directory: state
         run: |
           git config user.name "crypto-ai-bot"
