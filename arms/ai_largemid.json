@@ -1,0 +1,48 @@
+{
+  "cash": 9975.160913234238,
+  "day_start_date": "2026-10-07",
+  "day_start_equity": 10000.0,
+  "extra": {},
+  "fees_usd": 19.1971478674052,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:35:52Z",
+  "name": "ai_largemid",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {},
+  "slippage_usd": 3.96092564013031,
+  "spread_usd": 1.1403825565819856,
+  "traded_notional_usd": 4799.2869668513,
+  "trades": [
+    {
+      "cause": "ai",
+      "notional": 800.7867055093911,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 800.4958156995239,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 801.1819316659127,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 798.4485592906886,
+      "ts": "2026-10-07T06:35:52Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 798.3758331592636,
+      "ts": "2026-10-07T06:35:52Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 799.9981215265203,
+      "ts": "2026-10-07T06:35:52Z"
+    }
+  ]
+}

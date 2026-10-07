@@ -1,0 +1,53 @@
+{
+  "events": [],
+  "from": "2026-10-07T06:35Z-event",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    },
+    {
+      "action": "SELL",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    },
+    {
+      "action": "SELL",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 5.154434577535997,
+      "qty": 154.90516899185778,
+      "side": "sell"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai_event",
+      "price": 252.55122527306128,
+      "qty": 3.1612431588722267,
+      "side": "sell"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 2.219394788644949,
+      "qty": 360.45778138235556,
+      "side": "sell"
+    }
+  ]
+}

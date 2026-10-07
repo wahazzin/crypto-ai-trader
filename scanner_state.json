@@ -1,0 +1,38 @@
+{
+  "arms": {
+    "ai_large": {
+      "calls_day": "2026-10-07",
+      "calls_today": 1,
+      "last_call": "2026-10-07T06:35:52Z"
+    },
+    "ai_largemid": {
+      "calls_day": "2026-10-07",
+      "calls_today": 1,
+      "last_call": "2026-10-07T06:35:52Z"
+    }
+  },
+  "fired": {
+    "ai_largemid|NEAR-USD:exit_below:1000000000000.0": "2026-10-07T06:35:52Z",
+    "ai_largemid|QNT-USD:exit_below:1000000000000.0": "2026-10-07T06:35:52Z",
+    "ai_largemid|ZRO-USD:exit_below:1000000000000.0": "2026-10-07T06:35:52Z",
+    "ai_large|NEAR-USD:exit_below:1000000000000.0": "2026-10-07T06:35:52Z",
+    "ai_large|QNT-USD:exit_below:1000000000000.0": "2026-10-07T06:35:52Z"
+  },
+  "heartbeat": {
+    "equity": {
+      "ai_large": 9974.0,
+      "ai_largemid": 9975.16,
+      "btc_hold": 9962.34,
+      "eth_hold": 9961.82,
+      "ew_basket": 9959.13,
+      "s_breakout": 9987.11,
+      "s_dip": 9986.55,
+      "s_rotation": 9987.59,
+      "s_trend": 9987.17
+    },
+    "scans": 1,
+    "ts": "2026-10-07T06:35:52Z"
+  },
+  "last_heartbeat": "2026-10-07T06:35:52Z",
+  "scans_since_heartbeat": 0
+}

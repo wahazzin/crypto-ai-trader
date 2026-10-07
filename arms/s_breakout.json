@@ -1,0 +1,115 @@
+{
+  "cash": 7487.084800631362,
+  "day_start_date": "2026-10-07",
+  "day_start_equity": 10000.0,
+  "extra": {},
+  "fees_usd": 10.011614340114111,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:35:52Z",
+  "name": "s_breakout",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {
+    "AAVE-USD": {
+      "avg_cost": 176.89672,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 1.8865966739300637,
+      "stop_pct": 18.0
+    },
+    "ADA-USD": {
+      "avg_cost": 0.257674512,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 1294.6492147952513,
+      "stop_pct": 18.0
+    },
+    "AERO-USD": {
+      "avg_cost": 0.7980910313612235,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 418.37153065408205,
+      "stop_pct": 18.0
+    },
+    "ARB-USD": {
+      "avg_cost": 0.18779253782038746,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 1777.7777777777776,
+      "stop_pct": 18.0
+    },
+    "AVAX-USD": {
+      "avg_cost": 11.242581190740898,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 29.6850417074836,
+      "stop_pct": 18.0
+    },
+    "BCH-USD": {
+      "avg_cost": 307.72217423235475,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 1.0845751719051648,
+      "stop_pct": 18.0
+    },
+    "BTC-USD": {
+      "avg_cost": 84295.41847954714,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 0.003955630092811937,
+      "stop_pct": 18.0
+    },
+    "ENA-USD": {
+      "avg_cost": 0.23817576068886598,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 700.7217433956988,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 2.3516986550811643,
+  "spread_usd": 0.5518863734461872,
+  "traded_notional_usd": 2502.9035850285277,
+  "trades": [
+    {
+      "cause": "strategy",
+      "notional": 333.73276358113776,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.5981046335496,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.8985663918901,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.8534005695777,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.7364915469142,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.7478300170872,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 333.4414940238721,
+      "ts": "2026-10-07T06:33:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 166.89493426449891,
+      "ts": "2026-10-07T06:33:11Z"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "cash": -1.8189894035458565e-12,
+  "day_start_date": null,
+  "day_start_equity": 10000.0,
+  "extra": {
+    "bought": true
+  },
+  "fees_usd": 39.84063745019921,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:35:52Z",
+  "name": "btc_hold",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {
+    "BTC-USD": {
+      "avg_cost": 84257.68270364426,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:33:11Z",
+      "qty": 0.11821069655549656,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 2.0914668217367987,
+  "spread_usd": 0.0005910534833279442,
+  "traded_notional_usd": 9960.159362549803,
+  "trades": [
+    {
+      "cause": "baseline",
+      "notional": 9960.159362549803,
+      "ts": "2026-10-07T06:33:11Z"
+    }
+  ]
+}
