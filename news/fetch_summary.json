@@ -1,0 +1,40 @@
+{
+ "headlines": 29764,
+ "requests": 622,
+ "per_year": {
+  "2021": 12,
+  "2022": 7989,
+  "2023": 5676,
+  "2024": 6821,
+  "2025": 5191,
+  "2026": 4075
+ },
+ "per_coin": {
+  "BTC-USD": 21432,
+  "ETH-USD": 13670,
+  "UNI-USD": 349,
+  "ADA-USD": 713,
+  "NEAR-USD": 251,
+  "AVAX-USD": 414,
+  "SOL-USD": 3518,
+  "XLM-USD": 144,
+  "LINK-USD": 382,
+  "LTC-USD": 447,
+  "BCH-USD": 316,
+  "HBAR-USD": 166,
+  "QNT-USD": 123,
+  "XRP-USD": 2723,
+  "ZEC-USD": 806,
+  "AAVE-USD": 191,
+  "FET-USD": 100,
+  "ARB-USD": 103,
+  "SUI-USD": 63,
+  "TAO-USD": 40,
+  "ONDO-USD": 25,
+  "AERO-USD": 15,
+  "ENA-USD": 30,
+  "ZRO-USD": 1
+ },
+ "multi_coin_share": 0.34874344846122834,
+ "first": "2021-03-18T17:05:10Z"
+}
