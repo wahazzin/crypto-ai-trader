@@ -4,21 +4,27 @@
     "exit_below": 4.7,
     "invalidation": [],
     "opened_cycle": "2026-10-07T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price (5.15) > exit_below (4.7)",
+      "Breakout signal true, rotation pick rank 2, trend positive"
+    ],
     "review_above": 6.0,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit_below.",
-    "updated_cycle": "2026-10-07T12:00Z"
+    "summary": "Thesis remains valid; price is still above the exit_below level and breakout/rotation signals stay strong.",
+    "updated_cycle": "2026-10-07T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [],
     "exit_below": 230.0,
     "invalidation": [],
     "opened_cycle": "2026-10-07T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price (251.24) > exit_below (230.0)",
+      "Breakout signal true, rotation pick rank 1, trend positive"
+    ],
     "review_above": 300.0,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit_below.",
-    "updated_cycle": "2026-10-07T12:00Z"
+    "summary": "Thesis remains valid; price is above the exit_below level despite recent dip, and breakout/rotation signals are still favorable.",
+    "updated_cycle": "2026-10-07T18:00Z"
   }
 }
