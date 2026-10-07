@@ -1,0 +1,24 @@
+{
+  "NEAR-USD": {
+    "confidence_history": [],
+    "exit_below": 4.7,
+    "invalidation": [],
+    "opened_cycle": "2026-10-07T06:00Z",
+    "reasons": [],
+    "review_above": 6.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-07T06:00Z"
+  },
+  "QNT-USD": {
+    "confidence_history": [],
+    "exit_below": 230.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-07T06:00Z",
+    "reasons": [],
+    "review_above": 300.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-07T06:00Z"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cash": 0.0,
+  "day_start_date": null,
+  "day_start_equity": 10000.0,
+  "extra": {
+    "bought": true
+  },
+  "fees_usd": 39.8406374501992,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:39:46Z",
+  "name": "eth_hold",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {
+    "ETH-USD": {
+      "avg_cost": 2621.5226894679577,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 3.799379422716815,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 2.1758645801656717,
+  "spread_usd": 0.09498448556653817,
+  "traded_notional_usd": 9960.1593625498,
+  "trades": [
+    {
+      "cause": "baseline",
+      "notional": 9960.1593625498,
+      "ts": "2026-10-07T06:39:46Z"
+    }
+  ]
+}

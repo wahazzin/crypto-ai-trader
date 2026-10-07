@@ -1,0 +1,42 @@
+{
+  "NEAR-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-07T06:00Z"
+      }
+    ],
+    "exit_below": 4.9,
+    "invalidation": [
+      "Price below 4.9 USD"
+    ],
+    "opened_cycle": "2026-10-07T06:00Z",
+    "reasons": [
+      "28\u2011day return >100%, breakout signal, positive trend"
+    ],
+    "review_above": 5.5,
+    "status": "bullish",
+    "summary": "Rotation pick with strong 28\u2011day performance; breakout confirmed.",
+    "updated_cycle": "2026-10-07T06:00Z"
+  },
+  "QNT-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-07T06:00Z"
+      }
+    ],
+    "exit_below": 240.0,
+    "invalidation": [
+      "Price below 240.0 USD"
+    ],
+    "opened_cycle": "2026-10-07T06:00Z",
+    "reasons": [
+      "295% 28\u2011day return, breakout active, trend positive"
+    ],
+    "review_above": 268.0,
+    "status": "bullish",
+    "summary": "Top rotation pick; exceptional 28\u2011day return and breakout signal.",
+    "updated_cycle": "2026-10-07T06:00Z"
+  }
+}

@@ -1,1 +1,2 @@
 {"cycle_id":"2026-10-06T06:00Z","problems":["no lock.json in state dir"],"ts":"2026-10-06T10:40:23Z","type":"LOCK_MISMATCH"}
+{"asof_month":"2026-10","cycle_id":"2026-10-07T06:00Z","large":["BTC-USD","ETH-USD","XRP-USD","ZEC-USD","SOL-USD","NEAR-USD","SUI-USD","QNT-USD","LINK-USD","ADA-USD"],"mid":["UNI-USD","AVAX-USD","XLM-USD","HBAR-USD","TAO-USD","LTC-USD","VVV-USD","ONDO-USD","AERO-USD","ENA-USD","AAVE-USD","BCH-USD","ARB-USD","FET-USD","ZRO-USD"],"ts":"2026-10-07T06:39:46Z","type":"UNIVERSE_REFRESHED"}

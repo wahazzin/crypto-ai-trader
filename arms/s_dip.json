@@ -1,0 +1,55 @@
+{
+  "cash": 7487.011388597566,
+  "day_start_date": "2026-10-07",
+  "day_start_equity": 10000.0,
+  "extra": {},
+  "fees_usd": 10.011906818336387,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:39:46Z",
+  "name": "s_dip",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {
+    "AERO-USD": {
+      "avg_cost": 0.7985543061454958,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 1253.7927229870359,
+      "stop_pct": 18.0
+    },
+    "BCH-USD": {
+      "avg_cost": 308.44772962301676,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 3.24580479729949,
+      "stop_pct": 18.0
+    },
+    "ENA-USD": {
+      "avg_cost": 0.24056044963250298,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 2080.948912704193,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 2.6882389806797344,
+  "spread_usd": 0.28846560341720484,
+  "traded_notional_usd": 2502.976704584097,
+  "trades": [
+    {
+      "cause": "strategy",
+      "notional": 1001.2215779551843,
+      "ts": "2026-10-07T06:39:46Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 1001.1611205265239,
+      "ts": "2026-10-07T06:39:46Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 500.59400610238885,
+      "ts": "2026-10-07T06:39:46Z"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "cash": 7487.452897971403,
+  "day_start_date": "2026-10-07",
+  "day_start_equity": 10000.0,
+  "extra": {
+    "rotation_week": "2026-W41"
+  },
+  "fees_usd": 10.010147816846999,
+  "halted_until": null,
+  "last_ts": "2026-10-07T06:39:46Z",
+  "name": "s_rotation",
+  "no_buys_until": null,
+  "peak_equity": 10000.0,
+  "positions": {
+    "NEAR-USD": {
+      "avg_cost": 5.2455959796959934,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 286.27046833848624,
+      "stop_pct": 18.0
+    },
+    "QNT-USD": {
+      "avg_cost": 253.4872999067365,
+      "opened_cycle": "2026-10-07T06:00Z",
+      "opened_ts": "2026-10-07T06:39:46Z",
+      "qty": 3.948433459025132,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 2.2339092310010527,
+  "spread_usd": 0.3030449807480092,
+  "traded_notional_usd": 2502.536954211749,
+  "trades": [
+    {
+      "cause": "strategy",
+      "notional": 1501.6592178220526,
+      "ts": "2026-10-07T06:39:46Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 1000.8777363896967,
+      "ts": "2026-10-07T06:39:46Z"
+    }
+  ]
+}

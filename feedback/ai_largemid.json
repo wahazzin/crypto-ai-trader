@@ -1,0 +1,72 @@
+{
+  "events": [
+    {
+      "asof_month": "2026-10",
+      "large": [
+        "BTC-USD",
+        "ETH-USD",
+        "XRP-USD",
+        "ZEC-USD",
+        "SOL-USD",
+        "NEAR-USD",
+        "SUI-USD",
+        "QNT-USD",
+        "LINK-USD",
+        "ADA-USD"
+      ],
+      "mid": [
+        "UNI-USD",
+        "AVAX-USD",
+        "XLM-USD",
+        "HBAR-USD",
+        "TAO-USD",
+        "LTC-USD",
+        "VVV-USD",
+        "ONDO-USD",
+        "AERO-USD",
+        "ENA-USD",
+        "AAVE-USD",
+        "BCH-USD",
+        "ARB-USD",
+        "FET-USD",
+        "ZRO-USD"
+      ],
+      "type": "UNIVERSE_REFRESHED"
+    }
+  ],
+  "from": "2026-10-07T06:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.125,
+      "requested_weight": 0.125,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": 0.125,
+      "requested_weight": 0.125,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai",
+      "price": 5.245586075635193,
+      "qty": 238.55872361540517,
+      "side": "buy"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai",
+      "price": 253.49995276303792,
+      "qty": 4.935541823781415,
+      "side": "buy"
+    }
+  ]
+}
