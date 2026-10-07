@@ -1,0 +1,84 @@
+name: crypto_ai live loop (24/7 scanner)
+
+# WHY THIS EXISTS: GitHub's cron is unreliable at short intervals (a "*/5" schedule fired 0 times
+# in its first hour; an "hourly" job in the equities repo fires every 4-6 h). So instead of asking
+# GitHub to start us every 5 minutes, ONE job stays alive and scans every 5 minutes by itself, for
+# ~5h40m (GitHub's job limit is 6h). Before it ends it starts its own successor. Runs started with
+# workflow_dispatch begin immediately.
+#
+# Safety nets:
+#   * the hourly cron below restarts the chain if it ever breaks (runner crash, outage)
+#   * the concurrency group means only ONE run ever writes the experiment state; a second start
+#     just waits, and GitHub keeps at most one waiting run
+#   * quiet scans write nothing, so there's only a commit when something actually happened
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 * * * *"    # backup restarter only; normally a run is already alive
+
+concurrency:
+  group: crypto-ai-state
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write            # lets the loop start its own successor
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: Checkout code (main)
+        uses: actions/checkout@v5
+        with:
+          path: code
+
+      - name: Checkout state branch
+        run: |
+          set -e
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch crypto-ai-data "$url" state
+          cd state && git config user.name "crypto-ai-bot" && git config user.email "actions@github.com"
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r code/requirements.txt
+
+      - name: Scan every 5 minutes for ~5h40m
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PYTHONIOENCODING: utf-8
+        run: |
+          end=$((SECONDS + 20400))
+          n=0
+          while [ $SECONDS -lt $end ]; do
+            t0=$SECONDS
+            n=$((n + 1))
+            ( cd code && timeout 900 python -m crypto_ai.scanner --state-dir ../state ) || echo "tick $n: scanner exited non-zero (logged in state)"
+            ( cd state
+              git add -A
+              if ! git diff --cached --quiet; then
+                git commit -q -m "crypto_ai state: tick $(date -u +%Y-%m-%dT%H:%MZ)"
+                git push -q origin crypto-ai-data || { git pull -q --rebase origin crypto-ai-data && git push -q origin crypto-ai-data; } || echo "push failed, will retry next tick"
+              fi )
+            left=$((300 - (SECONDS - t0)))
+            [ $left -gt 0 ] && sleep $left
+          done
+          echo "ran $n ticks"
+
+      - name: Start the next loop
+        if: success() || failure()     # not when cancelled: cancel + disable the workflow = clean stop
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github+json" \
+               "https://api.github.com/repos/${{ github.repository }}/actions/workflows/crypto_ai_loop.yml/dispatches" \
+               -d '{"ref":"main"}' -w "dispatch HTTP %{http_code}\n"

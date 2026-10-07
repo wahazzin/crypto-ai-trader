@@ -1,11 +1,10 @@
 name: crypto_ai paper trader (v0.2)
 
-# STATUS: LIVE (paper) since the lock on 2026-10-07T06:38Z. Runs every 5 minutes by itself.
+# STATUS: LIVE (paper) since the lock on 2026-10-07T06:38Z. The 24/7 scanning runs in crypto_ai_loop.yml;
+# this workflow is for manual actions (smoke, report, screen, backtest, probes).
 # The 12-month clock runs from the lock. Rule changes need an amendment (crypto_ai/lock.py --amend).
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"   # every 5 min: runs the 6h cycle when due, otherwise a free code scan
   workflow_dispatch:
     inputs:
       action:
@@ -16,7 +15,8 @@ on:
         options: [run, lock, report, smoke, screen, backtest, alpaca_probe]
 
 concurrency:
-  group: crypto-ai-state          # never two runs writing state at once
+  # state-writing actions share the loop's group (never two writers); research actions run freely
+  group: ${{ (github.event.inputs.action == 'run' || github.event.inputs.action == 'lock') && 'crypto-ai-state' || format('crypto-ai-other-{0}', github.run_id) }}
   cancel-in-progress: false
 
 permissions:
