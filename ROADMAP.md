@@ -67,8 +67,8 @@ PREDICTIVE AND TRADABLE, it beats BTC hold, SPY and every strategy arm after fee
 project rules (paper period, circuit breakers, max daily loss set in advance) are met.
 
 ### Project 3 (memecoin day trader / scalper)
-Proposal: start its research and design once phase 14 is done (~month 1–2). Project 2 runs by
-itself for 12 months, so there's no need to wait for its verdict to start building project 3.
+**Owner decision (2026-10-07): project 3 starts only after this project is done.** Until then,
+research effort goes into this project (news, learner AI, day-trading module).
 
 ## 3. HARD CONSTRAINTS WE HAVE MEASURED (not assumed)
 
