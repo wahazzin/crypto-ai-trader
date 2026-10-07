@@ -341,3 +341,16 @@ Full output: `onchain/R3_results.md` on `crypto-ai-research`.
 **Decision (per pre-registration):** no on-chain arm. With R1 (news), R2 (day-trading rules) and R3
 (on-chain) all null, the AI keeps seeing what it sees now: prices, volumes, the strategy toolbox and
 its own scorecard. Next real evidence comes from the live forward test itself (weekly check-ins).
+
+## 2026-10-07 — Day-1 health audit + phase 15 pre-registered early
+
+**Health (day 1):** loop alive and renewing itself; 2/2 scheduled cycles OK, 2 wake-ups answered
+(QNT exit breach → sold; AERO volume spike → held). No crashes. One stale VVV quote handled by A1.
+**Measured AI token use: ~95,000/day of Groq's free 200,000** (~7,500 tokens per decision). The
+weekly check-in now shows this budget line (cycles + wake-ups, % of cap).
+
+**Phase 15 ("learner") pre-registered now, on purpose before any AI trade has closed**, so the design
+can't be bent to fit results: a new `ai_learner` arm sees code-computed statistics of the AI's own
+closed trades; an identical `ai_twin` doesn't. Decided against AI-written trade reviews (uncheckable,
+costly in tokens). Needs a mechanism check (did behaviour actually change?) besides the return test.
+Start: month 2, once ≥ 30 AI trades have closed. Prior: low.

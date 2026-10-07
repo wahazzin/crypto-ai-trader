@@ -18,6 +18,7 @@ Usage:
 """
 import argparse
 import os
+import math
 from datetime import datetime, timedelta, timezone
 
 import requests
@@ -147,12 +148,17 @@ def build(state_dir, cfg, week_end, spy_fn=spy_return):
     ok = sum(c["status"] in ("OK", "OK_AI_FAULT") for c in cyc)
     faults = sum(c["status"] == "OK_AI_FAULT" for c in cyc)
     ev = [e for e in j.read("event_decisions.jsonl") if week_start <= parse_iso(e["ts"]) <= week_end]
-    toks = sum((c.get("tokens_in") or 0) + (c.get("tokens_out") or 0) for c in cyc)
-    expected = int((week_end - week_start).total_seconds() // (6 * 3600))
+    dec = [d for d in j.read("decisions.jsonl") if week_start <= parse_iso(d["ts"]) <= week_end]
+    tok = lambda rows: sum((r.get("tokens_in") or 0) + (r.get("tokens_out") or 0) for r in rows)
+    toks, toks_ev = tok(dec), tok(ev)
+    days = max((week_end - week_start).total_seconds() / 86400, 1 / 24)
+    cap = cfg.get("llm", {}).get("daily_token_cap", 200000)
+    expected = math.ceil((week_end - week_start).total_seconds() / (6 * 3600))
     lines += ["## Health", "",
               f"- Scheduled cycles completed: **{ok} / ~{expected}** expected (AI faults: {faults})",
               f"- AI wake-ups: {len(ev)} ({sum(1 for e in ev if e.get('ok'))} answered OK)",
-              f"- AI tokens used by cycles: {toks:,}", "",
+              f"- AI tokens: cycles {toks:,} + wake-ups {toks_ev:,} = **{(toks + toks_ev) / days:,.0f}/day** "
+              f"vs free cap {cap:,}/day ({100 * (toks + toks_ev) / days / cap:.0f}% used; over the cap the backup provider answers)", "",
               "Expectancy = win rate × avg win + loss rate × avg loss, per closed trade, after all fees "
               "(rule 6). Hold portfolios rarely close trades, so their columns stay empty.", ""]
     try:
