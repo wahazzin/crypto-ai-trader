@@ -158,14 +158,16 @@ def summarize(rows):
     days = sorted(by_day)
     def daily(key):
         return [sum(x[key] for x in by_day[d]) / len(by_day[d]) for d in days]
+    dw = lambda key: sum(daily(key)) / len(days)          # day-weighted mean = the quantity the t-stat tests
     net = [r["net"] for r in rows]
     wins, losses = [x for x in net if x > 0], [x for x in net if x <= 0]
     wr = len(wins) / len(net)
     return {"n": len(rows), "win_rate": wr, "avg_win": sum(wins) / len(wins) if wins else 0.0,
             "avg_loss": sum(losses) / len(losses) if losses else 0.0, "exp_net": sum(net) / len(net),
-            "t_net": nw_t(daily("net")), "exp_excess": sum(r["excess"] for r in rows) / len(rows),
+            "dw_net": dw("net"), "t_net": nw_t(daily("net")),
+            "exp_excess": sum(r["excess"] for r in rows) / len(rows), "dw_excess": dw("excess"),
             "t_excess": nw_t(daily("excess")), "exp_lowfee": sum(r["net_lowfee"] for r in rows) / len(rows),
-            "t_lowfee": nw_t(daily("net_lowfee"))}
+            "dw_lowfee": dw("net_lowfee"), "t_lowfee": nw_t(daily("net_lowfee"))}
 
 
 def report(data):
@@ -176,11 +178,14 @@ def report(data):
     tt = lambda x: "—" if x is None or math.isnan(x) else f"{x:+.2f}"
     lines = ["# R2 — Short-term price rules after costs: results", "",
              f"Rules: `research/DAYTRADE_PREREG.md` (committed before data). {len(data['candles'])} coins, hourly, "
-             "fills at next hour's open, one open trade per coin per rule. Main costs ≈ 0.9–1.1% round trip.", ""]
+             "fills at next hour's open, one open trade per coin per rule. Main costs ≈ 0.9–1.1% round trip.", "",
+             "Each mean is shown two ways: **per trade** (every trade counts once) and **per day** (each day's trades "
+             "averaged first, then days averaged). The t-stat tests the per-day version (Newey-West, 5 days). When the two "
+             "disagree in sign, trades cluster on a few days and the per-trade number is misleading.", ""]
     verdict = {}
     for label, _, _ in splits:
         lines += [f"## {label}", "",
-                  "| Rule | Trades | Win rate | Avg win | Avg loss | **Expectancy/trade (after costs)** | t | Edge vs random entry | t | Expectancy at 10 bps fees | t |",
+                  "| Rule | Trades | Win rate | Avg win | Avg loss | **Expectancy/trade after costs** (per trade / per day) | t | Edge vs random entry (per trade / per day) | t | At 10 bps fees (per trade / per day) | t |",
                   "|---|---|---|---|---|---|---|---|---|---|---|"]
         for rule in ("D1", "D2", "D3", "D4"):
             s = summarize(res[(rule, label)])
@@ -189,9 +194,10 @@ def report(data):
                 verdict.setdefault(rule, []).append(False)
                 continue
             lines.append(f"| {rule} | {s['n']} | {100 * s['win_rate']:.0f}% | {p(s['avg_win'])} | {p(s['avg_loss'])} | "
-                         f"**{p(s['exp_net'])}** | {tt(s['t_net'])} | {p(s['exp_excess'])} | {tt(s['t_excess'])} | "
-                         f"{p(s['exp_lowfee'])} | {tt(s['t_lowfee'])} |")
-            ok = (s["n"] >= 100 and s["exp_net"] > 0 and s["t_net"] >= 2 and s["exp_excess"] > 0 and s["t_excess"] >= 2)
+                         f"**{p(s['exp_net'])} / {p(s['dw_net'])}** | {tt(s['t_net'])} | {p(s['exp_excess'])} / {p(s['dw_excess'])} | {tt(s['t_excess'])} | "
+                         f"{p(s['exp_lowfee'])} / {p(s['dw_lowfee'])} | {tt(s['t_lowfee'])} |")
+            ok = (s["n"] >= 100 and s["exp_net"] > 0 and s["dw_net"] > 0 and s["t_net"] >= 2
+                  and s["exp_excess"] > 0 and s["dw_excess"] > 0 and s["t_excess"] >= 2)
             verdict.setdefault(rule, []).append(ok)
         lines.append("")
     lines += ["Rules: " + "; ".join(f"**{k}** = {v}" for k, v in names.items()), "",

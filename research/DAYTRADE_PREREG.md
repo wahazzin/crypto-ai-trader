@@ -77,3 +77,10 @@ would get its own pre-registration and start date. It does not mean "trade it".
 | Four rules, one lucky | All four reported; passing needs design AND holdout |
 | Tuning thresholds | All thresholds above, written before data |
 | Low-fee sensitivity used as a pass | Explicitly not a pass criterion |
+
+## Clarification (2026-10-07, after the first run, before any interpretation; verdict unaffected)
+
+The first output showed per-TRADE means next to t-stats computed on per-DAY means; for some rows
+these disagreed in sign (trades cluster on volatile days). Results now show both, and a pass needs
+BOTH the per-trade and the per-day mean > 0 plus t ≥ 2. This is stricter than the original wording,
+not looser. No rule passed under either version.
