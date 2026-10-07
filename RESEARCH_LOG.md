@@ -167,3 +167,16 @@ Over all years, breakout is on 31% of coin-days, trend 34%, rotation 15%, dip 12
   model. Swapping models mid-test would also mix two "brains" in one result. Other models
   (e.g. Gemini free tier) can come later as their OWN arms.
 - ROADMAP rewritten as a phase-by-phase plan (phases 11–18 + project 3). 102 tests.
+
+## 2026-10-07 — Final smoke test, then LOCKED and LIVE
+
+Last smoke (real AI, throwaway state): cycle OK (ai_large 4.5k in / 1.9k out tokens, ai_largemid
+5.6k / 2.0k); both AIs woke on a forced exit-level breach and both sold the affected positions,
+which is the behaviour the instructions ask for. Compact JSON cut the AI's input by ~24%, which fixed
+the wake-up that had hit Groq's 8k tokens/minute cap.
+
+**Lock created 2026-10-07T06:38:37Z** (code `ab4ee29`). Fingerprinted: PREREGISTRATION.md,
+experiment.json, the trader prompt, strategies/toolbox.py, risk/engine.py, universe.py. The
+pre-registration file still says "DRAFT" in its header: editing it now would break the lock, and the
+lock file itself is the record of when it became binding. 5-minute schedule switched on.
+First decision point: 2027-10-07 (needs >= 1,240 completed cycles).

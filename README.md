@@ -7,7 +7,9 @@ in code that it cannot override, and it is graded by a statistical test fixed be
 **This repository does not contain a proven profitable strategy.** It contains the bot and the
 apparatus that will find out whether it has any skill. "No evidence" is a legitimate result.
 
-**Start here:** [`ROADMAP.md`](ROADMAP.md) — status, measured constraints, what happens next.
+**Status: LIVE on paper since 2026-10-07 06:38 UTC** (locked; 12-month test; first verdict 2027-10-07).
+
+**Start here:** [`ROADMAP.md`](ROADMAP.md) — the phase-by-phase plan, measured constraints, decisions.
 
 | File | What's in it |
 |---|---|
