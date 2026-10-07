@@ -16,23 +16,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9910.56,
-      "ai_largemid": 9910.56,
-      "btc_hold": 9851.16,
-      "eth_hold": 9755.53,
-      "ew_basket": 9760.49,
-      "s_breakout": 9940.98,
-      "s_dip": 9945.85,
-      "s_rotation": 9915.45,
-      "s_trend": 9939.06
+      "ai_large": 9883.5,
+      "ai_largemid": 9870.89,
+      "btc_hold": 9831.48,
+      "eth_hold": 9760.47,
+      "ew_basket": 9742.02,
+      "s_breakout": 9947.63,
+      "s_dip": 9944.06,
+      "s_rotation": 9889.17,
+      "s_trend": 9945.87
     },
-    "scans": 1,
-    "ts": "2026-10-07T12:51:38Z"
+    "scans": 2,
+    "ts": "2026-10-07T13:51:38Z"
   },
   "last_data_fault": {
     "error": "VVV-USD: stale or invalid quote",
     "ts": "2026-10-07T08:33:47Z"
   },
-  "last_heartbeat": "2026-10-07T12:51:38Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-07T13:51:38Z",
+  "scans_since_heartbeat": 0
 }
