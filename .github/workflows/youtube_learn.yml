@@ -1,0 +1,44 @@
+name: youtube_learn (transcripts for research)
+
+# Pulls the transcripts of a YouTube channel or video so they can be studied as text.
+# Output goes to the `yt-research` branch (never mixed with trading state). No secrets used.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Channel URL (e.g. https://www.youtube.com/@name/videos) or one video URL"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: code
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install yt-dlp youtube-transcript-api
+      - name: Pull transcripts
+        working-directory: code
+        run: python tools/yt_learn.py "${{ github.event.inputs.url }}" ../out
+      - name: Save to yt-research branch
+        if: always()
+        run: |
+          [ -d out ] || exit 0
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$url" yt-research >/dev/null 2>&1; then
+            git clone -q --depth 1 --branch yt-research "$url" res
+          else
+            mkdir res && cd res && git init -q && git checkout -q -b yt-research && git remote add origin "$url" && cd ..
+          fi
+          cp -r out/* res/ && cd res
+          git config user.name "crypto-ai-bot"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "transcripts $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push -q origin yt-research
