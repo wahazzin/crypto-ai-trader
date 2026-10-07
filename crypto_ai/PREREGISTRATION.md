@@ -105,8 +105,8 @@ thesis invalidation usefulness, stop-outs, risk-engine rejection reasons, token 
 
 ## 6. Power analysis — why the primary test is IC, and why 12 months is the minimum
 
-⚑ Owner deferred choosing the run length (2026-10-06). It must be fixed **before the lock**; after the
-lock it may only be extended, never shortened, so results can't decide when we stop.
+**Run length (owner confirmed 2026-10-07): 12 months minimum** from the lock, then the first decision
+point. It may be extended (once, to 24 months, per §7), never shortened, so results can't decide when we stop.
 
 Computed before writing any threshold (80% power, 5% two-sided):
 

@@ -40,7 +40,7 @@ exists until the pre-registered test says so.**
 | 5 — Fast scanner (every 5 min, code only) + AI woken on events | ✅ Built 2026-10-06, 82 tests, smoke-tested with the real AI |
 | 5b — Rule-based universe (large 10 + mid), strategy toolbox, two AI portfolios | ✅ Built 2026-10-07, 99 tests, smoke-tested with the real AI |
 | 5c — Toolbox backtest, each strategy alone, sealed holdout | ✅ Done 2026-10-07 (RESEARCH_LOG). Dip lost money in both periods → D7 |
-| 6 — **Lock the experiment, turn on the schedule** | ⬜ **Next. Blocked on D3 (run length) and D7 (dip)** |
+| 6 — **Lock the experiment, turn on the schedule** | ⬜ **Next. Blocked on D7 (dip)** |
 | 7 — Alpaca paper mirror (order-flow rehearsal, not the scorer) | ⬜ After lock |
 | 8 — Random-policy arms (is the AI better than luck?) | ⬜ Planned v0.2 |
 | 9 — New inputs, one at a time (news → sentiment → on-chain) | ⬜ Each tested alone first |
@@ -139,7 +139,7 @@ keys. Never run one with a real key, never install one without reading it, paper
 |---|---|---|
 | D1 | Fee assumption 0.4%/side | ✅ Confirmed 2026-10-06 |
 | D2 | Build the fast scanner (§4)? | ✅ Built 2026-10-06 |
-| D3 | Run length / first decision point | ⏳ Deferred by owner. **Must be set before the lock**, then only extendable |
+| D3 | Run length / first decision point | ✅ 12 months minimum (owner, 2026-10-07). Extendable, never shortened |
 | D4 | Alpaca: create a new, separate crypto paper account | ⏳ Owner action, after lock |
 | D5 | Strategy toolbox: code computes 3–5 known strategies, shows signals to the AI, each strategy also trades alone | ✅ Owner approved 2026-10-07. Start list: trend, breakout+volume, dip-in-uptrend, relative-strength rotation. More strategies later via research |
 | D6 | Universe: chosen by a written rule (`crypto_ai/universe.py`), not by hand or by past returns | ✅ Owner chose BOTH tiers 2026-10-07 → two AI portfolios: `ai_large`, `ai_largemid` |
