@@ -196,3 +196,8 @@ First decision point: 2027-10-07 (needs >= 1,240 completed cycles).
 **Scheduler:** GitHub's cron is unreliable at our cadence. The equities repo's "hourly" job actually
 fired every ~4–6 h (2026-10-06/07), and this repo's `*/5` schedule fired 0 times in its first hour.
 The 6h cycles need >= 85% completion for the verdict (>= 1,240/yr), so an external trigger is needed.
+
+**Fix deployed 07:48 UTC:** `crypto_ai_loop.yml`, a self-renewing loop (scan every 5 min for ~5h40m,
+then dispatch the successor; hourly cron as backup restarter; one concurrency group so there's never
+a second writer). First tick wrote a heartbeat at 07:48 UTC. cron-job.org (external trigger) was
+the alternative; its verification email never arrived, and the loop needs no third party or token.

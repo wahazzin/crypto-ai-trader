@@ -87,8 +87,10 @@ always on.
 **C3 — The AI is slow.** One decision took **6 seconds**. Fine for swing trading, useless for
 scalping, where the edge is gone in milliseconds and belongs to firms with co-located servers.
 
-**C4 — GitHub's scheduler.** Minimum interval 5 minutes, and runs are often delayed several
-minutes at busy times. Public repo = unlimited free minutes.
+**C4 — GitHub's scheduler is unreliable.** Measured 2026-10-07: a `*/5` schedule fired 0 times in
+its first hour; the equities repo's "hourly" job fires every 4–6 h. **Fix:** `crypto_ai_loop.yml`:
+one job stays alive ~5h40m scanning every 5 minutes, then starts its own successor (manual starts
+run immediately); an hourly cron only restarts the chain if it breaks. Public repo = free minutes.
 
 **C6 — The free AI can only read so much at once.** Groq free tier caps one minute at 8,000
 tokens. 8 coins already use ~5,300 per call, so the AI can only look at **roughly 12–15 coins**
