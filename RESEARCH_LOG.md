@@ -180,3 +180,19 @@ experiment.json, the trader prompt, strategies/toolbox.py, risk/engine.py, unive
 pre-registration file still says "DRAFT" in its header: editing it now would break the lock, and the
 lock file itself is the record of when it became binding. 5-minute schedule switched on.
 First decision point: 2027-10-07 (needs >= 1,240 completed cycles).
+
+## 2026-10-07 — Alpaca account probe (read-only) + scheduler reliability
+
+**Alpaca (new separate crypto paper account, keys in GitHub Secrets):**
+- Account ACTIVE, **crypto_status ACTIVE** from Sweden. Paper cash $100k.
+- Lists 36 USD crypto pairs, but only **13 of our 25 eligible coins** (6/10 large): BTC, ETH, XRP,
+  SOL, LINK, ADA, UNI, AVAX, LTC, ONDO, BCH, AAVE, ARB. **Missing: ZEC, NEAR, SUI, QNT** (large) and
+  8 mid coins. Both AIs' first buys (NEAR, QNT) are not on Alpaca.
+  → Alpaca can only be a PARTIAL order-flow mirror. It can't be the venue for the whole universe.
+- **SPY daily bars work** (IEX feed): benchmark for rule 5 is available.
+- **Crypto news works**: 19 BTC/ETH/SOL articles in the last 24h; 411 in March 2023; **0 in March
+  2020**, so the sentiment backtest window starts ~2021–2022, not 2015 as the docs suggest.
+
+**Scheduler:** GitHub's cron is unreliable at our cadence. The equities repo's "hourly" job actually
+fired every ~4–6 h (2026-10-06/07), and this repo's `*/5` schedule fired 0 times in its first hour.
+The 6h cycles need >= 85% completion for the verdict (>= 1,240/yr), so an external trigger is needed.
