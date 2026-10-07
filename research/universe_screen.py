@@ -31,7 +31,8 @@ WRAPPED = {"WBTC", "CBBTC", "CBETH", "WSTETH", "RETH", "STETH", "MSOL", "JITOSOL
            "WAXL", "TBTC", "LBTC"}
 MEME = {"DOGE", "SHIB", "PEPE", "BONK", "WIF", "FLOKI", "MOG", "TRUMP", "POPCAT", "PENGU", "BRETT",
         "MEW", "TURBO", "FARTCOIN", "SPX", "GIGA", "PNUT", "MOODENG", "NEIRO", "DEGEN", "TOSHI",
-        "MELANIA", "WOJAK", "BOME", "MOTHER", "PONKE"}
+        "MELANIA", "WOJAK", "BOME", "MOTHER", "PONKE",
+        "USELESS", "PUMP"}  # PUMP = pump.fun launchpad token: memecoin-economy exposure
 
 MIN_DAYS = 300
 MID_MIN_DAILY_USD = 5e6

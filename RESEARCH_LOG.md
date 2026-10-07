@@ -74,3 +74,31 @@ and shaped the scanner proposal in ROADMAP.md §4.
 | Scanner state | Budget counted (1/20 today), trigger marked fired, heartbeat written |
 
 Interpretation: plumbing only. Two decisions say nothing about skill.
+
+## 2026-10-07 — Universe: from a hand-picked list to a rule
+
+Owner challenged the original 8 coins (picked for liquidity). Agreed they need a better basis, but
+**not past profitability**: choosing coins because they went up is survivorship + look-ahead bias.
+CryptoRank (2026): of 1,539 coins that were ever top-100, 71.9% are effectively dead; the
+probability a top-100 coin disappears within 5 years is 62%. A universe of today's survivors hides
+all of them.
+
+What legitimately justifies a universe:
+1. **A written rule** using only non-return facts: on Coinbase vs USD, not a stablecoin / wrapped
+   coin / memecoin, >= 300 days of history, liquid enough that paper fills are believable.
+2. **Research on where edges live**: Liu, Tsyvinski & Wu (Journal of Finance 2022, data
+   2014–2018) find crypto returns are explained by market, **size** and **momentum** factors.
+   Smaller coins and momentum are where the documented premia are, which supports a MID tier
+   and the trend/rotation strategies. Caveat: old sample, smaller coins cost more to trade.
+3. **Testing strategies, not coins**: toolbox strategies are price-only, so they CAN be backtested
+   across the whole eligible universe with a sealed holdout. That says whether a strategy works
+   on a class of coins, without cherry-picking the coins.
+
+**Screen run on GitHub, 2026-10-07 05:30 UTC:** 400 USD products online, 306 eligible.
+Top 10 by 30-day volume: BTC, ETH, XRP, ZEC, SOL, NEAR, SUI, QNT, LINK, ADA. AVAX and LTC (in the
+original 8) are now MID tier (ranks 12 and 17). PUMP and USELESS showed up at MID ranks and were
+added to the memecoin exclusion list (project 3). Caveat: one 30-day window; ZEC's rank looks
+like a recent volume burst.
+
+New constraint (C6): Groq free tier = 8,000 tokens/minute, so the AI can read roughly 12–15 coins
+per decision. A wider universe must be scanned by code.

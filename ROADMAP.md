@@ -65,6 +65,10 @@ scalping, where the edge is gone in milliseconds and belongs to firms with co-lo
 **C4 — GitHub's scheduler.** Minimum interval 5 minutes, and runs are often delayed several
 minutes at busy times. Public repo = unlimited free minutes.
 
+**C6 — The free AI can only read so much at once.** Groq free tier caps one minute at 8,000
+tokens. 8 coins already use ~5,300 per call, so the AI can only look at **roughly 12–15 coins**
+per decision. Wider scanning has to be done by code (the strategy toolbox), not the AI.
+
 **C5 — Alpaca paper fills are optimistic.** Alpaca's own docs: paper trading ignores market
 impact and slippage, and fills orders larger than the real available liquidity. So Alpaca can
 mirror our trades but **cannot be the scorekeeper**; our stricter simulator is.
@@ -135,6 +139,8 @@ keys. Never run one with a real key, never install one without reading it, paper
 | D2 | Build the fast scanner (§4)? | ✅ Built 2026-10-06 |
 | D3 | Run length / first decision point | ⏳ Deferred by owner. **Must be set before the lock**, then only extendable |
 | D4 | Alpaca: create a new, separate crypto paper account | ⏳ Owner action, after lock |
+| D5 | Strategy toolbox: code computes 3–5 known strategies, shows signals to the AI, each strategy also trades alone | ✅ Owner approved 2026-10-07. Start list: trend, breakout+volume, dip-in-uptrend, relative-strength rotation. More strategies later via research |
+| D6 | Universe: chosen by a written rule (`research/universe_screen.py`), not by hand or by past returns | ⏳ Rule proposed 2026-10-07, owner to confirm size |
 
 ---
 
