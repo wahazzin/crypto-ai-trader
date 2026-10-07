@@ -73,7 +73,7 @@ jobs:
                     # crossed its exit level, so the event path is tested with the real AI too
                     python -m crypto_ai.scanner --state-dir ../smoke --smoke
                     python -m crypto_ai.inspect_state --state-dir ../smoke || true
-                    python -c "import json;p='../smoke/theses.json';t=json.load(open(p));[v.update(exit_below=1e12) for v in t.values()];json.dump(t,open(p,'w'))"
+                    python -c "import json,glob;[(lambda p,t:[v.update(exit_below=1e12) for v in t.values()] or json.dump(t,open(p,'w')))(p,json.load(open(p))) for p in glob.glob('../smoke/theses/*.json')]"
                     python -m crypto_ai.scanner --state-dir ../smoke --smoke ;;
             screen) python -m research.universe_screen ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
