@@ -1,0 +1,32 @@
+{
+  "arms": {
+    "ai_large": {
+      "calls_day": null,
+      "calls_today": 0,
+      "last_call": null
+    },
+    "ai_largemid": {
+      "calls_day": null,
+      "calls_today": 0,
+      "last_call": null
+    }
+  },
+  "fired": {},
+  "heartbeat": {
+    "equity": {
+      "ai_large": 9981.98,
+      "ai_largemid": 9981.98,
+      "btc_hold": 9950.21,
+      "eth_hold": 9949.61,
+      "ew_basket": 9950.23,
+      "s_breakout": 9980.03,
+      "s_dip": 9973.6,
+      "s_rotation": 9978.35,
+      "s_trend": 9979.32
+    },
+    "scans": 1,
+    "ts": "2026-10-07T07:48:27Z"
+  },
+  "last_heartbeat": "2026-10-07T07:48:27Z",
+  "scans_since_heartbeat": 0
+}
