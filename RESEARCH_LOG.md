@@ -308,3 +308,36 @@ model (~0.9–1.1% round trip). Full output: `daytrade/R2_results.md` on `crypto
 **Decision (per pre-registration):** no day-trading arm from these rules. A day-trading module only
 becomes worth testing with near-zero trading costs (maker orders / low-fee venue): that's a venue
 question for the go-live discussion, logged in the roadmap, not something to fake in a backtest.
+
+## 2026-10-07 — Research R3: on-chain data vs returns — **NO EVIDENCE** (clean null)
+
+Rules pre-registered in `research/ONCHAIN_PREREG.md` after a read-only availability probe and before
+any metric was compared with prices. Data: Coin Metrics Community (free). Exchange flows/supply exist
+for BTC and ETH only; active addresses and MVRV for 12 coins. Coinbase daily closes. Metric of day d
+used from d+1. Design 2016-06 → 2021-12, sealed holdout 2022-01 → 2026-09. Script validated first on
+synthetic data (planted MVRV effect: t ≈ −5.9 both splits → PASS; pure noise → all NO EVIDENCE).
+Full output: `onchain/R3_results.md` on `crypto-ai-research`.
+
+| Test | IC (t), design | IC (t), holdout | Economic check (holdout) | Verdict |
+|---|---|---|---|---|
+| F1 exchange net-flow z → next 1d | +0.010 (+0.61) | +0.018 (+1.07) | cash rule lost badly | NO EVIDENCE |
+| F1 exchange net-flow z → next 7d | −0.008 (−0.38) | −0.007 (−0.33) | BTC +8.7% vs hold +77.8% | NO EVIDENCE |
+| F2 30d change in exchange supply → next 30d | **−0.150 (−2.29)** | +0.013 (+0.16) | never triggered (0 exits) | NO EVIDENCE |
+| F3 active-address growth → next 7d (12 coins) | −0.003 (−0.12) | +0.030 (+1.90) | top-3 −79% vs EW +75% | NO EVIDENCE |
+| F4 MVRV → next 30d (12 coins) | +0.065 (+1.43) | +0.009 (+0.27) | top-3 −47% vs EW +75% | NO EVIDENCE |
+
+**What it says:**
+1. **The famous "coins flowing onto exchanges = selling" signal does nothing** at 1 or 7 days, in either
+   period, for BTC or ETH. And that's with backfilled exchange labels that flatter the test.
+2. **F2 is the textbook overfit trap.** In design it looked like a finding (t −2.29: rising exchange
+   supply → weaker next month, the story everyone tells). In the sealed holdout it vanished (t +0.16).
+   Had we only looked at 2016–2021 we'd have "discovered" an edge. This is exactly what rule 3 exists for.
+3. **Network growth and MVRV don't rank coins.** Picking the top 3 by either lost massively vs simply
+   holding all 12 equally. F3's holdout t of +1.90 is the wrong half of the test to get excited about:
+   design was zero.
+4. Caveats: survivorship (coins alive today), F3/F4 design starts ~2019 because several coins weren't on
+   Coinbase earlier (n = 1,041 days), only 2 coins for flows.
+
+**Decision (per pre-registration):** no on-chain arm. With R1 (news), R2 (day-trading rules) and R3
+(on-chain) all null, the AI keeps seeing what it sees now: prices, volumes, the strategy toolbox and
+its own scorecard. Next real evidence comes from the live forward test itself (weekly check-ins).
