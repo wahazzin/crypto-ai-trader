@@ -14,23 +14,23 @@
   "fired": {},
   "heartbeat": {
     "equity": {
-      "ai_large": 9874.22,
-      "ai_largemid": 9874.22,
-      "btc_hold": 9867.3,
-      "eth_hold": 9772.17,
-      "ew_basket": 9712.93,
-      "s_breakout": 9935.52,
-      "s_dip": 9943.94,
-      "s_rotation": 9873.37,
-      "s_trend": 9932.5
+      "ai_large": 9910.56,
+      "ai_largemid": 9910.56,
+      "btc_hold": 9851.16,
+      "eth_hold": 9755.53,
+      "ew_basket": 9760.49,
+      "s_breakout": 9940.98,
+      "s_dip": 9945.85,
+      "s_rotation": 9915.45,
+      "s_trend": 9939.06
     },
     "scans": 1,
-    "ts": "2026-10-07T11:51:38Z"
+    "ts": "2026-10-07T12:51:38Z"
   },
   "last_data_fault": {
     "error": "VVV-USD: stale or invalid quote",
     "ts": "2026-10-07T08:33:47Z"
   },
-  "last_heartbeat": "2026-10-07T11:51:38Z",
+  "last_heartbeat": "2026-10-07T12:51:38Z",
   "scans_since_heartbeat": 0
 }
