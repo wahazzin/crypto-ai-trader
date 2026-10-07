@@ -12,7 +12,7 @@ on:
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report, smoke, screen, backtest, alpaca_probe, weekly_preview, news_fetch, news_score, news_test, daytrade_fetch, daytrade_test, onchain_probe]
+        options: [run, lock, report, smoke, screen, backtest, alpaca_probe, weekly_preview, news_fetch, news_score, news_test, daytrade_fetch, daytrade_test, onchain_probe, onchain_fetch, onchain_test]
 
 concurrency:
   # state-writing actions share the loop's group (never two writers); research actions run freely
@@ -92,6 +92,8 @@ jobs:
             daytrade_fetch) python -m research.daytrade_r2 fetch ;;
             daytrade_test)  python -m research.daytrade_r2 test ;;
             onchain_probe)  python -m research.onchain_probe ;;
+            onchain_fetch)  python -m research.onchain_r3 fetch ;;
+            onchain_test)   python -m research.onchain_r3 test ;;
             weekly_preview) python -m crypto_ai.analytics.weekly --state-dir ../state --preview research/out/weekly_preview.md ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
           esac
