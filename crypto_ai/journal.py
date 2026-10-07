@@ -42,6 +42,7 @@ class Journal:
 
     def append(self, name, row):
         line = json.dumps(row, sort_keys=True, default=str, separators=(",", ":"))
+        os.makedirs(os.path.dirname(self.path(name)), exist_ok=True)
         with open(self.path(name), "a", encoding="utf-8", newline="\n") as f:
             f.write(line + "\n")
             f.flush()
