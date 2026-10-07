@@ -352,7 +352,10 @@ class TestLockAndIsolation(unittest.TestCase):
             lockmod.amend(self.state, "x", self.pkg)
 
     def test_package_is_paper_only_by_construction(self):
-        forbidden = ("bot.broker", "from bot", "import bot", "ib_async", "alpaca", "place_market_order")
+        # no broker code, no order endpoints, no trading hosts. Read-only MARKET DATA (e.g. SPY bars
+        # from data.alpaca.markets for the benchmark) is fine; anything that could place an order is not.
+        forbidden = ("bot.broker", "from bot", "import bot", "ib_async", "place_market_order", "submit_order",
+                     "/v2/orders", "paper-api.alpaca", "api.alpaca.markets/v2", "alpaca_trade_api", "alpaca.trading")
         for root, _, files in os.walk(lockmod.PKG_DIR):
             for fn in files:
                 if fn.endswith(".py"):

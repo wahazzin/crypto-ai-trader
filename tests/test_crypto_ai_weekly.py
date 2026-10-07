@@ -44,6 +44,7 @@ class TestWeekly(unittest.TestCase):
         path, text = W.run(d, CFG, datetime(2026, 10, 12, 0, 10, tzinfo=timezone.utc), True, spy)
         self.assertTrue(path.endswith("2026-W41.md"))
         self.assertIn("SPY +1.00%", text)
-        self.assertIn("| `btc_hold` | +3.00% | +2.00% |", text)
+        self.assertIn("| `btc_hold` | +3.00% | +2.00% |", text)                # baseline = starting $10k
+        self.assertIn("$40.00", text)                                              # first-cycle fees counted
         self.assertIsNone(W.run(d, CFG, datetime(2026, 10, 12, 0, 15, tzinfo=timezone.utc), True, spy))
         shutil.rmtree(d, ignore_errors=True)

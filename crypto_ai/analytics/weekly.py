@@ -66,17 +66,22 @@ def trade_stats(trades):
     return {"closed": n, "win_rate": wr, "avg_win": aw, "avg_loss": al, "expectancy": wr * aw + (1 - wr) * al}
 
 
-def equity_window(eq_rows, arm, start, end):
-    rows = sorted((r for r in eq_rows if r["arm"] == arm and start <= parse_iso(r["ts"]) <= end), key=lambda r: r["ts"])
-    if not rows:
+def equity_window(eq_rows, arm, start, end, initial):
+    """Return over [start, end]. Baseline = the last equity row BEFORE the window (or the starting
+    capital if there is none), so fees and moves at the very first cycle are counted."""
+    rows = sorted((r for r in eq_rows if r["arm"] == arm), key=lambda r: r["ts"])
+    inside = [r for r in rows if start <= parse_iso(r["ts"]) <= end]
+    if not inside:
         return None
-    vals = [r["equity"] for r in rows]
+    before = [r for r in rows if parse_iso(r["ts"]) < start]
+    base = before[-1] if before else {"equity": initial, "fees_usd": 0.0}
+    vals = [base["equity"]] + [r["equity"] for r in inside]
     peak, mdd = vals[0], 0.0
     for v in vals:
         peak = max(peak, v)
         mdd = min(mdd, v / peak - 1)
     return {"start": vals[0], "end": vals[-1], "ret": vals[-1] / vals[0] - 1, "max_dd": mdd,
-            "dd_now": rows[-1].get("drawdown"), "fees": rows[-1].get("fees_usd", 0.0) - rows[0].get("fees_usd", 0.0)}
+            "dd_now": inside[-1].get("drawdown"), "fees": inside[-1].get("fees_usd", 0.0) - base.get("fees_usd", 0.0)}
 
 
 def spy_return(start, end):
@@ -115,18 +120,19 @@ def build(state_dir, cfg, week_end, spy_fn=spy_return):
     week_start = max(week_end - timedelta(days=7), start_all)
     eq, orders = j.read("equity.jsonl"), j.read("orders.jsonl")
     trades = closed_trades(orders)
+    init = cfg["capital"]["initial_cash_usd"]
     week_label = (week_end - timedelta(days=1)).strftime("%G-W%V")
     lines = [f"# Weekly check-in {week_label}", "", f"> {BANNER}", "",
              f"Window: {iso(week_start)} → {iso(week_end)}. Since start: {iso(start_all)}.", ""]
     for label, s in (("This week", week_start), ("Since start", start_all)):
         spy = spy_fn(s, week_end)
-        btc = equity_window(eq, "btc_hold", s, week_end)
+        btc = equity_window(eq, "btc_hold", s, week_end, init)
         lines += [f"## {label}", "",
                   f"Benchmarks: **SPY {_p(spy)}** · **BTC hold {_p(btc and btc['ret'])}** (same window)", "",
                   "| Portfolio | Return | vs SPY | vs BTC | Drawdown now | Max DD | Fills | Closed trades | Win rate | Avg win | Avg loss | Expectancy/trade | Fees |",
                   "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for arm in cfg["arms"]:
-            w = equity_window(eq, arm, s, week_end)
+            w = equity_window(eq, arm, s, week_end, init)
             if not w:
                 continue
             fills = sum(1 for o in orders if o["arm"] == arm and s <= parse_iso(o["ts"]) <= week_end)
