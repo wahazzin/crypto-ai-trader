@@ -16,27 +16,7 @@
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Rotation pick with strong 28\u2011day performance; breakout confirmed.",
-    "updated_cycle": "2026-10-07T12:00Z"
-  },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-07T06:00Z"
-      }
-    ],
-    "exit_below": 240.0,
-    "invalidation": [
-      "Price below 240.0 USD"
-    ],
-    "opened_cycle": "2026-10-07T06:00Z",
-    "reasons": [
-      "Price still above exit level, trend remains positive, no breach of stop."
-    ],
-    "review_above": 268.0,
-    "status": "bullish",
-    "summary": "Top rotation pick; exceptional 28\u2011day return and breakout signal.",
-    "updated_cycle": "2026-10-07T12:00Z"
+    "summary": "Rotation pick with strong 28\u2011day performance; breakout remains active.",
+    "updated_cycle": "2026-10-07T13:46Z-event"
   }
 }

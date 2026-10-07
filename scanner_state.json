@@ -6,12 +6,14 @@
       "last_call": null
     },
     "ai_largemid": {
-      "calls_day": null,
-      "calls_today": 0,
-      "last_call": null
+      "calls_day": "2026-10-07",
+      "calls_today": 1,
+      "last_call": "2026-10-07T13:46:39Z"
     }
   },
-  "fired": {},
+  "fired": {
+    "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z"
+  },
   "heartbeat": {
     "equity": {
       "ai_large": 9910.56,
@@ -32,5 +34,5 @@
     "ts": "2026-10-07T08:33:47Z"
   },
   "last_heartbeat": "2026-10-07T12:51:38Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
