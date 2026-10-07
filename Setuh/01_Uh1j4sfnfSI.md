@@ -1,0 +1,5 @@
+# I FOUND THE BEST & EASIEST WAY TO BUILD A LOW PORT TRADING MEMECOINS (MEMECOIN MASTERCLASS PT.1)
+
+https://www.youtube.com/watch?v=Uh1j4sfnfSI · 15 min · views 12000
+
+
