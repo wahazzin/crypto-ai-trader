@@ -16,11 +16,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state)"
+        description: "run = scanner tick (does the 6h cycle when due) | lock = start the experiment clock (ONCE) | report = print report | smoke = pre-lock test with real AI (throwaway state) | screen = universe eligibility screen"
         required: true
         default: "run"
         type: choice
-        options: [run, lock, report, smoke]
+        options: [run, lock, report, smoke, screen]
 
 concurrency:
   group: crypto-ai-state          # never two runs writing state at once
@@ -75,6 +75,7 @@ jobs:
                     python -m crypto_ai.inspect_state --state-dir ../smoke || true
                     python -c "import json;p='../smoke/theses.json';t=json.load(open(p));[v.update(exit_below=1e12) for v in t.values()];json.dump(t,open(p,'w'))"
                     python -m crypto_ai.scanner --state-dir ../smoke --smoke ;;
+            screen) python -m research.universe_screen ;;
             *)      python -m crypto_ai.scanner --state-dir ../state ;;
           esac
 
@@ -87,8 +88,17 @@ jobs:
           git add -A && git commit -q -m "smoke test $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-smoke
 
+      - name: Save research output (separate branch)
+        if: always() && github.event.inputs.action == 'screen'
+        run: |
+          [ -d code/research/out ] || exit 0
+          mkdir res && cp -r code/research/out/* res/ && cd res && git init -q && git checkout -q -b crypto-ai-research
+          git config user.name "crypto-ai-bot"; git config user.email "actions@github.com"
+          git add -A && git commit -q -m "universe screen $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" crypto-ai-research
+
       - name: Commit state
-        if: always() && github.event.inputs.action != 'smoke'
+        if: always() && github.event.inputs.action != 'smoke' && github.event.inputs.action != 'screen'
         working-directory: state
         run: |
           git config user.name "crypto-ai-bot"
