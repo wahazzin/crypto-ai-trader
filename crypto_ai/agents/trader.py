@@ -100,7 +100,7 @@ def build_user_prompt(cycle_id, snapshot, pf, theses, feedback, cfg, now, wake=N
     if wake:
         payload["wake"] = wake
     return ("Current state (JSON). Decide and respond with the JSON object only.\n\n"
-            + json.dumps(payload, indent=1, sort_keys=True))
+            + json.dumps(payload, sort_keys=True, separators=(",", ":")))   # compact: ~25% fewer tokens (8k/min cap)
 
 
 def decide(llm, cfg, cycle_id, snapshot, pf, theses, feedback, now, wake=None, extra=None, arm="ai_pv"):

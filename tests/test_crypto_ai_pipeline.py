@@ -68,7 +68,7 @@ class TestExitLevels(unittest.TestCase):
                                        "features": {}}}}
         txt = build_user_prompt(CID, snap, Portfolio("ai_pv", 10000), {"BTC-USD": {"exit_below": 50000}},
                                 {}, CFG, dt.datetime(2026, 10, 1, 12, tzinfo=dt.timezone.utc))
-        self.assertIn('"exit_below_breached": true', txt)
+        self.assertIn('"exit_below_breached":true', txt)
 
 
 class TestSchema(unittest.TestCase):
