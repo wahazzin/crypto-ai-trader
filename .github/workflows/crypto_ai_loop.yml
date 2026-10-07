@@ -64,7 +64,7 @@ jobs:
             t0=$SECONDS
             n=$((n + 1))
             ( cd code && timeout 900 python -m crypto_ai.scanner --state-dir ../state ) || echo "tick $n: scanner exited non-zero (logged in state)"
-            ( cd code && timeout 120 python -m crypto_ai.analytics.weekly --state-dir ../state --if-due ) || echo "tick $n: weekly report failed"
+            ( cd code && timeout 900 python -m crypto_ai.analytics.weekly --state-dir ../state --if-due ) || echo "tick $n: weekly report failed"
             ( cd code && timeout 120 python -m mirror.alpaca_mirror --state-dir ../state --arm ai_large ) || echo "tick $n: mirror failed (bot unaffected)"
             ( cd state
               git add -A

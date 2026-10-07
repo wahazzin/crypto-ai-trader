@@ -155,6 +155,11 @@ def build(state_dir, cfg, week_end, spy_fn=spy_return):
               f"- AI tokens used by cycles: {toks:,}", "",
               "Expectancy = win rate × avg win + loss rate × avg loss, per closed trade, after all fees "
               "(rule 6). Hold portfolios rarely close trades, so their columns stay empty.", ""]
+    try:
+        from crypto_ai.analytics.diagnostics import markdown as honesty
+        lines.append(honesty(cfg, j, n_random=cfg["evaluation"].get("weekly_random_policies", 100)))
+    except Exception as e:                        # a diagnostics bug must never block the check-in
+        lines.append(f"_Honesty checks failed to compute: {e}_")
     return week_label, "\n".join(lines)
 
 

@@ -217,3 +217,18 @@ the alternative; its verification email never arrived, and the loop needs no thi
 - On 1-minute scanning: rejected for this project. Stops already use each candle's true low, and
   decisions are 6-hourly with multi-day holds, so 1-minute checks add API load and nothing else.
   Sub-minute speed belongs to project 3 (memecoins, live price stream).
+
+## 2026-10-07 — Phase 14: honesty checks built (in every weekly check-in)
+
+`crypto_ai/analytics/diagnostics.py`, per AI arm:
+1. **Better than luck?** The AI's scheduled decisions are replayed through a simple engine (cycle
+   snapshots, same risk rules, modelled fills), next to 100 random policies (1,000 at the decision
+   point) through the same engine. The random policies copy only the AI's *behaviour* (how often it
+   trades, how many coins, what sizes), never returns. Reported: the AI's percentile among them.
+2. **Wake-ups worth it?** Closed trades split by what opened them (scheduled vs wake-up), plus live
+   equity vs the scheduled-only replay.
+3. **Confidence vs outcome (rule 11):** buys bucketed by stated confidence with next-24h/72h returns
+   and hit rate; plus the outlook "staircase" (avg next-24h return per outlook score −2..+2).
+Tests use synthetic markets: an AI that buys the only rising coin beats > 80% of random policies;
+calibration and wake-up attribution are checked on hand-built cases. 112 tests.
+First data point: both AIs' first buys were 80–85% confidence (ai_large) and 70–79% (ai_largemid).
