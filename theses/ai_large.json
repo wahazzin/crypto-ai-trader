@@ -7,8 +7,8 @@
     "reasons": [],
     "review_above": 6.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-07T06:00Z"
+    "summary": "Holding position; price remains above exit_below.",
+    "updated_cycle": "2026-10-07T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [],
@@ -18,7 +18,7 @@
     "reasons": [],
     "review_above": 300.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-07T06:00Z"
+    "summary": "Holding position; price remains above exit_below.",
+    "updated_cycle": "2026-10-07T12:00Z"
   }
 }
