@@ -5,8 +5,11 @@ CONCEPTS (each one is a way a naive backtest lies to you):
   * SPREAD: you buy at the ASK and sell at the BID, never at the mid. Crossing the spread is a
     real cost on every trade.
   * FEE: the exchange charges a percentage of every fill (40 bps = 0.40% per side by default).
-  * SLIPPAGE: your order moves the price a little against you; bigger orders relative to daily
-    volume move it more. Modelled as a small base (2 bps majors, 6 bps alts) plus a size term.
+  * SLIPPAGE: your order eats through the order book. When the live level-2 book is available
+    (normal case for AI/strategy orders) the fill is the volume-weighted price of walking the
+    real asks (buys) or bids (sells) for your size, plus a small latency buffer (2/6/10 bps).
+    Without a book (stop fills replayed from candles) it falls back to a model: the same buffer
+    plus a size term vs 24h volume.
   * LATENCY: fills are priced from a quote fetched AFTER the LLM answered, not from the price
     the AI was shown.
   * STOPS: a stop-loss is only as good as the market lets it be. If price gaps through the stop,
@@ -31,6 +34,26 @@ def slippage_bps(cfg, asset, notional, volume_24h_usd):
     return base + impact
 
 
+def base_bps(cfg, asset):
+    c = cfg["costs"]
+    return (c["slippage_bps_major"] if asset in cfg["majors"] else
+            c.get("slippage_bps_mid", c["slippage_bps_alt"]) if asset in cfg.get("mid", ()) else
+            c["slippage_bps_alt"])
+
+
+def walk_book(levels, qty):
+    """Volume-weighted price to fill `qty` against price levels [(price, size), ...] best first.
+    Returns None if the visible book is not deep enough."""
+    left, cost = qty, 0.0
+    for px, size in levels:
+        take = min(left, size)
+        cost += take * px
+        left -= take
+        if left <= 1e-12:
+            return cost / qty
+    return None
+
+
 def _fill_row(pf, cycle_id, ts, asset, side, qty, price, mid, fee, spread_cost, slip_cost, cause):
     return {"ts": iso(ts), "cycle_id": cycle_id, "arm": pf.name, "asset": asset, "side": side,
             "qty": qty, "price": price, "mid": mid, "notional": qty * price,
@@ -53,9 +76,14 @@ def execute(pf, asset, side, notional_usd, quote, cfg, now, cause, cycle_id="",
     mid, bid, ask = quote["mid"], quote["bid"], quote["ask"]
     slip = slippage_bps(cfg, asset, notional_usd, quote.get("volume_24h_usd", 0.0)) / 1e4
 
+    book = quote.get("book")
+    buf = base_bps(cfg, asset) / 1e4
+
     if side == "buy":
-        fill_px = ask * (1 + slip)
-        qty = min(notional_usd / mid, pf.cash / (fill_px * (1 + fee_rate)))
+        want = notional_usd / mid
+        vwap = walk_book(book["asks"], want) if book and want > 0 else None
+        fill_px = vwap * (1 + buf) if vwap else ask * (1 + slip)
+        qty = min(want, pf.cash / (fill_px * (1 + fee_rate)))
         if qty * mid < 1.0:
             return None
         gross = qty * fill_px
@@ -70,7 +98,7 @@ def execute(pf, asset, side, notional_usd, quote, cfg, now, cause, cycle_id="",
             pos.avg_cost = (pos.avg_cost * pos.qty + fill_px * qty) / total
             pos.qty = total
             pos.stop_pct = min(pos.stop_pct, sp)          # tighten only, never loosen
-        spread_cost, slip_cost = qty * (ask - mid), qty * ask * slip
+        spread_cost, slip_cost = qty * (ask - mid), qty * (fill_px - ask)
     elif side == "sell":
         pos = pf.positions.get(asset)
         if pos is None or pos.qty <= 0:
@@ -78,14 +106,15 @@ def execute(pf, asset, side, notional_usd, quote, cfg, now, cause, cycle_id="",
         qty = pos.qty if full_exit else min(pos.qty, notional_usd / mid)
         if qty >= pos.qty * (1 - 1e-9):
             qty = pos.qty
-        fill_px = bid * (1 - slip)
+        vwap = walk_book(book["bids"], qty) if book else None
+        fill_px = vwap * (1 - buf) if vwap else bid * (1 - slip)
         gross = qty * fill_px
         fee = gross * fee_rate
         pf.cash += gross - fee
         pos.qty -= qty
         if pos.qty <= 1e-12:
             del pf.positions[asset]
-        spread_cost, slip_cost = qty * (mid - bid), qty * bid * slip
+        spread_cost, slip_cost = qty * (mid - bid), qty * (bid - fill_px)
     else:
         raise ValueError(side)
 

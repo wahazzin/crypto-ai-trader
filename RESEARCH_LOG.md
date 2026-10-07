@@ -149,3 +149,21 @@ Over all years, breakout is on 31% of coin-days, trend 34%, rotation 15%, dip 12
    EW-hold comparison carries the same bias, which is why it's the yardstick.
 5. Not yet compared with SPY (project rule 5). Coinbase has no SPY. To add before any go-live talk.
 6. This backtest informs; it does not unlock anything. The live forward test decides.
+
+## 2026-10-07 — Pre-lock additions: scorecard, order-book fills, horizon, roadmap
+
+- **Dip kept** as a known loser; instead of hiding it, the AI now sees a **strategy scorecard** each
+  cycle: the backtest summary plus every strategy's live paper record. That's the honest version
+  of "learning from failure": evidence across many trades, not a reaction to one loss. A proper
+  learning arm (trade reviews → weekly statistics → a separate `ai_learner` vs an identical arm
+  without lessons) is roadmap phase 15.
+- **Order-book fills:** buys/sells now walk Coinbase's live level-2 book for the actual order size
+  (plus a 2/6/10 bps latency buffer). Prices were already live; this makes the fill itself real-ish.
+- **Horizon** stated in the AI's instructions: short-to-mid term, days to weeks; longer holds allowed
+  while the evidence holds (owner, 2026-10-07).
+- **Run length 12 months** confirmed by owner.
+- Considered and rejected: running the model locally (Ollama). gpt-oss-120b needs ~80 GB of memory
+  and the PC would have to stay on 24/7; the 20b version fits ~16 GB but is a weaker, different
+  model. Swapping models mid-test would also mix two "brains" in one result. Other models
+  (e.g. Gemini free tier) can come later as their OWN arms.
+- ROADMAP rewritten as a phase-by-phase plan (phases 11–18 + project 3). 102 tests.

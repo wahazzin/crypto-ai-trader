@@ -67,6 +67,16 @@ class CoinbaseClient:
             raise DataFault("products: unexpected response")
         return rows
 
+    def book(self, product):
+        """Live order book, level 2 (best 50 price levels each side, sizes aggregated).
+        Used to price fills by walking the real queue instead of guessing slippage."""
+        j = self._get(f"/products/{product}/book", {"level": 2})
+        try:
+            return {"bids": [(float(p), float(s)) for p, s, *_ in j["bids"]],
+                    "asks": [(float(p), float(s)) for p, s, *_ in j["asks"]]}
+        except (KeyError, TypeError, ValueError) as e:
+            raise DataFault(f"{product} book malformed: {e}")
+
     def stats(self, product):
         """24h and 30-day volume (in base currency)."""
         j = self._get(f"/products/{product}/stats")

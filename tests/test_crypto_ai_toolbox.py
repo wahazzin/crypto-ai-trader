@@ -200,3 +200,41 @@ class TestLineup(unittest.TestCase):
         strat = [o for o in self.j.read("orders.jsonl") if o["arm"].startswith("s_")]
         self.assertTrue(strat, "at least one strategy arm should trade on the synthetic market")
         self.assertTrue(all(o["cause"] == "strategy" for o in strat))
+
+
+class TestOrderBookFills(unittest.TestCase):
+    """Fills walk the real book when it's available; thin books cost more."""
+
+    def q(self, book=None):
+        q = {"mid": 100.0, "bid": 99.95, "ask": 100.05, "volume_24h_usd": 1e9}
+        if book:
+            q["book"] = book
+        return q
+
+    def test_buy_walks_asks(self):
+        from crypto_ai.execution.paper_exchange import execute, walk_book
+        self.assertAlmostEqual(walk_book([(100.05, 5), (100.5, 5)], 10), 100.275)
+        pf = Portfolio("x", 1e4)
+        book = {"asks": [(100.05, 5), (100.5, 5)], "bids": [(99.95, 100)]}
+        f = execute(pf, "SOL-USD", "buy", 1000, self.q(book), CFG, datetime(2026, 10, 1, tzinfo=timezone.utc), "t")
+        buf = CFG["costs"]["slippage_bps_alt"] / 1e4
+        self.assertAlmostEqual(f["price"], 100.275 * (1 + buf), places=6)
+        self.assertGreater(f["slippage_cost_usd"], 0)
+
+    def test_sell_walks_bids_and_falls_back_without_book(self):
+        from crypto_ai.execution.paper_exchange import execute
+        now = datetime(2026, 10, 1, tzinfo=timezone.utc)
+        pf = Portfolio("x", 1e4)
+        execute(pf, "SOL-USD", "buy", 1000, self.q(), CFG, now, "t")
+        book = {"asks": [(100.05, 100)], "bids": [(99.95, 1), (90.0, 100)]}
+        f = execute(pf, "SOL-USD", "sell", 0, self.q(book), CFG, now, "t", full_exit=True)
+        self.assertLess(f["price"], 99.95 * 0.95)          # thin bid side => much worse fill
+
+    def test_scorecard_reaches_the_ai(self):
+        d = tempfile.mkdtemp()
+        t = datetime(2026, 10, 5, 0, 5, tzinfo=timezone.utc)
+        run_cycle(d, CFG, FakeClient(t), MockLLM(), now=t, dry_run=True, require_lock=False)
+        prompt = Journal(d).read("prompts.jsonl")[0]["user_prompt"]
+        self.assertIn("strategy_scorecard", prompt)
+        self.assertIn("s_dip", prompt)
+        shutil.rmtree(d, ignore_errors=True)

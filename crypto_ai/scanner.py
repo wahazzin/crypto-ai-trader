@@ -45,7 +45,7 @@ from crypto_ai.market_data.coinbase import CoinbaseClient, DataFault, closed_onl
 from crypto_ai.market_data.features import build_snapshot, fresh_quotes
 from crypto_ai.risk.engine import update_breakers
 from crypto_ai.runner import (_alert, _load_arms, ai_arms, ai_decide, ai_execute, cycle_id_for,
-                              run_cycle, save_feedback)
+                              run_cycle, save_feedback, scorecard)
 from crypto_ai.strategies import toolbox
 
 
@@ -275,12 +275,13 @@ def _wake_ai(j, ccfg, client, llm, now, sid, arms, to_wake, dry_run):
                                                "ok": False, "errors": [f"snapshot: {e}"]})
         return [{"fills": [], "events": [{"type": "EVENT_DATA_FAULT", "error": str(e)}]}]
     signals = toolbox.compute_signals(snap["daily"], ccfg["eligible"], ccfg)
+    card = scorecard(ccfg, arms, {a: v["mid"] for a, v in snap["assets"].items()})
     ctxs = []
     for arm, trig in to_wake:
         wake = {"reason": [{k: v for k, v in t.items() if k not in ("once", "key")} for t in trig],
                 "note": "Woken between scheduled cycles by the code scanner. Act only if this matters. "
                         "DO_NOTHING is fine. Outlook required but not scored."}
-        c = ai_decide(j, arm, ccfg, llm, eid, snap, arms[arm], signals, now, wake=wake)
+        c = ai_decide(j, arm, ccfg, llm, eid, snap, arms[arm], signals, now, wake=wake, card=card)
         c["row"]["wake"] = wake
         ctxs.append(c)
     quotes = fresh_quotes(ccfg, client, ccfg["universe"], now_utc() if not dry_run else now)

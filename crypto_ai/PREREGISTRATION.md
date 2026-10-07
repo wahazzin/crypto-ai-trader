@@ -41,7 +41,7 @@ so a null result can't be reframed later as "the AI just needs more data."
 | Capital | $10,000 simulated per arm, all arms start at the same first-cycle snapshot |
 | Instrument | Spot, long-only, no leverage, no shorting, USD cash only, market orders only |
 | Costs (confirmed by owner 2026-10-06) | 40 bps fee/side + measured half-spread + slippage (2 bps BTC/ETH, 6 bps large alts, 10 bps mid + size impact). Sensitivity re-runs at 10 and 60 bps |
-| Fills | Priced from a quote fetched AFTER the LLM response returns — never at the price the AI saw |
+| Fills | Priced from a quote AND the live level-2 order book fetched AFTER the LLM response returns — never at the price the AI saw. Fill = volume-weighted price of walking the book for the order size, plus a 2/6/10 bps latency buffer. Stop fills replayed from candles use the slippage model instead |
 | Model | `gpt-oss-120b`, open weights, via free API tiers (Groq primary, OpenRouter backup serving the SAME weights). Never falls back to a different model. Provider + returned model id logged on every call |
 | Randomness | temperature 0; prompt and full response logged |
 
@@ -53,12 +53,17 @@ so a null result can't be reframed later as "the AI just needs more data."
 | `ai_largemid` | Subject | Same, plus up to 5 MID coins per cycle that the toolbox flags (ranking in `toolbox.mid_candidates`, fixed). Mid coins capped at 10% each |
 | `s_trend` | Strategy alone | close > SMA50 and SMA50 rising (vs 10 days ago). All eligible coins. Same risk engine, stops, costs |
 | `s_breakout` | Strategy alone | Enter: close > prior 20-day high on ≥1.5× 20-day avg volume. Exit: close < prior 10-day low |
-| `s_dip` | Strategy alone | Enter: ≥8% drop over 3 days while SMA50 rising and close within 10% of SMA50. Exit: close > SMA10 or 10 days |
+| `s_dip` | Strategy alone | Enter: ≥8% drop over 3 days while SMA50 rising and close within 10% of SMA50. Exit: close > SMA10 or 10 days. Lost money in both backtest periods; kept deliberately as a known loser (does the AI learn to discount it?) |
 | `s_rotation` | Strategy alone | Top 3 eligible coins by 28-day return (only if > 0), re-picked weekly (Monday 00:00 UTC) |
 | `btc_hold` | Reference benchmark | Buy BTC at start, hold. Not risk-constrained |
 | `eth_hold` | Reference benchmark | Same for ETH |
 | `ew_basket` | Reference benchmark | Equal-weight the LARGE tier, rebalanced first cycle of each UTC month |
 | random policies | Constraint-matched challenger (analysis-time) | 1,000 random policies through the same risk engine and costs, calibrated ONLY on each AI arm's realised gross exposure and turnover, never on returns. Built before the first interim report |
+
+**What the AI is shown about the strategies:** each cycle, the current signals AND a scorecard: the
+pre-run backtest summary (fixed in `experiment.json`) plus every strategy's and benchmark's live
+paper return and drawdown so far. Trading horizon stated to the AI: short-to-mid term (days to
+weeks); longer holds allowed while the thesis holds.
 
 Strategy parameters are textbook defaults fixed before any test and never tuned. Strategy arms
 size equal weight across active coins aiming at 80% gross; the risk engine clips them like the AI.

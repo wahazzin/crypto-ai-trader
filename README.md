@@ -33,7 +33,7 @@ Coinbase prices ──► features ──► AI (gpt-oss-120b, free)
                                     ▼
                               RISK ENGINE (code)  ── can clip or reject anything
                                     ▼
-                              PAPER EXCHANGE  ── fees 0.4%, real spread, slippage
+                              PAPER EXCHANGE  ── fees 0.4%, walks the live order book
                                     ▼
                          journal + portfolio + theses saved
                                     ▼
@@ -56,7 +56,7 @@ alone, the AI adds nothing.
 
 | The AI decides | Code decides (AI can't touch) |
 |---|---|
-| Which coins, when, how much (as a % target) | Max per coin (35% BTC/ETH, 15% alts) |
+| Which coins, when, how much (as a % target) | Max per coin (35% BTC/ETH, 15% large alts, 10% mid) |
 | Its thesis and the price that proves it wrong | Max invested (80%), max alts together (40%) |
 | Hold, add, reduce, exit, or do nothing | Stop-losses, daily-loss and drawdown circuit breakers |
 | A confidence number (logged, never trusted) | Liquidity, spread and turnover limits |

@@ -111,6 +111,11 @@ def fresh_quotes(cfg, client, assets, now):
                 mid = (tk["bid"] + tk["ask"]) / 2
                 out[p] = {"mid": mid, "bid": tk["bid"], "ask": tk["ask"],
                           "volume_24h_usd": tk["volume_base"] * mid}
+                if hasattr(client, "book"):
+                    try:
+                        out[p]["book"] = client.book(p)       # real depth -> real slippage
+                    except DataFault:
+                        pass                                  # fall back to the slippage model
         except DataFault:
             out[p] = None
     return out

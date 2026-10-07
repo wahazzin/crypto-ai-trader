@@ -282,6 +282,94 @@
     "rotation": {
       "lookback_days": 28,
       "top_n": 3
+    },
+    "backtest_scorecard": {
+      "_source": "research/backtest_toolbox.py run 2026-10-07 (RESEARCH_LOG). Same 25 coins; survivorship-biased; untuned params.",
+      "periods": "design 2020-2023 / holdout 2024-2026",
+      "trend": {
+        "sharpe": [
+          0.95,
+          1.02
+        ],
+        "expectancy_per_trade_pct": [
+          -1.7,
+          0.2
+        ],
+        "win_rate_pct": [
+          19.9,
+          18.1
+        ],
+        "beat_equal_weight_hold": [
+          false,
+          true
+        ]
+      },
+      "breakout": {
+        "sharpe": [
+          1.42,
+          1.16
+        ],
+        "expectancy_per_trade_pct": [
+          5.2,
+          1.7
+        ],
+        "win_rate_pct": [
+          36.8,
+          32.8
+        ],
+        "beat_equal_weight_hold": [
+          true,
+          true
+        ]
+      },
+      "dip": {
+        "sharpe": [
+          -0.38,
+          -0.83
+        ],
+        "expectancy_per_trade_pct": [
+          -0.5,
+          -0.3
+        ],
+        "win_rate_pct": [
+          58.3,
+          61.5
+        ],
+        "beat_equal_weight_hold": [
+          false,
+          false
+        ]
+      },
+      "rotation": {
+        "sharpe": [
+          1.09,
+          0.84
+        ],
+        "expectancy_per_trade_pct": [
+          5.2,
+          4.9
+        ],
+        "win_rate_pct": [
+          45.0,
+          39.1
+        ],
+        "beat_equal_weight_hold": [
+          false,
+          true
+        ]
+      },
+      "equal_weight_hold_same_coins": {
+        "sharpe": [
+          0.93,
+          0.57
+        ]
+      },
+      "btc_hold": {
+        "sharpe": [
+          1.0,
+          0.74
+        ]
+      }
     }
   }
 }

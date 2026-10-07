@@ -99,7 +99,24 @@ def ai_view(arm, ccfg, signals, pf):
     return list(dict.fromkeys(view))
 
 
-def ai_decide(j, arm, ccfg, llm, decision_id, snap, pf, signals, now, wake=None):
+def scorecard(cfg, arms, mids):
+    """What each strategy has actually done: its pre-run backtest AND its live paper record so far.
+    This is how the AI 'learns from failure' honestly: from many trades' worth of evidence, shown
+    to it as data, not from reacting to its own last loss."""
+    init = cfg["capital"]["initial_cash_usd"]
+    live = {}
+    for name, spec in cfg["arms"].items():
+        if spec["kind"] in ("strategy", "buy_hold", "equal_weight"):
+            pf = arms[name]
+            live[name] = {"return_pct": round(100 * (pf.equity(mids) / init - 1), 2),
+                          "drawdown_pct": round(100 * pf.drawdown(mids), 2),
+                          "fees_usd": round(pf.fees_usd, 2)}
+    bt = {k: v for k, v in cfg["strategies"]["backtest_scorecard"].items() if not k.startswith("_")}
+    return {"note": "backtest = before this run started (biased upward, see notes); live = this paper run so far "
+                    "(short live records are mostly noise).", "backtest": bt, "live": live}
+
+
+def ai_decide(j, arm, ccfg, llm, decision_id, snap, pf, signals, now, wake=None, card=None):
     """One AI arm's decision (no execution yet). Returns a context dict for ai_execute."""
     view = ai_view(arm, ccfg, signals, pf)
     vcfg = dict(ccfg, universe=view)
@@ -107,6 +124,8 @@ def ai_decide(j, arm, ccfg, llm, decision_id, snap, pf, signals, now, wake=None)
     theses = j.load_json(f"theses/{arm}.json", {})
     feedback = j.load_json(f"feedback/{arm}.json", {"note": "first cycle, no feedback yet"})
     extra = {"toolbox_signals": toolbox.signals_for_prompt(signals, view)}
+    if card:
+        extra["strategy_scorecard"] = card
     row = {"cycle_id": decision_id, "ts": iso(now), "arm": arm, "view": view,
            "scored_assets": list(ccfg["large"])}
     events, result = [], None
@@ -236,7 +255,8 @@ def run_cycle(state_dir, cfg, client, llm, now=None, dry_run=False, require_lock
     j.append("signals.jsonl", {"cycle_id": cid, "ts": iso(now), "signals": signals})
 
     # ---- 7. AI arms decide (sequential; the LLM client spaces calls for the token-per-minute cap)
-    ctxs = [ai_decide(j, arm, ccfg, llm, cid, snap, arms[arm], signals, now) for arm in ai_arms(cfg)]
+    card = scorecard(cfg, arms, mids)
+    ctxs = [ai_decide(j, arm, ccfg, llm, cid, snap, arms[arm], signals, now, card=card) for arm in ai_arms(cfg)]
     for c in ctxs:
         events += c["events"]
 
