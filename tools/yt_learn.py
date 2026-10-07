@@ -13,12 +13,12 @@ import sys
 
 def videos(url):
     if "watch?v=" in url or "youtu.be/" in url:
-        cmd = ["yt-dlp", "-J", "--skip-download", url]
+        cmd = [sys.executable, "-m", "yt_dlp", "-J", "--skip-download", url]
         js = json.loads(subprocess.run(cmd, capture_output=True, text=True, check=True).stdout)
         return js.get("uploader") or "single", [js]
     if not url.rstrip("/").endswith(("/videos", "/streams", "/shorts")):
         url = url.rstrip("/") + "/videos"
-    cmd = ["yt-dlp", "-J", "--flat-playlist", url]
+    cmd = [sys.executable, "-m", "yt_dlp", "-J", "--flat-playlist", url]
     js = json.loads(subprocess.run(cmd, capture_output=True, text=True, check=True).stdout)
     return js.get("channel") or js.get("uploader") or "channel", js.get("entries", [])
 
