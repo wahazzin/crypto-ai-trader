@@ -10,34 +10,6 @@
     "summary": "",
     "updated_cycle": "2026-10-08T14:48Z-event"
   },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-07T06:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-08T06:52Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-08T09:43Z-event"
-      }
-    ],
-    "exit_below": 4.9,
-    "invalidation": [
-      "Price dropping below 4.9\u202fUSD would invalidate the bullish thesis."
-    ],
-    "opened_cycle": "2026-10-07T06:00Z",
-    "reasons": [
-      "Breakout and trend signals stay strong; 28\u2011day return remains exceptionally high."
-    ],
-    "review_above": 5.8,
-    "status": "bullish",
-    "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-08T12:38Z-event"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
