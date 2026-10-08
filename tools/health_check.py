@@ -39,9 +39,14 @@ def problems():
         out.append(("state", f"Crypto AI trader: couldn't read state ({type(e).__name__})."))
     try:
         # silent-failure check: the bot keeps running even if the free AI (Groq) stops answering
-        r = requests.get(f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl",
-                         headers={"Range": "bytes=-6000", "Accept-Encoding": "identity"}, timeout=30)   # no gzip with byte ranges
+        url = f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl"
+        r = requests.get(url, headers={"Range": "bytes=-6000", "Accept-Encoding": "identity"}, timeout=30)   # no gzip with byte ranges
+        if r.status_code == 416:                       # file smaller than the range: read it whole
+            r = requests.get(url, headers={"Accept-Encoding": "identity"}, timeout=30)
+        r.raise_for_status()
         cyc = [json.loads(l) for l in r.text.splitlines() if l.startswith("{") and l.endswith("}")][-2:]
+        if not cyc:
+            raise ValueError("no cycles found in the file")
         bad = [c for c in cyc if c.get("status") != "OK" or not all(a.get("ok") for a in (c.get("ai") or {}).values())]
         if cyc and len(bad) == len(cyc):
             out.append(("ai", f"Crypto AI trader: the AI failed in the last {len(cyc)} cycles "
