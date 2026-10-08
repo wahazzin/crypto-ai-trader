@@ -12,13 +12,13 @@
     ],
     "opened_cycle": "2026-10-07T06:00Z",
     "reasons": [
-      "Price still above exit_below (4.9\u202fUSD) with no breach.",
-      "Trend remains positive and breakout is active.",
-      "28\u2011day return remains strong (~118%)."
+      "Price (5.35 USD) is still above the exit_below level (4.9 USD).",
+      "Trend remains positive and breakout signal is active.",
+      "28\u2011day return remains very strong (~115%)."
     ],
     "review_above": 5.5,
     "status": "bullish",
     "summary": "Continue to hold NEAR as rotation pick; price remains above exit level and trend stays positive.",
-    "updated_cycle": "2026-10-07T18:00Z"
+    "updated_cycle": "2026-10-08T00:00Z"
   }
 }

@@ -1,11 +1,11 @@
 {
-  "cash": 7487.414976896513,
-  "day_start_date": "2026-10-07",
-  "day_start_equity": 10000.0,
+  "cash": 7970.304041706133,
+  "day_start_date": "2026-10-08",
+  "day_start_equity": 9940.240376247097,
   "extra": {},
-  "fees_usd": 10.010298896826644,
+  "fees_usd": 11.949612410118293,
   "halted_until": null,
-  "last_ts": "2026-10-07T22:57:25Z",
+  "last_ts": "2026-10-08T00:02:24Z",
   "name": "s_breakout",
   "no_buys_until": null,
   "peak_equity": 10000.0,
@@ -31,13 +31,6 @@
       "qty": 417.93090766234525,
       "stop_pct": 18.0
     },
-    "ARB-USD": {
-      "avg_cost": 0.18887869,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1767.4089784376104,
-      "stop_pct": 18.0
-    },
     "AVAX-USD": {
       "avg_cost": 11.354342999999998,
       "opened_cycle": "2026-10-07T06:00Z",
@@ -58,18 +51,11 @@
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 0.003954083052390789,
       "stop_pct": 18.0
-    },
-    "ENA-USD": {
-      "avg_cost": 0.240541098019222,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 693.6496375680656,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 2.21364148996189,
-  "spread_usd": 0.3610827166989319,
-  "traded_notional_usd": 2502.574724206661,
+  "slippage_usd": 2.698955181976812,
+  "spread_usd": 0.5141150303636366,
+  "traded_notional_usd": 2987.403102529573,
   "trades": [
     {
       "cause": "strategy",
@@ -110,6 +96,16 @@
       "cause": "strategy",
       "notional": 166.8512454612579,
       "ts": "2026-10-07T06:39:46Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 327.75604453870625,
+      "ts": "2026-10-08T00:02:24Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 157.07233378420588,
+      "ts": "2026-10-08T00:02:24Z"
     }
   ]
 }
