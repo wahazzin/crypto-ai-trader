@@ -4,6 +4,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-07T06:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-08T06:52Z-event"
       }
     ],
     "exit_below": 4.9,
@@ -12,13 +16,13 @@
     ],
     "opened_cycle": "2026-10-07T06:00Z",
     "reasons": [
-      "Price (5.38 USD) still above exit_below (4.9 USD).",
-      "Trend remains positive and breakout signal is active.",
-      "28\u2011day return remains very strong (~115%)."
+      "Price (5.503\u202fUSD) stayed above exit_below (4.9\u202fUSD).",
+      "Breakout and trend signals stay strong.",
+      "28\u2011day return still exceptionally high."
     ],
-    "review_above": 5.5,
+    "review_above": 5.8,
     "status": "bullish",
-    "summary": "Continue to hold NEAR as rotation pick; price remains above exit level and trend stays positive.",
-    "updated_cycle": "2026-10-08T06:00Z"
+    "summary": "Price remains above exit level; review target hit, raising new review level.",
+    "updated_cycle": "2026-10-08T06:52Z-event"
   }
 }

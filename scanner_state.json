@@ -7,14 +7,15 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-08",
-      "calls_today": 3,
-      "last_call": "2026-10-08T05:27:42Z"
+      "calls_today": 4,
+      "last_call": "2026-10-08T06:52:42Z"
     }
   },
   "fired": {
     "ai_largemid|AERO-USD:volume": "2026-10-08T04:52:42Z",
     "ai_largemid|ENA-USD:volume": "2026-10-08T04:52:42Z",
     "ai_largemid|LTC-USD:volume": "2026-10-08T04:52:42Z",
+    "ai_largemid|NEAR-USD:review_above:5.5": "2026-10-08T06:52:42Z",
     "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
     "ai_largemid|QNT-USD:move": "2026-10-08T04:52:42Z",
     "ai_largemid|TAO-USD:volume": "2026-10-08T04:52:42Z",
@@ -46,5 +47,5 @@
     "ts": "2026-10-07T08:33:47Z"
   },
   "last_heartbeat": "2026-10-08T06:12:43Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }

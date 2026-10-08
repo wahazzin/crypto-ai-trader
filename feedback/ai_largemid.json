@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-08T06:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-08T06:52Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.15,
+      "requested_weight": 0.15,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 5.509103479999999,
+      "qty": 33.233652743091035,
+      "side": "buy"
+    }
+  ]
 }
