@@ -1,19 +1,22 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": null,
-      "calls_today": 0,
-      "last_call": null
+      "calls_day": "2026-10-08",
+      "calls_today": 1,
+      "last_call": "2026-10-08T04:22:42Z"
     },
     "ai_largemid": {
-      "calls_day": "2026-10-07",
-      "calls_today": 2,
-      "last_call": "2026-10-07T15:42:01Z"
+      "calls_day": "2026-10-08",
+      "calls_today": 1,
+      "last_call": "2026-10-08T04:22:42Z"
     }
   },
   "fired": {
     "ai_largemid|AERO-USD:volume": "2026-10-07T15:42:01Z",
-    "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z"
+    "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
+    "ai_largemid|ZEC-USD:move": "2026-10-08T04:22:42Z",
+    "ai_largemid|ZRO-USD:move": "2026-10-08T04:22:42Z",
+    "ai_large|ZEC-USD:move": "2026-10-08T04:22:42Z"
   },
   "heartbeat": {
     "equity": {
@@ -35,5 +38,5 @@
     "ts": "2026-10-07T08:33:47Z"
   },
   "last_heartbeat": "2026-10-08T04:07:43Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
