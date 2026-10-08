@@ -20,12 +20,51 @@
     ],
     "opened_cycle": "2026-10-07T06:00Z",
     "reasons": [
-      "Breakout and trend signals stay strong.",
-      "28\u2011day return remains exceptionally high."
+      "Breakout and trend signals stay strong; 28\u2011day return remains exceptionally high."
     ],
     "review_above": 5.8,
     "status": "bullish",
-    "summary": "Thesis remains bullish; price stays above exit level.",
-    "updated_cycle": "2026-10-08T09:43Z-event"
+    "summary": "Thesis remains bullish; price above exit level.",
+    "updated_cycle": "2026-10-08T12:00Z"
+  },
+  "QNT-USD": {
+    "confidence_history": [
+      {
+        "confidence": 78,
+        "cycle": "2026-10-08T12:00Z"
+      }
+    ],
+    "exit_below": 210,
+    "invalidation": [
+      "Price falling below 210\u202fUSD would invalidate the thesis."
+    ],
+    "opened_cycle": "2026-10-08T12:00Z",
+    "reasons": [
+      "Breakout signal, strong uptrend, rotation pick rank 1, massive 28\u2011day return."
+    ],
+    "review_above": 260,
+    "status": "bullish",
+    "summary": "Entering position based on breakout, trend, and top rotation rank.",
+    "updated_cycle": "2026-10-08T12:00Z"
+  },
+  "ZRO-USD": {
+    "confidence_history": [
+      {
+        "confidence": 72,
+        "cycle": "2026-10-08T12:00Z"
+      }
+    ],
+    "exit_below": 1.8,
+    "invalidation": [
+      "Price dropping below 1.80\u202fUSD would invalidate the thesis."
+    ],
+    "opened_cycle": "2026-10-08T12:00Z",
+    "reasons": [
+      "Breakout signal, positive trend, rotation pick rank 3, 28\u2011day return >100%."
+    ],
+    "review_above": 2.5,
+    "status": "bullish",
+    "summary": "Adding position after breakout and rotation pick signals.",
+    "updated_cycle": "2026-10-08T12:00Z"
   }
 }
