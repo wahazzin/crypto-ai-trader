@@ -1,15 +1,22 @@
 {
-  "cash": 7424.254418027388,
+  "cash": 6643.815407593908,
   "day_start_date": "2026-10-08",
   "day_start_equity": 9934.216098633631,
   "extra": {},
-  "fees_usd": 19.632103239445524,
+  "fees_usd": 22.741422006112774,
   "halted_until": null,
-  "last_ts": "2026-10-08T14:43:21Z",
+  "last_ts": "2026-10-08T14:48:21Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10000.0,
   "positions": {
+    "AERO-USD": {
+      "avg_cost": 0.8168995239451594,
+      "opened_cycle": "2026-10-08T14:48Z-event",
+      "opened_ts": "2026-10-08T14:48:21Z",
+      "qty": 603.6704423859919,
+      "stop_pct": 18.0
+    },
     "NEAR-USD": {
       "avg_cost": 5.276419384869311,
       "opened_cycle": "2026-10-07T06:00Z",
@@ -18,10 +25,10 @@
       "stop_pct": 18.0
     },
     "QNT-USD": {
-      "avg_cost": 237.13368253022392,
+      "avg_cost": 239.07680674203255,
       "opened_cycle": "2026-10-08T12:08Z-event",
       "opened_ts": "2026-10-08T12:08:01Z",
-      "qty": 2.07969135727263,
+      "qty": 3.2514925865521107,
       "stop_pct": 18.0
     },
     "ZRO-USD": {
@@ -32,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 4.027050905969675,
-  "spread_usd": 1.0269616858780162,
-  "traded_notional_usd": 4908.02580986138,
+  "slippage_usd": 4.770307758616865,
+  "spread_usd": 1.187998024270184,
+  "traded_notional_usd": 5685.355501528193,
   "trades": [
     {
       "cause": "ai",
@@ -70,6 +77,16 @@
       "cause": "ai_event",
       "notional": 493.26816390288343,
       "ts": "2026-10-08T12:08:01Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 493.1380970048806,
+      "ts": "2026-10-08T14:48:21Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 284.19159466193213,
+      "ts": "2026-10-08T14:48:21Z"
     }
   ]
 }

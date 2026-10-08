@@ -1,37 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-08T12:08Z-event",
+  "from": "2026-10-08T14:48Z-event",
   "risk_engine": [
     {
       "action": "BUY",
-      "asset": "QNT-USD",
+      "asset": "AERO-USD",
       "codes": [],
       "final_weight": 0.05,
       "requested_weight": 0.05,
       "status": "APPROVED"
     },
     {
-      "action": "BUY",
-      "asset": "ZRO-USD",
+      "action": "ADD",
+      "asset": "QNT-USD",
       "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
+      "final_weight": 0.08,
+      "requested_weight": 0.08,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
+      "asset": "AERO-USD",
       "cause": "ai_event",
-      "price": 237.13368253022392,
-      "qty": 2.07969135727263,
+      "price": 0.8168995239451594,
+      "qty": 603.6704423859919,
       "side": "buy"
     },
     {
-      "asset": "ZRO-USD",
+      "asset": "QNT-USD",
       "cause": "ai_event",
-      "price": 2.0178157999999997,
-      "qty": 244.456488001969,
+      "price": 242.52542799999998,
+      "qty": 1.1718012292794806,
       "side": "buy"
     }
   ]

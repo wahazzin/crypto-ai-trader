@@ -1,4 +1,15 @@
 {
+  "AERO-USD": {
+    "confidence_history": [],
+    "exit_below": 0.7,
+    "invalidation": [],
+    "opened_cycle": "2026-10-08T14:48Z-event",
+    "reasons": [],
+    "review_above": 0.95,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-08T14:48Z-event"
+  },
   "NEAR-USD": {
     "confidence_history": [
       {
