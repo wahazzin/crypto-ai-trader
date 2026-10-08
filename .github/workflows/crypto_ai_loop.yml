@@ -78,6 +78,15 @@ jobs:
           done
           echo "ran $n ticks"
 
+      - name: Keep scheduled workflows alive (GitHub disables them after 60 days without repo activity)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for id in $(gh api "repos/${{ github.repository }}/actions/workflows" --jq '.workflows[] | select(.state=="disabled_inactivity") | .id'); do
+            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$id/enable" && echo "re-enabled workflow $id"
+          done
+
       - name: Start the next loop
         if: success() || failure()     # not when cancelled: cancel + disable the workflow = clean stop
         run: |
