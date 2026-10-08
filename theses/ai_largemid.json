@@ -8,6 +8,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-08T06:52Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-08T09:43Z-event"
       }
     ],
     "exit_below": 4.9,
@@ -16,13 +20,12 @@
     ],
     "opened_cycle": "2026-10-07T06:00Z",
     "reasons": [
-      "Price (5.503\u202fUSD) stayed above exit_below (4.9\u202fUSD).",
       "Breakout and trend signals stay strong.",
-      "28\u2011day return still exceptionally high."
+      "28\u2011day return remains exceptionally high."
     ],
     "review_above": 5.8,
     "status": "bullish",
-    "summary": "Price remains above exit level; review target hit, raising new review level.",
-    "updated_cycle": "2026-10-08T06:52Z-event"
+    "summary": "Thesis remains bullish; price stays above exit level.",
+    "updated_cycle": "2026-10-08T09:43Z-event"
   }
 }

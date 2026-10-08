@@ -1,6 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-08T06:52Z-event",
+  "from": "2026-10-08T09:43Z-event",
   "risk_engine": [
     {
       "action": "ADD",
@@ -15,8 +15,8 @@
     {
       "asset": "NEAR-USD",
       "cause": "ai_event",
-      "price": 5.509103479999999,
-      "qty": 33.233652743091035,
+      "price": 5.24344418,
+      "qty": 11.444584565238166,
       "side": "buy"
     }
   ]
