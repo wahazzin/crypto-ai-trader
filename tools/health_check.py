@@ -40,7 +40,7 @@ def problems():
     try:
         # silent-failure check: the bot keeps running even if the free AI (Groq) stops answering
         r = requests.get(f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl",
-                         headers={"Range": "bytes=-6000"}, timeout=30)
+                         headers={"Range": "bytes=-6000", "Accept-Encoding": "identity"}, timeout=30)   # no gzip with byte ranges
         cyc = [json.loads(l) for l in r.text.splitlines() if l.startswith("{") and l.endswith("}")][-2:]
         bad = [c for c in cyc if c.get("status") != "OK" or not all(a.get("ok") for a in (c.get("ai") or {}).values())]
         if cyc and len(bad) == len(cyc):
