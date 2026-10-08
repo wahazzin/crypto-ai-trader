@@ -25,13 +25,17 @@
     "review_above": 5.8,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-08T12:00Z"
+    "updated_cycle": "2026-10-08T12:08Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
       {
         "confidence": 78,
         "cycle": "2026-10-08T12:00Z"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-08T12:08Z-event"
       }
     ],
     "exit_below": 210,
@@ -45,13 +49,17 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Entering position based on breakout, trend, and top rotation rank.",
-    "updated_cycle": "2026-10-08T12:00Z"
+    "updated_cycle": "2026-10-08T12:08Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [
       {
         "confidence": 72,
         "cycle": "2026-10-08T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-08T12:08Z-event"
       }
     ],
     "exit_below": 1.8,
@@ -65,6 +73,6 @@
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Adding position after breakout and rotation pick signals.",
-    "updated_cycle": "2026-10-08T12:00Z"
+    "updated_cycle": "2026-10-08T12:08Z-event"
   }
 }
