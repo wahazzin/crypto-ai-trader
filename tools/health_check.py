@@ -37,6 +37,17 @@ def problems():
             out.append(("state", f"Crypto AI trader: no state saved for {age / 3600:.1f} h (expected at least every 6 h)."))
     except Exception as e:
         out.append(("state", f"Crypto AI trader: couldn't read state ({type(e).__name__})."))
+    try:
+        # silent-failure check: the bot keeps running even if the free AI (Groq) stops answering
+        r = requests.get(f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl",
+                         headers={"Range": "bytes=-6000"}, timeout=30)
+        cyc = [json.loads(l) for l in r.text.splitlines() if l.startswith("{") and l.endswith("}")][-2:]
+        bad = [c for c in cyc if c.get("status") != "OK" or not all(a.get("ok") for a in (c.get("ai") or {}).values())]
+        if cyc and len(bad) == len(cyc):
+            out.append(("ai", f"Crypto AI trader: the AI failed in the last {len(cyc)} cycles "
+                              f"(status {cyc[-1].get('status')}). Groq may have changed or limited the free model."))
+    except Exception as e:
+        out.append(("ai", f"Crypto AI trader: couldn't read recent cycles ({type(e).__name__})."))
     return out
 
 
