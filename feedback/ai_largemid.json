@@ -1,6 +1,27 @@
 {
   "events": [],
-  "from": "2026-10-09T12:00Z",
-  "risk_engine": [],
+  "from": "2026-10-09T12:54Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [
+        "R12_ADD_NOT_HELD_USE_BUY"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.02,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "AAVE-USD",
+      "codes": [
+        "R12_ADD_NOT_HELD_USE_BUY"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.02,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
