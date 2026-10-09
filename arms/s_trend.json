@@ -1,11 +1,11 @@
 {
-  "cash": 6089.744445613116,
+  "cash": 5545.069418667637,
   "day_start_date": "2026-10-09",
   "day_start_equity": 9681.109291331504,
   "extra": {},
-  "fees_usd": 22.102729417943465,
+  "fees_usd": 24.272749445614696,
   "halted_until": null,
-  "last_ts": "2026-10-09T11:39:21Z",
+  "last_ts": "2026-10-09T12:04:41Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10000.0,
@@ -52,6 +52,13 @@
       "qty": 0.003795919730295158,
       "stop_pct": 18.0
     },
+    "ENA-USD": {
+      "avg_cost": 0.21848792311248724,
+      "opened_cycle": "2026-10-09T12:00Z",
+      "opened_ts": "2026-10-09T12:04:41Z",
+      "qty": 1791.9958984883249,
+      "stop_pct": 18.0
+    },
     "FET-USD": {
       "avg_cost": 0.23063616228318548,
       "opened_cycle": "2026-10-08T12:00Z",
@@ -93,52 +100,19 @@
       "opened_ts": "2026-10-08T12:03:01Z",
       "qty": 470.9217888630911,
       "stop_pct": 18.0
+    },
+    "QNT-USD": {
+      "avg_cost": 248.83921399999997,
+      "opened_cycle": "2026-10-09T12:00Z",
+      "opened_ts": "2026-10-09T12:04:41Z",
+      "qty": 0.6067192642354116,
+      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 4.890836116696079,
-  "spread_usd": 0.6872967882997779,
-  "traded_notional_usd": 5525.682354485866,
+  "slippage_usd": 5.52709688697421,
+  "spread_usd": 0.7654662452949825,
+  "traded_notional_usd": 6068.187361403674,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 320.3561637030765,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.31251725151844,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.3762260839038,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.47285683987275,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.3623647665653,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.34944444108004,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 320.0640189833946,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 260.2990141140422,
-      "ts": "2026-10-07T06:39:46Z"
-    },
     {
       "cause": "strategy",
       "notional": 329.316506470547,
@@ -188,6 +162,16 @@
       "cause": "strategy",
       "notional": 322.34574522198614,
       "ts": "2026-10-09T00:03:39Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 391.52946208680964,
+      "ts": "2026-10-09T12:04:41Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 150.9755448309981,
+      "ts": "2026-10-09T12:04:41Z"
     }
   ]
 }
