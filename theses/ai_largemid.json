@@ -10,6 +10,27 @@
     "summary": "",
     "updated_cycle": "2026-10-09T12:54Z-event"
   },
+  "ADA-USD": {
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-10-09T19:39Z-event"
+      }
+    ],
+    "exit_below": 0.21,
+    "invalidation": [
+      "Price falling below 0.21\u202fUSD would invalidate the thesis."
+    ],
+    "opened_cycle": "2026-10-09T19:39Z-event",
+    "reasons": [
+      "Positive 24h return and RSI near 50 indicate room for upside",
+      "Dip signal shows price dropped \u22658% in 3 days while uptrend intact"
+    ],
+    "review_above": 0.27,
+    "status": "bullish",
+    "summary": "Added position based on strong short\u2011term momentum and dip setup.",
+    "updated_cycle": "2026-10-09T19:39Z-event"
+  },
   "AERO-USD": {
     "confidence_history": [],
     "exit_below": 0.7,

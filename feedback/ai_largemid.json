@@ -1,22 +1,52 @@
 {
   "events": [],
-  "from": "2026-10-09T18:54Z-event",
+  "from": "2026-10-09T19:39Z-event",
   "risk_engine": [
     {
-      "action": "BUY",
-      "asset": "NEAR-USD",
+      "action": "REDUCE",
+      "asset": "ZRO-USD",
       "codes": [],
-      "final_weight": 0.1,
-      "requested_weight": 0.1,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ADA-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "AAVE-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
+      "asset": "ZRO-USD",
       "cause": "ai_event",
-      "price": 4.684022279853526,
-      "qty": 205.8683540182115,
+      "price": 1.9087545726064852,
+      "qty": 143.74418407396635,
+      "side": "sell"
+    },
+    {
+      "asset": "ADA-USD",
+      "cause": "ai_event",
+      "price": 0.23592221962222018,
+      "qty": 2037.7715983375906,
+      "side": "buy"
+    },
+    {
+      "asset": "AAVE-USD",
+      "cause": "ai_event",
+      "price": 167.2290630721144,
+      "qty": 2.8766351251230122,
       "side": "buy"
     }
   ]
