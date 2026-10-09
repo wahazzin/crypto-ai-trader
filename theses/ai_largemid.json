@@ -10,7 +10,7 @@
     "review_above": 0.95,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:00Z"
+    "updated_cycle": "2026-10-09T00:08Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -32,7 +32,7 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:00Z"
+    "updated_cycle": "2026-10-09T00:08Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -54,6 +54,6 @@
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:00Z"
+    "updated_cycle": "2026-10-09T00:08Z-event"
   }
 }
