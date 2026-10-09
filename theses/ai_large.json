@@ -1,1 +1,68 @@
-{}
+{
+  "NEAR-USD": {
+    "confidence_history": [
+      {
+        "confidence": 80,
+        "cycle": "2026-10-09T06:00Z"
+      }
+    ],
+    "exit_below": 4.3503,
+    "invalidation": [
+      "Price < $4.3503"
+    ],
+    "opened_cycle": "2026-10-09T06:00Z",
+    "reasons": [
+      "Rotation rank 3",
+      "28\u2011day return 82%",
+      "Dip signal true"
+    ],
+    "review_above": 5.8004,
+    "status": "bullish",
+    "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
+    "updated_cycle": "2026-10-09T06:00Z"
+  },
+  "QNT-USD": {
+    "confidence_history": [
+      {
+        "confidence": 85,
+        "cycle": "2026-10-09T06:00Z"
+      }
+    ],
+    "exit_below": 216.35,
+    "invalidation": [
+      "Price < $216.35"
+    ],
+    "opened_cycle": "2026-10-09T06:00Z",
+    "reasons": [
+      "Breakout signal true",
+      "28\u2011day return 266%",
+      "Rotation rank 1"
+    ],
+    "review_above": 288.47,
+    "status": "bullish",
+    "summary": "Breakout and rotation pick suggest strong upside; dip provides entry at lower price.",
+    "updated_cycle": "2026-10-09T06:00Z"
+  },
+  "SUI-USD": {
+    "confidence_history": [
+      {
+        "confidence": 75,
+        "cycle": "2026-10-09T06:00Z"
+      }
+    ],
+    "exit_below": 0.9595,
+    "invalidation": [
+      "Price < $0.9595"
+    ],
+    "opened_cycle": "2026-10-09T06:00Z",
+    "reasons": [
+      "Dip signal true",
+      "28\u2011day return 43%",
+      "Trend true"
+    ],
+    "review_above": 1.2793,
+    "status": "bullish",
+    "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
+    "updated_cycle": "2026-10-09T06:00Z"
+  }
+}

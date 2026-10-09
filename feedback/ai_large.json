@@ -1,6 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-09T00:00Z",
-  "risk_engine": [],
+  "from": "2026-10-09T06:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "QNT-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "NEAR-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "SUI-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.1,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
