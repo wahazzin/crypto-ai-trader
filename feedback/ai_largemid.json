@@ -1,14 +1,23 @@
 {
-  "events": [
+  "events": [],
+  "from": "2026-10-09T18:54Z-event",
+  "risk_engine": [
     {
-      "arm": "ai_largemid",
-      "errors": [
-        "all endpoints failed: groq HTTP 413 (tokens-per-minute budget), waiting 62s | groq HTTP 413 (tokens-per-minute budget), waiting 62s"
-      ],
-      "type": "AI_FAULT"
+      "action": "BUY",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.1,
+      "requested_weight": 0.1,
+      "status": "APPROVED"
     }
   ],
-  "from": "2026-10-09T18:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 4.684022279853526,
+      "qty": 205.8683540182115,
+      "side": "buy"
+    }
+  ]
 }
