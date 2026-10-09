@@ -2,13 +2,15 @@
   "AERO-USD": {
     "confidence_history": [],
     "exit_below": 0.7,
-    "invalidation": [],
+    "invalidation": [
+      "Price falling below 0.7\u202fUSD would invalidate the thesis."
+    ],
     "opened_cycle": "2026-10-08T14:48Z-event",
     "reasons": [],
     "review_above": 0.95,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-08T14:48Z-event"
+    "summary": "Thesis remains bullish; price above exit level.",
+    "updated_cycle": "2026-10-09T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -26,13 +28,11 @@
       "Price falling below 210\u202fUSD would invalidate the thesis."
     ],
     "opened_cycle": "2026-10-08T12:00Z",
-    "reasons": [
-      "Breakout signal, strong uptrend, rotation pick rank 1, massive 28\u2011day return."
-    ],
+    "reasons": [],
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-08T12:38Z-event"
+    "updated_cycle": "2026-10-09T00:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -50,12 +50,10 @@
       "Price dropping below 1.80\u202fUSD would invalidate the thesis."
     ],
     "opened_cycle": "2026-10-08T12:00Z",
-    "reasons": [
-      "Breakout signal, positive trend, rotation pick rank 3, 28\u2011day return >100%."
-    ],
+    "reasons": [],
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-08T12:38Z-event"
+    "updated_cycle": "2026-10-09T00:00Z"
   }
 }

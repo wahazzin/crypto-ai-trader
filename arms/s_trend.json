@@ -1,11 +1,11 @@
 {
-  "cash": 5486.619363422673,
-  "day_start_date": "2026-10-08",
-  "day_start_equity": 9936.316044995403,
+  "cash": 6089.744445613116,
+  "day_start_date": "2026-10-09",
+  "day_start_equity": 9681.109291331504,
   "extra": {},
-  "fees_usd": 19.680540332841286,
+  "fees_usd": 22.102729417943465,
   "halted_until": null,
-  "last_ts": "2026-10-08T23:58:40Z",
+  "last_ts": "2026-10-09T00:03:39Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10000.0,
@@ -45,25 +45,11 @@
       "qty": 28.214962747431997,
       "stop_pct": 18.0
     },
-    "BCH-USD": {
-      "avg_cost": 308.4264385557886,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1.038657535135837,
-      "stop_pct": 18.0
-    },
     "BTC-USD": {
       "avg_cost": 84317.91021,
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 0.003795919730295158,
-      "stop_pct": 18.0
-    },
-    "ETH-USD": {
-      "avg_cost": 2529.4157819999996,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 0.1301946911275131,
       "stop_pct": 18.0
     },
     "FET-USD": {
@@ -109,9 +95,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 4.51591933412391,
-  "spread_usd": 0.6450995134386713,
-  "traded_notional_usd": 4920.135083210321,
+  "slippage_usd": 4.890836116696079,
+  "spread_usd": 0.6872967882997779,
+  "traded_notional_usd": 5525.682354485866,
   "trades": [
     {
       "cause": "strategy",
@@ -192,6 +178,16 @@
       "cause": "stop",
       "notional": 213.2174934829192,
       "ts": "2026-10-08T17:30:00Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 283.20152605355935,
+      "ts": "2026-10-09T00:03:39Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 322.34574522198614,
+      "ts": "2026-10-09T00:03:39Z"
     }
   ]
 }
