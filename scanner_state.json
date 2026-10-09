@@ -65,8 +65,8 @@
   },
   "last_data_fault": {
     "error": "ARB-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-09T10:19:20Z"
+    "ts": "2026-10-09T12:39:42Z"
   },
   "last_heartbeat": "2026-10-09T11:39:21Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
