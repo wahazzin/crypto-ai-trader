@@ -7,13 +7,13 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-10",
-      "calls_today": 2,
-      "last_call": "2026-10-10T06:10:40Z"
+      "calls_today": 3,
+      "last_call": "2026-10-10T12:16:01Z"
     }
   },
   "fired": {
     "ai_largemid|ADA-USD:volume": "2026-10-10T02:00:18Z",
-    "ai_largemid|AERO-USD:move": "2026-10-08T14:48:21Z",
+    "ai_largemid|AERO-USD:move": "2026-10-10T12:16:01Z",
     "ai_largemid|AERO-USD:volume": "2026-10-08T14:13:22Z",
     "ai_largemid|ARB-USD:volume": "2026-10-08T09:43:01Z",
     "ai_largemid|BCH-USD:volume": "2026-10-09T00:08:39Z",
@@ -52,23 +52,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9833.19,
-      "ai_largemid": 9841.81,
-      "btc_hold": 9772.09,
-      "eth_hold": 9468.72,
-      "ew_basket": 9571.89,
-      "s_breakout": 9870.43,
-      "s_dip": 9862.7,
-      "s_rotation": 9698.59,
-      "s_trend": 9851.2
+      "ai_large": 9837.19,
+      "ai_largemid": 9871.1,
+      "btc_hold": 9780.34,
+      "eth_hold": 9479.01,
+      "ew_basket": 9593.18,
+      "s_breakout": 9913.91,
+      "s_dip": 9882.66,
+      "s_rotation": 9689.79,
+      "s_trend": 9888.04
     },
-    "scans": 3,
-    "ts": "2026-10-10T11:16:01Z"
+    "scans": 1,
+    "ts": "2026-10-10T12:16:01Z"
   },
   "last_data_fault": {
     "error": "ARB-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-10T10:51:01Z"
   },
-  "last_heartbeat": "2026-10-10T11:16:01Z",
+  "last_heartbeat": "2026-10-10T12:16:01Z",
   "scans_since_heartbeat": 0
 }
