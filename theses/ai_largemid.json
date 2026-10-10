@@ -7,8 +7,8 @@
     "reasons": [],
     "review_above": 190.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-09T12:54Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   },
   "ADA-USD": {
     "confidence_history": [
@@ -18,31 +18,24 @@
       }
     ],
     "exit_below": 0.21,
-    "invalidation": [
-      "Price falling below 0.21\u202fUSD would invalidate the thesis."
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-09T19:39Z-event",
-    "reasons": [
-      "Positive 24h return and RSI near 50 indicate room for upside",
-      "Dip signal shows price dropped \u22658% in 3 days while uptrend intact"
-    ],
+    "reasons": [],
     "review_above": 0.27,
     "status": "bullish",
-    "summary": "Added position based on strong short\u2011term momentum and dip setup.",
-    "updated_cycle": "2026-10-09T19:39Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   },
   "AERO-USD": {
     "confidence_history": [],
     "exit_below": 0.7,
-    "invalidation": [
-      "Price falling below 0.7\u202fUSD would invalidate the thesis."
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-08T14:48Z-event",
     "reasons": [],
     "review_above": 0.95,
     "status": "bullish",
-    "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:08Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [],
@@ -52,8 +45,8 @@
     "reasons": [],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-09T12:54Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -67,15 +60,13 @@
       }
     ],
     "exit_below": 230,
-    "invalidation": [
-      "Price falling below 210\u202fUSD would invalidate the thesis."
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-08T12:00Z",
     "reasons": [],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:08Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -89,14 +80,12 @@
       }
     ],
     "exit_below": 1.8,
-    "invalidation": [
-      "Price dropping below 1.80\u202fUSD would invalidate the thesis."
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-08T12:00Z",
     "reasons": [],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Thesis remains bullish; price above exit level.",
-    "updated_cycle": "2026-10-09T00:08Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-10T06:00Z"
   }
 }
