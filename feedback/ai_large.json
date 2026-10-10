@@ -1,15 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-10T14:51Z-event",
+  "from": "2026-10-10T18:00Z",
   "risk_engine": [
     {
-      "action": "HOLD",
-      "asset": "QNT-USD",
+      "action": "BUY",
+      "asset": "SUI-USD",
       "codes": [],
-      "final_weight": null,
-      "requested_weight": 0.1199,
-      "status": "NOOP"
+      "final_weight": 0.1,
+      "requested_weight": 0.1,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "SUI-USD",
+      "cause": "ai",
+      "price": 1.1168668323074278,
+      "qty": 880.1227749481437,
+      "side": "buy"
+    }
+  ]
 }

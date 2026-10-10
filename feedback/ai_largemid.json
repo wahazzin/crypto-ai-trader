@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-10T12:00Z",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "ZRO-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "ZRO-USD",
-      "cause": "ai",
-      "price": 1.9491498919344121,
-      "qty": 100.71230392800265,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-10T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
