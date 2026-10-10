@@ -1,91 +1,48 @@
 {
-  "cash": 8596.77835947726,
+  "cash": 6148.5096351758,
   "day_start_date": "2026-10-10",
   "day_start_equity": 9742.490955772386,
   "extra": {},
-  "fees_usd": 30.456493426568876,
+  "fees_usd": 40.210552089124505,
   "halted_until": null,
-  "last_ts": "2026-10-10T00:00:18Z",
+  "last_ts": "2026-10-10T00:05:18Z",
   "name": "s_breakout",
   "no_buys_until": null,
   "peak_equity": 10000.0,
   "positions": {
     "AAVE-USD": {
-      "avg_cost": 177.34716999999998,
+      "avg_cost": 170.50556847304455,
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1.881644557343118,
+      "qty": 5.832079157169366,
       "stop_pct": 18.0
     },
     "AERO-USD": {
-      "avg_cost": 0.7985177199999999,
+      "avg_cost": 0.800978528520367,
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 417.93090766234525,
+      "qty": 1215.7726114784768,
       "stop_pct": 18.0
     },
     "FET-USD": {
-      "avg_cost": 0.23063775919733392,
+      "avg_cost": 0.22373347285675665,
       "opened_cycle": "2026-10-08T12:00Z",
       "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 2291.784702749531,
+      "qty": 4509.240115685025,
+      "stop_pct": 18.0
+    },
+    "QNT-USD": {
+      "avg_cost": 247.27355020240392,
+      "opened_cycle": "2026-10-10T00:00Z",
+      "opened_ts": "2026-10-10T00:05:18Z",
+      "qty": 2.658750382897202,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 6.902222995027535,
-  "spread_usd": 0.992567717456136,
-  "traded_notional_usd": 7614.123356642218,
+  "slippage_usd": 9.49916839403033,
+  "spread_usd": 1.7044546428892275,
+  "traded_notional_usd": 10052.638022281124,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 333.7043371907046,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.65978637490235,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.7252355040664,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.8258925415341,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.7107966318388,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.6974107279875,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 333.4000197743693,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 166.8512454612579,
-      "ts": "2026-10-07T06:39:46Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 327.75604453870625,
-      "ts": "2026-10-08T00:02:24Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 157.07233378420588,
-      "ts": "2026-10-08T00:02:24Z"
-    },
     {
       "cause": "strategy",
       "notional": 528.5720884048798,
@@ -140,6 +97,26 @@
       "cause": "strategy",
       "notional": 399.9715357839325,
       "ts": "2026-10-09T00:03:39Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 660.6976348822526,
+      "ts": "2026-10-10T00:05:18Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 640.0825218533278,
+      "ts": "2026-10-10T00:05:18Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 480.29586262233397,
+      "ts": "2026-10-10T00:05:18Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 657.4386462809919,
+      "ts": "2026-10-10T00:05:18Z"
     }
   ]
 }

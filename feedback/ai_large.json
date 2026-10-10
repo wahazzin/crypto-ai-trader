@@ -1,50 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-09T18:00Z",
-  "risk_engine": [
-    {
-      "action": "BUY",
-      "asset": "NEAR-USD",
-      "codes": [],
-      "final_weight": 0.13,
-      "requested_weight": 0.13,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "QNT-USD",
-      "codes": [
-        "R6_TURNOVER"
-      ],
-      "final_weight": 0.12000000000000001,
-      "requested_weight": 0.13,
-      "status": "CLIPPED"
-    },
-    {
-      "action": "BUY",
-      "asset": "SUI-USD",
-      "codes": [
-        "R6_TURNOVER_EXHAUSTED"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.13,
-      "status": "REJECTED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "NEAR-USD",
-      "cause": "ai",
-      "price": 4.742022568606202,
-      "qty": 265.6478178947688,
-      "side": "buy"
-    },
-    {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 244.60520973758688,
-      "qty": 4.7571283446213135,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-10T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
