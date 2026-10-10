@@ -66,9 +66,9 @@
     "ts": "2026-10-10T10:15:40Z"
   },
   "last_data_fault": {
-    "error": "ENA-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-10T10:20:40Z"
+    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-10T10:51:01Z"
   },
   "last_heartbeat": "2026-10-10T10:15:40Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
