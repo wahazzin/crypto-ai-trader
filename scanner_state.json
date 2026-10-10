@@ -1,17 +1,18 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": "2026-10-09",
+      "calls_day": "2026-10-10",
       "calls_today": 1,
-      "last_call": "2026-10-09T02:03:59Z"
+      "last_call": "2026-10-10T02:00:18Z"
     },
     "ai_largemid": {
-      "calls_day": "2026-10-09",
-      "calls_today": 6,
-      "last_call": "2026-10-09T19:39:59Z"
+      "calls_day": "2026-10-10",
+      "calls_today": 1,
+      "last_call": "2026-10-10T02:00:18Z"
     }
   },
   "fired": {
+    "ai_largemid|ADA-USD:volume": "2026-10-10T02:00:18Z",
     "ai_largemid|AERO-USD:move": "2026-10-08T14:48:21Z",
     "ai_largemid|AERO-USD:volume": "2026-10-08T14:13:22Z",
     "ai_largemid|ARB-USD:volume": "2026-10-08T09:43:01Z",
@@ -32,7 +33,7 @@
     "ai_largemid|ZRO-USD:move": "2026-10-09T19:39:59Z",
     "ai_largemid|ZRO-USD:volume": "2026-10-09T18:54:59Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
-    "ai_large|ADA-USD:volume": "2026-10-08T15:48:22Z",
+    "ai_large|ADA-USD:volume": "2026-10-10T02:00:18Z",
     "ai_large|ETH-USD:volume": "2026-10-08T15:48:22Z",
     "ai_large|LINK-USD:volume": "2026-10-08T15:48:22Z",
     "ai_large|NEAR-USD:exit_below:4.7": "2026-10-08T15:48:22Z",
@@ -50,23 +51,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9741.04,
-      "ai_largemid": 9706.06,
-      "btc_hold": 9743.99,
-      "eth_hold": 9448.2,
-      "ew_basket": 9409.12,
-      "s_breakout": 9735.31,
-      "s_dip": 9793.1,
-      "s_rotation": 9691.53,
-      "s_trend": 9757.05
+      "ai_large": 9752.51,
+      "ai_largemid": 9744.38,
+      "btc_hold": 9759.22,
+      "eth_hold": 9474.49,
+      "ew_basket": 9493.43,
+      "s_breakout": 9771.8,
+      "s_dip": 9837.97,
+      "s_rotation": 9684.16,
+      "s_trend": 9804.43
     },
     "scans": 1,
-    "ts": "2026-10-10T01:00:18Z"
+    "ts": "2026-10-10T02:00:18Z"
   },
   "last_data_fault": {
     "error": "ARB-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-09T12:39:42Z"
   },
-  "last_heartbeat": "2026-10-10T01:00:18Z",
+  "last_heartbeat": "2026-10-10T02:00:18Z",
   "scans_since_heartbeat": 0
 }
