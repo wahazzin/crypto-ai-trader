@@ -8,7 +8,7 @@
     "review_above": 190.0,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T06:00Z"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "ADA-USD": {
     "confidence_history": [
@@ -24,7 +24,7 @@
     "review_above": 0.27,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T06:00Z"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "AERO-USD": {
     "confidence_history": [],
@@ -35,7 +35,7 @@
     "review_above": 0.95,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T06:00Z"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "BTC-USD": {
     "confidence_history": [],
@@ -46,7 +46,7 @@
     "review_above": 86000,
     "status": "bullish",
     "summary": "",
-    "updated_cycle": "2026-10-10T06:10Z-event"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [],
@@ -57,7 +57,7 @@
     "review_above": 5.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T06:00Z"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -77,6 +77,6 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T06:00Z"
+    "updated_cycle": "2026-10-10T12:46Z-event"
   }
 }
