@@ -1,6 +1,25 @@
 {
   "events": [],
-  "from": "2026-10-10T06:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-10T06:10Z-event",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "BTC-USD",
+      "codes": [
+        "R6_TURNOVER"
+      ],
+      "final_weight": 0.007645919180380355,
+      "requested_weight": 0.15,
+      "status": "CLIPPED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "BTC-USD",
+      "cause": "ai_event",
+      "price": 82730.482788,
+      "qty": 0.0009064172319807406,
+      "side": "buy"
+    }
+  ]
 }
