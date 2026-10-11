@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-11",
-      "calls_today": 9,
-      "last_call": "2026-10-11T21:23:09Z"
+      "calls_today": 10,
+      "last_call": "2026-10-11T22:43:10Z"
     }
   },
   "fired": {
@@ -21,7 +21,7 @@
     "ai_largemid|AVAX-USD:volume": "2026-10-11T16:32:48Z",
     "ai_largemid|BCH-USD:volume": "2026-10-09T00:08:39Z",
     "ai_largemid|ENA-USD:move": "2026-10-11T16:32:48Z",
-    "ai_largemid|ENA-USD:volume": "2026-10-11T19:07:47Z",
+    "ai_largemid|ENA-USD:volume": "2026-10-11T22:43:10Z",
     "ai_largemid|FET-USD:move": "2026-10-11T15:57:48Z",
     "ai_largemid|FET-USD:volume": "2026-10-11T15:57:48Z",
     "ai_largemid|LINK-USD:volume": "2026-10-11T16:32:48Z",
@@ -66,23 +66,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9902.83,
-      "ai_largemid": 9945.81,
-      "btc_hold": 9855.52,
-      "eth_hold": 9593.3,
-      "ew_basket": 9690.7,
-      "s_breakout": 9976.71,
-      "s_dip": 10013.26,
-      "s_rotation": 9654.02,
-      "s_trend": 10006.27
+      "ai_large": 9928.02,
+      "ai_largemid": 9973.38,
+      "btc_hold": 9873.27,
+      "eth_hold": 9619.63,
+      "ew_basket": 9729.89,
+      "s_breakout": 10001.69,
+      "s_dip": 10047.25,
+      "s_rotation": 9650.46,
+      "s_trend": 10038.2
     },
-    "scans": 3,
-    "ts": "2026-10-11T21:43:10Z"
+    "scans": 1,
+    "ts": "2026-10-11T22:43:10Z"
   },
   "last_data_fault": {
     "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-11T21:38:09Z"
   },
-  "last_heartbeat": "2026-10-11T21:43:10Z",
+  "last_heartbeat": "2026-10-11T22:43:10Z",
   "scans_since_heartbeat": 0
 }
