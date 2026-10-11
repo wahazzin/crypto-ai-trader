@@ -1,7 +1,15 @@
 {
   "events": [],
-  "from": "2026-10-11T17:12Z-event",
+  "from": "2026-10-11T18:00Z",
   "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "BTC-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    },
     {
       "action": "ADD",
       "asset": "NEAR-USD",
@@ -12,18 +20,15 @@
       "final_weight": null,
       "requested_weight": 0.15,
       "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ARB-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.05,
-      "status": "REJECTED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "BTC-USD",
+      "cause": "ai",
+      "price": 83756.137878,
+      "qty": 0.0026739082375140323,
+      "side": "buy"
+    }
+  ]
 }

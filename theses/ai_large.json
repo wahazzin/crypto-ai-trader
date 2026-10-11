@@ -22,7 +22,7 @@
     "review_above": 0.3,
     "status": "bullish",
     "summary": "Dip signal combined with positive trend and strong 30\u2011day return indicates upside potential.",
-    "updated_cycle": "2026-10-11T15:52Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -37,6 +37,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-11T15:52Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-11T18:00Z"
       }
     ],
     "exit_below": 4.3503,
@@ -51,7 +55,7 @@
     "review_above": 6.5,
     "status": "bullish",
     "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
-    "updated_cycle": "2026-10-11T17:12Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -83,7 +87,7 @@
     "review_above": 300.0,
     "status": "bullish",
     "summary": "Breakout and rotation pick suggest strong upside; dip provides entry at lower price.",
-    "updated_cycle": "2026-10-11T15:52Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -111,6 +115,6 @@
     "review_above": 1.2793,
     "status": "bullish",
     "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
-    "updated_cycle": "2026-10-11T15:52Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   }
 }

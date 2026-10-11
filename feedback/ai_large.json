@@ -1,32 +1,22 @@
 {
   "events": [],
-  "from": "2026-10-11T15:52Z-event",
+  "from": "2026-10-11T18:00Z",
   "risk_engine": [
     {
       "action": "REDUCE",
       "asset": "NEAR-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
-    },
-    {
-      "action": "REDUCE",
-      "asset": "SUI-USD",
       "codes": [],
-      "final_weight": 0.0934,
-      "requested_weight": 0.0934,
+      "final_weight": 0.13,
+      "requested_weight": 0.13,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "SUI-USD",
-      "cause": "ai_event",
-      "price": 1.12602398,
-      "qty": 58.63070944357165,
+      "asset": "NEAR-USD",
+      "cause": "ai",
+      "price": 5.738654739999999,
+      "qty": 40.76523410250255,
       "side": "sell"
     }
   ]

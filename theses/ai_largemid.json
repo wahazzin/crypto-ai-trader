@@ -13,7 +13,7 @@
     "review_above": 0.27,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T12:46Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "AERO-USD": {
     "confidence_history": [
@@ -27,13 +27,11 @@
       "Price < $0.80"
     ],
     "opened_cycle": "2026-10-08T14:48Z-event",
-    "reasons": [
-      "Breakout still active, strong recent performance"
-    ],
+    "reasons": [],
     "review_above": 1.15,
     "status": "bullish",
-    "summary": "Added to position, maintain bullish outlook with higher profit target.",
-    "updated_cycle": "2026-10-11T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "ARB-USD": {
     "confidence_history": [
@@ -55,35 +53,38 @@
       "Price < $0.18"
     ],
     "opened_cycle": "2026-10-11T09:57Z-event",
-    "reasons": [
-      "Dip and trend signals remain positive, recent price strength"
-    ],
+    "reasons": [],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Added to position, maintain bullish outlook.",
-    "updated_cycle": "2026-10-11T17:12Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "BTC-USD": {
-    "confidence_history": [],
-    "exit_below": 75000.0,
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-11T18:00Z"
+      }
+    ],
+    "exit_below": 75000,
     "invalidation": [],
     "opened_cycle": "2026-10-10T06:10Z-event",
     "reasons": [],
-    "review_above": 90000.0,
+    "review_above": 88000,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-10T12:46Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "ETH-USD": {
     "confidence_history": [],
-    "exit_below": 2300.0,
+    "exit_below": 2300,
     "invalidation": [],
     "opened_cycle": "2026-10-10T23:21Z-event",
     "reasons": [],
-    "review_above": 2800.0,
+    "review_above": 2800,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-10T23:21Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -94,6 +95,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-11T17:12Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-11T18:00Z"
       }
     ],
     "exit_below": 4.5,
@@ -101,13 +106,11 @@
       "Price < $4.50"
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
-    "reasons": [
-      "Continued strong momentum and rotation pick status"
-    ],
-    "review_above": 6.2,
+    "reasons": [],
+    "review_above": 6.5,
     "status": "bullish",
-    "summary": "Price exceeded previous review level; raised target for next assessment.",
-    "updated_cycle": "2026-10-11T17:12Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-11T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -127,6 +130,6 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T12:46Z-event"
+    "updated_cycle": "2026-10-11T18:00Z"
   }
 }
