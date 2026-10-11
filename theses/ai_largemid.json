@@ -31,11 +31,16 @@
     "exit_below": 0.7,
     "invalidation": [],
     "opened_cycle": "2026-10-08T14:48Z-event",
-    "reasons": [],
-    "review_above": 0.95,
+    "reasons": [
+      "Breakout signal active",
+      "28\u2011day return +65.8%",
+      "24h gain +16.8% and strong momentum",
+      "RSI approaching overbought but still bullish"
+    ],
+    "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T12:46Z-event"
+    "summary": "Price crossed the previous review level; maintain bullish outlook with higher profit target.",
+    "updated_cycle": "2026-10-11T02:06Z-event"
   },
   "BTC-USD": {
     "confidence_history": [],
