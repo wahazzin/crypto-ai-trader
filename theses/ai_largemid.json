@@ -1,15 +1,4 @@
 {
-  "AAVE-USD": {
-    "confidence_history": [],
-    "exit_below": 150.0,
-    "invalidation": [],
-    "opened_cycle": "2026-10-09T12:54Z-event",
-    "reasons": [],
-    "review_above": 190.0,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T12:46Z-event"
-  },
   "ADA-USD": {
     "confidence_history": [
       {
@@ -51,6 +40,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-11T09:57Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-11T15:27Z-event"
       }
     ],
     "exit_below": 0.18,
@@ -59,14 +52,12 @@
     ],
     "opened_cycle": "2026-10-11T09:57Z-event",
     "reasons": [
-      "24h return +5.4% with high volume ratio",
-      "Dip signal active while 50\u2011day trend is up",
-      "Breakout not triggered but price above 20\u2011day SMA"
+      "Dip and trend signals remain positive"
     ],
     "review_above": 0.23,
     "status": "bullish",
-    "summary": "Short\u2011term momentum after volume spike; dip and trend signals support upside.",
-    "updated_cycle": "2026-10-11T09:57Z-event"
+    "summary": "Maintaining bullish thesis after adding position.",
+    "updated_cycle": "2026-10-11T15:27Z-event"
   },
   "BTC-USD": {
     "confidence_history": [],
