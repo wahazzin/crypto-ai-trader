@@ -45,12 +45,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price remains well above exit level and review target not yet reached; thesis still intact."
+      "Price has moved above the previous review target (5.8004) confirming upside momentum.",
+      "30\u2011day return remains exceptional (+116%) and the asset stays in the top\u20112 rotation rank."
     ],
-    "review_above": 5.8004,
+    "review_above": 6.5,
     "status": "bullish",
     "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
-    "updated_cycle": "2026-10-11T15:52Z-event"
+    "updated_cycle": "2026-10-11T17:12Z-event"
   },
   "QNT-USD": {
     "confidence_history": [

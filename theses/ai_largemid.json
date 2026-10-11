@@ -44,6 +44,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-11T15:27Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-11T17:12Z-event"
       }
     ],
     "exit_below": 0.18,
@@ -52,12 +56,12 @@
     ],
     "opened_cycle": "2026-10-11T09:57Z-event",
     "reasons": [
-      "Dip and trend signals remain positive"
+      "Dip and trend signals remain positive, recent price strength"
     ],
-    "review_above": 0.23,
+    "review_above": 0.25,
     "status": "bullish",
-    "summary": "Maintaining bullish thesis after adding position.",
-    "updated_cycle": "2026-10-11T15:27Z-event"
+    "summary": "Added to position, maintain bullish outlook.",
+    "updated_cycle": "2026-10-11T17:12Z-event"
   },
   "BTC-USD": {
     "confidence_history": [],
@@ -86,6 +90,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-11T06:00Z"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-11T17:12Z-event"
       }
     ],
     "exit_below": 4.5,
@@ -94,12 +102,12 @@
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Top\u20113 28\u2011day return, positive recent returns"
+      "Continued strong momentum and rotation pick status"
     ],
-    "review_above": 5.8,
+    "review_above": 6.2,
     "status": "bullish",
-    "summary": "Increased exposure, rotation pick continues to support upside.",
-    "updated_cycle": "2026-10-11T06:00Z"
+    "summary": "Price exceeded previous review level; raised target for next assessment.",
+    "updated_cycle": "2026-10-11T17:12Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
