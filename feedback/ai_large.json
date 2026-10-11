@@ -1,37 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-11T00:00Z",
+  "from": "2026-10-11T06:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
+      "action": "ADD",
+      "asset": "ADA-USD",
       "codes": [],
-      "final_weight": 0.08,
-      "requested_weight": 0.08,
+      "final_weight": 0.06,
+      "requested_weight": 0.06,
       "status": "APPROVED"
     },
     {
-      "action": "BUY",
-      "asset": "ADA-USD",
+      "action": "ADD",
+      "asset": "QNT-USD",
       "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
+      "final_weight": 0.09,
+      "requested_weight": 0.09,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 239.4720529485619,
-      "qty": 1.4890659210741373,
-      "side": "sell"
-    },
-    {
       "asset": "ADA-USD",
       "cause": "ai",
-      "price": 0.24842355860773596,
-      "qty": 1971.273976728366,
+      "price": 0.246858026,
+      "qty": 397.3712525671947,
+      "side": "buy"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai",
+      "price": 235.681324,
+      "qty": 0.4508850284686358,
       "side": "buy"
     }
   ]

@@ -1,14 +1,40 @@
 {
-  "events": [
+  "events": [],
+  "from": "2026-10-11T06:00Z",
+  "risk_engine": [
     {
-      "arm": "ai_largemid",
-      "errors": [
-        "all endpoints failed: groq HTTP 429 (rate limit), retry after 1s | groq HTTP 413 (tokens-per-minute budget), waiting 62s"
+      "action": "ADD",
+      "asset": "AERO-USD",
+      "codes": [],
+      "final_weight": 0.08,
+      "requested_weight": 0.08,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [
+        "R4_ALT_CLUSTER"
       ],
-      "type": "AI_FAULT"
+      "final_weight": 0.13490316984358364,
+      "requested_weight": 0.15,
+      "status": "CLIPPED"
     }
   ],
-  "from": "2026-10-11T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "AERO-USD",
+      "cause": "ai",
+      "price": 0.9440731299999999,
+      "qty": 230.5649607413562,
+      "side": "buy"
+    },
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai",
+      "price": 5.248747359999999,
+      "qty": 24.87642887276133,
+      "side": "buy"
+    }
+  ]
 }

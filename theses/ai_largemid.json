@@ -27,20 +27,24 @@
     "updated_cycle": "2026-10-10T12:46Z-event"
   },
   "AERO-USD": {
-    "confidence_history": [],
-    "exit_below": 0.7,
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 80,
+        "cycle": "2026-10-11T06:00Z"
+      }
+    ],
+    "exit_below": 0.8,
+    "invalidation": [
+      "Price < $0.80"
+    ],
     "opened_cycle": "2026-10-08T14:48Z-event",
     "reasons": [
-      "Breakout signal active",
-      "28\u2011day return +65.8%",
-      "24h gain +16.8% and strong momentum",
-      "RSI approaching overbought but still bullish"
+      "Breakout still active, strong recent performance"
     ],
-    "review_above": 1.05,
+    "review_above": 1.15,
     "status": "bullish",
-    "summary": "Price crossed the previous review level; maintain bullish outlook with higher profit target.",
-    "updated_cycle": "2026-10-11T02:06Z-event"
+    "summary": "Added to position, maintain bullish outlook with higher profit target.",
+    "updated_cycle": "2026-10-11T06:00Z"
   },
   "BTC-USD": {
     "confidence_history": [],
@@ -65,15 +69,24 @@
     "updated_cycle": "2026-10-10T23:21Z-event"
   },
   "NEAR-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 85,
+        "cycle": "2026-10-11T06:00Z"
+      }
+    ],
     "exit_below": 4.5,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $4.50"
+    ],
     "opened_cycle": "2026-10-09T12:54Z-event",
-    "reasons": [],
-    "review_above": 5.5,
+    "reasons": [
+      "Top\u20113 28\u2011day return, positive recent returns"
+    ],
+    "review_above": 5.8,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-10T12:46Z-event"
+    "summary": "Increased exposure, rotation pick continues to support upside.",
+    "updated_cycle": "2026-10-11T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [

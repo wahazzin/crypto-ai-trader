@@ -1,20 +1,20 @@
 {
-  "cash": 6128.877185515691,
+  "cash": 5923.700284182624,
   "day_start_date": "2026-10-11",
   "day_start_equity": 9787.769549251681,
   "extra": {},
-  "fees_usd": 40.53381567267528,
+  "fees_usd": 41.35125352659188,
   "halted_until": null,
-  "last_ts": "2026-10-11T05:22:03Z",
+  "last_ts": "2026-10-11T06:02:03Z",
   "name": "ai_large",
   "no_buys_until": null,
   "peak_equity": 10037.312935605321,
   "positions": {
     "ADA-USD": {
-      "avg_cost": 0.24842355860773596,
+      "avg_cost": 0.2481609200134979,
       "opened_cycle": "2026-10-11T00:00Z",
       "opened_ts": "2026-10-11T00:06:43Z",
-      "qty": 1971.273976728366,
+      "qty": 2368.645229295561,
       "stop_pct": 18.0
     },
     "NEAR-USD": {
@@ -25,10 +25,10 @@
       "stop_pct": 18.0
     },
     "QNT-USD": {
-      "avg_cost": 244.60520973758688,
+      "avg_cost": 243.52327821616626,
       "opened_cycle": "2026-10-09T18:00Z",
       "opened_ts": "2026-10-09T18:04:59Z",
-      "qty": 3.2680624235471765,
+      "qty": 3.7189474520158123,
       "stop_pct": 18.0
     },
     "SUI-USD": {
@@ -39,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 7.2856350138478,
-  "spread_usd": 2.045076567043659,
-  "traded_notional_usd": 10133.453918168818,
+  "slippage_usd": 7.40817716664361,
+  "spread_usd": 2.070524255474735,
+  "traded_notional_usd": 10337.813381647968,
   "trades": [
     {
       "cause": "ai",
@@ -67,6 +67,16 @@
       "cause": "ai",
       "notional": 489.710896289684,
       "ts": "2026-10-11T00:06:43Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 98.09428299788512,
+      "ts": "2026-10-11T06:02:03Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 106.26518048126577,
+      "ts": "2026-10-11T06:02:03Z"
     }
   ]
 }
