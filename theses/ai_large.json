@@ -1,4 +1,25 @@
 {
+  "ADA-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-11T00:00Z"
+      }
+    ],
+    "exit_below": 0.22,
+    "invalidation": [
+      "Price < $0.22"
+    ],
+    "opened_cycle": "2026-10-11T00:00Z",
+    "reasons": [
+      "24\u2011h return +2.5% and 30\u2011d return +21.7% show momentum",
+      "Trend indicator true and RSI near neutral"
+    ],
+    "review_above": 0.3,
+    "status": "bullish",
+    "summary": "Dip signal combined with positive trend and strong 30\u2011day return indicates upside potential.",
+    "updated_cycle": "2026-10-11T00:00Z"
+  },
   "NEAR-USD": {
     "confidence_history": [
       {
@@ -21,7 +42,7 @@
     "review_above": 5.8004,
     "status": "bullish",
     "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
-    "updated_cycle": "2026-10-10T12:00Z"
+    "updated_cycle": "2026-10-11T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -32,6 +53,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-09T18:00Z"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-10-11T00:00Z"
       }
     ],
     "exit_below": 216.35,
@@ -45,7 +70,7 @@
     "review_above": 288.47,
     "status": "bullish",
     "summary": "Breakout and rotation pick suggest strong upside; dip provides entry at lower price.",
-    "updated_cycle": "2026-10-10T12:00Z"
+    "updated_cycle": "2026-10-11T00:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -69,6 +94,6 @@
     "review_above": 1.2793,
     "status": "bullish",
     "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
-    "updated_cycle": "2026-10-10T12:00Z"
+    "updated_cycle": "2026-10-11T00:00Z"
   }
 }

@@ -1,11 +1,11 @@
 {
-  "cash": 5521.955864307396,
-  "day_start_date": "2026-10-10",
-  "day_start_equity": 9789.821009730353,
+  "cash": 5588.313854347317,
+  "day_start_date": "2026-10-11",
+  "day_start_equity": 9875.013093045163,
   "extra": {},
-  "fees_usd": 36.46206430974365,
+  "fees_usd": 36.728562261711204,
   "halted_until": null,
-  "last_ts": "2026-10-10T23:21:42Z",
+  "last_ts": "2026-10-11T00:06:43Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10000.0,
@@ -86,54 +86,12 @@
       "opened_ts": "2026-10-10T00:05:18Z",
       "qty": 5.3661903102924855,
       "stop_pct": 18.0
-    },
-    "NEAR-USD": {
-      "avg_cost": 4.900838739999999,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 12.628436925097791,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 9.327662961556435,
-  "spread_usd": 1.6189546310177247,
-  "traded_notional_usd": 9115.516077435912,
+  "slippage_usd": 9.381321934184387,
+  "spread_usd": 1.6240060057877632,
+  "traded_notional_usd": 9182.1405654278,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 718.0012625634866,
-      "ts": "2026-10-08T12:03:01Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 718.3808509667638,
-      "ts": "2026-10-08T12:03:01Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 136.61058894247404,
-      "ts": "2026-10-08T12:03:01Z"
-    },
-    {
-      "cause": "stop",
-      "notional": 410.04284002905314,
-      "ts": "2026-10-08T17:30:00Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 420.2251466330619,
-      "ts": "2026-10-08T18:03:21Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 1041.9489440094646,
-      "ts": "2026-10-09T00:03:39Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 884.9752189880088,
-      "ts": "2026-10-09T00:03:39Z"
-    },
     {
       "cause": "strategy",
       "notional": 391.4404770031038,
@@ -173,6 +131,11 @@
       "cause": "strategy",
       "notional": 61.889932908165726,
       "ts": "2026-10-10T00:05:18Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 66.62448799188839,
+      "ts": "2026-10-11T00:06:43Z"
     }
   ]
 }
