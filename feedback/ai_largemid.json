@@ -1,40 +1,28 @@
 {
   "events": [],
-  "from": "2026-10-11T06:00Z",
+  "from": "2026-10-11T09:57Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "AERO-USD",
-      "codes": [],
-      "final_weight": 0.08,
-      "requested_weight": 0.08,
-      "status": "APPROVED"
+      "action": "REDUCE",
+      "asset": "AAVE-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.045,
+      "status": "REJECTED"
     },
     {
-      "action": "ADD",
-      "asset": "NEAR-USD",
+      "action": "BUY",
+      "asset": "ARB-USD",
       "codes": [
-        "R4_ALT_CLUSTER"
+        "R4_ALT_CLUSTER",
+        "NO_ROOM_TO_ADD"
       ],
-      "final_weight": 0.13490316984358364,
-      "requested_weight": 0.15,
-      "status": "CLIPPED"
+      "final_weight": null,
+      "requested_weight": 0.005,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "AERO-USD",
-      "cause": "ai",
-      "price": 0.9440731299999999,
-      "qty": 230.5649607413562,
-      "side": "buy"
-    },
-    {
-      "asset": "NEAR-USD",
-      "cause": "ai",
-      "price": 5.248747359999999,
-      "qty": 24.87642887276133,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }

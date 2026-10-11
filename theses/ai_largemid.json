@@ -46,6 +46,28 @@
     "summary": "Added to position, maintain bullish outlook with higher profit target.",
     "updated_cycle": "2026-10-11T06:00Z"
   },
+  "ARB-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-11T09:57Z-event"
+      }
+    ],
+    "exit_below": 0.18,
+    "invalidation": [
+      "Price < $0.18"
+    ],
+    "opened_cycle": "2026-10-11T09:57Z-event",
+    "reasons": [
+      "24h return +5.4% with high volume ratio",
+      "Dip signal active while 50\u2011day trend is up",
+      "Breakout not triggered but price above 20\u2011day SMA"
+    ],
+    "review_above": 0.23,
+    "status": "bullish",
+    "summary": "Short\u2011term momentum after volume spike; dip and trend signals support upside.",
+    "updated_cycle": "2026-10-11T09:57Z-event"
+  },
   "BTC-USD": {
     "confidence_history": [],
     "exit_below": 75000.0,
