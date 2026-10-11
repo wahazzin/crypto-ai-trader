@@ -5,10 +5,10 @@
   "extra": {},
   "fees_usd": 24.272749445614696,
   "halted_until": null,
-  "last_ts": "2026-10-11T16:02:47Z",
+  "last_ts": "2026-10-11T16:07:47Z",
   "name": "s_trend",
   "no_buys_until": null,
-  "peak_equity": 10021.60125773798,
+  "peak_equity": 10024.717360824598,
   "positions": {
     "AAVE-USD": {
       "avg_cost": 177.34716999999998,
