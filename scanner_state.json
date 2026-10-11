@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-11",
-      "calls_today": 1,
-      "last_call": "2026-10-11T15:52:47Z"
+      "calls_today": 2,
+      "last_call": "2026-10-11T16:22:48Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-11",
@@ -49,12 +49,12 @@
     "ai_large|QNT-USD:exit_below:230.0": "2026-10-08T16:33:21Z",
     "ai_large|QNT-USD:move": "2026-10-08T18:53:21Z",
     "ai_large|QNT-USD:volume": "2026-10-10T14:51:01Z",
-    "ai_large|SOL-USD:volume": "2026-10-08T18:53:21Z",
+    "ai_large|SOL-USD:volume": "2026-10-11T16:22:48Z",
     "ai_large|SUI-USD:move": "2026-10-08T15:48:22Z",
-    "ai_large|SUI-USD:volume": "2026-10-08T18:08:21Z",
+    "ai_large|SUI-USD:volume": "2026-10-11T16:22:48Z",
     "ai_large|XRP-USD:volume": "2026-10-08T15:48:22Z",
     "ai_large|ZEC-USD:move": "2026-10-08T15:48:22Z",
-    "ai_large|ZEC-USD:volume": "2026-10-08T15:48:22Z"
+    "ai_large|ZEC-USD:volume": "2026-10-11T16:22:48Z"
   },
   "heartbeat": {
     "equity": {
@@ -76,5 +76,5 @@
     "ts": "2026-10-11T11:37:25Z"
   },
   "last_heartbeat": "2026-10-11T15:32:48Z",
-  "scans_since_heartbeat": 7
+  "scans_since_heartbeat": 8
 }
