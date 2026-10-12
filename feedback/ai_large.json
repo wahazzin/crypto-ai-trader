@@ -1,18 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-12T05:18Z-event",
-  "risk_engine": [
-    {
-      "action": "BUY",
-      "asset": "ZEC-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.05,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-10-12T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }

@@ -1,18 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-12T04:03Z-event",
-  "risk_engine": [
-    {
-      "action": "BUY",
-      "asset": "ZRO-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.1,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-10-12T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
