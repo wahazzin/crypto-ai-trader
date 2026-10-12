@@ -1,23 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-12T12:33Z-event",
+  "from": "2026-10-12T14:59Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
+      "action": "BUY",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "SOL-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.03,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R6_TURNOVER_EXHAUSTED"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.045,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "QNT-USD",
-      "cause": "ai_event",
-      "price": 228.36940951449319,
-      "qty": 3.528228864151651,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }
