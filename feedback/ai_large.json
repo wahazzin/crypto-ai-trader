@@ -1,6 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-12T04:43Z-event",
+  "from": "2026-10-12T05:18Z-event",
   "risk_engine": [
     {
       "action": "BUY",
@@ -12,23 +12,7 @@
       "final_weight": null,
       "requested_weight": 0.05,
       "status": "REJECTED"
-    },
-    {
-      "action": "BUY",
-      "asset": "ETH-USD",
-      "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
-      "status": "APPROVED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ETH-USD",
-      "cause": "ai_event",
-      "price": 2565.823062,
-      "qty": 0.1944174143018206,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
