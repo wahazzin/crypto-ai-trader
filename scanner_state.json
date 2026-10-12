@@ -67,23 +67,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9759.82,
-      "ai_largemid": 9782.19,
-      "btc_hold": 9808.36,
-      "eth_hold": 9572.1,
-      "ew_basket": 9486.73,
-      "s_breakout": 9810.45,
-      "s_dip": 9976.36,
-      "s_rotation": 9524.36,
-      "s_trend": 9845.61
+      "ai_large": 9619.86,
+      "ai_largemid": 9645.73,
+      "btc_hold": 9757.13,
+      "eth_hold": 9462.72,
+      "ew_basket": 9291.41,
+      "s_breakout": 9746.67,
+      "s_dip": 9948.08,
+      "s_rotation": 9400.83,
+      "s_trend": 9750.02
     },
-    "scans": 1,
-    "ts": "2026-10-12T20:54:40Z"
+    "scans": 6,
+    "ts": "2026-10-12T21:54:40Z"
   },
   "last_data_fault": {
     "error": "BCH-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-12T11:13:50Z"
   },
-  "last_heartbeat": "2026-10-12T20:54:40Z",
-  "scans_since_heartbeat": 5
+  "last_heartbeat": "2026-10-12T21:54:40Z",
+  "scans_since_heartbeat": 0
 }
