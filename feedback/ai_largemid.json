@@ -1,37 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-12T14:59Z-event",
+  "from": "2026-10-12T15:59Z-event",
   "risk_engine": [
-    {
-      "action": "BUY",
-      "asset": "ZEC-USD",
-      "codes": [
-        "R6_TURNOVER_EXHAUSTED"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.05,
-      "status": "REJECTED"
-    },
-    {
-      "action": "BUY",
-      "asset": "SOL-USD",
-      "codes": [
-        "R6_TURNOVER_EXHAUSTED"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.03,
-      "status": "REJECTED"
-    },
     {
       "action": "ADD",
       "asset": "ZRO-USD",
-      "codes": [
-        "R6_TURNOVER_EXHAUSTED"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.045,
-      "status": "REJECTED"
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 2.2620597999999994,
+      "qty": 54.71777961013958,
+      "side": "buy"
+    }
+  ]
 }

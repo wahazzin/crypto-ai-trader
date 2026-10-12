@@ -117,6 +117,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-12T06:38Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-12T15:59Z-event"
       }
     ],
     "exit_below": 2.0,
@@ -125,11 +129,13 @@
     ],
     "opened_cycle": "2026-10-12T04:03Z-event",
     "reasons": [
-      "Continues strong momentum and breakout signal."
+      "Breakout signal persists",
+      "Rotation pick rank remains high",
+      "28\u2011day momentum still strong"
     ],
     "review_above": 2.8,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-12T06:38Z-event"
+    "summary": "Thesis reaffirmed after 4% 1\u2011hour dip; price remains above exit level. Tightened stop loss to protect gains.",
+    "updated_cycle": "2026-10-12T15:59Z-event"
   }
 }
