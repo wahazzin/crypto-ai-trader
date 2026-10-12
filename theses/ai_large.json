@@ -131,16 +131,5 @@
     "status": "bullish",
     "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
     "updated_cycle": "2026-10-12T12:00Z"
-  },
-  "ZEC-USD": {
-    "confidence_history": [],
-    "exit_below": 1265,
-    "invalidation": [],
-    "opened_cycle": "2026-10-12T04:43Z-event",
-    "reasons": [],
-    "review_above": 1500,
-    "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-12T12:00Z"
   }
 }
