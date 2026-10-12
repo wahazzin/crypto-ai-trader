@@ -111,6 +111,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-12T06:08Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-12T06:38Z-event"
       }
     ],
     "exit_below": 2.0,
@@ -119,11 +123,11 @@
     ],
     "opened_cycle": "2026-10-12T04:03Z-event",
     "reasons": [
-      "Volume spike and breakout signal support continued upside"
+      "Continues strong momentum and breakout signal."
     ],
-    "review_above": 2.6,
+    "review_above": 2.8,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-12T06:08Z-event"
+    "updated_cycle": "2026-10-12T06:38Z-event"
   }
 }

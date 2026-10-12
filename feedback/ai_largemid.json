@@ -1,40 +1,18 @@
 {
   "events": [],
-  "from": "2026-10-12T06:08Z-event",
+  "from": "2026-10-12T06:38Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "ARB-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
+      "action": "ADD",
       "asset": "ZRO-USD",
       "codes": [
-        "R4_ALT_CLUSTER"
+        "R4_ALT_CLUSTER",
+        "NO_ROOM_TO_ADD"
       ],
-      "final_weight": 0.03820069965985884,
-      "requested_weight": 0.05,
-      "status": "CLIPPED"
+      "final_weight": null,
+      "requested_weight": 0.08,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ARB-USD",
-      "cause": "ai_event",
-      "price": 0.19533254550171736,
-      "qty": 1985.4896274507694,
-      "side": "sell"
-    },
-    {
-      "asset": "ZRO-USD",
-      "cause": "ai_event",
-      "price": 2.358847568883418,
-      "qty": 161.95987503961786,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
