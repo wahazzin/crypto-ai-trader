@@ -1,11 +1,11 @@
 {
-  "cash": 5179.600469667373,
+  "cash": 5182.313077568759,
   "day_start_date": "2026-10-12",
   "day_start_equity": 10009.676479884536,
   "extra": {},
-  "fees_usd": 46.08496016273823,
+  "fees_usd": 49.16443776470255,
   "halted_until": null,
-  "last_ts": "2026-10-12T06:03:30Z",
+  "last_ts": "2026-10-12T06:08:30Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -22,13 +22,6 @@
       "opened_cycle": "2026-10-08T14:48Z-event",
       "opened_ts": "2026-10-08T14:48:21Z",
       "qty": 834.2354031273481,
-      "stop_pct": 18.0
-    },
-    "ARB-USD": {
-      "avg_cost": 0.19954935,
-      "opened_cycle": "2026-10-11T15:27Z-event",
-      "opened_ts": "2026-10-11T15:27:47Z",
-      "qty": 1985.4896274507694,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -58,42 +51,19 @@
       "opened_ts": "2026-10-08T12:08:01Z",
       "qty": 3.528228864151651,
       "stop_pct": 18.0
+    },
+    "ZRO-USD": {
+      "avg_cost": 2.358847568883418,
+      "opened_cycle": "2026-10-12T06:08Z-event",
+      "opened_ts": "2026-10-12T06:08:30Z",
+      "qty": 161.95987503961786,
+      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 8.837644441974884,
-  "spread_usd": 2.055370613489532,
-  "traded_notional_usd": 11521.240040684552,
+  "slippage_usd": 9.824107009535856,
+  "spread_usd": 2.329411150598573,
+  "traded_notional_usd": 12291.109441175631,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 964.2919569380758,
-      "ts": "2026-10-09T18:54:59Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 274.37236863677157,
-      "ts": "2026-10-09T19:39:59Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 480.7555985629237,
-      "ts": "2026-10-09T19:39:59Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 481.0569967746559,
-      "ts": "2026-10-09T19:39:59Z"
-    },
-    {
-      "cause": "ai",
-      "notional": 107.54665377320637,
-      "ts": "2026-10-10T00:05:18Z"
-    },
-    {
-      "cause": "ai",
-      "notional": 68.41979409216967,
-      "ts": "2026-10-10T00:05:18Z"
-    },
     {
       "cause": "ai_event",
       "notional": 74.98833520912926,
@@ -133,6 +103,16 @@
       "cause": "ai",
       "notional": 223.95622701434525,
       "ts": "2026-10-11T18:02:47Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 387.8307429972153,
+      "ts": "2026-10-12T06:08:30Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 382.0386574938648,
+      "ts": "2026-10-12T06:08:30Z"
     }
   ]
 }

@@ -33,32 +33,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-11T18:00Z"
   },
-  "ARB-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-11T09:57Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-11T15:27Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-11T17:12Z-event"
-      }
-    ],
-    "exit_below": 0.18,
-    "invalidation": [
-      "Price < $0.18"
-    ],
-    "opened_cycle": "2026-10-11T09:57Z-event",
-    "reasons": [],
-    "review_above": 0.25,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-11T18:00Z"
-  },
   "BTC-USD": {
     "confidence_history": [
       {
@@ -133,14 +107,23 @@
     "updated_cycle": "2026-10-11T18:00Z"
   },
   "ZRO-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 75,
+        "cycle": "2026-10-12T06:08Z-event"
+      }
+    ],
     "exit_below": 2.0,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $2.00"
+    ],
     "opened_cycle": "2026-10-12T04:03Z-event",
-    "reasons": [],
-    "review_above": 2.5,
+    "reasons": [
+      "Volume spike and breakout signal support continued upside"
+    ],
+    "review_above": 2.6,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-12T04:03Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-12T06:08Z-event"
   }
 }
