@@ -1,14 +1,18 @@
 {
-  "events": [
+  "events": [],
+  "from": "2026-10-12T04:03Z-event",
+  "risk_engine": [
     {
-      "arm": "ai_largemid",
-      "errors": [
-        "all endpoints failed: groq HTTP 413 (tokens-per-minute budget), waiting 62s | groq HTTP 413 (tokens-per-minute budget), waiting 62s"
+      "action": "BUY",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "NO_ROOM_TO_ADD"
       ],
-      "type": "AI_FAULT"
+      "final_weight": null,
+      "requested_weight": 0.1,
+      "status": "REJECTED"
     }
   ],
-  "from": "2026-10-12T00:00Z",
-  "risk_engine": [],
   "your_fills": []
 }
