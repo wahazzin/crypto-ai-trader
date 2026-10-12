@@ -1,11 +1,11 @@
 {
-  "cash": 5588.313854347317,
-  "day_start_date": "2026-10-11",
-  "day_start_equity": 9875.013093045163,
+  "cash": 8102.064216723401,
+  "day_start_date": "2026-10-12",
+  "day_start_equity": 10052.20738600126,
   "extra": {},
-  "fees_usd": 36.728562261711204,
+  "fees_usd": 46.82394524314126,
   "halted_until": null,
-  "last_ts": "2026-10-11T23:48:09Z",
+  "last_ts": "2026-10-12T00:03:09Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10059.096031339974,
@@ -17,27 +17,6 @@
       "qty": 2.323110595078581,
       "stop_pct": 18.0
     },
-    "ADA-USD": {
-      "avg_cost": 0.23889324999999997,
-      "opened_cycle": "2026-10-09T18:00Z",
-      "opened_ts": "2026-10-09T18:04:59Z",
-      "qty": 526.8793075807079,
-      "stop_pct": 18.0
-    },
-    "ARB-USD": {
-      "avg_cost": 0.18390465189626468,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 3904.203918498432,
-      "stop_pct": 18.0
-    },
-    "AVAX-USD": {
-      "avg_cost": 10.323077048540034,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 33.00585637876937,
-      "stop_pct": 18.0
-    },
     "BCH-USD": {
       "avg_cost": 276.64637,
       "opened_cycle": "2026-10-10T00:00Z",
@@ -45,25 +24,11 @@
       "qty": 1.2317543585880832,
       "stop_pct": 18.0
     },
-    "ENA-USD": {
-      "avg_cost": 0.19720700999999996,
-      "opened_cycle": "2026-10-08T18:00Z",
-      "opened_ts": "2026-10-08T18:03:21Z",
-      "qty": 2130.8834134905346,
-      "stop_pct": 18.0
-    },
     "ETH-USD": {
       "avg_cost": 2484.29676,
       "opened_cycle": "2026-10-10T00:00Z",
       "opened_ts": "2026-10-10T00:05:18Z",
       "qty": 0.13702442156932765,
-      "stop_pct": 18.0
-    },
-    "FET-USD": {
-      "avg_cost": 0.23063845957975407,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 3114.748738244802,
       "stop_pct": 18.0
     },
     "HBAR-USD": {
@@ -88,20 +53,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 9.381321934184387,
-  "spread_usd": 1.6240060057877632,
-  "traded_notional_usd": 9182.1405654278,
+  "slippage_usd": 12.33785837557797,
+  "spread_usd": 2.225252491494598,
+  "traded_notional_usd": 11705.986310785314,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 391.4404770031038,
-      "ts": "2026-10-09T18:04:59Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 125.86791014570493,
-      "ts": "2026-10-09T18:04:59Z"
-    },
     {
       "cause": "strategy",
       "notional": 340.7219984510828,
@@ -136,6 +91,31 @@
       "cause": "strategy",
       "notional": 66.62448799188839,
       "ts": "2026-10-11T00:06:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 132.45170229623395,
+      "ts": "2026-10-12T00:03:09Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 777.4488435644723,
+      "ts": "2026-10-12T00:03:09Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 362.38205471372345,
+      "ts": "2026-10-12T00:03:09Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 505.870463707208,
+      "ts": "2026-10-12T00:03:09Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 745.6926810758761,
+      "ts": "2026-10-12T00:03:09Z"
     }
   ]
 }

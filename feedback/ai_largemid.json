@@ -1,34 +1,14 @@
 {
-  "events": [],
-  "from": "2026-10-11T18:00Z",
-  "risk_engine": [
+  "events": [
     {
-      "action": "ADD",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.03,
-      "requested_weight": 0.03,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "NEAR-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
+      "arm": "ai_largemid",
+      "errors": [
+        "all endpoints failed: groq HTTP 413 (tokens-per-minute budget), waiting 62s | groq HTTP 413 (tokens-per-minute budget), waiting 62s"
       ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
+      "type": "AI_FAULT"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai",
-      "price": 83756.137878,
-      "qty": 0.0026739082375140323,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-12T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
