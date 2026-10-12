@@ -5,10 +5,10 @@
   "extra": {},
   "fees_usd": 46.08496016273823,
   "halted_until": null,
-  "last_ts": "2026-10-12T04:58:30Z",
+  "last_ts": "2026-10-12T05:03:31Z",
   "name": "ai_largemid",
   "no_buys_until": null,
-  "peak_equity": 10028.124422212224,
+  "peak_equity": 10032.297220226697,
   "positions": {
     "ADA-USD": {
       "avg_cost": 0.23592221962222018,
