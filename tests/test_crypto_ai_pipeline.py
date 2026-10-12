@@ -276,6 +276,15 @@ class TestFreeProvider(unittest.TestCase):
         self.assertIn(62, waits)
         self.assertEqual(out["provider"], "groq")
 
+    def test_413_logs_groq_numbers(self):
+        os.environ["GROQ_API_KEY"] = "g"
+        msg = ("Request too large for model `openai/gpt-oss-120b` on tokens per minute (TPM): "
+               "Limit 8000, Requested 9120, please reduce your message size")
+        self.L.requests.post = lambda url, headers, json, timeout: self.Resp(413, {"error": {"message": msg}})
+        with self.assertRaises(self.L.LLMError) as cm:
+            self.L.make_llm(CFG).complete("s", "u")
+        self.assertIn("limit 8000, requested 9120", str(cm.exception))
+
     def test_no_keys_fails_loudly(self):
         with self.assertRaises(self.L.LLMError):
             self.L.make_llm(CFG)

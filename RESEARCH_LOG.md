@@ -354,3 +354,18 @@ can't be bent to fit results: a new `ai_learner` arm sees code-computed statisti
 closed trades; an identical `ai_twin` doesn't. Decided against AI-written trade reviews (uncheckable,
 costly in tokens). Needs a mechanism check (did behaviour actually change?) besides the return test.
 Start: month 2, once ≥ 30 AI trades have closed. Prior: low.
+
+## 2026-10-12 — Weekly review (W41): two reporting/diagnostic fixes, one open risk
+
+**Fix — SPY benchmark skipped the first session.** `weekly.spy_return` took the SPY bar *dated* on the start
+day as the starting close. The experiment started 2026-10-07 06:38 UTC, before that day's session, so SPY's
+2026-10-07 move was left out: W41 showed SPY +0.17%; correct (10-06 close → 10-09 close) is **-0.08%**.
+Now the start/end closes are the last bars already closed at that moment (test added). No strategy or locked
+file touched; W41's file is left as written and corrected in the weekly review.
+
+**Diagnostic — AI_FAULTs on ai_largemid.** 4 of 21 cycles (4 of the last 9) faulted, always ai_largemid,
+always Groq HTTP 413 "tokens per minute" twice in a row (62 s apart). Only Groq is tried: the OpenRouter
+backup never appears in the errors, so its key is not available to the loop. The 413 log line now keeps Groq's
+own "limit / used / requested" numbers, so next week shows whether the request itself is over the 8,000 TPM
+limit (then waiting can never help) or another call used the minute. Token use grew from ~95k/day (day 1) to
+~144k/day (72% of the 200k free cap). No change to model, prompt, max_tokens or arms (locked).

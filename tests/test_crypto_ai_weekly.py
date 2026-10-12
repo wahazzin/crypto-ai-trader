@@ -48,3 +48,17 @@ class TestWeekly(unittest.TestCase):
         self.assertIn("$40.00", text)                                              # first-cycle fees counted
         self.assertIsNone(W.run(d, CFG, datetime(2026, 10, 12, 0, 15, tzinfo=timezone.utc), True, spy))
         shutil.rmtree(d, ignore_errors=True)
+
+
+class TestSpyWindow(unittest.TestCase):
+    def test_start_before_the_session_uses_previous_close(self):
+        from crypto_ai.analytics import weekly as W
+        bars = [{"t": "2026-10-06T04:00:00Z", "c": 779.10}, {"t": "2026-10-07T04:00:00Z", "c": 777.15},
+                {"t": "2026-10-09T04:00:00Z", "c": 778.51}]
+        r = W._spy_from_bars(bars, datetime(2026, 10, 7, 6, 38, tzinfo=timezone.utc),
+                             datetime(2026, 10, 12, 0, 0, tzinfo=timezone.utc))
+        self.assertAlmostEqual(r, 778.51 / 779.10 - 1)        # was 778.51 / 777.15 - 1 (skipped 10-07)
+        r2 = W._spy_from_bars(bars, datetime(2026, 10, 7, 22, 0, tzinfo=timezone.utc),
+                              datetime(2026, 10, 12, 0, 0, tzinfo=timezone.utc))
+        self.assertAlmostEqual(r2, 778.51 / 777.15 - 1)       # start after that day's close
+

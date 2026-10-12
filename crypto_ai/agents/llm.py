@@ -14,6 +14,7 @@ The API key comes from the environment (ANTHROPIC_API_KEY), never from a file in
 """
 import json
 import os
+import re
 import time
 
 import requests
@@ -101,7 +102,13 @@ class OpenAICompatLLM:
             # Groq answers 413 when THIS minute's token budget is used up (e.g. a previous process
             # just made a call). Waiting out the minute is the fix; a request that is too big on
             # its own would fail again and end as an AI_FAULT.
-            raise RateLimited(f"{ep['name']} HTTP 413 (tokens-per-minute budget), waiting 62s", 62)
+            # Keep Groq's own numbers ("Limit 8000, Used X, Requested Y") in the log: if Requested alone is
+            # above the limit, waiting can never help (the request itself is too big) -- added 2026-10-12
+            # after 4 ai_largemid AI_FAULTs whose logs could not tell the two cases apart.
+            nums = re.findall(r"(Limit|Used|Requested)\W+(\d+)", r.text)
+            detail = ", ".join(f"{k.lower()} {v}" for k, v in nums[:3])
+            raise RateLimited(f"{ep['name']} HTTP 413 (tokens-per-minute budget{'; ' + detail if detail else ''}), "
+                              f"waiting 62s", 62)
         if r.status_code == 429:
             try:
                 wait = min(float((getattr(r, "headers", None) or {}).get("retry-after", 30)), 70)

@@ -99,8 +99,24 @@ def spy_return(start, end):
         bars = r.json().get("bars") or []
     except (requests.RequestException, ValueError):
         return None
-    before = [b for b in bars if b["t"][:10] <= start.strftime("%Y-%m-%d")]
-    after = [b for b in bars if b["t"][:10] <= end.strftime("%Y-%m-%d")]
+    return _spy_from_bars(bars, start, end)
+
+
+US_CLOSE_DONE_UTC_HOUR = 21     # a daily bar's close is final by 21:00 UTC (20:00 in US summer time)
+
+
+def _closed_by(bar_date, t):
+    """True if the daily bar for bar_date ('YYYY-MM-DD') had closed at time t."""
+    d = t.strftime("%Y-%m-%d")
+    return bar_date < d or (bar_date == d and t.hour >= US_CLOSE_DONE_UTC_HOUR)
+
+
+def _spy_from_bars(bars, start, end):
+    """Last close known at `start` -> last close known at `end`.
+    Fixed 2026-10-12: the start bar used to be the one DATED on the start day; with the experiment starting
+    2026-10-07 06:38 UTC (before that day's session) the 2026-10-07 session was left out of SPY's return."""
+    before = [b for b in bars if _closed_by(b["t"][:10], start)]
+    after = [b for b in bars if _closed_by(b["t"][:10], end)]
     if not before or not after:
         return None
     return after[-1]["c"] / before[-1]["c"] - 1
