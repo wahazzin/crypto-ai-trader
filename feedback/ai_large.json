@@ -1,22 +1,33 @@
 {
   "events": [],
-  "from": "2026-10-12T00:00Z",
+  "from": "2026-10-12T04:43Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "QNT-USD",
+      "action": "BUY",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ETH-USD",
       "codes": [],
-      "final_weight": 0.109,
-      "requested_weight": 0.109,
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 237.862632,
-      "qty": 0.6277499961309344,
+      "asset": "ETH-USD",
+      "cause": "ai_event",
+      "price": 2565.823062,
+      "qty": 0.1944174143018206,
       "side": "buy"
     }
   ]

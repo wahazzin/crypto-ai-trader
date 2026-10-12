@@ -24,6 +24,17 @@
     "summary": "Dip signal combined with positive trend and strong 30\u2011day return indicates upside potential.",
     "updated_cycle": "2026-10-11T18:00Z"
   },
+  "ETH-USD": {
+    "confidence_history": [],
+    "exit_below": 2400,
+    "invalidation": [],
+    "opened_cycle": "2026-10-12T04:43Z-event",
+    "reasons": [],
+    "review_above": 2800,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-12T04:43Z-event"
+  },
   "NEAR-USD": {
     "confidence_history": [
       {
@@ -120,5 +131,16 @@
     "status": "bullish",
     "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
     "updated_cycle": "2026-10-11T18:00Z"
+  },
+  "ZEC-USD": {
+    "confidence_history": [],
+    "exit_below": 1265,
+    "invalidation": [],
+    "opened_cycle": "2026-10-12T04:43Z-event",
+    "reasons": [],
+    "review_above": 1500,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-12T04:43Z-event"
   }
 }
