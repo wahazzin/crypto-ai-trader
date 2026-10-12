@@ -86,26 +86,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-11T18:00Z"
   },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 78,
-        "cycle": "2026-10-08T12:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-08T12:08Z-event"
-      }
-    ],
-    "exit_below": 230,
-    "invalidation": [],
-    "opened_cycle": "2026-10-08T12:00Z",
-    "reasons": [],
-    "review_above": 260,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-11T18:00Z"
-  },
   "ZRO-USD": {
     "confidence_history": [
       {
