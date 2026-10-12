@@ -16,24 +16,25 @@
     ],
     "opened_cycle": "2026-10-11T00:00Z",
     "reasons": [
-      "24\u2011h return +2.5% and 30\u2011day return +21.7% show momentum",
-      "Trend indicator true and RSI near neutral"
+      "No new adverse price movement; exit_below still intact."
     ],
     "review_above": 0.3,
     "status": "bullish",
-    "summary": "Dip signal combined with positive trend and strong 30\u2011day return indicates upside potential.",
-    "updated_cycle": "2026-10-12T12:00Z"
+    "summary": "Thesis unchanged; dip signal not active, price still above exit level.",
+    "updated_cycle": "2026-10-12T21:44Z-event"
   },
   "ETH-USD": {
     "confidence_history": [],
     "exit_below": 2400,
     "invalidation": [],
     "opened_cycle": "2026-10-12T04:43Z-event",
-    "reasons": [],
+    "reasons": [
+      "No breach of exit level; dip may still offer upside."
+    ],
     "review_above": 2800,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-12T12:00Z"
+    "summary": "Thesis unchanged; dip signal persists, price above exit level.",
+    "updated_cycle": "2026-10-12T21:44Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -64,12 +65,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Added position to capture potential upside"
+      "No new evidence to alter thesis; price still above $5.0."
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
-    "updated_cycle": "2026-10-12T18:00Z"
+    "summary": "Thesis unchanged; rotation pick remains strong, price above exit level.",
+    "updated_cycle": "2026-10-12T21:44Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -100,12 +101,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Breakout active, rotation rank 1, 30\u2011day return +275%"
+      "Exit level untouched; position remains within risk limits."
     ],
     "review_above": 280.0,
     "status": "bullish",
-    "summary": "Breakout and rotation pick suggest strong upside; dip provides entry at lower price.",
-    "updated_cycle": "2026-10-12T12:00Z"
+    "summary": "Thesis unchanged; breakout and rotation rank still favorable, price above exit level.",
+    "updated_cycle": "2026-10-12T21:44Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -128,11 +129,11 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price above exit level and review target not hit; thesis unchanged."
+      "No breach of exit level; holding for potential rebound."
     ],
     "review_above": 1.2793,
     "status": "bullish",
-    "summary": "Strong dip and positive trend with solid volume suggest upside potential.",
-    "updated_cycle": "2026-10-12T12:00Z"
+    "summary": "Thesis unchanged; dip signal active, price above exit level.",
+    "updated_cycle": "2026-10-12T21:44Z-event"
   }
 }
