@@ -52,21 +52,24 @@
       {
         "confidence": 80,
         "cycle": "2026-10-11T18:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-12T18:00Z"
       }
     ],
-    "exit_below": 4.3503,
+    "exit_below": 5.0,
     "invalidation": [
-      "Price < $4.3503"
+      "Price < $5.0"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price has moved above the previous review target (5.8004) confirming upside momentum.",
-      "30\u2011day return remains exceptional (+116%) and the asset stays in the top\u20112 rotation rank."
+      "Added position to capture potential upside"
     ],
     "review_above": 6.5,
     "status": "bullish",
     "summary": "High 30\u2011day return and rotation pick make NEAR a compelling rebound candidate after recent pull\u2011back.",
-    "updated_cycle": "2026-10-12T12:00Z"
+    "updated_cycle": "2026-10-12T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [

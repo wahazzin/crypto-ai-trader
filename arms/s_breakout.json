@@ -1,11 +1,11 @@
 {
-  "cash": 5955.719453423205,
+  "cash": 5861.745130585316,
   "day_start_date": "2026-10-12",
   "day_start_equity": 10006.924212433989,
   "extra": {},
-  "fees_usd": 40.97864046264082,
+  "fees_usd": 41.35304015522205,
   "halted_until": null,
-  "last_ts": "2026-10-12T17:54:17Z",
+  "last_ts": "2026-10-12T18:04:17Z",
   "name": "s_breakout",
   "no_buys_until": null,
   "peak_equity": 10054.276407381865,
@@ -32,41 +32,26 @@
       "stop_pct": 18.0
     },
     "QNT-USD": {
-      "avg_cost": 245.57646496382262,
+      "avg_cost": 243.58488682349264,
       "opened_cycle": "2026-10-10T00:00Z",
       "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 3.4590478358144385,
+      "qty": 3.8715893875991685,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 9.625938512614411,
-  "spread_usd": 1.7684784391226165,
-  "traded_notional_usd": 10244.660115660203,
+  "slippage_usd": 9.682064790734717,
+  "spread_usd": 1.7973563477475447,
+  "traded_notional_usd": 10338.26003880551,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 660.6976348822526,
-      "ts": "2026-10-10T00:05:18Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 640.0825218533278,
-      "ts": "2026-10-10T00:05:18Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 480.29586262233397,
-      "ts": "2026-10-10T00:05:18Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 657.4386462809919,
-      "ts": "2026-10-10T00:05:18Z"
-    },
     {
       "cause": "strategy",
       "notional": 192.02209337907905,
       "ts": "2026-10-11T00:06:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 93.5999231453078,
+      "ts": "2026-10-12T18:04:17Z"
     }
   ]
 }

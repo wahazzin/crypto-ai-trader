@@ -86,6 +86,28 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-11T18:00Z"
   },
+  "QNT-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-12T18:00Z"
+      }
+    ],
+    "exit_below": 200.0,
+    "invalidation": [
+      "Price < $200"
+    ],
+    "opened_cycle": "2026-10-12T18:00Z",
+    "reasons": [
+      "Breakout signal persists",
+      "Rotation pick rank 1",
+      "28\u2011day momentum still strong"
+    ],
+    "review_above": 250.0,
+    "status": "bullish",
+    "summary": "New bullish thesis based on breakout, rotation rank 1 and strong 28\u2011day momentum; price dip provides entry.",
+    "updated_cycle": "2026-10-12T18:00Z"
+  },
   "SOL-USD": {
     "confidence_history": [],
     "exit_below": 97.5,
@@ -128,14 +150,10 @@
       "Price < $2.00"
     ],
     "opened_cycle": "2026-10-12T04:03Z-event",
-    "reasons": [
-      "Breakout signal persists",
-      "Rotation pick rank remains high",
-      "28\u2011day momentum still strong"
-    ],
+    "reasons": [],
     "review_above": 2.8,
     "status": "bullish",
-    "summary": "Thesis reaffirmed after 4% 1\u2011hour dip; price remains above exit level. Tightened stop loss to protect gains.",
-    "updated_cycle": "2026-10-12T15:59Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-12T18:00Z"
   }
 }
