@@ -63,6 +63,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-13T00:00Z"
+      },
+      {
+        "confidence": 90,
+        "cycle": "2026-10-13T01:55Z-event"
       }
     ],
     "exit_below": 4.5,
@@ -71,13 +75,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 5.15185 > exit_below 4.5",
-      "Review target 6.5 not yet reached"
+      "Compliance with max\u2011weight rule."
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; rotation pick remains strong and price above exit level.",
-    "updated_cycle": "2026-10-13T01:25Z-event"
+    "summary": "Thesis unchanged; weight reduced to meet portfolio limits.",
+    "updated_cycle": "2026-10-13T01:55Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -104,6 +107,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-13T00:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-13T01:55Z-event"
       }
     ],
     "exit_below": 200,
@@ -112,13 +119,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 226.49 > exit_below 200",
-      "Review target 280 not yet reached"
+      "Breakout, dip and trend signals all positive; 28\u2011day return remains high."
     ],
     "review_above": 280,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; breakout and dip signals still favorable, price above exit.",
-    "updated_cycle": "2026-10-13T01:25Z-event"
+    "summary": "Thesis reaffirmed; breakout and rotation signals remain strong.",
+    "updated_cycle": "2026-10-13T01:55Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
