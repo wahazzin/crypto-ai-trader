@@ -119,17 +119,6 @@
     "summary": "",
     "updated_cycle": "2026-10-12T14:59Z-event"
   },
-  "ZEC-USD": {
-    "confidence_history": [],
-    "exit_below": 1150,
-    "invalidation": [],
-    "opened_cycle": "2026-10-12T14:59Z-event",
-    "reasons": [],
-    "review_above": 1500,
-    "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-12T14:59Z-event"
-  },
   "ZRO-USD": {
     "confidence_history": [
       {
