@@ -16,13 +16,13 @@
     ],
     "opened_cycle": "2026-10-11T00:00Z",
     "reasons": [
-      "Price 0.2361 > exit_below 0.22",
-      "Review target 0.30 not reached"
+      "Price 0.23584 > exit_below 0.22",
+      "Trend signal true, but recent downside persists."
     ],
     "review_above": 0.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level and review target not yet hit.",
-    "updated_cycle": "2026-10-13T18:11Z-event"
+    "updated_cycle": "2026-10-13T18:41Z-event"
   },
   "ETH-USD": {
     "confidence_history": [],
@@ -30,13 +30,13 @@
     "invalidation": [],
     "opened_cycle": "2026-10-12T04:43Z-event",
     "reasons": [
-      "Price 2504.3 > exit_below 2400",
-      "Review target 2800 not reached"
+      "Price 2500.585 > exit_below 2400",
+      "Dip signal suggests buying opportunity despite short\u2011term weakness."
     ],
     "review_above": 2800,
     "status": "bullish",
     "summary": "Thesis reaffirmed; dip signal still valid, price above exit level.",
-    "updated_cycle": "2026-10-13T18:11Z-event"
+    "updated_cycle": "2026-10-13T18:41Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -75,13 +75,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 5.017 > exit_below 4.5",
-      "Review target 6.5 not reached"
+      "Price 4.9951 > exit_below 4.5",
+      "30d return +114% and rank 3 in rotation."
     ],
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Thesis unchanged; rotation pick remains strong, price above exit level.",
-    "updated_cycle": "2026-10-13T18:11Z-event"
+    "updated_cycle": "2026-10-13T18:41Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -116,6 +116,10 @@
       {
         "confidence": 60,
         "cycle": "2026-10-13T12:00Z"
+      },
+      {
+        "confidence": 78,
+        "cycle": "2026-10-13T18:41Z-event"
       }
     ],
     "exit_below": 200,
@@ -124,13 +128,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 208.7 > exit_below 200",
-      "Review target 280 not reached"
+      "Price 215.685 > exit_below 200",
+      "Breakout and rotation pick signals active."
     ],
-    "review_above": 280,
+    "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis updated: tightened stop\u2011loss to limit downside, maintain exit level.",
-    "updated_cycle": "2026-10-13T18:11Z-event"
+    "summary": "Thesis updated: added position weight, keeping existing exit level.",
+    "updated_cycle": "2026-10-13T18:41Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -149,6 +153,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-13T00:54Z-event"
+      },
+      {
+        "confidence": 72,
+        "cycle": "2026-10-13T18:41Z-event"
       }
     ],
     "exit_below": 0.9595,
@@ -157,12 +165,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 1.0459 > exit_below 0.9595",
-      "Review target 1.2793 not reached"
+      "Price 1.0469 > exit_below 0.9595",
+      "Dip and trend signals active with solid 30d performance."
     ],
-    "review_above": 1.2793,
+    "review_above": 1.3,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level, no review target reached.",
-    "updated_cycle": "2026-10-13T18:11Z-event"
+    "summary": "Thesis updated: added position weight, exit level unchanged.",
+    "updated_cycle": "2026-10-13T18:41Z-event"
   }
 }

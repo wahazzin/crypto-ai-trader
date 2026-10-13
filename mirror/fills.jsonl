@@ -22,3 +22,5 @@
 {"arm":"ai_large","asset":"SUI-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":276.3356260595083,"sim_price":1.00499664,"ts":"2026-10-13T00:54:40Z"}
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":159.70509320619502,"sim_price":224.664718,"ts":"2026-10-13T01:55:00Z"}
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":296.3995405265249,"sim_price":203.6557407820427,"ts":"2026-10-13T12:05:18Z"}
+{"arm":"ai_large","asset":"QNT-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":157.6582790007844,"sim_price":216.139606,"ts":"2026-10-13T18:41:02Z"}
+{"arm":"ai_large","asset":"SUI-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":169.70948633085303,"sim_price":1.04852874,"ts":"2026-10-13T18:41:02Z"}
