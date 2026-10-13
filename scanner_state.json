@@ -84,8 +84,8 @@
   },
   "last_data_fault": {
     "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-13T09:20:17Z"
+    "ts": "2026-10-13T10:00:17Z"
   },
   "last_heartbeat": "2026-10-13T09:55:17Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
