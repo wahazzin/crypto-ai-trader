@@ -3,12 +3,12 @@
     {
       "arm": "ai_largemid",
       "errors": [
-        "all endpoints failed: groq HTTP 413 (tokens-per-minute budget; limit 8000, requested 8046), waiting 62s | groq HTTP 413 (tokens-per-minute budget; limit 8000, requested 8080), waiting 62s"
+        "all endpoints failed: groq HTTP 413 (tokens-per-minute budget; limit 8000, requested 8176), waiting 62s | groq HTTP 413 (tokens-per-minute budget; limit 8000, requested 8147), waiting 62s"
       ],
       "type": "AI_FAULT"
     }
   ],
-  "from": "2026-10-13T06:00Z",
+  "from": "2026-10-13T12:00Z",
   "risk_engine": [],
   "your_fills": []
 }
