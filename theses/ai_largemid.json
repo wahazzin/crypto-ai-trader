@@ -139,10 +139,14 @@
       "Price < $2.00"
     ],
     "opened_cycle": "2026-10-12T04:03Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price still above $2.00 exit level",
+      "Breakout signal still active",
+      "Rotation pick rank 2"
+    ],
     "review_above": 2.8,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-12T18:00Z"
+    "summary": "Price dipped 4.5% in the last hour but remains above the exit_below level; thesis unchanged.",
+    "updated_cycle": "2026-10-13T01:10Z-event"
   }
 }
