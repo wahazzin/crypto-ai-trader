@@ -131,6 +131,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-11T15:52Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-13T00:54Z-event"
       }
     ],
     "exit_below": 0.9595,
@@ -139,11 +143,11 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "No breach of exit level; holding for potential rebound."
+      "Volume spike and price drop indicate near\u2011term risk, but longer\u2011term dip signal remains valid."
     ],
     "review_above": 1.2793,
     "status": "bullish",
-    "summary": "Thesis unchanged; dip signal active, price above exit level.",
-    "updated_cycle": "2026-10-12T21:44Z-event"
+    "summary": "Reduced position size after volume spike; thesis still bullish.",
+    "updated_cycle": "2026-10-13T00:54Z-event"
   }
 }

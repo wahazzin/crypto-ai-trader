@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-13",
-      "calls_today": 1,
-      "last_call": "2026-10-13T00:14:41Z"
+      "calls_today": 2,
+      "last_call": "2026-10-13T00:54:40Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-13",
@@ -61,30 +61,30 @@
     "ai_large|QNT-USD:volume": "2026-10-10T14:51:01Z",
     "ai_large|SOL-USD:volume": "2026-10-13T00:14:41Z",
     "ai_large|SUI-USD:move": "2026-10-08T15:48:22Z",
-    "ai_large|SUI-USD:volume": "2026-10-11T16:22:48Z",
+    "ai_large|SUI-USD:volume": "2026-10-13T00:54:40Z",
     "ai_large|XRP-USD:volume": "2026-10-08T15:48:22Z",
     "ai_large|ZEC-USD:move": "2026-10-12T04:43:31Z",
     "ai_large|ZEC-USD:volume": "2026-10-12T22:14:40Z"
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9539.19,
-      "ai_largemid": 9569.11,
-      "btc_hold": 9653.47,
-      "eth_hold": 9286.77,
-      "ew_basket": 9121.44,
-      "s_breakout": 9676.05,
-      "s_dip": 9917.02,
-      "s_rotation": 9345.25,
-      "s_trend": 9666.55
+      "ai_large": 9445.36,
+      "ai_largemid": 9501.75,
+      "btc_hold": 9605.12,
+      "eth_hold": 9196.28,
+      "ew_basket": 8944.37,
+      "s_breakout": 9550.15,
+      "s_dip": 9810.3,
+      "s_rotation": 9269.55,
+      "s_trend": 9573.1
     },
-    "scans": 6,
-    "ts": "2026-10-12T23:54:40Z"
+    "scans": 11,
+    "ts": "2026-10-13T00:54:40Z"
   },
   "last_data_fault": {
     "error": "BCH-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-12T11:13:50Z"
   },
-  "last_heartbeat": "2026-10-12T23:54:40Z",
-  "scans_since_heartbeat": 10
+  "last_heartbeat": "2026-10-13T00:54:40Z",
+  "scans_since_heartbeat": 0
 }
