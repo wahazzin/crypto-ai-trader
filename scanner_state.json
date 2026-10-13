@@ -84,9 +84,9 @@
     "ts": "2026-10-13T22:01:02Z"
   },
   "last_data_fault": {
-    "error": "FET-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-13T20:56:03Z"
+    "error": "AERO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-13T22:26:03Z"
   },
   "last_heartbeat": "2026-10-13T22:01:02Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
