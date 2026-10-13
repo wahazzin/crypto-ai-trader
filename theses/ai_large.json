@@ -57,20 +57,25 @@
       {
         "confidence": 75,
         "cycle": "2026-10-12T18:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-13T00:00Z"
       }
     ],
-    "exit_below": 5.0,
+    "exit_below": 4.5,
     "invalidation": [
-      "Price < $5.0"
+      "Price < $4.5"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "No new evidence to alter thesis; price still above $5.0."
+      "Price still above prior exit level",
+      "Pull\u2011back offers better entry"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; rotation pick remains strong, price above exit level.",
-    "updated_cycle": "2026-10-12T21:44Z-event"
+    "summary": "Added position; thesis unchanged, rotation pick remains strong.",
+    "updated_cycle": "2026-10-13T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -93,20 +98,25 @@
       {
         "confidence": 85,
         "cycle": "2026-10-12T00:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-13T00:00Z"
       }
     ],
-    "exit_below": 210.0,
+    "exit_below": 200,
     "invalidation": [
-      "Price < $210"
+      "Price < $200"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Exit level untouched; position remains within risk limits."
+      "Price remains above prior exit level",
+      "Long\u2011term upside still evident"
     ],
-    "review_above": 280.0,
+    "review_above": 280,
     "status": "bullish",
-    "summary": "Thesis unchanged; breakout and rotation rank still favorable, price above exit level.",
-    "updated_cycle": "2026-10-12T21:44Z-event"
+    "summary": "Increased stake; breakout and rotation signals still favorable.",
+    "updated_cycle": "2026-10-13T00:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
