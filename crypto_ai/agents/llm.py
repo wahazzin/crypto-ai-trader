@@ -26,6 +26,11 @@ class LLMError(Exception):
     pass
 
 
+class TooBig(LLMError):
+    """The request ALONE is bigger than this provider's per-minute token limit: waiting or retrying
+    the same provider can never work, so go straight to the next endpoint (added 2026-10-13)."""
+
+
 class RateLimited(LLMError):
     def __init__(self, msg, wait):
         super().__init__(msg)
@@ -107,6 +112,10 @@ class OpenAICompatLLM:
             # after 4 ai_largemid AI_FAULTs whose logs could not tell the two cases apart.
             nums = re.findall(r"(Limit|Used|Requested)\W+(\d+)", r.text)
             detail = ", ".join(f"{k.lower()} {v}" for k, v in nums[:3])
+            n = {k.lower(): int(v) for k, v in nums}
+            if "limit" in n and n.get("requested", 0) > n["limit"]:
+                raise TooBig(f"{ep['name']} HTTP 413 (request alone is bigger than the per-minute limit; "
+                             f"{detail}), skipping to next provider")
             raise RateLimited(f"{ep['name']} HTTP 413 (tokens-per-minute budget{'; ' + detail if detail else ''}), "
                               f"waiting 62s", 62)
         if r.status_code == 429:
@@ -138,6 +147,9 @@ class OpenAICompatLLM:
                     out["latency_s"] = round(time.time() - t0, 2)
                     out["endpoint_errors"] = errors
                     return out
+                except TooBig as e:
+                    errors.append(str(e)[:300])
+                    break                                # same provider can never fit it
                 except RateLimited as e:
                     errors.append(str(e)[:300])
                     time.sleep(e.wait)

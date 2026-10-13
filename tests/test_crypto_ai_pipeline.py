@@ -285,6 +285,26 @@ class TestFreeProvider(unittest.TestCase):
             self.L.make_llm(CFG).complete("s", "u")
         self.assertIn("limit 8000, requested 9120", str(cm.exception))
 
+    def test_413_too_big_skips_straight_to_backup_without_waiting(self):
+        os.environ["GROQ_API_KEY"], os.environ["OPENROUTER_API_KEY"] = "g", "o"
+        calls, waits = [], []
+        self.L.time.sleep = waits.append
+        msg = ("Request too large for model `openai/gpt-oss-120b` on tokens per minute (TPM): "
+               "Limit 8000, Requested 8176, please reduce your message size")
+
+        def post(url, headers, json, timeout):
+            calls.append(url)
+            if "groq" in url:
+                return self.Resp(413, {"error": {"message": msg}})
+            return self.Resp(200, {"model": json["model"], "choices": [{"message": {"content": "{}"},
+                                   "finish_reason": "stop"}], "usage": {"prompt_tokens": 5, "completion_tokens": 2}})
+
+        self.L.requests.post = post
+        out = self.L.make_llm(CFG).complete("s", "u")
+        self.assertEqual(out["provider"], "openrouter")
+        self.assertEqual(sum("groq" in c for c in calls), 1)     # no pointless retry
+        self.assertNotIn(62, waits)                               # no pointless 62 s wait
+
     def test_no_keys_fails_loudly(self):
         with self.assertRaises(self.L.LLMError):
             self.L.make_llm(CFG)

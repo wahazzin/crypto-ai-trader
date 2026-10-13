@@ -49,8 +49,10 @@ def problems():
             raise ValueError("no cycles found in the file")
         bad = [c for c in cyc if c.get("status") != "OK" or not all(a.get("ok") for a in (c.get("ai") or {}).values())]
         if cyc and len(bad) == len(cyc):
+            arms = sorted({a for c in cyc for a, v in (c.get("ai") or {}).items() if not v.get("ok")})
             out.append(("ai", f"Crypto AI trader: the AI failed in the last {len(cyc)} cycles "
-                              f"(status {cyc[-1].get('status')}). Groq may have changed or limited the free model."))
+                              f"(status {cyc[-1].get('status')}; failing: {', '.join(arms) or 'all'}). "
+                              f"Exact errors: decisions.jsonl on branch crypto-ai-data."))
     except Exception as e:
         out.append(("ai", f"Crypto AI trader: couldn't read recent cycles ({type(e).__name__})."))
     return out

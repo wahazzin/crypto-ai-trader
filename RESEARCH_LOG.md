@@ -369,3 +369,22 @@ backup never appears in the errors, so its key is not available to the loop. The
 own "limit / used / requested" numbers, so next week shows whether the request itself is over the 8,000 TPM
 limit (then waiting can never help) or another call used the minute. Token use grew from ~95k/day (day 1) to
 ~144k/day (72% of the 200k free cap). No change to model, prompt, max_tokens or arms (locked).
+
+## 2026-10-13: ai_largemid AI failures = prompt too big for Groq's free per-minute limit
+
+**What happened:** 13 ai_largemid AI_FAULTs since 2026-10-09 (6 scheduled cycles + 7 wake-ups); ai_large never failed.
+Groq's own numbers: "Limit 8000, Requested 8041–8473". The ai_largemid prompt (large coins + up to 5 mid
+candidates + held coins) sits right at Groq's free 8,000 tokens-per-minute cap (successful calls measured
+7,100–7,600 prompt tokens). When it's a bit bigger, the request alone can never fit, so waiting 62 s and
+retrying the same provider was pointless.
+
+**Fix (infrastructure, no fingerprinted file touched):**
+- `agents/llm.py`: when Groq says Requested > Limit, skip straight to the next provider (same weights) with no wait
+  and no retry. Test added.
+- `tools/health_check.py`: the alert now names the failing arm(s) and points to the exact errors instead of
+  guessing "Groq may have changed the model".
+
+**What actually unblocks it:** the pre-planned backup endpoint (OpenRouter, same open weights
+`openai/gpt-oss-120b:free`) — it needs the OPENROUTER_API_KEY secret, which isn't set yet. Until it is,
+ai_largemid misses roughly 1 in 3 cycles (logged as AI_FAULT, AI does nothing). Nothing in the prompt,
+model, or rules was changed: shrinking the prompt would change the locked experiment.
