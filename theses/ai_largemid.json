@@ -186,31 +186,5 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
-  },
-  "ZRO-USD": {
-    "confidence_history": [
-      {
-        "confidence": 75,
-        "cycle": "2026-10-12T06:08Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-12T06:38Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-12T15:59Z-event"
-      }
-    ],
-    "exit_below": 2.0,
-    "invalidation": [
-      "Price < $2.00"
-    ],
-    "opened_cycle": "2026-10-12T04:03Z-event",
-    "reasons": [],
-    "review_above": 2.8,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
   }
 }
