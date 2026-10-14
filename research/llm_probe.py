@@ -61,7 +61,8 @@ def full_size(cfg_llm, eps):
                        headers={"Accept-Encoding": "identity"}, timeout=60).text
     rows = [json.loads(l) for l in raw.splitlines() if '"ai_largemid"' in l]
     p = rows[-1]
-    system = render_system_prompt(full)
+    view = list(json.loads(p["user_prompt"].split("\n\n", 1)[1])["market"])     # coins this arm saw that cycle
+    system = render_system_prompt(dict(full, universe=view))
     out = []
     for ep in eps:
         if ep["name"].startswith("groq"):
