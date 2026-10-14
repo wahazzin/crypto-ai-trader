@@ -1,11 +1,11 @@
 {
-  "cash": 4945.179226946126,
+  "cash": 5312.973586166071,
   "day_start_date": "2026-10-14",
   "day_start_equity": 9576.072853695583,
   "extra": {},
-  "fees_usd": 60.89391537556317,
+  "fees_usd": 62.37100115556295,
   "halted_until": null,
-  "last_ts": "2026-10-14T15:22:00Z",
+  "last_ts": "2026-10-14T15:52:00Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -14,7 +14,7 @@
       "avg_cost": 0.23592221962222018,
       "opened_cycle": "2026-10-09T19:39Z-event",
       "opened_ts": "2026-10-09T19:39:59Z",
-      "qty": 2037.7715983375906,
+      "qty": 826.9059692406393,
       "stop_pct": 18.0
     },
     "AERO-USD": {
@@ -65,18 +65,11 @@
       "opened_ts": "2026-10-14T12:22:00Z",
       "qty": 1.7848056422188725,
       "stop_pct": 18.0
-    },
-    "ZEC-USD": {
-      "avg_cost": 1247.69817,
-      "opened_cycle": "2026-10-14T12:22Z-event",
-      "opened_ts": "2026-10-14T12:22:00Z",
-      "qty": 0.08189531762766628,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 12.325695569595448,
-  "spread_usd": 3.074787961728065,
-  "traded_notional_usd": 15223.478843890787,
+  "slippage_usd": 12.544115641421033,
+  "spread_usd": 3.098361962486928,
+  "traded_notional_usd": 15592.750288890733,
   "trades": [
     {
       "cause": "ai_event",
@@ -127,6 +120,16 @@
       "cause": "ai_event",
       "notional": 94.40350442343153,
       "ts": "2026-10-14T14:52:00Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 94.27943370728796,
+      "ts": "2026-10-14T15:52:00Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 274.9920112926576,
+      "ts": "2026-10-14T15:52:00Z"
     }
   ]
 }

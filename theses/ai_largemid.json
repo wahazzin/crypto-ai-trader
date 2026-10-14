@@ -204,29 +204,5 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T12:22Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T14:52Z-event"
-      }
-    ],
-    "exit_below": 1150,
-    "invalidation": [
-      "Price < $1150"
-    ],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "1h move -5.55% puts price near $1150 exit threshold."
-    ],
-    "review_above": 1350,
-    "status": "bullish",
-    "summary": "Price remains above exit level but recent 1h drop raises caution.",
-    "updated_cycle": "2026-10-14T14:52Z-event"
   }
 }

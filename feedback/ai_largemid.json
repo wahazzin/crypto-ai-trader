@@ -1,38 +1,49 @@
 {
   "events": [],
-  "from": "2026-10-14T14:52Z-event",
+  "from": "2026-10-14T15:52Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
+      "action": "SELL",
       "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.01,
-      "requested_weight": 0.01,
+      "final_weight": 0.0,
+      "requested_weight": null,
       "status": "APPROVED"
     },
     {
-      "action": "BUY",
-      "asset": "FET-USD",
+      "action": "REDUCE",
+      "asset": "ADA-USD",
       "codes": [],
-      "final_weight": 0.01,
-      "requested_weight": 0.01,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "AERO-USD",
+      "codes": [
+        "R1_ASSET_CAP",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
     }
   ],
   "your_fills": [
     {
       "asset": "ZEC-USD",
       "cause": "ai_event",
-      "price": 1154.167084,
-      "qty": 0.07186171675067557,
+      "price": 1151.218854,
+      "qty": 0.08189531762766628,
       "side": "sell"
     },
     {
-      "asset": "FET-USD",
+      "asset": "ADA-USD",
       "cause": "ai_event",
-      "price": 0.20641621,
-      "qty": 457.3454014267171,
-      "side": "buy"
+      "price": 0.227103656,
+      "qty": 1210.8656290969514,
+      "side": "sell"
     }
   ]
 }
