@@ -79,13 +79,26 @@
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
   "FET-USD": {
-    "confidence_history": [],
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T12:52Z-event"
+      }
+    ],
+    "exit_below": 0.19,
+    "invalidation": [
+      "Price < $0.19"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
+    "reasons": [
+      "Breakout signal active, 24h gain +2.41%",
+      "Dip signal active, trend positive",
+      "RSI ~49 suggests balanced risk"
+    ],
+    "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Opened new bullish thesis based on breakout and dip signals with supportive short\u2011term momentum.",
+    "updated_cycle": "2026-10-14T12:52Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],

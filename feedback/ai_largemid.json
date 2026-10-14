@@ -1,38 +1,18 @@
 {
   "events": [],
-  "from": "2026-10-14T12:22Z-event",
+  "from": "2026-10-14T12:52Z-event",
   "risk_engine": [
     {
       "action": "BUY",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": 0.02,
-      "requested_weight": 0.02,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "SOL-USD",
-      "codes": [],
-      "final_weight": 0.02,
-      "requested_weight": 0.02,
-      "status": "APPROVED"
+      "asset": "FET-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ZEC-USD",
-      "cause": "ai_event",
-      "price": 1247.69817,
-      "qty": 0.15375703437834184,
-      "side": "buy"
-    },
-    {
-      "asset": "SOL-USD",
-      "cause": "ai_event",
-      "price": 107.47444599999999,
-      "qty": 1.7848056422188725,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
