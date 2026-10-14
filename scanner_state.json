@@ -85,8 +85,8 @@
   },
   "last_data_fault": {
     "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-14T06:31:36Z"
+    "ts": "2026-10-14T07:26:37Z"
   },
   "last_heartbeat": "2026-10-14T07:11:36Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
