@@ -85,8 +85,8 @@
   },
   "last_data_fault": {
     "error": "AERO-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-14T03:16:17Z"
+    "ts": "2026-10-14T05:21:17Z"
   },
   "last_heartbeat": "2026-10-14T05:06:17Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
