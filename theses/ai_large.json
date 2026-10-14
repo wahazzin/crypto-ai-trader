@@ -29,21 +29,24 @@
       {
         "confidence": 70,
         "cycle": "2026-10-14T00:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T14:12Z-event"
       }
     ],
-    "exit_below": 2400,
+    "exit_below": 2420,
     "invalidation": [
-      "Price < $2400"
+      "Price < $2420"
     ],
     "opened_cycle": "2026-10-12T04:43Z-event",
     "reasons": [
-      "Price 2504.8 > exit_below 2400",
-      "Dip signal suggests buying opportunity despite short\u2011term weakness."
+      "Volume spike indicates potential further drop; maintain bullish view."
     ],
     "review_above": 2800,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; dip signal still valid, price above exit level.",
-    "updated_cycle": "2026-10-14T13:02Z-event"
+    "summary": "Thesis reaffirmed; exit level tightened after recent downside.",
+    "updated_cycle": "2026-10-14T14:12Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
