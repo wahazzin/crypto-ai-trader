@@ -1,15 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-14T14:12Z-event",
+  "from": "2026-10-14T14:42Z-event",
   "risk_engine": [
     {
-      "action": "HOLD",
+      "action": "SELL",
       "asset": "ETH-USD",
       "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "ETH-USD",
+      "cause": "ai_event",
+      "price": 2415.865374800205,
+      "qty": 0.3786168637010463,
+      "side": "sell"
+    }
+  ]
 }

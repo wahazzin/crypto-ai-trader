@@ -24,30 +24,6 @@
     "summary": "Thesis reaffirmed; price remains above exit level and review target not yet hit.",
     "updated_cycle": "2026-10-14T13:02Z-event"
   },
-  "ETH-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T00:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T14:12Z-event"
-      }
-    ],
-    "exit_below": 2420,
-    "invalidation": [
-      "Price < $2420"
-    ],
-    "opened_cycle": "2026-10-12T04:43Z-event",
-    "reasons": [
-      "Volume spike indicates potential further drop; maintain bullish view."
-    ],
-    "review_above": 2800,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; exit level tightened after recent downside.",
-    "updated_cycle": "2026-10-14T14:12Z-event"
-  },
   "NEAR-USD": {
     "confidence_history": [
       {
