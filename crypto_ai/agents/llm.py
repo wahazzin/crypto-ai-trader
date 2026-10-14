@@ -88,7 +88,9 @@ class OpenAICompatLLM:
 
     def __init__(self, cfg):
         self.c = cfg["llm"]
-        self.endpoints = [e for e in self.c["endpoints"] if os.environ.get(e["key_env"])]
+        # an endpoint is usable when its key is set and every ${VAR} in its URL is set (e.g. Cloudflare's account id)
+        self.endpoints = [{**e, "url": os.path.expandvars(e["url"])} for e in self.c["endpoints"]
+                          if os.environ.get(e["key_env"]) and "$" not in os.path.expandvars(e["url"])]
         self.min_gap = self.c.get("min_seconds_between_calls", 0)   # free tier: 8k tokens/MINUTE
         self._last_call = 0.0
         if not self.endpoints:

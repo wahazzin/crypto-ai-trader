@@ -153,14 +153,12 @@
         }
       },
       {
-        "name": "openrouter",
-        "url": "https://openrouter.ai/api/v1/chat/completions",
-        "key_env": "OPENROUTER_API_KEY",
-        "model": "openai/gpt-oss-120b:free",
+        "name": "cloudflare",
+        "url": "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions",
+        "key_env": "CLOUDFLARE_API_TOKEN",
+        "model": "@cf/openai/gpt-oss-120b",
         "extra_body": {
-          "reasoning": {
-            "effort": "medium"
-          }
+          "reasoning_effort": "medium"
         }
       }
     ],

@@ -249,7 +249,8 @@ class TestFreeProvider(unittest.TestCase):
         self.L = L
         self._post, self._sleep = L.requests.post, L.time.sleep
         L.time.sleep = lambda s: None
-        self._env = {k: os.environ.pop(k, None) for k in ("GROQ_API_KEY", "OPENROUTER_API_KEY")}
+        self._env = {k: os.environ.pop(k, None) for k in ("GROQ_API_KEY", "OPENROUTER_API_KEY",
+                                                                  "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID")}
 
     def tearDown(self):
         self.L.requests.post, self.L.time.sleep = self._post, self._sleep
@@ -286,7 +287,8 @@ class TestFreeProvider(unittest.TestCase):
         self.assertIn("limit 8000, requested 9120", str(cm.exception))
 
     def test_413_too_big_skips_straight_to_backup_without_waiting(self):
-        os.environ["GROQ_API_KEY"], os.environ["OPENROUTER_API_KEY"] = "g", "o"
+        os.environ["GROQ_API_KEY"], os.environ["CLOUDFLARE_API_TOKEN"] = "g", "c"
+        os.environ["CLOUDFLARE_ACCOUNT_ID"] = "acct"
         calls, waits = [], []
         self.L.time.sleep = waits.append
         msg = ("Request too large for model `openai/gpt-oss-120b` on tokens per minute (TPM): "
@@ -301,16 +303,25 @@ class TestFreeProvider(unittest.TestCase):
 
         self.L.requests.post = post
         out = self.L.make_llm(CFG).complete("s", "u")
-        self.assertEqual(out["provider"], "openrouter")
+        self.assertEqual(out["provider"], "cloudflare")
         self.assertEqual(sum("groq" in c for c in calls), 1)     # no pointless retry
         self.assertNotIn(62, waits)                               # no pointless 62 s wait
+
+    def test_backup_url_needs_its_account_id_and_fills_it_in(self):
+        os.environ["GROQ_API_KEY"], os.environ["CLOUDFLARE_API_TOKEN"] = "g", "c"
+        self.assertEqual([e["name"] for e in self.L.make_llm(CFG).endpoints], ["groq"])   # no account id: skipped
+        os.environ["CLOUDFLARE_ACCOUNT_ID"] = "acct"
+        eps = self.L.make_llm(CFG).endpoints
+        self.assertEqual([e["name"] for e in eps], ["groq", "cloudflare"])
+        self.assertIn("/accounts/acct/ai/v1/", eps[1]["url"])
 
     def test_no_keys_fails_loudly(self):
         with self.assertRaises(self.L.LLMError):
             self.L.make_llm(CFG)
 
     def test_falls_back_to_same_weights_on_second_provider(self):
-        os.environ["GROQ_API_KEY"], os.environ["OPENROUTER_API_KEY"] = "g", "o"
+        os.environ["GROQ_API_KEY"], os.environ["CLOUDFLARE_API_TOKEN"] = "g", "c"
+        os.environ["CLOUDFLARE_ACCOUNT_ID"] = "acct"
         calls = []
 
         def post(url, headers, json, timeout):
@@ -322,7 +333,7 @@ class TestFreeProvider(unittest.TestCase):
 
         self.L.requests.post = post
         out = self.L.make_llm(CFG).complete("s", "u")
-        self.assertEqual(out["provider"], "openrouter")
+        self.assertEqual(out["provider"], "cloudflare")
         self.assertEqual(len(out["endpoint_errors"]), 2)
         self.assertTrue(all("gpt-oss-120b" in m for m in calls))     # same weights every call
 

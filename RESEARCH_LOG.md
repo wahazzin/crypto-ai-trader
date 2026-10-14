@@ -388,3 +388,14 @@ retrying the same provider was pointless.
 `openai/gpt-oss-120b:free`) — it needs the OPENROUTER_API_KEY secret, which isn't set yet. Until it is,
 ai_largemid misses roughly 1 in 3 cycles (logged as AI_FAULT, AI does nothing). Nothing in the prompt,
 model, or rules was changed: shrinking the prompt would change the locked experiment.
+
+## 2026-10-14: backup AI provider → Cloudflare Workers AI (amendment A2)
+
+OpenRouter dropped the free gpt-oss-120b (`:free` now returns 404, "paid version available"). With no working
+backup, ai_largemid kept faulting whenever its prompt exceeded Groq's free 8,000 tokens/minute cap.
+Cloudflare Workers AI serves the same open weights (`@cf/openai/gpt-oss-120b`) with 10,000 free "neurons"/day.
+Tested BEFORE switching (`research/llm_probe.py`, full-size test): a real ai_largemid prompt (7,397 tokens)
+got a valid trading answer (1,403 tokens) using 331 neurons, so ~30 backup answers/day fit in the free quota.
+Change: experiment.json backup endpoint OpenRouter → Cloudflare (amendment request A2, applied by the loop
+on its next run). Groq stays first. Model, prompt, settings, rules and arms unchanged. Missed cycles before
+the switch stay missed (they count against the 85% coverage rule; nothing is back-filled).
