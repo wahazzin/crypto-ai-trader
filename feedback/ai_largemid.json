@@ -1,25 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-14T17:02Z-event",
+  "from": "2026-10-14T18:00Z",
   "risk_engine": [
     {
-      "action": "BUY",
-      "asset": "ENA-USD",
-      "codes": [
-        "R4_ALT_CLUSTER"
-      ],
-      "final_weight": 0.0437099052958726,
-      "requested_weight": 0.05,
-      "status": "CLIPPED"
+      "action": "REDUCE",
+      "asset": "SOL-USD",
+      "codes": [],
+      "final_weight": 0.012,
+      "requested_weight": 0.012,
+      "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ENA-USD",
-      "cause": "ai_event",
-      "price": 0.19970932894257393,
-      "qty": 2073.237249591652,
-      "side": "buy"
+      "asset": "SOL-USD",
+      "cause": "ai",
+      "price": 104.097504,
+      "qty": 0.70221754963424,
+      "side": "sell"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "cash": 5630.203330677013,
+  "cash": 5544.263739738901,
   "day_start_date": "2026-10-14",
   "day_start_equity": 9952.185288616569,
   "extra": {},
-  "fees_usd": 60.251339670878295,
+  "fees_usd": 60.59372847939667,
   "halted_until": null,
-  "last_ts": "2026-10-14T17:22:24Z",
+  "last_ts": "2026-10-14T18:02:24Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10060.277572453842,
@@ -93,11 +93,18 @@
       "opened_ts": "2026-10-14T00:06:17Z",
       "qty": 3.993133016351085,
       "stop_pct": 18.0
+    },
+    "SUI-USD": {
+      "avg_cost": 1.024909588389016,
+      "opened_cycle": "2026-10-14T18:00Z",
+      "opened_ts": "2026-10-14T18:02:24Z",
+      "qty": 83.51683221554975,
+      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 15.44177001691444,
-  "spread_usd": 3.345570724439606,
-  "traded_notional_usd": 15062.834917719576,
+  "slippage_usd": 15.509384274563548,
+  "spread_usd": 3.358098249271928,
+  "traded_notional_usd": 15148.432119849169,
   "trades": [
     {
       "cause": "strategy",
@@ -138,6 +145,11 @@
       "cause": "strategy",
       "notional": 426.68253082102206,
       "ts": "2026-10-14T00:06:17Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 85.59720212959361,
+      "ts": "2026-10-14T18:02:24Z"
     }
   ]
 }

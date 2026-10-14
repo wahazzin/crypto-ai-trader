@@ -1,11 +1,11 @@
 {
-  "cash": 5486.240913149114,
+  "cash": 5427.353630779568,
   "day_start_date": "2026-10-14",
   "day_start_equity": 9719.23874686833,
   "extra": {},
-  "fees_usd": 25.492817280554277,
+  "fees_usd": 25.727427967285536,
   "halted_until": null,
-  "last_ts": "2026-10-14T17:22:24Z",
+  "last_ts": "2026-10-14T18:02:24Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
@@ -43,6 +43,13 @@
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 28.214962747431997,
+      "stop_pct": 18.0
+    },
+    "BCH-USD": {
+      "avg_cost": 269.17891,
+      "opened_cycle": "2026-10-14T18:00Z",
+      "opened_ts": "2026-10-14T18:02:24Z",
+      "qty": 0.2178947514231872,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -116,9 +123,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 5.698869875562496,
-  "spread_usd": 0.8336020378479874,
-  "traded_notional_usd": 6373.20432013857,
+  "slippage_usd": 5.764000795710396,
+  "spread_usd": 0.8543020392331961,
+  "traded_notional_usd": 6431.856991821385,
   "trades": [
     {
       "cause": "strategy",
@@ -134,6 +141,11 @@
       "cause": "strategy",
       "notional": 120.82087362483972,
       "ts": "2026-10-13T12:05:18Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 58.65267168281447,
+      "ts": "2026-10-14T18:02:24Z"
     }
   ]
 }
