@@ -1,24 +1,17 @@
 {
-  "cash": 7519.435739228916,
+  "cash": 8701.879847062533,
   "day_start_date": "2026-10-14",
   "day_start_equity": 9188.307554505362,
   "extra": {
     "rotation_week": "2026-W42"
   },
-  "fees_usd": 29.541099505216266,
+  "fees_usd": 34.28987102262035,
   "halted_until": null,
-  "last_ts": "2026-10-14T15:52:00Z",
+  "last_ts": "2026-10-14T15:57:00Z",
   "name": "s_rotation",
   "no_buys_until": null,
   "peak_equity": 10043.94224065193,
   "positions": {
-    "NEAR-USD": {
-      "avg_cost": 5.9088803736783815,
-      "opened_cycle": "2026-10-12T00:00Z",
-      "opened_ts": "2026-10-12T00:03:09Z",
-      "qty": 245.2449893365713,
-      "stop_pct": 18.0
-    },
     "ZRO-USD": {
       "avg_cost": 2.1243977604552615,
       "opened_cycle": "2026-10-12T00:00Z",
@@ -27,29 +20,19 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 5.74273356950651,
-  "spread_usd": 1.3333813247170276,
-  "traded_notional_usd": 7385.274876304066,
+  "slippage_usd": 6.473763725730478,
+  "spread_usd": 1.6905812892115972,
+  "traded_notional_usd": 8572.467755655089,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 1449.1233042338301,
-      "ts": "2026-10-12T00:03:09Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 508.660485264394,
-      "ts": "2026-10-12T00:03:09Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 457.8282750749942,
-      "ts": "2026-10-12T00:03:09Z"
-    },
     {
       "cause": "stop",
       "notional": 1236.8096403997904,
       "ts": "2026-10-13T11:10:00Z"
+    },
+    {
+      "cause": "stop",
+      "notional": 1187.1928793510224,
+      "ts": "2026-10-14T15:55:00Z"
     }
   ]
 }
