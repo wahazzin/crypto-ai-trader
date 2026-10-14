@@ -70,23 +70,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9462.89,
-      "ai_largemid": 9585.37,
-      "btc_hold": 9855.46,
-      "eth_hold": 9520.03,
-      "ew_basket": 9250.96,
-      "s_breakout": 9607.13,
-      "s_dip": 9967.48,
-      "s_rotation": 9196.9,
-      "s_trend": 9723.07
+      "ai_large": 9450.27,
+      "ai_largemid": 9571.83,
+      "btc_hold": 9824.06,
+      "eth_hold": 9463.48,
+      "ew_basket": 9211.22,
+      "s_breakout": 9575.32,
+      "s_dip": 9952.84,
+      "s_rotation": 9190.82,
+      "s_trend": 9707.47
     },
-    "scans": 1,
-    "ts": "2026-10-14T09:11:37Z"
+    "scans": 3,
+    "ts": "2026-10-14T10:11:37Z"
   },
   "last_data_fault": {
     "error": "AERO-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-14T09:56:36Z"
   },
-  "last_heartbeat": "2026-10-14T09:11:37Z",
-  "scans_since_heartbeat": 2
+  "last_heartbeat": "2026-10-14T10:11:37Z",
+  "scans_since_heartbeat": 0
 }
