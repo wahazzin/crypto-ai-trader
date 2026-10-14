@@ -83,6 +83,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-14T12:52Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T14:52Z-event"
       }
     ],
     "exit_below": 0.19,
@@ -91,14 +95,12 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Breakout signal active, 24h gain +2.41%",
-      "Dip signal active, trend positive",
-      "RSI ~49 suggests balanced risk"
+      "Breakout active, dip active, volume spike confirms interest."
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Opened new bullish thesis based on breakout and dip signals with supportive short\u2011term momentum.",
-    "updated_cycle": "2026-10-14T12:52Z-event"
+    "summary": "Thesis unchanged; breakout and dip signals still supportive.",
+    "updated_cycle": "2026-10-14T14:52Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -208,6 +210,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-14T12:22Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T14:52Z-event"
       }
     ],
     "exit_below": 1150,
@@ -216,11 +222,11 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "24h +4.7% move, dip signal active, RSI ~45"
+      "1h move -5.55% puts price near $1150 exit threshold."
     ],
     "review_above": 1350,
     "status": "bullish",
-    "summary": "Opened position based on strong 24h gain, dip signal and favorable RSI.",
-    "updated_cycle": "2026-10-14T12:22Z-event"
+    "summary": "Price remains above exit level but recent 1h drop raises caution.",
+    "updated_cycle": "2026-10-14T14:52Z-event"
   }
 }
