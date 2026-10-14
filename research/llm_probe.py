@@ -41,9 +41,49 @@ def main():
             L.append(f"- **{ep['name']}** ({ep['model']}): {'✅' if ok else '❌'} HTTP {r.status_code} in {time.time() - t:.1f}s — {txt!r}")
         except Exception as e:
             L.append(f"- **{ep['name']}**: ❌ {type(e).__name__}")
+    L += ["", "## Full-size test (newest real ai_largemid prompt, every endpoint that answered)"]
+    try:
+        L += full_size(cfg, [e for e in cfg["endpoints"] + CANDIDATES if os.environ.get(e["key_env"])])
+    except Exception as e:
+        L.append(f"- ❌ full-size test failed to run: {type(e).__name__}: {str(e)[:200]}")
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "llm_probe.md"), "w").write("\n".join(L) + "\n")
     print("\n".join(L))
+
+
+def full_size(cfg_llm, eps):
+    """Sends the newest real ai_largemid prompt (system + user) with the experiment's settings and checks the
+    answer passes the same validator the runner uses. Shows size, time and (Cloudflare) neurons used."""
+    from crypto_ai.agents.schemas import validate
+    from crypto_ai.agents.trader import render_system_prompt
+    full = load_config()
+    raw = requests.get("https://raw.githubusercontent.com/wahazzin/crypto-ai-trader/crypto-ai-data/prompts.jsonl",
+                       headers={"Accept-Encoding": "identity"}, timeout=60).text
+    rows = [json.loads(l) for l in raw.splitlines() if '"ai_largemid"' in l]
+    p = rows[-1]
+    system = render_system_prompt(full)
+    out = []
+    for ep in eps:
+        if ep["name"].startswith("groq"):
+            continue                                       # Groq can't take this size on the free tier (known)
+        if "${CLOUDFLARE_ACCOUNT_ID}" in ep["url"] and not os.environ.get("CLOUDFLARE_ACCOUNT_ID"):
+            continue
+        body = {"model": ep["model"], "temperature": cfg_llm["temperature"], "max_tokens": cfg_llm["max_tokens"],
+                "messages": [{"role": "system", "content": system}, {"role": "user", "content": p["user_prompt"]}],
+                **ep.get("extra_body", {})}
+        t = time.time()
+        r = requests.post(os.path.expandvars(ep["url"]), headers={"Authorization": f"Bearer {os.environ[ep['key_env']]}"},
+                          json=body, timeout=180)
+        if r.status_code != 200:
+            out.append(f"- **{ep['name']}**: ❌ HTTP {r.status_code} — {r.text[:200]!r}"); continue
+        j = r.json()
+        text = j["choices"][0]["message"].get("content") or ""
+        parsed, errors = validate(text, full, p["cycle_id"], None)
+        u = j.get("usage") or {}
+        out.append(f"- **{ep['name']}**: HTTP 200 in {time.time() - t:.0f}s, prompt {u.get('prompt_tokens')} / "
+                   f"answer {u.get('completion_tokens')} tokens, neurons {u.get('neurons')}, finish {j['choices'][0].get('finish_reason')} — "
+                   f"{'✅ valid trading answer' if parsed is not None else '❌ invalid: ' + '; '.join(errors)[:200]}")
+    return out
 
 
 if __name__ == "__main__":
