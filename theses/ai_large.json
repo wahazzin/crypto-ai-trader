@@ -138,20 +138,26 @@
       {
         "confidence": 80,
         "cycle": "2026-10-14T06:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-14T13:32Z-event"
       }
     ],
-    "exit_below": 200,
+    "exit_below": 190.0,
     "invalidation": [
-      "Price < $200"
+      "Price < $190"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Breakout and rotation signals still active."
+      "Rotation pick rank 1 with strong 30\u2011day return (+242%)",
+      "Dip signal true indicating a recent pull\u2011back",
+      "Trend signal true (price above 50\u2011day SMA and SMA rising)"
     ],
-    "review_above": 260,
+    "review_above": 230.0,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and rotation pick remains top.",
-    "updated_cycle": "2026-10-14T13:02Z-event"
+    "summary": "Added position based on rotation pick rank 1, dip and trend signals.",
+    "updated_cycle": "2026-10-14T13:32Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
