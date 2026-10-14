@@ -59,13 +59,26 @@
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
   "ENA-USD": {
-    "confidence_history": [],
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T17:02Z-event"
+      }
+    ],
+    "exit_below": 0.15,
+    "invalidation": [
+      "Price < $0.15"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
+    "reasons": [
+      "Volume spike (4.7x) suggests buying pressure.",
+      "Dip signal active; price above 50\u2011day SMA.",
+      "30\u2011day return >50%."
+    ],
+    "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Opening bullish thesis based on volume spike, dip signal, and strong recent performance.",
+    "updated_cycle": "2026-10-14T17:02Z-event"
   },
   "ETH-USD": {
     "confidence_history": [],
