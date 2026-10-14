@@ -107,13 +107,11 @@
       "Price < $0.19"
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "Breakout active, dip active, volume spike confirms interest."
-    ],
+    "reasons": [],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; breakout and dip signals still supportive.",
-    "updated_cycle": "2026-10-14T14:52Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-14T19:47Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
