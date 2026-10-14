@@ -3,12 +3,12 @@
     {
       "arm": "ai_largemid",
       "errors": [
-        "all endpoints failed: groq HTTP 413 (request alone is bigger than the per-minute limit; limit 8000, requested 8155), skipping to next provider"
+        "all endpoints failed: groq HTTP 413 (request alone is bigger than the per-minute limit; limit 8000, requested 8103), skipping to next provider"
       ],
       "type": "AI_FAULT"
     }
   ],
-  "from": "2026-10-14T00:00Z",
+  "from": "2026-10-14T06:00Z",
   "risk_engine": [],
   "your_fills": []
 }
