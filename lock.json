@@ -13,6 +13,20 @@
       },
       "id": "A1-thin-coin-quotes",
       "reason": "Data-fault policy refined (day 0, before any result was looked at). A thin MID-tier coin can go >180 s without a trade, so its ticker looks stale; that used to abort the whole scan or 6h cycle (seen 2026-10-07 08:33 UTC: VVV-USD). Now a stale/invalid quote on a mid coin that NO arm holds leaves just that coin out for that tick/cycle (logged as COINS_LEFT_OUT). A stale quote on any LARGE-tier coin, on BTC, or on any held coin still blocks the cycle exactly as before, so the scored cross-section and every stop check are unchanged. Code: market_data/features.py, scanner.py, runner.py (none of the fingerprinted files)."
+    },
+    {
+      "at": "2026-10-14T11:12:00Z",
+      "code_git_sha": "7a8042e27963f39607ff05db8c805b7cab1e4f79",
+      "hashes": {
+        "PREREGISTRATION.md": "6deee855a1d7734f4b5dff39f9bee8ac24c0de60329a6d4c9667cd60f8a48d47",
+        "experiment.json": "2cd5e32e7bf8c73064e8f70f3e96dd438e617274d6fc477bb96a02c696f547f7",
+        "prompts/trader_system_v1.md": "d9efac02154671c45d7c2ec245225f7dff2b2fc22ca593dcf1c9bd754e5fe907",
+        "risk/engine.py": "5bbdfe9fe5e030e60772b5c9e907c453ec6e45c7b311325f8e1c7a4822dfcee6",
+        "strategies/toolbox.py": "c449141eeff8a4fb30f9c4ee07fb12f5b080dd7c31fea44f82865e436318f85d",
+        "universe.py": "35ac0c3f4a594064cceac53b46a98d15757c6a51a0f2dd7becb86c8c4b45ece7"
+      },
+      "id": "A2-backup-provider-cloudflare",
+      "reason": "Backup endpoint for the SAME open weights (gpt-oss-120b, reasoning effort medium, temperature 0, same prompt and max_tokens) moved from OpenRouter to Cloudflare Workers AI. Why: OpenRouter removed the free variant (404 'unavailable for free', probe 2026-10-14 07:34 UTC), and the ai_largemid prompt alone exceeds Groq's free 8,000 tokens/minute cap on ~half of its calls, so ai_largemid had AI_FAULTs on 2026-10-09..14 (logged; counted against the 85%-coverage rule, never back-filled). Cloudflare verified before this change on a real ai_largemid prompt: valid answer, 7,397 prompt / 1,403 answer tokens, 331 of 10,000 free daily neurons (research/llm_probe.py, branch crypto-ai-research). Groq stays first; the backup answers only when Groq refuses; ai_large and ai_largemid use the identical endpoint order. No model, prompt, rule, risk limit or arm changed."
     }
   ],
   "code_git_sha": "ab4ee29d80041e663737348cb12c8793ad64ed4f",
