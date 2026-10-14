@@ -138,27 +138,39 @@
         "cycle": "2026-10-12T18:00Z"
       }
     ],
-    "exit_below": 200.0,
+    "exit_below": 200,
     "invalidation": [
       "Price < $200"
     ],
     "opened_cycle": "2026-10-12T18:00Z",
-    "reasons": [],
-    "review_above": 250.0,
+    "reasons": [
+      "Price still above exit_below (200) and below review_above (250)",
+      "Rotation pick and dip signal still supportive"
+    ],
+    "review_above": 250,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Volume spike and 1h dip did not breach exit level; thesis remains unchanged.",
+    "updated_cycle": "2026-10-14T12:22Z-event"
   },
   "SOL-USD": {
-    "confidence_history": [],
-    "exit_below": 97.5,
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-10-14T12:22Z-event"
+      }
+    ],
+    "exit_below": 95,
+    "invalidation": [
+      "Price < $95"
+    ],
     "opened_cycle": "2026-10-12T14:59Z-event",
-    "reasons": [],
-    "review_above": 130,
+    "reasons": [
+      "24h +0.96% move, dip signal active, RSI ~41"
+    ],
+    "review_above": 115,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Opened position after modest gain and dip signal; low RSI indicates upside potential.",
+    "updated_cycle": "2026-10-14T12:22Z-event"
   },
   "SUI-USD": {
     "confidence_history": [],
@@ -179,12 +191,23 @@
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
   "ZEC-USD": {
-    "confidence_history": [],
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-14T12:22Z-event"
+      }
+    ],
+    "exit_below": 1150,
+    "invalidation": [
+      "Price < $1150"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
+    "reasons": [
+      "24h +4.7% move, dip signal active, RSI ~45"
+    ],
+    "review_above": 1350,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Opened position based on strong 24h gain, dip signal and favorable RSI.",
+    "updated_cycle": "2026-10-14T12:22Z-event"
   }
 }

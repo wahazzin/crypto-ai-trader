@@ -1,52 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-14T12:00Z",
+  "from": "2026-10-14T12:22Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "NEAR-USD",
+      "action": "BUY",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.15,
-      "requested_weight": 0.15,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
     },
     {
-      "action": "ADD",
-      "asset": "AERO-USD",
+      "action": "BUY",
+      "asset": "SOL-USD",
       "codes": [],
-      "final_weight": 0.1,
-      "requested_weight": 0.1,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": 0.06,
-      "requested_weight": 0.06,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
-      "cause": "ai",
-      "price": 5.11726852,
-      "qty": 19.512053055560823,
+      "asset": "ZEC-USD",
+      "cause": "ai_event",
+      "price": 1247.69817,
+      "qty": 0.15375703437834184,
       "side": "buy"
     },
     {
-      "asset": "AERO-USD",
-      "cause": "ai",
-      "price": 0.9105996899999999,
-      "qty": 222.0622715154051,
-      "side": "buy"
-    },
-    {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 205.713354,
-      "qty": 0.6512063795229626,
+      "asset": "SOL-USD",
+      "cause": "ai_event",
+      "price": 107.47444599999999,
+      "qty": 1.7848056422188725,
       "side": "buy"
     }
   ]

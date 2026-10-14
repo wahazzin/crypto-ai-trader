@@ -90,13 +90,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Weight reduction required for compliance.",
-      "30\u2011day return +119% and rotation rank 2 still support upside."
+      "Compliance with per\u2011asset maximum weight"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Reduced weight to meet per\u2011asset cap; bullish thesis unchanged.",
-    "updated_cycle": "2026-10-14T12:00Z"
+    "summary": "Weight reduced to comply with 15% cap; bullish thesis unchanged.",
+    "updated_cycle": "2026-10-14T12:22Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
