@@ -22,7 +22,7 @@
     "review_above": 0.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level and review target not yet hit.",
-    "updated_cycle": "2026-10-14T12:00Z"
+    "updated_cycle": "2026-10-14T13:02Z-event"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -43,7 +43,7 @@
     "review_above": 2800,
     "status": "bullish",
     "summary": "Thesis reaffirmed; dip signal still valid, price above exit level.",
-    "updated_cycle": "2026-10-14T12:00Z"
+    "updated_cycle": "2026-10-14T13:02Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -95,7 +95,7 @@
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Weight reduced to comply with 15% cap; bullish thesis unchanged.",
-    "updated_cycle": "2026-10-14T12:22Z-event"
+    "updated_cycle": "2026-10-14T13:02Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -151,7 +151,7 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level and rotation pick remains top.",
-    "updated_cycle": "2026-10-14T12:00Z"
+    "updated_cycle": "2026-10-14T13:02Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -191,6 +191,6 @@
     "review_above": 1.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; dip and trend signals continue, price above exit level.",
-    "updated_cycle": "2026-10-14T12:00Z"
+    "updated_cycle": "2026-10-14T13:02Z-event"
   }
 }
