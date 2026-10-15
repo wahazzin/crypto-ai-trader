@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-15T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-15T02:27Z-event",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "ADA-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ADA-USD",
+      "cause": "ai_event",
+      "price": 0.2184545218812612,
+      "qty": 2368.645229295561,
+      "side": "sell"
+    }
+  ]
 }

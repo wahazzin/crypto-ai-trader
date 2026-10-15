@@ -1,30 +1,4 @@
 {
-  "ADA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-11T00:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-11T06:00Z"
-      }
-    ],
-    "exit_below": 0.22,
-    "invalidation": [
-      "Price < $0.22"
-    ],
-    "opened_cycle": "2026-10-11T00:00Z",
-    "reasons": [
-      "Price 0.23013 > exit_below 0.22",
-      "Trend signal still true",
-      "Dip signal still true"
-    ],
-    "review_above": 0.3,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and trend/dip signals stay true.",
-    "updated_cycle": "2026-10-15T00:00Z"
-  },
   "NEAR-USD": {
     "confidence_history": [
       {
@@ -70,14 +44,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 4.8859 > exit_below 4.5",
-      "Rotation pick rank 3 and dip signal true",
-      "Trend signal true"
+      "Price 4.7088 > exit_below 4.5",
+      "Rotation pick rank 3, dip and trend signals intact"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit level, strong 30\u2011day return, rotation pick rank 3, trend and dip signals intact.",
-    "updated_cycle": "2026-10-15T00:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level and rotation pick signals stay strong.",
+    "updated_cycle": "2026-10-15T02:27Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -126,20 +99,19 @@
         "cycle": "2026-10-14T13:32Z-event"
       }
     ],
-    "exit_below": 190.0,
+    "exit_below": 190,
     "invalidation": [
       "Price < $190"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 205.855 > exit_below 190",
-      "Dip and trend signals continue",
-      "Rotation pick rank 1"
+      "Price 195.45 > exit_below 190",
+      "Rotation pick rank 1, dip and trend signals continue"
     ],
-    "review_above": 230.0,
+    "review_above": 230,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit level, rotation pick rank 1, dip and trend signals continue.",
-    "updated_cycle": "2026-10-15T00:00Z"
+    "summary": "Thesis reaffirmed; price stays above exit level with strong rotation rank and dip/trend signals.",
+    "updated_cycle": "2026-10-15T02:27Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -174,13 +146,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 1.0225 > exit_below 0.9595",
-      "Trend signal true",
-      "Dip signal true"
+      "Price 0.98355 > exit_below 0.9595",
+      "Trend and dip signals true, 30\u2011day return strong"
     ],
     "review_above": 1.3,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price stays above exit level, dip and trend signals unchanged.",
-    "updated_cycle": "2026-10-15T00:00Z"
+    "summary": "Thesis reaffirmed; despite a short\u2011term volume spike, price remains above exit level and signals stay positive.",
+    "updated_cycle": "2026-10-15T02:27Z-event"
   }
 }

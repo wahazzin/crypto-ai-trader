@@ -1,22 +1,15 @@
 {
-  "cash": 6683.2949470984595,
+  "cash": 7198.666443126263,
   "day_start_date": "2026-10-15",
   "day_start_equity": 9313.265839969885,
   "extra": {},
-  "fees_usd": 64.7726971121181,
+  "fees_usd": 66.84246215640647,
   "halted_until": null,
-  "last_ts": "2026-10-15T02:22:40Z",
+  "last_ts": "2026-10-15T02:27:40Z",
   "name": "ai_large",
   "no_buys_until": null,
   "peak_equity": 10037.312935605321,
   "positions": {
-    "ADA-USD": {
-      "avg_cost": 0.2481609200134979,
-      "opened_cycle": "2026-10-11T00:00Z",
-      "opened_ts": "2026-10-11T00:06:43Z",
-      "qty": 2368.645229295561,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 4.866038665539795,
       "opened_cycle": "2026-10-09T18:00Z",
@@ -39,45 +32,10 @@
       "stop_pct": 12
     }
   },
-  "slippage_usd": 10.547439915044638,
-  "spread_usd": 3.06304081811527,
-  "traded_notional_usd": 16193.174278029523,
+  "slippage_usd": 10.631474991739683,
+  "spread_usd": 3.2051595318730146,
+  "traded_notional_usd": 16710.615539101615,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 258.88943071426195,
-      "ts": "2026-10-12T18:04:17Z"
-    },
-    {
-      "cause": "ai",
-      "notional": 236.91801006142674,
-      "ts": "2026-10-12T18:04:17Z"
-    },
-    {
-      "cause": "ai",
-      "notional": 68.16430970994756,
-      "ts": "2026-10-13T00:04:40Z"
-    },
-    {
-      "cause": "ai",
-      "notional": 221.77888642174625,
-      "ts": "2026-10-13T00:04:40Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 77.0530567157299,
-      "ts": "2026-10-13T00:14:41Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 276.3356260595083,
-      "ts": "2026-10-13T00:54:40Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 159.70509320619502,
-      "ts": "2026-10-13T01:55:00Z"
-    },
     {
       "cause": "ai",
       "notional": 296.3995405265249,
@@ -127,6 +85,11 @@
       "cause": "ai_event",
       "notional": 914.6873713308063,
       "ts": "2026-10-14T14:42:00Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 517.4412610720921,
+      "ts": "2026-10-15T02:27:40Z"
     }
   ]
 }
