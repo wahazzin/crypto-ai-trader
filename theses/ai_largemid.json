@@ -20,18 +20,26 @@
       {
         "confidence": 80,
         "cycle": "2026-10-11T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-15T00:00Z"
       }
     ],
-    "exit_below": 0.8,
+    "exit_below": 0.78,
     "invalidation": [
-      "Price < $0.80"
+      "Price < $0.78"
     ],
     "opened_cycle": "2026-10-08T14:48Z-event",
-    "reasons": [],
+    "reasons": [
+      "Breakout signal remains true",
+      "Trend stays positive",
+      "28\u2011day return remains high"
+    ],
     "review_above": 1.15,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Increased position after confirming breakout and strong 28\u2011day performance.",
+    "updated_cycle": "2026-10-15T00:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],

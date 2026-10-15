@@ -1,11 +1,11 @@
 {
-  "cash": 6557.219942915064,
-  "day_start_date": "2026-10-14",
-  "day_start_equity": 9586.08432417423,
+  "cash": 7445.743503195823,
+  "day_start_date": "2026-10-15",
+  "day_start_equity": 9443.654297000754,
   "extra": {},
-  "fees_usd": 57.23369308428091,
+  "fees_usd": 60.80206079625182,
   "halted_until": null,
-  "last_ts": "2026-10-14T23:32:40Z",
+  "last_ts": "2026-10-15T00:02:40Z",
   "name": "s_breakout",
   "no_buys_until": null,
   "peak_equity": 10054.276407381865,
@@ -17,13 +17,6 @@
       "qty": 1215.7726114784768,
       "stop_pct": 18.0
     },
-    "FET-USD": {
-      "avg_cost": 0.22373347285675665,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 4509.240115685025,
-      "stop_pct": 18.0
-    },
     "ZRO-USD": {
       "avg_cost": 2.0501478143338,
       "opened_cycle": "2026-10-13T00:00Z",
@@ -32,15 +25,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 14.165910818007708,
-  "spread_usd": 3.1572453459421967,
-  "traded_notional_usd": 14308.423271070227,
+  "slippage_usd": 15.625004149422875,
+  "spread_usd": 3.4277997528833186,
+  "traded_notional_usd": 15200.515199062957,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 93.5999231453078,
-      "ts": "2026-10-12T18:04:17Z"
-    },
     {
       "cause": "strategy",
       "notional": 908.5322596928814,
@@ -70,6 +58,11 @@
       "cause": "strategy",
       "notional": 578.8670515031915,
       "ts": "2026-10-14T00:06:17Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 892.0919279927293,
+      "ts": "2026-10-15T00:02:40Z"
     }
   ]
 }
