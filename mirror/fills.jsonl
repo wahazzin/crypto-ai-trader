@@ -33,3 +33,6 @@
 {"alpaca_minus_sim_bps":-3.04,"arm":"ai_large","asset":"ETH-USD","cause":"ai_event","filled_avg_price":2416.6,"filled_qty":0.370318149,"side":"sell","sim_notional":914.6873713308063,"sim_price":2415.865374800205,"status":"filled","ts":"2026-10-14T14:42:00Z"}
 {"alpaca_minus_sim_bps":51.43,"arm":"ai_large","asset":"ADA-USD","cause":"ai_event","filled_avg_price":0.217331,"filled_qty":2314.11514881,"side":"sell","sim_notional":517.4412610720921,"sim_price":0.2184545218812612,"status":"filled","ts":"2026-10-15T02:27:40Z"}
 {"arm":"ai_large","asset":"SUI-USD","cause":"stop","result":"unmirrorable","side":"sell","sim_notional":695.648245200041,"sim_price":0.9610559427838377,"ts":"2026-10-15T02:30:00Z"}
+{"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":219.21862501283425,"sim_price":4.850608619999999,"ts":"2026-10-15T14:43:17Z"}
+{"arm":"ai_large","asset":"QNT-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":295.4358105217257,"sim_price":201.0206807865269,"ts":"2026-10-15T14:43:17Z"}
+{"arm":"ai_large","asset":"SUI-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":276.818750067889,"sim_price":0.9986988599999999,"ts":"2026-10-15T14:43:17Z"}

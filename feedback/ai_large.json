@@ -1,6 +1,53 @@
 {
   "events": [],
-  "from": "2026-10-15T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-15T14:43Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.15,
+      "requested_weight": 0.15,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "SUI-USD",
+      "codes": [],
+      "final_weight": 0.029999999999999995,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 4.850608619999999,
+      "qty": 45.19404515733415,
+      "side": "buy"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai_event",
+      "price": 201.0206807865269,
+      "qty": 1.46967868860947,
+      "side": "buy"
+    },
+    {
+      "asset": "SUI-USD",
+      "cause": "ai_event",
+      "price": 0.9986988599999999,
+      "qty": 277.17939927145716,
+      "side": "buy"
+    }
+  ]
 }

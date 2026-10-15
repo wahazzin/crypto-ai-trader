@@ -1,39 +1,41 @@
 {
-  "cash": 7891.532095345504,
+  "cash": 7096.893017000644,
   "day_start_date": "2026-10-15",
   "day_start_equity": 9313.265839969885,
   "extra": {},
-  "fees_usd": 69.62505513720663,
+  "fees_usd": 72.79094787961644,
   "halted_until": null,
-  "last_ts": "2026-10-15T14:38:17Z",
+  "last_ts": "2026-10-15T14:43:17Z",
   "name": "ai_large",
   "no_buys_until": null,
   "peak_equity": 10037.312935605321,
   "positions": {
     "NEAR-USD": {
-      "avg_cost": 4.866038665539795,
+      "avg_cost": 4.863596208800575,
       "opened_cycle": "2026-10-09T18:00Z",
       "opened_ts": "2026-10-09T18:04:59Z",
-      "qty": 240.31609866938504,
+      "qty": 285.5101438267192,
       "stop_pct": 18.0
     },
     "QNT-USD": {
-      "avg_cost": 207.37435,
+      "avg_cost": 203.31153612486872,
       "opened_cycle": "2026-10-14T13:32Z-event",
       "opened_ts": "2026-10-14T13:32:00Z",
-      "qty": 0.8286919787432838,
+      "qty": 2.2983706673527537,
+      "stop_pct": 18.0
+    },
+    "SUI-USD": {
+      "avg_cost": 0.9986988599999999,
+      "opened_cycle": "2026-10-15T14:43Z-event",
+      "opened_ts": "2026-10-15T14:43:17Z",
+      "qty": 277.17939927145716,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 11.064048874139965,
-  "spread_usd": 3.312084388874914,
-  "traded_notional_usd": 17406.263784301656,
+  "slippage_usd": 11.50661746845343,
+  "spread_usd": 3.5647386477693574,
+  "traded_notional_usd": 18197.736969904105,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 296.3995405265249,
-      "ts": "2026-10-13T12:05:18Z"
-    },
     {
       "cause": "ai_event",
       "notional": 157.6582790007844,
@@ -88,6 +90,21 @@
       "cause": "stop",
       "notional": 695.648245200041,
       "ts": "2026-10-15T02:30:00Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 219.21862501283425,
+      "ts": "2026-10-15T14:43:17Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 295.4358105217257,
+      "ts": "2026-10-15T14:43:17Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 276.818750067889,
+      "ts": "2026-10-15T14:43:17Z"
     }
   ]
 }
