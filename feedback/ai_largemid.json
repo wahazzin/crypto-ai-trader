@@ -1,33 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-15T02:42Z-event",
-  "risk_engine": [
-    {
-      "action": "EXIT",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "ZRO-USD",
-      "codes": [
-        "R6_TURNOVER_EXHAUSTED"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.01,
-      "status": "REJECTED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "QNT-USD",
-      "cause": "ai_event",
-      "price": 197.101668,
-      "qty": 2.799079026865097,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-15T06:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
