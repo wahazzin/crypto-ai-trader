@@ -143,18 +143,26 @@
       {
         "confidence": 85,
         "cycle": "2026-10-11T18:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-15T12:00Z"
       }
     ],
     "exit_below": 4.5,
     "invalidation": [
-      "Price < $4.50"
+      "Price < $4.5"
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
-    "reasons": [],
+    "reasons": [
+      "Rotation pick rank 3",
+      "28\u2011day return 86%",
+      "Dip signal still active"
+    ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Reaffirmed existing bullish thesis; added position to move toward max allowed weight.",
+    "updated_cycle": "2026-10-15T12:00Z"
   },
   "ONDO-USD": {
     "confidence_history": [],
@@ -164,6 +172,28 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
+  },
+  "QNT-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-15T12:00Z"
+      }
+    ],
+    "exit_below": 180.0,
+    "invalidation": [
+      "Price < $180"
+    ],
+    "opened_cycle": "2026-10-15T12:00Z",
+    "reasons": [
+      "Rank 1 rotation pick",
+      "28\u2011day return >200%",
+      "Dip signal indicates price correction"
+    ],
+    "review_above": 220.0,
+    "status": "bullish",
+    "summary": "Opened new bullish thesis based on top rotation rank and strong recent performance.",
+    "updated_cycle": "2026-10-15T12:00Z"
   },
   "SOL-USD": {
     "confidence_history": [
