@@ -75,23 +75,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9285.31,
-      "ai_largemid": 9401.11,
-      "btc_hold": 9648.99,
-      "eth_hold": 9186.01,
-      "ew_basket": 8898.77,
-      "s_breakout": 9437.21,
-      "s_dip": 9771.92,
-      "s_rotation": 9114.42,
-      "s_trend": 9539.88
+      "ai_large": 9184.03,
+      "ai_largemid": 9268.85,
+      "btc_hold": 9525.97,
+      "eth_hold": 8921.34,
+      "ew_basket": 8644.16,
+      "s_breakout": 9367.18,
+      "s_dip": 9636.03,
+      "s_rotation": 9099.17,
+      "s_trend": 9391.79
     },
-    "scans": 1,
-    "ts": "2026-10-15T01:32:40Z"
+    "scans": 4,
+    "ts": "2026-10-15T02:32:40Z"
   },
   "last_data_fault": {
     "error": "ARB-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-14T19:27:23Z"
   },
-  "last_heartbeat": "2026-10-15T01:32:40Z",
-  "scans_since_heartbeat": 3
+  "last_heartbeat": "2026-10-15T02:32:40Z",
+  "scans_since_heartbeat": 0
 }
