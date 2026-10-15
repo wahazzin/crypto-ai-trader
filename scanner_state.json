@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-15",
-      "calls_today": 3,
-      "last_call": "2026-10-15T03:27:41Z"
+      "calls_today": 4,
+      "last_call": "2026-10-15T14:13:17Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-15",
-      "calls_today": 6,
-      "last_call": "2026-10-15T13:38:17Z"
+      "calls_today": 7,
+      "last_call": "2026-10-15T14:13:17Z"
     }
   },
   "fired": {
@@ -27,7 +27,7 @@
     "ai_largemid|FET-USD:move": "2026-10-11T15:57:48Z",
     "ai_largemid|FET-USD:volume": "2026-10-15T03:12:40Z",
     "ai_largemid|HBAR-USD:volume": "2026-10-15T02:42:40Z",
-    "ai_largemid|LINK-USD:volume": "2026-10-15T03:12:40Z",
+    "ai_largemid|LINK-USD:volume": "2026-10-15T14:13:17Z",
     "ai_largemid|LTC-USD:volume": "2026-10-08T04:52:42Z",
     "ai_largemid|NEAR-USD:move": "2026-10-11T15:57:48Z",
     "ai_largemid|NEAR-USD:review_above:5.5": "2026-10-08T06:52:42Z",
@@ -42,11 +42,11 @@
     "ai_largemid|QNT-USD:volume": "2026-10-15T02:42:40Z",
     "ai_largemid|SOL-USD:volume": "2026-10-15T03:12:40Z",
     "ai_largemid|SUI-USD:volume": "2026-10-15T02:42:40Z",
-    "ai_largemid|TAO-USD:volume": "2026-10-15T02:42:40Z",
-    "ai_largemid|UNI-USD:move": "2026-10-13T14:15:44Z",
+    "ai_largemid|TAO-USD:volume": "2026-10-15T14:13:17Z",
+    "ai_largemid|UNI-USD:move": "2026-10-15T14:13:17Z",
     "ai_largemid|UNI-USD:volume": "2026-10-15T02:42:40Z",
-    "ai_largemid|VVV-USD:move": "2026-10-15T04:52:59Z",
-    "ai_largemid|VVV-USD:volume": "2026-10-15T02:42:40Z",
+    "ai_largemid|VVV-USD:move": "2026-10-15T14:13:17Z",
+    "ai_largemid|VVV-USD:volume": "2026-10-15T14:13:17Z",
     "ai_largemid|XLM-USD:volume": "2026-10-15T02:42:40Z",
     "ai_largemid|XRP-USD:volume": "2026-10-14T13:27:00Z",
     "ai_largemid|ZEC-USD:exit_below:1150": "2026-10-14T15:52:00Z",
@@ -59,7 +59,7 @@
     "ai_large|ADA-USD:volume": "2026-10-15T02:57:40Z",
     "ai_large|ETH-USD:exit_below:2420": "2026-10-14T14:42:00Z",
     "ai_large|ETH-USD:volume": "2026-10-14T14:12:00Z",
-    "ai_large|LINK-USD:volume": "2026-10-14T13:02:00Z",
+    "ai_large|LINK-USD:volume": "2026-10-15T14:13:17Z",
     "ai_large|NEAR-USD:exit_below:4.7": "2026-10-08T15:48:22Z",
     "ai_large|NEAR-USD:move": "2026-10-13T01:55:00Z",
     "ai_large|NEAR-USD:review_above:5.8004": "2026-10-11T17:12:47Z",
@@ -94,5 +94,5 @@
     "ts": "2026-10-14T19:27:23Z"
   },
   "last_heartbeat": "2026-10-15T13:33:17Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
