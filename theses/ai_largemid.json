@@ -1,4 +1,15 @@
 {
+  "AAVE-USD": {
+    "confidence_history": [],
+    "exit_below": 0.6,
+    "invalidation": [],
+    "opened_cycle": "2026-10-15T18:00Z",
+    "reasons": [],
+    "review_above": 0.8,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-15T18:00Z"
+  },
   "ADA-USD": {
     "confidence_history": [
       {
@@ -43,12 +54,25 @@
   },
   "ARB-USD": {
     "confidence_history": [],
+    "exit_below": 0.155,
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [],
+    "review_above": 0.25,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
+  },
+  "AVAX-USD": {
+    "confidence_history": [],
+    "exit_below": 8.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-15T18:00Z",
+    "reasons": [],
+    "review_above": 12.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-15T18:00Z"
   },
   "BTC-USD": {
     "confidence_history": [
