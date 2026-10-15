@@ -44,13 +44,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 4.7088 > exit_below 4.5",
-      "Rotation pick rank 3, dip and trend signals intact"
+      "Price 4.804 > exit_below 4.5",
+      "Rotation rank 3, dip and trend signals intact"
     ],
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level and rotation pick signals stay strong.",
-    "updated_cycle": "2026-10-15T02:27Z-event"
+    "updated_cycle": "2026-10-15T02:57Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -105,13 +105,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 195.45 > exit_below 190",
-      "Rotation pick rank 1, dip and trend signals continue"
+      "Price 201.835 > exit_below 190",
+      "Rotation rank 1, dip and trend signals continue"
     ],
     "review_above": 230,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price stays above exit level with strong rotation rank and dip/trend signals.",
-    "updated_cycle": "2026-10-15T02:27Z-event"
+    "updated_cycle": "2026-10-15T02:57Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -146,12 +146,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price 0.98355 > exit_below 0.9595",
+      "Price 1.0022 > exit_below 0.9595",
       "Trend and dip signals true, 30\u2011day return strong"
     ],
     "review_above": 1.3,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; despite a short\u2011term volume spike, price remains above exit level and signals stay positive.",
-    "updated_cycle": "2026-10-15T02:27Z-event"
+    "summary": "Thesis reaffirmed; price remains above exit level and trend/dip signals stay positive.",
+    "updated_cycle": "2026-10-15T02:57Z-event"
   }
 }
