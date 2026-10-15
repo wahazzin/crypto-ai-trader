@@ -165,27 +165,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-12T18:00Z"
-      }
-    ],
-    "exit_below": 200,
-    "invalidation": [
-      "Price < $200"
-    ],
-    "opened_cycle": "2026-10-12T18:00Z",
-    "reasons": [
-      "Price still above exit_below (200) and below review_above (250)",
-      "Rotation pick and dip signal still supportive"
-    ],
-    "review_above": 250,
-    "status": "bullish",
-    "summary": "Volume spike and 1h dip did not breach exit level; thesis remains unchanged.",
-    "updated_cycle": "2026-10-14T12:22Z-event"
-  },
   "SOL-USD": {
     "confidence_history": [
       {
@@ -223,5 +202,27 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
+  },
+  "ZRO-USD": {
+    "confidence_history": [
+      {
+        "confidence": 75,
+        "cycle": "2026-10-15T02:42Z-event"
+      }
+    ],
+    "exit_below": 1.68,
+    "invalidation": [
+      "Price < $1.68"
+    ],
+    "opened_cycle": "2026-10-15T02:42Z-event",
+    "reasons": [
+      "Breakout signal active with high volume",
+      "Ranked 2 in rotation, 28\u2011day return +90%",
+      "Dip signal present, RSI moderate"
+    ],
+    "review_above": 2.2,
+    "status": "bullish",
+    "summary": "New bullish thesis based on breakout, rotation pick, and strong 28\u2011day performance.",
+    "updated_cycle": "2026-10-15T02:42Z-event"
   }
 }
