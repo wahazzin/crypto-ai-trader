@@ -1,14 +1,25 @@
 {
   "AAVE-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-16T12:00Z"
+      }
+    ],
     "exit_below": 150,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $150"
+    ],
     "opened_cycle": "2026-10-16T06:49Z-event",
-    "reasons": [],
+    "reasons": [
+      "Dip signal active",
+      "Trend positive",
+      "24h return +10.17%"
+    ],
     "review_above": 180,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-16T06:49Z-event"
+    "summary": "Added position after dip signal and strong 24h gain; thesis unchanged otherwise.",
+    "updated_cycle": "2026-10-16T12:00Z"
   },
   "ADA-USD": {
     "confidence_history": [
