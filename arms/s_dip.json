@@ -1,11 +1,11 @@
 {
-  "cash": 5445.482467222892,
-  "day_start_date": "2026-10-15",
-  "day_start_equity": 9779.212510545844,
+  "cash": 5606.309564003158,
+  "day_start_date": "2026-10-16",
+  "day_start_equity": 9905.813920928138,
   "extra": {},
-  "fees_usd": 60.98727936591463,
+  "fees_usd": 63.78427282501169,
   "halted_until": null,
-  "last_ts": "2026-10-15T23:53:52Z",
+  "last_ts": "2026-10-16T00:03:52Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10060.277572453842,
@@ -22,6 +22,13 @@
       "opened_cycle": "2026-10-15T06:00Z",
       "opened_ts": "2026-10-15T06:02:59Z",
       "qty": 448.5185622170952,
+      "stop_pct": 18.0
+    },
+    "AVAX-USD": {
+      "avg_cost": 10.03580077263764,
+      "opened_cycle": "2026-10-16T00:00Z",
+      "opened_ts": "2026-10-16T00:03:52Z",
+      "qty": 26.68567694145885,
       "stop_pct": 18.0
     },
     "BCH-USD": {
@@ -73,13 +80,6 @@
       "qty": 5.3661903102924855,
       "stop_pct": 18.0
     },
-    "NEAR-USD": {
-      "avg_cost": 5.080946739999999,
-      "opened_cycle": "2026-10-13T00:00Z",
-      "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 82.18288239674189,
-      "stop_pct": 18.0
-    },
     "ONDO-USD": {
       "avg_cost": 0.46700188743142496,
       "opened_cycle": "2026-10-13T00:00Z",
@@ -109,9 +109,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 15.572866694822629,
-  "spread_usd": 3.3805241773827803,
-  "traded_notional_usd": 15246.81984147866,
+  "slippage_usd": 16.12332805918063,
+  "spread_usd": 3.435973863163017,
+  "traded_notional_usd": 15946.068206252925,
   "trades": [
     {
       "cause": "strategy",
@@ -132,6 +132,16 @@
       "cause": "strategy",
       "notional": 98.3877216294907,
       "ts": "2026-10-15T06:02:59Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 431.4362275068137,
+      "ts": "2026-10-16T00:03:52Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 267.8121372674512,
+      "ts": "2026-10-16T00:03:52Z"
     }
   ]
 }

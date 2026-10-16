@@ -1,40 +1,33 @@
 {
   "events": [],
-  "from": "2026-10-15T18:00Z",
+  "from": "2026-10-16T00:00Z",
   "risk_engine": [
     {
-      "action": "BUY",
-      "asset": "ARB-USD",
+      "action": "REDUCE",
+      "asset": "NEAR-USD",
       "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
+        "R7_MIN_ORDER"
       ],
       "final_weight": null,
-      "requested_weight": 0.05,
+      "requested_weight": 0.15,
       "status": "REJECTED"
     },
     {
-      "action": "BUY",
-      "asset": "AVAX-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.04,
-      "status": "REJECTED"
-    },
-    {
-      "action": "BUY",
-      "asset": "AAVE-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.02,
-      "status": "REJECTED"
+      "action": "REDUCE",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.022,
+      "requested_weight": 0.022,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai",
+      "price": 2.0882356798904658,
+      "qty": 101.69646177355358,
+      "side": "sell"
+    }
+  ]
 }
