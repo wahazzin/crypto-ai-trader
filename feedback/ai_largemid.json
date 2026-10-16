@@ -1,6 +1,33 @@
 {
   "events": [],
-  "from": "2026-10-16T06:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-16T06:49Z-event",
+  "risk_engine": [
+    {
+      "action": "REDUCE",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "AAVE-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.005,
+      "status": "REJECTED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 2.269359221492308,
+      "qty": 67.23608983356391,
+      "side": "sell"
+    }
+  ]
 }

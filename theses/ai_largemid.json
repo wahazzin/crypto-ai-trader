@@ -1,4 +1,15 @@
 {
+  "AAVE-USD": {
+    "confidence_history": [],
+    "exit_below": 150,
+    "invalidation": [],
+    "opened_cycle": "2026-10-16T06:49Z-event",
+    "reasons": [],
+    "review_above": 180,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-16T06:49Z-event"
+  },
   "ADA-USD": {
     "confidence_history": [
       {
