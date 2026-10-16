@@ -90,9 +90,9 @@
     "ts": "2026-10-16T10:04:38Z"
   },
   "last_data_fault": {
-    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-16T09:59:38Z"
+    "error": "BCH-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-16T10:19:38Z"
   },
   "last_heartbeat": "2026-10-16T10:04:38Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
