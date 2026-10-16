@@ -63,15 +63,11 @@
       "Price < $195"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
-    "reasons": [
-      "Strong 30\u2011day performance",
-      "Dip and trend signals still true",
-      "Top\u2011rank rotation pick"
-    ],
+    "reasons": [],
     "review_above": 250,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level with continued rotation and dip signals.",
-    "updated_cycle": "2026-10-16T17:15Z-event"
+    "updated_cycle": "2026-10-16T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -113,14 +109,10 @@
       "Price < $0.98"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
-    "reasons": [
-      "Strong 30\u2011day return",
-      "Dip and trend signals active",
-      "Recent volume spike"
-    ],
+    "reasons": [],
     "review_above": 1.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price above exit level, dip and trend signals positive.",
-    "updated_cycle": "2026-10-16T17:15Z-event"
+    "updated_cycle": "2026-10-16T18:00Z"
   }
 }

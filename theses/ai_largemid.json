@@ -46,6 +46,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-15T00:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-16T18:00Z"
       }
     ],
     "exit_below": 0.78,
@@ -60,8 +64,8 @@
     ],
     "review_above": 1.15,
     "status": "bullish",
-    "summary": "Increased position after confirming breakout and strong 28\u2011day performance.",
-    "updated_cycle": "2026-10-15T00:00Z"
+    "summary": "Thesis unchanged; breakout still valid and price above exit level.",
+    "updated_cycle": "2026-10-16T18:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -275,6 +279,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-15T13:38Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-16T18:00Z"
       }
     ],
     "exit_below": 1.98,
@@ -283,11 +291,13 @@
     ],
     "opened_cycle": "2026-10-15T02:42Z-event",
     "reasons": [
-      "Price near exit_below after 4.45% drop; maintain upside potential"
+      "Breakout signal active",
+      "Rotation pick rank 2",
+      "28\u2011day return near 100%"
     ],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Adjusted exit level tighter after price approached threshold.",
-    "updated_cycle": "2026-10-16T17:00Z-event"
+    "summary": "Thesis unchanged; breakout and rotation pick still strong.",
+    "updated_cycle": "2026-10-16T18:00Z"
   }
 }

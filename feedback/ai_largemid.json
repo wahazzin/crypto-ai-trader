@@ -1,22 +1,35 @@
 {
   "events": [],
-  "from": "2026-10-16T12:00Z",
+  "from": "2026-10-16T18:00Z",
   "risk_engine": [
     {
-      "action": "BUY",
-      "asset": "AAVE-USD",
-      "codes": [],
-      "final_weight": 0.006,
-      "requested_weight": 0.006,
-      "status": "APPROVED"
+      "action": "ADD",
+      "asset": "AERO-USD",
+      "codes": [
+        "R1_ASSET_CAP",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R4_ALT_CLUSTER"
+      ],
+      "final_weight": 0.044386418952340634,
+      "requested_weight": 0.08,
+      "status": "CLIPPED"
     }
   ],
   "your_fills": [
     {
-      "asset": "AAVE-USD",
+      "asset": "ZRO-USD",
       "cause": "ai",
-      "price": 163.66349999999997,
-      "qty": 0.35519112636351385,
+      "price": 2.0232211999999996,
+      "qty": 79.92251101547247,
       "side": "buy"
     }
   ]

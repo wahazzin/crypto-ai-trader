@@ -1,11 +1,11 @@
 {
-  "cash": 5606.309564003158,
+  "cash": 5551.283580675452,
   "day_start_date": "2026-10-16",
   "day_start_equity": 9905.813920928138,
   "extra": {},
-  "fees_usd": 63.78427282501169,
+  "fees_usd": 64.00349985022167,
   "halted_until": null,
-  "last_ts": "2026-10-16T17:25:01Z",
+  "last_ts": "2026-10-16T18:05:02Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10060.277572453842,
@@ -107,27 +107,19 @@
       "opened_ts": "2026-10-14T18:02:24Z",
       "qty": 83.51683221554975,
       "stop_pct": 18.0
+    },
+    "TAO-USD": {
+      "avg_cost": 275.6574374583159,
+      "opened_cycle": "2026-10-16T18:00Z",
+      "opened_ts": "2026-10-16T18:05:02Z",
+      "qty": 0.1988219755934694,
+      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 16.12332805918063,
-  "spread_usd": 3.435973863163017,
-  "traded_notional_usd": 15946.068206252925,
+  "slippage_usd": 16.178488722746625,
+  "spread_usd": 3.4439267421867483,
+  "traded_notional_usd": 16000.874962555421,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 449.20755765780467,
-      "ts": "2026-10-14T00:06:17Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 426.68253082102206,
-      "ts": "2026-10-14T00:06:17Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 85.59720212959361,
-      "ts": "2026-10-14T18:02:24Z"
-    },
     {
       "cause": "strategy",
       "notional": 98.3877216294907,
@@ -142,6 +134,11 @@
       "cause": "strategy",
       "notional": 267.8121372674512,
       "ts": "2026-10-16T00:03:52Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 54.8067563024956,
+      "ts": "2026-10-16T18:05:02Z"
     }
   ]
 }
