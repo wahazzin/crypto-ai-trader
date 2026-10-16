@@ -1,37 +1,46 @@
 {
   "events": [],
-  "from": "2026-10-16T01:13Z-event",
+  "from": "2026-10-16T03:39Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "NEAR-USD",
-      "codes": [],
-      "final_weight": 0.14,
-      "requested_weight": 0.14,
-      "status": "APPROVED"
+      "action": "ADD",
+      "asset": "AERO-USD",
+      "codes": [
+        "R1_ASSET_CAP",
+        "NO_ROOM_TO_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.1204,
+      "status": "REJECTED"
     },
     {
       "action": "ADD",
       "asset": "ZRO-USD",
-      "codes": [],
-      "final_weight": 0.03,
-      "requested_weight": 0.03,
-      "status": "APPROVED"
+      "codes": [
+        "R4_ALT_CLUSTER"
+      ],
+      "final_weight": 0.04302049480909076,
+      "requested_weight": 0.0592,
+      "status": "CLIPPED"
+    },
+    {
+      "action": "ADD",
+      "asset": "QNT-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "NO_ROOM_TO_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.0561,
+      "status": "REJECTED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
-      "cause": "ai_event",
-      "price": 5.3727744,
-      "qty": 29.141116515858204,
-      "side": "sell"
-    },
-    {
       "asset": "ZRO-USD",
       "cause": "ai_event",
-      "price": 2.1917896,
-      "qty": 31.04539611331472,
+      "price": 2.1176155,
+      "qty": 62.78092843720373,
       "side": "buy"
     }
   ]
