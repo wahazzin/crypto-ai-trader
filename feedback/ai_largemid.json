@@ -1,47 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-16T03:39Z-event",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "AERO-USD",
-      "codes": [
-        "R1_ASSET_CAP",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.1204,
-      "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ZRO-USD",
-      "codes": [
-        "R4_ALT_CLUSTER"
-      ],
-      "final_weight": 0.04302049480909076,
-      "requested_weight": 0.0592,
-      "status": "CLIPPED"
-    },
-    {
-      "action": "ADD",
-      "asset": "QNT-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "NO_ROOM_TO_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.0561,
-      "status": "REJECTED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "ZRO-USD",
-      "cause": "ai_event",
-      "price": 2.1176155,
-      "qty": 62.78092843720373,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-16T06:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
