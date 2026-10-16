@@ -179,14 +179,12 @@
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Rotation pick rank 3",
-      "28\u2011day return 86%",
-      "Dip signal still active"
+      "Compliance with max weight rule"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Reaffirmed existing bullish thesis; added position to move toward max allowed weight.",
-    "updated_cycle": "2026-10-15T12:00Z"
+    "summary": "Reduced position to meet weight cap",
+    "updated_cycle": "2026-10-16T01:13Z-event"
   },
   "ONDO-USD": {
     "confidence_history": [],
@@ -268,15 +266,17 @@
         "cycle": "2026-10-15T13:38Z-event"
       }
     ],
-    "exit_below": 1.68,
+    "exit_below": 2.0,
     "invalidation": [
-      "Price < $1.68"
+      "Price < $2.0"
     ],
     "opened_cycle": "2026-10-15T02:42Z-event",
-    "reasons": [],
-    "review_above": 2.2,
+    "reasons": [
+      "Volume spike confirms momentum"
+    ],
+    "review_above": 2.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-15T13:38Z-event"
+    "summary": "Added to position after volume spike; review level unchanged",
+    "updated_cycle": "2026-10-16T01:13Z-event"
   }
 }

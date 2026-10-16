@@ -1,33 +1,38 @@
 {
   "events": [],
-  "from": "2026-10-16T00:00Z",
+  "from": "2026-10-16T01:13Z-event",
   "risk_engine": [
     {
       "action": "REDUCE",
       "asset": "NEAR-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
+      "codes": [],
+      "final_weight": 0.14,
+      "requested_weight": 0.14,
+      "status": "APPROVED"
     },
     {
-      "action": "REDUCE",
+      "action": "ADD",
       "asset": "ZRO-USD",
       "codes": [],
-      "final_weight": 0.022,
-      "requested_weight": 0.022,
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ZRO-USD",
-      "cause": "ai",
-      "price": 2.0882356798904658,
-      "qty": 101.69646177355358,
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 5.3727744,
+      "qty": 29.141116515858204,
       "side": "sell"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 2.1917896,
+      "qty": 31.04539611331472,
+      "side": "buy"
     }
   ]
 }
