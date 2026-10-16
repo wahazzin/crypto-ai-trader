@@ -1,66 +1,4 @@
 {
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 80,
-        "cycle": "2026-10-09T06:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-09T18:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-11T15:52Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-11T18:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-12T18:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-13T00:00Z"
-      },
-      {
-        "confidence": 90,
-        "cycle": "2026-10-13T01:55Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-14T00:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-14T12:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-15T14:43Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-15T18:00Z"
-      }
-    ],
-    "exit_below": 5.0,
-    "invalidation": [
-      "Price < $5.0"
-    ],
-    "opened_cycle": "2026-10-09T06:00Z",
-    "reasons": [
-      "30\u2011day return still very high",
-      "Trend signal intact",
-      "Rotation rank remains in top 3"
-    ],
-    "review_above": 6.5,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains well above exit level and rotation/dip signals stay strong.",
-    "updated_cycle": "2026-10-16T06:00Z"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
@@ -126,14 +64,14 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Outstanding 30\u2011day performance",
+      "Strong 30\u2011day performance",
       "Dip and trend signals still true",
       "Top\u2011rank rotation pick"
     ],
     "review_above": 250,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit level with continued rotation and dip signals.",
-    "updated_cycle": "2026-10-16T06:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level with continued rotation and dip signals.",
+    "updated_cycle": "2026-10-16T17:15Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -183,6 +121,6 @@
     "review_above": 1.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price above exit level, dip and trend signals positive.",
-    "updated_cycle": "2026-10-16T06:00Z"
+    "updated_cycle": "2026-10-16T17:15Z-event"
   }
 }

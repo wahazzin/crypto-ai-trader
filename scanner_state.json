@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-16",
-      "calls_today": 1,
-      "last_call": "2026-10-16T15:20:02Z"
+      "calls_today": 2,
+      "last_call": "2026-10-16T17:15:01Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-16",
@@ -61,6 +61,7 @@
     "ai_large|ETH-USD:volume": "2026-10-14T14:12:00Z",
     "ai_large|LINK-USD:volume": "2026-10-16T15:20:02Z",
     "ai_large|NEAR-USD:exit_below:4.7": "2026-10-08T15:48:22Z",
+    "ai_large|NEAR-USD:exit_below:5.0": "2026-10-16T17:15:01Z",
     "ai_large|NEAR-USD:move": "2026-10-15T18:33:37Z",
     "ai_large|NEAR-USD:review_above:5.8004": "2026-10-11T17:12:47Z",
     "ai_large|NEAR-USD:volume": "2026-10-15T15:43:38Z",
@@ -76,23 +77,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9253.52,
-      "ai_largemid": 9508.55,
-      "btc_hold": 9602.57,
-      "eth_hold": 9228.64,
-      "ew_basket": 8932.81,
-      "s_breakout": 9512.84,
-      "s_dip": 9851.5,
-      "s_rotation": 9152.48,
-      "s_trend": 9628.55
+      "ai_large": 9222.79,
+      "ai_largemid": 9453.07,
+      "btc_hold": 9573.84,
+      "eth_hold": 9164.6,
+      "ew_basket": 8858.28,
+      "s_breakout": 9447.04,
+      "s_dip": 9809.31,
+      "s_rotation": 9130.77,
+      "s_trend": 9569.74
     },
-    "scans": 7,
-    "ts": "2026-10-16T16:10:02Z"
+    "scans": 2,
+    "ts": "2026-10-16T17:15:01Z"
   },
   "last_data_fault": {
     "error": "BCH-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-16T11:24:38Z"
   },
-  "last_heartbeat": "2026-10-16T16:10:02Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-16T17:15:01Z",
+  "scans_since_heartbeat": 0
 }
