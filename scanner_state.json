@@ -92,9 +92,9 @@
     "ts": "2026-10-17T11:41:02Z"
   },
   "last_data_fault": {
-    "error": "AERO-USD: stale or invalid quote (2 bad so far)",
-    "ts": "2026-10-17T11:46:02Z"
+    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-17T11:56:02Z"
   },
   "last_heartbeat": "2026-10-17T11:41:02Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
