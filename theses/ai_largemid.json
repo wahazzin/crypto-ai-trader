@@ -140,28 +140,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
-  "FET-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T12:52Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-14T14:52Z-event"
-      }
-    ],
-    "exit_below": 0.19,
-    "invalidation": [
-      "Price < $0.19"
-    ],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
-    "review_above": 0.25,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-14T19:47Z-event"
-  },
   "LINK-USD": {
     "confidence_history": [],
     "invalidation": [],

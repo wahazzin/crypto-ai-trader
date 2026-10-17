@@ -1,11 +1,11 @@
 {
-  "cash": 5443.762678056053,
+  "cash": 5712.760212605034,
   "day_start_date": "2026-10-17",
   "day_start_equity": 9591.764678963267,
   "extra": {},
-  "fees_usd": 35.646892511467264,
+  "fees_usd": 36.72720389519811,
   "halted_until": null,
-  "last_ts": "2026-10-17T16:21:23Z",
+  "last_ts": "2026-10-17T16:26:23Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
@@ -59,13 +59,6 @@
       "qty": 1791.9958984883249,
       "stop_pct": 18.0
     },
-    "FET-USD": {
-      "avg_cost": 0.23063616228318548,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 1430.1963302351692,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 5.069656855489701,
       "opened_cycle": "2026-10-08T12:00Z",
@@ -109,15 +102,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 7.894011762589192,
-  "spread_usd": 1.212735967676446,
-  "traded_notional_usd": 8911.723127866819,
+  "slippage_usd": 8.18074936242673,
+  "spread_usd": 1.3125804459000208,
+  "traded_notional_usd": 9181.80097379953,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 105.73813539625021,
-      "ts": "2026-10-15T06:02:59Z"
-    },
     {
       "cause": "strategy",
       "notional": 278.69910823097007,
@@ -127,6 +115,11 @@
       "cause": "strategy",
       "notional": 151.14948990308417,
       "ts": "2026-10-17T00:05:22Z"
+    },
+    {
+      "cause": "stop",
+      "notional": 270.0778459327117,
+      "ts": "2026-10-17T16:25:00Z"
     }
   ]
 }

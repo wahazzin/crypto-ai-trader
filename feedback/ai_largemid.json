@@ -1,15 +1,38 @@
 {
   "events": [],
-  "from": "2026-10-17T15:56Z-event",
+  "from": "2026-10-17T16:26Z-event",
   "risk_engine": [
     {
-      "action": "HOLD",
-      "asset": "AERO-USD",
+      "action": "SELL",
+      "asset": "FET-USD",
       "codes": [],
-      "final_weight": null,
+      "final_weight": 0.0,
       "requested_weight": null,
-      "status": "NOOP"
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "FET-USD",
+      "cause": "ai_event",
+      "price": 0.18918063000000002,
+      "qty": 457.3454014267171,
+      "side": "sell"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 1.8718017836866339,
+      "qty": 100.3695401021874,
+      "side": "buy"
+    }
+  ]
 }
