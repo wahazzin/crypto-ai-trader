@@ -78,23 +78,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9218.41,
-      "ai_largemid": 9504.49,
-      "btc_hold": 9637.2,
-      "eth_hold": 9234.75,
-      "ew_basket": 8921.73,
-      "s_breakout": 9455.46,
-      "s_dip": 9821.57,
-      "s_rotation": 9123.24,
-      "s_trend": 9578.04
+      "ai_large": 9230.52,
+      "ai_largemid": 9527.41,
+      "btc_hold": 9633.64,
+      "eth_hold": 9234.71,
+      "ew_basket": 8938.91,
+      "s_breakout": 9450.18,
+      "s_dip": 9817.78,
+      "s_rotation": 9120.45,
+      "s_trend": 9577.95
     },
-    "scans": 5,
-    "ts": "2026-10-17T08:31:02Z"
+    "scans": 7,
+    "ts": "2026-10-17T09:36:02Z"
   },
   "last_data_fault": {
     "error": "TAO-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-17T09:31:02Z"
   },
-  "last_heartbeat": "2026-10-17T08:31:02Z",
-  "scans_since_heartbeat": 6
+  "last_heartbeat": "2026-10-17T09:36:02Z",
+  "scans_since_heartbeat": 0
 }
