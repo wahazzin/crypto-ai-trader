@@ -274,5 +274,27 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
+  },
+  "ZRO-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-17T12:00Z"
+      }
+    ],
+    "exit_below": 1.6,
+    "invalidation": [
+      "Price < $1.60"
+    ],
+    "opened_cycle": "2026-10-17T12:00Z",
+    "reasons": [
+      "Breakout signal active",
+      "Top rotation pick",
+      "Large 30\u2011day upside"
+    ],
+    "review_above": 2.5,
+    "status": "bullish",
+    "summary": "Opened new position after breakout and strong rotation signal; price currently oversold.",
+    "updated_cycle": "2026-10-17T12:00Z"
   }
 }

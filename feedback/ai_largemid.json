@@ -1,35 +1,17 @@
 {
   "events": [],
-  "from": "2026-10-17T06:00Z",
+  "from": "2026-10-17T12:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "AAVE-USD",
+      "action": "BUY",
+      "asset": "ZRO-USD",
       "codes": [
-        "R7_MIN_ORDER"
+        "R1_ASSET_CAP",
+        "R4_ALT_CLUSTER",
+        "NO_ROOM_TO_ADD"
       ],
       "final_weight": null,
-      "requested_weight": 0.0053,
-      "status": "REJECTED"
-    },
-    {
-      "action": "REDUCE",
-      "asset": "ADA-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.018,
-      "status": "REJECTED"
-    },
-    {
-      "action": "REDUCE",
-      "asset": "ENA-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.042,
+      "requested_weight": 0.15,
       "status": "REJECTED"
     }
   ],
