@@ -63,11 +63,15 @@
       "Price < $195"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Rotation rank 1 with 217\u202f% 28\u2011day return.",
+      "Dip signal active (price dropped \u22658\u202f% in 3\u202fdays while 50\u2011day uptrend intact).",
+      "Trend signal true; price above 50\u2011day SMA by ~47\u202f%."
+    ],
     "review_above": 250,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level with continued rotation and dip signals.",
-    "updated_cycle": "2026-10-17T00:00Z"
+    "summary": "Thesis reaffirmed; rotation top\u20111, dip and trend signals remain positive, price well above 50\u2011day SMA.",
+    "updated_cycle": "2026-10-17T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -102,6 +106,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-16T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-17T06:00Z"
       }
     ],
     "exit_below": 0.9595,
@@ -109,10 +117,14 @@
       "Price < $0.98"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
-    "reasons": [],
-    "review_above": 1.3,
+    "reasons": [
+      "Rotation rank 5 with strong 30\u2011day return (+43\u202f%).",
+      "Dip signal active; price above 50\u2011day SMA.",
+      "Trend signal true."
+    ],
+    "review_above": 1.2,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit level, dip and trend signals positive.",
-    "updated_cycle": "2026-10-17T00:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level, dip and trend signals stay positive.",
+    "updated_cycle": "2026-10-17T06:00Z"
   }
 }
