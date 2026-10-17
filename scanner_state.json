@@ -92,9 +92,9 @@
     "ts": "2026-10-17T04:25:41Z"
   },
   "last_data_fault": {
-    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-17T04:20:41Z"
+    "error": "QNT-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-17T04:30:42Z"
   },
   "last_heartbeat": "2026-10-17T04:25:41Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
