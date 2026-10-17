@@ -92,9 +92,9 @@
     "ts": "2026-10-17T07:26:02Z"
   },
   "last_data_fault": {
-    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-17T07:10:41Z"
+    "error": "AERO-USD: stale or invalid quote (2 bad so far)",
+    "ts": "2026-10-17T07:46:02Z"
   },
   "last_heartbeat": "2026-10-17T07:26:02Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
