@@ -6,7 +6,7 @@
         "cycle": "2026-10-16T12:00Z"
       }
     ],
-    "exit_below": 150,
+    "exit_below": 145,
     "invalidation": [
       "Price < $150"
     ],
@@ -16,7 +16,7 @@
       "Trend positive",
       "24h return +10.17%"
     ],
-    "review_above": 180,
+    "review_above": 170,
     "status": "bullish",
     "summary": "Added position after dip signal and strong 24h gain; thesis unchanged otherwise.",
     "updated_cycle": "2026-10-16T12:00Z"
