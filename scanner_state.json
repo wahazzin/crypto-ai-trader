@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-17",
-      "calls_today": 6,
-      "last_call": "2026-10-17T17:06:23Z"
+      "calls_today": 7,
+      "last_call": "2026-10-17T19:51:43Z"
     }
   },
   "fired": {
@@ -27,7 +27,7 @@
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
     "ai_largemid|FET-USD:move": "2026-10-15T15:13:17Z",
     "ai_largemid|FET-USD:volume": "2026-10-15T14:43:17Z",
-    "ai_largemid|HBAR-USD:volume": "2026-10-15T02:42:40Z",
+    "ai_largemid|HBAR-USD:volume": "2026-10-17T19:51:43Z",
     "ai_largemid|LINK-USD:volume": "2026-10-16T15:20:02Z",
     "ai_largemid|LTC-USD:volume": "2026-10-08T04:52:42Z",
     "ai_largemid|NEAR-USD:move": "2026-10-15T14:43:17Z",
@@ -97,5 +97,5 @@
     "ts": "2026-10-17T18:56:43Z"
   },
   "last_heartbeat": "2026-10-17T19:01:43Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
