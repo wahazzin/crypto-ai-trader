@@ -6,9 +6,9 @@
       "last_call": "2026-10-16T17:15:01Z"
     },
     "ai_largemid": {
-      "calls_day": "2026-10-16",
-      "calls_today": 7,
-      "last_call": "2026-10-16T17:00:02Z"
+      "calls_day": "2026-10-17",
+      "calls_today": 1,
+      "last_call": "2026-10-17T00:25:21Z"
     }
   },
   "fired": {
@@ -52,6 +52,7 @@
     "ai_largemid|ZEC-USD:exit_below:1150": "2026-10-14T15:52:00Z",
     "ai_largemid|ZEC-USD:move": "2026-10-15T15:13:17Z",
     "ai_largemid|ZEC-USD:volume": "2026-10-15T03:12:40Z",
+    "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-10-16T17:00:02Z",
     "ai_largemid|ZRO-USD:volume": "2026-10-16T17:00:02Z",
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
@@ -95,5 +96,5 @@
     "ts": "2026-10-16T23:35:22Z"
   },
   "last_heartbeat": "2026-10-17T00:20:21Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
