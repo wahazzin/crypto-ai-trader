@@ -1,11 +1,11 @@
 {
-  "cash": 5317.932454120703,
-  "day_start_date": "2026-10-16",
-  "day_start_equity": 9700.284745144709,
+  "cash": 5443.762678056053,
+  "day_start_date": "2026-10-17",
+  "day_start_equity": 9591.764678963267,
   "extra": {},
-  "fees_usd": 33.92749811893105,
+  "fees_usd": 35.646892511467264,
   "halted_until": null,
-  "last_ts": "2026-10-16T23:20:21Z",
+  "last_ts": "2026-10-17T00:05:22Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
@@ -15,13 +15,6 @@
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 1.8063787750493934,
-      "stop_pct": 18.0
-    },
-    "ADA-USD": {
-      "avg_cost": 0.258727430926832,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1238.0307573266273,
       "stop_pct": 18.0
     },
     "AERO-USD": {
@@ -43,6 +36,13 @@
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 28.214962747431997,
+      "stop_pct": 18.0
+    },
+    "BCH-USD": {
+      "avg_cost": 277.17967994454307,
+      "opened_cycle": "2026-10-17T00:00Z",
+      "opened_ts": "2026-10-17T00:05:22Z",
+      "qty": 0.545312304038036,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -109,59 +109,24 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 7.598939605930963,
-  "spread_usd": 1.1765536371677419,
-  "traded_notional_usd": 8481.874529732764,
+  "slippage_usd": 7.894011762589192,
+  "spread_usd": 1.212735967676446,
+  "traded_notional_usd": 8911.723127866819,
   "trades": [
-    {
-      "cause": "stop",
-      "notional": 123.70426052565573,
-      "ts": "2026-10-13T11:10:00Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 120.82087362483972,
-      "ts": "2026-10-13T12:05:18Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 58.65267168281447,
-      "ts": "2026-10-14T18:02:24Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 58.681327021574134,
-      "ts": "2026-10-15T00:02:40Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 295.71146312990663,
-      "ts": "2026-10-15T00:02:40Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 315.42207416040395,
-      "ts": "2026-10-15T00:02:40Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 304.58335139019476,
-      "ts": "2026-10-15T00:02:40Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 486.83995686831327,
-      "ts": "2026-10-15T00:02:40Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 483.04122994473664,
-      "ts": "2026-10-15T00:02:40Z"
-    },
     {
       "cause": "strategy",
       "notional": 105.73813539625021,
       "ts": "2026-10-15T06:02:59Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 278.69910823097007,
+      "ts": "2026-10-17T00:05:22Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 151.14948990308417,
+      "ts": "2026-10-17T00:05:22Z"
     }
   ]
 }

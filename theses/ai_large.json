@@ -67,7 +67,7 @@
     "review_above": 250,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level with continued rotation and dip signals.",
-    "updated_cycle": "2026-10-16T18:00Z"
+    "updated_cycle": "2026-10-17T00:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -113,6 +113,6 @@
     "review_above": 1.3,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price above exit level, dip and trend signals positive.",
-    "updated_cycle": "2026-10-16T18:00Z"
+    "updated_cycle": "2026-10-17T00:00Z"
   }
 }
