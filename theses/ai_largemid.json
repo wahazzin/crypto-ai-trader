@@ -217,6 +217,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-15T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-17T00:55Z-event"
       }
     ],
     "exit_below": 180.0,
@@ -225,14 +229,13 @@
     ],
     "opened_cycle": "2026-10-15T12:00Z",
     "reasons": [
-      "Rank 1 rotation pick",
-      "28\u2011day return >200%",
-      "Dip signal indicates price correction"
+      "Rotation pick still top rank",
+      "Dip signal still active"
     ],
     "review_above": 220.0,
     "status": "bullish",
-    "summary": "Opened new bullish thesis based on top rotation rank and strong recent performance.",
-    "updated_cycle": "2026-10-15T12:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-17T00:55Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
