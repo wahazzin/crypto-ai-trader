@@ -94,9 +94,9 @@
     "ts": "2026-10-17T22:06:43Z"
   },
   "last_data_fault": {
-    "error": "AAVE-USD: stale or invalid quote (2 bad so far)",
-    "ts": "2026-10-17T20:31:43Z"
+    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-17T22:56:43Z"
   },
   "last_heartbeat": "2026-10-17T22:06:43Z",
-  "scans_since_heartbeat": 2
+  "scans_since_heartbeat": 3
 }
