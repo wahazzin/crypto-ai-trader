@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-17",
-      "calls_today": 3,
-      "last_call": "2026-10-17T12:26:02Z"
+      "calls_today": 4,
+      "last_call": "2026-10-17T15:56:23Z"
     }
   },
   "fired": {
@@ -16,7 +16,7 @@
     "ai_largemid|ADA-USD:volume": "2026-10-15T03:12:40Z",
     "ai_largemid|AERO-USD:move": "2026-10-16T06:49:17Z",
     "ai_largemid|AERO-USD:review_above:0.95": "2026-10-11T02:06:42Z",
-    "ai_largemid|AERO-USD:volume": "2026-10-17T12:26:02Z",
+    "ai_largemid|AERO-USD:volume": "2026-10-17T15:56:23Z",
     "ai_largemid|ARB-USD:move": "2026-10-15T15:13:17Z",
     "ai_largemid|ARB-USD:volume": "2026-10-15T15:13:17Z",
     "ai_largemid|AVAX-USD:volume": "2026-10-16T10:39:38Z",
@@ -42,7 +42,7 @@
     "ai_largemid|QNT-USD:volume": "2026-10-15T15:43:38Z",
     "ai_largemid|SOL-USD:volume": "2026-10-16T15:20:02Z",
     "ai_largemid|SUI-USD:volume": "2026-10-15T14:43:17Z",
-    "ai_largemid|TAO-USD:volume": "2026-10-15T14:13:17Z",
+    "ai_largemid|TAO-USD:volume": "2026-10-17T15:56:23Z",
     "ai_largemid|UNI-USD:move": "2026-10-15T14:13:17Z",
     "ai_largemid|UNI-USD:volume": "2026-10-15T14:43:17Z",
     "ai_largemid|VVV-USD:move": "2026-10-16T03:39:16Z",
@@ -96,5 +96,5 @@
     "ts": "2026-10-17T14:11:24Z"
   },
   "last_heartbeat": "2026-10-17T15:46:23Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
