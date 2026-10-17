@@ -1,14 +1,41 @@
 {
+  "ADA-USD": {
+    "confidence_history": [],
+    "exit_below": 0.2,
+    "invalidation": [],
+    "opened_cycle": "2026-10-17T18:00Z",
+    "reasons": [],
+    "review_above": 0.25,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-17T18:00Z"
+  },
+  "LINK-USD": {
+    "confidence_history": [],
+    "exit_below": 11.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-17T18:00Z",
+    "reasons": [],
+    "review_above": 13.5,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-17T18:00Z"
+  },
   "NEAR-USD": {
     "confidence_history": [],
     "exit_below": 4.5,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $4.5"
+    ],
     "opened_cycle": "2026-10-17T17:06Z-event",
-    "reasons": [],
+    "reasons": [
+      "30\u2011day return still robust (+93%).",
+      "Price above exit_below (4.5) and below review level (6.0)."
+    ],
     "review_above": 6.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-17T17:06Z-event"
+    "summary": "Thesis reaffirmed; price remains above exit level and dip signal stays inactive.",
+    "updated_cycle": "2026-10-17T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -75,14 +102,13 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Rotation rank 1 with 217\u202f% 28\u2011day return.",
-      "Dip signal active (price dropped \u22658\u202f% in 3 days while 50\u2011day uptrend intact).",
-      "Trend signal true; price well above 50\u2011day SMA."
+      "30\u2011day return +228% and rotation pick confirmed.",
+      "Price still above exit_below (195) and below review level (250)."
     ],
     "review_above": 250,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; exit level tightened to protect gains.",
-    "updated_cycle": "2026-10-17T17:06Z-event"
+    "summary": "Thesis reaffirmed; rotation rank 1 and dip signal still active.",
+    "updated_cycle": "2026-10-17T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -129,13 +155,12 @@
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Rotation rank 5 with strong 30\u2011day return (+43\u202f%).",
-      "Dip signal active; price above 50\u2011day SMA.",
-      "Trend signal true."
+      "30\u2011day return +43% and trend signal true.",
+      "Price remains above exit_below (0.9595) and below review level (1.2)."
     ],
     "review_above": 1.2,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and signals stay positive.",
-    "updated_cycle": "2026-10-17T17:06Z-event"
+    "summary": "Thesis reaffirmed; dip signal active and price above exit level.",
+    "updated_cycle": "2026-10-17T18:00Z"
   }
 }
