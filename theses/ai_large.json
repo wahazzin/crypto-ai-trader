@@ -96,19 +96,18 @@
         "cycle": "2026-10-16T06:00Z"
       }
     ],
-    "exit_below": 195,
-    "invalidation": [
-      "Price < $195"
-    ],
+    "exit_below": 190.0,
+    "invalidation": [],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "30\u2011day return +228% and rotation pick confirmed.",
-      "Price still above exit_below (195) and below review level (250)."
+      "Price recovered above new exit level of $190.",
+      "QNT remains rotation rank 1 with strong 30\u2011day return.",
+      "Dip signal still active, indicating continued upside potential."
     ],
-    "review_above": 250,
+    "review_above": 250.0,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; rotation rank 1 and dip signal still active.",
-    "updated_cycle": "2026-10-17T18:00Z"
+    "summary": "Adjusted exit level after price fell below previous threshold; rotation pick and dip signal remain favorable.",
+    "updated_cycle": "2026-10-17T21:26Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
