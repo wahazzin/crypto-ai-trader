@@ -1,19 +1,18 @@
 {
   "ADA-USD": {
     "confidence_history": [],
-    "exit_below": 0.2,
+    "exit_below": 0.205,
     "invalidation": [
-      "Price < $0.2"
+      "Price < $0.205"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Price still above $0.20 exit level.",
-      "Dip signal indicates potential upside despite recent pullback."
+      "Price remains above exit level but is approaching it; tightening exit reduces risk."
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and dip signal stays active.",
-    "updated_cycle": "2026-10-18T00:00Z"
+    "summary": "Thesis reaffirmed with tighter downside protection.",
+    "updated_cycle": "2026-10-18T12:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -169,18 +168,17 @@
         "cycle": "2026-10-18T00:00Z"
       }
     ],
-    "exit_below": 0.9595,
+    "exit_below": 0.965,
     "invalidation": [
-      "Price < $0.9595"
+      "Price < $0.965"
     ],
     "opened_cycle": "2026-10-09T06:00Z",
     "reasons": [
-      "Price above $0.9595 exit level but near support.",
-      "Dip and trend signals remain positive."
+      "Price still above exit but close; tighter exit improves risk management."
     ],
-    "review_above": 1.2,
+    "review_above": 1.1,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price still above exit level but close to it, prompting reduced exposure.",
-    "updated_cycle": "2026-10-18T00:00Z"
+    "summary": "Thesis reaffirmed; exit level tightened as price nears previous threshold.",
+    "updated_cycle": "2026-10-18T12:00Z"
   }
 }
