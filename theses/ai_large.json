@@ -6,11 +6,15 @@
       "Price < $0.208"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [],
+    "reasons": [
+      "Current price $0.21576 > exit $0.208",
+      "Dip signal true (price dropped >8% in 3 days)",
+      "RSI near 40, no overbought pressure"
+    ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit level.",
-    "updated_cycle": "2026-10-18T16:12Z-event"
+    "summary": "Holding position; price remains above exit level and dip signal is still active.",
+    "updated_cycle": "2026-10-18T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -19,11 +23,15 @@
       "Price < $11.20"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [],
+    "reasons": [
+      "Current price $11.775 > exit $11.20",
+      "Dip signal true (price dropped >8% in 3 days)",
+      "No breakout or trend confirmation"
+    ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit level.",
-    "updated_cycle": "2026-10-18T16:12Z-event"
+    "summary": "Holding position; price remains above exit level and dip signal persists.",
+    "updated_cycle": "2026-10-18T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -37,10 +45,15 @@
       "Price < $4.50"
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
-    "reasons": [],
+    "reasons": [
+      "Current price $4.78245 > exit $4.50",
+      "Rotation pick rank 3 with +35% 28\u2011day return",
+      "Trend true (price above 50\u2011day SMA and rising)",
+      "RSI ~52 indicating neutral momentum"
+    ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit level.",
-    "updated_cycle": "2026-10-18T16:12Z-event"
+    "summary": "Holding position; price above exit level, strong 30\u2011day return, rotation pick and trend positive.",
+    "updated_cycle": "2026-10-18T18:00Z"
   }
 }

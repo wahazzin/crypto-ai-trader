@@ -153,20 +153,22 @@
       {
         "confidence": 75,
         "cycle": "2026-10-15T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-18T18:00Z"
       }
     ],
     "exit_below": 4.5,
-    "invalidation": [
-      "Price < $4.5"
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Compliance with max weight rule"
+      "Portfolio constraint adjustment"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Reduced position to meet weight cap",
-    "updated_cycle": "2026-10-16T01:13Z-event"
+    "summary": "Weight reduced to respect portfolio caps; thesis unchanged.",
+    "updated_cycle": "2026-10-18T18:00Z"
   },
   "ONDO-USD": {
     "confidence_history": [],

@@ -1,30 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-18T16:12Z-event",
+  "from": "2026-10-18T18:00Z",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "QNT-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.145,
-      "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "AERO-USD",
-      "codes": [
-        "R1_ASSET_CAP",
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.105,
-      "status": "REJECTED"
+      "action": "REDUCE",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.1363,
+      "requested_weight": 0.1363,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai",
+      "price": 4.768637099999999,
+      "qty": 19.419082077571524,
+      "side": "sell"
+    }
+  ]
 }
