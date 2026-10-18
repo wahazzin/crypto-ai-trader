@@ -36,6 +36,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-18T06:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-18T16:12Z-event"
       }
     ],
     "exit_below": 0.78,
@@ -44,12 +48,13 @@
     ],
     "opened_cycle": "2026-10-08T14:48Z-event",
     "reasons": [
-      "Breakout still valid; price above exit level; rotation rank remains strong."
+      "Breakout still valid",
+      "Dip signal active"
     ],
     "review_above": 1.1,
     "status": "bullish",
-    "summary": "Thesis unchanged; added weight after breakout confirmation.",
-    "updated_cycle": "2026-10-18T06:00Z"
+    "summary": "Increased position as breakout remains valid; thesis unchanged.",
+    "updated_cycle": "2026-10-18T16:12Z-event"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -181,6 +186,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-17T00:55Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-18T16:12Z-event"
       }
     ],
     "exit_below": 180.0,
@@ -189,13 +198,13 @@
     ],
     "opened_cycle": "2026-10-15T12:00Z",
     "reasons": [
-      "Rotation pick still top rank",
+      "Rotation pick rank 1",
       "Dip signal still active"
     ],
     "review_above": 220.0,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-17T00:55Z-event"
+    "summary": "Added weight after confirming rotation pick strength; thesis unchanged.",
+    "updated_cycle": "2026-10-18T16:12Z-event"
   },
   "SOL-USD": {
     "confidence_history": [

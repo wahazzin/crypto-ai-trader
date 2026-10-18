@@ -6,13 +6,11 @@
       "Price < $0.208"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [
-      "Price is close to the original exit level; lowering the exit reduces potential loss."
-    ],
+    "reasons": [],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Tightened downside protection as price approaches exit level.",
-    "updated_cycle": "2026-10-18T15:02Z-event"
+    "summary": "Holding position; price remains above exit level.",
+    "updated_cycle": "2026-10-18T16:12Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -21,13 +19,11 @@
       "Price < $11.20"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [
-      "Current price still comfortably above the prior exit; a tighter stop limits downside."
-    ],
+    "reasons": [],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Adjusted exit level to reflect recent price decline.",
-    "updated_cycle": "2026-10-18T15:02Z-event"
+    "summary": "Holding position; price remains above exit level.",
+    "updated_cycle": "2026-10-18T16:12Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -41,12 +37,10 @@
       "Price < $4.50"
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
-    "reasons": [
-      "Price is above the original exit but has fallen sharply; a tighter level improves risk control."
-    ],
+    "reasons": [],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Reduced exit threshold to protect against further pull\u2011back.",
-    "updated_cycle": "2026-10-18T15:02Z-event"
+    "summary": "Holding position; price remains above exit level.",
+    "updated_cycle": "2026-10-18T16:12Z-event"
   }
 }
