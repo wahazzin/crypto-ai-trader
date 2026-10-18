@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-18T18:00Z",
+  "from": "2026-10-18T19:27Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "NEAR-USD",
+      "action": "ADD",
+      "asset": "ENA-USD",
       "codes": [],
-      "final_weight": 0.1363,
-      "requested_weight": 0.1363,
+      "final_weight": 0.055,
+      "requested_weight": 0.055,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
-      "cause": "ai",
-      "price": 4.768637099999999,
-      "qty": 19.419082077571524,
-      "side": "sell"
+      "asset": "ENA-USD",
+      "cause": "ai_event",
+      "price": 0.17892874999999997,
+      "qty": 747.3743766510883,
+      "side": "buy"
     }
   ]
 }

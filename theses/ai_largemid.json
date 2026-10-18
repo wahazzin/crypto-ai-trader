@@ -111,7 +111,7 @@
       "Dip signal active; price above 50\u2011day SMA.",
       "30\u2011day return >50%."
     ],
-    "review_above": 0.25,
+    "review_above": 0.22,
     "status": "bullish",
     "summary": "Opening bullish thesis based on volume spike, dip signal, and strong recent performance.",
     "updated_cycle": "2026-10-14T17:02Z-event"

@@ -1,11 +1,11 @@
 {
-  "cash": 4900.289680830796,
+  "cash": 4766.028010782603,
   "day_start_date": "2026-10-18",
   "day_start_equity": 9328.797680153115,
   "extra": {},
-  "fees_usd": 82.07555724568759,
+  "fees_usd": 82.61046429767242,
   "halted_until": null,
-  "last_ts": "2026-10-18T18:32:54Z",
+  "last_ts": "2026-10-18T19:27:54Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -32,10 +32,10 @@
       "stop_pct": 18.0
     },
     "ENA-USD": {
-      "avg_cost": 0.19970932894257393,
+      "avg_cost": 0.19420312167562623,
       "opened_cycle": "2026-10-14T17:02Z-event",
       "opened_ts": "2026-10-14T17:02:23Z",
-      "qty": 2073.237249591652,
+      "qty": 2820.6116262427404,
       "stop_pct": 18.0
     },
     "ETH-USD": {
@@ -74,15 +74,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 16.823891174700158,
-  "spread_usd": 5.189960462015683,
-  "traded_notional_usd": 20518.88931142189,
+  "slippage_usd": 16.957484344526524,
+  "spread_usd": 5.238539796498011,
+  "traded_notional_usd": 20652.6160744181,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 161.7009186437374,
-      "ts": "2026-10-16T18:05:02Z"
-    },
     {
       "cause": "ai_event",
       "notional": 407.57216560492867,
@@ -152,6 +147,11 @@
       "cause": "ai",
       "notional": 92.60255524305263,
       "ts": "2026-10-18T18:02:54Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 133.72676299620838,
+      "ts": "2026-10-18T19:27:54Z"
     }
   ]
 }
