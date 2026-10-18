@@ -1,34 +1,33 @@
 {
   "ADA-USD": {
     "confidence_history": [],
-    "exit_below": 0.205,
+    "exit_below": 0.208,
     "invalidation": [
-      "Price < $0.205"
+      "Price < $0.208"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Price remains above exit level but is approaching it; tightening exit reduces risk."
+      "Price is close to the original exit level; lowering the exit reduces potential loss."
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis reaffirmed with tighter downside protection.",
-    "updated_cycle": "2026-10-18T12:00Z"
+    "summary": "Tightened downside protection as price approaches exit level.",
+    "updated_cycle": "2026-10-18T15:02Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
-    "exit_below": 11.0,
+    "exit_below": 11.2,
     "invalidation": [
-      "Price < $11.0"
+      "Price < $11.20"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Price above $11.0 exit level.",
-      "Dip signal suggests possible rebound."
+      "Current price still comfortably above the prior exit; a tighter stop limits downside."
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price stays above exit level and dip signal remains active.",
-    "updated_cycle": "2026-10-18T00:00Z"
+    "summary": "Adjusted exit level to reflect recent price decline.",
+    "updated_cycle": "2026-10-18T15:02Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -37,18 +36,17 @@
         "cycle": "2026-10-17T21:56Z-event"
       }
     ],
-    "exit_below": 4.2,
+    "exit_below": 4.5,
     "invalidation": [
-      "Price < $4.5"
+      "Price < $4.50"
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
     "reasons": [
-      "Strong 30\u2011day return (+54%).",
-      "Trend signal true and rotation rank 3 confirms relative strength."
+      "Price is above the original exit but has fallen sharply; a tighter level improves risk control."
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and trend stays positive.",
-    "updated_cycle": "2026-10-18T00:00Z"
+    "summary": "Reduced exit threshold to protect against further pull\u2011back.",
+    "updated_cycle": "2026-10-18T15:02Z-event"
   }
 }
