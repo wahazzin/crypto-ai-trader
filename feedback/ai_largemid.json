@@ -1,22 +1,22 @@
 {
   "events": [],
-  "from": "2026-10-18T19:57Z-event",
+  "from": "2026-10-18T22:02Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "AERO-USD",
+      "action": "REDUCE",
+      "asset": "ENA-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": 0,
+      "final_weight": 0.04,
+      "requested_weight": 0.04,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "AERO-USD",
+      "asset": "ENA-USD",
       "cause": "ai_event",
-      "price": 0.772220228741143,
-      "qty": 679.7098315074038,
+      "price": 0.18317664,
+      "qty": 811.299499201785,
       "side": "sell"
     }
   ]
