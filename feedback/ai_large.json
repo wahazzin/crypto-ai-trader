@@ -1,23 +1,17 @@
 {
   "events": [],
-  "from": "2026-10-18T00:00Z",
+  "from": "2026-10-18T06:00Z",
   "risk_engine": [
     {
       "action": "REDUCE",
       "asset": "SUI-USD",
-      "codes": [],
-      "final_weight": 0.05,
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
       "requested_weight": 0.05,
-      "status": "APPROVED"
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "SUI-USD",
-      "cause": "ai",
-      "price": 0.9722163199999999,
-      "qty": 444.93739859266,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }

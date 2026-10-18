@@ -1,22 +1,15 @@
 {
-  "cash": 4824.293801945612,
+  "cash": 4878.03786301444,
   "day_start_date": "2026-10-18",
   "day_start_equity": 9328.797680153115,
   "extra": {},
-  "fees_usd": 78.59307504480081,
+  "fees_usd": 78.80891464748687,
   "halted_until": null,
-  "last_ts": "2026-10-18T05:26:58Z",
+  "last_ts": "2026-10-18T06:02:15Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
   "positions": {
-    "AAVE-USD": {
-      "avg_cost": 163.66349999999997,
-      "opened_cycle": "2026-10-16T12:00Z",
-      "opened_ts": "2026-10-16T12:04:38Z",
-      "qty": 0.35519112636351385,
-      "stop_pct": 18.0
-    },
     "ADA-USD": {
       "avg_cost": 0.23592221962222018,
       "opened_cycle": "2026-10-09T19:39Z-event",
@@ -81,30 +74,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 16.098209421662972,
-  "spread_usd": 4.85546395742024,
-  "traded_notional_usd": 19648.2687612002,
+  "slippage_usd": 16.152223336249076,
+  "spread_usd": 4.867895646842962,
+  "traded_notional_usd": 19702.228661871715,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 212.36617999415142,
-      "ts": "2026-10-16T00:03:52Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 156.56864480382015,
-      "ts": "2026-10-16T01:13:52Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 68.04497632904362,
-      "ts": "2026-10-16T01:13:52Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 132.9458671630134,
-      "ts": "2026-10-16T03:39:16Z"
-    },
     {
       "cause": "ai_event",
       "notional": 152.58284048088348,
@@ -159,6 +132,11 @@
       "cause": "ai_event",
       "notional": 56.22854458408904,
       "ts": "2026-10-17T21:36:43Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 53.959900671513445,
+      "ts": "2026-10-18T06:02:15Z"
     }
   ]
 }

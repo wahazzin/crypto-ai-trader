@@ -1,26 +1,4 @@
 {
-  "AAVE-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-16T12:00Z"
-      }
-    ],
-    "exit_below": 145,
-    "invalidation": [
-      "Price < $150"
-    ],
-    "opened_cycle": "2026-10-16T06:49Z-event",
-    "reasons": [
-      "Dip signal active",
-      "Trend positive",
-      "24h return +10.17%"
-    ],
-    "review_above": 170,
-    "status": "bullish",
-    "summary": "Added position after dip signal and strong 24h gain; thesis unchanged otherwise.",
-    "updated_cycle": "2026-10-16T12:00Z"
-  },
   "ADA-USD": {
     "confidence_history": [
       {
@@ -54,6 +32,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-17T00:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-18T06:00Z"
       }
     ],
     "exit_below": 0.78,
@@ -62,12 +44,12 @@
     ],
     "opened_cycle": "2026-10-08T14:48Z-event",
     "reasons": [
-      "Added weight based on breakout and trend"
+      "Breakout still valid; price above exit level; rotation rank remains strong."
     ],
     "review_above": 1.1,
     "status": "bullish",
-    "summary": "Added to position, thesis unchanged.",
-    "updated_cycle": "2026-10-17T00:00Z"
+    "summary": "Thesis unchanged; added weight after breakout confirmation.",
+    "updated_cycle": "2026-10-18T06:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
