@@ -15,47 +15,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
-  "AERO-USD": {
-    "confidence_history": [
-      {
-        "confidence": 80,
-        "cycle": "2026-10-11T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-15T00:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-16T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-17T00:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-18T06:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-18T16:12Z-event"
-      }
-    ],
-    "exit_below": 0.78,
-    "invalidation": [
-      "Price < $0.78"
-    ],
-    "opened_cycle": "2026-10-08T14:48Z-event",
-    "reasons": [
-      "Breakout still valid",
-      "Dip signal active"
-    ],
-    "review_above": 1.1,
-    "status": "bullish",
-    "summary": "Increased position as breakout remains valid; thesis unchanged.",
-    "updated_cycle": "2026-10-18T16:12Z-event"
-  },
   "ARB-USD": {
     "confidence_history": [],
     "exit_below": 0.155,
