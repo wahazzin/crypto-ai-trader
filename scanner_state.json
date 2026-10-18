@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-18",
-      "calls_today": 1,
-      "last_call": "2026-10-18T14:02:35Z"
+      "calls_today": 2,
+      "last_call": "2026-10-18T14:32:35Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-18",
-      "calls_today": 3,
-      "last_call": "2026-10-18T14:02:35Z"
+      "calls_today": 4,
+      "last_call": "2026-10-18T14:32:35Z"
     }
   },
   "fired": {
@@ -16,13 +16,13 @@
     "ai_largemid|ADA-USD:volume": "2026-10-17T22:06:43Z",
     "ai_largemid|AERO-USD:move": "2026-10-16T06:49:17Z",
     "ai_largemid|AERO-USD:review_above:0.95": "2026-10-11T02:06:42Z",
-    "ai_largemid|AERO-USD:volume": "2026-10-17T22:06:43Z",
+    "ai_largemid|AERO-USD:volume": "2026-10-18T14:32:35Z",
     "ai_largemid|ARB-USD:move": "2026-10-15T15:13:17Z",
     "ai_largemid|ARB-USD:volume": "2026-10-17T22:06:43Z",
     "ai_largemid|AVAX-USD:volume": "2026-10-18T14:02:35Z",
     "ai_largemid|BCH-USD:volume": "2026-10-15T02:42:40Z",
     "ai_largemid|ENA-USD:move": "2026-10-14T13:27:00Z",
-    "ai_largemid|ENA-USD:volume": "2026-10-17T17:06:23Z",
+    "ai_largemid|ENA-USD:volume": "2026-10-18T14:32:35Z",
     "ai_largemid|ETH-USD:volume": "2026-10-17T22:06:43Z",
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
     "ai_largemid|FET-USD:move": "2026-10-15T15:13:17Z",
@@ -55,7 +55,7 @@
     "ai_largemid|ZEC-USD:volume": "2026-10-17T22:06:43Z",
     "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-10-17T00:55:21Z",
-    "ai_largemid|ZRO-USD:volume": "2026-10-16T17:00:02Z",
+    "ai_largemid|ZRO-USD:volume": "2026-10-18T14:32:35Z",
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
     "ai_large|ADA-USD:volume": "2026-10-17T21:56:43Z",
@@ -67,6 +67,7 @@
     "ai_large|NEAR-USD:move": "2026-10-15T18:33:37Z",
     "ai_large|NEAR-USD:review_above:5.8004": "2026-10-11T17:12:47Z",
     "ai_large|NEAR-USD:volume": "2026-10-15T15:43:38Z",
+    "ai_large|QNT-USD:exit_below:190.0": "2026-10-18T14:32:35Z",
     "ai_large|QNT-USD:exit_below:195": "2026-10-17T21:26:43Z",
     "ai_large|QNT-USD:exit_below:230.0": "2026-10-08T16:33:21Z",
     "ai_large|QNT-USD:move": "2026-10-15T15:13:17Z",
@@ -99,5 +100,5 @@
     "ts": "2026-10-18T11:17:15Z"
   },
   "last_heartbeat": "2026-10-18T14:27:35Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
