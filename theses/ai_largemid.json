@@ -240,6 +240,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-17T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-18T07:02Z-event"
       }
     ],
     "exit_below": 1.6,
@@ -248,13 +252,13 @@
     ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Breakout signal active",
-      "Top rotation pick",
+      "Breakout still active",
+      "Rotation pick rank 2",
       "Large 30\u2011day upside"
     ],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Opened new position after breakout and strong rotation signal; price currently oversold.",
-    "updated_cycle": "2026-10-17T12:00Z"
+    "summary": "Added weight after confirming breakout and rotation strength.",
+    "updated_cycle": "2026-10-18T07:02Z-event"
   }
 }
