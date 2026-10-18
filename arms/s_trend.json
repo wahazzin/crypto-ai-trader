@@ -1,11 +1,11 @@
 {
-  "cash": 5676.865962446648,
+  "cash": 5938.1991628278665,
   "day_start_date": "2026-10-18",
   "day_start_equity": 9440.000239805158,
   "extra": {},
-  "fees_usd": 46.091153440349764,
+  "fees_usd": 47.14068436557554,
   "halted_until": null,
-  "last_ts": "2026-10-18T19:42:55Z",
+  "last_ts": "2026-10-18T19:47:55Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
@@ -29,13 +29,6 @@
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 1696.712619300106,
-      "stop_pct": 18.0
-    },
-    "AVAX-USD": {
-      "avg_cost": 11.354343,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 28.214962747431997,
       "stop_pct": 18.0
     },
     "BCH-USD": {
@@ -88,9 +81,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 10.47470948672311,
-  "spread_usd": 2.010734473614045,
-  "traded_notional_usd": 11522.788360087445,
+  "slippage_usd": 10.746844509946627,
+  "spread_usd": 2.0530072525297656,
+  "traded_notional_usd": 11785.17109139389,
   "trades": [
     {
       "cause": "strategy",
@@ -141,6 +134,11 @@
       "cause": "strategy",
       "notional": 250.7220656813383,
       "ts": "2026-10-18T18:02:54Z"
+    },
+    {
+      "cause": "stop",
+      "notional": 262.3827313064443,
+      "ts": "2026-10-18T19:45:00Z"
     }
   ]
 }
