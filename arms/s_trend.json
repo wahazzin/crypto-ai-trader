@@ -1,11 +1,11 @@
 {
-  "cash": 5368.3896590989425,
-  "day_start_date": "2026-10-17",
-  "day_start_equity": 9591.764678963267,
+  "cash": 5928.590916390712,
+  "day_start_date": "2026-10-18",
+  "day_start_equity": 9440.000239805158,
   "extra": {},
-  "fees_usd": 38.09919813227417,
+  "fees_usd": 45.08826517762441,
   "halted_until": null,
-  "last_ts": "2026-10-17T23:06:44Z",
+  "last_ts": "2026-10-18T00:11:43Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
@@ -39,10 +39,10 @@
       "stop_pct": 18.0
     },
     "BCH-USD": {
-      "avg_cost": 277.17967994454307,
+      "avg_cost": 275.83577642639926,
       "opened_cycle": "2026-10-17T00:00Z",
       "opened_ts": "2026-10-17T00:05:22Z",
-      "qty": 0.545312304038036,
+      "qty": 2.496543228670329,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -50,20 +50,6 @@
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 0.003795919730295158,
-      "stop_pct": 18.0
-    },
-    "ENA-USD": {
-      "avg_cost": 0.21848792311248724,
-      "opened_cycle": "2026-10-09T12:00Z",
-      "opened_ts": "2026-10-09T12:04:41Z",
-      "qty": 1791.9958984883249,
-      "stop_pct": 18.0
-    },
-    "FET-USD": {
-      "avg_cost": 0.19036017,
-      "opened_cycle": "2026-10-17T18:00Z",
-      "opened_ts": "2026-10-17T18:06:23Z",
-      "qty": 1801.839950389912,
       "stop_pct": 18.0
     },
     "NEAR-USD": {
@@ -74,10 +60,10 @@
       "stop_pct": 18.0
     },
     "ONDO-USD": {
-      "avg_cost": 0.4815225738237679,
+      "avg_cost": 0.47272437145774243,
       "opened_cycle": "2026-10-08T12:00Z",
       "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 470.9217888630911,
+      "qty": 590.8543270631259,
       "stop_pct": 18.0
     },
     "QNT-USD": {
@@ -94,13 +80,6 @@
       "qty": 532.9164557167097,
       "stop_pct": 18.0
     },
-    "TAO-USD": {
-      "avg_cost": 271.34489633777883,
-      "opened_cycle": "2026-10-15T00:00Z",
-      "opened_ts": "2026-10-15T00:02:40Z",
-      "qty": 1.7801743701986987,
-      "stop_pct": 18.0
-    },
     "ZRO-USD": {
       "avg_cost": 1.8138119999999998,
       "opened_cycle": "2026-10-15T06:00Z",
@@ -109,9 +88,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 8.52340526579236,
-  "spread_usd": 1.6549300364741464,
-  "traded_notional_usd": 9524.799533068546,
+  "slippage_usd": 10.311170828159606,
+  "spread_usd": 1.9381585362522675,
+  "traded_notional_usd": 11272.066294406106,
   "trades": [
     {
       "cause": "strategy",
@@ -132,6 +111,31 @@
       "cause": "strategy",
       "notional": 342.99855926901523,
       "ts": "2026-10-17T18:06:23Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 335.87101828987926,
+      "ts": "2026-10-18T00:11:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 343.6452756640092,
+      "ts": "2026-10-18T00:11:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 477.7122488834517,
+      "ts": "2026-10-18T00:11:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 537.4864499592657,
+      "ts": "2026-10-18T00:11:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 52.551768540954924,
+      "ts": "2026-10-18T00:11:43Z"
     }
   ]
 }

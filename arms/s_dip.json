@@ -1,11 +1,11 @@
 {
-  "cash": 5551.283580675452,
-  "day_start_date": "2026-10-17",
-  "day_start_equity": 9819.329290932023,
+  "cash": 5500.357674814952,
+  "day_start_date": "2026-10-18",
+  "day_start_equity": 9716.161041843301,
   "extra": {},
-  "fees_usd": 64.00349985022167,
+  "fees_usd": 65.19160017385462,
   "halted_until": null,
-  "last_ts": "2026-10-17T23:06:44Z",
+  "last_ts": "2026-10-18T00:11:43Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10060.277572453842,
@@ -22,6 +22,13 @@
       "opened_cycle": "2026-10-15T06:00Z",
       "opened_ts": "2026-10-15T06:02:59Z",
       "qty": 448.5185622170952,
+      "stop_pct": 18.0
+    },
+    "AERO-USD": {
+      "avg_cost": 0.8423314899999998,
+      "opened_cycle": "2026-10-18T00:00Z",
+      "opened_ts": "2026-10-18T00:11:43Z",
+      "qty": 205.8351673668933,
       "stop_pct": 18.0
     },
     "AVAX-USD": {
@@ -57,13 +64,6 @@
       "opened_cycle": "2026-10-13T00:00Z",
       "opened_ts": "2026-10-13T00:04:40Z",
       "qty": 1968.171887829906,
-      "stop_pct": 18.0
-    },
-    "HBAR-USD": {
-      "avg_cost": 0.09439429999999997,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 1447.2334552242464,
       "stop_pct": 18.0
     },
     "LINK-USD": {
@@ -116,29 +116,24 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 16.178488722746625,
-  "spread_usd": 3.4439267421867483,
-  "traded_notional_usd": 16000.874962555421,
+  "slippage_usd": 16.458933676599038,
+  "spread_usd": 3.561348596840729,
+  "traded_notional_usd": 16297.900043463664,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 98.3877216294907,
-      "ts": "2026-10-15T06:02:59Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 431.4362275068137,
-      "ts": "2026-10-16T00:03:52Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 267.8121372674512,
-      "ts": "2026-10-16T00:03:52Z"
-    },
     {
       "cause": "strategy",
       "notional": 54.8067563024956,
       "ts": "2026-10-16T18:05:02Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 123.64363768568677,
+      "ts": "2026-10-18T00:11:43Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 173.3814432225546,
+      "ts": "2026-10-18T00:11:43Z"
     }
   ]
 }
