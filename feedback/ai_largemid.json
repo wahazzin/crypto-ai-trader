@@ -1,6 +1,33 @@
 {
   "events": [],
-  "from": "2026-10-19T18:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-19T21:34Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "VVV-USD",
+      "codes": [
+        "R12_ADD_NOT_HELD_USE_BUY"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.01,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.0407,
+      "requested_weight": 0.0407,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 1.8820801999999999,
+      "qty": 49.57407344371182,
+      "side": "buy"
+    }
+  ]
 }

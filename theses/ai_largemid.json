@@ -193,6 +193,17 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
+  "VVV-USD": {
+    "confidence_history": [],
+    "exit_below": 22.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-19T21:34Z-event",
+    "reasons": [],
+    "review_above": 28.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-19T21:34Z-event"
+  },
   "XRP-USD": {
     "confidence_history": [],
     "invalidation": [],
