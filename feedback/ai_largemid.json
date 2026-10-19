@@ -1,16 +1,6 @@
 {
-  "events": [
-    {
-      "arm": "ai_largemid",
-      "errors": [
-        "decisions[0] BUY needs non-empty invalidation",
-        "decisions[1] BUY needs non-empty invalidation",
-        "decisions[2] BUY needs non-empty invalidation"
-      ],
-      "type": "AI_FAULT"
-    }
-  ],
-  "from": "2026-10-19T12:00Z",
+  "events": [],
+  "from": "2026-10-19T18:00Z",
   "risk_engine": [],
   "your_fills": []
 }
