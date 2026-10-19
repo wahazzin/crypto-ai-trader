@@ -164,7 +164,7 @@
         "cycle": "2026-10-18T16:12Z-event"
       }
     ],
-    "exit_below": 180.0,
+    "exit_below": 175,
     "invalidation": [
       "Price < $180"
     ],
@@ -173,7 +173,7 @@
       "Rotation pick rank 1",
       "Dip signal still active"
     ],
-    "review_above": 220.0,
+    "review_above": 230,
     "status": "bullish",
     "summary": "Added weight after confirming rotation pick strength; thesis unchanged.",
     "updated_cycle": "2026-10-18T16:12Z-event"
