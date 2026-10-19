@@ -15,6 +15,17 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
   },
+  "AERO-USD": {
+    "confidence_history": [],
+    "exit_below": 0.72,
+    "invalidation": [],
+    "opened_cycle": "2026-10-19T00:00Z",
+    "reasons": [],
+    "review_above": 0.96,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-19T00:00Z"
+  },
   "ARB-USD": {
     "confidence_history": [],
     "exit_below": 0.155,
@@ -28,11 +39,11 @@
   },
   "AVAX-USD": {
     "confidence_history": [],
-    "exit_below": 8.0,
+    "exit_below": 8.8,
     "invalidation": [],
     "opened_cycle": "2026-10-15T18:00Z",
     "reasons": [],
-    "review_above": 12.0,
+    "review_above": 11.7,
     "status": "bullish",
     "summary": "",
     "updated_cycle": "2026-10-15T18:00Z"
@@ -189,9 +200,11 @@
   },
   "SUI-USD": {
     "confidence_history": [],
+    "exit_below": 0.9,
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [],
+    "review_above": 1.2,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"

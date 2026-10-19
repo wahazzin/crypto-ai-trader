@@ -1,11 +1,11 @@
 {
-  "cash": 5436.830821452873,
-  "day_start_date": "2026-10-18",
-  "day_start_equity": 9328.797680153115,
+  "cash": 4912.31301144701,
+  "day_start_date": "2026-10-19",
+  "day_start_equity": 9317.325421685055,
   "extra": {},
-  "fees_usd": 85.30445148911929,
+  "fees_usd": 87.39416387958089,
   "halted_until": null,
-  "last_ts": "2026-10-18T23:43:12Z",
+  "last_ts": "2026-10-19T00:03:12Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -15,6 +15,20 @@
       "opened_cycle": "2026-10-09T19:39Z-event",
       "opened_ts": "2026-10-09T19:39:59Z",
       "qty": 426.992256526914,
+      "stop_pct": 18.0
+    },
+    "AERO-USD": {
+      "avg_cost": 0.7993085099999998,
+      "opened_cycle": "2026-10-19T00:00Z",
+      "opened_ts": "2026-10-19T00:03:12Z",
+      "qty": 350.1722708858314,
+      "stop_pct": 18.0
+    },
+    "AVAX-USD": {
+      "avg_cost": 9.752690679513385,
+      "opened_cycle": "2026-10-19T00:00Z",
+      "opened_ts": "2026-10-19T00:03:12Z",
+      "qty": 19.132085054794775,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -59,6 +73,13 @@
       "qty": 1.0825880925846325,
       "stop_pct": 18.0
     },
+    "SUI-USD": {
+      "avg_cost": 0.9961973599999999,
+      "opened_cycle": "2026-10-19T00:00Z",
+      "opened_ts": "2026-10-19T00:03:12Z",
+      "qty": 56.15665748880998,
+      "stop_pct": 18.0
+    },
     "ZRO-USD": {
       "avg_cost": 1.8701994785905234,
       "opened_cycle": "2026-10-17T16:26Z-event",
@@ -67,9 +88,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 17.667398494963248,
-  "spread_usd": 5.536410136696872,
-  "traded_notional_usd": 21326.112872279817,
+  "slippage_usd": 18.21123081612188,
+  "spread_usd": 5.6504518165764255,
+  "traded_notional_usd": 21848.540969895217,
   "trades": [
     {
       "cause": "ai_event",
@@ -155,6 +176,21 @@
       "cause": "ai_event",
       "notional": 148.61111629746566,
       "ts": "2026-10-18T22:02:54Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 279.8956760850702,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 186.58930759355434,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 55.943113936776726,
+      "ts": "2026-10-19T00:03:12Z"
     }
   ]
 }

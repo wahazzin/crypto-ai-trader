@@ -1,22 +1,15 @@
 {
-  "cash": 5819.73262893627,
-  "day_start_date": "2026-10-18",
-  "day_start_equity": 9716.161041843301,
+  "cash": 7966.642209603984,
+  "day_start_date": "2026-10-19",
+  "day_start_equity": 9698.510564062713,
   "extra": {},
-  "fees_usd": 66.47423051169125,
+  "fees_usd": 75.09635734168207,
   "halted_until": null,
-  "last_ts": "2026-10-18T23:43:12Z",
+  "last_ts": "2026-10-19T00:03:12Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10060.277572453842,
   "positions": {
-    "AAVE-USD": {
-      "avg_cost": 168.4984252718554,
-      "opened_cycle": "2026-10-09T18:00Z",
-      "opened_ts": "2026-10-09T18:04:59Z",
-      "qty": 2.323110595078581,
-      "stop_pct": 18.0
-    },
     "ADA-USD": {
       "avg_cost": 0.219361538,
       "opened_cycle": "2026-10-15T06:00Z",
@@ -38,25 +31,11 @@
       "qty": 26.68567694145885,
       "stop_pct": 18.0
     },
-    "BCH-USD": {
-      "avg_cost": 276.64637,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 1.2317543585880832,
-      "stop_pct": 18.0
-    },
     "ENA-USD": {
       "avg_cost": 0.20597136487534748,
       "opened_cycle": "2026-10-13T00:00Z",
       "opened_ts": "2026-10-13T00:04:40Z",
       "qty": 2029.1852642062613,
-      "stop_pct": 18.0
-    },
-    "ETH-USD": {
-      "avg_cost": 2484.29676,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 0.13702442156932765,
       "stop_pct": 18.0
     },
     "FET-USD": {
@@ -66,39 +45,11 @@
       "qty": 1968.171887829906,
       "stop_pct": 18.0
     },
-    "LINK-USD": {
-      "avg_cost": 12.7856668,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 26.63587462724949,
-      "stop_pct": 18.0
-    },
-    "LTC-USD": {
-      "avg_cost": 63.491427999999985,
-      "opened_cycle": "2026-10-10T00:00Z",
-      "opened_ts": "2026-10-10T00:05:18Z",
-      "qty": 5.3661903102924855,
-      "stop_pct": 18.0
-    },
     "ONDO-USD": {
       "avg_cost": 0.46700188743142496,
       "opened_cycle": "2026-10-13T00:00Z",
       "opened_ts": "2026-10-13T00:04:40Z",
       "qty": 895.3606910219642,
-      "stop_pct": 18.0
-    },
-    "SOL-USD": {
-      "avg_cost": 106.854074,
-      "opened_cycle": "2026-10-14T00:00Z",
-      "opened_ts": "2026-10-14T00:06:17Z",
-      "qty": 3.993133016351085,
-      "stop_pct": 18.0
-    },
-    "SUI-USD": {
-      "avg_cost": 1.024909588389016,
-      "opened_cycle": "2026-10-14T18:00Z",
-      "opened_ts": "2026-10-14T18:02:24Z",
-      "qty": 83.51683221554975,
       "stop_pct": 18.0
     },
     "TAO-USD": {
@@ -109,9 +60,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 16.65793571152667,
-  "spread_usd": 3.7721841590972804,
-  "traded_notional_usd": 16618.55762792282,
+  "slippage_usd": 18.147780095535673,
+  "spread_usd": 4.0621624296165555,
+  "traded_notional_usd": 18774.089335420525,
   "trades": [
     {
       "cause": "strategy",
@@ -127,6 +78,41 @@
       "cause": "stop",
       "notional": 320.6575844591554,
       "ts": "2026-10-18T19:35:00Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 351.82654527800923,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 339.14433495169123,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 329.8422371918403,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 320.45027316757165,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 316.5244993402286,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 414.67749586230127,
+      "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 83.06632170606257,
+      "ts": "2026-10-19T00:03:12Z"
     }
   ]
 }
