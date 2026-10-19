@@ -97,9 +97,9 @@
     "ts": "2026-10-19T12:43:49Z"
   },
   "last_data_fault": {
-    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-19T12:48:49Z"
+    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-19T12:58:49Z"
   },
   "last_heartbeat": "2026-10-19T12:43:49Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
