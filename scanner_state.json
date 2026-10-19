@@ -97,9 +97,9 @@
     "ts": "2026-10-19T08:43:30Z"
   },
   "last_data_fault": {
-    "error": "AERO-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-19T09:08:30Z"
+    "error": "ENA-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-19T09:13:30Z"
   },
   "last_heartbeat": "2026-10-19T08:43:30Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
