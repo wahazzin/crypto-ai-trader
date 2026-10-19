@@ -97,9 +97,9 @@
     "ts": "2026-10-19T18:49:09Z"
   },
   "last_data_fault": {
-    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-19T12:58:49Z"
+    "error": "FET-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-19T19:44:08Z"
   },
   "last_heartbeat": "2026-10-19T18:49:09Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
