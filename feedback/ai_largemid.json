@@ -1,23 +1,16 @@
 {
-  "events": [],
-  "from": "2026-10-19T07:33Z-event",
-  "risk_engine": [
+  "events": [
     {
-      "action": "SELL",
-      "asset": "ADA-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
+      "arm": "ai_largemid",
+      "errors": [
+        "decisions[0] BUY needs non-empty invalidation",
+        "decisions[1] BUY needs non-empty invalidation",
+        "decisions[2] BUY needs non-empty invalidation"
+      ],
+      "type": "AI_FAULT"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ADA-USD",
-      "cause": "ai_event",
-      "price": 0.221746872,
-      "qty": 426.992256526914,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-19T12:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
