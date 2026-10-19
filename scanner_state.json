@@ -83,23 +83,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 9062.09,
-      "ai_largemid": 9300.93,
-      "btc_hold": 9674.26,
-      "eth_hold": 9119.19,
-      "ew_basket": 8749.39,
-      "s_breakout": 9297.97,
-      "s_dip": 9665.88,
-      "s_rotation": 9052.36,
-      "s_trend": 9421.2
+      "ai_large": 9059.69,
+      "ai_largemid": 9291.5,
+      "btc_hold": 9668.03,
+      "eth_hold": 9107.25,
+      "ew_basket": 8741.27,
+      "s_breakout": 9302.92,
+      "s_dip": 9663.5,
+      "s_rotation": 9055.0,
+      "s_trend": 9412.01
     },
-    "scans": 1,
-    "ts": "2026-10-19T18:49:09Z"
+    "scans": 2,
+    "ts": "2026-10-19T19:49:09Z"
   },
   "last_data_fault": {
     "error": "FET-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-19T19:44:08Z"
   },
-  "last_heartbeat": "2026-10-19T18:49:09Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-19T19:49:09Z",
+  "scans_since_heartbeat": 0
 }
