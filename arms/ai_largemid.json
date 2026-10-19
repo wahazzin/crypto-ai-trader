@@ -1,22 +1,15 @@
 {
-  "cash": 4912.31301144701,
+  "cash": 5006.618471911062,
   "day_start_date": "2026-10-19",
   "day_start_equity": 9317.325421685055,
   "extra": {},
-  "fees_usd": 87.39416387958089,
+  "fees_usd": 87.77290066859315,
   "halted_until": null,
-  "last_ts": "2026-10-19T06:43:30Z",
+  "last_ts": "2026-10-19T07:33:30Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
   "positions": {
-    "ADA-USD": {
-      "avg_cost": 0.23592221962222018,
-      "opened_cycle": "2026-10-09T19:39Z-event",
-      "opened_ts": "2026-10-09T19:39:59Z",
-      "qty": 426.992256526914,
-      "stop_pct": 18.0
-    },
     "AERO-USD": {
       "avg_cost": 0.7993085099999998,
       "opened_cycle": "2026-10-19T00:00Z",
@@ -88,20 +81,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 18.21123081612188,
-  "spread_usd": 5.6504518165764255,
-  "traded_notional_usd": 21848.540969895217,
+  "slippage_usd": 18.297964899205677,
+  "spread_usd": 5.654721739141687,
+  "traded_notional_usd": 21943.22516714828,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 407.57216560492867,
-      "ts": "2026-10-17T00:25:21Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 408.28544343925097,
-      "ts": "2026-10-17T00:55:21Z"
-    },
     {
       "cause": "ai_event",
       "notional": 63.62043320391271,
@@ -191,6 +174,11 @@
       "cause": "ai",
       "notional": 55.943113936776726,
       "ts": "2026-10-19T00:03:12Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 94.68419725306477,
+      "ts": "2026-10-19T07:33:30Z"
     }
   ]
 }

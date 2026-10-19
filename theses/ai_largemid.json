@@ -1,20 +1,4 @@
 {
-  "ADA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-10-09T19:39Z-event"
-      }
-    ],
-    "exit_below": 0.21,
-    "invalidation": [],
-    "opened_cycle": "2026-10-09T19:39Z-event",
-    "reasons": [],
-    "review_above": 0.27,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
-  },
   "AERO-USD": {
     "confidence_history": [],
     "exit_below": 0.72,
