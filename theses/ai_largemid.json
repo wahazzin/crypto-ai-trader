@@ -1,14 +1,23 @@
 {
   "AERO-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-20T01:14Z-event"
+      }
+    ],
     "exit_below": 0.72,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $0.72"
+    ],
     "opened_cycle": "2026-10-19T00:00Z",
-    "reasons": [],
+    "reasons": [
+      "Breakout active, dip signal, 28\u2011day return +13.97%"
+    ],
     "review_above": 0.96,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-19T00:00Z"
+    "summary": "Added weight after confirming breakout and dip signals.",
+    "updated_cycle": "2026-10-20T01:14Z-event"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -20,17 +29,6 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
-  },
-  "AVAX-USD": {
-    "confidence_history": [],
-    "exit_below": 8.8,
-    "invalidation": [],
-    "opened_cycle": "2026-10-15T18:00Z",
-    "reasons": [],
-    "review_above": 11.7,
-    "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-15T18:00Z"
   },
   "BTC-USD": {
     "confidence_history": [
@@ -57,18 +55,22 @@
       {
         "confidence": 60,
         "cycle": "2026-10-18T22:02Z-event"
+      },
+      {
+        "confidence": 40,
+        "cycle": "2026-10-20T01:14Z-event"
       }
     ],
     "exit_below": 0.15,
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Big 1h move up but 24h decline suggests caution"
+      "Reduced exposure after underperformance"
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level. Stop loss tightened to 12% to protect recent volatility.",
-    "updated_cycle": "2026-10-18T22:02Z-event"
+    "summary": "Weight reduced to respect portfolio caps while keeping bullish view.",
+    "updated_cycle": "2026-10-20T01:14Z-event"
   },
   "ETH-USD": {
     "confidence_history": [],
@@ -111,18 +113,24 @@
       {
         "confidence": 70,
         "cycle": "2026-10-18T18:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-20T01:14Z-event"
       }
     ],
     "exit_below": 4.5,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $4.5"
+    ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Portfolio constraint adjustment"
+      "Rotation pick rank 3, 30\u2011day return +36.6%"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Weight reduced to respect portfolio caps; thesis unchanged.",
-    "updated_cycle": "2026-10-18T18:00Z"
+    "summary": "Increased position as rotation pick with strong 30\u2011day upside.",
+    "updated_cycle": "2026-10-20T01:14Z-event"
   },
   "ONDO-USD": {
     "confidence_history": [],
@@ -146,52 +154,24 @@
       {
         "confidence": 70,
         "cycle": "2026-10-18T16:12Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-20T01:14Z-event"
       }
     ],
     "exit_below": 175,
     "invalidation": [
-      "Price < $180"
+      "Price < $175"
     ],
     "opened_cycle": "2026-10-15T12:00Z",
     "reasons": [
-      "Rotation pick rank 1",
-      "Dip signal still active"
+      "Rotation rank 1, 30\u2011day return +196%"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Added weight after confirming rotation pick strength; thesis unchanged.",
-    "updated_cycle": "2026-10-18T16:12Z-event"
-  },
-  "SOL-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-10-14T12:22Z-event"
-      }
-    ],
-    "exit_below": 95,
-    "invalidation": [
-      "Price < $95"
-    ],
-    "opened_cycle": "2026-10-12T14:59Z-event",
-    "reasons": [
-      "24h +0.96% move, dip signal active, RSI ~41"
-    ],
-    "review_above": 115,
-    "status": "bullish",
-    "summary": "Opened position after modest gain and dip signal; low RSI indicates upside potential.",
-    "updated_cycle": "2026-10-14T12:22Z-event"
-  },
-  "SUI-USD": {
-    "confidence_history": [],
-    "exit_below": 0.9,
-    "invalidation": [],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
-    "review_above": 1.2,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "Added weight to top rotation pick with massive upside.",
+    "updated_cycle": "2026-10-20T01:14Z-event"
   },
   "VVV-USD": {
     "confidence_history": [],
@@ -222,6 +202,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-18T07:02Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-20T01:14Z-event"
       }
     ],
     "exit_below": 1.6,
@@ -230,13 +214,11 @@
     ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Breakout still active",
-      "Rotation pick rank 2",
-      "Large 30\u2011day upside"
+      "Breakout active, rotation rank 2, 30\u2011day return +62.5%"
     ],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Added weight after confirming breakout and rotation strength.",
-    "updated_cycle": "2026-10-18T07:02Z-event"
+    "summary": "Increased position after breakout and rotation strength confirmation.",
+    "updated_cycle": "2026-10-20T01:14Z-event"
   }
 }
