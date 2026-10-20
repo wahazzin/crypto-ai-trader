@@ -20,8 +20,8 @@
     ],
     "review_above": 0.96,
     "status": "bullish",
-    "summary": "Increased position after confirming breakout and dip signals.",
-    "updated_cycle": "2026-10-20T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-20T15:35Z-event"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -48,7 +48,7 @@
     "review_above": 88000,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "updated_cycle": "2026-10-20T15:35Z-event"
   },
   "ETH-USD": {
     "confidence_history": [],
@@ -59,7 +59,7 @@
     "review_above": 2800,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "updated_cycle": "2026-10-20T15:35Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -108,7 +108,7 @@
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Increased position as rotation pick with strong 30\u2011day upside.",
-    "updated_cycle": "2026-10-20T01:14Z-event"
+    "updated_cycle": "2026-10-20T15:35Z-event"
   },
   "ONDO-USD": {
     "confidence_history": [],
@@ -149,7 +149,7 @@
     "review_above": 230,
     "status": "bullish",
     "summary": "Added weight to top rotation pick with massive upside.",
-    "updated_cycle": "2026-10-20T01:14Z-event"
+    "updated_cycle": "2026-10-20T15:35Z-event"
   },
   "VVV-USD": {
     "confidence_history": [],
@@ -197,6 +197,6 @@
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Increased position after breakout and rotation confirmation.",
-    "updated_cycle": "2026-10-20T15:05Z-event"
+    "updated_cycle": "2026-10-20T15:35Z-event"
   }
 }
