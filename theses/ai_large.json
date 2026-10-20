@@ -7,14 +7,14 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Current price $0.2164 > exit $0.208",
+      "Current price $0.2243 > exit $0.208",
       "Dip signal true (price dropped >8% in 3 days)",
       "RSI near 40, no overbought pressure"
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit level and dip signal still active.",
-    "updated_cycle": "2026-10-20T12:00Z"
+    "summary": "Thesis remains valid; price stays above exit and dip signal still active.",
+    "updated_cycle": "2026-10-20T14:35Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -24,20 +24,24 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Current price $11.954 > exit $11.20",
+      "Current price $12.38 > exit $11.20",
       "Dip signal true (price dropped >8% in 3 days)",
       "No breakout or trend confirmation"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Holding position; price remains above exit level and dip signal persists.",
-    "updated_cycle": "2026-10-20T12:00Z"
+    "summary": "Thesis remains valid; price stays above exit and dip signal still active.",
+    "updated_cycle": "2026-10-20T14:35Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
       {
         "confidence": 70,
         "cycle": "2026-10-17T21:56Z-event"
+      },
+      {
+        "confidence": 78,
+        "cycle": "2026-10-20T14:35Z-event"
       }
     ],
     "exit_below": 4.5,
@@ -46,15 +50,15 @@
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
     "reasons": [
-      "Current price $4.679 > exit $4.50",
-      "Rotation rank 3 with +35% 28\u2011day return",
+      "Current price $4.973 > exit $4.50",
+      "Rotation rank 3 with +14.7% 28\u2011day return",
       "Trend true (price above 50\u2011day SMA and rising)",
       "RSI ~53 indicating neutral momentum"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Holding position; price above exit level, strong 30\u2011day return, rotation rank 3 and trend positive.",
-    "updated_cycle": "2026-10-20T12:00Z"
+    "summary": "Thesis remains valid; price above exit, strong 28\u2011day return and trend positive.",
+    "updated_cycle": "2026-10-20T14:35Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -73,6 +77,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-20T12:00Z"
+      },
+      {
+        "confidence": 82,
+        "cycle": "2026-10-20T14:35Z-event"
       }
     ],
     "exit_below": 173.0,
@@ -81,14 +89,14 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Current price $193.155 > exit $173.0",
-      "Rotation pick rank 1 with +199% 28\u2011day return",
+      "Current price $200.84 > exit $173.0",
+      "Rotation pick rank 1 with +190.8% 28\u2011day return",
       "Trend signal true",
-      "Rotation strategy backtest expectancy +5.2% per trade"
+      "Strong recent price momentum"
     ],
     "review_above": 210.0,
     "status": "bullish",
-    "summary": "Position increased; rotation pick rank 1 with +199% 28\u2011day return, trend positive.",
-    "updated_cycle": "2026-10-20T12:00Z"
+    "summary": "Thesis remains valid; price above exit, top rotation pick with massive 28\u2011day return.",
+    "updated_cycle": "2026-10-20T14:35Z-event"
   }
 }
