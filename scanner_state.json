@@ -105,8 +105,8 @@
   },
   "last_data_fault": {
     "error": "FET-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-20T11:40:09Z"
+    "ts": "2026-10-20T18:15:29Z"
   },
   "last_heartbeat": "2026-10-20T17:10:30Z",
-  "scans_since_heartbeat": 2
+  "scans_since_heartbeat": 3
 }
