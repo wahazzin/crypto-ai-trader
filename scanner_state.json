@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-20",
-      "calls_today": 8,
-      "last_call": "2026-10-20T15:35:29Z"
+      "calls_today": 9,
+      "last_call": "2026-10-20T21:00:46Z"
     }
   },
   "fired": {
@@ -52,7 +52,7 @@
     "ai_largemid|TAO-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|TAO-USD:volume": "2026-10-20T14:05:09Z",
     "ai_largemid|UNI-USD:move": "2026-10-20T14:35:09Z",
-    "ai_largemid|UNI-USD:volume": "2026-10-20T14:35:09Z",
+    "ai_largemid|UNI-USD:volume": "2026-10-20T21:00:46Z",
     "ai_largemid|VVV-USD:move": "2026-10-20T14:05:09Z",
     "ai_largemid|VVV-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|XLM-USD:volume": "2026-10-20T14:05:09Z",
@@ -108,5 +108,5 @@
     "ts": "2026-10-20T18:15:29Z"
   },
   "last_heartbeat": "2026-10-20T20:20:47Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
