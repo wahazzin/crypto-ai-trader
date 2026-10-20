@@ -4,6 +4,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-20T01:14Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-20T06:00Z"
       }
     ],
     "exit_below": 0.72,
@@ -12,12 +16,12 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Breakout active, dip signal, 28\u2011day return +13.97%"
+      "Breakout active, dip signal, 30\u2011day return +13.97%"
     ],
     "review_above": 0.96,
     "status": "bullish",
-    "summary": "Added weight after confirming breakout and dip signals.",
-    "updated_cycle": "2026-10-20T01:14Z-event"
+    "summary": "Increased position after confirming breakout and dip signals.",
+    "updated_cycle": "2026-10-20T06:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -59,18 +63,24 @@
       {
         "confidence": 40,
         "cycle": "2026-10-20T01:14Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-10-20T06:00Z"
       }
     ],
     "exit_below": 0.15,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $0.15"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Reduced exposure after underperformance"
+      "Reduced exposure after continued underperformance"
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Weight reduced to respect portfolio caps while keeping bullish view.",
-    "updated_cycle": "2026-10-20T01:14Z-event"
+    "summary": "Reduced weight to respect portfolio caps while maintaining bullish view.",
+    "updated_cycle": "2026-10-20T06:00Z"
   },
   "ETH-USD": {
     "confidence_history": [],
