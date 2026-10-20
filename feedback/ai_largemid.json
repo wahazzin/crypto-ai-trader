@@ -1,6 +1,40 @@
 {
   "events": [],
-  "from": "2026-10-20T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-20T15:05Z-event",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "ENA-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R4_ALT_CLUSTER"
+      ],
+      "final_weight": 0.07709848792006196,
+      "requested_weight": 0.0771,
+      "status": "CLIPPED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ENA-USD",
+      "cause": "ai_event",
+      "price": 0.19814196408149656,
+      "qty": 499.36612952806615,
+      "side": "sell"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 2.0063043,
+      "qty": 63.04003214419009,
+      "side": "buy"
+    }
+  ]
 }
