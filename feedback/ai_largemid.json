@@ -1,27 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-20T06:00Z",
-  "risk_engine": [
-    {
-      "action": "REDUCE",
-      "asset": "ENA-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.005,
-      "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "AERO-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.046,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-10-20T12:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
