@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-21",
-      "calls_today": 1,
-      "last_call": "2026-10-21T07:31:09Z"
+      "calls_today": 2,
+      "last_call": "2026-10-21T14:01:48Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-21",
-      "calls_today": 3,
-      "last_call": "2026-10-21T07:31:09Z"
+      "calls_today": 4,
+      "last_call": "2026-10-21T14:01:48Z"
     }
   },
   "fired": {
@@ -30,7 +30,7 @@
     "ai_largemid|ETH-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
     "ai_largemid|FET-USD:move": "2026-10-20T14:35:09Z",
-    "ai_largemid|FET-USD:volume": "2026-10-20T15:35:29Z",
+    "ai_largemid|FET-USD:volume": "2026-10-21T14:01:48Z",
     "ai_largemid|HBAR-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|HBAR-USD:volume": "2026-10-18T07:02:15Z",
     "ai_largemid|LINK-USD:volume": "2026-10-20T14:35:09Z",
@@ -45,7 +45,7 @@
     "ai_largemid|QNT-USD:exit_below:230": "2026-10-12T12:33:50Z",
     "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
     "ai_largemid|QNT-USD:move": "2026-10-20T14:35:09Z",
-    "ai_largemid|QNT-USD:volume": "2026-10-20T14:35:09Z",
+    "ai_largemid|QNT-USD:volume": "2026-10-21T14:01:48Z",
     "ai_largemid|SOL-USD:volume": "2026-10-20T14:05:09Z",
     "ai_largemid|SUI-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|SUI-USD:volume": "2026-10-20T14:35:09Z",
@@ -79,7 +79,7 @@
     "ai_large|QNT-USD:exit_below:195": "2026-10-17T21:26:43Z",
     "ai_large|QNT-USD:exit_below:230.0": "2026-10-08T16:33:21Z",
     "ai_large|QNT-USD:move": "2026-10-20T14:35:09Z",
-    "ai_large|QNT-USD:volume": "2026-10-20T14:35:09Z",
+    "ai_large|QNT-USD:volume": "2026-10-21T14:01:48Z",
     "ai_large|SOL-USD:volume": "2026-10-20T14:05:09Z",
     "ai_large|SUI-USD:exit_below:0.965": "2026-10-18T14:02:35Z",
     "ai_large|SUI-USD:move": "2026-10-20T14:35:09Z",
@@ -108,5 +108,5 @@
     "ts": "2026-10-21T10:51:28Z"
   },
   "last_heartbeat": "2026-10-21T13:46:48Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
