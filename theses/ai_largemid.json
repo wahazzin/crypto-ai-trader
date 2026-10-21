@@ -45,11 +45,11 @@
         "cycle": "2026-10-11T18:00Z"
       }
     ],
-    "exit_below": 78473.64,
+    "exit_below": 78000,
     "invalidation": [],
     "opened_cycle": "2026-10-10T06:10Z-event",
     "reasons": [],
-    "review_above": 88000,
+    "review_above": 90000,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-20T21:00Z-event"

@@ -1,27 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-21T15:41Z-event",
+  "from": "2026-10-21T16:11Z-event",
   "risk_engine": [
     {
-      "action": "BUY",
+      "action": "ADD",
       "asset": "BTC-USD",
-      "codes": [
-        "R12_BUY_ON_HELD_USE_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
-    },
-    {
-      "action": "BUY",
-      "asset": "ETH-USD",
-      "codes": [
-        "R12_BUY_ON_HELD_USE_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
+      "codes": [],
+      "final_weight": 0.1,
+      "requested_weight": 0.1,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "BTC-USD",
+      "cause": "ai_event",
+      "price": 84540.214662,
+      "qty": 0.0029323741180614826,
+      "side": "buy"
+    }
+  ]
 }
