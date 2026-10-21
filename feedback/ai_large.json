@@ -1,38 +1,38 @@
 {
   "events": [],
-  "from": "2026-10-21T07:31Z-event",
+  "from": "2026-10-21T12:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "NEAR-USD",
+      "action": "BUY",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.145,
-      "requested_weight": 0.145,
+      "final_weight": 0.01,
+      "requested_weight": 0.01,
       "status": "APPROVED"
     },
     {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
+      "action": "BUY",
+      "asset": "BTC-USD",
       "codes": [],
-      "final_weight": 0.144,
-      "requested_weight": 0.144,
+      "final_weight": 0.01,
+      "requested_weight": 0.01,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
-      "cause": "ai_event",
-      "price": 5.22476326,
-      "qty": 18.896377541850644,
-      "side": "sell"
+      "asset": "ZEC-USD",
+      "cause": "ai",
+      "price": 1285.160634,
+      "qty": 0.07152497723649545,
+      "side": "buy"
     },
     {
-      "asset": "QNT-USD",
-      "cause": "ai_event",
-      "price": 200.62955,
-      "qty": 0.29334009282048146,
-      "side": "sell"
+      "asset": "BTC-USD",
+      "cause": "ai",
+      "price": 83468.29032,
+      "qty": 0.0011004350968157482,
+      "side": "buy"
     }
   ]
 }

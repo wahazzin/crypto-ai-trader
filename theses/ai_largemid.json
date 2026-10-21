@@ -8,6 +8,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-20T06:00Z"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-21T12:00Z"
       }
     ],
     "exit_below": 0.72,
@@ -16,12 +20,12 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Breakout active, dip signal, 30\u2011day return +13.97%"
+      "Breakout active, dip signal, rotation rank 3, trend positive."
     ],
     "review_above": 0.96,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-20T21:00Z-event"
+    "updated_cycle": "2026-10-21T12:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -95,6 +99,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-20T01:14Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-21T12:00Z"
       }
     ],
     "exit_below": 4.5,
@@ -103,12 +111,12 @@
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Rotation pick rank 3, 30\u2011day return +36.6%"
+      "Trend positive, 30\u2011day return +36.6%, rotation rank 4."
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Increased position as rotation pick with strong 30\u2011day upside.",
-    "updated_cycle": "2026-10-20T21:00Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and below review level.",
+    "updated_cycle": "2026-10-21T12:00Z"
   },
   "ONDO-USD": {
     "confidence_history": [],

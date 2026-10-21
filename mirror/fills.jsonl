@@ -61,3 +61,5 @@
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":102.77816440862112,"sim_price":196.06757,"ts":"2026-10-20T18:05:29Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":98.72909912775035,"sim_price":5.22476326,"ts":"2026-10-21T07:31:09Z"}
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":58.852690819531425,"sim_price":200.62955,"ts":"2026-10-21T07:31:09Z"}
+{"arm":"ai_large","asset":"ZEC-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":91.92108509209007,"sim_price":1285.160634,"ts":"2026-10-21T12:06:28Z"}
+{"alpaca_minus_sim_bps":-2.2,"arm":"ai_large","asset":"BTC-USD","cause":"ai","filled_avg_price":83449.96262754,"filled_qty":0.00107907,"side":"buy","sim_notional":91.85143613933418,"sim_price":83468.29032,"status":"filled","ts":"2026-10-21T12:06:28Z"}

@@ -16,6 +16,17 @@
     "summary": "Thesis remains valid; price stays above exit and dip signal still active.",
     "updated_cycle": "2026-10-20T18:00Z"
   },
+  "BTC-USD": {
+    "confidence_history": [],
+    "exit_below": 75000,
+    "invalidation": [],
+    "opened_cycle": "2026-10-21T12:00Z",
+    "reasons": [],
+    "review_above": 90000,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-21T12:00Z"
+  },
   "LINK-USD": {
     "confidence_history": [],
     "exit_below": 11.2,
@@ -106,5 +117,16 @@
     "status": "bullish",
     "summary": "Thesis remains valid; price above exit, top rotation pick with massive 28\u2011day return.",
     "updated_cycle": "2026-10-20T18:00Z"
+  },
+  "ZEC-USD": {
+    "confidence_history": [],
+    "exit_below": 1150,
+    "invalidation": [],
+    "opened_cycle": "2026-10-21T12:00Z",
+    "reasons": [],
+    "review_above": 1500,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-21T12:00Z"
   }
 }

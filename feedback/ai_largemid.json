@@ -1,6 +1,27 @@
 {
   "events": [],
-  "from": "2026-10-21T06:00Z",
-  "risk_engine": [],
+  "from": "2026-10-21T12:00Z",
+  "risk_engine": [
+    {
+      "action": "REDUCE",
+      "asset": "AERO-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.04,
+      "status": "REJECTED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "NEAR-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
