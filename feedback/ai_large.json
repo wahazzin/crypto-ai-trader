@@ -1,37 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-21T15:36Z-event",
+  "from": "2026-10-21T18:00Z",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "XRP-USD",
+      "action": "REDUCE",
+      "asset": "LINK-USD",
       "codes": [],
-      "final_weight": 0.015,
-      "requested_weight": 0.015,
+      "final_weight": 0.042,
+      "requested_weight": 0.042,
       "status": "APPROVED"
     },
     {
       "action": "ADD",
-      "asset": "ZEC-USD",
+      "asset": "BTC-USD",
       "codes": [],
-      "final_weight": 0.02,
-      "requested_weight": 0.02,
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "XRP-USD",
-      "cause": "ai_event",
-      "price": 1.3791256542260233,
-      "qty": 60.378315910427155,
-      "side": "buy"
+      "asset": "LINK-USD",
+      "cause": "ai",
+      "price": 12.6933794,
+      "qty": 7.580842953658065,
+      "side": "sell"
     },
     {
-      "asset": "ZEC-USD",
-      "cause": "ai_event",
-      "price": 1344.2660759999999,
-      "qty": 0.06595946712877043,
+      "asset": "BTC-USD",
+      "cause": "ai",
+      "price": 84666.159846,
+      "qty": 0.004390449437815701,
       "side": "buy"
     }
   ]

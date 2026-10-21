@@ -22,7 +22,7 @@
   },
   "BTC-USD": {
     "confidence_history": [],
-    "exit_below": 75000,
+    "exit_below": 80000,
     "invalidation": [],
     "opened_cycle": "2026-10-21T12:00Z",
     "reasons": [],
@@ -32,21 +32,24 @@
     "updated_cycle": "2026-10-21T12:00Z"
   },
   "LINK-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 80,
+        "cycle": "2026-10-21T18:00Z"
+      }
+    ],
     "exit_below": 11.2,
     "invalidation": [
       "Price < $11.20"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Current price $12.19 > exit $11.20",
-      "Dip signal true (price dropped >8% in 3 days)",
-      "No breakout or trend confirmation"
+      "Weight lowered to 4.2% of equity"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Thesis remains valid; price stays above exit and dip signal still active.",
-    "updated_cycle": "2026-10-20T18:00Z"
+    "summary": "Reduced weight to respect portfolio non\u2011BTC/ETH limit",
+    "updated_cycle": "2026-10-21T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [

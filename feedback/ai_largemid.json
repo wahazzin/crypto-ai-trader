@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-21T16:51Z-event",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.15,
-      "requested_weight": 0.15,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai_event",
-      "price": 84472.881198,
-      "qty": 0.005619422919761558,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-21T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
