@@ -7,14 +7,14 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-21",
-      "calls_today": 5,
-      "last_call": "2026-10-21T14:36:49Z"
+      "calls_today": 6,
+      "last_call": "2026-10-21T15:11:48Z"
     }
   },
   "fired": {
     "ai_largemid|AAVE-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|AAVE-USD:volume": "2026-10-20T21:30:47Z",
-    "ai_largemid|ADA-USD:volume": "2026-10-20T14:35:09Z",
+    "ai_largemid|ADA-USD:volume": "2026-10-21T15:11:48Z",
     "ai_largemid|AERO-USD:exit_below:0.78": "2026-10-18T19:57:54Z",
     "ai_largemid|AERO-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|AERO-USD:review_above:0.95": "2026-10-11T02:06:42Z",
@@ -22,7 +22,7 @@
     "ai_largemid|ARB-USD:move": "2026-10-21T01:50:46Z",
     "ai_largemid|ARB-USD:volume": "2026-10-19T21:34:08Z",
     "ai_largemid|AVAX-USD:move": "2026-10-20T14:35:09Z",
-    "ai_largemid|AVAX-USD:volume": "2026-10-20T15:05:29Z",
+    "ai_largemid|AVAX-USD:volume": "2026-10-21T15:11:48Z",
     "ai_largemid|BCH-USD:volume": "2026-10-15T02:42:40Z",
     "ai_largemid|BTC-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|ENA-USD:move": "2026-10-20T14:35:09Z",
@@ -35,7 +35,7 @@
     "ai_largemid|HBAR-USD:volume": "2026-10-18T07:02:15Z",
     "ai_largemid|LINK-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|LTC-USD:volume": "2026-10-08T04:52:42Z",
-    "ai_largemid|NEAR-USD:move": "2026-10-21T07:31:09Z",
+    "ai_largemid|NEAR-USD:move": "2026-10-21T15:11:48Z",
     "ai_largemid|NEAR-USD:review_above:5.5": "2026-10-08T06:52:42Z",
     "ai_largemid|NEAR-USD:review_above:5.8": "2026-10-11T17:12:47Z",
     "ai_largemid|NEAR-USD:volume": "2026-10-20T14:35:09Z",
@@ -56,7 +56,7 @@
     "ai_largemid|VVV-USD:move": "2026-10-21T14:36:49Z",
     "ai_largemid|VVV-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|XLM-USD:volume": "2026-10-20T14:05:09Z",
-    "ai_largemid|XRP-USD:volume": "2026-10-20T14:35:09Z",
+    "ai_largemid|XRP-USD:volume": "2026-10-21T15:11:48Z",
     "ai_largemid|ZEC-USD:exit_below:1150": "2026-10-14T15:52:00Z",
     "ai_largemid|ZEC-USD:move": "2026-10-20T14:05:09Z",
     "ai_largemid|ZEC-USD:volume": "2026-10-20T14:35:09Z",
@@ -108,5 +108,5 @@
     "ts": "2026-10-21T10:51:28Z"
   },
   "last_heartbeat": "2026-10-21T14:46:48Z",
-  "scans_since_heartbeat": 3
+  "scans_since_heartbeat": 4
 }

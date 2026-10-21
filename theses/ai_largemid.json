@@ -103,6 +103,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-21T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-21T15:11Z-event"
       }
     ],
     "exit_below": 4.5,
@@ -111,12 +115,12 @@
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Trend positive, 30\u2011day return +36.6%, rotation rank 4."
+      "Trend positive, 30\u2011day return +18%, rotation rank 4."
     ],
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-21T12:00Z"
+    "updated_cycle": "2026-10-21T15:11Z-event"
   },
   "ONDO-USD": {
     "confidence_history": [],
