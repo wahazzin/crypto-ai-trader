@@ -1,20 +1,24 @@
 {
   "ADA-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-21T15:06Z-event"
+      }
+    ],
     "exit_below": 0.208,
     "invalidation": [
       "Price < $0.208"
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Current price $0.2215 > exit $0.208",
-      "Dip signal true (price dropped >8% in 3 days)",
-      "RSI near 40, no overbought pressure"
+      "Portfolio rebalancing to respect 40% non\u2011BTC/ETH limit",
+      "Price remains above exit level $0.208"
     ],
     "review_above": 0.25,
-    "status": "bullish",
-    "summary": "Thesis remains valid; price stays above exit and dip signal still active.",
-    "updated_cycle": "2026-10-20T18:00Z"
+    "status": "neutral",
+    "summary": "Reduced position to 2% weight; dip signal still present but less conviction.",
+    "updated_cycle": "2026-10-21T15:06Z-event"
   },
   "BTC-USD": {
     "confidence_history": [],
@@ -117,6 +121,28 @@
     "status": "bullish",
     "summary": "Thesis remains valid; price above exit, top rotation pick with massive 28\u2011day return.",
     "updated_cycle": "2026-10-20T18:00Z"
+  },
+  "XRP-USD": {
+    "confidence_history": [
+      {
+        "confidence": 80,
+        "cycle": "2026-10-21T15:06Z-event"
+      }
+    ],
+    "exit_below": 1.2,
+    "invalidation": [
+      "Price < $1.20"
+    ],
+    "opened_cycle": "2026-10-21T15:06Z-event",
+    "reasons": [
+      "24h return +2.96%, 1h return +1.86%",
+      "Volume ratio 4.1 indicates significant buying pressure",
+      "RSI ~42 suggests upside potential"
+    ],
+    "review_above": 1.6,
+    "status": "bullish",
+    "summary": "New position added on strong short\u2011term momentum and volume spike.",
+    "updated_cycle": "2026-10-21T15:06Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
