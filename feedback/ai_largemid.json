@@ -1,40 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-20T18:00Z",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.0743,
-      "requested_weight": 0.0743,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ETH-USD",
-      "codes": [
-        "R6_TURNOVER"
-      ],
-      "final_weight": 0.08923538475206669,
-      "requested_weight": 0.0894,
-      "status": "CLIPPED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai",
-      "price": 82676.12238537327,
-      "qty": 0.004846787923085732,
-      "side": "buy"
-    },
-    {
-      "asset": "ETH-USD",
-      "cause": "ai",
-      "price": 2447.199342,
-      "qty": 0.14528443085995227,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-21T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
