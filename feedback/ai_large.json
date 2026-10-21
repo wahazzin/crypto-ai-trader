@@ -1,37 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-21T15:06Z-event",
+  "from": "2026-10-21T15:36Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "ADA-USD",
+      "action": "ADD",
+      "asset": "XRP-USD",
       "codes": [],
-      "final_weight": 0.02,
-      "requested_weight": 0.02,
+      "final_weight": 0.015,
+      "requested_weight": 0.015,
       "status": "APPROVED"
     },
     {
-      "action": "BUY",
-      "asset": "XRP-USD",
+      "action": "ADD",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.006,
-      "requested_weight": 0.006,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ADA-USD",
-      "cause": "ai_event",
-      "price": 0.227143632,
-      "qty": 1260.6882491810084,
-      "side": "sell"
-    },
-    {
       "asset": "XRP-USD",
       "cause": "ai_event",
-      "price": 1.3786266799999998,
-      "qty": 40.20221560079075,
+      "price": 1.3791256542260233,
+      "qty": 60.378315910427155,
+      "side": "buy"
+    },
+    {
+      "asset": "ZEC-USD",
+      "cause": "ai_event",
+      "price": 1344.2660759999999,
+      "qty": 0.06595946712877043,
       "side": "buy"
     }
   ]

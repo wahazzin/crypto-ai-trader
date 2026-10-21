@@ -127,6 +127,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-21T15:06Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-21T15:36Z-event"
       }
     ],
     "exit_below": 1.2,
@@ -135,24 +139,31 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "24h return +2.96%, 1h return +1.86%",
-      "Volume ratio 4.1 indicates significant buying pressure",
-      "RSI ~42 suggests upside potential"
+      "Added weight to capture further upside"
     ],
-    "review_above": 1.6,
+    "review_above": 1.7,
     "status": "bullish",
-    "summary": "New position added on strong short\u2011term momentum and volume spike.",
-    "updated_cycle": "2026-10-21T15:06Z-event"
+    "summary": "Increased position after confirming continued momentum.",
+    "updated_cycle": "2026-10-21T15:36Z-event"
   },
   "ZEC-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-21T15:36Z-event"
+      }
+    ],
     "exit_below": 1150,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $1150"
+    ],
     "opened_cycle": "2026-10-21T12:00Z",
-    "reasons": [],
+    "reasons": [
+      "Added weight to capture further upside"
+    ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-21T12:00Z"
+    "summary": "Increased position to benefit from strong 24h rally.",
+    "updated_cycle": "2026-10-21T15:36Z-event"
   }
 }
