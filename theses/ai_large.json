@@ -115,15 +115,14 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Current price $196.07 > exit $173.0",
-      "Rotation pick rank 1 with +190.8% 28\u2011day return",
-      "Trend signal true",
-      "Strong recent price momentum"
+      "Price broke above review level $210 and continues upward",
+      "24h return +3.4% and 1h move +5.1% indicate momentum",
+      "Rotation pick rank 1 with strong 28\u2011day return"
     ],
-    "review_above": 210.0,
+    "review_above": 230.0,
     "status": "bullish",
-    "summary": "Thesis remains valid; price above exit, top rotation pick with massive 28\u2011day return.",
-    "updated_cycle": "2026-10-20T18:00Z"
+    "summary": "Review target reached; maintain bullish stance with tighter stop and higher profit target.",
+    "updated_cycle": "2026-10-21T18:31Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
