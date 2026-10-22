@@ -1,51 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-22T06:00Z",
+  "from": "2026-10-22T09:07Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "NEAR-USD",
-      "codes": [],
-      "final_weight": 0.15,
-      "requested_weight": 0.15,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "QNT-USD",
-      "codes": [
-        "R1_ASSET_CAP"
-      ],
-      "final_weight": 0.15,
-      "requested_weight": 0.153,
-      "status": "CLIPPED"
-    },
-    {
-      "action": "ADD",
+      "action": "REDUCE",
       "asset": "ZEC-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.025,
-      "status": "REJECTED"
+      "codes": [],
+      "final_weight": 0.005,
+      "requested_weight": 0.005,
+      "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
-      "cause": "ai",
-      "price": 4.99959796,
-      "qty": 17.046632916079066,
-      "side": "buy"
-    },
-    {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 195.5581775582128,
-      "qty": 0.31473569663548523,
-      "side": "buy"
+      "asset": "ZEC-USD",
+      "cause": "ai_event",
+      "price": 1226.31377,
+      "qty": 0.10078596548650359,
+      "side": "sell"
     }
   ]
 }

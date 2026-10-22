@@ -161,6 +161,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-22T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-22T09:07Z-event"
       }
     ],
     "exit_below": 1200.0,
@@ -169,11 +173,13 @@
     ],
     "opened_cycle": "2026-10-21T12:00Z",
     "reasons": [
-      "Trend positive and recent 7\u2011day surge"
+      "1h move -4% triggered wake\u2011up",
+      "30d return -12% and trend strategy historically negative",
+      "Portfolio weight reduction aligns with risk limits"
     ],
     "review_above": 1500.0,
-    "status": "bullish",
-    "summary": "New addition to benefit from short\u2011term rally.",
-    "updated_cycle": "2026-10-22T06:00Z"
+    "status": "bearish",
+    "summary": "Sharp short\u2011term decline and weak longer\u2011term performance prompt a bearish view; keep existing exit level.",
+    "updated_cycle": "2026-10-22T09:07Z-event"
   }
 }
