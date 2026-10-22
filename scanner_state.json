@@ -105,9 +105,9 @@
     "ts": "2026-10-22T05:57:23Z"
   },
   "last_data_fault": {
-    "error": "FET-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-21T23:42:09Z"
+    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-22T06:57:44Z"
   },
   "last_heartbeat": "2026-10-22T05:57:23Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
