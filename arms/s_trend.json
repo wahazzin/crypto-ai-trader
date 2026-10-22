@@ -1,15 +1,22 @@
 {
-  "cash": 5584.938674432638,
+  "cash": 5280.641845308114,
   "day_start_date": "2026-10-22",
   "day_start_equity": 9555.086941326721,
   "extra": {},
-  "fees_usd": 50.63858169066775,
+  "fees_usd": 51.85091965530729,
   "halted_until": null,
-  "last_ts": "2026-10-22T17:23:10Z",
+  "last_ts": "2026-10-22T18:03:36Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
   "positions": {
+    "AAVE-USD": {
+      "avg_cost": 145.03803087515578,
+      "opened_cycle": "2026-10-22T18:00Z",
+      "opened_ts": "2026-10-22T18:03:36Z",
+      "qty": 2.0896897822666296,
+      "stop_pct": 18.0
+    },
     "AERO-USD": {
       "avg_cost": 0.7985177199999999,
       "opened_cycle": "2026-10-07T06:00Z",
@@ -81,14 +88,19 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 11.65044986852491,
-  "spread_usd": 2.1948325210981823,
-  "traded_notional_usd": 12659.645422666941,
+  "slippage_usd": 12.168757454024618,
+  "spread_usd": 2.3097654591228016,
+  "traded_notional_usd": 12962.729913826826,
   "trades": [
     {
       "cause": "stop",
       "notional": 262.3558701014571,
       "ts": "2026-10-22T16:50:00Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 303.084491159885,
+      "ts": "2026-10-22T18:03:36Z"
     }
   ]
 }

@@ -12,24 +12,25 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Portfolio rebalancing to respect 40% non\u2011BTC/ETH limit",
-      "Price remains above exit level $0.208"
+      "No breach of exit_below $0.208"
     ],
     "review_above": 0.25,
     "status": "neutral",
-    "summary": "Reduced position to 2% weight; dip signal still present but less conviction.",
-    "updated_cycle": "2026-10-21T15:06Z-event"
+    "summary": "Holding; price above exit level, dip signal still present.",
+    "updated_cycle": "2026-10-22T18:00Z"
   },
   "BTC-USD": {
     "confidence_history": [],
     "exit_below": 80000,
     "invalidation": [],
     "opened_cycle": "2026-10-21T12:00Z",
-    "reasons": [],
+    "reasons": [
+      "Trend signal true"
+    ],
     "review_above": 90000,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-21T12:00Z"
+    "summary": "Holding; trend remains positive, price above exit level.",
+    "updated_cycle": "2026-10-22T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -44,12 +45,12 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Weight lowered to 4.2% of equity"
+      "Weight within limits"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Reduced weight to respect portfolio non\u2011BTC/ETH limit",
-    "updated_cycle": "2026-10-21T18:00Z"
+    "summary": "Holding; price above exit level, weight reduced to meet limits.",
+    "updated_cycle": "2026-10-22T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -80,12 +81,12 @@
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
     "reasons": [
-      "Portfolio risk constraint required a minor reduction"
+      "Trend true, rotation rank 4"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Weight reduced to comply with per\u2011asset limit; thesis unchanged",
-    "updated_cycle": "2026-10-22T12:00Z"
+    "summary": "Holding; strong 28d performance, price above exit level.",
+    "updated_cycle": "2026-10-22T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -124,12 +125,12 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Rotation leader with strong momentum"
+      "Rotation pick, trend true"
     ],
     "review_above": 230.0,
     "status": "bullish",
-    "summary": "Added position; stop tightened to protect gains.",
-    "updated_cycle": "2026-10-22T06:00Z"
+    "summary": "Holding; rotation leader, price above exit level.",
+    "updated_cycle": "2026-10-22T18:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -148,11 +149,11 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "Added weight to capture further upside"
+      "Position still above exit"
     ],
     "review_above": 1.7,
     "status": "bullish",
-    "summary": "Increased position after confirming continued momentum.",
-    "updated_cycle": "2026-10-21T15:36Z-event"
+    "summary": "Holding; price above exit level, no breach.",
+    "updated_cycle": "2026-10-22T18:00Z"
   }
 }

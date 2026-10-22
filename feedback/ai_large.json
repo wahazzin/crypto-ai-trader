@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-22T16:53Z-event",
-  "risk_engine": [
-    {
-      "action": "EXIT",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "ZEC-USD",
-      "cause": "ai_event",
-      "price": 1197.011362,
-      "qty": 0.03669847887876229,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-22T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
