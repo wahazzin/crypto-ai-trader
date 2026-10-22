@@ -1,23 +1,17 @@
 {
   "events": [],
-  "from": "2026-10-22T09:07Z-event",
+  "from": "2026-10-22T12:00Z",
   "risk_engine": [
     {
       "action": "REDUCE",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": 0.005,
-      "requested_weight": 0.005,
-      "status": "APPROVED"
+      "asset": "NEAR-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.149,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ZEC-USD",
-      "cause": "ai_event",
-      "price": 1226.31377,
-      "qty": 0.10078596548650359,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }

@@ -1,37 +1,67 @@
 {
   "events": [],
-  "from": "2026-10-22T10:47Z-event",
+  "from": "2026-10-22T12:00Z",
   "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "ONDO-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
+    },
     {
       "action": "REDUCE",
       "asset": "AERO-USD",
       "codes": [],
-      "final_weight": 0.04,
-      "requested_weight": 0.04,
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
       "status": "APPROVED"
     },
     {
-      "action": "BUY",
-      "asset": "ONDO-USD",
+      "action": "ADD",
+      "asset": "QNT-USD",
       "codes": [],
-      "final_weight": 0.01,
-      "requested_weight": 0.01,
+      "final_weight": 0.145,
+      "requested_weight": 0.145,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.08,
+      "requested_weight": 0.08,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "AERO-USD",
-      "cause": "ai_event",
-      "price": 0.8074417500000001,
-      "qty": 125.61915482849035,
+      "asset": "ONDO-USD",
+      "cause": "ai",
+      "price": 0.4336858800000001,
+      "qty": 213.0096884704063,
       "side": "sell"
     },
     {
-      "asset": "ONDO-USD",
-      "cause": "ai_event",
-      "price": 0.43614571,
-      "qty": 213.0096884704063,
+      "asset": "AERO-USD",
+      "cause": "ai",
+      "price": 0.807147563580069,
+      "qty": 116.5045201055767,
+      "side": "sell"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai",
+      "price": 194.1164,
+      "qty": 0.6343820575949399,
+      "side": "buy"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai",
+      "price": 1.8309290999999996,
+      "qty": 40.49588420068987,
       "side": "buy"
     }
   ]
