@@ -1,11 +1,11 @@
 {
-  "cash": 5911.040073255778,
-  "day_start_date": "2026-10-21",
-  "day_start_equity": 9877.8619305982,
+  "cash": 7393.9520721843255,
+  "day_start_date": "2026-10-22",
+  "day_start_equity": 9946.712563622074,
   "extra": {},
-  "fees_usd": 91.86676200784999,
+  "fees_usd": 97.82223188306503,
   "halted_until": null,
-  "last_ts": "2026-10-21T23:52:08Z",
+  "last_ts": "2026-10-22T00:02:08Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
@@ -24,25 +24,11 @@
       "qty": 101.33761854549518,
       "stop_pct": 18.0
     },
-    "ENA-USD": {
-      "avg_cost": 0.20016130778123675,
-      "opened_cycle": "2026-10-13T00:00Z",
-      "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 5040.400080269366,
-      "stop_pct": 18.0
-    },
     "FET-USD": {
       "avg_cost": 0.20839393494558386,
       "opened_cycle": "2026-10-13T00:00Z",
       "opened_ts": "2026-10-13T00:04:40Z",
       "qty": 2620.304769903277,
-      "stop_pct": 18.0
-    },
-    "ONDO-USD": {
-      "avg_cost": 0.46700188743142496,
-      "opened_cycle": "2026-10-13T00:00Z",
-      "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 895.3606910219642,
       "stop_pct": 18.0
     },
     "TAO-USD": {
@@ -53,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 22.2673279376757,
-  "spread_usd": 5.094006045625298,
-  "traded_notional_usd": 22966.69050196251,
+  "slippage_usd": 24.202226558512802,
+  "spread_usd": 5.217198064506193,
+  "traded_notional_usd": 24455.557970766273,
   "trades": [
     {
       "cause": "strategy",
@@ -91,6 +77,16 @@
       "cause": "strategy",
       "notional": 128.1482262859033,
       "ts": "2026-10-21T00:05:46Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 1076.8893358632401,
+      "ts": "2026-10-22T00:02:08Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 411.978132940522,
+      "ts": "2026-10-22T00:02:08Z"
     }
   ]
 }

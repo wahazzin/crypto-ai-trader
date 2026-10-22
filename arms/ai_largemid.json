@@ -1,20 +1,20 @@
 {
-  "cash": 3527.2826218730893,
-  "day_start_date": "2026-10-21",
-  "day_start_equity": 9398.31392546661,
+  "cash": 3434.0548645993345,
+  "day_start_date": "2026-10-22",
+  "day_start_equity": 9508.005122504193,
   "extra": {},
-  "fees_usd": 100.593091797691,
+  "fees_usd": 100.96451712547488,
   "halted_until": null,
-  "last_ts": "2026-10-21T23:52:08Z",
+  "last_ts": "2026-10-22T00:02:08Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
   "positions": {
     "AERO-USD": {
-      "avg_cost": 0.7944785634574515,
+      "avg_cost": 0.8002059056859675,
       "opened_cycle": "2026-10-19T00:00Z",
       "opened_ts": "2026-10-19T00:03:12Z",
-      "qty": 387.677075694667,
+      "qty": 500.9428889251012,
       "stop_pct": 18.0
     },
     "BTC-USD": {
@@ -53,15 +53,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 20.218085160794228,
-  "spread_usd": 6.193569630040243,
-  "traded_notional_usd": 25148.272949422757,
+  "slippage_usd": 20.310848729171816,
+  "spread_usd": 6.228682032141669,
+  "traded_notional_usd": 25241.12928136873,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 93.30238206175582,
-      "ts": "2026-10-19T21:34:08Z"
-    },
     {
       "cause": "ai",
       "notional": 136.4654683738792,
@@ -161,6 +156,11 @@
       "cause": "ai_event",
       "notional": 474.68884470233644,
       "ts": "2026-10-21T16:51:48Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 92.85633194597088,
+      "ts": "2026-10-22T00:02:08Z"
     }
   ]
 }
