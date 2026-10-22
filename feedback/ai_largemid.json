@@ -1,10 +1,10 @@
 {
   "events": [],
-  "from": "2026-10-22T15:48Z-event",
+  "from": "2026-10-22T16:58Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "ZRO-USD",
+      "action": "ADD",
+      "asset": "AERO-USD",
       "codes": [],
       "final_weight": 0.05,
       "requested_weight": 0.05,
@@ -12,22 +12,27 @@
     },
     {
       "action": "ADD",
-      "asset": "AVAX-USD",
-      "codes": [
-        "R12_ADD_NOT_HELD_USE_BUY"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.02,
-      "status": "REJECTED"
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.064,
+      "requested_weight": 0.064,
+      "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
+      "asset": "AERO-USD",
+      "cause": "ai_event",
+      "price": 0.7979166855280435,
+      "qty": 230.01641538606165,
+      "side": "buy"
+    },
+    {
       "asset": "ZRO-USD",
       "cause": "ai_event",
-      "price": 1.7662102817004943,
-      "qty": 144.95683682454754,
-      "side": "sell"
+      "price": 1.7701683999999998,
+      "qty": 72.14159121716769,
+      "side": "buy"
     }
   ]
 }

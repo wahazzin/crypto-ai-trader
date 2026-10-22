@@ -20,6 +20,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-22T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-22T16:58Z-event"
       }
     ],
     "exit_below": 0.72,
@@ -33,7 +37,7 @@
     "review_above": 0.96,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level despite recent volume spike.",
-    "updated_cycle": "2026-10-22T15:48Z-event"
+    "updated_cycle": "2026-10-22T16:58Z-event"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -226,6 +230,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-22T15:48Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-22T16:58Z-event"
       }
     ],
     "exit_below": 1.6,
@@ -239,6 +247,6 @@
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit level after reduction of position.",
-    "updated_cycle": "2026-10-22T15:48Z-event"
+    "updated_cycle": "2026-10-22T16:58Z-event"
   }
 }
