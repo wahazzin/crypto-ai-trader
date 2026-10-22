@@ -64,23 +64,25 @@
       {
         "confidence": 80,
         "cycle": "2026-10-20T18:00Z"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
-    "exit_below": 4.5,
+    "exit_below": 4.6,
     "invalidation": [
-      "Price < $4.50"
+      "Price < $4.60"
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
     "reasons": [
-      "Current price $4.9236 > exit $4.50",
-      "Rotation rank 3 with +14.7% 28\u2011day return",
-      "Trend true (price above 50\u2011day SMA and rising)",
-      "RSI ~53 indicating neutral momentum"
+      "Added weight to capture further upside",
+      "Maintaining bullish outlook"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Thesis remains valid; price above exit, strong 28\u2011day return and trend positive.",
-    "updated_cycle": "2026-10-20T18:00Z"
+    "summary": "Increased exposure; tighter stop reflects higher conviction.",
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -107,22 +109,24 @@
       {
         "confidence": 78,
         "cycle": "2026-10-20T18:00Z"
+      },
+      {
+        "confidence": 88,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
-    "exit_below": 173.0,
+    "exit_below": 180.0,
     "invalidation": [
-      "Price < $173.0"
+      "Price < $180.0"
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Price broke above review level $210 and continues upward",
-      "24h return +3.4% and 1h move +5.1% indicate momentum",
-      "Rotation pick rank 1 with strong 28\u2011day return"
+      "Rotation leader with strong momentum"
     ],
     "review_above": 230.0,
     "status": "bullish",
-    "summary": "Review target reached; maintain bullish stance with tighter stop and higher profit target.",
-    "updated_cycle": "2026-10-21T18:31Z-event"
+    "summary": "Added position; stop tightened to protect gains.",
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -153,19 +157,23 @@
       {
         "confidence": 70,
         "cycle": "2026-10-21T15:36Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
-    "exit_below": 1150,
+    "exit_below": 1200.0,
     "invalidation": [
-      "Price < $1150"
+      "Price < $1200"
     ],
     "opened_cycle": "2026-10-21T12:00Z",
     "reasons": [
-      "Added weight to capture further upside"
+      "Trend positive and recent 7\u2011day surge"
     ],
-    "review_above": 1500,
+    "review_above": 1500.0,
     "status": "bullish",
-    "summary": "Increased position to benefit from strong 24h rally.",
-    "updated_cycle": "2026-10-21T15:36Z-event"
+    "summary": "New addition to benefit from short\u2011term rally.",
+    "updated_cycle": "2026-10-22T06:00Z"
   }
 }

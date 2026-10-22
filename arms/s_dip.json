@@ -1,20 +1,20 @@
 {
-  "cash": 7393.9520721843255,
+  "cash": 6411.500557623733,
   "day_start_date": "2026-10-22",
   "day_start_equity": 9946.712563622074,
   "extra": {},
-  "fees_usd": 97.82223188306503,
+  "fees_usd": 101.73638134346581,
   "halted_until": null,
-  "last_ts": "2026-10-22T05:57:23Z",
+  "last_ts": "2026-10-22T06:02:23Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
   "positions": {
     "ADA-USD": {
-      "avg_cost": 0.21730601443996228,
+      "avg_cost": 0.21768290118804687,
       "opened_cycle": "2026-10-15T06:00Z",
       "opened_ts": "2026-10-15T06:02:59Z",
-      "qty": 4464.187324763694,
+      "qty": 6775.965062458026,
       "stop_pct": 18.0
     },
     "AVAX-USD": {
@@ -25,10 +25,10 @@
       "stop_pct": 18.0
     },
     "FET-USD": {
-      "avg_cost": 0.20839393494558386,
+      "avg_cost": 0.19855413844984135,
       "opened_cycle": "2026-10-13T00:00Z",
       "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 2620.304769903277,
+      "qty": 5135.506199623718,
       "stop_pct": 18.0
     },
     "TAO-USD": {
@@ -39,25 +39,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 24.202226558512802,
-  "spread_usd": 5.217198064506193,
-  "traded_notional_usd": 24455.557970766273,
+  "slippage_usd": 25.487143705257406,
+  "spread_usd": 5.353499906220622,
+  "traded_notional_usd": 25434.095335866463,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 871.7070336283052,
-      "ts": "2026-10-20T00:04:31Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 805.9693701846971,
-      "ts": "2026-10-20T00:04:31Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 480.0775907460216,
-      "ts": "2026-10-20T00:04:31Z"
-    },
     {
       "cause": "strategy",
       "notional": 1076.8847174299704,
@@ -87,6 +72,16 @@
       "cause": "strategy",
       "notional": 411.978132940522,
       "ts": "2026-10-22T00:02:08Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 504.91697788691243,
+      "ts": "2026-10-22T06:02:23Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 473.62038721327974,
+      "ts": "2026-10-22T06:02:23Z"
     }
   ]
 }

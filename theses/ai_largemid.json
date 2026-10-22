@@ -12,6 +12,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-21T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
     "exit_below": 0.72,
@@ -25,7 +29,7 @@
     "review_above": 0.96,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-21T12:00Z"
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -115,21 +119,32 @@
     ],
     "opened_cycle": "2026-10-09T12:54Z-event",
     "reasons": [
-      "Trend positive, 30\u2011day return +18%, rotation rank 4."
+      "Trend positive, 30\u2011day return +21%, rotation rank 4."
     ],
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-21T15:11Z-event"
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "ONDO-USD": {
-    "confidence_history": [],
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-22T06:00Z"
+      }
+    ],
+    "exit_below": 0.38,
+    "invalidation": [
+      "Price < $0.38"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [],
+    "reasons": [
+      "Trend positive, 30\u2011day return +0.53%, rotation rank 5."
+    ],
+    "review_above": 0.55,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "summary": "New thesis added based on trend and modest 30\u2011day upside.",
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -148,6 +163,10 @@
       {
         "confidence": 85,
         "cycle": "2026-10-20T01:14Z-event"
+      },
+      {
+        "confidence": 85,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
     "exit_below": 175,
@@ -156,12 +175,12 @@
     ],
     "opened_cycle": "2026-10-15T12:00Z",
     "reasons": [
-      "Rotation rank 1, 30\u2011day return +196%"
+      "Rotation rank 1, 30\u2011day return +196%."
     ],
     "review_above": 230,
     "status": "bullish",
     "summary": "Added weight to top rotation pick with massive upside.",
-    "updated_cycle": "2026-10-20T21:00Z-event"
+    "updated_cycle": "2026-10-22T06:00Z"
   },
   "VVV-USD": {
     "confidence_history": [],
@@ -196,6 +215,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-20T01:14Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-22T06:00Z"
       }
     ],
     "exit_below": 1.6,
@@ -204,11 +227,11 @@
     ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Breakout active, dip signal, rotation rank 2, strong 30\u2011day return"
+      "Breakout active, dip signal, rotation rank 2, strong 30\u2011day return."
     ],
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Increased position after breakout and rotation confirmation.",
-    "updated_cycle": "2026-10-20T21:00Z-event"
+    "updated_cycle": "2026-10-22T06:00Z"
   }
 }
