@@ -154,35 +154,5 @@
     "status": "bullish",
     "summary": "Increased position after confirming continued momentum.",
     "updated_cycle": "2026-10-21T15:36Z-event"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-21T15:36Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-22T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-22T09:07Z-event"
-      }
-    ],
-    "exit_below": 1200.0,
-    "invalidation": [
-      "Price < $1200"
-    ],
-    "opened_cycle": "2026-10-21T12:00Z",
-    "reasons": [
-      "1h move -4% triggered wake\u2011up",
-      "30d return -12% and trend strategy historically negative",
-      "Portfolio weight reduction aligns with risk limits"
-    ],
-    "review_above": 1500.0,
-    "status": "bearish",
-    "summary": "Sharp short\u2011term decline and weak longer\u2011term performance prompt a bearish view; keep existing exit level.",
-    "updated_cycle": "2026-10-22T09:07Z-event"
   }
 }
