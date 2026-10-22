@@ -28,12 +28,12 @@
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Breakout active, dip signal absent, rotation rank 3, trend positive"
+      "Breakout still active, rotation rank 3, trend positive."
     ],
     "review_above": 0.96,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-22T15:18Z-event"
+    "summary": "Thesis unchanged; price remains above exit level despite recent volume spike.",
+    "updated_cycle": "2026-10-22T15:48Z-event"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -45,6 +45,17 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-13T01:45Z-event"
+  },
+  "AVAX-USD": {
+    "confidence_history": [],
+    "exit_below": 7.5,
+    "invalidation": [],
+    "opened_cycle": "2026-10-22T15:48Z-event",
+    "reasons": [],
+    "review_above": 11.5,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-22T15:48Z-event"
   },
   "BTC-USD": {
     "confidence_history": [
@@ -211,6 +222,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-22T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-22T15:48Z-event"
       }
     ],
     "exit_below": 1.6,
@@ -219,11 +234,11 @@
     ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Breakout active, 30\u2011day return +65%, trend positive"
+      "Breakout active, strong 30\u2011day return, trend positive."
     ],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Maintaining bullish thesis, adding to position after breakout confirmation.",
-    "updated_cycle": "2026-10-22T15:18Z-event"
+    "summary": "Thesis unchanged; price above exit level after reduction of position.",
+    "updated_cycle": "2026-10-22T15:48Z-event"
   }
 }
