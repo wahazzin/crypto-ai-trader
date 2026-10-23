@@ -30,7 +30,7 @@
         "cycle": "2026-10-23T00:00Z"
       }
     ],
-    "exit_below": 0.72,
+    "exit_below": 0.68,
     "invalidation": [
       "Price < $0.72"
     ],
