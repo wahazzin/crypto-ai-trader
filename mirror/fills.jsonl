@@ -75,3 +75,4 @@
 {"arm":"ai_large","asset":"ZEC-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":43.928496185995485,"sim_price":1197.011362,"ts":"2026-10-22T16:53:10Z"}
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":53.51350309212215,"sim_price":186.631912,"ts":"2026-10-23T00:03:57Z"}
 {"alpaca_minus_sim_bps":2.21,"arm":"ai_large","asset":"LINK-USD","cause":"ai","filled_avg_price":12.17,"filled_qty":8.481421487,"side":"sell","sim_notional":103.24173148332595,"sim_price":12.172692,"status":"filled","ts":"2026-10-23T06:04:16Z"}
+{"arm":"ai_large","asset":"QNT-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":1297.7657367379772,"sim_price":179.9579938049991,"ts":"2026-10-23T14:19:34Z"}

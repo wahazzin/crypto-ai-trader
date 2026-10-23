@@ -88,54 +88,6 @@
     "summary": "Holding; strong 28d performance, price above exit level.",
     "updated_cycle": "2026-10-22T18:00Z"
   },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-19T00:00Z"
-      },
-      {
-        "confidence": 78,
-        "cycle": "2026-10-19T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-19T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-20T12:00Z"
-      },
-      {
-        "confidence": 82,
-        "cycle": "2026-10-20T14:35Z-event"
-      },
-      {
-        "confidence": 78,
-        "cycle": "2026-10-20T18:00Z"
-      },
-      {
-        "confidence": 88,
-        "cycle": "2026-10-22T06:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-23T00:00Z"
-      }
-    ],
-    "exit_below": 180,
-    "invalidation": [
-      "Price < $180"
-    ],
-    "opened_cycle": "2026-10-19T00:00Z",
-    "reasons": [
-      "Price fell 4% in 24h; tightening exit to protect downside while keeping bullish view"
-    ],
-    "review_above": 210,
-    "status": "bullish",
-    "summary": "Tightened exit level after price pullback.",
-    "updated_cycle": "2026-10-23T06:00Z"
-  },
   "XRP-USD": {
     "confidence_history": [
       {

@@ -155,46 +155,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-23T00:00Z"
   },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-15T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-17T00:55Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-18T16:12Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-20T01:14Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-22T06:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-22T12:00Z"
-      }
-    ],
-    "exit_below": 180,
-    "invalidation": [
-      "Price < $175"
-    ],
-    "opened_cycle": "2026-10-15T12:00Z",
-    "reasons": [
-      "Rotation rank 1, 30\u2011day return +206%, trend positive"
-    ],
-    "review_above": 250,
-    "status": "bullish",
-    "summary": "Increased conviction after strong rotation rank and 30\u2011day performance; added to position.",
-    "updated_cycle": "2026-10-23T00:00Z"
-  },
   "VVV-USD": {
     "confidence_history": [],
     "exit_below": 22.0,
