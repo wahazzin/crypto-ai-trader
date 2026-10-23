@@ -123,18 +123,18 @@
         "cycle": "2026-10-23T00:00Z"
       }
     ],
-    "exit_below": 175.0,
+    "exit_below": 180,
     "invalidation": [
-      "Price < $175.0"
+      "Price < $180"
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Maintain bullish view, tighten exit level closer to stop"
+      "Price fell 4% in 24h; tightening exit to protect downside while keeping bullish view"
     ],
-    "review_above": 210.0,
+    "review_above": 210,
     "status": "bullish",
-    "summary": "Holding; rotation leader with strong upside, adding position",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "summary": "Tightened exit level after price pullback.",
+    "updated_cycle": "2026-10-23T06:00Z"
   },
   "XRP-USD": {
     "confidence_history": [

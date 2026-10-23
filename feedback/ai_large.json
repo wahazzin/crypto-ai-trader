@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-23T00:00Z",
+  "from": "2026-10-23T06:00Z",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "QNT-USD",
+      "action": "REDUCE",
+      "asset": "LINK-USD",
       "codes": [],
-      "final_weight": 0.15,
-      "requested_weight": 0.15,
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
+      "asset": "LINK-USD",
       "cause": "ai",
-      "price": 186.631912,
-      "qty": 0.2867328664141969,
-      "side": "buy"
+      "price": 12.172692,
+      "qty": 8.481421486991206,
+      "side": "sell"
     }
   ]
 }
