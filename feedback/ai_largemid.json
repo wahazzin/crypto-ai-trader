@@ -1,6 +1,40 @@
 {
   "events": [],
-  "from": "2026-10-22T18:00Z",
-  "risk_engine": [],
+  "from": "2026-10-23T00:00Z",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "AERO-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.07,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.09,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [
+        "R4_ALT_CLUSTER",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }

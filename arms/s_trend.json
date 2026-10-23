@@ -1,55 +1,20 @@
 {
-  "cash": 5280.641845308114,
-  "day_start_date": "2026-10-22",
-  "day_start_equity": 9555.086941326721,
+  "cash": 8161.451754360193,
+  "day_start_date": "2026-10-23",
+  "day_start_equity": 9319.381793888297,
   "extra": {},
-  "fees_usd": 51.85091965530729,
+  "fees_usd": 63.42043736234374,
   "halted_until": null,
-  "last_ts": "2026-10-22T23:28:57Z",
+  "last_ts": "2026-10-23T00:03:57Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
   "positions": {
-    "AAVE-USD": {
-      "avg_cost": 145.03803087515578,
-      "opened_cycle": "2026-10-22T18:00Z",
-      "opened_ts": "2026-10-22T18:03:36Z",
-      "qty": 2.0896897822666296,
-      "stop_pct": 18.0
-    },
     "AERO-USD": {
       "avg_cost": 0.7985177199999999,
       "opened_cycle": "2026-10-07T06:00Z",
       "opened_ts": "2026-10-07T06:39:46Z",
       "qty": 401.2136713558515,
-      "stop_pct": 18.0
-    },
-    "ARB-USD": {
-      "avg_cost": 0.18887869,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1696.712619300106,
-      "stop_pct": 18.0
-    },
-    "AVAX-USD": {
-      "avg_cost": 9.76177592448561,
-      "opened_cycle": "2026-10-19T00:00Z",
-      "opened_ts": "2026-10-19T00:03:12Z",
-      "qty": 57.24413431775555,
-      "stop_pct": 18.0
-    },
-    "BCH-USD": {
-      "avg_cost": 275.83577642639926,
-      "opened_cycle": "2026-10-17T00:00Z",
-      "opened_ts": "2026-10-17T00:05:22Z",
-      "qty": 2.496543228670329,
-      "stop_pct": 18.0
-    },
-    "BTC-USD": {
-      "avg_cost": 84317.91021,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 0.003795919730295158,
       "stop_pct": 18.0
     },
     "NEAR-USD": {
@@ -59,25 +24,11 @@
       "qty": 65.010464278081,
       "stop_pct": 18.0
     },
-    "ONDO-USD": {
-      "avg_cost": 0.47272437145774243,
-      "opened_cycle": "2026-10-08T12:00Z",
-      "opened_ts": "2026-10-08T12:03:01Z",
-      "qty": 590.8543270631259,
-      "stop_pct": 18.0
-    },
     "QNT-USD": {
       "avg_cost": 194.36404948161675,
       "opened_cycle": "2026-10-13T12:00Z",
       "opened_ts": "2026-10-13T12:05:18Z",
       "qty": 1.9115826218743148,
-      "stop_pct": 18.0
-    },
-    "SUI-USD": {
-      "avg_cost": 1.0270498791721816,
-      "opened_cycle": "2026-10-13T00:00Z",
-      "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 532.9164557167097,
       "stop_pct": 18.0
     },
     "ZRO-USD": {
@@ -88,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 12.168757454024618,
-  "spread_usd": 2.3097654591228016,
-  "traded_notional_usd": 12962.729913826826,
+  "slippage_usd": 14.599198591740901,
+  "spread_usd": 2.824335916846444,
+  "traded_notional_usd": 15855.109340585943,
   "trades": [
     {
       "cause": "stop",
@@ -101,6 +52,41 @@
       "cause": "strategy",
       "notional": 303.084491159885,
       "ts": "2026-10-22T18:03:36Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 305.8960415517337,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 302.97950578512723,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 520.7139827452012,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 684.7195222074442,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 308.2092005972168,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 252.60325315739806,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 517.2579207149932,
+      "ts": "2026-10-23T00:03:57Z"
     }
   ]
 }

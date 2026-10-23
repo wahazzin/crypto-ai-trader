@@ -117,20 +117,24 @@
       {
         "confidence": 88,
         "cycle": "2026-10-22T06:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-23T00:00Z"
       }
     ],
-    "exit_below": 180.0,
+    "exit_below": 175.0,
     "invalidation": [
-      "Price < $180.0"
+      "Price < $175.0"
     ],
     "opened_cycle": "2026-10-19T00:00Z",
     "reasons": [
-      "Rotation pick, trend true"
+      "Maintain bullish view, tighten exit level closer to stop"
     ],
-    "review_above": 230.0,
+    "review_above": 210.0,
     "status": "bullish",
-    "summary": "Holding; rotation leader, price above exit level.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; rotation leader with strong upside, adding position",
+    "updated_cycle": "2026-10-23T00:00Z"
   },
   "XRP-USD": {
     "confidence_history": [

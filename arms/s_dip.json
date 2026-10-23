@@ -1,11 +1,11 @@
 {
-  "cash": 6411.500557623733,
-  "day_start_date": "2026-10-22",
-  "day_start_equity": 9946.712563622074,
+  "cash": 6831.717624974935,
+  "day_start_date": "2026-10-23",
+  "day_start_equity": 9767.132364682619,
   "extra": {},
-  "fees_usd": 101.73638134346581,
+  "fees_usd": 107.5816196307319,
   "halted_until": null,
-  "last_ts": "2026-10-22T23:28:57Z",
+  "last_ts": "2026-10-23T00:03:57Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
@@ -17,18 +17,18 @@
       "qty": 6775.965062458026,
       "stop_pct": 18.0
     },
+    "AERO-USD": {
+      "avg_cost": 0.7874434749539825,
+      "opened_cycle": "2026-10-23T00:00Z",
+      "opened_ts": "2026-10-23T00:03:57Z",
+      "qty": 657.3470344893971,
+      "stop_pct": 18.0
+    },
     "AVAX-USD": {
       "avg_cost": 9.737400158892521,
       "opened_cycle": "2026-10-16T00:00Z",
       "opened_ts": "2026-10-16T00:03:52Z",
       "qty": 101.33761854549518,
-      "stop_pct": 18.0
-    },
-    "FET-USD": {
-      "avg_cost": 0.19855413844984135,
-      "opened_cycle": "2026-10-13T00:00Z",
-      "opened_ts": "2026-10-13T00:04:40Z",
-      "qty": 5135.506199623718,
       "stop_pct": 18.0
     },
     "TAO-USD": {
@@ -39,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 25.487143705257406,
-  "spread_usd": 5.353499906220622,
-  "traded_notional_usd": 25434.095335866463,
+  "slippage_usd": 28.047213158211125,
+  "spread_usd": 5.739690588690235,
+  "traded_notional_usd": 26895.404907682983,
   "trades": [
     {
       "cause": "strategy",
@@ -82,6 +82,16 @@
       "cause": "strategy",
       "notional": 473.62038721327974,
       "ts": "2026-10-22T06:02:23Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 943.6859387274935,
+      "ts": "2026-10-23T00:03:57Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 517.6236330890262,
+      "ts": "2026-10-23T00:03:57Z"
     }
   ]
 }
