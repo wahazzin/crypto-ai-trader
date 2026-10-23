@@ -12,12 +12,13 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "No breach of exit_below $0.208"
+      "Price remains above $0.208 exit level",
+      "Dip signal active"
     ],
     "review_above": 0.25,
     "status": "neutral",
-    "summary": "Holding; price above exit level, dip signal still present.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; price above exit level, dip signal still present, no review trigger.",
+    "updated_cycle": "2026-10-23T18:00Z"
   },
   "BTC-USD": {
     "confidence_history": [],
@@ -25,12 +26,13 @@
     "invalidation": [],
     "opened_cycle": "2026-10-21T12:00Z",
     "reasons": [
-      "Trend signal true"
+      "Trend signal true earlier",
+      "Price above $80,000 exit level"
     ],
     "review_above": 90000,
     "status": "bullish",
-    "summary": "Holding; trend remains positive, price above exit level.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; trend remains positive, price above exit level, no review trigger.",
+    "updated_cycle": "2026-10-23T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -45,12 +47,12 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Weight within limits"
+      "Price remains above $11.20 exit level"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Holding; price above exit level, weight reduced to meet limits.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; price above exit level, no new signal.",
+    "updated_cycle": "2026-10-23T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -81,12 +83,13 @@
     ],
     "opened_cycle": "2026-10-17T17:06Z-event",
     "reasons": [
-      "Trend true, rotation rank 4"
+      "Trend signal true",
+      "Price above $4.60 exit level"
     ],
     "review_above": 6.5,
     "status": "bullish",
-    "summary": "Holding; strong 28d performance, price above exit level.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; price above exit level, trend still true, no review trigger.",
+    "updated_cycle": "2026-10-23T18:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -105,11 +108,11 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "Position still above exit"
+      "Price remains above $1.20 exit level"
     ],
     "review_above": 1.7,
     "status": "bullish",
-    "summary": "Holding; price above exit level, no breach.",
-    "updated_cycle": "2026-10-22T18:00Z"
+    "summary": "Holding; price above exit level, no new signal.",
+    "updated_cycle": "2026-10-23T18:00Z"
   }
 }
