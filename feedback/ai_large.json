@@ -1,23 +1,17 @@
 {
   "events": [],
-  "from": "2026-10-23T06:00Z",
+  "from": "2026-10-23T12:00Z",
   "risk_engine": [
     {
       "action": "REDUCE",
-      "asset": "LINK-USD",
-      "codes": [],
-      "final_weight": 0.03,
-      "requested_weight": 0.03,
-      "status": "APPROVED"
+      "asset": "NEAR-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "LINK-USD",
-      "cause": "ai",
-      "price": 12.172692,
-      "qty": 8.481421486991206,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }
