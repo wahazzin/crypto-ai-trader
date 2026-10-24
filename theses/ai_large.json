@@ -61,43 +61,6 @@
     "summary": "Holding; price above exit level, no new signal.",
     "updated_cycle": "2026-10-23T18:00Z"
   },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-17T21:56Z-event"
-      },
-      {
-        "confidence": 78,
-        "cycle": "2026-10-20T14:35Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-20T18:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-22T06:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-22T12:00Z"
-      }
-    ],
-    "exit_below": 4.6,
-    "invalidation": [
-      "Price < $4.60"
-    ],
-    "opened_cycle": "2026-10-17T17:06Z-event",
-    "reasons": [
-      "Trend signal true",
-      "Price above $4.60 exit level"
-    ],
-    "review_above": 6.5,
-    "status": "bullish",
-    "summary": "Holding; price above exit level, trend still true, no review trigger.",
-    "updated_cycle": "2026-10-23T18:00Z"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
