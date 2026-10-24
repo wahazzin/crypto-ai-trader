@@ -83,17 +83,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "ETH-USD": {
-    "confidence_history": [],
-    "exit_below": 2320.72,
-    "invalidation": [],
-    "opened_cycle": "2026-10-10T23:21Z-event",
-    "reasons": [],
-    "review_above": 2800,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-24T06:00Z"
-  },
   "LINK-USD": {
     "confidence_history": [],
     "invalidation": [],

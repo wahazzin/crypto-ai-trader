@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-24T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-24T15:16Z-event",
+  "risk_engine": [
+    {
+      "action": "EXIT",
+      "asset": "ETH-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ETH-USD",
+      "cause": "ai_event",
+      "price": 2291.9415200000003,
+      "qty": 0.34213857145654303,
+      "side": "sell"
+    }
+  ]
 }
