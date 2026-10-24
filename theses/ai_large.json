@@ -16,39 +16,12 @@
     ],
     "opened_cycle": "2026-10-21T12:00Z",
     "reasons": [
-      "Trend signal false",
-      "Price below SMA20 and SMA50"
+      "Price remains below SMA20 and SMA50, trend signal false"
     ],
     "review_above": 90000,
     "status": "neutral",
     "summary": "Maintain neutral stance; price remains below moving averages and trend signal is false.",
-    "updated_cycle": "2026-10-24T12:00Z"
-  },
-  "LINK-USD": {
-    "confidence_history": [
-      {
-        "confidence": 80,
-        "cycle": "2026-10-21T18:00Z"
-      },
-      {
-        "confidence": 55,
-        "cycle": "2026-10-24T12:00Z"
-      }
-    ],
-    "exit_below": 11.2,
-    "invalidation": [
-      "Price < $11.20"
-    ],
-    "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [
-      "Price above exit level",
-      "No breakout or dip signals",
-      "Trend false"
-    ],
-    "review_above": 13.5,
-    "status": "bullish",
-    "summary": "Holding but outlook deteriorated; price down and no supporting signals.",
-    "updated_cycle": "2026-10-24T12:00Z"
+    "updated_cycle": "2026-10-24T14:20Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -71,7 +44,7 @@
     "review_above": 210,
     "status": "bullish",
     "summary": "Continue bullish; strong 30\u2011day return, dip and trend signals still active.",
-    "updated_cycle": "2026-10-24T12:00Z"
+    "updated_cycle": "2026-10-24T14:20Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -95,11 +68,12 @@
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
       "Price above exit level",
-      "No supporting trend or dip signals"
+      "Trend false",
+      "Short\u2011term outlook negative"
     ],
     "review_above": 1.7,
     "status": "bullish",
     "summary": "Holding; price above exit level but trend is false and short\u2011term outlook negative.",
-    "updated_cycle": "2026-10-24T12:00Z"
+    "updated_cycle": "2026-10-24T14:20Z-event"
   }
 }
