@@ -4,6 +4,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-23T19:34Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-10-24T12:00Z"
       }
     ],
     "exit_below": 80000,
@@ -17,14 +21,18 @@
     ],
     "review_above": 90000,
     "status": "neutral",
-    "summary": "Reduced exposure as trend signal is false and price is below moving averages.",
-    "updated_cycle": "2026-10-23T19:34Z-event"
+    "summary": "Maintain neutral stance; price remains below moving averages and trend signal is false.",
+    "updated_cycle": "2026-10-24T12:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
       {
         "confidence": 80,
         "cycle": "2026-10-21T18:00Z"
+      },
+      {
+        "confidence": 55,
+        "cycle": "2026-10-24T12:00Z"
       }
     ],
     "exit_below": 11.2,
@@ -33,12 +41,14 @@
     ],
     "opened_cycle": "2026-10-17T18:00Z",
     "reasons": [
-      "Price remains above $11.20 exit level"
+      "Price above exit level",
+      "No breakout or dip signals",
+      "Trend false"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Holding; price above exit level, no new signal.",
-    "updated_cycle": "2026-10-23T18:00Z"
+    "summary": "Holding but outlook deteriorated; price down and no supporting signals.",
+    "updated_cycle": "2026-10-24T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -56,12 +66,12 @@
       "Rotation pick rank 1",
       "Dip signal active",
       "Trend signal true",
-      "30d return +153%"
+      "30\u2011day return +153%"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "New position based on rotation pick, dip and trend signals, and strong 30\u2011day performance.",
-    "updated_cycle": "2026-10-23T19:34Z-event"
+    "summary": "Continue bullish; strong 30\u2011day return, dip and trend signals still active.",
+    "updated_cycle": "2026-10-24T12:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -72,6 +82,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-21T15:36Z-event"
+      },
+      {
+        "confidence": 55,
+        "cycle": "2026-10-24T12:00Z"
       }
     ],
     "exit_below": 1.2,
@@ -80,11 +94,12 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "Price remains above $1.20 exit level"
+      "Price above exit level",
+      "No supporting trend or dip signals"
     ],
     "review_above": 1.7,
     "status": "bullish",
-    "summary": "Holding; price above exit level, no new signal.",
-    "updated_cycle": "2026-10-23T18:00Z"
+    "summary": "Holding; price above exit level but trend is false and short\u2011term outlook negative.",
+    "updated_cycle": "2026-10-24T12:00Z"
   }
 }

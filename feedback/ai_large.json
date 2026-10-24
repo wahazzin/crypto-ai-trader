@@ -1,22 +1,47 @@
 {
   "events": [],
-  "from": "2026-10-24T08:05Z-event",
+  "from": "2026-10-24T12:00Z",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "ADA-USD",
+      "action": "REDUCE",
+      "asset": "BTC-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "LINK-USD",
+      "codes": [],
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
+      "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "XRP-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.01,
+      "status": "REJECTED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ADA-USD",
-      "cause": "ai_event",
-      "price": 0.207735284,
-      "qty": 814.6558242767724,
+      "asset": "BTC-USD",
+      "cause": "ai",
+      "price": 80469.72593432208,
+      "qty": 0.0010980734271056076,
+      "side": "sell"
+    },
+    {
+      "asset": "LINK-USD",
+      "cause": "ai",
+      "price": 11.561087202940044,
+      "qty": 7.042666239278797,
       "side": "sell"
     }
   ]
