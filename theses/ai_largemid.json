@@ -41,7 +41,7 @@
     "review_above": 0.96,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level despite recent volume spike.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
@@ -54,7 +54,7 @@
     "review_above": 0.25,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -65,7 +65,7 @@
     "review_above": 11.5,
     "status": "bullish",
     "summary": "",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "BTC-USD": {
     "confidence_history": [
@@ -81,7 +81,7 @@
     "review_above": 90000,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "ETH-USD": {
     "confidence_history": [],
@@ -92,7 +92,7 @@
     "review_above": 2800,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -101,7 +101,7 @@
     "reasons": [],
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-13T01:45Z-event"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -153,7 +153,7 @@
     "review_above": 6.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -173,7 +173,7 @@
     "review_above": 210.0,
     "status": "bullish",
     "summary": "New thesis based on top rotation rank, positive trend and dip signal.",
-    "updated_cycle": "2026-10-23T18:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "VVV-USD": {
     "confidence_history": [],
@@ -193,7 +193,7 @@
     "reasons": [],
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -241,6 +241,6 @@
     "review_above": 2.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit level after reduction of position.",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "updated_cycle": "2026-10-24T06:00Z"
   }
 }
