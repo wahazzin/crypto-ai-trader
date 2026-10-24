@@ -1,31 +1,28 @@
 {
-  "cash": 8226.397960415234,
-  "day_start_date": "2026-10-23",
-  "day_start_equity": 9246.281166235045,
+  "cash": 9107.22661018854,
+  "day_start_date": "2026-10-24",
+  "day_start_equity": 9114.580641730834,
   "extra": {},
-  "fees_usd": 64.52490682390726,
+  "fees_usd": 68.06237128082817,
   "halted_until": null,
-  "last_ts": "2026-10-23T23:55:11Z",
+  "last_ts": "2026-10-24T00:05:11Z",
   "name": "s_breakout",
   "no_buys_until": null,
   "peak_equity": 10054.276407381865,
-  "positions": {
-    "AERO-USD": {
-      "avg_cost": 0.800978528520367,
-      "opened_cycle": "2026-10-07T06:00Z",
-      "opened_ts": "2026-10-07T06:39:46Z",
-      "qty": 1215.7726114784768,
-      "stop_pct": 18.0
-    }
-  },
-  "slippage_usd": 16.660658874075967,
-  "spread_usd": 3.850252572305865,
-  "traded_notional_usd": 16131.226705976816,
+  "positions": {},
+  "slippage_usd": 17.936261201459597,
+  "spread_usd": 4.032618464027617,
+  "traded_notional_usd": 17015.592820207043,
   "trades": [
     {
       "cause": "stop",
       "notional": 857.5444050804632,
       "ts": "2026-10-23T23:00:00Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 884.3661142302276,
+      "ts": "2026-10-24T00:05:11Z"
     }
   ]
 }
