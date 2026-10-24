@@ -1,25 +1,4 @@
 {
-  "ADA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-21T15:06Z-event"
-      }
-    ],
-    "exit_below": 0.208,
-    "invalidation": [
-      "Price < $0.208"
-    ],
-    "opened_cycle": "2026-10-17T18:00Z",
-    "reasons": [
-      "Price remains above $0.208 exit level",
-      "Dip signal active"
-    ],
-    "review_above": 0.25,
-    "status": "neutral",
-    "summary": "Holding; price above exit level, dip signal still present, no review trigger.",
-    "updated_cycle": "2026-10-23T18:00Z"
-  },
   "BTC-USD": {
     "confidence_history": [
       {

@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-24",
-      "calls_today": 1,
-      "last_call": "2026-10-24T00:40:11Z"
+      "calls_today": 2,
+      "last_call": "2026-10-24T08:05:31Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-23",
@@ -64,6 +64,7 @@
     "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-10-20T21:30:47Z",
     "ai_largemid|ZRO-USD:volume": "2026-10-23T20:04:50Z",
+    "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
     "ai_large|ADA-USD:volume": "2026-10-23T23:25:11Z",
@@ -113,5 +114,5 @@
     "ts": "2026-10-24T07:15:31Z"
   },
   "last_heartbeat": "2026-10-24T07:20:31Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
