@@ -6,21 +6,21 @@
         "cycle": "2026-10-23T19:34Z-event"
       }
     ],
-    "exit_below": 150,
+    "exit_below": 155,
     "invalidation": [
-      "Price < $150"
+      "Price < $155"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
+      "30\u2011day return still strong (+156%)",
+      "Dip and trend signals active",
       "Rotation pick rank 1",
-      "Dip signal active",
-      "Trend signal true",
-      "30\u2011day return +154%"
+      "Price slipped 2.9% below avg cost"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "Maintain bullish stance; strong 30\u2011day return, dip and trend signals still active.",
-    "updated_cycle": "2026-10-24T15:21Z-event"
+    "summary": "Maintain bullish stance but tighten downside protection after recent pullback.",
+    "updated_cycle": "2026-10-24T18:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -43,13 +43,14 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "Trend false",
-      "24h return -3.11%",
-      "RSI near oversold"
+      "24h return -2.66%",
+      "Trend signal false",
+      "RSI near oversold",
+      "Price still above exit_below $1.20"
     ],
     "review_above": 1.7,
     "status": "neutral",
     "summary": "Holding but outlook weakened; trend false and short\u2011term momentum negative.",
-    "updated_cycle": "2026-10-24T15:21Z-event"
+    "updated_cycle": "2026-10-24T18:00Z"
   }
 }

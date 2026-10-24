@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-24T15:21Z-event",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai_event",
-      "price": 79305.305766,
-      "qty": 0.0021841208676072663,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-24T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
