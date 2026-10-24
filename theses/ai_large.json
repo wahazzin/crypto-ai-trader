@@ -21,7 +21,7 @@
     "review_above": 90000,
     "status": "neutral",
     "summary": "Maintain neutral stance; price remains below moving averages and trend signal is false.",
-    "updated_cycle": "2026-10-24T14:20Z-event"
+    "updated_cycle": "2026-10-24T14:50Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -44,7 +44,7 @@
     "review_above": 210,
     "status": "bullish",
     "summary": "Continue bullish; strong 30\u2011day return, dip and trend signals still active.",
-    "updated_cycle": "2026-10-24T14:20Z-event"
+    "updated_cycle": "2026-10-24T14:50Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -67,13 +67,14 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "Price above exit level",
       "Trend false",
-      "Short\u2011term outlook negative"
+      "24h return -2.92%",
+      "Confidence reduced to 55",
+      "RSI near oversold"
     ],
     "review_above": 1.7,
-    "status": "bullish",
-    "summary": "Holding; price above exit level but trend is false and short\u2011term outlook negative.",
-    "updated_cycle": "2026-10-24T14:20Z-event"
+    "status": "neutral",
+    "summary": "Holding but outlook weakened; trend false and short\u2011term momentum negative.",
+    "updated_cycle": "2026-10-24T14:50Z-event"
   }
 }
