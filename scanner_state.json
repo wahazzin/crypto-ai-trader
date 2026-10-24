@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-24",
-      "calls_today": 4,
-      "last_call": "2026-10-24T14:50:52Z"
+      "calls_today": 5,
+      "last_call": "2026-10-24T15:21:13Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-24",
@@ -70,10 +70,11 @@
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
     "ai_large|ADA-USD:volume": "2026-10-23T23:25:11Z",
+    "ai_large|BTC-USD:exit_below:80000": "2026-10-24T15:21:13Z",
     "ai_large|BTC-USD:volume": "2026-10-20T14:35:09Z",
     "ai_large|ETH-USD:exit_below:2420": "2026-10-14T14:42:00Z",
-    "ai_large|ETH-USD:volume": "2026-10-20T14:35:09Z",
-    "ai_large|LINK-USD:volume": "2026-10-21T15:36:48Z",
+    "ai_large|ETH-USD:volume": "2026-10-24T15:21:13Z",
+    "ai_large|LINK-USD:volume": "2026-10-24T15:21:13Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
     "ai_large|NEAR-USD:exit_below:4.7": "2026-10-08T15:48:22Z",
     "ai_large|NEAR-USD:exit_below:5.0": "2026-10-16T17:15:01Z",
@@ -116,5 +117,5 @@
     "ts": "2026-10-24T11:40:51Z"
   },
   "last_heartbeat": "2026-10-24T14:25:52Z",
-  "scans_since_heartbeat": 7
+  "scans_since_heartbeat": 8
 }

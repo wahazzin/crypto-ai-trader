@@ -1,28 +1,4 @@
 {
-  "BTC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-23T19:34Z-event"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-10-24T12:00Z"
-      }
-    ],
-    "exit_below": 80000,
-    "invalidation": [
-      "Price < $80,000"
-    ],
-    "opened_cycle": "2026-10-21T12:00Z",
-    "reasons": [
-      "Price remains below SMA20 and SMA50, trend signal false"
-    ],
-    "review_above": 90000,
-    "status": "neutral",
-    "summary": "Maintain neutral stance; price remains below moving averages and trend signal is false.",
-    "updated_cycle": "2026-10-24T14:50Z-event"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
@@ -39,12 +15,12 @@
       "Rotation pick rank 1",
       "Dip signal active",
       "Trend signal true",
-      "30\u2011day return +153%"
+      "30\u2011day return +154%"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "Continue bullish; strong 30\u2011day return, dip and trend signals still active.",
-    "updated_cycle": "2026-10-24T14:50Z-event"
+    "summary": "Maintain bullish stance; strong 30\u2011day return, dip and trend signals still active.",
+    "updated_cycle": "2026-10-24T15:21Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -68,13 +44,12 @@
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
       "Trend false",
-      "24h return -2.92%",
-      "Confidence reduced to 55",
+      "24h return -3.11%",
       "RSI near oversold"
     ],
     "review_above": 1.7,
     "status": "neutral",
     "summary": "Holding but outlook weakened; trend false and short\u2011term momentum negative.",
-    "updated_cycle": "2026-10-24T14:50Z-event"
+    "updated_cycle": "2026-10-24T15:21Z-event"
   }
 }
