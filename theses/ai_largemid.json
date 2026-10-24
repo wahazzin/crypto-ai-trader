@@ -103,58 +103,6 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 85,
-        "cycle": "2026-10-11T06:00Z"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-11T17:12Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-11T18:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-15T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-18T18:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-20T01:14Z-event"
-      },
-      {
-        "confidence": 85,
-        "cycle": "2026-10-21T12:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-21T15:11Z-event"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-10-23T00:00Z"
-      }
-    ],
-    "exit_below": 4.5,
-    "invalidation": [
-      "Price < $4.5"
-    ],
-    "opened_cycle": "2026-10-09T12:54Z-event",
-    "reasons": [
-      "Trend positive, 30\u2011day return +21%, rotation rank 4."
-    ],
-    "review_above": 6.5,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-24T06:00Z"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
