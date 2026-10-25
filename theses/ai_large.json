@@ -58,6 +58,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-25T18:07Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-25T21:43Z-event"
       }
     ],
     "exit_below": 165,
@@ -66,14 +70,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Rotation pick (rank\u202f1)",
+      "Rotation pick rank 1",
       "Dip signal active",
-      "Strong recent price momentum"
+      "Recent 24h gain of +8.65%"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Maintaining QNT position, rotation pick and dip signal still valid; weight reduced for compliance.",
-    "updated_cycle": "2026-10-25T18:07Z-event"
+    "summary": "Increased position and tightened stop loss; thesis still valid.",
+    "updated_cycle": "2026-10-25T21:43Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
