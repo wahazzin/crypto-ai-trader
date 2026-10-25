@@ -113,9 +113,9 @@
     "ts": "2026-10-25T04:36:53Z"
   },
   "last_data_fault": {
-    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-25T04:46:54Z"
+    "error": "AERO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-25T05:16:53Z"
   },
   "last_heartbeat": "2026-10-25T04:36:53Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
