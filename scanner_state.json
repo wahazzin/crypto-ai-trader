@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-25",
-      "calls_today": 3,
-      "last_call": "2026-10-25T15:02:41Z"
+      "calls_today": 4,
+      "last_call": "2026-10-25T15:32:41Z"
     }
   },
   "fired": {
@@ -27,7 +27,7 @@
     "ai_largemid|BCH-USD:volume": "2026-10-23T23:05:11Z",
     "ai_largemid|BTC-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|ENA-USD:move": "2026-10-25T15:02:41Z",
-    "ai_largemid|ENA-USD:volume": "2026-10-23T17:14:50Z",
+    "ai_largemid|ENA-USD:volume": "2026-10-25T15:32:41Z",
     "ai_largemid|ETH-USD:exit_below:2320.72": "2026-10-24T15:16:14Z",
     "ai_largemid|ETH-USD:volume": "2026-10-24T15:16:14Z",
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
@@ -118,5 +118,5 @@
     "ts": "2026-10-25T14:27:41Z"
   },
   "last_heartbeat": "2026-10-25T14:47:41Z",
-  "scans_since_heartbeat": 2
+  "scans_since_heartbeat": 3
 }
