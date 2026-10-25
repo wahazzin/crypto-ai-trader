@@ -8,6 +8,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-25T16:32Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-10-25T18:00Z"
       }
     ],
     "exit_below": 4.2,
@@ -20,10 +24,10 @@
       "Trend positive",
       "Recent volume spike"
     ],
-    "review_above": 5.0,
+    "review_above": 5.5,
     "status": "bullish",
-    "summary": "Holding NEAR, price above exit level; volume spike supports thesis.",
-    "updated_cycle": "2026-10-25T16:32Z-event"
+    "summary": "Holding NEAR, price above exit level; volume spike and dip signal still support thesis.",
+    "updated_cycle": "2026-10-25T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -42,6 +46,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-25T16:32Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-25T18:00Z"
       }
     ],
     "exit_below": 165,
@@ -53,10 +61,10 @@
       "Weight compliance",
       "Rotation pick and dip signal still valid"
     ],
-    "review_above": 210,
+    "review_above": 230,
     "status": "bullish",
-    "summary": "Maintaining QNT position, adjusting weight to respect asset limit.",
-    "updated_cycle": "2026-10-25T16:32Z-event"
+    "summary": "Maintaining QNT position, rotation pick and dip signal still valid.",
+    "updated_cycle": "2026-10-25T18:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -82,6 +90,6 @@
     "review_above": 1.7,
     "status": "neutral",
     "summary": "No new signals; position unchanged.",
-    "updated_cycle": "2026-10-25T16:32Z-event"
+    "updated_cycle": "2026-10-25T18:00Z"
   }
 }

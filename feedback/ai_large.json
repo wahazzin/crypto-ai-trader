@@ -1,32 +1,33 @@
 {
   "events": [],
-  "from": "2026-10-25T16:32Z-event",
+  "from": "2026-10-25T18:00Z",
   "risk_engine": [
-    {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
-    },
     {
       "action": "ADD",
       "asset": "NEAR-USD",
       "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
+      "final_weight": 0.08,
+      "requested_weight": 0.08,
       "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "QNT-USD",
+      "codes": [
+        "R1_ASSET_CAP",
+        "NO_ROOM_TO_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.2,
+      "status": "REJECTED"
     }
   ],
   "your_fills": [
     {
       "asset": "NEAR-USD",
-      "cause": "ai_event",
-      "price": 4.560621990151866,
-      "qty": 37.27769891742596,
+      "cause": "ai",
+      "price": 4.653890659999999,
+      "qty": 56.60440864450988,
       "side": "buy"
     }
   ]
