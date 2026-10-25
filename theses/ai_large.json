@@ -4,6 +4,10 @@
       {
         "confidence": 60,
         "cycle": "2026-10-25T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-25T16:32Z-event"
       }
     ],
     "exit_below": 4.2,
@@ -12,12 +16,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Dip signal present but 30\u2011day return negative, trend still up"
+      "Dip signal active",
+      "Trend positive",
+      "Recent volume spike"
     ],
     "review_above": 5.0,
     "status": "bullish",
-    "summary": "Holding with tightened downside; price above exit level.",
-    "updated_cycle": "2026-10-25T12:00Z"
+    "summary": "Holding NEAR, price above exit level; volume spike supports thesis.",
+    "updated_cycle": "2026-10-25T16:32Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -32,6 +38,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-25T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-10-25T16:32Z-event"
       }
     ],
     "exit_below": 165,
@@ -40,13 +50,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Continues to rank 1 in 28\u2011day return, price above exit level",
-      "Trend remains positive"
+      "Weight compliance",
+      "Rotation pick and dip signal still valid"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "Maintaining bullish outlook; rotation pick and dip signal still valid.",
-    "updated_cycle": "2026-10-25T12:00Z"
+    "summary": "Maintaining QNT position, adjusting weight to respect asset limit.",
+    "updated_cycle": "2026-10-25T16:32Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -68,12 +78,10 @@
       "Price < $1.20"
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
-    "reasons": [
-      "Price stable, no breakout or dip signals"
-    ],
+    "reasons": [],
     "review_above": 1.7,
     "status": "neutral",
-    "summary": "Position unchanged; no new signals.",
-    "updated_cycle": "2026-10-25T12:00Z"
+    "summary": "No new signals; position unchanged.",
+    "updated_cycle": "2026-10-25T16:32Z-event"
   }
 }
