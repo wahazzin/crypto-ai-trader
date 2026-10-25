@@ -1,4 +1,25 @@
 {
+  "AAVE-USD": {
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-10-25T17:22Z-event"
+      }
+    ],
+    "exit_below": 130.0,
+    "invalidation": [
+      "Price < $130"
+    ],
+    "opened_cycle": "2026-10-25T17:22Z-event",
+    "reasons": [
+      "Price dropped >8% in 3 days while 50\u2011day trend remains up",
+      "Volume spike and modest 24h upside support short\u2011term rebound"
+    ],
+    "review_above": 150.0,
+    "status": "bullish",
+    "summary": "Opened bullish thesis based on dip signal and recent volume spike.",
+    "updated_cycle": "2026-10-25T17:22Z-event"
+  },
   "ARB-USD": {
     "confidence_history": [],
     "exit_below": 0.155,
@@ -86,15 +107,24 @@
     "updated_cycle": "2026-10-25T00:00Z"
   },
   "VVV-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-25T17:22Z-event"
+      }
+    ],
     "exit_below": 22.0,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $22"
+    ],
     "opened_cycle": "2026-10-19T21:34Z-event",
-    "reasons": [],
-    "review_above": 28.0,
+    "reasons": [
+      "Continued dip signal and strong short\u2011term momentum"
+    ],
+    "review_above": 30.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price stays above exit level.",
-    "updated_cycle": "2026-10-25T00:00Z"
+    "summary": "Thesis reaffirmed after 1h +4.1% move and volume spike; price still below review target.",
+    "updated_cycle": "2026-10-25T17:22Z-event"
   },
   "XRP-USD": {
     "confidence_history": [],
