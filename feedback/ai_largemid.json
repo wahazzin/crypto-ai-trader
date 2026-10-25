@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-25T06:01Z-event",
-  "risk_engine": [
-    {
-      "action": "EXIT",
-      "asset": "AERO-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "AERO-USD",
-      "cause": "ai_event",
-      "price": 0.6783313941929578,
-      "qty": 631.6438444681269,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-25T06:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }

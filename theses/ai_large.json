@@ -1,20 +1,34 @@
 {
   "NEAR-USD": {
-    "confidence_history": [],
-    "exit_below": 4.0,
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 60,
+        "cycle": "2026-10-25T06:00Z"
+      }
+    ],
+    "exit_below": 4.2,
+    "invalidation": [
+      "Price < $4.20"
+    ],
     "opened_cycle": "2026-10-25T00:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price dropped 4% in 24h, approaching prior exit level",
+      "Dip signal but strategy expectancy negative"
+    ],
     "review_above": 5.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-25T00:00Z"
+    "summary": "Tightened downside protection after price decline.",
+    "updated_cycle": "2026-10-25T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
       {
         "confidence": 85,
         "cycle": "2026-10-23T19:34Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-25T06:00Z"
       }
     ],
     "exit_below": 165,
@@ -23,14 +37,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price still above prior exit level but has slipped 2.9% below average cost",
-      "Rotation pick rank 1 and dip signal active support continued upside",
-      "Want to limit potential loss if further downside occurs"
+      "Rotation pick rank 1, dip signal active, short\u2011term price strength"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "Tighten downside protection after recent pullback while maintaining bullish stance.",
-    "updated_cycle": "2026-10-25T00:00Z"
+    "summary": "Added to position, maintaining bullish outlook.",
+    "updated_cycle": "2026-10-25T06:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -52,13 +64,10 @@
       "Price < $1.20"
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
-    "reasons": [
-      "24h return modestly positive but trend signal false",
-      "RSI near oversold but no clear catalyst"
-    ],
+    "reasons": [],
     "review_above": 1.7,
     "status": "neutral",
     "summary": "Holding position; outlook unchanged.",
-    "updated_cycle": "2026-10-25T00:00Z"
+    "updated_cycle": "2026-10-25T06:00Z"
   }
 }
