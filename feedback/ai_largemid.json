@@ -1,6 +1,34 @@
 {
   "events": [],
-  "from": "2026-10-25T06:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-25T12:00Z",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R1_ASSET_CAP",
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.12,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": 0.04,
+      "requested_weight": 0.04,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "QNT-USD",
+      "cause": "ai",
+      "price": 182.4172870793332,
+      "qty": 0.9324115630928198,
+      "side": "buy"
+    }
+  ]
 }
