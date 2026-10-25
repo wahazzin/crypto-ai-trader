@@ -46,6 +46,17 @@
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-25T00:00Z"
   },
+  "NEAR-USD": {
+    "confidence_history": [],
+    "exit_below": 4.28,
+    "invalidation": [],
+    "opened_cycle": "2026-10-25T15:02Z-event",
+    "reasons": [],
+    "review_above": 4.74,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-25T15:02Z-event"
+  },
   "QNT-USD": {
     "confidence_history": [
       {
