@@ -1,4 +1,15 @@
 {
+  "NEAR-USD": {
+    "confidence_history": [],
+    "exit_below": 4.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-25T00:00Z",
+    "reasons": [],
+    "review_above": 5.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-25T00:00Z"
+  },
   "QNT-USD": {
     "confidence_history": [
       {
@@ -6,21 +17,20 @@
         "cycle": "2026-10-23T19:34Z-event"
       }
     ],
-    "exit_below": 155,
+    "exit_below": 165,
     "invalidation": [
-      "Price < $155"
+      "Price < $165"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "30\u2011day return still strong (+156%)",
-      "Dip and trend signals active",
-      "Rotation pick rank 1",
-      "Price slipped 2.9% below avg cost"
+      "Price still above prior exit level but has slipped 2.9% below average cost",
+      "Rotation pick rank 1 and dip signal active support continued upside",
+      "Want to limit potential loss if further downside occurs"
     ],
     "review_above": 210,
     "status": "bullish",
-    "summary": "Maintain bullish stance but tighten downside protection after recent pullback.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Tighten downside protection after recent pullback while maintaining bullish stance.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -43,14 +53,12 @@
     ],
     "opened_cycle": "2026-10-21T15:06Z-event",
     "reasons": [
-      "24h return -2.66%",
-      "Trend signal false",
-      "RSI near oversold",
-      "Price still above exit_below $1.20"
+      "24h return modestly positive but trend signal false",
+      "RSI near oversold but no clear catalyst"
     ],
     "review_above": 1.7,
     "status": "neutral",
-    "summary": "Holding but outlook weakened; trend false and short\u2011term momentum negative.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Holding position; outlook unchanged.",
+    "updated_cycle": "2026-10-25T00:00Z"
   }
 }

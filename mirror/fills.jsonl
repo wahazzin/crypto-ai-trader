@@ -84,3 +84,4 @@
 {"alpaca_minus_sim_bps":-1.09,"arm":"ai_large","asset":"BTC-USD","cause":"ai","filled_avg_price":80478.498249697,"filled_qty":0.001098073,"side":"sell","sim_notional":88.36166773495003,"sim_price":80469.72593432208,"status":"filled","ts":"2026-10-24T12:05:51Z"}
 {"alpaca_minus_sim_bps":4.83,"arm":"ai_large","asset":"LINK-USD","cause":"ai","filled_avg_price":11.5555,"filled_qty":7.042666239,"side":"sell","sim_notional":81.420878533504,"sim_price":11.561087202940044,"status":"filled","ts":"2026-10-24T12:05:51Z"}
 {"alpaca_minus_sim_bps":-2.84,"arm":"ai_large","asset":"BTC-USD","cause":"ai_event","filled_avg_price":79327.84,"filled_qty":0.002063772,"side":"sell","sim_notional":173.21237323549548,"sim_price":79305.305766,"status":"filled","ts":"2026-10-24T15:21:13Z"}
+{"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":396.11654383524683,"sim_price":4.49368727926213,"ts":"2026-10-25T00:06:32Z"}

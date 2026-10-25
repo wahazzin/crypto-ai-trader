@@ -39,26 +39,22 @@
       "Price < $0.72"
     ],
     "opened_cycle": "2026-10-19T00:00Z",
-    "reasons": [
-      "Outlook -1, price down 8.8% in 24h"
-    ],
+    "reasons": [],
     "review_above": 0.96,
     "status": "bullish",
-    "summary": "Reduced position to 5% weight; thesis still valid while price remains above exit level.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Thesis unchanged; price remains above exit level despite short\u2011term dip.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "ARB-USD": {
     "confidence_history": [],
     "exit_below": 0.155,
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "Dip signal present, price stable."
-    ],
+    "reasons": [],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-24T06:00Z"
+    "summary": "Thesis unchanged; price stays above exit level and below review target.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -81,13 +77,11 @@
     "exit_below": 78000,
     "invalidation": [],
     "opened_cycle": "2026-10-10T06:10Z-event",
-    "reasons": [
-      "Outlook -1"
-    ],
+    "reasons": [],
     "review_above": 90000,
     "status": "bullish",
-    "summary": "Holding; modestly negative outlook but price above exit level.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Thesis unchanged; modestly negative outlook but price above exit level.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -96,7 +90,7 @@
     "reasons": [],
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-24T06:00Z"
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -110,13 +104,11 @@
       "Price < $150"
     ],
     "opened_cycle": "2026-10-23T18:00Z",
-    "reasons": [
-      "Outlook 0"
-    ],
+    "reasons": [],
     "review_above": 210.0,
     "status": "bullish",
-    "summary": "Holding; neutral outlook, price above exit level.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Thesis unchanged; neutral outlook, price above exit level.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "VVV-USD": {
     "confidence_history": [],
@@ -126,8 +118,8 @@
     "reasons": [],
     "review_above": 28.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-23T00:00Z"
+    "summary": "Thesis unchanged; price stays above exit level.",
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "XRP-USD": {
     "confidence_history": [],
@@ -136,7 +128,7 @@
     "reasons": [],
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-24T06:00Z"
+    "updated_cycle": "2026-10-25T00:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -178,12 +170,10 @@
       "Price < $1.60"
     ],
     "opened_cycle": "2026-10-17T12:00Z",
-    "reasons": [
-      "Outlook 0"
-    ],
+    "reasons": [],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Holding; neutral outlook, price above exit level.",
-    "updated_cycle": "2026-10-24T18:00Z"
+    "summary": "Thesis unchanged; price above exit level with strong short\u2011term upside.",
+    "updated_cycle": "2026-10-25T00:00Z"
   }
 }

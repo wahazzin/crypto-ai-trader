@@ -1,22 +1,15 @@
 {
-  "cash": 6433.939220487098,
-  "day_start_date": "2026-10-24",
-  "day_start_equity": 9253.885748606668,
+  "cash": 5958.502686576263,
+  "day_start_date": "2026-10-25",
+  "day_start_equity": 9168.383426119974,
   "extra": {},
-  "fees_usd": 72.6284906284502,
+  "fees_usd": 81.80168155740974,
   "halted_until": null,
-  "last_ts": "2026-10-24T23:36:32Z",
+  "last_ts": "2026-10-25T00:06:32Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
   "positions": {
-    "BCH-USD": {
-      "avg_cost": 280.78993358339295,
-      "opened_cycle": "2026-10-24T00:00Z",
-      "opened_ts": "2026-10-24T00:05:11Z",
-      "qty": 3.300185713024614,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 4.779976470129087,
       "opened_cycle": "2026-10-08T12:00Z",
@@ -25,69 +18,24 @@
       "stop_pct": 18.0
     },
     "QNT-USD": {
-      "avg_cost": 194.36404948161675,
+      "avg_cost": 182.8351590614333,
       "opened_cycle": "2026-10-13T12:00Z",
       "opened_ts": "2026-10-13T12:05:18Z",
-      "qty": 1.9115826218743148,
+      "qty": 7.691155398450886,
       "stop_pct": 18.0
     },
     "ZRO-USD": {
-      "avg_cost": 1.840490770964204,
+      "avg_cost": 1.782523758024841,
       "opened_cycle": "2026-10-15T06:00Z",
       "opened_ts": "2026-10-15T06:02:59Z",
-      "qty": 86.41835475405978,
+      "qty": 282.8360847209651,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 17.05078136629067,
-  "spread_usd": 3.262050567950036,
-  "traded_notional_usd": 18157.122657112555,
+  "slippage_usd": 19.006460247926807,
+  "spread_usd": 3.9252515109182915,
+  "traded_notional_usd": 20450.42038935244,
   "trades": [
-    {
-      "cause": "stop",
-      "notional": 262.3558701014571,
-      "ts": "2026-10-22T16:50:00Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 303.084491159885,
-      "ts": "2026-10-22T18:03:36Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 305.8960415517337,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 302.97950578512723,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 520.7139827452012,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 684.7195222074442,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 308.2092005972168,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 252.60325315739806,
-      "ts": "2026-10-23T00:03:57Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 517.2579207149932,
-      "ts": "2026-10-23T00:03:57Z"
-    },
     {
       "cause": "strategy",
       "notional": 291.85441795981177,
@@ -102,6 +50,21 @@
       "cause": "strategy",
       "notional": 1083.4999713937561,
       "ts": "2026-10-24T00:05:11Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 913.5171946290047,
+      "ts": "2026-10-25T00:06:32Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 1034.670681335791,
+      "ts": "2026-10-25T00:06:32Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 345.1098562750895,
+      "ts": "2026-10-25T00:06:32Z"
     }
   ]
 }
