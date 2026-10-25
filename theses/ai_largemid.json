@@ -95,13 +95,13 @@
         "cycle": "2026-10-23T18:00Z"
       }
     ],
-    "exit_below": 150.0,
+    "exit_below": 170.0,
     "invalidation": [
       "Price < $150"
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [],
-    "review_above": 210.0,
+    "review_above": 220.0,
     "status": "bullish",
     "summary": "Thesis unchanged; neutral outlook, price above exit level.",
     "updated_cycle": "2026-10-25T00:00Z"
