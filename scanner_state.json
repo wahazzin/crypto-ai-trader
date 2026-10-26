@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-26",
-      "calls_today": 4,
-      "last_call": "2026-10-26T12:54:00Z"
+      "calls_today": 5,
+      "last_call": "2026-10-26T15:19:00Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-26",
@@ -97,7 +97,7 @@
     "ai_large|XRP-USD:volume": "2026-10-21T15:06:48Z",
     "ai_large|ZEC-USD:exit_below:1200.0": "2026-10-22T16:53:10Z",
     "ai_large|ZEC-USD:move": "2026-10-23T22:50:12Z",
-    "ai_large|ZEC-USD:volume": "2026-10-20T14:35:09Z"
+    "ai_large|ZEC-USD:volume": "2026-10-26T15:19:00Z"
   },
   "heartbeat": {
     "equity": {
@@ -119,5 +119,5 @@
     "ts": "2026-10-26T12:59:01Z"
   },
   "last_heartbeat": "2026-10-26T14:24:00Z",
-  "scans_since_heartbeat": 4
+  "scans_since_heartbeat": 5
 }
