@@ -399,3 +399,15 @@ got a valid trading answer (1,403 tokens) using 331 neurons, so ~30 backup answe
 Change: experiment.json backup endpoint OpenRouter → Cloudflare (amendment request A2, applied by the loop
 on its next run). Groq stays first. Model, prompt, settings, rules and arms unchanged. Missed cycles before
 the switch stay missed (they count against the 85% coverage rule; nothing is back-filled).
+
+## 2026-10-26: weekly report health/drawdown fixes (reporting only)
+
+Weekly review W43. (1) The health line "AI tokens … 210,709/day vs free cap 200,000/day (105% used)" added up the
+tokens of BOTH providers and compared them with Groq's daily cap; Groq itself used ~70,700 tokens/day (busiest day
+115,883 = 58%). Meanwhile the backup's own free limit was not watched: Cloudflare used an estimated ~5,700
+neurons/day, busiest day ~9,190 of 10,000 (2026-10-20, 92%). The report now shows Groq and Cloudflare separately
+(Cloudflare neurons estimated from tokens at list prices, calibrated on the 2026-10-14 probe: 331 neurons).
+(2) "Max DD" since start could be smaller than "Drawdown now" (s_breakout: -9.09% vs -9.42%) because Max DD was
+computed from journal rows only while DD now uses the engine's all-time peak; since-start Max DD now includes the
+engine's drawdown, and the headers say which peak each column uses. analytics/weekly.py only (not fingerprinted);
+no rule, arm, prompt or risk limit changed. Tests: tests/test_crypto_ai_weekly.py.

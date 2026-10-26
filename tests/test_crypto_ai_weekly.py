@@ -62,3 +62,24 @@ class TestSpyWindow(unittest.TestCase):
                               datetime(2026, 10, 12, 0, 0, tzinfo=timezone.utc))
         self.assertAlmostEqual(r2, 778.51 / 777.15 - 1)       # start after that day's close
 
+
+
+class TestHealthAndDrawdown(unittest.TestCase):
+    """2026-10-26: health line counted every provider's tokens against Groq's cap; Max DD since start could be
+    smaller than DD now (s_breakout W43: DD now -9.42% vs Max DD -9.09%)."""
+
+    def test_provider_usage_splits_groq_and_cloudflare(self):
+        rows = [{"provider": "groq", "ts": "2026-10-20T00:00:00Z", "tokens_in": 6000, "tokens_out": 2000},
+                {"provider": "cloudflare", "ts": "2026-10-20T06:00:00Z", "tokens_in": 7397, "tokens_out": 1403},
+                {"provider": "cloudflare", "ts": "2026-10-21T06:00:00Z", "tokens_in": 1000, "tokens_out": 0}]
+        u = W.provider_usage(rows)
+        self.assertEqual(u["calls"], {"groq": 1, "cloudflare": 2})
+        self.assertEqual(u["groq_tokens"], 8000)
+        self.assertAlmostEqual(u["cf_neurons_by_day"]["2026-10-20"], 331, delta=1)   # matches the real probe
+
+    def test_since_start_max_dd_includes_engine_drawdown(self):
+        eq = [{"arm": "a", "ts": "2026-10-07T07:00:00Z", "equity": 10000, "drawdown": 0.0},
+              {"arm": "a", "ts": "2026-10-08T07:00:00Z", "equity": 9100, "drawdown": -0.0942}]
+        w = W.equity_window(eq, "a", datetime(2026, 10, 7, tzinfo=timezone.utc),
+                            datetime(2026, 10, 9, tzinfo=timezone.utc), 10000)
+        self.assertLessEqual(w["max_dd"], w["dd_now"])

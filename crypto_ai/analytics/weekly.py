@@ -67,6 +67,30 @@ def trade_stats(trades):
     return {"closed": n, "win_rate": wr, "avg_win": aw, "avg_loss": al, "expectancy": wr * aw + (1 - wr) * al}
 
 
+# Cloudflare Workers AI bills "neurons" (10,000 free per day). For @cf/openai/gpt-oss-120b its list prices are
+# $0.35 per 1M input and $0.75 per 1M output tokens at $0.011 per 1,000 neurons -> ~31.8 neurons per 1k input and
+# ~68.2 per 1k output tokens. Checked against the real probe of 2026-10-14 (7,397 in / 1,403 out = 331 neurons).
+# Estimate only (the journal stores tokens, not neurons). Added 2026-10-26: the old health line compared ALL
+# providers' tokens with Groq's cap, and the backup's own free limit was not watched at all.
+CF_NEURONS_PER_1K_IN, CF_NEURONS_PER_1K_OUT, CF_FREE_NEURONS = 31.818, 68.182, 10000
+
+
+def provider_usage(rows):
+    """Per-provider calls, Groq tokens (total and per UTC day) and estimated Cloudflare neurons (total, per day)."""
+    calls, groq_by_day, cf_by_day = {}, {}, {}
+    for r in rows:
+        p = r.get("provider") or "unknown"
+        calls[p] = calls.get(p, 0) + 1
+        day = str(r.get("ts", ""))[:10]
+        ti, to = r.get("tokens_in") or 0, r.get("tokens_out") or 0
+        if p == "groq":
+            groq_by_day[day] = groq_by_day.get(day, 0) + ti + to
+        elif p == "cloudflare":
+            cf_by_day[day] = cf_by_day.get(day, 0.0) + ti / 1000 * CF_NEURONS_PER_1K_IN + to / 1000 * CF_NEURONS_PER_1K_OUT
+    return {"calls": calls, "groq_tokens": sum(groq_by_day.values()), "groq_tokens_by_day": groq_by_day,
+            "cf_neurons": sum(cf_by_day.values()), "cf_neurons_by_day": cf_by_day}
+
+
 def equity_window(eq_rows, arm, start, end, initial):
     """Return over [start, end]. Baseline = the last equity row BEFORE the window (or the starting
     capital if there is none), so fees and moves at the very first cycle are counted."""
@@ -81,6 +105,9 @@ def equity_window(eq_rows, arm, start, end, initial):
     for v in vals:
         peak = max(peak, v)
         mdd = min(mdd, v / peak - 1)
+    if not before:   # window starts at the beginning: the engine's own drawdown (vs its all-time peak, which also
+        # sees marks between journal rows) is part of the max too, so Max DD can never be smaller than DD now
+        mdd = min([mdd] + [r["drawdown"] for r in inside if r.get("drawdown") is not None])
     return {"start": vals[0], "end": vals[-1], "ret": vals[-1] / vals[0] - 1, "max_dd": mdd,
             "dd_now": inside[-1].get("drawdown"), "fees": inside[-1].get("fees_usd", 0.0) - base.get("fees_usd", 0.0)}
 
@@ -146,7 +173,7 @@ def build(state_dir, cfg, week_end, spy_fn=spy_return):
         btc = equity_window(eq, "btc_hold", s, week_end, init)
         lines += [f"## {label}", "",
                   f"Benchmarks: **SPY {_p(spy)}** · **BTC hold {_p(btc and btc['ret'])}** (same window)", "",
-                  "| Portfolio | Return | vs SPY | vs BTC | Drawdown now | Max DD | Fills | Closed trades | Win rate | Avg win | Avg loss | Expectancy/trade | Fees |",
+                  "| Portfolio | Return | vs SPY | vs BTC | DD now (vs all-time peak) | Max DD (this window) | Fills | Closed trades | Win rate | Avg win | Avg loss | Expectancy/trade | Fees |",
                   "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for arm in cfg["arms"]:
             w = equity_window(eq, arm, s, week_end, init)
@@ -170,11 +197,18 @@ def build(state_dir, cfg, week_end, spy_fn=spy_return):
     days = max((week_end - week_start).total_seconds() / 86400, 1 / 24)
     cap = cfg.get("llm", {}).get("daily_token_cap", 200000)
     expected = math.ceil((week_end - week_start).total_seconds() / (6 * 3600))
+    u = provider_usage(dec + ev)
+    groq_peak = max(u["groq_tokens_by_day"].values(), default=0)
+    cf_peak_day, cf_peak = max(u["cf_neurons_by_day"].items(), key=lambda kv: kv[1], default=("—", 0))
     lines += ["## Health", "",
               f"- Scheduled cycles completed: **{ok} / ~{expected}** expected (AI faults: {faults})",
               f"- AI wake-ups: {len(ev)} ({sum(1 for e in ev if e.get('ok'))} answered OK)",
-              f"- AI tokens: cycles {toks:,} + wake-ups {toks_ev:,} = **{(toks + toks_ev) / days:,.0f}/day** "
-              f"vs free cap {cap:,}/day ({100 * (toks + toks_ev) / days / cap:.0f}% used; over the cap the backup provider answers)", "",
+              f"- AI tokens, all providers: cycles {toks:,} + wake-ups {toks_ev:,} = {(toks + toks_ev) / days:,.0f}/day",
+              f"- Groq (first choice): {u['calls'].get('groq', 0)} calls, {u['groq_tokens'] / days:,.0f} tokens/day, "
+              f"busiest day {groq_peak:,} vs free cap {cap:,}/day ({100 * groq_peak / cap:.0f}%)",
+              f"- Cloudflare (backup): {u['calls'].get('cloudflare', 0)} calls, ~{u['cf_neurons'] / days:,.0f} neurons/day "
+              f"(estimate from tokens), busiest day ~{cf_peak:,.0f} ({cf_peak_day}) vs free {CF_FREE_NEURONS:,}/day "
+              f"({100 * cf_peak / CF_FREE_NEURONS:.0f}%)", "",
               "Expectancy = win rate × avg win + loss rate × avg loss, per closed trade, after all fees "
               "(rule 6). Hold portfolios rarely close trades, so their columns stay empty.", ""]
     try:
