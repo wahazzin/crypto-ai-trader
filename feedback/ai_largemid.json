@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-26T09:18Z-event",
-  "risk_engine": [
-    {
-      "action": "HOLD",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "AAVE-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    }
-  ],
+  "from": "2026-10-26T12:00Z",
+  "risk_engine": [],
   "your_fills": []
 }

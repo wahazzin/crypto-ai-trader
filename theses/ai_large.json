@@ -96,35 +96,6 @@
     "summary": "Position remains bullish; rotation pick and dip signal still valid, big 1h move of +4.5% reinforces thesis.",
     "updated_cycle": "2026-10-26T09:18Z-event"
   },
-  "XRP-USD": {
-    "confidence_history": [
-      {
-        "confidence": 80,
-        "cycle": "2026-10-21T15:06Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-21T15:36Z-event"
-      },
-      {
-        "confidence": 55,
-        "cycle": "2026-10-24T12:00Z"
-      }
-    ],
-    "exit_below": 1.2,
-    "invalidation": [
-      "Price < $1.20"
-    ],
-    "opened_cycle": "2026-10-21T15:06Z-event",
-    "reasons": [
-      "No breakout or dip signals",
-      "24h price change -0.56%"
-    ],
-    "review_above": 1.7,
-    "status": "neutral",
-    "summary": "No new signals; position unchanged, price down 0.56% in 24h.",
-    "updated_cycle": "2026-10-26T09:18Z-event"
-  },
   "ZEC-USD": {
     "confidence_history": [
       {
