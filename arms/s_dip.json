@@ -1,11 +1,11 @@
 {
-  "cash": 6758.240350962393,
-  "day_start_date": "2026-10-25",
-  "day_start_equity": 9537.153658367975,
+  "cash": 6834.817538235301,
+  "day_start_date": "2026-10-26",
+  "day_start_equity": 9506.935967112016,
   "extra": {},
-  "fees_usd": 126.82064570398997,
+  "fees_usd": 127.12818460870044,
   "halted_until": null,
-  "last_ts": "2026-10-25T23:03:01Z",
+  "last_ts": "2026-10-26T00:03:01Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
@@ -31,13 +31,6 @@
       "qty": 2665.6415994980875,
       "stop_pct": 18.0
     },
-    "ENA-USD": {
-      "avg_cost": 0.20719699,
-      "opened_cycle": "2026-10-25T18:00Z",
-      "opened_ts": "2026-10-25T18:02:41Z",
-      "qty": 374.67352059531817,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 4.698314424891744,
       "opened_cycle": "2026-10-24T00:00Z",
@@ -53,9 +46,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 32.81231725963618,
-  "spread_usd": 6.6307059247108295,
-  "traded_notional_usd": 31705.161425997503,
+  "slippage_usd": 32.88927894750166,
+  "spread_usd": 6.64194613032869,
+  "traded_notional_usd": 31782.04615217512,
   "trades": [
     {
       "cause": "strategy",
@@ -96,6 +89,11 @@
       "cause": "strategy",
       "notional": 77.63122570005294,
       "ts": "2026-10-25T18:02:41Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 76.88472617761883,
+      "ts": "2026-10-26T00:03:01Z"
     }
   ]
 }

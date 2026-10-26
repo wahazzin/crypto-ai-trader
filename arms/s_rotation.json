@@ -1,50 +1,43 @@
 {
-  "cash": 7171.225152265808,
-  "day_start_date": "2026-10-25",
-  "day_start_equity": 8881.729937752849,
+  "cash": 8420.6566125435,
+  "day_start_date": "2026-10-26",
+  "day_start_equity": 8916.248293457342,
   "extra": {
-    "rotation_week": "2026-W43"
+    "rotation_week": "2026-W44"
   },
-  "fees_usd": 43.375231734396145,
+  "fees_usd": 52.28699811490383,
   "halted_until": null,
-  "last_ts": "2026-10-25T23:03:01Z",
+  "last_ts": "2026-10-26T00:03:01Z",
   "name": "s_rotation",
   "no_buys_until": null,
   "peak_equity": 10043.94224065193,
   "positions": {
-    "AERO-USD": {
-      "avg_cost": 0.7994292263501651,
-      "opened_cycle": "2026-10-19T00:00Z",
-      "opened_ts": "2026-10-19T00:03:12Z",
-      "qty": 1136.9165380250572,
-      "stop_pct": 18.0
-    },
-    "QNT-USD": {
-      "avg_cost": 192.87272208930383,
-      "opened_cycle": "2026-10-19T00:00Z",
-      "opened_ts": "2026-10-19T00:03:12Z",
-      "qty": 5.120322028426112,
+    "ZRO-USD": {
+      "avg_cost": 1.7560037287567896,
+      "opened_cycle": "2026-10-26T00:00Z",
+      "opened_ts": "2026-10-26T00:03:01Z",
+      "qty": 276.0809537560535,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 8.727940206832773,
-  "spread_usd": 2.493914557975306,
-  "traded_notional_usd": 10843.807933599037,
+  "slippage_usd": 10.776939865271336,
+  "spread_usd": 3.2480967590686505,
+  "traded_notional_usd": 13071.749528725957,
   "trades": [
     {
-      "cause": "stop",
-      "notional": 374.88542192949905,
-      "ts": "2026-10-18T14:35:00Z"
+      "cause": "strategy",
+      "notional": 768.1110680645312,
+      "ts": "2026-10-26T00:03:01Z"
     },
     {
       "cause": "strategy",
-      "notional": 908.8843084180795,
-      "ts": "2026-10-19T00:03:12Z"
+      "notional": 975.0313428280296,
+      "ts": "2026-10-26T00:03:01Z"
     },
     {
       "cause": "strategy",
-      "notional": 987.57044759637,
-      "ts": "2026-10-19T00:03:12Z"
+      "notional": 484.79918423436067,
+      "ts": "2026-10-26T00:03:01Z"
     }
   ]
 }
