@@ -115,9 +115,9 @@
     "ts": "2026-10-26T19:34:21Z"
   },
   "last_data_fault": {
-    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-26T19:19:21Z"
+    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-26T19:54:21Z"
   },
   "last_heartbeat": "2026-10-26T19:34:21Z",
-  "scans_since_heartbeat": 3
+  "scans_since_heartbeat": 4
 }
