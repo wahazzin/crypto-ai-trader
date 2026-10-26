@@ -124,5 +124,26 @@
     "status": "neutral",
     "summary": "No new signals; position unchanged, price down 0.56% in 24h.",
     "updated_cycle": "2026-10-26T09:18Z-event"
+  },
+  "ZEC-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-26T09:48Z-event"
+      }
+    ],
+    "exit_below": 1150,
+    "invalidation": [
+      "Price < $1150"
+    ],
+    "opened_cycle": "2026-10-26T09:48Z-event",
+    "reasons": [
+      "Positive recent returns and no contrary signals",
+      "Fits within portfolio risk limits"
+    ],
+    "review_above": 1300,
+    "status": "bullish",
+    "summary": "Opening new position on short\u2011term upside after 24h +2.6% move.",
+    "updated_cycle": "2026-10-26T09:48Z-event"
   }
 }
