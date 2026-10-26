@@ -114,9 +114,9 @@
     "ts": "2026-10-26T11:18:41Z"
   },
   "last_data_fault": {
-    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-26T10:08:41Z"
+    "error": "VVV-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-26T11:23:42Z"
   },
   "last_heartbeat": "2026-10-26T11:18:41Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
