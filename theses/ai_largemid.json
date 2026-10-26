@@ -133,7 +133,7 @@
       "Review target of $220 reached, indicating upside potential",
       "Trend signal true and dip signal active"
     ],
-    "review_above": 250.0,
+    "review_above": 260.0,
     "status": "bullish",
     "summary": "Price exceeded review target; maintain bullish stance with higher profit target.",
     "updated_cycle": "2026-10-26T12:23Z-event"
