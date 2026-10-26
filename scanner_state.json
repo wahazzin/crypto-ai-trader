@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-26",
-      "calls_today": 1,
-      "last_call": "2026-10-26T01:53:23Z"
+      "calls_today": 2,
+      "last_call": "2026-10-26T09:18:41Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-26",
-      "calls_today": 4,
-      "last_call": "2026-10-26T06:43:23Z"
+      "calls_today": 5,
+      "last_call": "2026-10-26T09:18:41Z"
     }
   },
   "fired": {
@@ -48,7 +48,7 @@
     "ai_largemid|QNT-USD:exit_below:200": "2026-10-15T02:42:40Z",
     "ai_largemid|QNT-USD:exit_below:230": "2026-10-12T12:33:50Z",
     "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
-    "ai_largemid|QNT-USD:move": "2026-10-25T18:07:41Z",
+    "ai_largemid|QNT-USD:move": "2026-10-26T09:18:41Z",
     "ai_largemid|QNT-USD:volume": "2026-10-25T21:43:01Z",
     "ai_largemid|SOL-USD:volume": "2026-10-24T15:16:14Z",
     "ai_largemid|SUI-USD:move": "2026-10-20T14:35:09Z",
@@ -86,7 +86,7 @@
     "ai_large|QNT-USD:exit_below:190.0": "2026-10-18T14:32:35Z",
     "ai_large|QNT-USD:exit_below:195": "2026-10-17T21:26:43Z",
     "ai_large|QNT-USD:exit_below:230.0": "2026-10-08T16:33:21Z",
-    "ai_large|QNT-USD:move": "2026-10-25T18:07:41Z",
+    "ai_large|QNT-USD:move": "2026-10-26T09:18:41Z",
     "ai_large|QNT-USD:review_above:210.0": "2026-10-21T18:31:48Z",
     "ai_large|QNT-USD:volume": "2026-10-25T21:43:01Z",
     "ai_large|SOL-USD:volume": "2026-10-20T14:05:09Z",
@@ -100,23 +100,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8864.47,
-      "ai_largemid": 8729.26,
-      "btc_hold": 9435.51,
-      "eth_hold": 8790.19,
-      "ew_basket": 8440.27,
+      "ai_large": 8927.42,
+      "ai_largemid": 8795.04,
+      "btc_hold": 9479.95,
+      "eth_hold": 8828.6,
+      "ew_basket": 8532.09,
       "s_breakout": 9107.23,
-      "s_dip": 9462.44,
-      "s_rotation": 8880.91,
-      "s_trend": 9243.14
+      "s_dip": 9482.87,
+      "s_rotation": 8887.51,
+      "s_trend": 9324.87
     },
     "scans": 2,
-    "ts": "2026-10-26T08:18:41Z"
+    "ts": "2026-10-26T09:18:41Z"
   },
   "last_data_fault": {
     "error": "VVV-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-26T08:53:42Z"
   },
-  "last_heartbeat": "2026-10-26T08:18:41Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-26T09:18:41Z",
+  "scans_since_heartbeat": 0
 }
