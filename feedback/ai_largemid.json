@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-26T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-26T06:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "ENA-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ENA-USD",
+      "cause": "ai",
+      "price": 0.20951282105220628,
+      "qty": 2093.3393874994326,
+      "side": "buy"
+    }
+  ]
 }

@@ -20,6 +20,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-26T00:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-26T06:00Z"
       }
     ],
     "exit_below": 4.2,
@@ -30,12 +34,12 @@
     "reasons": [
       "Dip signal still active",
       "Trend remains positive",
-      "Price up 2.15% in 24h"
+      "Price up 1.72% in 24h"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Holding NEAR, price above exit level; dip signal and trend still support thesis.",
-    "updated_cycle": "2026-10-26T00:00Z"
+    "summary": "Holding NEAR; dip signal and positive trend continue, price up 1.72% 24h.",
+    "updated_cycle": "2026-10-26T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [

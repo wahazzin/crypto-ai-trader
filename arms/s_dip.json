@@ -1,11 +1,11 @@
 {
-  "cash": 6834.817538235301,
+  "cash": 5680.606117301011,
   "day_start_date": "2026-10-26",
   "day_start_equity": 9506.935967112016,
   "extra": {},
-  "fees_usd": 127.12818460870044,
+  "fees_usd": 131.72663648493267,
   "halted_until": null,
-  "last_ts": "2026-10-26T05:08:24Z",
+  "last_ts": "2026-10-26T06:03:23Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
@@ -25,10 +25,10 @@
       "stop_pct": 18.0
     },
     "ARB-USD": {
-      "avg_cost": 0.1828330893756584,
+      "avg_cost": 0.17552646643919126,
       "opened_cycle": "2026-10-23T06:00Z",
       "opened_ts": "2026-10-23T06:04:16Z",
-      "qty": 2665.6415994980875,
+      "qty": 5615.556152767857,
       "stop_pct": 18.0
     },
     "NEAR-USD": {
@@ -39,27 +39,17 @@
       "stop_pct": 18.0
     },
     "ONDO-USD": {
-      "avg_cost": 0.4080539253104799,
+      "avg_cost": 0.40501261748244005,
       "opened_cycle": "2026-10-24T12:00Z",
       "opened_ts": "2026-10-24T12:05:51Z",
-      "qty": 147.16598445176845,
+      "qty": 1756.3733972681243,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 32.88927894750166,
-  "spread_usd": 6.64194613032869,
-  "traded_notional_usd": 31782.04615217512,
+  "slippage_usd": 34.11770221376127,
+  "spread_usd": 6.871235758887944,
+  "traded_notional_usd": 32931.65912123318,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 657.1720533337943,
-      "ts": "2026-10-24T00:05:11Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 754.6056971007383,
-      "ts": "2026-10-24T00:05:11Z"
-    },
     {
       "cause": "strategy",
       "notional": 60.05165762772517,
@@ -94,6 +84,16 @@
       "cause": "strategy",
       "notional": 76.88472617761883,
       "ts": "2026-10-26T00:03:01Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 498.3112397816944,
+      "ts": "2026-10-26T06:03:23Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 651.3017292763634,
+      "ts": "2026-10-26T06:03:23Z"
     }
   ]
 }
