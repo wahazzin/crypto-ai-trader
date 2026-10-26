@@ -115,8 +115,8 @@
   },
   "last_data_fault": {
     "error": "VVV-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-26T05:23:23Z"
+    "ts": "2026-10-26T05:53:24Z"
   },
   "last_heartbeat": "2026-10-26T05:08:24Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
