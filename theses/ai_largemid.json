@@ -129,12 +129,14 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Strong 24h +5.6% gain, rotation pick not active but trend true."
+      "24h +18% move confirms momentum",
+      "Review target of $220 reached, indicating upside potential",
+      "Trend signal true and dip signal active"
     ],
-    "review_above": 220.0,
+    "review_above": 250.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit level and below review target.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Price exceeded review target; maintain bullish stance with higher profit target.",
+    "updated_cycle": "2026-10-26T12:23Z-event"
   },
   "VVV-USD": {
     "confidence_history": [

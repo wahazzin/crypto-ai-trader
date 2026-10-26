@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-26",
-      "calls_today": 6,
-      "last_call": "2026-10-26T09:48:41Z"
+      "calls_today": 7,
+      "last_call": "2026-10-26T12:23:41Z"
     }
   },
   "fired": {
@@ -49,6 +49,7 @@
     "ai_largemid|QNT-USD:exit_below:230": "2026-10-12T12:33:50Z",
     "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
     "ai_largemid|QNT-USD:move": "2026-10-26T09:18:41Z",
+    "ai_largemid|QNT-USD:review_above:220.0": "2026-10-26T12:23:41Z",
     "ai_largemid|QNT-USD:volume": "2026-10-26T09:48:41Z",
     "ai_largemid|SOL-USD:volume": "2026-10-24T15:16:14Z",
     "ai_largemid|SUI-USD:move": "2026-10-20T14:35:09Z",
@@ -118,5 +119,5 @@
     "ts": "2026-10-26T11:23:42Z"
   },
   "last_heartbeat": "2026-10-26T12:18:41Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
