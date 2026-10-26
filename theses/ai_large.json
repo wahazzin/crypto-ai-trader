@@ -32,14 +32,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
+      "Price remains above exit_below",
       "Dip signal still active",
-      "Trend remains positive",
-      "24h price gain of +3.46%"
+      "Trend remains positive"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Holding NEAR; dip signal active, trend positive, price up 3.46% in 24h.",
-    "updated_cycle": "2026-10-26T09:18Z-event"
+    "summary": "Holding NEAR; dip signal active, trend positive, price still above exit level.",
+    "updated_cycle": "2026-10-26T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -86,15 +86,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Rotation pick rank 1",
-      "Dip signal active",
-      "24h gain of +10.09%",
-      "1h surge of +4.5% confirms momentum"
+      "Price remains above exit_below",
+      "Dip signal still active",
+      "Positive 24h momentum"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Position remains bullish; rotation pick and dip signal still valid, big 1h move of +4.5% reinforces thesis.",
-    "updated_cycle": "2026-10-26T09:18Z-event"
+    "summary": "Holding QNT; rotation pick and dip signal still valid, recent 24h gain supports thesis.",
+    "updated_cycle": "2026-10-26T18:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -109,12 +108,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Positive recent returns and no contrary signals",
-      "Fits within portfolio risk limits"
+      "Price remains above exit_below",
+      "Recent 24h positive return"
     ],
     "review_above": 1300,
     "status": "bullish",
-    "summary": "Opening new position on short\u2011term upside after 24h +2.6% move.",
-    "updated_cycle": "2026-10-26T09:48Z-event"
+    "summary": "Holding ZEC; short\u2011term upside after recent 24h gain, no contrary signals.",
+    "updated_cycle": "2026-10-26T18:00Z"
   }
 }

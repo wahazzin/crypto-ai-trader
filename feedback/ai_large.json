@@ -1,38 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-26T12:00Z",
-  "risk_engine": [
-    {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": 0.15,
-      "requested_weight": 0.15,
-      "status": "APPROVED"
-    },
-    {
-      "action": "SELL",
-      "asset": "XRP-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "QNT-USD",
-      "cause": "ai",
-      "price": 214.081474,
-      "qty": 0.4534057913822879,
-      "side": "sell"
-    },
-    {
-      "asset": "XRP-USD",
-      "cause": "ai",
-      "price": 1.29052522,
-      "qty": 100.58053151121791,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-10-26T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
