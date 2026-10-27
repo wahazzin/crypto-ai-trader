@@ -103,23 +103,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8995.55,
-      "ai_largemid": 8819.13,
-      "btc_hold": 9552.05,
-      "eth_hold": 8932.87,
-      "ew_basket": 8699.83,
+      "ai_large": 8989.69,
+      "ai_largemid": 8803.21,
+      "btc_hold": 9542.73,
+      "eth_hold": 8915.24,
+      "ew_basket": 8687.18,
       "s_breakout": 9107.23,
-      "s_dip": 9546.02,
-      "s_rotation": 8883.27,
-      "s_trend": 9366.89
+      "s_dip": 9536.59,
+      "s_rotation": 8883.0,
+      "s_trend": 9351.77
     },
     "scans": 2,
-    "ts": "2026-10-27T21:55:38Z"
+    "ts": "2026-10-27T22:56:05Z"
   },
   "last_data_fault": {
     "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-27T21:15:38Z"
   },
-  "last_heartbeat": "2026-10-27T21:55:38Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-27T22:56:05Z",
+  "scans_since_heartbeat": 0
 }
