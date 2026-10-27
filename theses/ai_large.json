@@ -36,14 +36,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Price remains above exit_below",
-      "Dip signal still active",
-      "Trend remains positive"
+      "Price (4.42) stays above exit_below (4.20)",
+      "Dip signal still active (price dropped >8% in 3 days while 50\u2011day uptrend intact)",
+      "Trend indicator true"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Holding NEAR; dip signal still active, trend remains positive, price above exit level.",
-    "updated_cycle": "2026-10-27T00:09Z-event"
+    "summary": "Holding NEAR; dip signal still active, trend remains positive, price remains above exit level.",
+    "updated_cycle": "2026-10-27T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -94,13 +94,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price remains above exit_below",
-      "Positive 24h momentum"
+      "Price (198.5) stays above exit_below (165)",
+      "Positive 24h return (+2.66%)",
+      "Trend indicator true"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Holding QNT; rotation pick not active but dip signal cleared, recent 24h gain supports thesis.",
-    "updated_cycle": "2026-10-27T00:09Z-event"
+    "summary": "Holding QNT; recent 24h gain supports thesis, rotation pick not active but trend remains positive.",
+    "updated_cycle": "2026-10-27T06:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -115,12 +116,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price remains above exit_below",
-      "Recent 24h positive return"
+      "Price (1219.2) stays above exit_below (1150)",
+      "Positive 24h return (+0.43%)"
     ],
     "review_above": 1300,
     "status": "bullish",
-    "summary": "Holding ZEC; recent 24h positive return, no contrary signals.",
-    "updated_cycle": "2026-10-27T00:09Z-event"
+    "summary": "Holding ZEC; recent 24h positive return, no contrary signals, price above exit level.",
+    "updated_cycle": "2026-10-27T06:00Z"
   }
 }
