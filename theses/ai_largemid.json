@@ -1,24 +1,4 @@
 {
-  "AAVE-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-10-25T17:22Z-event"
-      }
-    ],
-    "exit_below": 130.0,
-    "invalidation": [
-      "Price < $130"
-    ],
-    "opened_cycle": "2026-10-25T17:22Z-event",
-    "reasons": [
-      "Price still above $130 exit; no breach of review level."
-    ],
-    "review_above": 150.0,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and below review target.",
-    "updated_cycle": "2026-10-26T06:00Z"
-  },
   "ARB-USD": {
     "confidence_history": [],
     "exit_below": 0.155,

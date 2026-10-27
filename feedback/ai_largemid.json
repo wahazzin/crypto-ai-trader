@@ -1,18 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-27T07:50Z-event",
+  "from": "2026-10-27T09:50Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "QNT-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.13,
-      "status": "REJECTED"
+      "action": "SELL",
+      "asset": "AAVE-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "AAVE-USD",
+      "cause": "ai_event",
+      "price": 129.73014,
+      "qty": 1.2831776749377029,
+      "side": "sell"
+    }
+  ]
 }
