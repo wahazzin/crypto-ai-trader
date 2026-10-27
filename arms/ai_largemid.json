@@ -1,11 +1,11 @@
 {
-  "cash": 4091.293930891437,
+  "cash": 3920.351644686341,
   "day_start_date": "2026-10-27",
   "day_start_equity": 8757.599445428921,
   "extra": {},
-  "fees_usd": 136.69956285794697,
+  "fees_usd": 137.3806078229075,
   "halted_until": null,
-  "last_ts": "2026-10-27T11:55:18Z",
+  "last_ts": "2026-10-27T12:05:18Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -39,10 +39,10 @@
       "stop_pct": 18.0
     },
     "VVV-USD": {
-      "avg_cost": 25.449066306834926,
+      "avg_cost": 25.436964665820202,
       "opened_cycle": "2026-10-25T17:22Z-event",
       "opened_ts": "2026-10-25T17:22:41Z",
-      "qty": 13.93997989765373,
+      "qty": 20.6400693191568,
       "stop_pct": 18.0
     },
     "XRP-USD": {
@@ -60,15 +60,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 26.376303235683988,
-  "spread_usd": 8.983131628159754,
-  "traded_notional_usd": 34174.89071448675,
+  "slippage_usd": 26.546394385774,
+  "spread_usd": 9.077267884531878,
+  "traded_notional_usd": 34345.151955726884,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 170.0879877807927,
-      "ts": "2026-10-25T12:02:21Z"
-    },
     {
       "cause": "ai_event",
       "notional": 428.40646894058096,
@@ -113,6 +108,11 @@
       "cause": "ai_event",
       "notional": 166.4668194145427,
       "ts": "2026-10-27T09:50:01Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 170.26124124013552,
+      "ts": "2026-10-27T12:05:18Z"
     }
   ]
 }

@@ -102,3 +102,4 @@
 {"alpaca_minus_sim_bps":-0.58,"arm":"ai_large","asset":"XRP-USD","cause":"ai","filled_avg_price":1.2906,"filled_qty":98.200556308,"side":"sell","sim_notional":129.80171255623142,"sim_price":1.29052522,"status":"filled","ts":"2026-10-26T12:03:41Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":273.82674977396795,"sim_price":4.514320436121749,"ts":"2026-10-27T00:04:45Z"}
 {"arm":"ai_large","asset":"QNT-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":61.958796033463585,"sim_price":201.931086,"ts":"2026-10-27T00:04:45Z"}
+{"arm":"ai_large","asset":"QNT-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":259.52300284462007,"sim_price":200.50539579948224,"ts":"2026-10-27T12:05:18Z"}

@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-27T09:50Z-event",
+  "from": "2026-10-27T12:00Z",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "AAVE-USD",
+      "action": "ADD",
+      "asset": "VVV-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
+      "final_weight": 0.06,
+      "requested_weight": 0.06,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "AAVE-USD",
-      "cause": "ai_event",
-      "price": 129.73014,
-      "qty": 1.2831776749377029,
-      "side": "sell"
+      "asset": "VVV-USD",
+      "cause": "ai",
+      "price": 25.411786399999993,
+      "qty": 6.700089421503069,
+      "side": "buy"
     }
   ]
 }
