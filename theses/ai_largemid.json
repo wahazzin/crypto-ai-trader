@@ -159,15 +159,25 @@
     "updated_cycle": "2026-10-26T06:00Z"
   },
   "XRP-USD": {
-    "confidence_history": [],
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 55,
+        "cycle": "2026-10-27T00:09Z-event"
+      }
+    ],
+    "exit_below": 1.2,
+    "invalidation": [
+      "Price < $1.20"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "No breach of any level."
+      "Volume spike and positive 24h return suggest continued upside",
+      "No breach of existing (non\u2011existent) exit level"
     ],
+    "review_above": 1.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Added short\u2011term entry after volume spike; keep bullish stance.",
+    "updated_cycle": "2026-10-27T00:09Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [

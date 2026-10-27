@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-27T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-27T00:09Z-event",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "XRP-USD",
+      "codes": [],
+      "final_weight": 0.01,
+      "requested_weight": 0.01,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "XRP-USD",
+      "cause": "ai_event",
+      "price": 1.3092850999999999,
+      "qty": 66.92099540666018,
+      "side": "buy"
+    }
+  ]
 }
