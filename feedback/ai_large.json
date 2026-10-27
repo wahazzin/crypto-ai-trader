@@ -1,17 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-27T16:05Z-event",
-  "risk_engine": [
-    {
-      "action": "REDUCE",
-      "asset": "NEAR-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-10-27T18:00Z",
+  "risk_engine": [],
   "your_fills": []
 }

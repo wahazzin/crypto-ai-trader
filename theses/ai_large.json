@@ -47,7 +47,7 @@
     "review_above": 5.5,
     "status": "bullish",
     "summary": "Holding NEAR; dip signal still active, trend remains positive, price remains above exit level.",
-    "updated_cycle": "2026-10-27T16:05Z-event"
+    "updated_cycle": "2026-10-27T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -102,13 +102,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (199.51) stays above exit_below (165)",
+      "Price (197.96) stays above exit_below (165)",
       "Trend indicator true"
     ],
     "review_above": 230,
     "status": "bullish",
     "summary": "Holding QNT; recent 24h decline but still above exit level, trend remains positive.",
-    "updated_cycle": "2026-10-27T16:05Z-event"
+    "updated_cycle": "2026-10-27T18:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -123,13 +123,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1314.01) exceeded previous review_above (1300)",
-      "Positive 24h return (+3.64%)",
-      "Trend still neutral but momentum appears strong"
+      "Price (1314.01) exceeds exit_below (1150)",
+      "Positive 24h return (+4.13%)"
     ],
     "review_above": 1350,
     "status": "bullish",
-    "summary": "Holding ZEC; price continues upward, review level reached, raising target.",
-    "updated_cycle": "2026-10-27T16:35Z-event"
+    "summary": "Holding ZEC; price continues upward, review level not yet reached.",
+    "updated_cycle": "2026-10-27T18:00Z"
   }
 }

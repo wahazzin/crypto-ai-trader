@@ -101,22 +101,24 @@
       {
         "confidence": 78,
         "cycle": "2026-10-23T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-27T18:00Z"
       }
     ],
     "exit_below": 170.0,
     "invalidation": [
-      "Price < $150"
+      "Price < $170"
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "24h +18% move confirms momentum",
-      "Review target of $220 reached, indicating upside potential",
-      "Trend signal true and dip signal active"
+      "30\u2011day momentum remains strong and trend signal stays true."
     ],
     "review_above": 260.0,
     "status": "bullish",
-    "summary": "Price exceeded review target; maintain bullish stance with higher profit target.",
-    "updated_cycle": "2026-10-26T12:23Z-event"
+    "summary": "Thesis reaffirmed; price stays above exit level and below review target.",
+    "updated_cycle": "2026-10-27T18:00Z"
   },
   "VVV-USD": {
     "confidence_history": [
