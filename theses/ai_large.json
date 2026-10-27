@@ -123,12 +123,13 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1288.515) stays above exit_below (1150)",
-      "Positive 24h return (+3.64%)"
+      "Price (1314.01) exceeded previous review_above (1300)",
+      "Positive 24h return (+3.64%)",
+      "Trend still neutral but momentum appears strong"
     ],
-    "review_above": 1300,
+    "review_above": 1350,
     "status": "bullish",
-    "summary": "Holding ZEC; recent 24h positive return, price above exit level.",
-    "updated_cycle": "2026-10-27T16:05Z-event"
+    "summary": "Holding ZEC; price continues upward, review level reached, raising target.",
+    "updated_cycle": "2026-10-27T16:35Z-event"
   }
 }
