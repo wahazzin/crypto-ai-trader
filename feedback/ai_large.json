@@ -1,17 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-28T19:12Z-event",
+  "from": "2026-10-28T20:07Z-event",
   "risk_engine": [
     {
       "action": "REDUCE",
       "asset": "NEAR-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
+      "codes": [],
+      "final_weight": 0.12,
+      "requested_weight": 0.12,
+      "status": "APPROVED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 4.76204106,
+      "qty": 61.113708447428905,
+      "side": "sell"
+    }
+  ]
 }
