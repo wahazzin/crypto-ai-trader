@@ -118,16 +118,27 @@
     "summary": "Holding QNT; price above exit level, trend remains positive.",
     "updated_cycle": "2026-10-28T12:00Z"
   },
-  "SOL-USD": {
-    "confidence_history": [],
-    "exit_below": 96.0,
-    "invalidation": [],
-    "opened_cycle": "2026-10-28T12:36Z-event",
-    "reasons": [],
-    "review_above": 110.0,
+  "SUI-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-28T18:00Z"
+      }
+    ],
+    "exit_below": 0.8,
+    "invalidation": [
+      "Price < $0.80"
+    ],
+    "opened_cycle": "2026-10-28T18:00Z",
+    "reasons": [
+      "Dip signal active",
+      "Price above exit_below (0.80)",
+      "Spread acceptable"
+    ],
+    "review_above": 1.05,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-28T12:36Z-event"
+    "summary": "Opening position on dip signal; price above exit level, 50\u2011day uptrend appears intact.",
+    "updated_cycle": "2026-10-28T18:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [

@@ -1,20 +1,20 @@
 {
-  "cash": 5608.431122298359,
+  "cash": 5552.442781408909,
   "day_start_date": "2026-10-28",
   "day_start_equity": 9332.287505063612,
   "extra": {},
-  "fees_usd": 86.9407392398101,
+  "fees_usd": 87.16380035889158,
   "halted_until": null,
-  "last_ts": "2026-10-28T17:12:17Z",
+  "last_ts": "2026-10-28T18:02:16Z",
   "name": "s_trend",
   "no_buys_until": null,
   "peak_equity": 10087.342685781845,
   "positions": {
     "BCH-USD": {
-      "avg_cost": 298.85235939075767,
+      "avg_cost": 297.40370795198214,
       "opened_cycle": "2026-10-28T06:00Z",
       "opened_ts": "2026-10-28T06:06:31Z",
-      "qty": 1.3625177252610439,
+      "qty": 1.5566615489242899,
       "stop_pct": 18.0
     },
     "ENA-USD": {
@@ -46,9 +46,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 20.227169040602206,
-  "spread_usd": 4.202364122418122,
-  "traded_notional_usd": 21735.18480995253,
+  "slippage_usd": 20.280937172565743,
+  "spread_usd": 4.215954190074548,
+  "traded_notional_usd": 21790.9500897229,
   "trades": [
     {
       "cause": "strategy",
@@ -59,6 +59,11 @@
       "cause": "strategy",
       "notional": 407.1916369059911,
       "ts": "2026-10-28T06:06:31Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 55.76527977036858,
+      "ts": "2026-10-28T18:02:16Z"
     }
   ]
 }
