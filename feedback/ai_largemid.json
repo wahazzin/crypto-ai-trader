@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-28T18:52Z-event",
+  "from": "2026-10-28T19:22Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "BTC-USD",
+      "action": "SELL",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.25,
-      "requested_weight": 0.25,
+      "final_weight": 0.0,
+      "requested_weight": 0,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "BTC-USD",
+      "asset": "ZEC-USD",
       "cause": "ai_event",
-      "price": 80913.6795,
-      "qty": 0.01012853033727018,
-      "side": "buy"
+      "price": 1290.405292,
+      "qty": 0.11442224753260603,
+      "side": "sell"
     }
   ]
 }
