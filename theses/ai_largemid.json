@@ -161,6 +161,17 @@
     "summary": "Added short\u2011term entry after volume spike; keep bullish stance.",
     "updated_cycle": "2026-10-27T00:09Z-event"
   },
+  "ZEC-USD": {
+    "confidence_history": [],
+    "exit_below": 1210.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-28T15:16Z-event",
+    "reasons": [],
+    "review_above": 1400.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-28T15:16Z-event"
+  },
   "ZRO-USD": {
     "confidence_history": [
       {
