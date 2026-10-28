@@ -1,22 +1,22 @@
 {
   "events": [],
-  "from": "2026-10-28T12:00Z",
+  "from": "2026-10-28T12:36Z-event",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "ZEC-USD",
+      "action": "BUY",
+      "asset": "SOL-USD",
       "codes": [],
-      "final_weight": 0.0995,
-      "requested_weight": 0.0995,
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ZEC-USD",
-      "cause": "ai",
-      "price": 1297.6281099999999,
-      "qty": 0.2077437418175182,
+      "asset": "SOL-USD",
+      "cause": "ai_event",
+      "price": 101.490858,
+      "qty": 1.7614306042212589,
       "side": "buy"
     }
   ]
