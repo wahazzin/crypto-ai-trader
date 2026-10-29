@@ -1,6 +1,38 @@
 {
   "events": [],
-  "from": "2026-10-29T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-29T14:43Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.12,
+      "requested_weight": 0.12,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "SUI-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai_event",
+      "price": 4.5252086304615675,
+      "qty": 46.23333466129822,
+      "side": "buy"
+    },
+    {
+      "asset": "SUI-USD",
+      "cause": "ai_event",
+      "price": 0.9459672400000001,
+      "qty": 281.8073500327506,
+      "side": "buy"
+    }
+  ]
 }
