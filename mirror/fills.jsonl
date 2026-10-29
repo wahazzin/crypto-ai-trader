@@ -115,3 +115,4 @@
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":209.21548502432464,"sim_price":4.5252086304615675,"ts":"2026-10-29T14:43:37Z"}
 {"arm":"ai_large","asset":"SUI-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":266.580521122195,"sim_price":0.9459672400000001,"ts":"2026-10-29T14:43:37Z"}
 {"alpaca_minus_sim_bps":5.79,"arm":"ai_large","asset":"LINK-USD","cause":"ai_event","filled_avg_price":11.86,"filled_qty":9.215692078,"side":"sell","sim_notional":119.52857034196195,"sim_price":11.8668756,"status":"filled","ts":"2026-10-29T15:18:37Z"}
+{"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":80.15445159992292,"sim_price":4.6172686999999994,"ts":"2026-10-29T15:48:37Z"}

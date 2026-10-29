@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-29T15:18Z-event",
+  "from": "2026-10-29T15:48Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "LINK-USD",
+      "action": "ADD",
+      "asset": "NEAR-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
+      "final_weight": 0.1307,
+      "requested_weight": 0.1307,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "LINK-USD",
+      "asset": "NEAR-USD",
       "cause": "ai_event",
-      "price": 11.8668756,
-      "qty": 10.072454989075807,
-      "side": "sell"
+      "price": 4.6172686999999994,
+      "qty": 17.359711294238288,
+      "side": "buy"
     }
   ]
 }
