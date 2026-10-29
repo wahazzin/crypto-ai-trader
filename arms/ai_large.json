@@ -1,22 +1,15 @@
 {
-  "cash": 5363.724434014059,
+  "cash": 5482.774890074653,
   "day_start_date": "2026-10-29",
   "day_start_equity": 9011.450715915758,
   "extra": {},
-  "fees_usd": 153.74754253206672,
+  "fees_usd": 154.22565681343457,
   "halted_until": null,
-  "last_ts": "2026-10-29T15:13:37Z",
+  "last_ts": "2026-10-29T15:18:37Z",
   "name": "ai_large",
   "no_buys_until": null,
   "peak_equity": 10037.312935605321,
   "positions": {
-    "LINK-USD": {
-      "avg_cost": 11.979746135725003,
-      "opened_cycle": "2026-10-17T18:00Z",
-      "opened_ts": "2026-10-17T18:06:23Z",
-      "qty": 10.072454989075807,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 4.552619409775264,
       "opened_cycle": "2026-10-25T00:00Z",
@@ -46,9 +39,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 24.8330545164995,
-  "spread_usd": 8.464408129167857,
-  "traded_notional_usd": 38436.88563301667,
+  "slippage_usd": 24.904814714823676,
+  "spread_usd": 8.479516811651472,
+  "traded_notional_usd": 38556.41420335863,
   "trades": [
     {
       "cause": "ai_event",
@@ -104,6 +97,11 @@
       "cause": "ai_event",
       "notional": 266.580521122195,
       "ts": "2026-10-29T14:43:37Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 119.52857034196195,
+      "ts": "2026-10-29T15:18:37Z"
     }
   ]
 }
