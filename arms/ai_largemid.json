@@ -1,15 +1,29 @@
 {
-  "cash": 3181.4496265887583,
+  "cash": 3071.538885537082,
   "day_start_date": "2026-10-29",
   "day_start_equity": 8814.256757518655,
   "extra": {},
-  "fees_usd": 146.1886373433619,
+  "fees_usd": 149.96945646955174,
   "halted_until": null,
-  "last_ts": "2026-10-29T01:17:40Z",
+  "last_ts": "2026-10-29T01:22:40Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
   "positions": {
+    "AERO-USD": {
+      "avg_cost": 0.6847040199999999,
+      "opened_cycle": "2026-10-29T01:22Z-event",
+      "opened_ts": "2026-10-29T01:22:40Z",
+      "qty": 383.8997201339501,
+      "stop_pct": 18.0
+    },
+    "ARB-USD": {
+      "avg_cost": 0.17047130579590286,
+      "opened_cycle": "2026-10-29T01:22Z-event",
+      "opened_ts": "2026-10-29T01:22:40Z",
+      "qty": 1541.6651433322895,
+      "stop_pct": 18.0
+    },
     "BTC-USD": {
       "avg_cost": 82700.06942264715,
       "opened_cycle": "2026-10-10T06:10Z-event",
@@ -38,13 +52,6 @@
       "qty": 5.759754378835897,
       "stop_pct": 18.0
     },
-    "VVV-USD": {
-      "avg_cost": 25.436964665820202,
-      "opened_cycle": "2026-10-25T17:22Z-event",
-      "opened_ts": "2026-10-25T17:22:41Z",
-      "qty": 10.237517115630103,
-      "stop_pct": 18.0
-    },
     "XRP-USD": {
       "avg_cost": 1.3092850999999999,
       "opened_cycle": "2026-10-27T00:09Z-event",
@@ -56,19 +63,14 @@
       "avg_cost": 1.8408080500211164,
       "opened_cycle": "2026-10-17T16:26Z-event",
       "opened_ts": "2026-10-17T16:26:23Z",
-      "qty": 315.02681946240386,
+      "qty": 209.78844113776228,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 27.83389064659026,
-  "spread_usd": 9.512119225280548,
-  "traded_notional_usd": 36547.159335840486,
+  "slippage_usd": 28.914107239353083,
+  "spread_usd": 9.975539862119618,
+  "traded_notional_usd": 37492.364117387944,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 87.61866216310861,
-      "ts": "2026-10-27T00:09:45Z"
-    },
     {
       "cause": "ai_event",
       "notional": 166.4668194145427,
@@ -113,6 +115,26 @@
       "cause": "ai_event",
       "notional": 147.65107373860877,
       "ts": "2026-10-28T19:22:16Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 244.36036809842824,
+      "ts": "2026-10-29T01:22:40Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 175.17706171255867,
+      "ts": "2026-10-29T01:22:40Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 262.85768165259054,
+      "ts": "2026-10-29T01:22:40Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 262.80967008388313,
+      "ts": "2026-10-29T01:22:40Z"
     }
   ]
 }

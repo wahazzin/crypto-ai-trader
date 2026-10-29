@@ -1,6 +1,68 @@
 {
   "events": [],
-  "from": "2026-10-29T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-29T01:22Z-event",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "VVV-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.04,
+      "requested_weight": 0.04,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "AERO-USD",
+      "codes": [],
+      "final_weight": 0.030000000000000002,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ARB-USD",
+      "codes": [],
+      "final_weight": 0.030000000000000002,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "VVV-USD",
+      "cause": "ai_event",
+      "price": 23.869104719283122,
+      "qty": 10.237517115630103,
+      "side": "sell"
+    },
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai_event",
+      "price": 1.6645739368214962,
+      "qty": 105.23837832464159,
+      "side": "sell"
+    },
+    {
+      "asset": "AERO-USD",
+      "cause": "ai_event",
+      "price": 0.6847040199999999,
+      "qty": 383.8997201339501,
+      "side": "buy"
+    },
+    {
+      "asset": "ARB-USD",
+      "cause": "ai_event",
+      "price": 0.17047130579590286,
+      "qty": 1541.6651433322895,
+      "side": "buy"
+    }
+  ]
 }

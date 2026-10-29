@@ -1,18 +1,43 @@
 {
+  "AERO-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-29T01:22Z-event"
+      }
+    ],
+    "exit_below": 0.6,
+    "invalidation": [
+      "Price < $0.60"
+    ],
+    "opened_cycle": "2026-10-29T01:22Z-event",
+    "reasons": [
+      "Price down >15% from SMA20, dip signal true, volume spike"
+    ],
+    "review_above": 0.8,
+    "status": "bullish",
+    "summary": "Dip signal suggests a short\u2011term bounce after a sharp pullback.",
+    "updated_cycle": "2026-10-29T01:22Z-event"
+  },
   "ARB-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 75,
+        "cycle": "2026-10-29T01:22Z-event"
+      }
+    ],
     "exit_below": 0.155,
     "invalidation": [
       "Price < $0.155"
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "24h +1.6% gain, dip signal still valid."
+      "Dip signal active, 24h price increase, existing thesis"
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; price stays above exit level and below review target.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Adding to existing bullish thesis after dip signal and recent 24h gain.",
+    "updated_cycle": "2026-10-29T01:22Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -120,26 +145,6 @@
     "summary": "Thesis reaffirmed; price stays above exit level and below review target.",
     "updated_cycle": "2026-10-27T18:00Z"
   },
-  "VVV-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-25T17:22Z-event"
-      }
-    ],
-    "exit_below": 22.0,
-    "invalidation": [
-      "Price < $22"
-    ],
-    "opened_cycle": "2026-10-19T21:34Z-event",
-    "reasons": [
-      "24h +0.64% move, still below review target of $30."
-    ],
-    "review_above": 30.0,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit and below review target.",
-    "updated_cycle": "2026-10-26T06:00Z"
-  },
   "XRP-USD": {
     "confidence_history": [
       {
@@ -205,19 +210,21 @@
       {
         "confidence": 75,
         "cycle": "2026-10-23T00:00Z"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-10-29T01:22Z-event"
       }
     ],
     "exit_below": 1.55,
-    "invalidation": [
-      "Price < $1.60"
-    ],
+    "invalidation": [],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Rotation pick rank 1, trend true, 24h +0.12%."
+      "Rebalancing decision"
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit level with short\u2011term upside.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Weight reduced to keep overall non\u2011BTC exposure under limits.",
+    "updated_cycle": "2026-10-29T01:22Z-event"
   }
 }
