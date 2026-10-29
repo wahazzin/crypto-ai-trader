@@ -56,14 +56,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Price (4.447) > exit_below (4.2)",
+      "Price (4.488) > exit_below (4.2)",
       "Dip signal active",
       "Trend indicator true"
     ],
     "review_above": 5.5,
     "status": "bullish",
     "summary": "Thesis still valid; price remains above exit level and dip signal persists.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "updated_cycle": "2026-10-29T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -118,13 +118,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (193.02) > exit_below (165)",
+      "Price (193.275) > exit_below (165)",
       "Trend indicator true"
     ],
     "review_above": 230,
     "status": "bullish",
     "summary": "Trend remains true; price comfortably above exit level.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "updated_cycle": "2026-10-29T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -139,14 +139,14 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.9073) > exit_below (0.8)",
+      "Price (0.9162) > exit_below (0.8)",
       "Dip signal active",
       "Recent volume spike"
     ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Dip signal still active; price above exit level.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "updated_cycle": "2026-10-29T06:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -169,12 +169,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1246.18) > exit_below (1150)",
+      "Price (1250.83) > exit_below (1150)",
       "Trend indicator true"
     ],
     "review_above": 1400,
     "status": "bullish",
     "summary": "Trend signal continues; price above exit level.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "updated_cycle": "2026-10-29T06:00Z"
   }
 }
