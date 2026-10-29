@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-10-29",
-      "calls_today": 3,
-      "last_call": "2026-10-29T06:47:56Z"
+      "calls_today": 4,
+      "last_call": "2026-10-29T07:17:56Z"
     },
     "ai_largemid": {
       "calls_day": "2026-10-29",
-      "calls_today": 7,
-      "last_call": "2026-10-29T06:47:56Z"
+      "calls_today": 8,
+      "last_call": "2026-10-29T07:17:56Z"
     }
   },
   "fired": {
@@ -42,7 +42,7 @@
     "ai_largemid|NEAR-USD:move": "2026-10-29T06:47:56Z",
     "ai_largemid|NEAR-USD:review_above:5.5": "2026-10-08T06:52:42Z",
     "ai_largemid|NEAR-USD:review_above:5.8": "2026-10-11T17:12:47Z",
-    "ai_largemid|NEAR-USD:volume": "2026-10-29T02:27:40Z",
+    "ai_largemid|NEAR-USD:volume": "2026-10-29T07:17:56Z",
     "ai_largemid|ONDO-USD:move": "2026-10-20T14:35:09Z",
     "ai_largemid|ONDO-USD:volume": "2026-10-28T19:22:16Z",
     "ai_largemid|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
@@ -83,7 +83,7 @@
     "ai_large|NEAR-USD:exit_below:5.0": "2026-10-16T17:15:01Z",
     "ai_large|NEAR-USD:move": "2026-10-29T06:47:56Z",
     "ai_large|NEAR-USD:review_above:5.8004": "2026-10-11T17:12:47Z",
-    "ai_large|NEAR-USD:volume": "2026-10-29T02:27:40Z",
+    "ai_large|NEAR-USD:volume": "2026-10-29T07:17:56Z",
     "ai_large|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_large|QNT-USD:exit_below:190.0": "2026-10-18T14:32:35Z",
     "ai_large|QNT-USD:exit_below:195": "2026-10-17T21:26:43Z",
@@ -103,23 +103,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8868.63,
-      "ai_largemid": 8620.16,
-      "btc_hold": 9447.12,
-      "eth_hold": 8786.12,
-      "ew_basket": 8474.87,
+      "ai_large": 8809.23,
+      "ai_largemid": 8549.09,
+      "btc_hold": 9423.72,
+      "eth_hold": 8757.02,
+      "ew_basket": 8388.94,
       "s_breakout": 9107.23,
-      "s_dip": 9440.51,
-      "s_rotation": 8870.14,
-      "s_trend": 9184.38
+      "s_dip": 9382.95,
+      "s_rotation": 8864.57,
+      "s_trend": 9106.13
     },
-    "scans": 1,
-    "ts": "2026-10-29T06:17:56Z"
+    "scans": 6,
+    "ts": "2026-10-29T07:17:56Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-29T04:27:56Z"
   },
-  "last_heartbeat": "2026-10-29T06:17:56Z",
-  "scans_since_heartbeat": 5
+  "last_heartbeat": "2026-10-29T07:17:56Z",
+  "scans_since_heartbeat": 0
 }

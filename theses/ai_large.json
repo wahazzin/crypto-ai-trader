@@ -60,14 +60,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Price (4.3068) > exit_below (4.2)",
-      "Dip signal active",
-      "Trend true"
+      "Price (4.283) > exit_below (4.2)",
+      "Dip signal still active",
+      "Trend remains true"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis still valid; price remains above exit level and dip signal persists.",
-    "updated_cycle": "2026-10-29T06:47Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and dip signal persists.",
+    "updated_cycle": "2026-10-29T07:17Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -122,13 +122,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (192.53) > exit_below (165)",
-      "Trend true"
+      "Price (191.04) > exit_below (165)",
+      "Trend remains true"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Trend remains true; price comfortably above exit level.",
-    "updated_cycle": "2026-10-29T06:47Z-event"
+    "summary": "Thesis unchanged; price comfortably above exit level and trend stays true.",
+    "updated_cycle": "2026-10-29T07:17Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -143,14 +143,14 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.90735) > exit_below (0.8)",
-      "Dip signal active",
+      "Price (0.9016) > exit_below (0.8)",
+      "Dip signal still active",
       "Recent volume spike"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Dip signal still active; price above exit level.",
-    "updated_cycle": "2026-10-29T06:47Z-event"
+    "summary": "Thesis unchanged; price above exit level and dip signal still active.",
+    "updated_cycle": "2026-10-29T07:17Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -177,12 +177,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1239.445) > exit_below (1150)",
-      "Trend true"
+      "Price (1235.915) > exit_below (1150)",
+      "Trend remains true"
     ],
     "review_above": 1400,
     "status": "bullish",
-    "summary": "Trend signal continues; price above exit level.",
-    "updated_cycle": "2026-10-29T06:47Z-event"
+    "summary": "Thesis unchanged; price remains above exit level and trend stays true.",
+    "updated_cycle": "2026-10-29T07:17Z-event"
   }
 }
