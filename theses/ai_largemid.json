@@ -81,14 +81,12 @@
     ],
     "opened_cycle": "2026-10-26T06:00Z",
     "reasons": [
-      "24h +8.9% gain, 7d +9.8% gain",
-      "Price above 20\u2011day and 50\u2011day SMA (trend true)",
-      "RSI near 50, volume above average"
+      "Price still above $0.18 exit, trend signal true, dip signal false."
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "New bullish thesis based on strong 24h upside, trend signal and price above SMA.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit level despite recent 4.7% 1h drop.",
+    "updated_cycle": "2026-10-29T02:27Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -114,12 +112,12 @@
     ],
     "opened_cycle": "2026-10-25T15:02Z-event",
     "reasons": [
-      "Price still above $4.28 exit; trend signal true."
+      "Price above $4.28 exit, trend true, dip true."
     ],
     "review_above": 4.9,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit and below review target.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Thesis unchanged; price stays above exit after a 4.26% 1h decline.",
+    "updated_cycle": "2026-10-29T02:27Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -217,14 +215,16 @@
       }
     ],
     "exit_below": 1.55,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $1.55"
+    ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Rebalancing decision"
+      "Price above $1.55 exit, dip true, trend true."
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Weight reduced to keep overall non\u2011BTC exposure under limits.",
-    "updated_cycle": "2026-10-29T01:22Z-event"
+    "summary": "Thesis unchanged; price remains above exit despite recent losses.",
+    "updated_cycle": "2026-10-29T02:27Z-event"
   }
 }
