@@ -73,20 +73,24 @@
       {
         "confidence": 70,
         "cycle": "2026-10-26T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-29T18:00Z"
       }
     ],
-    "exit_below": 0.18,
+    "exit_below": 0.19,
     "invalidation": [
       "Price < $0.18"
     ],
     "opened_cycle": "2026-10-26T06:00Z",
     "reasons": [
-      "Price still above $0.18 exit, trend signal true, dip signal false."
+      "24h return +7.8%, trend signal true, still above $0.18 exit."
     ],
     "review_above": 0.25,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level despite recent 4.7% 1h drop.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "summary": "Thesis reaffirmed; price continues above exit and recent strong upside.",
+    "updated_cycle": "2026-10-29T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -212,6 +216,10 @@
       {
         "confidence": 65,
         "cycle": "2026-10-29T01:22Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-29T18:00Z"
       }
     ],
     "exit_below": 1.55,
@@ -220,11 +228,11 @@
     ],
     "opened_cycle": "2026-10-17T12:00Z",
     "reasons": [
-      "Price above $1.55 exit, dip true, trend true."
+      "Dip and trend signals active, 24h return +2.3%."
     ],
-    "review_above": 2.2,
+    "review_above": 2.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit despite recent losses.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
+    "summary": "Thesis unchanged; price remains above exit despite recent volatility.",
+    "updated_cycle": "2026-10-29T18:00Z"
   }
 }
