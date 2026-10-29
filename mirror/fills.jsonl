@@ -111,3 +111,4 @@
 {"alpaca_minus_sim_bps":-4.73,"arm":"ai_large","asset":"SOL-USD","cause":"ai","filled_avg_price":101.887,"filled_qty":1.722598719,"side":"sell","sim_notional":179.38208470300418,"sim_price":101.83886,"status":"filled","ts":"2026-10-28T18:02:16Z"}
 {"arm":"ai_large","asset":"SUI-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":178.3979123558639,"sim_price":0.9342602199999999,"ts":"2026-10-28T18:02:16Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":291.0259889555253,"sim_price":4.76204106,"ts":"2026-10-28T20:07:16Z"}
+{"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":170.98678126545528,"sim_price":4.710372079999999,"ts":"2026-10-29T00:02:40Z"}

@@ -44,6 +44,10 @@
       {
         "confidence": 80,
         "cycle": "2026-10-28T19:12Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-29T00:00Z"
       }
     ],
     "exit_below": 4.2,
@@ -52,13 +56,13 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Weight exceeded 15% limit, reduced to target 15%",
-      "Dip signal active, trend positive, price above exit level"
+      "Weight reduction aligns with risk engine recommendation",
+      "Maintains bullish view while controlling downside"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Weight reduced to comply with max asset limit; thesis unchanged.",
-    "updated_cycle": "2026-10-28T19:12Z-event"
+    "summary": "Reduced target weight to 10% to limit exposure after dip signal and negative expectancy of dip strategy.",
+    "updated_cycle": "2026-10-29T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
