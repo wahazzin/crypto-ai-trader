@@ -64,14 +64,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Price (4.48) > exit_below (4.20)",
+      "Price (4.47) > exit_below (4.20)",
       "Dip signal still active",
       "Trend remains true"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and dip signal persists.",
-    "updated_cycle": "2026-10-29T18:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and dip & trend signals persist.",
+    "updated_cycle": "2026-10-29T18:23Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -126,13 +126,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (191.68) > exit_below (165)",
+      "Price (191.27) > exit_below (165)",
       "Trend remains true"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Thesis unchanged; price comfortably above exit level and trend stays true.",
-    "updated_cycle": "2026-10-29T18:00Z"
+    "summary": "Thesis unchanged; price comfortably above exit level and trend signal remains true.",
+    "updated_cycle": "2026-10-29T18:23Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -151,14 +151,14 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.94) > exit_below (0.80)",
+      "Price (0.93) > exit_below (0.80)",
       "Dip signal still active",
       "Recent volume spike"
     ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit level and dip signal still active.",
-    "updated_cycle": "2026-10-29T18:00Z"
+    "updated_cycle": "2026-10-29T18:23Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -185,12 +185,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1235.92) > exit_below (1150)",
+      "Price (1323.66) > exit_below (1150)",
       "Trend remains true"
     ],
     "review_above": 1400,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and trend stays true.",
-    "updated_cycle": "2026-10-29T18:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and trend signal stays true.",
+    "updated_cycle": "2026-10-29T18:23Z-event"
   }
 }
