@@ -56,13 +56,14 @@
     ],
     "opened_cycle": "2026-10-25T00:00Z",
     "reasons": [
-      "Weight reduction aligns with risk engine recommendation",
-      "Maintains bullish view while controlling downside"
+      "Trend indicator true",
+      "Dip signal active",
+      "Price (4.5188) > exit_below (4.2)"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Reduced target weight to 10% to limit exposure after dip signal and negative expectancy of dip strategy.",
-    "updated_cycle": "2026-10-29T00:00Z"
+    "summary": "Trend and dip signals remain active; price stays above exit level.",
+    "updated_cycle": "2026-10-29T01:52Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -117,13 +118,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "1h price up 2.06% with volume 5.86\u00d7 normal",
-      "Trend indicator true, price above exit_below"
+      "Trend indicator true",
+      "Price (195.165) > exit_below (165)"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Holding QNT; volume spike observed but price remains above exit level and trend stays positive.",
-    "updated_cycle": "2026-10-28T19:12Z-event"
+    "summary": "Trend signal still true; price comfortably above exit level.",
+    "updated_cycle": "2026-10-29T01:52Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -139,13 +140,13 @@
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
       "Dip signal active",
-      "24h return +1.6%",
-      "Price above exit_below (0.80)"
+      "Volume spike (5.55\u00d7 normal)",
+      "Price (0.9206) > exit_below (0.8)"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Holding SUI; dip signal active, price above exit level, short\u2011term upside observed.",
-    "updated_cycle": "2026-10-28T19:12Z-event"
+    "summary": "Dip signal active; recent volume spike but price remains above exit level.",
+    "updated_cycle": "2026-10-29T01:52Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -169,11 +170,11 @@
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
       "Trend indicator true",
-      "Price (1286.365) above exit_below (1150)"
+      "Price (1267.575) > exit_below (1150)"
     ],
     "review_above": 1400,
     "status": "bullish",
-    "summary": "Holding ZEC; trend indicator true, price above exit level, no invalidation triggers.",
-    "updated_cycle": "2026-10-28T19:12Z-event"
+    "summary": "Trend signal true; price above exit level, no invalidation triggers.",
+    "updated_cycle": "2026-10-29T01:52Z-event"
   }
 }
