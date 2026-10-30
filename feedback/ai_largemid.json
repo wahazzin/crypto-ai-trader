@@ -1,6 +1,14 @@
 {
-  "events": [],
-  "from": "2026-10-30T12:00Z",
+  "events": [
+    {
+      "arm": "ai_largemid",
+      "errors": [
+        "thesis_updates[1] needs a known asset and status in ['bearish', 'bullish', 'closed', 'invalidated', 'neutral']"
+      ],
+      "type": "AI_FAULT"
+    }
+  ],
+  "from": "2026-10-30T18:00Z",
   "risk_engine": [],
   "your_fills": []
 }
