@@ -6,18 +6,19 @@
         "cycle": "2026-10-29T01:22Z-event"
       }
     ],
-    "exit_below": 0.6,
+    "exit_below": 0.58,
     "invalidation": [
       "Price < $0.60"
     ],
     "opened_cycle": "2026-10-29T01:22Z-event",
     "reasons": [
-      "Price down >15% from SMA20, dip signal true, volume spike"
+      "Price still above exit_below and dip signal true.",
+      "Volume remains elevated."
     ],
     "review_above": 0.8,
     "status": "bullish",
-    "summary": "Dip signal suggests a short\u2011term bounce after a sharp pullback.",
-    "updated_cycle": "2026-10-29T01:22Z-event"
+    "summary": "Dip signal still active; price near prior exit, tightening stop.",
+    "updated_cycle": "2026-10-30T01:28Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -30,34 +31,19 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "BTC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-11T18:00Z"
-      }
-    ],
-    "exit_below": 77000,
-    "invalidation": [],
-    "opened_cycle": "2026-10-10T06:10Z-event",
-    "reasons": [
-      "Current price $77924.52 is slightly under previous exit $78000; still above a tighter exit."
-    ],
-    "review_above": 90000,
-    "status": "bullish",
-    "summary": "Price slipped just below prior exit; adjusted exit lower to reflect new level.",
-    "updated_cycle": "2026-10-30T00:00Z"
-  },
   "LINK-USD": {
     "confidence_history": [],
+    "exit_below": 7.5,
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Small positive 24h move, no breach of any level."
+      "No breach of exit level.",
+      "No new adverse signals."
     ],
+    "review_above": 11.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and below review level.",
-    "updated_cycle": "2026-10-26T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit and below review.",
+    "updated_cycle": "2026-10-30T01:28Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -76,12 +62,13 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "30\u2011day momentum remains strong and trend signal stays true."
+      "30\u2011day momentum remains strong.",
+      "Trend signal active."
     ],
     "review_above": 260.0,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price stays above exit level and below review target.",
-    "updated_cycle": "2026-10-27T18:00Z"
+    "summary": "Thesis reaffirmed; price stays above exit and below review target.",
+    "updated_cycle": "2026-10-30T01:28Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -96,23 +83,26 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Volume spike and positive 24h return suggest continued upside",
-      "No breach of existing (non\u2011existent) exit level"
+      "Volume spike and positive 24h return support upside.",
+      "No breach of exit level."
     ],
     "review_above": 1.5,
     "status": "bullish",
-    "summary": "Added short\u2011term entry after volume spike; keep bullish stance.",
-    "updated_cycle": "2026-10-27T00:09Z-event"
+    "summary": "Short\u2011term entry remains valid; price above exit level.",
+    "updated_cycle": "2026-10-30T01:28Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
     "exit_below": 1210.0,
     "invalidation": [],
     "opened_cycle": "2026-10-28T15:16Z-event",
-    "reasons": [],
+    "reasons": [
+      "No breach of exit level.",
+      "Trend still neutral."
+    ],
     "review_above": 1400.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-28T15:16Z-event"
+    "summary": "Thesis unchanged; price above exit and below review.",
+    "updated_cycle": "2026-10-30T01:28Z-event"
   }
 }
