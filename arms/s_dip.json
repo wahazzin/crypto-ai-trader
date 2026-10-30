@@ -1,11 +1,11 @@
 {
-  "cash": 6478.923200003792,
-  "day_start_date": "2026-10-29",
-  "day_start_equity": 9586.313748979144,
+  "cash": 5500.11679317227,
+  "day_start_date": "2026-10-30",
+  "day_start_equity": 9176.217723017759,
   "extra": {},
-  "fees_usd": 134.93272918655026,
+  "fees_usd": 138.83235630540094,
   "halted_until": null,
-  "last_ts": "2026-10-29T23:58:57Z",
+  "last_ts": "2026-10-30T00:03:58Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
@@ -15,6 +15,13 @@
       "opened_cycle": "2026-10-25T06:00Z",
       "opened_ts": "2026-10-25T06:06:53Z",
       "qty": 4.317738471329237,
+      "stop_pct": 18.0
+    },
+    "AERO-USD": {
+      "avg_cost": 0.6222683593384735,
+      "opened_cycle": "2026-10-30T00:00Z",
+      "opened_ts": "2026-10-30T00:03:58Z",
+      "qty": 1477.3187563218853,
       "stop_pct": 18.0
     },
     "ARB-USD": {
@@ -37,16 +44,33 @@
       "opened_ts": "2026-10-24T12:05:51Z",
       "qty": 1756.3733972681243,
       "stop_pct": 18.0
+    },
+    "QNT-USD": {
+      "avg_cost": 179.847844,
+      "opened_cycle": "2026-10-30T00:00Z",
+      "opened_ts": "2026-10-30T00:03:58Z",
+      "qty": 0.30925064075995956,
+      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 35.002185434052876,
-  "spread_usd": 7.228419741513918,
-  "traded_notional_usd": 33733.18229663758,
+  "slippage_usd": 36.060361252244405,
+  "spread_usd": 7.884457442856473,
+  "traded_notional_usd": 34708.08907635025,
   "trades": [
     {
       "cause": "stop",
       "notional": 801.5231754043979,
       "ts": "2026-10-29T21:05:00Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 919.2887187163736,
+      "ts": "2026-10-30T00:03:58Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 55.61806099629725,
+      "ts": "2026-10-30T00:03:58Z"
     }
   ]
 }

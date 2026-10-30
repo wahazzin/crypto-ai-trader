@@ -1,33 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-29T18:00Z",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "ENA-USD",
-      "codes": [],
-      "final_weight": 0.0607,
-      "requested_weight": 0.0607,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ZRO-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.0363,
-      "status": "REJECTED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "ENA-USD",
-      "cause": "ai",
-      "price": 0.21088066999999994,
-      "qty": 413.7028612405202,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-10-30T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }

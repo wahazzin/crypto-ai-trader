@@ -19,26 +19,6 @@
     "summary": "Dip signal suggests a short\u2011term bounce after a sharp pullback.",
     "updated_cycle": "2026-10-29T01:22Z-event"
   },
-  "ARB-USD": {
-    "confidence_history": [
-      {
-        "confidence": 75,
-        "cycle": "2026-10-29T01:22Z-event"
-      }
-    ],
-    "exit_below": 0.155,
-    "invalidation": [
-      "Price < $0.155"
-    ],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "Dip signal active, 24h price increase, existing thesis"
-    ],
-    "review_above": 0.25,
-    "status": "bullish",
-    "summary": "Adding to existing bullish thesis after dip signal and recent 24h gain.",
-    "updated_cycle": "2026-10-29T01:22Z-event"
-  },
   "AVAX-USD": {
     "confidence_history": [],
     "exit_below": 7.5,
@@ -57,40 +37,16 @@
         "cycle": "2026-10-11T18:00Z"
       }
     ],
-    "exit_below": 78000,
+    "exit_below": 77000,
     "invalidation": [],
     "opened_cycle": "2026-10-10T06:10Z-event",
     "reasons": [
-      "Modest negative short\u2011term outlook but still above $78,000 exit."
+      "Current price $77924.52 is slightly under previous exit $78000; still above a tighter exit."
     ],
     "review_above": 90000,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit level, no review trigger.",
-    "updated_cycle": "2026-10-26T06:00Z"
-  },
-  "ENA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-26T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-29T18:00Z"
-      }
-    ],
-    "exit_below": 0.19,
-    "invalidation": [
-      "Price < $0.18"
-    ],
-    "opened_cycle": "2026-10-26T06:00Z",
-    "reasons": [
-      "24h return +7.8%, trend signal true, still above $0.18 exit."
-    ],
-    "review_above": 0.25,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price continues above exit and recent strong upside.",
-    "updated_cycle": "2026-10-29T18:00Z"
+    "summary": "Price slipped just below prior exit; adjusted exit lower to reflect new level.",
+    "updated_cycle": "2026-10-30T00:00Z"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -102,26 +58,6 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and below review level.",
     "updated_cycle": "2026-10-26T06:00Z"
-  },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 75,
-        "cycle": "2026-10-25T16:32Z-event"
-      }
-    ],
-    "exit_below": 4.28,
-    "invalidation": [
-      "Price < $4.28"
-    ],
-    "opened_cycle": "2026-10-25T15:02Z-event",
-    "reasons": [
-      "Price above $4.28 exit, trend true, dip true."
-    ],
-    "review_above": 4.9,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price stays above exit after a 4.26% 1h decline.",
-    "updated_cycle": "2026-10-29T02:27Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -178,61 +114,5 @@
     "status": "bullish",
     "summary": "",
     "updated_cycle": "2026-10-28T15:16Z-event"
-  },
-  "ZRO-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-17T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-18T07:02Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-20T01:14Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-22T06:00Z"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-10-22T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-22T15:48Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-22T16:58Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-10-23T00:00Z"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-10-29T01:22Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-29T18:00Z"
-      }
-    ],
-    "exit_below": 1.55,
-    "invalidation": [
-      "Price < $1.55"
-    ],
-    "opened_cycle": "2026-10-17T12:00Z",
-    "reasons": [
-      "Dip and trend signals active, 24h return +2.3%."
-    ],
-    "review_above": 2.0,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit despite recent volatility.",
-    "updated_cycle": "2026-10-29T18:00Z"
   }
 }

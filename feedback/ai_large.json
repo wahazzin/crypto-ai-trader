@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-10-29T18:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-30T00:00Z",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "NEAR-USD",
+      "cause": "ai",
+      "price": 4.03297876,
+      "qty": 254.6539735009112,
+      "side": "sell"
+    }
+  ]
 }
