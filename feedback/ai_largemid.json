@@ -1,15 +1,6 @@
 {
   "events": [],
-  "from": "2026-10-30T05:04Z-event",
-  "risk_engine": [
-    {
-      "action": "HOLD",
-      "asset": "AERO-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    }
-  ],
+  "from": "2026-10-30T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
