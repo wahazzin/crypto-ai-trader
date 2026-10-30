@@ -1,23 +1,15 @@
 {
   "events": [],
-  "from": "2026-10-30T01:28Z-event",
+  "from": "2026-10-30T05:04Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "BTC-USD",
+      "action": "HOLD",
+      "asset": "AERO-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": 0,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai_event",
-      "price": 76757.18549199999,
-      "qty": 0.027107440767673727,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }
