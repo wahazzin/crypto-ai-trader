@@ -21,8 +21,8 @@
     ],
     "review_above": 0.8,
     "status": "bullish",
-    "summary": "Dip signal still active; price near prior exit, tightening stop.",
-    "updated_cycle": "2026-10-30T05:04Z-event"
+    "summary": "Dip signal still active; price above exit and below review.",
+    "updated_cycle": "2026-10-30T12:09Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -46,8 +46,8 @@
     ],
     "review_above": 11.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit and below review.",
-    "updated_cycle": "2026-10-30T05:04Z-event"
+    "summary": "Price remains above exit and below review target.",
+    "updated_cycle": "2026-10-30T12:09Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -71,8 +71,8 @@
     ],
     "review_above": 260.0,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price stays above exit and below review target.",
-    "updated_cycle": "2026-10-30T05:04Z-event"
+    "summary": "Price stays above exit and below review target.",
+    "updated_cycle": "2026-10-30T12:09Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -92,8 +92,8 @@
     ],
     "review_above": 1.5,
     "status": "bullish",
-    "summary": "Short\u2011term entry remains valid; price above exit level.",
-    "updated_cycle": "2026-10-30T05:04Z-event"
+    "summary": "Price above exit level and below review target.",
+    "updated_cycle": "2026-10-30T12:09Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
@@ -106,7 +106,7 @@
     ],
     "review_above": 1400.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit and below review.",
-    "updated_cycle": "2026-10-30T05:04Z-event"
+    "summary": "Price above exit and below review target.",
+    "updated_cycle": "2026-10-30T12:09Z-event"
   }
 }
