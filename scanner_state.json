@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-10-31",
-      "calls_today": 4,
-      "last_call": "2026-10-31T18:51:41Z"
+      "calls_today": 5,
+      "last_call": "2026-10-31T21:41:41Z"
     }
   },
   "fired": {
@@ -69,7 +69,7 @@
     "ai_largemid|ZEC-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-10-30T03:54:19Z",
-    "ai_largemid|ZRO-USD:volume": "2026-10-30T00:43:58Z",
+    "ai_largemid|ZRO-USD:volume": "2026-10-31T21:41:41Z",
     "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
@@ -104,23 +104,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8792.28,
-      "ai_largemid": 8459.22,
-      "btc_hold": 9148.39,
-      "eth_hold": 8552.19,
-      "ew_basket": 8387.68,
+      "ai_large": 8789.43,
+      "ai_largemid": 8467.19,
+      "btc_hold": 9141.09,
+      "eth_hold": 8551.32,
+      "ew_basket": 8388.87,
       "s_breakout": 9107.23,
-      "s_dip": 9430.35,
+      "s_dip": 9438.02,
       "s_rotation": 8816.02,
-      "s_trend": 9020.93
+      "s_trend": 9037.19
     },
-    "scans": 3,
-    "ts": "2026-10-31T20:41:41Z"
+    "scans": 2,
+    "ts": "2026-10-31T21:41:41Z"
   },
   "last_data_fault": {
     "error": "ARB-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-10-31T21:21:41Z"
   },
-  "last_heartbeat": "2026-10-31T20:41:41Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-10-31T21:41:41Z",
+  "scans_since_heartbeat": 0
 }

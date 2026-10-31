@@ -42,6 +42,26 @@
     "summary": "Thesis unchanged, price above exit and trend still positive.",
     "updated_cycle": "2026-10-31T16:06Z-event"
   },
+  "BTC-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-31T21:41Z-event"
+      }
+    ],
+    "exit_below": 73000,
+    "invalidation": [
+      "Price < $73000"
+    ],
+    "opened_cycle": "2026-10-31T21:41Z-event",
+    "reasons": [
+      "Low RSI, positive short\u2011term return, strong liquidity"
+    ],
+    "review_above": 85000,
+    "status": "bullish",
+    "summary": "Core position added based on oversold RSI and short\u2011term momentum.",
+    "updated_cycle": "2026-10-31T21:41Z-event"
+  },
   "LINK-USD": {
     "confidence_history": [
       {
@@ -165,15 +185,23 @@
     "updated_cycle": "2026-10-31T18:51Z-event"
   },
   "ZRO-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 75,
+        "cycle": "2026-10-31T21:41Z-event"
+      }
+    ],
     "exit_below": 1.5,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $1.5"
+    ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price well above exit, dip signal still true, RSI moderate."
+      "Strong 24h gain, volume spike, dip & trend signals active"
     ],
+    "review_above": 2.2,
     "status": "bullish",
-    "summary": "Thesis unchanged, dip and trend signals active.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "Thesis unchanged, price well above exit; added weight.",
+    "updated_cycle": "2026-10-31T21:41Z-event"
   }
 }
