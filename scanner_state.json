@@ -118,9 +118,9 @@
     "ts": "2026-10-31T12:16:21Z"
   },
   "last_data_fault": {
-    "error": "BCH-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-10-31T13:16:20Z"
+    "error": "ARB-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-10-31T13:21:20Z"
   },
   "last_heartbeat": "2026-10-31T12:16:21Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
