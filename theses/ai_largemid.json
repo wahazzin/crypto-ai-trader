@@ -68,6 +68,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-27T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-31T14:36Z-event"
       }
     ],
     "exit_below": 170.0,
@@ -76,13 +80,13 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "30\u2011day momentum remains strong.",
-      "Trend signal active."
+      "30\u2011day momentum still strong and trend signal active.",
+      "No breach of exit_below; volume spike does not invalidate the upside view."
     ],
     "review_above": 260.0,
     "status": "bullish",
-    "summary": "Price stays above exit and below review target.",
-    "updated_cycle": "2026-10-30T12:09Z-event"
+    "summary": "Thesis remains intact; price above exit level and below review target.",
+    "updated_cycle": "2026-10-31T14:36Z-event"
   },
   "XRP-USD": {
     "confidence_history": [

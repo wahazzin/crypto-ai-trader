@@ -4,6 +4,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-31T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-31T14:36Z-event"
       }
     ],
     "exit_below": 3.8,
@@ -12,14 +16,14 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Dip signal active indicating recent price drop with 50\u2011day uptrend intact",
-      "24\u2011hour price increase of +2.94% suggests bounce",
-      "Near\u2011top rotation rank (4) supports relative strength"
+      "Price (4.45) > exit_below (3.80)",
+      "Dip signal still active",
+      "Rotation rank remains strong"
     ],
-    "review_above": 5.0,
+    "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit level and dip signal still active.",
-    "updated_cycle": "2026-10-31T12:00Z"
+    "summary": "Thesis unchanged; added position, price still above exit level and dip signal remains active.",
+    "updated_cycle": "2026-10-31T14:36Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -74,14 +78,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (192.15) > exit_below (165)",
-      "Dip signal still active",
-      "Trend signal still true"
+      "Price (198.38) > exit_below (165)",
+      "Dip and trend signals still active",
+      "Volume spike did not breach exit level"
     ],
     "review_above": 230,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level, dip and trend signals still active.",
-    "updated_cycle": "2026-10-31T12:00Z"
+    "summary": "Thesis unchanged; volume spike caused a short\u2011term dip but price remains well above exit level.",
+    "updated_cycle": "2026-10-31T14:36Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -100,14 +104,13 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.905) > exit_below (0.80)",
-      "Dip signal still active",
-      "Recent volume spike"
+      "Price (0.896) > exit_below (0.80)",
+      "Dip signal still active"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit level and dip signal still active.",
-    "updated_cycle": "2026-10-31T12:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and dip signal still active.",
+    "updated_cycle": "2026-10-31T14:36Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -134,12 +137,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1276.02) > exit_below (1150)",
+      "Price (1282.02) > exit_below (1150)",
       "Trend signal still true"
     ],
     "review_above": 1400,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and trend signal still true.",
-    "updated_cycle": "2026-10-31T12:00Z"
+    "updated_cycle": "2026-10-31T14:36Z-event"
   }
 }

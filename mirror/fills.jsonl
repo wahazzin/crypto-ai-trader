@@ -118,3 +118,4 @@
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":80.15445159992292,"sim_price":4.6172686999999994,"ts":"2026-10-29T15:48:37Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":1027.0140662787776,"sim_price":4.03297876,"ts":"2026-10-30T00:03:58Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":438.2539115717457,"sim_price":4.3401025,"ts":"2026-10-31T06:06:00Z"}
+{"arm":"ai_large","asset":"NEAR-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":166.27344868253422,"sim_price":4.44856754,"ts":"2026-10-31T14:36:20Z"}
