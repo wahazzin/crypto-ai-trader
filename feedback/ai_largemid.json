@@ -1,15 +1,70 @@
 {
   "events": [],
-  "from": "2026-10-31T14:36Z-event",
+  "from": "2026-10-31T15:31Z-event",
   "risk_engine": [
     {
-      "action": "HOLD",
-      "asset": "QNT-USD",
+      "action": "REDUCE",
+      "asset": "ARB-USD",
       "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
+      "final_weight": 0.005,
+      "requested_weight": 0.005,
+      "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "BCH-USD",
+      "codes": [],
+      "final_weight": 0.0312,
+      "requested_weight": 0.0312,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "AAVE-USD",
+      "codes": [],
+      "final_weight": 0.02,
+      "requested_weight": 0.02,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "SUI-USD",
+      "codes": [
+        "R4_ALT_CLUSTER"
+      ],
+      "final_weight": 0.009981951211079754,
+      "requested_weight": 0.01,
+      "status": "CLIPPED"
     }
   ],
-  "your_fills": []
+  "your_fills": [
+    {
+      "asset": "ARB-USD",
+      "cause": "ai_event",
+      "price": 0.16440543,
+      "qty": 1285.355502823136,
+      "side": "sell"
+    },
+    {
+      "asset": "BCH-USD",
+      "cause": "ai_event",
+      "price": 287.03267999999997,
+      "qty": 0.2940342600243854,
+      "side": "sell"
+    },
+    {
+      "asset": "AAVE-USD",
+      "cause": "ai_event",
+      "price": 135.3352,
+      "qty": 1.2513724305162626,
+      "side": "buy"
+    },
+    {
+      "asset": "SUI-USD",
+      "cause": "ai_event",
+      "price": 0.9040421,
+      "qty": 93.44328502219383,
+      "side": "buy"
+    }
+  ]
 }

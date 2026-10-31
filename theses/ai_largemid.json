@@ -1,4 +1,14 @@
 {
+  "AAVE-USD": {
+    "confidence_history": [],
+    "exit_below": 120,
+    "invalidation": [],
+    "opened_cycle": "2026-10-31T15:31Z-event",
+    "reasons": [],
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-31T15:31Z-event"
+  },
   "AERO-USD": {
     "confidence_history": [
       {
@@ -21,8 +31,8 @@
     ],
     "review_above": 0.8,
     "status": "bullish",
-    "summary": "Dip signal still active; price above exit and below review.",
-    "updated_cycle": "2026-10-30T12:09Z-event"
+    "summary": "Dip signal still active, price above exit, below review",
+    "updated_cycle": "2026-10-31T15:31Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -74,19 +84,28 @@
         "cycle": "2026-10-31T14:36Z-event"
       }
     ],
-    "exit_below": 170.0,
+    "exit_below": 170,
     "invalidation": [
       "Price < $170"
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "30\u2011day momentum still strong and trend signal active.",
-      "No breach of exit_below; volume spike does not invalidate the upside view."
+      "30\u2011day momentum still strong, trend signal active."
     ],
-    "review_above": 260.0,
+    "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis remains intact; price above exit level and below review target.",
-    "updated_cycle": "2026-10-31T14:36Z-event"
+    "summary": "Thesis unchanged, price above exit and below review",
+    "updated_cycle": "2026-10-31T15:31Z-event"
+  },
+  "SUI-USD": {
+    "confidence_history": [],
+    "exit_below": 0.75,
+    "invalidation": [],
+    "opened_cycle": "2026-10-31T15:31Z-event",
+    "reasons": [],
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-31T15:31Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -101,13 +120,12 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Volume spike and positive 24h return support upside.",
-      "No breach of exit level."
+      "Volume spike and positive 24h return support upside."
     ],
     "review_above": 1.5,
     "status": "bullish",
-    "summary": "Price above exit level and below review target.",
-    "updated_cycle": "2026-10-30T12:09Z-event"
+    "summary": "Thesis unchanged, price above exit and below review",
+    "updated_cycle": "2026-10-31T15:31Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
@@ -128,9 +146,11 @@
     "exit_below": 1.5,
     "invalidation": [],
     "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Dip signal active, trend true."
+    ],
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-31T06:00Z"
+    "summary": "Thesis unchanged, price above exit and below review",
+    "updated_cycle": "2026-10-31T15:31Z-event"
   }
 }
