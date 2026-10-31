@@ -1,6 +1,50 @@
 {
   "events": [],
-  "from": "2026-10-31T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-10-31T06:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "ZRO-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "BCH-USD",
+      "codes": [
+        "R4_ALT_CLUSTER"
+      ],
+      "final_weight": 0.041765366632288026,
+      "requested_weight": 0.05,
+      "status": "CLIPPED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R12_ADD_NOT_HELD_USE_BUY"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZRO-USD",
+      "cause": "ai",
+      "price": 1.7063769029841274,
+      "qty": 246.31564882360763,
+      "side": "buy"
+    },
+    {
+      "asset": "BCH-USD",
+      "cause": "ai",
+      "price": 289.4595827236654,
+      "qty": 1.2124751886837168,
+      "side": "buy"
+    }
+  ]
 }

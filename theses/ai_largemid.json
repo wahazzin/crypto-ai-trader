@@ -35,6 +35,16 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
+  "BCH-USD": {
+    "confidence_history": [],
+    "exit_below": 260.0,
+    "invalidation": [],
+    "opened_cycle": "2026-10-31T06:00Z",
+    "reasons": [],
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-31T06:00Z"
+  },
   "LINK-USD": {
     "confidence_history": [],
     "exit_below": 7.5,
@@ -97,7 +107,7 @@
   },
   "ZEC-USD": {
     "confidence_history": [],
-    "exit_below": 1210.0,
+    "exit_below": 1150.0,
     "invalidation": [],
     "opened_cycle": "2026-10-28T15:16Z-event",
     "reasons": [
@@ -108,5 +118,15 @@
     "status": "bullish",
     "summary": "Price above exit and below review target.",
     "updated_cycle": "2026-10-30T12:09Z-event"
+  },
+  "ZRO-USD": {
+    "confidence_history": [],
+    "exit_below": 1.5,
+    "invalidation": [],
+    "opened_cycle": "2026-10-31T06:00Z",
+    "reasons": [],
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-10-31T06:00Z"
   }
 }

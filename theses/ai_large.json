@@ -1,4 +1,26 @@
 {
+  "NEAR-USD": {
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-10-31T06:00Z"
+      }
+    ],
+    "exit_below": 3.8,
+    "invalidation": [
+      "Price < $3.80"
+    ],
+    "opened_cycle": "2026-10-31T06:00Z",
+    "reasons": [
+      "Dip signal active indicating recent price drop with 50\u2011day uptrend intact",
+      "24\u2011hour price increase of +2.94% suggests bounce",
+      "Near\u2011top rotation rank (4) supports relative strength"
+    ],
+    "review_above": 5.0,
+    "status": "bullish",
+    "summary": "New bullish thesis based on dip signal and recent price recovery.",
+    "updated_cycle": "2026-10-31T06:00Z"
+  },
   "QNT-USD": {
     "confidence_history": [
       {
@@ -59,7 +81,7 @@
     "review_above": 230,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and dip/trend signals still active.",
-    "updated_cycle": "2026-10-31T00:00Z"
+    "updated_cycle": "2026-10-31T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -85,7 +107,7 @@
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and dip signal still active.",
-    "updated_cycle": "2026-10-31T00:00Z"
+    "updated_cycle": "2026-10-31T06:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -118,6 +140,6 @@
     "review_above": 1400,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and trend signal still true.",
-    "updated_cycle": "2026-10-31T00:00Z"
+    "updated_cycle": "2026-10-31T06:00Z"
   }
 }
