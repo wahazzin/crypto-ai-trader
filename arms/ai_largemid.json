@@ -1,11 +1,11 @@
 {
-  "cash": 5070.950158863192,
+  "cash": 5144.292852678103,
   "day_start_date": "2026-10-31",
   "day_start_equity": 8361.038788449954,
   "extra": {},
-  "fees_usd": 166.93370443082466,
+  "fees_usd": 168.59190196320282,
   "halted_until": null,
-  "last_ts": "2026-10-31T17:36:41Z",
+  "last_ts": "2026-10-31T18:06:41Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -15,13 +15,6 @@
       "opened_cycle": "2026-10-31T15:31Z-event",
       "opened_ts": "2026-10-31T15:31:21Z",
       "qty": 1.2513724305162626,
-      "stop_pct": 18.0
-    },
-    "AERO-USD": {
-      "avg_cost": 0.6847040199999999,
-      "opened_cycle": "2026-10-29T01:22Z-event",
-      "opened_ts": "2026-10-29T01:22:40Z",
-      "qty": 383.8997201339501,
       "stop_pct": 18.0
     },
     "ARB-USD": {
@@ -36,6 +29,13 @@
       "opened_cycle": "2026-10-31T06:00Z",
       "opened_ts": "2026-10-31T06:06:00Z",
       "qty": 0.9184409286593315,
+      "stop_pct": 18.0
+    },
+    "LINK-USD": {
+      "avg_cost": 11.7010164,
+      "opened_cycle": "2026-10-31T18:00Z",
+      "opened_ts": "2026-10-31T18:06:41Z",
+      "qty": 14.509358851392205,
       "stop_pct": 18.0
     },
     "NEAR-USD": {
@@ -74,15 +74,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 31.566498691582012,
-  "spread_usd": 10.98239276240063,
-  "traded_notional_usd": 41733.42610770618,
+  "slippage_usd": 31.913322314405207,
+  "spread_usd": 11.192690978520334,
+  "traded_notional_usd": 42147.97549080072,
   "trades": [
-    {
-      "cause": "ai",
-      "notional": 87.2419365593179,
-      "ts": "2026-10-29T18:03:38Z"
-    },
     {
       "cause": "stop",
       "notional": 430.7247989230686,
@@ -127,6 +122,16 @@
       "cause": "ai_event",
       "notional": 84.47666362236265,
       "ts": "2026-10-31T15:31:21Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 244.77513722091402,
+      "ts": "2026-10-31T18:06:41Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 169.77424587362538,
+      "ts": "2026-10-31T18:06:41Z"
     }
   ]
 }

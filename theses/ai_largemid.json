@@ -11,30 +11,6 @@
     "summary": "Thesis unchanged, price above exit and below any new target.",
     "updated_cycle": "2026-10-31T16:06Z-event"
   },
-  "AERO-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-29T01:22Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-30T05:04Z-event"
-      }
-    ],
-    "exit_below": 0.58,
-    "invalidation": [
-      "Price < $0.60"
-    ],
-    "opened_cycle": "2026-10-29T01:22Z-event",
-    "reasons": [
-      "Price still above exit, volume elevated, RSI low."
-    ],
-    "review_above": 0.8,
-    "status": "bullish",
-    "summary": "Thesis unchanged, dip signal still active.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
-  },
   "AVAX-USD": {
     "confidence_history": [],
     "exit_below": 7.5,
@@ -59,17 +35,26 @@
     "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "LINK-USD": {
-    "confidence_history": [],
-    "exit_below": 7.5,
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 85,
+        "cycle": "2026-10-31T18:00Z"
+      }
+    ],
+    "exit_below": 9.0,
+    "invalidation": [
+      "Price < $9.0"
+    ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "24h gain strong, price just crossed previous review level."
+      "24h return +4.37%",
+      "Low spread",
+      "Momentum supports upside"
     ],
-    "review_above": 12.5,
+    "review_above": 13.5,
     "status": "bullish",
-    "summary": "Review target reached; raising target for next assessment.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "New bullish thesis based on strong 24h momentum and positive dip/trend signals",
+    "updated_cycle": "2026-10-31T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [

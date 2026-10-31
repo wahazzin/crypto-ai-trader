@@ -1,69 +1,37 @@
 {
   "events": [],
-  "from": "2026-10-31T15:31Z-event",
+  "from": "2026-10-31T18:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "ARB-USD",
+      "action": "SELL",
+      "asset": "AERO-USD",
       "codes": [],
-      "final_weight": 0.005,
-      "requested_weight": 0.005,
-      "status": "APPROVED"
-    },
-    {
-      "action": "REDUCE",
-      "asset": "BCH-USD",
-      "codes": [],
-      "final_weight": 0.0312,
-      "requested_weight": 0.0312,
+      "final_weight": 0.0,
+      "requested_weight": null,
       "status": "APPROVED"
     },
     {
       "action": "BUY",
-      "asset": "AAVE-USD",
+      "asset": "LINK-USD",
       "codes": [],
       "final_weight": 0.02,
       "requested_weight": 0.02,
       "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "SUI-USD",
-      "codes": [
-        "R4_ALT_CLUSTER"
-      ],
-      "final_weight": 0.009981951211079754,
-      "requested_weight": 0.01,
-      "status": "CLIPPED"
     }
   ],
   "your_fills": [
     {
-      "asset": "ARB-USD",
-      "cause": "ai_event",
-      "price": 0.16440543,
-      "qty": 1285.355502823136,
+      "asset": "AERO-USD",
+      "cause": "ai",
+      "price": 0.63760176,
+      "qty": 383.8997201339501,
       "side": "sell"
     },
     {
-      "asset": "BCH-USD",
-      "cause": "ai_event",
-      "price": 287.03267999999997,
-      "qty": 0.2940342600243854,
-      "side": "sell"
-    },
-    {
-      "asset": "AAVE-USD",
-      "cause": "ai_event",
-      "price": 135.3352,
-      "qty": 1.2513724305162626,
-      "side": "buy"
-    },
-    {
-      "asset": "SUI-USD",
-      "cause": "ai_event",
-      "price": 0.9040421,
-      "qty": 93.44328502219383,
+      "asset": "LINK-USD",
+      "cause": "ai",
+      "price": 11.7010164,
+      "qty": 14.509358851392205,
       "side": "buy"
     }
   ]

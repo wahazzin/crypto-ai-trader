@@ -70,22 +70,26 @@
       {
         "confidence": 70,
         "cycle": "2026-10-27T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-10-31T18:00Z"
       }
     ],
-    "exit_below": 165,
+    "exit_below": 180,
     "invalidation": [
       "Price < $165"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (198.38) > exit_below (165)",
+      "Price (202.65) > exit_below (165)",
       "Dip and trend signals still active",
-      "Volume spike did not breach exit level"
+      "Recent 24h gain reinforces bullish view"
     ],
-    "review_above": 230,
+    "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; volume spike caused a short\u2011term dip but price remains well above exit level.",
-    "updated_cycle": "2026-10-31T14:36Z-event"
+    "summary": "Thesis reaffirmed; price remains well above exit level and dip/trend signals stay active.",
+    "updated_cycle": "2026-10-31T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
