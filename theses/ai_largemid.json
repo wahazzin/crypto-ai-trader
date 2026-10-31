@@ -4,10 +4,12 @@
     "exit_below": 120,
     "invalidation": [],
     "opened_cycle": "2026-10-31T15:31Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price remains well above exit level, dip signal still active, RSI low indicating upside potential."
+    ],
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, price above exit and below any new target.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "AERO-USD": {
     "confidence_history": [
@@ -26,13 +28,12 @@
     ],
     "opened_cycle": "2026-10-29T01:22Z-event",
     "reasons": [
-      "Price still above exit_below and dip signal true.",
-      "Volume remains elevated."
+      "Price still above exit, volume elevated, RSI low."
     ],
     "review_above": 0.8,
     "status": "bullish",
-    "summary": "Dip signal still active, price above exit, below review",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, dip signal still active.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -50,10 +51,12 @@
     "exit_below": 260.0,
     "invalidation": [],
     "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Trend signal active, price above exit level, modest 24h decline within tolerance."
+    ],
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-31T06:00Z"
+    "summary": "Thesis unchanged, price above exit and trend still positive.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "LINK-USD": {
     "confidence_history": [],
@@ -61,13 +64,12 @@
     "invalidation": [],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "No breach of exit level.",
-      "No new adverse signals."
+      "24h gain strong, price just crossed previous review level."
     ],
-    "review_above": 11.5,
+    "review_above": 12.5,
     "status": "bullish",
-    "summary": "Price remains above exit and below review target.",
-    "updated_cycle": "2026-10-30T12:09Z-event"
+    "summary": "Review target reached; raising target for next assessment.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -90,22 +92,24 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "30\u2011day momentum still strong, trend signal active."
+      "Dip and trend signals active, price above exit, RSI approaching 50."
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit and below review",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, price comfortably above exit.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "SUI-USD": {
     "confidence_history": [],
     "exit_below": 0.75,
     "invalidation": [],
     "opened_cycle": "2026-10-31T15:31Z-event",
-    "reasons": [],
+    "reasons": [
+      "Dip signal active, price above exit, modest upside."
+    ],
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, price above exit.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -124,8 +128,8 @@
     ],
     "review_above": 1.5,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit and below review",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, price above exit.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
@@ -133,13 +137,12 @@
     "invalidation": [],
     "opened_cycle": "2026-10-28T15:16Z-event",
     "reasons": [
-      "No breach of exit level.",
-      "Trend still neutral."
+      "Strong 24h gain, trend neutral but no adverse signals."
     ],
     "review_above": 1400.0,
     "status": "bullish",
-    "summary": "Price above exit and below review target.",
-    "updated_cycle": "2026-10-30T12:09Z-event"
+    "summary": "Thesis unchanged, price above exit.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [],
@@ -147,10 +150,10 @@
     "invalidation": [],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Dip signal active, trend true."
+      "Price well above exit, dip signal still true, RSI moderate."
     ],
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit and below review",
-    "updated_cycle": "2026-10-31T15:31Z-event"
+    "summary": "Thesis unchanged, dip and trend signals active.",
+    "updated_cycle": "2026-10-31T16:06Z-event"
   }
 }
