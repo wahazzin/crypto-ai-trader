@@ -1,15 +1,23 @@
 {
   "AAVE-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 82,
+        "cycle": "2026-10-31T18:51Z-event"
+      }
+    ],
     "exit_below": 120,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $120"
+    ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "Price remains well above exit level, dip signal still active, RSI low indicating upside potential."
+      "24h return +7.0%, dip active, RSI low."
     ],
+    "review_above": 150,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit and below any new target.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "Increased exposure; price still well above exit, dip signal remains valid.",
+    "updated_cycle": "2026-10-31T18:51Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -55,6 +63,26 @@
     "status": "bullish",
     "summary": "New bullish thesis based on strong 24h momentum and positive dip/trend signals",
     "updated_cycle": "2026-10-31T18:00Z"
+  },
+  "NEAR-USD": {
+    "confidence_history": [
+      {
+        "confidence": 80,
+        "cycle": "2026-10-31T18:51Z-event"
+      }
+    ],
+    "exit_below": 4.0,
+    "invalidation": [
+      "Price < $4.0"
+    ],
+    "opened_cycle": "2026-10-31T18:51Z-event",
+    "reasons": [
+      "24h return +5.9%, dip active, RSI 44.5."
+    ],
+    "review_above": 5.0,
+    "status": "bullish",
+    "summary": "Increased exposure; dip signal active, recent 24h rally supports upside.",
+    "updated_cycle": "2026-10-31T18:51Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -117,17 +145,24 @@
     "updated_cycle": "2026-10-31T16:06Z-event"
   },
   "ZEC-USD": {
-    "confidence_history": [],
-    "exit_below": 1150.0,
-    "invalidation": [],
+    "confidence_history": [
+      {
+        "confidence": 78,
+        "cycle": "2026-10-31T18:51Z-event"
+      }
+    ],
+    "exit_below": 1150,
+    "invalidation": [
+      "Price < $1150"
+    ],
     "opened_cycle": "2026-10-28T15:16Z-event",
     "reasons": [
-      "Strong 24h gain, trend neutral but no adverse signals."
+      "24h gain +4.4%, price above 20\u2011day SMA, RSI ~52."
     ],
-    "review_above": 1400.0,
+    "review_above": 1400,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "Added position; thesis unchanged, price above exit and trend neutral but momentum strong.",
+    "updated_cycle": "2026-10-31T18:51Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [],
