@@ -1,43 +1,14 @@
 {
   "events": [
     {
-      "added": [],
-      "asof_month": "2026-11",
-      "large": [
-        "BTC-USD",
-        "ETH-USD",
-        "ZEC-USD",
-        "XRP-USD",
-        "SOL-USD",
-        "NEAR-USD",
-        "SUI-USD",
-        "QNT-USD",
-        "ADA-USD",
-        "LINK-USD"
+      "coins": [
+        "VVV-USD"
       ],
-      "mid": [
-        "UNI-USD",
-        "LTC-USD",
-        "XLM-USD",
-        "VVV-USD",
-        "ENA-USD",
-        "TAO-USD",
-        "AVAX-USD",
-        "ONDO-USD",
-        "HBAR-USD"
-      ],
-      "removed": [
-        "AAVE-USD",
-        "AERO-USD",
-        "ARB-USD",
-        "BCH-USD",
-        "FET-USD",
-        "ZRO-USD"
-      ],
-      "type": "UNIVERSE_REFRESHED"
+      "type": "COINS_LEFT_OUT",
+      "why": "stale/invalid quote"
     }
   ],
-  "from": "2026-11-01T00:00Z",
+  "from": "2026-11-01T06:00Z",
   "risk_engine": [],
   "your_fills": []
 }

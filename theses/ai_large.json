@@ -20,14 +20,14 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price (4.423) > exit_below (3.80)",
+      "Price (4.373) > exit_below (3.80)",
       "Dip signal still active",
       "Rotation rank remains strong"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and dip signal active.",
-    "updated_cycle": "2026-11-01T00:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level and dip signal still active.",
+    "updated_cycle": "2026-11-01T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -86,14 +86,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price (200.165) > exit_below (180)",
+      "Price (200.29) > exit_below (180)",
       "Trend signal still true",
       "Recent 24h gain reinforces bullish view"
     ],
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains well above exit level and trend signal stays active.",
-    "updated_cycle": "2026-11-01T00:00Z"
+    "updated_cycle": "2026-11-01T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -112,13 +112,13 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.8979) > exit_below (0.80)",
+      "Price (0.905) > exit_below (0.80)",
       "Dip signal still active"
     ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and dip signal still active.",
-    "updated_cycle": "2026-11-01T00:00Z"
+    "updated_cycle": "2026-11-01T06:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -145,12 +145,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1250.285) > exit_below (1150)",
+      "Price (1247.64) > exit_below (1150)",
       "Trend signal still true"
     ],
     "review_above": 1400,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and trend signal still true.",
-    "updated_cycle": "2026-11-01T00:00Z"
+    "updated_cycle": "2026-11-01T06:00Z"
   }
 }
