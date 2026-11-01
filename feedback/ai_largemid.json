@@ -1,14 +1,6 @@
 {
-  "events": [
-    {
-      "coins": [
-        "VVV-USD"
-      ],
-      "type": "COINS_LEFT_OUT",
-      "why": "stale/invalid quote"
-    }
-  ],
-  "from": "2026-11-01T06:00Z",
+  "events": [],
+  "from": "2026-11-01T12:00Z",
   "risk_engine": [],
   "your_fills": []
 }
