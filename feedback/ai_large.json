@@ -1,22 +1,59 @@
 {
-  "events": [],
-  "from": "2026-10-31T18:00Z",
+  "events": [
+    {
+      "added": [],
+      "asof_month": "2026-11",
+      "large": [
+        "BTC-USD",
+        "ETH-USD",
+        "ZEC-USD",
+        "XRP-USD",
+        "SOL-USD",
+        "NEAR-USD",
+        "SUI-USD",
+        "QNT-USD",
+        "ADA-USD",
+        "LINK-USD"
+      ],
+      "mid": [
+        "UNI-USD",
+        "LTC-USD",
+        "XLM-USD",
+        "VVV-USD",
+        "ENA-USD",
+        "TAO-USD",
+        "AVAX-USD",
+        "ONDO-USD",
+        "HBAR-USD"
+      ],
+      "removed": [
+        "AAVE-USD",
+        "AERO-USD",
+        "ARB-USD",
+        "BCH-USD",
+        "FET-USD",
+        "ZRO-USD"
+      ],
+      "type": "UNIVERSE_REFRESHED"
+    }
+  ],
+  "from": "2026-11-01T00:00Z",
   "risk_engine": [
     {
       "action": "ADD",
-      "asset": "QNT-USD",
+      "asset": "NEAR-USD",
       "codes": [],
-      "final_weight": 0.14,
-      "requested_weight": 0.14,
+      "final_weight": 0.1,
+      "requested_weight": 0.1,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
+      "asset": "NEAR-USD",
       "cause": "ai",
-      "price": 204.51263399999996,
-      "qty": 0.7900368692118239,
+      "price": 4.4257538599999995,
+      "qty": 59.981648421209684,
       "side": "buy"
     }
   ]

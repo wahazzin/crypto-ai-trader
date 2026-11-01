@@ -1,216 +1,210 @@
 {
-  "asof_month": "2026-10",
+  "asof_month": "2026-11",
   "large": [
     "BTC-USD",
     "ETH-USD",
-    "XRP-USD",
     "ZEC-USD",
+    "XRP-USD",
     "SOL-USD",
     "NEAR-USD",
     "SUI-USD",
     "QNT-USD",
-    "LINK-USD",
-    "ADA-USD"
+    "ADA-USD",
+    "LINK-USD"
   ],
   "mid": [
     "UNI-USD",
-    "AVAX-USD",
-    "XLM-USD",
-    "HBAR-USD",
-    "TAO-USD",
     "LTC-USD",
+    "XLM-USD",
     "VVV-USD",
-    "ONDO-USD",
-    "AERO-USD",
     "ENA-USD",
-    "AAVE-USD",
-    "BCH-USD",
-    "ARB-USD",
-    "FET-USD",
-    "ZRO-USD"
+    "TAO-USD",
+    "AVAX-USD",
+    "ONDO-USD",
+    "HBAR-USD"
   ],
   "mode": "screen",
   "ranked": [
     {
-      "avg_daily_usd_M": 496.22,
+      "avg_daily_usd_M": 387.79,
       "history_days": 350,
       "product": "BTC-USD",
       "rank": 1
     },
     {
-      "avg_daily_usd_M": 263.36,
+      "avg_daily_usd_M": 192.09,
       "history_days": 350,
       "product": "ETH-USD",
       "rank": 2
     },
     {
-      "avg_daily_usd_M": 155.6,
+      "avg_daily_usd_M": 100.66,
       "history_days": 350,
-      "product": "XRP-USD",
+      "product": "ZEC-USD",
       "rank": 3
     },
     {
-      "avg_daily_usd_M": 146.62,
+      "avg_daily_usd_M": 64.57,
       "history_days": 350,
-      "product": "ZEC-USD",
+      "product": "XRP-USD",
       "rank": 4
     },
     {
-      "avg_daily_usd_M": 108.91,
+      "avg_daily_usd_M": 52.21,
       "history_days": 350,
       "product": "SOL-USD",
       "rank": 5
     },
     {
-      "avg_daily_usd_M": 59.85,
+      "avg_daily_usd_M": 37.96,
       "history_days": 350,
       "product": "NEAR-USD",
       "rank": 6
     },
     {
-      "avg_daily_usd_M": 35.14,
+      "avg_daily_usd_M": 14.83,
       "history_days": 350,
       "product": "SUI-USD",
       "rank": 7
     },
     {
-      "avg_daily_usd_M": 32.45,
+      "avg_daily_usd_M": 14.14,
       "history_days": 350,
       "product": "QNT-USD",
       "rank": 8
     },
     {
-      "avg_daily_usd_M": 25.5,
+      "avg_daily_usd_M": 9.11,
       "history_days": 350,
-      "product": "LINK-USD",
+      "product": "ADA-USD",
       "rank": 9
     },
     {
-      "avg_daily_usd_M": 21.31,
+      "avg_daily_usd_M": 8.01,
       "history_days": 350,
-      "product": "ADA-USD",
+      "product": "LINK-USD",
       "rank": 10
     },
     {
-      "avg_daily_usd_M": 19.54,
+      "avg_daily_usd_M": 7.56,
       "history_days": 350,
       "product": "UNI-USD",
       "rank": 11
     },
     {
-      "avg_daily_usd_M": 17.5,
+      "avg_daily_usd_M": 6.66,
       "history_days": 350,
-      "product": "AVAX-USD",
+      "product": "LTC-USD",
       "rank": 12
     },
     {
-      "avg_daily_usd_M": 15.88,
+      "avg_daily_usd_M": 6.23,
       "history_days": 350,
       "product": "XLM-USD",
       "rank": 13
     },
     {
-      "avg_daily_usd_M": 14.5,
+      "avg_daily_usd_M": 5.92,
       "history_days": 350,
-      "product": "HBAR-USD",
+      "product": "VVV-USD",
       "rank": 14
     },
     {
-      "avg_daily_usd_M": 13.98,
+      "avg_daily_usd_M": 5.88,
       "history_days": 350,
-      "product": "TAO-USD",
+      "product": "ENA-USD",
       "rank": 15
     },
     {
-      "avg_daily_usd_M": 13.59,
+      "avg_daily_usd_M": 5.68,
       "history_days": 350,
-      "product": "LTC-USD",
+      "product": "TAO-USD",
       "rank": 16
     },
     {
-      "avg_daily_usd_M": 13.19,
+      "avg_daily_usd_M": 5.17,
       "history_days": 350,
-      "product": "VVV-USD",
+      "product": "AVAX-USD",
       "rank": 17
     },
     {
-      "avg_daily_usd_M": 12.96,
+      "avg_daily_usd_M": 5.12,
       "history_days": 350,
       "product": "ONDO-USD",
       "rank": 18
     },
     {
-      "avg_daily_usd_M": 8.83,
+      "avg_daily_usd_M": 5.05,
       "history_days": 350,
-      "product": "AERO-USD",
+      "product": "HBAR-USD",
       "rank": 19
     },
     {
-      "avg_daily_usd_M": 8.57,
+      "avg_daily_usd_M": 4.97,
       "history_days": 350,
-      "product": "ENA-USD",
+      "product": "AERO-USD",
       "rank": 20
     },
     {
-      "avg_daily_usd_M": 7.84,
+      "avg_daily_usd_M": 4.78,
       "history_days": 350,
-      "product": "AAVE-USD",
+      "product": "ZRO-USD",
       "rank": 21
     },
     {
-      "avg_daily_usd_M": 7.82,
+      "avg_daily_usd_M": 4.17,
       "history_days": 350,
-      "product": "BCH-USD",
+      "product": "STRK-USD",
       "rank": 22
     },
     {
-      "avg_daily_usd_M": 7.3,
+      "avg_daily_usd_M": 3.79,
       "history_days": 350,
-      "product": "ARB-USD",
+      "product": "INJ-USD",
       "rank": 23
     },
     {
-      "avg_daily_usd_M": 5.76,
+      "avg_daily_usd_M": 3.47,
       "history_days": 350,
-      "product": "FET-USD",
+      "product": "AAVE-USD",
       "rank": 24
     },
     {
-      "avg_daily_usd_M": 5.18,
+      "avg_daily_usd_M": 2.89,
       "history_days": 350,
-      "product": "ZRO-USD",
+      "product": "FET-USD",
       "rank": 25
     },
     {
-      "avg_daily_usd_M": 4.57,
+      "avg_daily_usd_M": 2.84,
       "history_days": 350,
       "product": "WLD-USD",
       "rank": 26
     },
     {
-      "avg_daily_usd_M": 4.56,
+      "avg_daily_usd_M": 2.6,
       "history_days": 350,
-      "product": "DOT-USD",
+      "product": "BCH-USD",
       "rank": 27
     },
     {
-      "avg_daily_usd_M": 4.54,
+      "avg_daily_usd_M": 2.33,
       "history_days": 350,
-      "product": "ICP-USD",
+      "product": "TIA-USD",
       "rank": 28
     },
     {
-      "avg_daily_usd_M": 4.4,
+      "avg_daily_usd_M": 2.27,
       "history_days": 350,
-      "product": "INJ-USD",
+      "product": "ICP-USD",
       "rank": 29
     },
     {
-      "avg_daily_usd_M": 4.02,
+      "avg_daily_usd_M": 2.24,
       "history_days": 350,
       "product": "FIL-USD",
       "rank": 30
     }
   ],
-  "screened_at": "2026-10-07T06:39:46Z"
+  "screened_at": "2026-11-01T00:02:02Z"
 }

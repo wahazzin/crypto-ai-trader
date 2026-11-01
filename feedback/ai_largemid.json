@@ -1,53 +1,43 @@
 {
-  "events": [],
-  "from": "2026-10-31T21:41Z-event",
-  "risk_engine": [
+  "events": [
     {
-      "action": "SELL",
-      "asset": "ARB-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.025,
-      "requested_weight": 0.025,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ZRO-USD",
-      "codes": [],
-      "final_weight": 0.065,
-      "requested_weight": 0.065,
-      "status": "APPROVED"
+      "added": [],
+      "asof_month": "2026-11",
+      "large": [
+        "BTC-USD",
+        "ETH-USD",
+        "ZEC-USD",
+        "XRP-USD",
+        "SOL-USD",
+        "NEAR-USD",
+        "SUI-USD",
+        "QNT-USD",
+        "ADA-USD",
+        "LINK-USD"
+      ],
+      "mid": [
+        "UNI-USD",
+        "LTC-USD",
+        "XLM-USD",
+        "VVV-USD",
+        "ENA-USD",
+        "TAO-USD",
+        "AVAX-USD",
+        "ONDO-USD",
+        "HBAR-USD"
+      ],
+      "removed": [
+        "AAVE-USD",
+        "AERO-USD",
+        "ARB-USD",
+        "BCH-USD",
+        "FET-USD",
+        "ZRO-USD"
+      ],
+      "type": "UNIVERSE_REFRESHED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ARB-USD",
-      "cause": "ai_event",
-      "price": 0.16375608,
-      "qty": 256.3096405091535,
-      "side": "sell"
-    },
-    {
-      "asset": "BTC-USD",
-      "cause": "ai_event",
-      "price": 77400.93709200001,
-      "qty": 0.0027359130556354376,
-      "side": "buy"
-    },
-    {
-      "asset": "ZRO-USD",
-      "cause": "ai_event",
-      "price": 1.8570551999999998,
-      "qty": 50.720659038374265,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-11-01T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }

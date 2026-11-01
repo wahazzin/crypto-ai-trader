@@ -1,36 +1,15 @@
 {
-  "cash": 5500.11679317227,
-  "day_start_date": "2026-10-31",
-  "day_start_equity": 9369.520217175239,
+  "cash": 7997.292071142582,
+  "day_start_date": "2026-11-01",
+  "day_start_equity": 9437.905246485347,
   "extra": {},
-  "fees_usd": 138.83235630540094,
+  "fees_usd": 148.86117268279173,
   "halted_until": null,
-  "last_ts": "2026-10-31T23:47:02Z",
+  "last_ts": "2026-11-01T00:02:02Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
   "positions": {
-    "AAVE-USD": {
-      "avg_cost": 136.87337376554726,
-      "opened_cycle": "2026-10-25T06:00Z",
-      "opened_ts": "2026-10-25T06:06:53Z",
-      "qty": 4.317738471329237,
-      "stop_pct": 18.0
-    },
-    "AERO-USD": {
-      "avg_cost": 0.6222683593384735,
-      "opened_cycle": "2026-10-30T00:00Z",
-      "opened_ts": "2026-10-30T00:03:58Z",
-      "qty": 1477.3187563218853,
-      "stop_pct": 18.0
-    },
-    "ARB-USD": {
-      "avg_cost": 0.17552646643919126,
-      "opened_cycle": "2026-10-23T06:00Z",
-      "opened_ts": "2026-10-23T06:04:16Z",
-      "qty": 5615.556152767857,
-      "stop_pct": 18.0
-    },
     "NEAR-USD": {
       "avg_cost": 4.698314424891744,
       "opened_cycle": "2026-10-24T00:00Z",
@@ -44,24 +23,12 @@
       "opened_ts": "2026-10-24T12:05:51Z",
       "qty": 1756.3733972681243,
       "stop_pct": 18.0
-    },
-    "QNT-USD": {
-      "avg_cost": 179.847844,
-      "opened_cycle": "2026-10-30T00:00Z",
-      "opened_ts": "2026-10-30T00:03:58Z",
-      "qty": 0.30925064075995956,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 36.060361252244405,
-  "spread_usd": 7.884457442856473,
-  "traded_notional_usd": 34708.08907635025,
+  "slippage_usd": 38.11334698714796,
+  "spread_usd": 8.623714699590373,
+  "traded_notional_usd": 37215.29317069795,
   "trades": [
-    {
-      "cause": "stop",
-      "notional": 801.5231754043979,
-      "ts": "2026-10-29T21:05:00Z"
-    },
     {
       "cause": "strategy",
       "notional": 919.2887187163736,
@@ -71,6 +38,26 @@
       "cause": "strategy",
       "notional": 55.61806099629725,
       "ts": "2026-10-30T00:03:58Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 575.8602680192049,
+      "ts": "2026-11-01T00:02:02Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 951.3656623527636,
+      "ts": "2026-11-01T00:02:02Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 918.0415198644841,
+      "ts": "2026-11-01T00:02:02Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 61.93664411125092,
+      "ts": "2026-11-01T00:02:02Z"
     }
   ]
 }
