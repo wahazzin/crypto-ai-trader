@@ -1,23 +1,15 @@
 {
   "events": [],
-  "from": "2026-11-02T16:39Z-event",
+  "from": "2026-11-02T18:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
+      "action": "HOLD",
+      "asset": "NEAR-USD",
       "codes": [],
-      "final_weight": 0.14,
-      "requested_weight": 0.14,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "QNT-USD",
-      "cause": "ai_event",
-      "price": 199.580405150239,
-      "qty": 0.48826952383266653,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }

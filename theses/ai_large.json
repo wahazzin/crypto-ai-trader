@@ -12,21 +12,25 @@
       {
         "confidence": 70,
         "cycle": "2026-11-01T00:00Z"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-02T18:00Z"
       }
     ],
-    "exit_below": 3.8,
+    "exit_below": 3.6,
     "invalidation": [
-      "Price < $3.80"
+      "Price < $3.60"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price (3.93) > exit_below (3.8)",
-      "Dip signal still true, though momentum weakening"
+      "Price remains above exit level but has dropped 8.6% in 24h.",
+      "Dip signal still true, though momentum is weakening."
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and dip signal still active.",
-    "updated_cycle": "2026-11-02T17:29Z-event"
+    "summary": "Thesis reaffirmed but risk management tightened due to recent sharp decline.",
+    "updated_cycle": "2026-11-02T18:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
