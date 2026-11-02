@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-11-02T14:24Z-event",
+  "from": "2026-11-02T15:59Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "NEAR-USD",
+      "action": "BUY",
+      "asset": "ETH-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
+      "asset": "ETH-USD",
       "cause": "ai_event",
-      "price": 4.044172039999999,
-      "qty": 204.09813078388873,
-      "side": "sell"
+      "price": 2270.9641020000004,
+      "qty": 0.18401431637137822,
+      "side": "buy"
     }
   ]
 }

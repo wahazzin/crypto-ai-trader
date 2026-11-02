@@ -62,6 +62,26 @@
     "summary": "Core position added based on oversold RSI and short\u2011term momentum.",
     "updated_cycle": "2026-10-31T21:41Z-event"
   },
+  "ETH-USD": {
+    "confidence_history": [
+      {
+        "confidence": 62,
+        "cycle": "2026-11-02T15:59Z-event"
+      }
+    ],
+    "exit_below": 2000,
+    "invalidation": [
+      "Price < $2000"
+    ],
+    "opened_cycle": "2026-11-02T15:59Z-event",
+    "reasons": [
+      "Positive 24h return, low RSI, strong liquidity"
+    ],
+    "review_above": 2500,
+    "status": "bullish",
+    "summary": "Initiating position based on short\u2011term upside and oversold RSI.",
+    "updated_cycle": "2026-11-02T15:59Z-event"
+  },
   "LINK-USD": {
     "confidence_history": [
       {
