@@ -1,44 +1,48 @@
 {
-  "cash": 7997.292071142582,
-  "day_start_date": "2026-11-01",
-  "day_start_equity": 9437.905246485347,
+  "cash": 5635.139197930925,
+  "day_start_date": "2026-11-02",
+  "day_start_equity": 9399.765482192524,
   "extra": {},
-  "fees_usd": 148.86117268279173,
+  "fees_usd": 158.27214030514892,
   "halted_until": null,
-  "last_ts": "2026-11-01T23:08:24Z",
+  "last_ts": "2026-11-02T00:03:25Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
   "positions": {
+    "ENA-USD": {
+      "avg_cost": 0.18444426,
+      "opened_cycle": "2026-11-02T00:00Z",
+      "opened_ts": "2026-11-02T00:03:25Z",
+      "qty": 5103.5755685701615,
+      "stop_pct": 18.0
+    },
     "NEAR-USD": {
-      "avg_cost": 4.698314424891744,
+      "avg_cost": 4.499896770594389,
       "opened_cycle": "2026-10-24T00:00Z",
       "opened_ts": "2026-10-24T00:05:11Z",
-      "qty": 160.6120044037124,
+      "qty": 327.7550201296108,
       "stop_pct": 18.0
     },
     "ONDO-USD": {
-      "avg_cost": 0.40501261748244005,
+      "avg_cost": 0.40516850269729426,
       "opened_cycle": "2026-10-24T12:00Z",
       "opened_ts": "2026-10-24T12:05:51Z",
-      "qty": 1756.3733972681243,
+      "qty": 2318.867822764814,
+      "stop_pct": 18.0
+    },
+    "SUI-USD": {
+      "avg_cost": 0.90194084,
+      "opened_cycle": "2026-11-02T00:00Z",
+      "opened_ts": "2026-11-02T00:03:25Z",
+      "qty": 513.3150530862268,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 38.11334698714796,
-  "spread_usd": 8.623714699590373,
-  "traded_notional_usd": 37215.29317069795,
+  "slippage_usd": 40.44006819766224,
+  "spread_usd": 9.097528530245611,
+  "traded_notional_usd": 39568.03507628725,
   "trades": [
-    {
-      "cause": "strategy",
-      "notional": 919.2887187163736,
-      "ts": "2026-10-30T00:03:58Z"
-    },
-    {
-      "cause": "strategy",
-      "notional": 55.61806099629725,
-      "ts": "2026-10-30T00:03:58Z"
-    },
     {
       "cause": "strategy",
       "notional": 575.8602680192049,
@@ -58,6 +62,26 @@
       "cause": "strategy",
       "notional": 61.93664411125092,
       "ts": "2026-11-01T00:02:02Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 941.3252190990027,
+      "ts": "2026-11-02T00:03:25Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 720.2580595265962,
+      "ts": "2026-11-02T00:03:25Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 228.17881679846587,
+      "ts": "2026-11-02T00:03:25Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 462.979810165236,
+      "ts": "2026-11-02T00:03:25Z"
     }
   ]
 }
