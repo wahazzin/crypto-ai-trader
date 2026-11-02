@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-02",
-      "calls_today": 3,
-      "last_call": "2026-11-02T15:59:23Z"
+      "calls_today": 4,
+      "last_call": "2026-11-02T16:29:24Z"
     }
   },
   "fired": {
@@ -29,7 +29,7 @@
     "ai_largemid|BTC-USD:exit_below:77000": "2026-10-30T00:43:58Z",
     "ai_largemid|BTC-USD:volume": "2026-10-30T00:43:58Z",
     "ai_largemid|ENA-USD:move": "2026-10-30T15:10:01Z",
-    "ai_largemid|ENA-USD:volume": "2026-10-30T00:43:58Z",
+    "ai_largemid|ENA-USD:volume": "2026-11-02T16:29:24Z",
     "ai_largemid|ETH-USD:exit_below:2320.72": "2026-10-24T15:16:14Z",
     "ai_largemid|ETH-USD:volume": "2026-10-30T00:43:58Z",
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
@@ -70,7 +70,7 @@
     "ai_largemid|ZEC-USD:volume": "2026-10-20T14:35:09Z",
     "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-10-30T03:54:19Z",
-    "ai_largemid|ZRO-USD:volume": "2026-10-31T21:41:41Z",
+    "ai_largemid|ZRO-USD:volume": "2026-11-02T16:29:24Z",
     "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
     "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-10-08T15:48:22Z",
@@ -105,23 +105,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8733.69,
-      "ai_largemid": 8381.11,
-      "btc_hold": 9196.39,
-      "eth_hold": 8699.08,
-      "ew_basket": 8288.28,
+      "ai_large": 8655.7,
+      "ai_largemid": 8331.31,
+      "btc_hold": 9117.01,
+      "eth_hold": 8601.8,
+      "ew_basket": 8169.7,
       "s_breakout": 9107.23,
-      "s_dip": 9240.4,
+      "s_dip": 9162.37,
       "s_rotation": 8816.02,
-      "s_trend": 9050.16
+      "s_trend": 9014.1
     },
-    "scans": 1,
-    "ts": "2026-11-02T15:29:23Z"
+    "scans": 5,
+    "ts": "2026-11-02T16:29:24Z"
   },
   "last_data_fault": {
     "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-02T13:04:03Z"
   },
-  "last_heartbeat": "2026-11-02T15:29:23Z",
-  "scans_since_heartbeat": 4
+  "last_heartbeat": "2026-11-02T16:29:24Z",
+  "scans_since_heartbeat": 0
 }

@@ -191,17 +191,18 @@
         "cycle": "2026-10-31T21:41Z-event"
       }
     ],
-    "exit_below": 1.5,
+    "exit_below": 1.6,
     "invalidation": [
-      "Price < $1.5"
+      "Price < $1.60"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Strong 24h gain, volume spike, dip & trend signals active"
+      "24h return -6.99% indicates stronger downside risk.",
+      "Price still above original exit but volatility increased."
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Thesis unchanged, price well above exit; added weight.",
-    "updated_cycle": "2026-10-31T21:41Z-event"
+    "summary": "Tightened exit level after 24h price drop of ~7%.",
+    "updated_cycle": "2026-11-02T16:29Z-event"
   }
 }
