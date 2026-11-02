@@ -134,37 +134,5 @@
     "status": "bullish",
     "summary": "Thesis reaffirmed; dip signal active but price pressure increasing.",
     "updated_cycle": "2026-11-02T18:09Z-event"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-26T09:48Z-event"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-10-28T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-28T12:00Z"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-10-29T06:47Z-event"
-      }
-    ],
-    "exit_below": 1150,
-    "invalidation": [
-      "Price < $1150"
-    ],
-    "opened_cycle": "2026-10-26T09:48Z-event",
-    "reasons": [
-      "Price remains comfortably above exit level; no breakout or dip signals"
-    ],
-    "review_above": 1400,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed after 1\u2011hour price drop; still above exit level.",
-    "updated_cycle": "2026-11-02T18:09Z-event"
   }
 }

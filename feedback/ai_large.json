@@ -1,22 +1,22 @@
 {
   "events": [],
-  "from": "2026-11-02T18:09Z-event",
+  "from": "2026-11-02T19:39Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "NEAR-USD",
+      "action": "EXIT",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
+      "final_weight": 0.0,
+      "requested_weight": null,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "NEAR-USD",
+      "asset": "ZEC-USD",
       "cause": "ai_event",
-      "price": 3.9347201105005296,
-      "qty": 88.98260602115879,
+      "price": 1131.3521167255997,
+      "qty": 0.6880280021075651,
       "side": "sell"
     }
   ]
