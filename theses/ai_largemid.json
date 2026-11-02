@@ -91,18 +91,19 @@
         "cycle": "2026-10-31T18:51Z-event"
       }
     ],
-    "exit_below": 4.0,
+    "exit_below": 4.05,
     "invalidation": [
-      "Price < $4.0"
+      "Price < $4.05"
     ],
     "opened_cycle": "2026-10-31T18:51Z-event",
     "reasons": [
-      "24h return +5.9%, dip active, RSI 44.5."
+      "Price fell to $4.13, approaching the prior exit_below of $4.00.",
+      "Volume spike indicates heightened short\u2011term pressure."
     ],
     "review_above": 5.0,
     "status": "bullish",
-    "summary": "Increased exposure; dip signal active, recent 24h rally supports upside.",
-    "updated_cycle": "2026-10-31T18:51Z-event"
+    "summary": "Tightened exit level after 2.9% 1h drop and volume spike.",
+    "updated_cycle": "2026-11-02T06:43Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
