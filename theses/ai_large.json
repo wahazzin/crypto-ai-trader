@@ -20,13 +20,13 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price (4.12) > exit_below (3.8)",
-      "Dip signal still active but momentum fading"
+      "Price (3.93) > exit_below (3.8)",
+      "Dip signal still true, though momentum weakening"
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price still above exit level but dip signal losing strength.",
-    "updated_cycle": "2026-11-02T12:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level and dip signal still active.",
+    "updated_cycle": "2026-11-02T17:29Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -93,12 +93,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Position size now within 15% cap."
+      "Price (197.25) > exit_below (180)",
+      "Trend signal true, 24h return modestly positive"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Weight reduced to comply with max\u2011per\u2011asset limit; thesis unchanged.",
-    "updated_cycle": "2026-11-02T16:39Z-event"
+    "summary": "Thesis unchanged; price above exit and trend signal still positive.",
+    "updated_cycle": "2026-11-02T17:29Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -121,13 +122,13 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price (0.884) > exit_below (0.8)",
+      "Price (0.876) > exit_below (0.8)",
       "Dip signal still active but price pressure increasing"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Partial reduction; price approaching exit level.",
-    "updated_cycle": "2026-11-02T12:00Z"
+    "summary": "Thesis reaffirmed; price above exit level despite dip signal.",
+    "updated_cycle": "2026-11-02T17:29Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -154,12 +155,12 @@
     ],
     "opened_cycle": "2026-10-26T09:48Z-event",
     "reasons": [
-      "Price (1248.56) > exit_below (1150)",
-      "Trend signal still true"
+      "Price (1185.87) > exit_below (1150)",
+      "No breakout or dip signals; price movement within expected volatility"
     ],
     "review_above": 1400,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level.",
-    "updated_cycle": "2026-11-02T12:00Z"
+    "summary": "Thesis reaffirmed after 1\u2011hour price drop; still above exit level.",
+    "updated_cycle": "2026-11-02T17:29Z-event"
   }
 }

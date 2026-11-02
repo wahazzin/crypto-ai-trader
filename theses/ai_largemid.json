@@ -117,6 +117,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-31T14:36Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-02T17:29Z-event"
       }
     ],
     "exit_below": 170,
@@ -125,12 +129,12 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Dip and trend signals active, price above exit, RSI approaching 50."
+      "Positive 24h return, RSI above 50, trend signal active"
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged, price comfortably above exit.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "Thesis unchanged; price remains above exit and short\u2011term indicators stay positive.",
+    "updated_cycle": "2026-11-02T17:29Z-event"
   },
   "SUI-USD": {
     "confidence_history": [],
