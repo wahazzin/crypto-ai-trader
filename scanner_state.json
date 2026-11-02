@@ -104,23 +104,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8713.36,
-      "ai_largemid": 8375.16,
-      "btc_hold": 9201.9,
-      "eth_hold": 8701.7,
-      "ew_basket": 8277.62,
+      "ai_large": 8686.69,
+      "ai_largemid": 8351.85,
+      "btc_hold": 9163.47,
+      "eth_hold": 8653.94,
+      "ew_basket": 8220.22,
       "s_breakout": 9107.23,
-      "s_dip": 9274.67,
+      "s_dip": 9229.42,
       "s_rotation": 8816.02,
-      "s_trend": 9021.83
+      "s_trend": 9017.67
     },
     "scans": 2,
-    "ts": "2026-11-02T12:29:03Z"
+    "ts": "2026-11-02T13:29:03Z"
   },
   "last_data_fault": {
     "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-02T13:04:03Z"
   },
-  "last_heartbeat": "2026-11-02T12:29:03Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-11-02T13:29:03Z",
+  "scans_since_heartbeat": 0
 }
