@@ -42,13 +42,23 @@ def replay(cfg, snaps, proposals_by_cycle, arm="replay"):
     snapshot bid/ask + modelled slippage. Returns {cycle_id: equity}."""
     pf = Portfolio(arm, cfg["capital"]["initial_cash_usd"])
     eq = {}
+    last_seen = {}
     for s in snaps:
         cid, now = s["cycle_id"], _t(s["cycle_id"])
-        assets = s["assets"]
+        live = s["assets"]
+        last_seen.update(live)
+        # A held coin can be missing from a snapshot (it left the scanned universe, e.g. VVV-USD in
+        # 2026-W44): value it at its last known quote instead of crashing with KeyError (fixed 2026-11-02).
+        # It is only FILLED again once it is back in a snapshot (q below = live quotes only).
+        assets = dict(live)
+        for a in pf.positions:
+            if a not in assets and a in last_seen:
+                assets[a] = last_seen[a]
+        s = dict(s, assets=assets)
         mids = {a: v["mid"] for a, v in assets.items()}
         ccfg = U.cycle_config(cfg, {"large": s.get("large", []), "mid": s.get("mid", [])}, set(pf.positions))
         q = {a: {"mid": v["mid"], "bid": v["bid"], "ask": v["ask"], "volume_24h_usd": v["volume_24h_usd"]}
-             for a, v in assets.items()}
+             for a, v in live.items()}
         for a in list(pf.positions):
             if a in mids and mids[a] <= pf.positions[a].stop_price:
                 execute(pf, a, "sell", 0, q[a], ccfg, now, "stop", cid, full_exit=True)

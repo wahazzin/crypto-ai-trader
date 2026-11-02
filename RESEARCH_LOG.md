@@ -411,3 +411,14 @@ neurons/day, busiest day ~9,190 of 10,000 (2026-10-20, 92%). The report now show
 computed from journal rows only while DD now uses the engine's all-time peak; since-start Max DD now includes the
 engine's drawdown, and the headers say which peak each column uses. analytics/weekly.py only (not fingerprinted);
 no rule, arm, prompt or risk limit changed. Tests: tests/test_crypto_ai_weekly.py.
+
+## 2026-11-02: honesty-check replay crashed on a coin that left the snapshots (reporting only)
+
+Weekly review W44. The 2026-W44 weekly check-in ended with "_Honesty checks failed to compute: 'VVV-USD'_": the
+random-policy replay (analytics/diagnostics.py) valued its portfolio only with coins present in the current
+snapshot, so a replayed position in VVV-USD (bought by ai_largemid on 2026-10-25, gone from later snapshots) raised
+KeyError and the whole section (random-policy test, confidence table, outlook ladder) was lost. The replay now values
+a held coin that is missing from a snapshot at its last known quote and only fills it again once it is back in a
+snapshot. Recomputed on the 2026-11-02 state: ai_large beats 29% of 100 random policies, ai_largemid 10%; outlook
+ladders still inverted. diagnostics.py only (not fingerprinted); no rule, arm, prompt or risk limit changed. Test:
+tests/test_crypto_ai_diagnostics.py.

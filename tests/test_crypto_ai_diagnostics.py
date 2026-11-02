@@ -49,6 +49,17 @@ class TestDiagnostics(unittest.TestCase):
         self.assertGreater(ladder[2][1], 0)
         self.assertLess(ladder[-2][1], 0)
 
+    def test_replay_survives_held_coin_missing_from_snapshot(self):
+        # 2026-W44: a held coin (VVV-USD) dropped out of later snapshots -> KeyError, no honesty checks.
+        a = LARGE[0]
+        S = snaps(6, {})
+        for s in S[2:4]:
+            del s["assets"][a]
+        props = lambda cid, pf, snap: ([D.Proposal("m", a, "BUY", 0.1, None, "m")] if cid == S[0]["cycle_id"] else [])
+        eq = D.replay(CFG, S, props)
+        self.assertEqual(len(eq), 6)
+        self.assertAlmostEqual(eq[S[2]["cycle_id"]], eq[S[1]["cycle_id"]], places=6)  # valued at last known mid
+
     def test_wakeup_split_by_opening_order(self):
         o = lambda side, cause, ts, px: {"arm": "ai_large", "asset": "X", "side": side, "qty": 1, "price": px,
                                          "fee_usd": 0, "ts": ts, "cause": cause}
