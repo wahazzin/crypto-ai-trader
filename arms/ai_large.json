@@ -1,11 +1,11 @@
 {
-  "cash": 5453.142967259413,
+  "cash": 5550.2022005308945,
   "day_start_date": "2026-11-02",
   "day_start_equity": 8747.983852942352,
   "extra": {},
-  "fees_usd": 163.77823967135492,
+  "fees_usd": 164.16803578891108,
   "halted_until": null,
-  "last_ts": "2026-11-02T16:29:24Z",
+  "last_ts": "2026-11-02T16:39:23Z",
   "name": "ai_large",
   "no_buys_until": null,
   "peak_equity": 10037.312935605321,
@@ -21,7 +21,7 @@
       "avg_cost": 187.22737706139003,
       "opened_cycle": "2026-10-23T19:34Z-event",
       "opened_ts": "2026-10-23T19:34:50Z",
-      "qty": 6.554427391372043,
+      "qty": 6.066157867539376,
       "stop_pct": 10
     },
     "SUI-USD": {
@@ -39,15 +39,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 26.35656336405667,
-  "spread_usd": 9.051387366521368,
-  "traded_notional_usd": 40944.559917838706,
+  "slippage_usd": 26.41984057964065,
+  "spread_usd": 9.078242190332155,
+  "traded_notional_usd": 41042.00894722775,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 166.27344868253422,
-      "ts": "2026-10-31T14:36:20Z"
-    },
     {
       "cause": "ai",
       "notional": 161.57252107962358,
@@ -67,6 +62,11 @@
       "cause": "ai",
       "notional": 92.39418225554107,
       "ts": "2026-11-02T12:04:03Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 97.44902938903786,
+      "ts": "2026-11-02T16:39:23Z"
     }
   ]
 }

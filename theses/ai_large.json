@@ -81,6 +81,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-02T12:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-11-02T16:39Z-event"
       }
     ],
     "exit_below": 180,
@@ -89,14 +93,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Trend signal true",
-      "Price (199.03) > exit_below (180)",
-      "Recent 24h gain supports bullish view"
+      "Position size now within 15% cap."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; added to position as trend remains positive.",
-    "updated_cycle": "2026-11-02T12:00Z"
+    "summary": "Weight reduced to comply with max\u2011per\u2011asset limit; thesis unchanged.",
+    "updated_cycle": "2026-11-02T16:39Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
