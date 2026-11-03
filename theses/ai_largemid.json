@@ -209,20 +209,23 @@
       {
         "confidence": 60,
         "cycle": "2026-11-03T12:01Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-03T16:16Z-event"
       }
     ],
-    "exit_below": 1.6,
+    "exit_below": 1.7,
     "invalidation": [
-      "Price < $1.60"
+      "Price < $1.70"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price above exit_below and below review_above.",
-      "24h return positive, RSI near 48."
+      "Continues to trade above exit level with positive momentum."
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit and continues modest upside.",
-    "updated_cycle": "2026-11-03T12:01Z-event"
+    "summary": "Volume spike and strong 24h return reinforce bullish outlook.",
+    "updated_cycle": "2026-11-03T16:16Z-event"
   }
 }

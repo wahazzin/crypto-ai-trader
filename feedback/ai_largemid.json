@@ -1,6 +1,17 @@
 {
   "events": [],
-  "from": "2026-11-03T12:00Z",
-  "risk_engine": [],
+  "from": "2026-11-03T16:16Z-event",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R15_NOT_ELIGIBLE"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.08,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
