@@ -67,6 +67,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-03T00:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-03T08:26Z-event"
       }
     ],
     "exit_below": 0.14,
@@ -75,12 +79,12 @@
     ],
     "opened_cycle": "2026-11-03T00:00Z",
     "reasons": [
-      "Dip signal active, price down 6.8% 24h, RSI 38.5, low price offers upside potential."
+      "Continues to meet dip criteria."
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Dip signal active, entering position.",
-    "updated_cycle": "2026-11-03T00:00Z"
+    "summary": "Dip signal remains active, price above exit, no new invalidation.",
+    "updated_cycle": "2026-11-03T08:26Z-event"
   },
   "ETH-USD": {
     "confidence_history": [

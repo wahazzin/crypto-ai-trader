@@ -1,6 +1,17 @@
 {
   "events": [],
-  "from": "2026-11-03T06:00Z",
-  "risk_engine": [],
+  "from": "2026-11-03T08:26Z-event",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "ENA-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.069,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
