@@ -32,8 +32,8 @@
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level but recent 9.9% 24h drop increases short\u2011term risk.",
-    "updated_cycle": "2026-11-03T00:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level but is close to stop, short\u2011term risk elevated.",
+    "updated_cycle": "2026-11-03T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -104,8 +104,8 @@
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; trend signal positive despite recent pullback.",
-    "updated_cycle": "2026-11-03T00:00Z"
+    "summary": "Thesis unchanged; trend signal positive despite recent pullback, price above exit level.",
+    "updated_cycle": "2026-11-03T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -132,7 +132,7 @@
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; dip signal active but price still above exit level.",
-    "updated_cycle": "2026-11-03T00:00Z"
+    "summary": "Thesis reaffirmed; dip signal active and price remains above exit level.",
+    "updated_cycle": "2026-11-03T06:00Z"
   }
 }
