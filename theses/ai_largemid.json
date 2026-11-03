@@ -205,6 +205,10 @@
       {
         "confidence": 75,
         "cycle": "2026-10-31T21:41Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-03T12:01Z-event"
       }
     ],
     "exit_below": 1.6,
@@ -213,12 +217,12 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "24h return -6.99% indicates stronger downside risk.",
-      "Price still above original exit but volatility increased."
+      "Price above exit_below and below review_above.",
+      "24h return positive, RSI near 48."
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Tightened exit level after 24h price drop of ~7%.",
-    "updated_cycle": "2026-11-02T16:29Z-event"
+    "summary": "Thesis unchanged; price remains above exit and continues modest upside.",
+    "updated_cycle": "2026-11-03T12:01Z-event"
   }
 }
