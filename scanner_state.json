@@ -120,9 +120,9 @@
     "ts": "2026-11-03T18:56:27Z"
   },
   "last_data_fault": {
-    "error": "QNT-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-03T12:11:05Z"
+    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-11-03T19:31:52Z"
   },
   "last_heartbeat": "2026-11-03T18:56:27Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
