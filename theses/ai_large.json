@@ -20,6 +20,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-02T18:09Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-03T12:00Z"
       }
     ],
     "exit_below": 3.6,
@@ -28,12 +32,12 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price still above exit_below (3.6) and stop price (3.60); no breach."
+      "Price remains above $3.60 exit; however 6% 24h decline and drawdown suggest caution."
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level but is close to stop, short\u2011term risk elevated.",
-    "updated_cycle": "2026-11-03T06:00Z"
+    "summary": "Thesis reaffirmed; price still above exit level but recent pullback increases short\u2011term risk.",
+    "updated_cycle": "2026-11-03T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -92,6 +96,10 @@
       {
         "confidence": 80,
         "cycle": "2026-11-02T16:39Z-event"
+      },
+      {
+        "confidence": 55,
+        "cycle": "2026-11-03T12:00Z"
       }
     ],
     "exit_below": 180,
@@ -100,12 +108,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Trend signal true; price above exit level."
+      "Trend signal true; price above $180 exit; modest pullback but still in uptrend."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; trend signal positive despite recent pullback, price above exit level.",
-    "updated_cycle": "2026-11-03T06:00Z"
+    "summary": "Thesis unchanged; trend signal remains true and price stays above exit level.",
+    "updated_cycle": "2026-11-03T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -128,11 +136,11 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Dip signal true; price above exit level."
+      "Dip signal still valid; price above $0.80 exit."
     ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis reaffirmed; dip signal active and price remains above exit level.",
-    "updated_cycle": "2026-11-03T06:00Z"
+    "updated_cycle": "2026-11-03T12:00Z"
   }
 }
