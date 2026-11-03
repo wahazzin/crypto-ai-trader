@@ -28,12 +28,12 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price still above exit level but 24h drop of 8.6% raises short\u2011term risk"
+      "Price still above exit_below (3.6) and stop price (3.60); no breach."
     ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis remains bullish but exposure reduced due to sharp recent decline.",
-    "updated_cycle": "2026-11-02T18:09Z-event"
+    "summary": "Thesis reaffirmed; price remains above exit level but recent 9.9% 24h drop increases short\u2011term risk.",
+    "updated_cycle": "2026-11-03T00:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -100,12 +100,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Positive 24h return and trend signal support continued upside"
+      "Trend signal true; price above exit level."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit and trend signal still positive.",
-    "updated_cycle": "2026-11-02T18:09Z-event"
+    "summary": "Thesis unchanged; trend signal positive despite recent pullback.",
+    "updated_cycle": "2026-11-03T00:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -128,11 +128,11 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price remains above exit level despite ongoing dip conditions"
+      "Dip signal true; price above exit level."
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; dip signal active but price pressure increasing.",
-    "updated_cycle": "2026-11-02T18:09Z-event"
+    "summary": "Thesis reaffirmed; dip signal active but price still above exit level.",
+    "updated_cycle": "2026-11-03T00:00Z"
   }
 }
