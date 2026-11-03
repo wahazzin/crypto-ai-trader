@@ -120,9 +120,9 @@
     "ts": "2026-11-03T09:46:06Z"
   },
   "last_data_fault": {
-    "error": "QNT-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-03T08:51:05Z"
+    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-11-03T10:01:06Z"
   },
   "last_heartbeat": "2026-11-03T09:46:06Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
