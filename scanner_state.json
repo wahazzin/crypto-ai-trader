@@ -121,9 +121,9 @@
     "ts": "2026-11-04T10:07:30Z"
   },
   "last_data_fault": {
-    "error": "BCH-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-04T07:52:30Z"
+    "error": "ZRO-USD: stale or invalid quote (1 bad so far)",
+    "ts": "2026-11-04T10:22:30Z"
   },
   "last_heartbeat": "2026-11-04T10:07:30Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
