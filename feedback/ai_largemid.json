@@ -1,23 +1,73 @@
 {
   "events": [],
-  "from": "2026-11-04T03:02Z-event",
+  "from": "2026-11-04T04:57Z-event",
   "risk_engine": [
     {
       "action": "REDUCE",
-      "asset": "BCH-USD",
+      "asset": "LINK-USD",
       "codes": [],
       "final_weight": 0.01,
       "requested_weight": 0.01,
+      "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "BCH-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.005,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R15_NOT_ELIGIBLE"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.06,
+      "status": "REJECTED"
+    },
+    {
+      "action": "ADD",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": 0.08,
+      "requested_weight": 0.08,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "SUI-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "BCH-USD",
+      "asset": "LINK-USD",
       "cause": "ai_event",
-      "price": 265.850394,
-      "qty": 0.6082071961183467,
+      "price": 10.9314372,
+      "qty": 6.934153865431532,
       "side": "sell"
+    },
+    {
+      "asset": "ZEC-USD",
+      "cause": "ai_event",
+      "price": 1216.149252,
+      "qty": 0.1361142215654258,
+      "side": "buy"
+    },
+    {
+      "asset": "SUI-USD",
+      "cause": "ai_event",
+      "price": 0.88613136,
+      "qty": 91.43630064640978,
+      "side": "buy"
     }
   ]
 }

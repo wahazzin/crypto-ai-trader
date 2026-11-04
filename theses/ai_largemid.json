@@ -83,16 +83,17 @@
     ],
     "exit_below": 0.15,
     "invalidation": [
-      "Price < $0.14"
+      "Price < $0.15"
     ],
     "opened_cycle": "2026-11-03T00:00Z",
     "reasons": [
-      "Continues to meet dip criteria."
+      "Big 1h move up 4.19% suggests short\u2011term momentum",
+      "Price still above exit level"
     ],
-    "review_above": 0.25,
+    "review_above": 0.28,
     "status": "bullish",
-    "summary": "Dip signal remains active, price above exit, no new invalidation.",
-    "updated_cycle": "2026-11-03T08:26Z-event"
+    "summary": "Price bounce continues after 4.2% 1h move; maintaining bullish view.",
+    "updated_cycle": "2026-11-04T04:57Z-event"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -179,7 +180,7 @@
         "cycle": "2026-11-04T00:26Z-event"
       }
     ],
-    "exit_below": 0.75,
+    "exit_below": 0.8,
     "invalidation": [
       "Price < $0.70"
     ],
@@ -223,7 +224,7 @@
         "cycle": "2026-11-04T00:26Z-event"
       }
     ],
-    "exit_below": 1100,
+    "exit_below": 1150,
     "invalidation": [
       "Price < $1100"
     ],
@@ -255,7 +256,7 @@
         "cycle": "2026-11-04T00:26Z-event"
       }
     ],
-    "exit_below": 1.5,
+    "exit_below": 1.6,
     "invalidation": [
       "Price < $1.5"
     ],
@@ -263,7 +264,7 @@
     "reasons": [
       "Continues to trade above exit with strong short\u2011term returns."
     ],
-    "review_above": 2.5,
+    "review_above": 2.2,
     "status": "bullish",
     "summary": "Increased exposure; thesis unchanged.",
     "updated_cycle": "2026-11-04T00:26Z-event"
