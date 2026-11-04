@@ -35,11 +35,13 @@
       "Price < $3.60"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price $4.07 > exit $3.60; review target $5.5 not hit."
+    ],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit level and no review target hit.",
-    "updated_cycle": "2026-11-04T06:00Z"
+    "summary": "Thesis reaffirmed; price still above exit level and no review target reached.",
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -106,6 +108,10 @@
       {
         "confidence": 75,
         "cycle": "2026-11-04T06:00Z"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-11-04T12:00Z"
       }
     ],
     "exit_below": 170,
@@ -113,11 +119,13 @@
       "Price < $180"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price $200.23 > exit $170; review target $240 not hit."
+    ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; trend signal still true, price stays above exit level.",
-    "updated_cycle": "2026-11-04T06:00Z"
+    "summary": "Thesis reaffirmed; price stays above exit level and trend signal remains true.",
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -139,21 +147,27 @@
       "Price < $0.80"
     ],
     "opened_cycle": "2026-10-28T18:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price $0.90795 > exit $0.80; review target $1.05 not hit."
+    ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price still above exit level and no review target reached.",
-    "updated_cycle": "2026-11-04T06:00Z"
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [],
     "exit_below": 1100,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $1100"
+    ],
     "opened_cycle": "2026-11-04T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price $1290.12 > exit $1100; review target $1500 not hit."
+    ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-04T06:00Z"
+    "summary": "Thesis reaffirmed; price remains well above exit level and no review target reached.",
+    "updated_cycle": "2026-11-04T12:00Z"
   }
 }

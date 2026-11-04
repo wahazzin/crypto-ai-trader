@@ -79,6 +79,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-03T08:26Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-04T12:00Z"
       }
     ],
     "exit_below": 0.15,
@@ -87,13 +91,13 @@
     ],
     "opened_cycle": "2026-11-03T00:00Z",
     "reasons": [
-      "Big 1h move up 4.19% suggests short\u2011term momentum",
-      "Price still above exit level"
+      "Price still above exit level",
+      "24h gain +7.3%"
     ],
     "review_above": 0.28,
     "status": "bullish",
-    "summary": "Price bounce continues after 4.2% 1h move; maintaining bullish view.",
-    "updated_cycle": "2026-11-04T04:57Z-event"
+    "summary": "Dip\u2011based bullish thesis remains valid after continued price bounce.",
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -136,6 +140,27 @@
     "status": "bullish",
     "summary": "New bullish thesis based on strong 24h momentum and positive dip/trend signals",
     "updated_cycle": "2026-10-31T18:00Z"
+  },
+  "NEAR-USD": {
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-11-04T12:00Z"
+      }
+    ],
+    "exit_below": 3.5,
+    "invalidation": [
+      "Price < $3.5"
+    ],
+    "opened_cycle": "2026-11-04T12:00Z",
+    "reasons": [
+      "24h return +5.6%",
+      "RSI 39",
+      "Volume ratio 1.59"
+    ],
+    "status": "bullish",
+    "summary": "New bullish thesis based on recent rebound and volume strength.",
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -222,6 +247,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-04T00:26Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-11-04T12:00Z"
       }
     ],
     "exit_below": 1200,
@@ -230,14 +259,13 @@
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "Review above $1300 reached (price $1305).",
-      "24h return +11.88% and 6h return +8.24% show strong momentum.",
-      "Price still comfortably above existing exit."
+      "24h return +10% and 6h return +8.2%",
+      "Price above previous exit"
     ],
     "review_above": 1350,
     "status": "bullish",
-    "summary": "Price exceeded review level; raising exit and setting new profit target.",
-    "updated_cycle": "2026-11-04T10:17Z-event"
+    "summary": "Momentum remains strong; raising profit target.",
+    "updated_cycle": "2026-11-04T12:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -256,6 +284,10 @@
       {
         "confidence": 75,
         "cycle": "2026-11-04T00:26Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-04T12:00Z"
       }
     ],
     "exit_below": 1.6,
@@ -264,11 +296,12 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Continues to trade above exit with strong short\u2011term returns."
+      "24h return +6.6%",
+      "RSI 53"
     ],
     "review_above": 2.2,
     "status": "bullish",
-    "summary": "Increased exposure; thesis unchanged.",
-    "updated_cycle": "2026-11-04T00:26Z-event"
+    "summary": "Short\u2011term upside continues; maintaining exit level.",
+    "updated_cycle": "2026-11-04T12:00Z"
   }
 }
