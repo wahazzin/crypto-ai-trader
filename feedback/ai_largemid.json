@@ -1,6 +1,63 @@
 {
   "events": [],
-  "from": "2026-11-03T18:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-04T00:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ZRO-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.0607,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "SUI-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.0254,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ENA-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.056,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "XRP-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.0129,
+      "status": "REJECTED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZEC-USD",
+      "cause": "ai",
+      "price": 1223.673764,
+      "qty": 0.2041273803652609,
+      "side": "buy"
+    }
+  ]
 }
