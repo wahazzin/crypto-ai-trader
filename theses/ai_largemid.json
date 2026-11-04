@@ -55,6 +55,10 @@
       {
         "confidence": 70,
         "cycle": "2026-10-31T21:41Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-11-04T18:00Z"
       }
     ],
     "exit_below": 73000,
@@ -63,12 +67,12 @@
     ],
     "opened_cycle": "2026-10-31T21:41Z-event",
     "reasons": [
-      "Low RSI, positive short\u2011term return, strong liquidity"
+      "No change in indicators, price above exit."
     ],
     "review_above": 85000,
     "status": "bullish",
-    "summary": "Core position added based on oversold RSI and short\u2011term momentum.",
-    "updated_cycle": "2026-10-31T21:41Z-event"
+    "summary": "Maintaining bullish thesis, price still above exit, RSI low, short-term momentum.",
+    "updated_cycle": "2026-11-04T18:00Z"
   },
   "ENA-USD": {
     "confidence_history": [
@@ -104,6 +108,10 @@
       {
         "confidence": 62,
         "cycle": "2026-11-02T15:59Z-event"
+      },
+      {
+        "confidence": 73,
+        "cycle": "2026-11-04T18:00Z"
       }
     ],
     "exit_below": 2000,
@@ -112,12 +120,12 @@
     ],
     "opened_cycle": "2026-11-02T15:59Z-event",
     "reasons": [
-      "Positive 24h return, low RSI, strong liquidity"
+      "No new adverse signals."
     ],
     "review_above": 2500,
     "status": "bullish",
-    "summary": "Initiating position based on short\u2011term upside and oversold RSI.",
-    "updated_cycle": "2026-11-02T15:59Z-event"
+    "summary": "Thesis unchanged, price above exit, momentum continues.",
+    "updated_cycle": "2026-11-04T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [

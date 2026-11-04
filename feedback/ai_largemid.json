@@ -1,48 +1,25 @@
 {
   "events": [],
-  "from": "2026-11-04T12:00Z",
+  "from": "2026-11-04T18:00Z",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "ENA-USD",
+      "action": "BUY",
+      "asset": "BTC-USD",
       "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
+        "R12_BUY_ON_HELD_USE_ADD"
       ],
       "final_weight": null,
-      "requested_weight": 0.07,
-      "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ZEC-USD",
-      "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.09,
-      "status": "REJECTED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ZRO-USD",
-      "codes": [
-        "R15_NOT_ELIGIBLE"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.06,
+      "requested_weight": 0.1,
       "status": "REJECTED"
     },
     {
       "action": "BUY",
-      "asset": "NEAR-USD",
+      "asset": "ETH-USD",
       "codes": [
-        "R4_ALT_CLUSTER",
-        "R7_MIN_ORDER"
+        "R12_BUY_ON_HELD_USE_ADD"
       ],
       "final_weight": null,
-      "requested_weight": 0.02,
+      "requested_weight": 0.1,
       "status": "REJECTED"
     }
   ],
