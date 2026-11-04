@@ -224,18 +224,20 @@
         "cycle": "2026-11-04T00:26Z-event"
       }
     ],
-    "exit_below": 1150,
+    "exit_below": 1200,
     "invalidation": [
-      "Price < $1100"
+      "Price < $1200"
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "Price still above exit, strong 24h momentum."
+      "Review above $1300 reached (price $1305).",
+      "24h return +11.88% and 6h return +8.24% show strong momentum.",
+      "Price still comfortably above existing exit."
     ],
-    "review_above": 1300,
+    "review_above": 1350,
     "status": "bullish",
-    "summary": "Added to position; thesis unchanged.",
-    "updated_cycle": "2026-11-04T00:26Z-event"
+    "summary": "Price exceeded review level; raising exit and setting new profit target.",
+    "updated_cycle": "2026-11-04T10:17Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [
