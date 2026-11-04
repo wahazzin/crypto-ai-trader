@@ -165,6 +165,10 @@
       {
         "confidence": 55,
         "cycle": "2026-11-03T00:00Z"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-04T00:26Z-event"
       }
     ],
     "exit_below": 0.75,
@@ -173,18 +177,22 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "Dip signal active, price down 3.1% 24h, RSI 37, potential rebound."
+      "Price still above exit, recent 24h gain supports rebound."
     ],
     "review_above": 1.2,
     "status": "bullish",
-    "summary": "Adding to existing bullish dip thesis.",
-    "updated_cycle": "2026-11-03T00:00Z"
+    "summary": "Added to existing dip\u2011based bullish thesis.",
+    "updated_cycle": "2026-11-04T00:26Z-event"
   },
   "XRP-USD": {
     "confidence_history": [
       {
         "confidence": 55,
         "cycle": "2026-10-27T00:09Z-event"
+      },
+      {
+        "confidence": 68,
+        "cycle": "2026-11-04T00:26Z-event"
       }
     ],
     "exit_below": 1.0,
@@ -193,23 +201,32 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Volume spike and positive 24h return support upside."
+      "Positive 24h return and volume spike keep upside potential."
     ],
     "review_above": 1.6,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit.",
-    "updated_cycle": "2026-10-31T16:06Z-event"
+    "summary": "Added to position; thesis unchanged.",
+    "updated_cycle": "2026-11-04T00:26Z-event"
   },
   "ZEC-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-11-04T00:26Z-event"
+      }
+    ],
     "exit_below": 1100,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $1100"
+    ],
     "opened_cycle": "2026-11-04T00:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price still above exit, strong 24h momentum."
+    ],
     "review_above": 1300,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-04T00:00Z"
+    "summary": "Added to position; thesis unchanged.",
+    "updated_cycle": "2026-11-04T00:26Z-event"
   },
   "ZRO-USD": {
     "confidence_history": [
@@ -224,19 +241,23 @@
       {
         "confidence": 70,
         "cycle": "2026-11-03T16:16Z-event"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-11-04T00:26Z-event"
       }
     ],
     "exit_below": 1.5,
     "invalidation": [
-      "Price < $1.70"
+      "Price < $1.5"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Continues to trade above exit level with positive momentum."
+      "Continues to trade above exit with strong short\u2011term returns."
     ],
     "review_above": 2.5,
     "status": "bullish",
-    "summary": "Volume spike and strong 24h return reinforce bullish outlook.",
-    "updated_cycle": "2026-11-03T16:16Z-event"
+    "summary": "Increased exposure; thesis unchanged.",
+    "updated_cycle": "2026-11-04T00:26Z-event"
   }
 }
