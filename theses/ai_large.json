@@ -38,8 +38,8 @@
     "reasons": [],
     "review_above": 5.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains comfortably above exit level and no review target hit.",
-    "updated_cycle": "2026-11-04T04:12Z-event"
+    "summary": "Thesis unchanged; price still above exit level and no review target hit.",
+    "updated_cycle": "2026-11-04T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -102,9 +102,13 @@
       {
         "confidence": 55,
         "cycle": "2026-11-03T12:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-11-04T06:00Z"
       }
     ],
-    "exit_below": 180,
+    "exit_below": 170,
     "invalidation": [
       "Price < $180"
     ],
@@ -113,7 +117,7 @@
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis unchanged; trend signal still true, price stays above exit level.",
-    "updated_cycle": "2026-11-04T04:12Z-event"
+    "updated_cycle": "2026-11-04T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -139,6 +143,17 @@
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price still above exit level and no review target reached.",
-    "updated_cycle": "2026-11-04T04:12Z-event"
+    "updated_cycle": "2026-11-04T06:00Z"
+  },
+  "ZEC-USD": {
+    "confidence_history": [],
+    "exit_below": 1100,
+    "invalidation": [],
+    "opened_cycle": "2026-11-04T06:00Z",
+    "reasons": [],
+    "review_above": 1500,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-04T06:00Z"
   }
 }

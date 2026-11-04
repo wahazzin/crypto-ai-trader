@@ -1,6 +1,38 @@
 {
   "events": [],
-  "from": "2026-11-04T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-04T06:00Z",
+  "risk_engine": [
+    {
+      "action": "BUY",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": 0.05,
+      "requested_weight": 0.05,
+      "status": "APPROVED"
+    },
+    {
+      "action": "ADD",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": 0.15,
+      "requested_weight": 0.15,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZEC-USD",
+      "cause": "ai",
+      "price": 1251.8625502030793,
+      "qty": 0.3412621649022085,
+      "side": "buy"
+    },
+    {
+      "asset": "QNT-USD",
+      "cause": "ai",
+      "price": 193.726166,
+      "qty": 0.532765642124177,
+      "side": "buy"
+    }
+  ]
 }
