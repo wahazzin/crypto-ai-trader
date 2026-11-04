@@ -1,68 +1,28 @@
 {
   "events": [],
-  "from": "2026-11-04T06:00Z",
+  "from": "2026-11-04T06:27Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "BCH-USD",
+      "action": "ADD",
+      "asset": "ENA-USD",
       "codes": [
+        "R4_ALT_CLUSTER",
         "R7_MIN_ORDER"
       ],
       "final_weight": null,
-      "requested_weight": 0.006,
+      "requested_weight": 0.08,
       "status": "REJECTED"
     },
     {
-      "action": "REDUCE",
-      "asset": "LINK-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.006,
-      "status": "REJECTED"
-    },
-    {
-      "action": "REDUCE",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": 0.075,
-      "requested_weight": 0.075,
-      "status": "APPROVED"
-    },
-    {
       "action": "ADD",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.05,
-      "requested_weight": 0.05,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "AAVE-USD",
+      "asset": "ZRO-USD",
       "codes": [
         "R15_NOT_ELIGIBLE"
       ],
       "final_weight": null,
-      "requested_weight": 0.03,
+      "requested_weight": 0.08,
       "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "ZEC-USD",
-      "cause": "ai",
-      "price": 1249.869628,
-      "qty": 0.04600071072843395,
-      "side": "sell"
-    },
-    {
-      "asset": "BTC-USD",
-      "cause": "ai",
-      "price": 77718.910674,
-      "qty": 0.0026365569077061108,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
