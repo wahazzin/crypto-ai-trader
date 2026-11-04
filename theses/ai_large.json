@@ -35,13 +35,11 @@
       "Price < $3.60"
     ],
     "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [
-      "Price $3.795 > exit $3.60, still above stop."
-    ],
+    "reasons": [],
     "review_above": 5.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains comfortably above exit level and no review target hit.",
-    "updated_cycle": "2026-11-04T00:31Z-event"
+    "updated_cycle": "2026-11-04T04:12Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -111,13 +109,11 @@
       "Price < $180"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
-    "reasons": [
-      "Price $190.15 > exit $180, trend signal true."
-    ],
+    "reasons": [],
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis unchanged; trend signal still true, price stays above exit level.",
-    "updated_cycle": "2026-11-04T00:31Z-event"
+    "updated_cycle": "2026-11-04T04:12Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -139,12 +135,10 @@
       "Price < $0.80"
     ],
     "opened_cycle": "2026-10-28T18:00Z",
-    "reasons": [
-      "Price $0.88085 > exit $0.80, dip signal false but position remains small."
-    ],
+    "reasons": [],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price still above exit level and no review target reached.",
-    "updated_cycle": "2026-11-04T00:31Z-event"
+    "updated_cycle": "2026-11-04T04:12Z-event"
   }
 }
