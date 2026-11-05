@@ -1,15 +1,4 @@
 {
-  "BTC-USD": {
-    "confidence_history": [],
-    "exit_below": 76880,
-    "invalidation": [],
-    "opened_cycle": "2026-11-04T15:17Z-event",
-    "reasons": [],
-    "review_above": 84980,
-    "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-04T15:17Z-event"
-  },
   "NEAR-USD": {
     "confidence_history": [
       {
