@@ -173,13 +173,11 @@
     ],
     "opened_cycle": "2026-11-04T12:00Z",
     "reasons": [
-      "24h return +5.6%",
-      "RSI 39",
-      "Volume ratio 1.59"
+      "Price $3.65 > exit $3.5, volume spike not sustained"
     ],
     "status": "bullish",
-    "summary": "New bullish thesis based on recent rebound and volume strength.",
-    "updated_cycle": "2026-11-04T12:00Z"
+    "summary": "Thesis holds despite recent volume spike; price remains above exit.",
+    "updated_cycle": "2026-11-05T18:19Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -210,12 +208,12 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Maintain existing bullish view pending price recovery above $170."
+      "Risk engine action, price still above exit"
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level but recent drawdown prompts tighter risk management.",
-    "updated_cycle": "2026-11-05T18:00Z"
+    "summary": "Risk engine reduced weight to target; thesis unchanged.",
+    "updated_cycle": "2026-11-05T18:19Z-event"
   },
   "SUI-USD": {
     "confidence_history": [

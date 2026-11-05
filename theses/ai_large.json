@@ -85,7 +85,7 @@
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains above exit level and trend signal stays true.",
-    "updated_cycle": "2026-11-05T18:00Z"
+    "updated_cycle": "2026-11-05T18:19Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -113,7 +113,7 @@
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price above exit level despite recent pullback.",
-    "updated_cycle": "2026-11-05T18:00Z"
+    "updated_cycle": "2026-11-05T18:19Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
@@ -128,6 +128,6 @@
     "review_above": 1500,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price comfortably above exit level after 24h rally.",
-    "updated_cycle": "2026-11-05T18:00Z"
+    "updated_cycle": "2026-11-05T18:19Z-event"
   }
 }
