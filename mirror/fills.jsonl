@@ -135,3 +135,4 @@
 {"alpaca_minus_sim_bps":-0.59,"arm":"ai_large","asset":"BTC-USD","cause":"ai","filled_avg_price":80588.655626672,"filled_qty":0.002092667,"side":"buy","sim_notional":171.99742428590775,"sim_price":80593.38759751142,"status":"filled","ts":"2026-11-04T18:03:12Z"}
 {"alpaca_minus_sim_bps":0.39,"arm":"ai_large","asset":"ETH-USD","cause":"ai","filled_avg_price":2430.22,"filled_qty":0.069736735,"side":"buy","sim_notional":172.85687162315784,"sim_price":2430.125928,"status":"filled","ts":"2026-11-04T18:03:12Z"}
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":179.59920680868206,"sim_price":3.9960130921059642,"ts":"2026-11-05T12:04:19Z"}
+{"alpaca_minus_sim_bps":157.98,"arm":"ai_large","asset":"ETH-USD","cause":"stop","filled_avg_price":2280.0,"filled_qty":0.244252384,"side":"sell","sim_notional":577.9523181529576,"sim_price":2316.597842867957,"status":"filled","ts":"2026-11-05T15:10:00Z"}
