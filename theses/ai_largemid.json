@@ -198,6 +198,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-02T17:29Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-05T18:00Z"
       }
     ],
     "exit_below": 170,
@@ -206,12 +210,12 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Positive 24h return, RSI above 50, trend signal active"
+      "Maintain existing bullish view pending price recovery above $170."
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit and short\u2011term indicators stay positive.",
-    "updated_cycle": "2026-11-02T17:29Z-event"
+    "summary": "Thesis unchanged; price remains above exit level but recent drawdown prompts tighter risk management.",
+    "updated_cycle": "2026-11-05T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
