@@ -58,12 +58,12 @@
     ],
     "opened_cycle": "2026-10-31T06:00Z",
     "reasons": [
-      "Price up 7.5% over 24h, RSI ~39, no breach of exit_below $3.60."
+      "24h return -1.63%, RSI 42, price still above exit but trend not supportive."
     ],
     "review_above": 5.5,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains well above exit level and 24h momentum stays strong.",
-    "updated_cycle": "2026-11-04T15:17Z-event"
+    "status": "neutral",
+    "summary": "Reduced position; outlook negative, price above exit but momentum fading.",
+    "updated_cycle": "2026-11-05T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
