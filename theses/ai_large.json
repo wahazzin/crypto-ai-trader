@@ -80,12 +80,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Trend signal true, price still above exit_below $170, no breach."
+      "Trend signal true, price still above exit_below $170."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains above exit level and trend signal stays true.",
-    "updated_cycle": "2026-11-05T18:19Z-event"
+    "summary": "Thesis reaffirmed; trend signal still true, price remains above exit level.",
+    "updated_cycle": "2026-11-05T23:19Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -108,12 +108,12 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price still above exit_below $0.80, modest 24h gain earlier."
+      "Price above exit_below $0.80 but down 11% 24h; no breakout or dip signals."
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price above exit level despite recent pullback.",
-    "updated_cycle": "2026-11-05T18:19Z-event"
+    "summary": "Thesis maintained but position reduced; price near exit level.",
+    "updated_cycle": "2026-11-05T23:19Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [],
@@ -127,7 +127,7 @@
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price comfortably above exit level after 24h rally.",
-    "updated_cycle": "2026-11-05T18:19Z-event"
+    "summary": "Thesis reaffirmed; price comfortably above exit level after recent rally.",
+    "updated_cycle": "2026-11-05T23:19Z-event"
   }
 }
