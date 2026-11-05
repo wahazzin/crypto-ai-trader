@@ -291,42 +291,5 @@
     "status": "bullish",
     "summary": "Momentum remains strong; raising profit target.",
     "updated_cycle": "2026-11-05T06:00Z"
-  },
-  "ZRO-USD": {
-    "confidence_history": [
-      {
-        "confidence": 75,
-        "cycle": "2026-10-31T21:41Z-event"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-11-03T12:01Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-03T16:16Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-11-04T00:26Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-04T12:00Z"
-      }
-    ],
-    "exit_below": 1.6,
-    "invalidation": [
-      "Price < $1.5"
-    ],
-    "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [
-      "24h return +6.6%",
-      "RSI 53"
-    ],
-    "review_above": 2.2,
-    "status": "bullish",
-    "summary": "Short\u2011term upside continues; maintaining exit level.",
-    "updated_cycle": "2026-11-04T12:00Z"
   }
 }

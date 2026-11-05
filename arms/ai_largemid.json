@@ -1,11 +1,11 @@
 {
-  "cash": 4592.2544628958485,
+  "cash": 4880.19257644505,
   "day_start_date": "2026-11-05",
   "day_start_equity": 8490.61346460559,
   "extra": {},
-  "fees_usd": 184.71684805901975,
+  "fees_usd": 185.8732260250808,
   "halted_until": null,
-  "last_ts": "2026-11-05T21:59:40Z",
+  "last_ts": "2026-11-05T22:24:58Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -79,18 +79,11 @@
       "opened_ts": "2026-11-04T00:06:52Z",
       "qty": 0.5011793155175077,
       "stop_pct": 18.0
-    },
-    "ZRO-USD": {
-      "avg_cost": 1.7321060893668778,
-      "opened_cycle": "2026-10-31T06:00Z",
-      "opened_ts": "2026-10-31T06:06:00Z",
-      "qty": 181.54455491537718,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 33.98041153421557,
-  "spread_usd": 12.033120783834446,
-  "traded_notional_usd": 46179.21201475496,
+  "slippage_usd": 34.15901382111516,
+  "spread_usd": 12.205588111004056,
+  "traded_notional_usd": 46468.30650627022,
   "trades": [
     {
       "cause": "ai",
@@ -136,6 +129,11 @@
       "cause": "ai",
       "notional": 370.32487101341457,
       "ts": "2026-11-05T18:04:39Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 289.0944915152624,
+      "ts": "2026-11-05T22:24:58Z"
     }
   ]
 }
