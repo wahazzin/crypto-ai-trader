@@ -1,39 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-05T00:00Z",
-  "risk_engine": [
-    {
-      "action": "HOLD",
-      "asset": "NEAR-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "SUI-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    }
-  ],
+  "from": "2026-11-05T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }

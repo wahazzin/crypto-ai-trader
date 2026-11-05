@@ -59,20 +59,25 @@
       {
         "confidence": 75,
         "cycle": "2026-11-04T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-05T06:00Z"
       }
     ],
-    "exit_below": 73000,
+    "exit_below": 75000,
     "invalidation": [
-      "Price < $73000"
+      "Price < $73,000"
     ],
     "opened_cycle": "2026-10-31T21:41Z-event",
     "reasons": [
-      "No change in indicators, price above exit."
+      "24h return +3.5%",
+      "Price above exit level"
     ],
     "review_above": 85000,
     "status": "bullish",
-    "summary": "Maintaining bullish thesis, price still above exit, RSI low, short-term momentum.",
-    "updated_cycle": "2026-11-04T18:00Z"
+    "summary": "Maintaining bullish thesis; price continues above exit and shows upward momentum.",
+    "updated_cycle": "2026-11-05T06:00Z"
   },
   "ENA-USD": {
     "confidence_history": [
@@ -112,20 +117,25 @@
       {
         "confidence": 73,
         "cycle": "2026-11-04T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-05T06:00Z"
       }
     ],
-    "exit_below": 2000,
+    "exit_below": 2100,
     "invalidation": [
-      "Price < $2000"
+      "Price < $2,000"
     ],
     "opened_cycle": "2026-11-02T15:59Z-event",
     "reasons": [
-      "No new adverse signals."
+      "24h return +5.5%",
+      "Price above exit"
     ],
-    "review_above": 2500,
+    "review_above": 2600,
     "status": "bullish",
-    "summary": "Thesis unchanged, price above exit, momentum continues.",
-    "updated_cycle": "2026-11-04T18:00Z"
+    "summary": "Thesis unchanged; price remains well above exit and momentum stays strong.",
+    "updated_cycle": "2026-11-05T06:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -259,21 +269,25 @@
       {
         "confidence": 75,
         "cycle": "2026-11-04T12:00Z"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-05T06:00Z"
       }
     ],
-    "exit_below": 1200,
+    "exit_below": 1150,
     "invalidation": [
-      "Price < $1200"
+      "Price < $1,200"
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "24h return +10% and 6h return +8.2%",
-      "Price above previous exit"
+      "24h return +5.6%",
+      "6h return +8.2%"
     ],
-    "review_above": 1350,
+    "review_above": 1500,
     "status": "bullish",
     "summary": "Momentum remains strong; raising profit target.",
-    "updated_cycle": "2026-11-04T12:00Z"
+    "updated_cycle": "2026-11-05T06:00Z"
   },
   "ZRO-USD": {
     "confidence_history": [
