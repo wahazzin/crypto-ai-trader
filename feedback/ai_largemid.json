@@ -1,6 +1,57 @@
 {
   "events": [],
-  "from": "2026-11-05T12:00Z",
-  "risk_engine": [],
+  "from": "2026-11-05T14:19Z-event",
+  "risk_engine": [
+    {
+      "action": "REDUCE",
+      "asset": "QNT-USD",
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.15,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "BTC-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.1,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ETH-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.1,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "BCH-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.07,
+      "status": "REJECTED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R12_BUY_ON_HELD_USE_ADD"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.1,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }
