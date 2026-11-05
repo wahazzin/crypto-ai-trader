@@ -10,17 +10,6 @@
     "summary": "",
     "updated_cycle": "2026-11-04T15:17Z-event"
   },
-  "ETH-USD": {
-    "confidence_history": [],
-    "exit_below": 2318,
-    "invalidation": [],
-    "opened_cycle": "2026-11-04T15:17Z-event",
-    "reasons": [],
-    "review_above": 2562,
-    "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-04T15:17Z-event"
-  },
   "NEAR-USD": {
     "confidence_history": [
       {
