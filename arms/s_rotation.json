@@ -1,13 +1,13 @@
 {
   "cash": 8816.024214995929,
-  "day_start_date": "2026-11-04",
+  "day_start_date": "2026-11-05",
   "day_start_equity": 8816.024214995929,
   "extra": {
     "rotation_week": "2026-W45"
   },
   "fees_usd": 53.87481981149993,
   "halted_until": null,
-  "last_ts": "2026-11-04T23:28:32Z",
+  "last_ts": "2026-11-05T00:03:31Z",
   "name": "s_rotation",
   "no_buys_until": null,
   "peak_equity": 10043.94224065193,

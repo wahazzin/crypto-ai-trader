@@ -1,27 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-04T18:00Z",
-  "risk_engine": [
-    {
-      "action": "BUY",
-      "asset": "BTC-USD",
-      "codes": [
-        "R12_BUY_ON_HELD_USE_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.1,
-      "status": "REJECTED"
-    },
-    {
-      "action": "BUY",
-      "asset": "ETH-USD",
-      "codes": [
-        "R12_BUY_ON_HELD_USE_ADD"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.1,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-11-05T00:00Z",
+  "risk_engine": [],
   "your_fills": []
 }

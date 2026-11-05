@@ -1,38 +1,39 @@
 {
   "events": [],
-  "from": "2026-11-04T18:00Z",
+  "from": "2026-11-05T00:00Z",
   "risk_engine": [
     {
-      "action": "ADD",
-      "asset": "BTC-USD",
+      "action": "HOLD",
+      "asset": "NEAR-USD",
       "codes": [],
-      "final_weight": 0.07,
-      "requested_weight": 0.07,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     },
     {
-      "action": "ADD",
-      "asset": "ETH-USD",
+      "action": "HOLD",
+      "asset": "QNT-USD",
       "codes": [],
-      "final_weight": 0.07,
-      "requested_weight": 0.07,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "SUI-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai",
-      "price": 80593.38759751142,
-      "qty": 0.0021341381645957605,
-      "side": "buy"
-    },
-    {
-      "asset": "ETH-USD",
-      "cause": "ai",
-      "price": 2430.125928,
-      "qty": 0.07113082891363556,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
