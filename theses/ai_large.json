@@ -80,14 +80,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $190.61 > exit_below $170",
-      "24h return -6.31% but still above stop",
-      "No contradictory signals from toolbox"
+      "Price $191.64 > exit_below $170",
+      "Unrealized PnL still positive (+2.07%)",
+      "No contradictory toolbox signals"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains well above exit level and no new breakout or dip signals.",
-    "updated_cycle": "2026-11-06T12:00Z"
+    "summary": "Thesis reaffirmed; price remains above exit level despite recent pullback.",
+    "updated_cycle": "2026-11-06T14:40Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -110,20 +110,24 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.86835 > exit_below $0.80",
-      "Unrealized loss -7.74% within stop tolerance",
+      "Price $0.87665 > exit_below $0.80",
+      "Unrealized loss within stop tolerance (-6.86%)",
       "No breakout or dip signals"
     ],
     "review_above": 1.05,
     "status": "bullish",
     "summary": "Thesis maintained; price stays above exit level, monitor closely.",
-    "updated_cycle": "2026-11-06T12:00Z"
+    "updated_cycle": "2026-11-06T14:40Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
       {
         "confidence": 70,
         "cycle": "2026-11-06T00:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-06T14:40Z-event"
       }
     ],
     "exit_below": 1150,
@@ -132,13 +136,13 @@
     ],
     "opened_cycle": "2026-11-04T06:00Z",
     "reasons": [
-      "Price $1290.19 > exit_below $1150",
+      "Price $1378.67 > exit_below $1150",
       "28\u2011day return +7.83% (rotation pick)",
-      "No negative signals"
+      "Recent 1\u2011hour move +5.0% supports upside"
     ],
     "review_above": 1500,
     "status": "bullish",
     "summary": "Thesis reaffirmed; rotation pick still positive and price above exit level.",
-    "updated_cycle": "2026-11-06T12:00Z"
+    "updated_cycle": "2026-11-06T14:40Z-event"
   }
 }

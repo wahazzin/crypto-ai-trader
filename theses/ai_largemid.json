@@ -280,6 +280,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-06T00:24Z-event"
+      },
+      {
+        "confidence": 80,
+        "cycle": "2026-11-06T14:40Z-event"
       }
     ],
     "exit_below": 1150,
@@ -287,12 +291,10 @@
       "Price < $1150"
     ],
     "opened_cycle": "2026-11-04T00:00Z",
-    "reasons": [
-      "Rotation pick rank 1, positive short-term momentum"
-    ],
+    "reasons": [],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Added to position after 1h surge; maintaining exit and review levels.",
-    "updated_cycle": "2026-11-06T00:24Z-event"
+    "summary": "Rotation pick rank 1, positive short\u2011term momentum; weight reduced to meet limits.",
+    "updated_cycle": "2026-11-06T14:40Z-event"
   }
 }
