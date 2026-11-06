@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-06T00:24Z-event",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "ZEC-USD",
-      "codes": [],
-      "final_weight": 0.11,
-      "requested_weight": 0.11,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "ZEC-USD",
-      "cause": "ai_event",
-      "price": 1296.567474,
-      "qty": 0.059429721479888065,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-11-06T06:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
