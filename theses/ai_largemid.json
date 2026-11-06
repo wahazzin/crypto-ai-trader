@@ -276,20 +276,23 @@
       {
         "confidence": 65,
         "cycle": "2026-11-05T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-06T00:24Z-event"
       }
     ],
     "exit_below": 1150,
     "invalidation": [
-      "Price < $1,200"
+      "Price < $1150"
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "24h return +5.6%",
-      "6h return +8.2%"
+      "Rotation pick rank 1, positive short-term momentum"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Momentum remains strong; raising profit target.",
-    "updated_cycle": "2026-11-05T06:00Z"
+    "summary": "Added to position after 1h surge; maintaining exit and review levels.",
+    "updated_cycle": "2026-11-06T00:24Z-event"
   }
 }

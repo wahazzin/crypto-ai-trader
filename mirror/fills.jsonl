@@ -140,3 +140,4 @@
 {"arm":"ai_large","asset":"NEAR-USD","cause":"ai","result":"unmirrorable","side":"sell","sim_notional":78.64019277501816,"sim_price":3.65760412,"ts":"2026-11-05T18:04:39Z"}
 {"arm":"ai_large","asset":"SUI-USD","cause":"ai_event","result":"unmirrorable","side":"sell","sim_notional":161.8359117271554,"sim_price":0.8353984600000001,"ts":"2026-11-05T23:19:58Z"}
 {"arm":"ai_large","asset":"ZEC-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":405.3401839771478,"sim_price":1283.409584,"ts":"2026-11-06T00:04:58Z"}
+{"arm":"ai_large","asset":"ZEC-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":77.05464385970201,"sim_price":1296.567474,"ts":"2026-11-06T00:24:58Z"}
