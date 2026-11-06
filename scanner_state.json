@@ -56,7 +56,6 @@
     "ai_largemid|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_largemid|QNT-USD:exit_below:200": "2026-10-15T02:42:40Z",
     "ai_largemid|QNT-USD:exit_below:230": "2026-10-12T12:33:50Z",
-    "ai_largemid|QNT-USD:exit_below:240.0": "2026-10-07T13:46:39Z",
     "ai_largemid|QNT-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|QNT-USD:review_above:220.0": "2026-10-26T12:23:41Z",
     "ai_largemid|QNT-USD:volume": "2026-11-05T15:19:20Z",
@@ -121,23 +120,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8453.97,
-      "ai_largemid": 8239.48,
-      "btc_hold": 8952.51,
-      "eth_hold": 8492.47,
-      "ew_basket": 7985.67,
+      "ai_large": 8435.77,
+      "ai_largemid": 8217.17,
+      "btc_hold": 8921.45,
+      "eth_hold": 8456.6,
+      "ew_basket": 7952.23,
       "s_breakout": 9107.23,
-      "s_dip": 9090.71,
+      "s_dip": 9088.05,
       "s_rotation": 8816.02,
       "s_trend": 8938.32
     },
     "scans": 1,
-    "ts": "2026-11-06T13:10:42Z"
+    "ts": "2026-11-06T14:10:42Z"
   },
   "last_data_fault": {
     "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-06T08:55:22Z"
   },
-  "last_heartbeat": "2026-11-06T13:10:42Z",
+  "last_heartbeat": "2026-11-06T14:10:42Z",
   "scans_since_heartbeat": 0
 }
