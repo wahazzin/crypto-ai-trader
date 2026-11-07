@@ -30,27 +30,6 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "BCH-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-04T03:02Z-event"
-      }
-    ],
-    "exit_below": 260,
-    "invalidation": [
-      "Price < $260"
-    ],
-    "opened_cycle": "2026-10-31T06:00Z",
-    "reasons": [
-      "Trend signal turned false, dip signal not active.",
-      "Price down 1.99% 24h and approaching exit level."
-    ],
-    "review_above": 320,
-    "status": "neutral",
-    "summary": "Recent volume spike and lack of trend support weaken bullish case; keeping exit_below but monitoring for breach.",
-    "updated_cycle": "2026-11-04T03:02Z-event"
-  },
   "BTC-USD": {
     "confidence_history": [
       {
@@ -104,7 +83,7 @@
       "Price still above exit level",
       "24h gain +7.3%"
     ],
-    "review_above": 0.28,
+    "review_above": 0.3,
     "status": "bullish",
     "summary": "Dip\u2011based bullish thesis remains valid after continued price bounce.",
     "updated_cycle": "2026-11-04T12:00Z"

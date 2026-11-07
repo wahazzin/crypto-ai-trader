@@ -1,11 +1,11 @@
 {
-  "cash": 4207.725074890118,
+  "cash": 4183.327398013713,
   "day_start_date": "2026-11-07",
   "day_start_equity": 8261.540984062744,
   "extra": {},
-  "fees_usd": 188.99271105054666,
+  "fees_usd": 189.72838864570676,
   "halted_until": null,
-  "last_ts": "2026-11-07T09:22:02Z",
+  "last_ts": "2026-11-07T09:57:02Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -17,13 +17,6 @@
       "qty": 1.2513724305162626,
       "stop_pct": 18.0
     },
-    "BCH-USD": {
-      "avg_cost": 289.4595827236654,
-      "opened_cycle": "2026-10-31T06:00Z",
-      "opened_ts": "2026-10-31T06:06:00Z",
-      "qty": 0.31023373254098474,
-      "stop_pct": 18.0
-    },
     "BTC-USD": {
       "avg_cost": 77556.98364969331,
       "opened_cycle": "2026-10-31T21:41Z-event",
@@ -32,10 +25,10 @@
       "stop_pct": 18.0
     },
     "ENA-USD": {
-      "avg_cost": 0.17073055999999998,
+      "avg_cost": 0.1688688942109328,
       "opened_cycle": "2026-11-03T00:00Z",
       "opened_ts": "2026-11-03T00:05:27Z",
-      "qty": 2427.9445963703956,
+      "qty": 3069.334006389018,
       "stop_pct": 18.0
     },
     "ETH-USD": {
@@ -81,9 +74,9 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 34.63845546231303,
-  "spread_usd": 12.37996908334469,
-  "traded_notional_usd": 47248.17776263668,
+  "slippage_usd": 34.787146220513975,
+  "spread_usd": 12.42082251719843,
+  "traded_notional_usd": 47432.097161426704,
   "trades": [
     {
       "cause": "ai",
@@ -119,6 +112,16 @@
       "cause": "ai",
       "notional": 148.20925712227313,
       "ts": "2026-11-07T00:06:22Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 80.12869975438934,
+      "ts": "2026-11-07T09:57:02Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 103.7906990356341,
+      "ts": "2026-11-07T09:57:02Z"
     }
   ]
 }
