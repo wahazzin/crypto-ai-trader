@@ -1,38 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-07T09:57Z-event",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "BCH-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    },
-    {
-      "action": "ADD",
-      "asset": "ENA-USD",
-      "codes": [],
-      "final_weight": 0.06,
-      "requested_weight": 0.06,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "BCH-USD",
-      "cause": "ai_event",
-      "price": 258.28493599999996,
-      "qty": 0.31023373254098474,
-      "side": "sell"
-    },
-    {
-      "asset": "ENA-USD",
-      "cause": "ai_event",
-      "price": 0.16182165999999998,
-      "qty": 641.3894100186225,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-11-07T12:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }

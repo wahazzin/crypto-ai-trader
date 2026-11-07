@@ -143,3 +143,4 @@
 {"arm":"ai_large","asset":"ZEC-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":77.05464385970201,"sim_price":1296.567474,"ts":"2026-11-06T00:24:58Z"}
 {"arm":"ai_large","asset":"ZEC-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":204.01616357868105,"sim_price":1369.2310459999999,"ts":"2026-11-06T14:40:42Z"}
 {"arm":"ai_large","asset":"ZEC-USD","cause":"ai_event","result":"unmirrorable","side":"buy","sim_notional":102.74606227889505,"sim_price":1356.053144,"ts":"2026-11-06T15:11:02Z"}
+{"arm":"ai_large","asset":"ZEC-USD","cause":"ai","result":"unmirrorable","side":"buy","sim_notional":56.845569383444186,"sim_price":1289.5732799999998,"ts":"2026-11-07T12:02:03Z"}

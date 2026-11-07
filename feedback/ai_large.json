@@ -1,6 +1,25 @@
 {
   "events": [],
-  "from": "2026-11-07T06:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-07T12:00Z",
+  "risk_engine": [
+    {
+      "action": "ADD",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R1_ASSET_CAP"
+      ],
+      "final_weight": 0.15,
+      "requested_weight": 0.2,
+      "status": "CLIPPED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ZEC-USD",
+      "cause": "ai",
+      "price": 1289.5732799999998,
+      "qty": 0.044080914411815504,
+      "side": "buy"
+    }
+  ]
 }
