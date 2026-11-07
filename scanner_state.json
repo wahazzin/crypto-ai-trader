@@ -48,7 +48,6 @@
     "ai_largemid|NEAR-USD:exit_below:4.05": "2026-11-02T14:24:03Z",
     "ai_largemid|NEAR-USD:exit_below:4.5": "2026-10-24T09:10:31Z",
     "ai_largemid|NEAR-USD:move": "2026-11-05T15:54:19Z",
-    "ai_largemid|NEAR-USD:review_above:5.5": "2026-10-08T06:52:42Z",
     "ai_largemid|NEAR-USD:review_above:5.8": "2026-10-11T17:12:47Z",
     "ai_largemid|NEAR-USD:volume": "2026-11-05T18:19:39Z",
     "ai_largemid|ONDO-USD:move": "2026-11-05T15:54:19Z",
@@ -120,23 +119,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8499.94,
-      "ai_largemid": 8284.24,
-      "btc_hold": 8970.55,
-      "eth_hold": 8525.29,
-      "ew_basket": 8019.69,
+      "ai_large": 8533.99,
+      "ai_largemid": 8315.93,
+      "btc_hold": 8967.52,
+      "eth_hold": 8520.96,
+      "ew_basket": 8054.12,
       "s_breakout": 9107.23,
-      "s_dip": 9083.08,
+      "s_dip": 9088.19,
       "s_rotation": 8816.02,
-      "s_trend": 8958.93
+      "s_trend": 8994.35
     },
     "scans": 1,
-    "ts": "2026-11-07T06:16:44Z"
+    "ts": "2026-11-07T07:21:44Z"
   },
   "last_data_fault": {
     "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-07T05:01:43Z"
   },
-  "last_heartbeat": "2026-11-07T06:16:44Z",
+  "last_heartbeat": "2026-11-07T07:21:44Z",
   "scans_since_heartbeat": 0
 }
