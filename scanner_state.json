@@ -135,8 +135,8 @@
   },
   "last_data_fault": {
     "error": "ENA-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-07T12:52:03Z"
+    "ts": "2026-11-07T13:07:03Z"
   },
   "last_heartbeat": "2026-11-07T12:27:03Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
