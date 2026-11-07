@@ -80,14 +80,14 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $191.94 > exit_below $170",
-      "Unrealized PnL still positive (+2.2%)",
+      "Price $194.00 > exit_below $170",
+      "Trend signal still true",
       "No contradictory toolbox signals"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains comfortably above exit level despite modest pullback.",
-    "updated_cycle": "2026-11-06T18:00Z"
+    "summary": "Thesis reaffirmed; price remains comfortably above exit level and trend signal stays true.",
+    "updated_cycle": "2026-11-07T00:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -110,14 +110,14 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.869 > exit_below $0.80",
-      "Unrealized loss within stop tolerance (-7.6%)",
+      "Price $0.866 > exit_below $0.80",
+      "24h return +3.25%",
       "No breakout or dip signals"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis maintained; price stays above exit level, monitor for any reversal.",
-    "updated_cycle": "2026-11-06T18:00Z"
+    "summary": "Thesis maintained; price stays above exit level after 24h gain, no new breakout or dip signals.",
+    "updated_cycle": "2026-11-07T00:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -140,13 +140,13 @@
     ],
     "opened_cycle": "2026-11-04T06:00Z",
     "reasons": [
-      "Price $1352.39 > exit_below $1150",
-      "28\u2011day return +7.83% (rotation rank 1)",
-      "Recent 1\u2011hour move +3.68% with volume spike supports upside"
+      "Price $1319.83 > exit_below $1150",
+      "Rotation rank 1 with positive 28\u2011day return",
+      "Trend signal true"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; rotation pick still positive and price well above exit level.",
-    "updated_cycle": "2026-11-06T18:00Z"
+    "summary": "Thesis reaffirmed; rotation pick remains top, trend signal true, and price well above exit level.",
+    "updated_cycle": "2026-11-07T00:00Z"
   }
 }
