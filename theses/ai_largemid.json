@@ -30,66 +30,6 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "BTC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-31T21:41Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-11-04T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-05T06:00Z"
-      }
-    ],
-    "exit_below": 75000,
-    "invalidation": [
-      "Price < $73,000"
-    ],
-    "opened_cycle": "2026-10-31T21:41Z-event",
-    "reasons": [
-      "Price above exit $75,000; 24h return near zero."
-    ],
-    "review_above": 85000,
-    "status": "bullish",
-    "summary": "Maintaining bullish view; price near flat but still above exit and long\u2011term uptrend intact.",
-    "updated_cycle": "2026-11-08T12:00Z"
-  },
-  "ENA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-03T00:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-03T08:26Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-04T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-08T12:00Z"
-      }
-    ],
-    "exit_below": 0.15,
-    "invalidation": [
-      "Price < $0.15"
-    ],
-    "opened_cycle": "2026-11-03T00:00Z",
-    "reasons": [
-      "Price $0.1548 > exit $0.15; dip still active."
-    ],
-    "review_above": 0.3,
-    "status": "bullish",
-    "summary": "Weight reduced but thesis still valid; price remains above exit and dip signal persists.",
-    "updated_cycle": "2026-11-08T12:00Z"
-  },
   "ETH-USD": {
     "confidence_history": [
       {

@@ -76,18 +76,18 @@
     ],
     "exit_below": 170,
     "invalidation": [
-      "Price < $180"
+      "Price < $170"
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $199.40 > exit $170",
-      "Unrealized +6.2% supports upside",
-      "Rotation rank unchanged (8) and still positive 28\u2011day return"
+      "Price $193.44 > exit $170",
+      "Unrealized +3.1% supports upside",
+      "No bearish toolbox signals"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price remains well above exit level and no new bearish signals.",
-    "updated_cycle": "2026-11-08T21:33Z-event"
+    "summary": "Thesis reaffirmed; price still comfortably above exit $170 and rotation rank unchanged.",
+    "updated_cycle": "2026-11-08T22:03Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -102,6 +102,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-02T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-08T22:03Z-event"
       }
     ],
     "exit_below": 0.8,
@@ -110,14 +114,14 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.844 > exit $0.80",
-      "No breakout or dip signals",
-      "No contradictory toolbox signals"
+      "Price $0.82355 > exit $0.80",
+      "Volume spike indicates heightened activity but no clear breakout",
+      "Tightened stop loss to 7% to protect downside"
     ],
     "review_above": 1.05,
     "status": "bullish",
-    "summary": "Thesis maintained; price stays above exit level despite modest decline.",
-    "updated_cycle": "2026-11-08T21:33Z-event"
+    "summary": "Thesis maintained; price stays above exit $0.80 despite recent dip, stop tightened.",
+    "updated_cycle": "2026-11-08T22:03Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -146,11 +150,11 @@
     "reasons": [
       "Price $1228.20 > exit $1150",
       "Rotation rank 1 with positive 28\u2011day return",
-      "No new bearish signals despite recent 2.3% 1\u2011hour dip"
+      "No new bearish signals despite 1\u2011hour dip"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; rotation pick remains top and price above exit level.",
-    "updated_cycle": "2026-11-08T21:33Z-event"
+    "summary": "Thesis reaffirmed; rotation pick remains top and price above exit $1150.",
+    "updated_cycle": "2026-11-08T22:03Z-event"
   }
 }
