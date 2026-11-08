@@ -118,23 +118,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8459.32,
-      "ai_largemid": 8207.48,
-      "btc_hold": 8959.82,
-      "eth_hold": 8495.66,
-      "ew_basket": 7931.48,
+      "ai_large": 8475.8,
+      "ai_largemid": 8221.25,
+      "btc_hold": 8967.58,
+      "eth_hold": 8500.1,
+      "ew_basket": 7938.97,
       "s_breakout": 9107.23,
-      "s_dip": 9026.45,
+      "s_dip": 9028.88,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
     "scans": 1,
-    "ts": "2026-11-08T13:38:40Z"
+    "ts": "2026-11-08T14:38:40Z"
   },
   "last_data_fault": {
     "error": "ENA-USD: stale or invalid quote (2 bad so far)",
     "ts": "2026-11-08T10:53:23Z"
   },
-  "last_heartbeat": "2026-11-08T13:38:40Z",
+  "last_heartbeat": "2026-11-08T14:38:40Z",
   "scans_since_heartbeat": 0
 }
