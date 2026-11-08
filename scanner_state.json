@@ -132,9 +132,9 @@
     "ts": "2026-11-08T10:38:23Z"
   },
   "last_data_fault": {
-    "error": "AAVE-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-08T10:28:23Z"
+    "error": "ENA-USD: stale or invalid quote (2 bad so far)",
+    "ts": "2026-11-08T10:53:23Z"
   },
   "last_heartbeat": "2026-11-08T10:38:23Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
