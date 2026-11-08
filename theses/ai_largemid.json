@@ -12,12 +12,12 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "24h return +7.0%, dip active, RSI low."
+      "Price above exit $120; 24h return slightly negative but no breach."
     ],
     "review_above": 150,
     "status": "bullish",
-    "summary": "Increased exposure; price still well above exit, dip signal remains valid.",
-    "updated_cycle": "2026-10-31T18:51Z-event"
+    "summary": "Thesis unchanged; price still above exit level and dip signal remains active.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -51,13 +51,12 @@
     ],
     "opened_cycle": "2026-10-31T21:41Z-event",
     "reasons": [
-      "24h return +3.5%",
-      "Price above exit level"
+      "Price above exit $75,000; 24h return near zero."
     ],
     "review_above": 85000,
     "status": "bullish",
-    "summary": "Maintaining bullish thesis; price continues above exit and shows upward momentum.",
-    "updated_cycle": "2026-11-05T06:00Z"
+    "summary": "Maintaining bullish view; price near flat but still above exit and long\u2011term uptrend intact.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "ENA-USD": {
     "confidence_history": [
@@ -72,6 +71,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-04T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-08T12:00Z"
       }
     ],
     "exit_below": 0.15,
@@ -80,13 +83,12 @@
     ],
     "opened_cycle": "2026-11-03T00:00Z",
     "reasons": [
-      "Price still above exit level",
-      "24h gain +7.3%"
+      "Price $0.1548 > exit $0.15; dip still active."
     ],
     "review_above": 0.3,
     "status": "bullish",
-    "summary": "Dip\u2011based bullish thesis remains valid after continued price bounce.",
-    "updated_cycle": "2026-11-04T12:00Z"
+    "summary": "Weight reduced but thesis still valid; price remains above exit and dip signal persists.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -109,19 +111,22 @@
     ],
     "opened_cycle": "2026-11-02T15:59Z-event",
     "reasons": [
-      "24h return +5.5%",
-      "Price above exit"
+      "Price above exit $2100; 24h return modestly negative but trend intact."
     ],
     "review_above": 2600,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains well above exit and momentum stays strong.",
-    "updated_cycle": "2026-11-05T06:00Z"
+    "summary": "Thesis unchanged; price comfortably above exit and momentum remains positive.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
       {
         "confidence": 85,
         "cycle": "2026-10-31T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-08T12:00Z"
       }
     ],
     "exit_below": 9.0,
@@ -130,14 +135,12 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "24h return +4.37%",
-      "Low spread",
-      "Momentum supports upside"
+      "Price $10.78 > exit $9.0; 24h return -0.43%."
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "New bullish thesis based on strong 24h momentum and positive dip/trend signals",
-    "updated_cycle": "2026-10-31T18:00Z"
+    "summary": "Reduced position size; still above exit level, dip signal not active but short\u2011term momentum modest.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -187,12 +190,12 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Risk engine action, price still above exit"
+      "24h return +1.09%; price above exit $170."
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Risk engine reduced weight to target; thesis unchanged.",
-    "updated_cycle": "2026-11-05T18:19Z-event"
+    "summary": "Thesis unchanged; recent 24h upside and positive 28\u2011day return support continued exposure.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -203,6 +206,10 @@
       {
         "confidence": 65,
         "cycle": "2026-11-04T00:26Z-event"
+      },
+      {
+        "confidence": 68,
+        "cycle": "2026-11-08T12:00Z"
       }
     ],
     "exit_below": 0.8,
@@ -211,12 +218,12 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "Price still above exit, recent 24h gain supports rebound."
+      "Price $0.8538 > exit $0.8; 24h return -0.83%."
     ],
     "review_above": 1.2,
     "status": "bullish",
-    "summary": "Added to existing dip\u2011based bullish thesis.",
-    "updated_cycle": "2026-11-04T00:26Z-event"
+    "summary": "Weight trimmed; price still above exit and dip signal not triggered.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "XRP-USD": {
     "confidence_history": [
@@ -227,6 +234,10 @@
       {
         "confidence": 68,
         "cycle": "2026-11-04T00:26Z-event"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-08T12:00Z"
       }
     ],
     "exit_below": 1.0,
@@ -235,12 +246,12 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Positive 24h return and volume spike keep upside potential."
+      "Price $1.1649 > exit $1.0; 24h return -0.61%."
     ],
     "review_above": 1.6,
     "status": "bullish",
-    "summary": "Added to position; thesis unchanged.",
-    "updated_cycle": "2026-11-04T00:26Z-event"
+    "summary": "Position reduced; price remains above exit but downside pressure persists.",
+    "updated_cycle": "2026-11-08T12:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -270,10 +281,12 @@
       "Price < $1150"
     ],
     "opened_cycle": "2026-11-04T00:00Z",
-    "reasons": [],
+    "reasons": [
+      "24h return -0.82%; price above exit $1150; 28\u2011day return positive."
+    ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Rotation pick rank 1, positive short\u2011term momentum; weight reduced to meet limits.",
-    "updated_cycle": "2026-11-06T14:40Z-event"
+    "summary": "Thesis unchanged; rotation pick rank 1 with modest upside and price above exit.",
+    "updated_cycle": "2026-11-08T12:00Z"
   }
 }
