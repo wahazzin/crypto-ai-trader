@@ -278,6 +278,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-08T12:08Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-08T21:33Z-event"
       }
     ],
     "exit_below": 1150,
@@ -286,11 +290,12 @@
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "Rotation pick rank 1 with recent upside; maintaining bullish stance."
+      "Price remains well above exit level $1150.",
+      "28\u2011day return still positive and ZEC is rank 1 rotation pick."
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Increased position to max allowed after rotation pick confirmation.",
-    "updated_cycle": "2026-11-08T12:08Z-event"
+    "summary": "Volume spike caused a modest pullback but the rotation\u2011pick thesis still holds.",
+    "updated_cycle": "2026-11-08T21:33Z-event"
   }
 }
