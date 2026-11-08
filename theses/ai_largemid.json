@@ -178,20 +178,24 @@
       {
         "confidence": 65,
         "cycle": "2026-11-08T12:00Z"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-08T22:33Z-event"
       }
     ],
     "exit_below": 1.0,
     "invalidation": [
-      "Price < $1.20"
+      "Price < $1.0"
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Price $1.1649 > exit $1.0; 24h return -0.61%."
+      "Price remains above exit $1.0 but downside pressure is high."
     ],
     "review_above": 1.6,
     "status": "bullish",
-    "summary": "Position reduced; price remains above exit but downside pressure persists.",
-    "updated_cycle": "2026-11-08T12:00Z"
+    "summary": "Reduced exposure due to deep drawdown; thesis still holds pending price recovery.",
+    "updated_cycle": "2026-11-08T22:33Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -222,6 +226,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-08T21:33Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-08T22:33Z-event"
       }
     ],
     "exit_below": 1150,
@@ -230,12 +238,11 @@
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "Price remains well above exit level $1150.",
-      "28\u2011day return still positive and ZEC is rank 1 rotation pick."
+      "Rotation pick remains rank 1 with positive short\u2011term momentum."
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Volume spike caused a modest pullback but the rotation\u2011pick thesis still holds.",
-    "updated_cycle": "2026-11-08T21:33Z-event"
+    "summary": "Increased position after confirming rotation\u2011pick thesis; exit and review levels unchanged.",
+    "updated_cycle": "2026-11-08T22:33Z-event"
   }
 }

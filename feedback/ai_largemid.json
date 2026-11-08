@@ -1,38 +1,33 @@
 {
   "events": [],
-  "from": "2026-11-08T22:03Z-event",
+  "from": "2026-11-08T22:33Z-event",
   "risk_engine": [
     {
-      "action": "SELL",
-      "asset": "BTC-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
+      "action": "REDUCE",
+      "asset": "XRP-USD",
+      "codes": [
+        "R12_REDUCE_NOT_LOWER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
     },
     {
-      "action": "SELL",
-      "asset": "ENA-USD",
+      "action": "ADD",
+      "asset": "ZEC-USD",
       "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
+      "final_weight": 0.12,
+      "requested_weight": 0.12,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "BTC-USD",
+      "asset": "ZEC-USD",
       "cause": "ai_event",
-      "price": 74393.638296,
-      "qty": 0.005372469963341548,
-      "side": "sell"
-    },
-    {
-      "asset": "ENA-USD",
-      "cause": "ai_event",
-      "price": 0.14730293404434985,
-      "qty": 1061.3149240130285,
-      "side": "sell"
+      "price": 1194.36619,
+      "qty": 0.13947690031405197,
+      "side": "buy"
     }
   ]
 }
