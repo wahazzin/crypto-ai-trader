@@ -76,6 +76,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-09T08:59Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-09T18:00Z"
       }
     ],
     "exit_below": 170,
@@ -84,13 +88,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $195 > exit $170",
-      "Rotation rank 5 remains favorable"
+      "Price $196 > exit $170",
+      "Rotation rank 5 still favorable"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; price still comfortably above exit $170 and rotation rank unchanged.",
-    "updated_cycle": "2026-11-09T16:50Z-event"
+    "summary": "Thesis reaffirmed; price remains comfortably above exit $170 and rotation rank unchanged.",
+    "updated_cycle": "2026-11-09T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -121,13 +125,13 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.85 > exit $0.80",
+      "Price $0.848 > exit $0.80",
       "Position size already small"
     ],
     "review_above": 1.05,
     "status": "neutral",
     "summary": "Thesis unchanged; price above exit $0.80 but downside risk remains modest.",
-    "updated_cycle": "2026-11-09T16:50Z-event"
+    "updated_cycle": "2026-11-09T18:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -146,6 +150,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-07T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-09T18:00Z"
       }
     ],
     "exit_below": 1150,
@@ -154,12 +162,12 @@
     ],
     "opened_cycle": "2026-11-04T06:00Z",
     "reasons": [
-      "Price $1179 > exit $1150",
+      "Price $1171 > exit $1150",
       "Rotation rank 1 still top performer"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Volume spike caused a 3.8% 1h drop but price stays above exit $1150; thesis remains valid.",
-    "updated_cycle": "2026-11-09T16:50Z-event"
+    "summary": "Thesis reaffirmed; price stays above exit $1150 despite recent volatility.",
+    "updated_cycle": "2026-11-09T18:00Z"
   }
 }
