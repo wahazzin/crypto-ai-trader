@@ -21,6 +21,27 @@ def send(msg):
     requests.post(url, json={"content": msg[:1900]}, timeout=15)
 
 
+def read_cycles_text(get=requests.get):
+    """Whole cycles.jsonl from the data branch. No byte-range request: since ~2026-11-06
+    raw.githubusercontent.com answers suffix ranges ("bytes=-6000") with 501 "Unsupported client range",
+    which made this check report "couldn't read recent cycles (HTTPError)" every few hours. The file is small
+    (~65 KB, +~2 KB/day), so reading it whole is fine. One retry for transient errors."""
+    url = f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl"
+    for attempt in range(2):
+        r = get(url, timeout=30)
+        if r.status_code < 500 or attempt == 1:
+            r.raise_for_status()
+            return r.text
+        time.sleep(5)
+
+
+def last_cycles(text, n=2):
+    cyc = [json.loads(l) for l in text.splitlines() if l.startswith("{") and l.endswith("}")][-n:]
+    if not cyc:
+        raise ValueError("no cycles found in the file")
+    return cyc
+
+
 def problems():
     out = []
     try:
@@ -39,14 +60,7 @@ def problems():
         out.append(("state", f"Crypto AI trader: couldn't read state ({type(e).__name__})."))
     try:
         # silent-failure check: the bot keeps running even if the free AI (Groq) stops answering
-        url = f"https://raw.githubusercontent.com/{REPO}/crypto-ai-data/cycles.jsonl"
-        r = requests.get(url, headers={"Range": "bytes=-6000", "Accept-Encoding": "identity"}, timeout=30)   # no gzip with byte ranges
-        if r.status_code == 416:                       # file smaller than the range: read it whole
-            r = requests.get(url, headers={"Accept-Encoding": "identity"}, timeout=30)
-        r.raise_for_status()
-        cyc = [json.loads(l) for l in r.text.splitlines() if l.startswith("{") and l.endswith("}")][-2:]
-        if not cyc:
-            raise ValueError("no cycles found in the file")
+        cyc = last_cycles(read_cycles_text(), 2)
         bad = [c for c in cyc if c.get("status") != "OK" or not all(a.get("ok") for a in (c.get("ai") or {}).values())]
         if cyc and len(bad) == len(cyc):
             arms = sorted({a for c in cyc for a, v in (c.get("ai") or {}).items() if not v.get("ok")})
@@ -54,7 +68,7 @@ def problems():
                               f"(status {cyc[-1].get('status')}; failing: {', '.join(arms) or 'all'}). "
                               f"Exact errors: decisions.jsonl on branch crypto-ai-data."))
     except Exception as e:
-        out.append(("ai", f"Crypto AI trader: couldn't read recent cycles ({type(e).__name__})."))
+        out.append(("ai", f"Crypto AI trader: couldn't read recent cycles ({type(e).__name__}: {str(e)[:120]})."))
     return out
 
 

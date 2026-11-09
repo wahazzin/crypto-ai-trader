@@ -422,3 +422,13 @@ a held coin that is missing from a snapshot at its last known quote and only fil
 snapshot. Recomputed on the 2026-11-02 state: ai_large beats 29% of 100 random policies, ai_largemid 10%; outlook
 ladders still inverted. diagnostics.py only (not fingerprinted); no rule, arm, prompt or risk limit changed. Test:
 tests/test_crypto_ai_diagnostics.py.
+
+## 2026-11-09: health check's "AI silent-failure" read broke → false Discord alert every ~7 h (alerting only)
+
+Weekly review W46. Since 2026-11-06 ~21:00 UTC every health run reported "couldn't read recent cycles (HTTPError)"
+and re-sent it to Discord every ~6–7 h (~8 false alerts). Cause: raw.githubusercontent.com now answers suffix byte
+ranges (`Range: bytes=-6000`) with **501 "Unsupported client range"** (explicit ranges like `bytes=58000-` still
+work). Side effect: the real AI-failure check was blind for those 2.5 days (no AI faults happened in that time:
+cycles.jsonl shows every cycle OK). Fix: tools/health_check.py reads the whole cycles.jsonl (~65 KB, +~2 KB/day)
+with one retry on 5xx, and the alert text now includes the error detail. Not fingerprinted; no rule, arm, prompt or
+risk limit changed. Test: tests/test_health_check.py. (Same bug fixed in memecoin-trader's health check.)
