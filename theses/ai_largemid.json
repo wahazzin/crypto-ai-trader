@@ -34,6 +34,27 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
+  "ENA-USD": {
+    "confidence_history": [
+      {
+        "confidence": 60,
+        "cycle": "2026-11-09T15:24Z-event"
+      }
+    ],
+    "exit_below": 0.14,
+    "invalidation": [
+      "Price < $0.14"
+    ],
+    "opened_cycle": "2026-11-09T15:24Z-event",
+    "reasons": [
+      "Recent 3\u2011day drop >8% with 1\u2011hour and 6\u2011hour gains.",
+      "Low RSI indicates oversold condition."
+    ],
+    "review_above": 0.18,
+    "status": "bullish",
+    "summary": "Entering on dip signal; price still above exit level.",
+    "updated_cycle": "2026-11-09T15:24Z-event"
+  },
   "LINK-USD": {
     "confidence_history": [
       {
