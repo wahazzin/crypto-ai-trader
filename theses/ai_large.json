@@ -84,13 +84,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $201.94 > exit $170",
-      "Unrealized gain +7.5% supports upside"
+      "Price $202.6 > exit $170",
+      "Recent 24h gain +1.5% supports upside"
     ],
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains well above exit $170 and rotation rank unchanged.",
-    "updated_cycle": "2026-11-09T08:59Z-event"
+    "updated_cycle": "2026-11-09T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -109,6 +109,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-08T22:03Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-09T12:00Z"
       }
     ],
     "exit_below": 0.8,
@@ -117,13 +121,13 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.8259 > exit $0.80",
-      "Volume remains stable"
+      "Unrealized loss ~12% and price near stop",
+      "Reduced weight to limit exposure"
     ],
     "review_above": 1.05,
-    "status": "bullish",
-    "summary": "Thesis maintained; price stays just above exit $0.80 despite recent dip.",
-    "updated_cycle": "2026-11-09T08:59Z-event"
+    "status": "neutral",
+    "summary": "Reduced position size; price still above exit $0.80 but downside risk remains.",
+    "updated_cycle": "2026-11-09T12:00Z"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -150,12 +154,12 @@
     ],
     "opened_cycle": "2026-11-04T06:00Z",
     "reasons": [
-      "Price $1226.97 > exit $1150",
-      "Rotation rank 1 remains favorable"
+      "Price $1211 > exit $1150",
+      "Top rotation rank supports continued upside"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Thesis reaffirmed; rotation rank stays top and price above exit $1150.",
-    "updated_cycle": "2026-11-09T08:59Z-event"
+    "summary": "Thesis maintained; rotation rank 1 stays favorable and price above exit $1150.",
+    "updated_cycle": "2026-11-09T12:00Z"
   }
 }
