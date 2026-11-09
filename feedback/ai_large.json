@@ -1,15 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-08T22:03Z-event",
-  "risk_engine": [
-    {
-      "action": "HOLD",
-      "asset": "SUI-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    }
-  ],
+  "from": "2026-11-09T00:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
