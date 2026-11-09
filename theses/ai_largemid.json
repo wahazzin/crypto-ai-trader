@@ -30,34 +30,6 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "ETH-USD": {
-    "confidence_history": [
-      {
-        "confidence": 62,
-        "cycle": "2026-11-02T15:59Z-event"
-      },
-      {
-        "confidence": 73,
-        "cycle": "2026-11-04T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-05T06:00Z"
-      }
-    ],
-    "exit_below": 2100,
-    "invalidation": [
-      "Price < $2,000"
-    ],
-    "opened_cycle": "2026-11-02T15:59Z-event",
-    "reasons": [
-      "Price above exit $2100; 24h return modestly negative but trend intact."
-    ],
-    "review_above": 2600,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price comfortably above exit and momentum remains positive.",
-    "updated_cycle": "2026-11-08T12:00Z"
-  },
   "LINK-USD": {
     "confidence_history": [
       {
@@ -81,25 +53,6 @@
     "status": "bullish",
     "summary": "Reduced position size; still above exit level, dip signal not active but short\u2011term momentum modest.",
     "updated_cycle": "2026-11-08T12:00Z"
-  },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-11-04T12:00Z"
-      }
-    ],
-    "exit_below": 3.5,
-    "invalidation": [
-      "Price < $3.5"
-    ],
-    "opened_cycle": "2026-11-04T12:00Z",
-    "reasons": [
-      "Price $3.65 > exit $3.5, volume spike not sustained"
-    ],
-    "status": "bullish",
-    "summary": "Thesis holds despite recent volume spike; price remains above exit.",
-    "updated_cycle": "2026-11-05T18:19Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
