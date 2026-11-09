@@ -118,38 +118,6 @@
     "summary": "Weight trimmed; price still above exit and dip signal not triggered.",
     "updated_cycle": "2026-11-08T12:00Z"
   },
-  "XRP-USD": {
-    "confidence_history": [
-      {
-        "confidence": 55,
-        "cycle": "2026-10-27T00:09Z-event"
-      },
-      {
-        "confidence": 68,
-        "cycle": "2026-11-04T00:26Z-event"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-11-08T12:00Z"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-11-08T22:33Z-event"
-      }
-    ],
-    "exit_below": 1.0,
-    "invalidation": [
-      "Price < $1.0"
-    ],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "Price remains above exit $1.0 but downside pressure is high."
-    ],
-    "review_above": 1.6,
-    "status": "bullish",
-    "summary": "Reduced exposure due to deep drawdown; thesis still holds pending price recovery.",
-    "updated_cycle": "2026-11-08T22:33Z-event"
-  },
   "ZEC-USD": {
     "confidence_history": [
       {

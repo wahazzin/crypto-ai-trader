@@ -1,6 +1,23 @@
 {
   "events": [],
-  "from": "2026-11-09T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-09T12:34Z-event",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "XRP-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": 0,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "XRP-USD",
+      "cause": "ai_event",
+      "price": 1.09804078,
+      "qty": 14.109614433362538,
+      "side": "sell"
+    }
+  ]
 }

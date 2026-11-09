@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-09",
-      "calls_today": 6,
-      "last_call": "2026-11-09T09:19:33Z"
+      "calls_today": 7,
+      "last_call": "2026-11-09T12:34:51Z"
     }
   },
   "fired": {
@@ -24,7 +24,7 @@
     "ai_largemid|AERO-USD:volume": "2026-10-31T22:11:41Z",
     "ai_largemid|ARB-USD:move": "2026-10-21T01:50:46Z",
     "ai_largemid|ARB-USD:volume": "2026-10-30T00:43:58Z",
-    "ai_largemid|AVAX-USD:move": "2026-11-05T15:54:19Z",
+    "ai_largemid|AVAX-USD:move": "2026-11-09T12:34:51Z",
     "ai_largemid|AVAX-USD:volume": "2026-11-08T22:03:55Z",
     "ai_largemid|BCH-USD:exit_below:260": "2026-11-07T09:57:02Z",
     "ai_largemid|BCH-USD:move": "2026-11-06T07:30:22Z",
@@ -139,5 +139,5 @@
     "ts": "2026-11-09T11:49:52Z"
   },
   "last_heartbeat": "2026-11-09T11:44:51Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
