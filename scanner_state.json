@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-10",
-      "calls_today": 8,
-      "last_call": "2026-11-10T17:01:39Z"
+      "calls_today": 9,
+      "last_call": "2026-11-10T18:01:39Z"
     }
   },
   "fired": {
@@ -69,7 +69,7 @@
     "ai_largemid|UNI-USD:move": "2026-11-10T16:11:39Z",
     "ai_largemid|UNI-USD:volume": "2026-11-10T17:01:39Z",
     "ai_largemid|VVV-USD:move": "2026-11-10T16:11:39Z",
-    "ai_largemid|VVV-USD:volume": "2026-11-09T07:54:32Z",
+    "ai_largemid|VVV-USD:volume": "2026-11-10T18:01:39Z",
     "ai_largemid|XLM-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|XLM-USD:volume": "2026-11-08T22:03:55Z",
     "ai_largemid|XRP-USD:volume": "2026-11-10T14:16:19Z",
@@ -118,23 +118,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8193.93,
-      "ai_largemid": 7874.73,
-      "btc_hold": 8619.65,
-      "eth_hold": 7683.69,
-      "ew_basket": 7276.43,
+      "ai_large": 8213.33,
+      "ai_largemid": 7882.77,
+      "btc_hold": 8647.32,
+      "eth_hold": 7698.06,
+      "ew_basket": 7319.34,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
     "scans": 5,
-    "ts": "2026-11-10T17:01:39Z"
+    "ts": "2026-11-10T18:01:39Z"
   },
   "last_data_fault": {
     "error": "ENA-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-10T06:55:54Z"
   },
-  "last_heartbeat": "2026-11-10T17:01:39Z",
-  "scans_since_heartbeat": 4
+  "last_heartbeat": "2026-11-10T18:01:39Z",
+  "scans_since_heartbeat": 0
 }
