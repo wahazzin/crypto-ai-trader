@@ -22,7 +22,7 @@
     "review_above": 150,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $120 and short\u2011term momentum remains weakly negative.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "ADA-USD": {
     "confidence_history": [
@@ -43,7 +43,7 @@
     "review_above": 0.22,
     "status": "bullish",
     "summary": "Potential short\u2011term rebound from oversold RSI and recent positive 24h return.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -79,7 +79,7 @@
     "review_above": 0.18,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit $0.14, dip signal still active.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -107,8 +107,8 @@
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit $9.0 despite modest downside.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "summary": "Thesis unchanged; price remains above exit $9.0 despite modest downside.",
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -145,7 +145,7 @@
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $170, rotation rank acceptable.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -174,7 +174,7 @@
     "review_above": 1.2,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $0.80.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -195,6 +195,6 @@
     "review_above": 9.0,
     "status": "bullish",
     "summary": "Thesis unchanged; rotation pick rank 1 and price above exit $5.5.",
-    "updated_cycle": "2026-11-10T13:41Z-event"
+    "updated_cycle": "2026-11-10T14:16Z-event"
   }
 }
