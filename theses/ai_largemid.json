@@ -24,6 +24,28 @@
     "summary": "Thesis unchanged; price still above exit $120 and short\u2011term momentum remains weakly negative.",
     "updated_cycle": "2026-11-10T05:05Z-event"
   },
+  "ADA-USD": {
+    "confidence_history": [
+      {
+        "confidence": 60,
+        "cycle": "2026-11-10T12:01Z-event"
+      }
+    ],
+    "exit_below": 0.15,
+    "invalidation": [
+      "Price < $0.15"
+    ],
+    "opened_cycle": "2026-11-10T12:01Z-event",
+    "reasons": [
+      "24h return +1.28% keeps price above exit",
+      "RSI 32 suggests oversold condition",
+      "Price still below 20\u2011day SMA, indicating possible upside"
+    ],
+    "review_above": 0.22,
+    "status": "bullish",
+    "summary": "Potential short\u2011term rebound from oversold RSI and recent positive 24h return.",
+    "updated_cycle": "2026-11-10T12:01Z-event"
+  },
   "AVAX-USD": {
     "confidence_history": [],
     "exit_below": 7.5,
