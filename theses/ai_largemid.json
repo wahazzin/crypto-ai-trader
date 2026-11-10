@@ -16,12 +16,13 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "24h return remains positive; dip signal not triggered."
+      "24h return -2.73% keeps price above exit",
+      "RSI 44 indicates still near neutral"
     ],
     "review_above": 150,
     "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit $120 and short\u2011term momentum positive.",
-    "updated_cycle": "2026-11-09T13:04Z-event"
+    "summary": "Thesis unchanged; price still above exit $120 and short\u2011term momentum remains weakly negative.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -51,12 +52,13 @@
     ],
     "opened_cycle": "2026-11-09T15:24Z-event",
     "reasons": [
-      "Price $0.1537 > exit $0.14; 24h return +2.1%; RSI ~34 indicating oversold."
+      "24h return +0.12% keeps price above exit",
+      "RSI 36 suggests oversold condition"
     ],
     "review_above": 0.18,
     "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit $0.14 and dip signal remains active.",
-    "updated_cycle": "2026-11-09T16:44Z-event"
+    "summary": "Thesis unchanged; price above exit $0.14, dip signal still active.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -79,12 +81,13 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Price $10.59 > exit $9.0; 24h return modestly negative."
+      "24h return +0.27% keeps price above exit",
+      "RSI 40 still above oversold"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit $9.0 but recent downside noted.",
-    "updated_cycle": "2026-11-09T13:04Z-event"
+    "summary": "Thesis unchanged; price above exit $9.0 despite modest downside.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -115,12 +118,13 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "24h return +0.16%; price above exit."
+      "24h return -4.35% still above exit",
+      "Rotation rank 6 within top 10"
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged; price above exit $170 and 28\u2011day return still negative but rotation rank acceptable.",
-    "updated_cycle": "2026-11-09T13:04Z-event"
+    "summary": "Thesis unchanged; price remains above exit $170, rotation rank acceptable.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -143,23 +147,27 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "24h return -0.83%; dip signal not active."
+      "24h return +1.58% keeps price above exit",
+      "RSI 40 near neutral"
     ],
     "review_above": 1.2,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $0.80.",
-    "updated_cycle": "2026-11-09T13:04Z-event"
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "UNI-USD": {
     "confidence_history": [],
     "exit_below": 5.5,
     "invalidation": [],
     "opened_cycle": "2026-11-10T00:00Z",
-    "reasons": [],
+    "reasons": [
+      "24h return +0.52% supports bullish view",
+      "Rotation pick rank 1"
+    ],
     "review_above": 9.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-10T00:00Z"
+    "summary": "Thesis unchanged; newly opened, price above exit $5.5.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   },
   "ZEC-USD": {
     "confidence_history": [
@@ -202,11 +210,12 @@
     ],
     "opened_cycle": "2026-11-04T00:00Z",
     "reasons": [
-      "Price $1223 > exit $1150; 24h return -3.77%."
+      "24h return -6.61% still above exit",
+      "Rotation rank 2 strong relative performance"
     ],
     "review_above": 1500,
     "status": "bullish",
-    "summary": "Thesis unchanged; rotation\u2011pick rank remains 1 with positive short\u2011term momentum.",
-    "updated_cycle": "2026-11-09T13:04Z-event"
+    "summary": "Thesis unchanged; price above exit $1150, rotation rank 2.",
+    "updated_cycle": "2026-11-10T05:05Z-event"
   }
 }
