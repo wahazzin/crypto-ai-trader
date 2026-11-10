@@ -1,26 +1,18 @@
 {
-  "cash": 8091.571842082657,
-  "day_start_date": "2026-11-09",
-  "day_start_equity": 8996.074734900862,
+  "cash": 9019.350583818268,
+  "day_start_date": "2026-11-10",
+  "day_start_equity": 9022.639867119697,
   "extra": {},
-  "fees_usd": 177.029317108353,
+  "fees_usd": 180.75533615146793,
   "halted_until": null,
-  "last_ts": "2026-11-09T23:55:28Z",
+  "last_ts": "2026-11-10T00:05:28Z",
   "name": "s_dip",
   "no_buys_until": null,
   "peak_equity": 10092.349311154321,
-  "positions": {
-    "ENA-USD": {
-      "avg_cost": 0.14804728872871661,
-      "opened_cycle": "2026-11-09T00:00Z",
-      "opened_ts": "2026-11-09T00:04:12Z",
-      "qty": 6085.213065174596,
-      "stop_pct": 18.0
-    }
-  },
-  "slippage_usd": 44.81441278203856,
-  "spread_usd": 10.223691027738978,
-  "traded_notional_usd": 44257.32927708827,
+  "positions": {},
+  "slippage_usd": 45.56429358806004,
+  "spread_usd": 10.375821354368327,
+  "traded_notional_usd": 45188.834037867,
   "trades": [
     {
       "cause": "stop",
@@ -31,6 +23,11 @@
       "cause": "strategy",
       "notional": 900.899295635662,
       "ts": "2026-11-09T00:04:12Z"
+    },
+    {
+      "cause": "strategy",
+      "notional": 931.5047607787266,
+      "ts": "2026-11-10T00:05:28Z"
     }
   ]
 }

@@ -1,6 +1,33 @@
 {
   "events": [],
-  "from": "2026-11-09T18:00Z",
-  "risk_engine": [],
+  "from": "2026-11-10T00:00Z",
+  "risk_engine": [
+    {
+      "action": "HOLD",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "LINK-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "ADD",
+      "asset": "UNI-USD",
+      "codes": [
+        "R12_ADD_NOT_HELD_USE_BUY"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.05,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }

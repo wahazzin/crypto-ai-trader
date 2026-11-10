@@ -150,6 +150,17 @@
     "summary": "Thesis unchanged; price still above exit $0.80.",
     "updated_cycle": "2026-11-09T13:04Z-event"
   },
+  "UNI-USD": {
+    "confidence_history": [],
+    "exit_below": 5.5,
+    "invalidation": [],
+    "opened_cycle": "2026-11-10T00:00Z",
+    "reasons": [],
+    "review_above": 9.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-10T00:00Z"
+  },
   "ZEC-USD": {
     "confidence_history": [
       {
