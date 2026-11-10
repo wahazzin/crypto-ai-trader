@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-10T17:01Z-event",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "UNI-USD",
-      "codes": [],
-      "final_weight": 0.06,
-      "requested_weight": 0.06,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "UNI-USD",
-      "cause": "ai_event",
-      "price": 6.7269201999999995,
-      "qty": 12.96622946866103,
-      "side": "buy"
-    }
-  ]
+  "from": "2026-11-10T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
