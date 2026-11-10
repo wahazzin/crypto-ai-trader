@@ -1,11 +1,11 @@
 {
-  "cash": 5823.055908969568,
+  "cash": 5735.4842268752745,
   "day_start_date": "2026-11-10",
   "day_start_equity": 8037.045522989585,
   "extra": {},
-  "fees_usd": 207.32946310351144,
+  "fees_usd": 207.67835426723371,
   "halted_until": null,
-  "last_ts": "2026-11-10T16:36:39Z",
+  "last_ts": "2026-11-10T17:01:39Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -53,16 +53,16 @@
       "stop_pct": 12
     },
     "UNI-USD": {
-      "avg_cost": 6.988959959590433,
+      "avg_cost": 6.94060906730165,
       "opened_cycle": "2026-11-10T06:00Z",
       "opened_ts": "2026-11-10T06:05:53Z",
-      "qty": 57.30481397908359,
+      "qty": 70.27104344774462,
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 37.98195745141255,
-  "spread_usd": 13.360134462445838,
-  "traded_notional_usd": 51832.365775877886,
+  "slippage_usd": 38.06909310668784,
+  "spread_usd": 13.380880429595694,
+  "traded_notional_usd": 51919.58856680846,
   "trades": [
     {
       "cause": "ai_event",
@@ -128,6 +128,11 @@
       "cause": "ai_event",
       "notional": 294.95617297562575,
       "ts": "2026-11-10T14:51:19Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 87.22279093057115,
+      "ts": "2026-11-10T17:01:39Z"
     }
   ]
 }

@@ -1,23 +1,23 @@
 {
   "events": [],
-  "from": "2026-11-10T14:51Z-event",
+  "from": "2026-11-10T17:01Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
+      "action": "ADD",
+      "asset": "UNI-USD",
       "codes": [],
-      "final_weight": 0.08,
-      "requested_weight": 0.08,
+      "final_weight": 0.06,
+      "requested_weight": 0.06,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
+      "asset": "UNI-USD",
       "cause": "ai_event",
-      "price": 182.06307300459238,
-      "qty": 1.6200768673622559,
-      "side": "sell"
+      "price": 6.7269201999999995,
+      "qty": 12.96622946866103,
+      "side": "buy"
     }
   ]
 }

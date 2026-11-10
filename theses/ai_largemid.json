@@ -181,6 +181,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-10T06:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-10T17:01Z-event"
       }
     ],
     "exit_below": 5.5,
@@ -189,12 +193,11 @@
     ],
     "opened_cycle": "2026-11-10T00:00Z",
     "reasons": [
-      "Positive short\u2011term return",
-      "Rotation pick confirmed"
+      "Added weight to capture potential upside"
     ],
-    "review_above": 9.0,
+    "review_above": 9.5,
     "status": "bullish",
-    "summary": "Thesis unchanged; rotation pick rank 1 and price above exit $5.5.",
-    "updated_cycle": "2026-11-10T14:16Z-event"
+    "summary": "Added to position; rotation pick remains top rank; price above exit.",
+    "updated_cycle": "2026-11-10T17:01Z-event"
   }
 }
