@@ -1,6 +1,17 @@
 {
   "events": [],
-  "from": "2026-11-10T06:00Z",
-  "risk_engine": [],
+  "from": "2026-11-10T12:00Z",
+  "risk_engine": [
+    {
+      "action": "SELL",
+      "asset": "ZEC-USD",
+      "codes": [
+        "R14_NOT_HELD"
+      ],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "REJECTED"
+    }
+  ],
   "your_fills": []
 }

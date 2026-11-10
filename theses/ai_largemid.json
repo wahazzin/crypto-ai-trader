@@ -196,57 +196,5 @@
     "status": "bullish",
     "summary": "Thesis unchanged; rotation pick rank 1 and price above exit $5.5.",
     "updated_cycle": "2026-11-10T06:00Z"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-11-04T00:26Z-event"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-11-04T12:00Z"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-11-05T06:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-06T00:24Z-event"
-      },
-      {
-        "confidence": 80,
-        "cycle": "2026-11-06T14:40Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-08T12:08Z-event"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-11-08T21:33Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-08T22:33Z-event"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-11-10T06:00Z"
-      }
-    ],
-    "exit_below": 1150,
-    "invalidation": [
-      "Price < $1150"
-    ],
-    "opened_cycle": "2026-11-04T00:00Z",
-    "reasons": [
-      "24h decline and proximity to exit level"
-    ],
-    "review_above": 1500,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit $1150 but recent drop raises risk.",
-    "updated_cycle": "2026-11-10T06:00Z"
   }
 }

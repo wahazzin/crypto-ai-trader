@@ -88,13 +88,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $190.64 > exit $170",
+      "Price $186.46 > exit $170",
       "No new adverse signals"
     ],
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis reaffirmed; price remains comfortably above exit $170 and rotation rank unchanged.",
-    "updated_cycle": "2026-11-10T06:00Z"
+    "updated_cycle": "2026-11-10T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -125,49 +125,12 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.84275 > exit $0.80",
-      "24h return +2.71%"
+      "Price $0.83075 > exit $0.80",
+      "24h return +0.9%"
     ],
     "review_above": 1.05,
     "status": "neutral",
     "summary": "Thesis unchanged; price above exit $0.80 and short\u2011term upside continues.",
-    "updated_cycle": "2026-11-10T06:00Z"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-11-06T00:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-06T14:40Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-06T15:11Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-07T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-09T18:00Z"
-      }
-    ],
-    "exit_below": 1150,
-    "invalidation": [
-      "Price < $1150"
-    ],
-    "opened_cycle": "2026-11-04T06:00Z",
-    "reasons": [
-      "Price $1150.77 > exit $1150",
-      "Rotation rank 2 still top performer"
-    ],
-    "review_above": 1500,
-    "status": "bullish",
-    "summary": "Thesis reaffirmed; price stays above exit $1150 despite recent pullback.",
-    "updated_cycle": "2026-11-10T06:00Z"
+    "updated_cycle": "2026-11-10T12:00Z"
   }
 }
