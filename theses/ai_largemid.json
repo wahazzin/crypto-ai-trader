@@ -16,13 +16,13 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "24h return -2.73% keeps price above exit",
-      "RSI 44 indicates still near neutral"
+      "No new adverse price movement",
+      "RSI still near neutral"
     ],
     "review_above": 150,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $120 and short\u2011term momentum remains weakly negative.",
-    "updated_cycle": "2026-11-10T05:05Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "ADA-USD": {
     "confidence_history": [
@@ -37,14 +37,13 @@
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "24h return +1.28% keeps price above exit",
-      "RSI 32 suggests oversold condition",
-      "Price still below 20\u2011day SMA, indicating possible upside"
+      "Price remains above exit $0.15",
+      "RSI still low indicating oversold"
     ],
     "review_above": 0.22,
     "status": "bullish",
     "summary": "Potential short\u2011term rebound from oversold RSI and recent positive 24h return.",
-    "updated_cycle": "2026-11-10T12:01Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -74,13 +73,13 @@
     ],
     "opened_cycle": "2026-11-09T15:24Z-event",
     "reasons": [
-      "24h return +0.12% keeps price above exit",
-      "RSI 36 suggests oversold condition"
+      "Price stays above exit",
+      "RSI still low"
     ],
     "review_above": 0.18,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit $0.14, dip signal still active.",
-    "updated_cycle": "2026-11-10T05:05Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -103,13 +102,13 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "24h return +0.27% keeps price above exit",
-      "RSI 40 still above oversold"
+      "Price remains above exit",
+      "RSI stable"
     ],
     "review_above": 13.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price above exit $9.0 despite modest downside.",
-    "updated_cycle": "2026-11-10T05:05Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -140,13 +139,13 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "24h return -4.35% still above exit",
-      "Rotation rank 6 within top 10"
+      "Price still above exit",
+      "Rotation rank within top 10"
     ],
     "review_above": 260,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $170, rotation rank acceptable.",
-    "updated_cycle": "2026-11-10T05:05Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -169,13 +168,13 @@
     ],
     "opened_cycle": "2026-10-31T15:31Z-event",
     "reasons": [
-      "24h return +1.58% keeps price above exit",
-      "RSI 40 near neutral"
+      "Price above exit",
+      "RSI near neutral"
     ],
     "review_above": 1.2,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $0.80.",
-    "updated_cycle": "2026-11-10T05:05Z-event"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -190,11 +189,12 @@
     ],
     "opened_cycle": "2026-11-10T00:00Z",
     "reasons": [
-      "Positive short\u2011term return and no adverse signal"
+      "Positive short\u2011term return",
+      "Rotation pick confirmed"
     ],
     "review_above": 9.0,
     "status": "bullish",
     "summary": "Thesis unchanged; rotation pick rank 1 and price above exit $5.5.",
-    "updated_cycle": "2026-11-10T06:00Z"
+    "updated_cycle": "2026-11-10T13:41Z-event"
   }
 }
