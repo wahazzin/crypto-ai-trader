@@ -111,15 +111,24 @@
     "updated_cycle": "2026-11-10T18:00Z"
   },
   "NEAR-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-11-11T12:07Z-event"
+      }
+    ],
     "exit_below": 3.2,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $3.20"
+    ],
     "opened_cycle": "2026-11-11T12:00Z",
-    "reasons": [],
+    "reasons": [
+      "Volume spike and continued price rise support short\u2011term upside"
+    ],
     "review_above": 4.5,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-11T12:00Z"
+    "summary": "Thesis unchanged; price remains well above exit $3.20 and review target $4.5 not yet reached.",
+    "updated_cycle": "2026-11-11T12:07Z-event"
   },
   "QNT-USD": {
     "confidence_history": [

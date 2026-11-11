@@ -88,12 +88,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $178.07 > exit_below $170, but 24h return -4.61% and RSI 44 suggest weakening momentum."
+      "24h return -4.69% and RSI 44 indicate weakening momentum, but price still above exit level."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level but outlook is modestly negative.",
-    "updated_cycle": "2026-11-11T12:00Z"
+    "summary": "Thesis remains bullish but outlook turns modestly negative; keep exit_below $170.",
+    "updated_cycle": "2026-11-11T12:07Z-event"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -128,11 +128,11 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.8334 > exit_below $0.80 and 24h return +0.2% with RSI 38."
+      "24h return +0.23% and RSI 38 suggest limited upside."
     ],
     "review_above": 1.1,
     "status": "neutral",
-    "summary": "Thesis unchanged; price stays above exit level and recent 24h gain supports a neutral stance.",
-    "updated_cycle": "2026-11-11T12:00Z"
+    "summary": "Thesis unchanged; price stays above exit level with slight 24h gain.",
+    "updated_cycle": "2026-11-11T12:07Z-event"
   }
 }
