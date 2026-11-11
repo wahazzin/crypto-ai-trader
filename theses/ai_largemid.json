@@ -57,14 +57,25 @@
     "updated_cycle": "2026-10-24T06:00Z"
   },
   "BTC-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-11-11T18:00Z"
+      }
+    ],
     "exit_below": 70000,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $70,000"
+    ],
     "opened_cycle": "2026-11-11T16:33Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price remains comfortably above the exit level.",
+      "No adverse price movement observed."
+    ],
+    "review_above": 80000,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-11T16:33Z-event"
+    "summary": "Thesis unchanged; price still above exit $70,000 and RSI remains low.",
+    "updated_cycle": "2026-11-11T18:00Z"
   },
   "ENA-USD": {
     "confidence_history": [
@@ -186,6 +197,27 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $170, rotation rank acceptable.",
     "updated_cycle": "2026-11-11T16:33Z-event"
+  },
+  "SOL-USD": {
+    "confidence_history": [
+      {
+        "confidence": 60,
+        "cycle": "2026-11-11T18:00Z"
+      }
+    ],
+    "exit_below": 78,
+    "invalidation": [
+      "Price < $78"
+    ],
+    "opened_cycle": "2026-11-11T18:00Z",
+    "reasons": [
+      "RSI at 24 indicates strong oversold condition.",
+      "24h price gain of +3.7% after a recent dip."
+    ],
+    "review_above": 95,
+    "status": "bullish",
+    "summary": "New bullish thesis based on oversold RSI and recent price bounce.",
+    "updated_cycle": "2026-11-11T18:00Z"
   },
   "SUI-USD": {
     "confidence_history": [

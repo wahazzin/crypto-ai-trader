@@ -88,51 +88,11 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Unrealized loss modest (-3.6%), RSI 44 shows still some momentum."
+      "Unrealized loss modest (-5%); RSI 44 shows some momentum; no breach of exit level."
     ],
     "review_above": 240,
     "status": "bullish",
     "summary": "Thesis remains bullish; price stays above exit level and short\u2011term downside limited.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
-  },
-  "SUI-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-10-28T18:00Z"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-10-29T14:43Z-event"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-11-02T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-08T22:03Z-event"
-      },
-      {
-        "confidence": 60,
-        "cycle": "2026-11-09T12:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-11T12:00Z"
-      }
-    ],
-    "exit_below": 0.8,
-    "invalidation": [
-      "Price < $0.80"
-    ],
-    "opened_cycle": "2026-10-28T18:00Z",
-    "reasons": [
-      "Unrealized loss around -10%, RSI 38, 24h return +3.7%."
-    ],
-    "review_above": 1.1,
-    "status": "neutral",
-    "summary": "Thesis unchanged; price above exit level with modest 24h gain, but still below cost.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
+    "updated_cycle": "2026-11-11T18:00Z"
   }
 }

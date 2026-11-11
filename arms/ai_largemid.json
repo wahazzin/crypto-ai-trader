@@ -1,11 +1,11 @@
 {
-  "cash": 3988.0536993346122,
+  "cash": 3818.66731063519,
   "day_start_date": "2026-11-11",
   "day_start_equity": 7893.843849207862,
   "extra": {},
-  "fees_usd": 214.6402288789495,
+  "fees_usd": 215.31507504906673,
   "halted_until": null,
-  "last_ts": "2026-11-11T17:18:00Z",
+  "last_ts": "2026-11-11T18:03:00Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -25,10 +25,10 @@
       "stop_pct": 18.0
     },
     "BTC-USD": {
-      "avg_cost": 74287.26397732638,
+      "avg_cost": 74307.94403846933,
       "opened_cycle": "2026-11-11T16:33Z-event",
       "opened_ts": "2026-11-11T16:33:01Z",
-      "qty": 0.005321334131607243,
+      "qty": 0.006912083510911925,
       "stop_pct": 18.0
     },
     "ENA-USD": {
@@ -66,6 +66,13 @@
       "qty": 3.490272719030486,
       "stop_pct": 18.0
     },
+    "SOL-USD": {
+      "avg_cost": 85.271132,
+      "opened_cycle": "2026-11-11T18:00Z",
+      "opened_ts": "2026-11-11T18:03:00Z",
+      "qty": 0.5910110488212971,
+      "stop_pct": 18.0
+    },
     "SUI-USD": {
       "avg_cost": 0.8870601669661493,
       "opened_cycle": "2026-10-31T15:31Z-event",
@@ -81,15 +88,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 38.96916297761703,
-  "spread_usd": 13.451323338975214,
-  "traded_notional_usd": 53660.05721973741,
+  "slippage_usd": 39.017130784683374,
+  "spread_usd": 13.45428634796623,
+  "traded_notional_usd": 53828.768762266714,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 84.05496453535096,
-      "ts": "2026-11-09T16:44:51Z"
-    },
     {
       "cause": "ai",
       "notional": 283.3712920173177,
@@ -139,6 +141,16 @@
       "cause": "ai_event",
       "notional": 395.28732243102195,
       "ts": "2026-11-11T16:33:01Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 118.31536137180585,
+      "ts": "2026-11-11T18:03:00Z"
+    },
+    {
+      "cause": "ai",
+      "notional": 50.396181157499264,
+      "ts": "2026-11-11T18:03:00Z"
     }
   ]
 }
