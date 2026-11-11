@@ -56,7 +56,6 @@
     "ai_largemid|ONDO-USD:volume": "2026-11-09T15:24:51Z",
     "ai_largemid|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_largemid|QNT-USD:exit_below:200": "2026-10-15T02:42:40Z",
-    "ai_largemid|QNT-USD:exit_below:230": "2026-10-12T12:33:50Z",
     "ai_largemid|QNT-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|QNT-USD:review_above:220.0": "2026-10-26T12:23:41Z",
     "ai_largemid|QNT-USD:volume": "2026-11-10T13:41:19Z",
@@ -118,23 +117,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8195.41,
-      "ai_largemid": 7867.56,
-      "btc_hold": 8740.27,
-      "eth_hold": 7809.8,
-      "ew_basket": 7399.92,
+      "ai_large": 8186.62,
+      "ai_largemid": 7866.24,
+      "btc_hold": 8724.03,
+      "eth_hold": 7799.88,
+      "ew_basket": 7385.31,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
-    "scans": 2,
-    "ts": "2026-11-11T12:17:39Z"
+    "scans": 1,
+    "ts": "2026-11-11T13:17:40Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-11T08:22:19Z"
   },
-  "last_heartbeat": "2026-11-11T12:17:39Z",
+  "last_heartbeat": "2026-11-11T13:17:40Z",
   "scans_since_heartbeat": 0
 }
