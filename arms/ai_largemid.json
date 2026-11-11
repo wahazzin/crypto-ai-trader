@@ -1,11 +1,11 @@
 {
-  "cash": 4781.810753815008,
+  "cash": 3988.0536993346122,
   "day_start_date": "2026-11-11",
   "day_start_equity": 7893.843849207862,
   "extra": {},
-  "fees_usd": 211.47785017584036,
+  "fees_usd": 214.6402288789495,
   "halted_until": null,
-  "last_ts": "2026-11-11T16:28:00Z",
+  "last_ts": "2026-11-11T16:33:01Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -24,12 +24,26 @@
       "qty": 1342.0169646870206,
       "stop_pct": 18.0
     },
+    "BTC-USD": {
+      "avg_cost": 74287.26397732638,
+      "opened_cycle": "2026-11-11T16:33Z-event",
+      "opened_ts": "2026-11-11T16:33:01Z",
+      "qty": 0.005321334131607243,
+      "stop_pct": 18.0
+    },
     "ENA-USD": {
       "avg_cost": 0.1560086799837329,
       "opened_cycle": "2026-11-09T15:24Z-event",
       "opened_ts": "2026-11-09T15:24:51Z",
       "qty": 3145.9919159640704,
       "stop_pct": 12
+    },
+    "ETH-USD": {
+      "avg_cost": 2078.385585249086,
+      "opened_cycle": "2026-11-11T16:33Z-event",
+      "opened_ts": "2026-11-11T16:33:01Z",
+      "qty": 0.19018959967606222,
+      "stop_pct": 18.0
     },
     "LINK-USD": {
       "avg_cost": 11.7010164,
@@ -67,20 +81,10 @@
       "stop_pct": 18.0
     }
   },
-  "slippage_usd": 38.79393152873072,
-  "spread_usd": 13.450345784306208,
-  "traded_notional_usd": 52869.46254396012,
+  "slippage_usd": 38.96916297761703,
+  "spread_usd": 13.451323338975214,
+  "traded_notional_usd": 53660.05721973741,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 15.492932037908659,
-      "ts": "2026-11-09T12:34:51Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 406.74708151369845,
-      "ts": "2026-11-09T15:24:51Z"
-    },
     {
       "cause": "ai_event",
       "notional": 84.05496453535096,
@@ -125,6 +129,16 @@
       "cause": "ai_event",
       "notional": 161.17369111364664,
       "ts": "2026-11-11T12:07:39Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 395.3073533462641,
+      "ts": "2026-11-11T16:33:01Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 395.28732243102195,
+      "ts": "2026-11-11T16:33:01Z"
     }
   ]
 }
