@@ -2,10 +2,6 @@
   "QNT-USD": {
     "confidence_history": [
       {
-        "confidence": 85,
-        "cycle": "2026-10-23T19:34Z-event"
-      },
-      {
         "confidence": 70,
         "cycle": "2026-10-25T06:00Z"
       },
@@ -80,6 +76,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-09T18:00Z"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-11T12:00Z"
       }
     ],
     "exit_below": 170,
@@ -88,13 +88,12 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $179.93 > exit_below $170",
-      "No negative breakout, dip, or trend signals"
+      "Price $178.07 > exit_below $170, but 24h return -4.61% and RSI 44 suggest weakening momentum."
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and no adverse toolbox signals. Outlook modestly negative but still above exit.",
-    "updated_cycle": "2026-11-11T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit level but outlook is modestly negative.",
+    "updated_cycle": "2026-11-11T12:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -117,6 +116,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-09T12:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-11T12:00Z"
       }
     ],
     "exit_below": 0.8,
@@ -125,12 +128,11 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.82765 > exit_below $0.80",
-      "No negative toolbox signals"
+      "Price $0.8334 > exit_below $0.80 and 24h return +0.2% with RSI 38."
     ],
-    "review_above": 1.05,
+    "review_above": 1.1,
     "status": "neutral",
-    "summary": "Thesis unchanged; price stays above exit level and no new adverse indicators. Still under pressure.",
-    "updated_cycle": "2026-11-11T06:00Z"
+    "summary": "Thesis unchanged; price stays above exit level and recent 24h gain supports a neutral stance.",
+    "updated_cycle": "2026-11-11T12:00Z"
   }
 }

@@ -110,6 +110,17 @@
     "summary": "Thesis unchanged; price remains above exit $9.0 despite modest downside.",
     "updated_cycle": "2026-11-10T18:00Z"
   },
+  "NEAR-USD": {
+    "confidence_history": [],
+    "exit_below": 3.2,
+    "invalidation": [],
+    "opened_cycle": "2026-11-11T12:00Z",
+    "reasons": [],
+    "review_above": 4.5,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-11T12:00Z"
+  },
   "QNT-USD": {
     "confidence_history": [
       {
