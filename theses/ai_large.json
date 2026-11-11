@@ -88,13 +88,13 @@
     ],
     "opened_cycle": "2026-10-23T19:34Z-event",
     "reasons": [
-      "Price $181.37 > exit_below $170",
+      "Price $179.93 > exit_below $170",
       "No negative breakout, dip, or trend signals"
     ],
     "review_above": 240,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and no adverse toolbox signals.",
-    "updated_cycle": "2026-11-11T00:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and no adverse toolbox signals. Outlook modestly negative but still above exit.",
+    "updated_cycle": "2026-11-11T06:00Z"
   },
   "SUI-USD": {
     "confidence_history": [
@@ -125,12 +125,12 @@
     ],
     "opened_cycle": "2026-10-28T18:00Z",
     "reasons": [
-      "Price $0.82565 > exit_below $0.80",
+      "Price $0.82765 > exit_below $0.80",
       "No negative toolbox signals"
     ],
     "review_above": 1.05,
     "status": "neutral",
-    "summary": "Thesis unchanged; price stays above exit level and no new adverse indicators.",
-    "updated_cycle": "2026-11-11T00:00Z"
+    "summary": "Thesis unchanged; price stays above exit level and no new adverse indicators. Still under pressure.",
+    "updated_cycle": "2026-11-11T06:00Z"
   }
 }
