@@ -182,6 +182,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-05T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-11T22:38Z-event"
       }
     ],
     "exit_below": 170,
@@ -190,13 +194,12 @@
     ],
     "opened_cycle": "2026-10-23T18:00Z",
     "reasons": [
-      "Price still above exit",
-      "Rotation rank within top 10"
+      "Volume spike and 1h price decline suggest higher risk"
     ],
     "review_above": 260,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit $170, rotation rank acceptable.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
+    "summary": "Tightened stop loss to protect against further downside after volume spike.",
+    "updated_cycle": "2026-11-11T22:38Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
