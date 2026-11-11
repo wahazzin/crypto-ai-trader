@@ -1,29 +1,4 @@
 {
-  "AAVE-USD": {
-    "confidence_history": [
-      {
-        "confidence": 82,
-        "cycle": "2026-10-31T18:51Z-event"
-      },
-      {
-        "confidence": 68,
-        "cycle": "2026-11-09T13:04Z-event"
-      }
-    ],
-    "exit_below": 120,
-    "invalidation": [
-      "Price < $120"
-    ],
-    "opened_cycle": "2026-10-31T15:31Z-event",
-    "reasons": [
-      "No adverse price movement",
-      "RSI still near neutral"
-    ],
-    "review_above": 150,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit $120 and RSI near neutral.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
-  },
   "ADA-USD": {
     "confidence_history": [
       {
@@ -160,46 +135,6 @@
     "status": "bullish",
     "summary": "Thesis unchanged; price remains well above exit $3.20 and review target $4.5 not yet reached.",
     "updated_cycle": "2026-11-11T16:33Z-event"
-  },
-  "QNT-USD": {
-    "confidence_history": [
-      {
-        "confidence": 78,
-        "cycle": "2026-10-23T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-27T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-10-31T14:36Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-02T17:29Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-05T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-11T22:38Z-event"
-      }
-    ],
-    "exit_below": 170,
-    "invalidation": [
-      "Price < $170"
-    ],
-    "opened_cycle": "2026-10-23T18:00Z",
-    "reasons": [
-      "Volume spike and 1h price decline suggest higher risk"
-    ],
-    "review_above": 260,
-    "status": "bullish",
-    "summary": "Tightened stop loss to protect against further downside after volume spike.",
-    "updated_cycle": "2026-11-11T22:38Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
