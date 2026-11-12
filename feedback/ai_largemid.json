@@ -1,6 +1,38 @@
 {
   "events": [],
-  "from": "2026-11-12T12:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-12T12:29Z-event",
+  "risk_engine": [
+    {
+      "action": "EXIT",
+      "asset": "ENA-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    },
+    {
+      "action": "EXIT",
+      "asset": "SUI-USD",
+      "codes": [],
+      "final_weight": 0.0,
+      "requested_weight": null,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "ENA-USD",
+      "cause": "ai_event",
+      "price": 0.13904137575842715,
+      "qty": 3145.9919159640704,
+      "side": "sell"
+    },
+    {
+      "asset": "SUI-USD",
+      "cause": "ai_event",
+      "price": 0.79961994,
+      "qty": 144.48054456732584,
+      "side": "sell"
+    }
+  ]
 }

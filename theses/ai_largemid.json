@@ -52,31 +52,6 @@
     "summary": "Thesis unchanged; price still above exit $70,000 and RSI remains low.",
     "updated_cycle": "2026-11-11T18:00Z"
   },
-  "ENA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-09T15:24Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-09T16:44Z-event"
-      }
-    ],
-    "exit_below": 0.14,
-    "invalidation": [
-      "Price < $0.14"
-    ],
-    "opened_cycle": "2026-11-09T15:24Z-event",
-    "reasons": [
-      "Price stays above exit",
-      "RSI still low"
-    ],
-    "review_above": 0.18,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price stays above exit $0.14 and dip signal still active.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
-  },
   "ETH-USD": {
     "confidence_history": [],
     "exit_below": 1900,
@@ -156,35 +131,6 @@
     "status": "bullish",
     "summary": "New bullish thesis based on oversold RSI and recent price bounce.",
     "updated_cycle": "2026-11-11T18:00Z"
-  },
-  "SUI-USD": {
-    "confidence_history": [
-      {
-        "confidence": 55,
-        "cycle": "2026-11-03T00:00Z"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-11-04T00:26Z-event"
-      },
-      {
-        "confidence": 68,
-        "cycle": "2026-11-08T12:00Z"
-      }
-    ],
-    "exit_below": 0.8,
-    "invalidation": [
-      "Price < $0.70"
-    ],
-    "opened_cycle": "2026-10-31T15:31Z-event",
-    "reasons": [
-      "Price above exit",
-      "RSI near neutral"
-    ],
-    "review_above": 1.2,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price still above exit $0.80.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
   },
   "UNI-USD": {
     "confidence_history": [

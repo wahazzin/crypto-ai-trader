@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-12",
-      "calls_today": 2,
-      "last_call": "2026-11-12T01:48:42Z"
+      "calls_today": 3,
+      "last_call": "2026-11-12T12:29:13Z"
     }
   },
   "fired": {
@@ -33,6 +33,7 @@
     "ai_largemid|BTC-USD:exit_below:77000": "2026-10-30T00:43:58Z",
     "ai_largemid|BTC-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|BTC-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|ENA-USD:exit_below:0.14": "2026-11-12T12:29:13Z",
     "ai_largemid|ENA-USD:exit_below:0.15": "2026-11-08T22:03:55Z",
     "ai_largemid|ENA-USD:move": "2026-11-10T16:11:39Z",
     "ai_largemid|ENA-USD:volume": "2026-11-11T18:23:00Z",
@@ -63,6 +64,7 @@
     "ai_largemid|QNT-USD:volume": "2026-11-12T01:48:42Z",
     "ai_largemid|SOL-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|SOL-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|SUI-USD:exit_below:0.8": "2026-11-12T12:29:13Z",
     "ai_largemid|SUI-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|SUI-USD:volume": "2026-11-10T16:11:39Z",
     "ai_largemid|TAO-USD:move": "2026-11-05T15:54:19Z",
@@ -120,22 +122,22 @@
   "heartbeat": {
     "equity": {
       "ai_large": 8150.12,
-      "ai_largemid": 7678.9,
-      "btc_hold": 8645.73,
-      "eth_hold": 7741.01,
-      "ew_basket": 7194.24,
+      "ai_largemid": 7651.1,
+      "btc_hold": 8589.96,
+      "eth_hold": 7665.76,
+      "ew_basket": 7127.18,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
     "scans": 1,
-    "ts": "2026-11-12T11:29:12Z"
+    "ts": "2026-11-12T12:29:13Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-11T08:22:19Z"
   },
-  "last_heartbeat": "2026-11-12T11:29:12Z",
+  "last_heartbeat": "2026-11-12T12:29:13Z",
   "scans_since_heartbeat": 0
 }
