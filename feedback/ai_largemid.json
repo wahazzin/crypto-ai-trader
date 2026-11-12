@@ -1,55 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-12T00:00Z",
-  "risk_engine": [
-    {
-      "action": "HOLD",
-      "asset": "ENA-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "SUI-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "SOL-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "LINK-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "UNI-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    },
-    {
-      "action": "HOLD",
-      "asset": "ADA-USD",
-      "codes": [],
-      "final_weight": null,
-      "requested_weight": null,
-      "status": "NOOP"
-    }
-  ],
+  "from": "2026-11-12T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
