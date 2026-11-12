@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-11T18:00Z",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "SUI-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": 0,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "SUI-USD",
-      "cause": "ai",
-      "price": 0.84309384,
-      "qty": 101.52612377661555,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-11-12T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
