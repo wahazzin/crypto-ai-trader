@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-12",
-      "calls_today": 2,
-      "last_call": "2026-11-12T14:54:34Z"
+      "calls_today": 3,
+      "last_call": "2026-11-12T16:09:34Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-12",
-      "calls_today": 6,
-      "last_call": "2026-11-12T15:39:34Z"
+      "calls_today": 7,
+      "last_call": "2026-11-12T16:09:34Z"
     }
   },
   "fired": {
@@ -47,7 +47,7 @@
     "ai_largemid|HBAR-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|HBAR-USD:volume": "2026-11-12T15:39:34Z",
     "ai_largemid|LINK-USD:move": "2026-11-05T15:54:19Z",
-    "ai_largemid|LINK-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|LINK-USD:volume": "2026-11-12T16:09:34Z",
     "ai_largemid|LTC-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|LTC-USD:volume": "2026-11-08T22:03:55Z",
     "ai_largemid|NEAR-USD:exit_below:4.05": "2026-11-02T14:24:03Z",
@@ -95,7 +95,7 @@
     "ai_large|ETH-USD:move": "2026-11-08T22:03:55Z",
     "ai_large|ETH-USD:volume": "2026-11-10T16:11:39Z",
     "ai_large|LINK-USD:move": "2026-11-05T15:54:19Z",
-    "ai_large|LINK-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_large|LINK-USD:volume": "2026-11-12T16:09:34Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
     "ai_large|NEAR-USD:exit_below:5.0": "2026-10-16T17:15:01Z",
     "ai_large|NEAR-USD:move": "2026-11-11T23:23:20Z",
@@ -139,5 +139,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-12T15:29:34Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
