@@ -18,7 +18,7 @@
     "review_above": 0.22,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $0.15 and RSI still low.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -50,7 +50,7 @@
     "review_above": 80000,
     "status": "bullish",
     "summary": "Thesis unchanged; price still above exit $70,000 and RSI remains low.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "ETH-USD": {
     "confidence_history": [],
@@ -60,7 +60,7 @@
     "reasons": [],
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $1,900.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -89,7 +89,7 @@
     "review_above": 13.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $9.0.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -109,7 +109,7 @@
     "review_above": 4.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains well above exit $3.20 and review target $4.5 not yet reached.",
-    "updated_cycle": "2026-11-11T16:33Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "SOL-USD": {
     "confidence_history": [
@@ -130,7 +130,7 @@
     "review_above": 95,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $78.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -154,6 +154,6 @@
     "review_above": 9.5,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $5.5.",
-    "updated_cycle": "2026-11-12T14:54Z-event"
+    "updated_cycle": "2026-11-12T18:00Z"
   }
 }
