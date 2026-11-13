@@ -8,6 +8,10 @@
       {
         "confidence": 77,
         "cycle": "2026-11-13T04:00Z-event"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-13T15:21Z-event"
       }
     ],
     "exit_below": 0.15,
@@ -17,12 +21,12 @@
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
       "Price above exit",
-      "RSI still low but stable"
+      "24h positive return"
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Price remains well above exit $0.15; RSI low but no reversal signal.",
-    "updated_cycle": "2026-11-13T12:00Z"
+    "summary": "Price remains well above exit $0.15; RSI low but stable, short\u2011term bounce possible.",
+    "updated_cycle": "2026-11-13T15:21Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -46,11 +50,12 @@
     "invalidation": [],
     "opened_cycle": "2026-11-11T16:33Z-event",
     "reasons": [
-      "Price above exit"
+      "Price above exit",
+      "RSI still low"
     ],
     "status": "bullish",
-    "summary": "Price stays above exit $1900; no new bearish evidence.",
-    "updated_cycle": "2026-11-13T12:00Z"
+    "summary": "Price stays above exit $1900; no new bearish evidence despite 24h decline.",
+    "updated_cycle": "2026-11-13T15:21Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -74,12 +79,12 @@
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
       "Price above exit",
-      "RSI stable"
+      "24h positive return"
     ],
     "review_above": 13.5,
     "status": "bullish",
     "summary": "Price stays above exit $9.0; RSI stable, no invalidation.",
-    "updated_cycle": "2026-11-13T12:00Z"
+    "updated_cycle": "2026-11-13T15:21Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -90,6 +95,10 @@
       {
         "confidence": 74,
         "cycle": "2026-11-13T04:00Z-event"
+      },
+      {
+        "confidence": 68,
+        "cycle": "2026-11-13T15:21Z-event"
       }
     ],
     "exit_below": 3.2,
@@ -98,13 +107,13 @@
     ],
     "opened_cycle": "2026-11-11T12:00Z",
     "reasons": [
-      "Volume spike",
-      "Price above exit"
+      "Price above exit",
+      "Volume spike"
     ],
     "review_above": 4.5,
     "status": "bullish",
-    "summary": "Price remains well above exit $3.20; review target $4.5 not yet hit.",
-    "updated_cycle": "2026-11-13T12:00Z"
+    "summary": "Price remains well above exit $3.20; 24h gain supports thesis.",
+    "updated_cycle": "2026-11-13T15:21Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
@@ -115,6 +124,10 @@
       {
         "confidence": 75,
         "cycle": "2026-11-13T04:00Z-event"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-13T15:21Z-event"
       }
     ],
     "exit_below": 78,
@@ -123,13 +136,13 @@
     ],
     "opened_cycle": "2026-11-11T18:00Z",
     "reasons": [
-      "RSI oversold",
-      "Recent bounce"
+      "Price above exit",
+      "RSI oversold"
     ],
     "review_above": 95,
     "status": "bullish",
-    "summary": "Price stays above exit $78; no reversal signs.",
-    "updated_cycle": "2026-11-13T12:00Z"
+    "summary": "Price stays above exit $78; oversold RSI suggests upside potential.",
+    "updated_cycle": "2026-11-13T15:21Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
