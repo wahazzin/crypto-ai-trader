@@ -113,34 +113,6 @@
     "summary": "Tightening exit as price stays above but close to prior level.",
     "updated_cycle": "2026-11-13T22:21Z-event"
   },
-  "SOL-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-11T18:00Z"
-      },
-      {
-        "confidence": 75,
-        "cycle": "2026-11-13T04:00Z-event"
-      },
-      {
-        "confidence": 65,
-        "cycle": "2026-11-13T15:21Z-event"
-      }
-    ],
-    "exit_below": 78.0,
-    "invalidation": [
-      "Price < $78.0"
-    ],
-    "opened_cycle": "2026-11-11T18:00Z",
-    "reasons": [
-      "Price below SMA20/50, RSI oversold, 24h decline"
-    ],
-    "review_above": 95,
-    "status": "bullish",
-    "summary": "Lowering exit threshold given oversold RSI and price weakness.",
-    "updated_cycle": "2026-11-13T22:21Z-event"
-  },
   "UNI-USD": {
     "confidence_history": [
       {

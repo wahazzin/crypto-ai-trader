@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-13",
-      "calls_today": 9,
-      "last_call": "2026-11-13T22:21:32Z"
+      "calls_today": 10,
+      "last_call": "2026-11-13T23:01:58Z"
     }
   },
   "fired": {
@@ -63,6 +63,7 @@
     "ai_largemid|QNT-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|QNT-USD:review_above:220.0": "2026-10-26T12:23:41Z",
     "ai_largemid|QNT-USD:volume": "2026-11-12T01:48:42Z",
+    "ai_largemid|SOL-USD:exit_below:78.0": "2026-11-13T23:01:58Z",
     "ai_largemid|SOL-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|SOL-USD:volume": "2026-11-13T04:00:26Z",
     "ai_largemid|SUI-USD:exit_below:0.8": "2026-11-12T12:29:13Z",
@@ -121,22 +122,22 @@
   "heartbeat": {
     "equity": {
       "ai_large": 8150.12,
-      "ai_largemid": 7572.7,
-      "btc_hold": 8077.81,
-      "eth_hold": 7326.36,
-      "ew_basket": 6965.12,
+      "ai_largemid": 7558.67,
+      "btc_hold": 8055.01,
+      "eth_hold": 7306.91,
+      "ew_basket": 6894.84,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
-    "scans": 1,
-    "ts": "2026-11-13T22:01:32Z"
+    "scans": 4,
+    "ts": "2026-11-13T23:01:58Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-11T08:22:19Z"
   },
-  "last_heartbeat": "2026-11-13T22:01:32Z",
-  "scans_since_heartbeat": 3
+  "last_heartbeat": "2026-11-13T23:01:58Z",
+  "scans_since_heartbeat": 0
 }
