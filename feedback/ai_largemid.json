@@ -1,38 +1,63 @@
 {
   "events": [],
-  "from": "2026-11-13T03:30Z-event",
+  "from": "2026-11-13T04:00Z-event",
   "risk_engine": [
     {
-      "action": "REDUCE",
+      "action": "HOLD",
       "asset": "BTC-USD",
       "codes": [],
-      "final_weight": 0.03,
-      "requested_weight": 0.03,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     },
     {
-      "action": "REDUCE",
-      "asset": "UNI-USD",
+      "action": "HOLD",
+      "asset": "ETH-USD",
       "codes": [],
-      "final_weight": 0.03,
-      "requested_weight": 0.03,
-      "status": "APPROVED"
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "SOL-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "ADA-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "QNT-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    },
+    {
+      "action": "HOLD",
+      "asset": "ZEC-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "BTC-USD",
-      "cause": "ai_event",
-      "price": 69312.9902656976,
-      "qty": 0.00361726640641345,
-      "side": "sell"
-    },
-    {
-      "asset": "UNI-USD",
-      "cause": "ai_event",
-      "price": 5.853211931132706,
-      "qty": 31.30077151874011,
-      "side": "sell"
-    }
-  ]
+  "your_fills": []
 }

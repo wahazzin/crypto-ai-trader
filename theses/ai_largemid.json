@@ -4,6 +4,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-10T12:01Z-event"
+      },
+      {
+        "confidence": 77,
+        "cycle": "2026-11-13T04:00Z-event"
       }
     ],
     "exit_below": 0.15,
@@ -13,12 +17,12 @@
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
       "Price above exit",
-      "RSI still low"
+      "RSI low but stable"
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Price remains well above exit $0.15 and RSI stays low; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price remains well above exit $0.15; RSI still low but no reversal signal.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -32,7 +36,12 @@
     "updated_cycle": "2026-10-24T06:00Z"
   },
   "ETH-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 78,
+        "cycle": "2026-11-13T04:00Z-event"
+      }
+    ],
     "exit_below": 1900,
     "invalidation": [],
     "opened_cycle": "2026-11-11T16:33Z-event",
@@ -40,8 +49,8 @@
       "Price above exit"
     ],
     "status": "bullish",
-    "summary": "Price remains above exit $1,900; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price stays above exit $1900; no new bearish evidence.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -69,14 +78,18 @@
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Price stays above exit $9.0; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price stays above exit $9.0; RSI stable, no invalidation.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
       {
         "confidence": 70,
         "cycle": "2026-11-11T12:07Z-event"
+      },
+      {
+        "confidence": 74,
+        "cycle": "2026-11-13T04:00Z-event"
       }
     ],
     "exit_below": 3.2,
@@ -90,14 +103,18 @@
     ],
     "review_above": 4.5,
     "status": "bullish",
-    "summary": "Price remains well above exit $3.20; review target $4.5 not yet reached.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price remains well above exit $3.20; review target $4.5 not yet hit.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
       {
         "confidence": 60,
         "cycle": "2026-11-11T18:00Z"
+      },
+      {
+        "confidence": 75,
+        "cycle": "2026-11-13T04:00Z-event"
       }
     ],
     "exit_below": 78,
@@ -111,8 +128,8 @@
     ],
     "review_above": 95,
     "status": "bullish",
-    "summary": "Price stays above exit $78; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price stays above exit $78; no reversal signs.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -135,7 +152,7 @@
     ],
     "review_above": 9.5,
     "status": "bullish",
-    "summary": "Price remains above exit $5.5; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
+    "summary": "Price remains above exit $5.5; review target $9.5 not reached.",
+    "updated_cycle": "2026-11-13T04:00Z-event"
   }
 }
