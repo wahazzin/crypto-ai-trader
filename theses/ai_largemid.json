@@ -14,19 +14,18 @@
         "cycle": "2026-11-13T15:21Z-event"
       }
     ],
-    "exit_below": 0.15,
+    "exit_below": 0.155,
     "invalidation": [
-      "Price < $0.15"
+      "Price < $0.155"
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "Price above exit",
-      "24h positive return"
+      "Price below SMA20/50, RSI low, recent bounce uncertain"
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Price remains well above exit $0.15; RSI low but stable, short\u2011term bounce possible.",
-    "updated_cycle": "2026-11-13T15:21Z-event"
+    "summary": "Tightening exit level as price remains near recent lows; still above exit.",
+    "updated_cycle": "2026-11-13T22:21Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -46,16 +45,17 @@
         "cycle": "2026-11-13T04:00Z-event"
       }
     ],
-    "exit_below": 1900,
-    "invalidation": [],
+    "exit_below": 1910,
+    "invalidation": [
+      "Price < $1910"
+    ],
     "opened_cycle": "2026-11-11T16:33Z-event",
     "reasons": [
-      "Price above exit",
-      "RSI still low"
+      "Price below SMA20/50, RSI low, 24h decline"
     ],
     "status": "bullish",
-    "summary": "Price stays above exit $1900; no new bearish evidence despite 24h decline.",
-    "updated_cycle": "2026-11-13T15:21Z-event"
+    "summary": "Adjusting exit threshold tighter amid continued downtrend.",
+    "updated_cycle": "2026-11-13T22:21Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -72,19 +72,18 @@
         "cycle": "2026-11-09T13:04Z-event"
       }
     ],
-    "exit_below": 9.0,
+    "exit_below": 9.5,
     "invalidation": [
-      "Price < $9.0"
+      "Price < $9.5"
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Price above exit",
-      "24h positive return"
+      "Large drawdown, price near exit, RSI stable but low"
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Price stays above exit $9.0; RSI stable, no invalidation.",
-    "updated_cycle": "2026-11-13T15:21Z-event"
+    "summary": "Reducing exit level to protect against further downside.",
+    "updated_cycle": "2026-11-13T22:21Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -101,19 +100,18 @@
         "cycle": "2026-11-13T15:21Z-event"
       }
     ],
-    "exit_below": 3.2,
+    "exit_below": 3.3,
     "invalidation": [
-      "Price < $3.20"
+      "Price < $3.3"
     ],
     "opened_cycle": "2026-11-11T12:00Z",
     "reasons": [
-      "Price above exit",
-      "Volume spike"
+      "Price below SMA20/50, RSI low, modest 24h gain insufficient"
     ],
     "review_above": 4.5,
     "status": "bullish",
-    "summary": "Price remains well above exit $3.20; 24h gain supports thesis.",
-    "updated_cycle": "2026-11-13T15:21Z-event"
+    "summary": "Tightening exit as price stays above but close to prior level.",
+    "updated_cycle": "2026-11-13T22:21Z-event"
   },
   "SOL-USD": {
     "confidence_history": [
@@ -130,19 +128,18 @@
         "cycle": "2026-11-13T15:21Z-event"
       }
     ],
-    "exit_below": 78,
+    "exit_below": 78.0,
     "invalidation": [
-      "Price < $78"
+      "Price < $78.0"
     ],
     "opened_cycle": "2026-11-11T18:00Z",
     "reasons": [
-      "Price above exit",
-      "RSI oversold"
+      "Price below SMA20/50, RSI oversold, 24h decline"
     ],
     "review_above": 95,
     "status": "bullish",
-    "summary": "Price stays above exit $78; oversold RSI suggests upside potential.",
-    "updated_cycle": "2026-11-13T15:21Z-event"
+    "summary": "Lowering exit threshold given oversold RSI and price weakness.",
+    "updated_cycle": "2026-11-13T22:21Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
