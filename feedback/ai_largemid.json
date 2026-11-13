@@ -1,6 +1,38 @@
 {
   "events": [],
-  "from": "2026-11-13T00:00Z",
-  "risk_engine": [],
-  "your_fills": []
+  "from": "2026-11-13T03:30Z-event",
+  "risk_engine": [
+    {
+      "action": "REDUCE",
+      "asset": "BTC-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    },
+    {
+      "action": "REDUCE",
+      "asset": "UNI-USD",
+      "codes": [],
+      "final_weight": 0.03,
+      "requested_weight": 0.03,
+      "status": "APPROVED"
+    }
+  ],
+  "your_fills": [
+    {
+      "asset": "BTC-USD",
+      "cause": "ai_event",
+      "price": 69312.9902656976,
+      "qty": 0.00361726640641345,
+      "side": "sell"
+    },
+    {
+      "asset": "UNI-USD",
+      "cause": "ai_event",
+      "price": 5.853211931132706,
+      "qty": 31.30077151874011,
+      "side": "sell"
+    }
+  ]
 }

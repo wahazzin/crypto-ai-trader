@@ -1,14 +1,14 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": "2026-11-12",
-      "calls_today": 3,
-      "last_call": "2026-11-12T16:09:34Z"
+      "calls_day": "2026-11-13",
+      "calls_today": 1,
+      "last_call": "2026-11-13T03:30:26Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-13",
-      "calls_today": 1,
-      "last_call": "2026-11-13T03:00:26Z"
+      "calls_today": 2,
+      "last_call": "2026-11-13T03:30:26Z"
     }
   },
   "fired": {
@@ -25,10 +25,11 @@
     "ai_largemid|ARB-USD:move": "2026-10-21T01:50:46Z",
     "ai_largemid|ARB-USD:volume": "2026-10-30T00:43:58Z",
     "ai_largemid|AVAX-USD:move": "2026-11-09T12:34:51Z",
-    "ai_largemid|AVAX-USD:volume": "2026-11-09T16:44:51Z",
+    "ai_largemid|AVAX-USD:volume": "2026-11-13T03:30:26Z",
     "ai_largemid|BCH-USD:exit_below:260": "2026-11-07T09:57:02Z",
     "ai_largemid|BCH-USD:move": "2026-11-06T07:30:22Z",
     "ai_largemid|BCH-USD:volume": "2026-11-06T06:55:22Z",
+    "ai_largemid|BTC-USD:exit_below:70000": "2026-11-13T03:30:26Z",
     "ai_largemid|BTC-USD:exit_below:75000": "2026-11-08T22:03:55Z",
     "ai_largemid|BTC-USD:exit_below:77000": "2026-10-30T00:43:58Z",
     "ai_largemid|BTC-USD:move": "2026-11-05T15:54:19Z",
@@ -40,7 +41,7 @@
     "ai_largemid|ETH-USD:exit_below:2100": "2026-11-09T07:14:32Z",
     "ai_largemid|ETH-USD:exit_below:2320.72": "2026-10-24T15:16:14Z",
     "ai_largemid|ETH-USD:move": "2026-11-08T22:03:55Z",
-    "ai_largemid|ETH-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|ETH-USD:volume": "2026-11-13T03:30:26Z",
     "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
     "ai_largemid|FET-USD:move": "2026-10-30T01:28:57Z",
     "ai_largemid|FET-USD:volume": "2026-10-30T00:43:58Z",
@@ -66,9 +67,9 @@
     "ai_largemid|SOL-USD:volume": "2026-11-10T16:11:39Z",
     "ai_largemid|SUI-USD:exit_below:0.8": "2026-11-12T12:29:13Z",
     "ai_largemid|SUI-USD:move": "2026-11-05T15:54:19Z",
-    "ai_largemid|SUI-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|SUI-USD:volume": "2026-11-13T03:30:26Z",
     "ai_largemid|TAO-USD:move": "2026-11-05T15:54:19Z",
-    "ai_largemid|TAO-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|TAO-USD:volume": "2026-11-13T03:30:26Z",
     "ai_largemid|UNI-USD:move": "2026-11-10T16:11:39Z",
     "ai_largemid|UNI-USD:volume": "2026-11-12T00:08:20Z",
     "ai_largemid|VVV-USD:move": "2026-11-10T16:11:39Z",
@@ -93,7 +94,7 @@
     "ai_large|BTC-USD:volume": "2026-11-12T14:54:34Z",
     "ai_large|ETH-USD:exit_below:2420": "2026-10-14T14:42:00Z",
     "ai_large|ETH-USD:move": "2026-11-08T22:03:55Z",
-    "ai_large|ETH-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_large|ETH-USD:volume": "2026-11-13T03:30:26Z",
     "ai_large|LINK-USD:move": "2026-11-05T15:54:19Z",
     "ai_large|LINK-USD:volume": "2026-11-12T16:09:34Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
@@ -110,7 +111,7 @@
     "ai_large|SOL-USD:volume": "2026-11-10T16:11:39Z",
     "ai_large|SUI-USD:exit_below:0.965": "2026-10-18T14:02:35Z",
     "ai_large|SUI-USD:move": "2026-11-05T15:54:19Z",
-    "ai_large|SUI-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_large|SUI-USD:volume": "2026-11-13T03:30:26Z",
     "ai_large|XRP-USD:move": "2026-11-04T15:17:50Z",
     "ai_large|XRP-USD:volume": "2026-11-10T14:16:19Z",
     "ai_large|ZEC-USD:exit_below:1150": "2026-11-02T19:39:23Z",
@@ -139,5 +140,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-13T02:40:27Z",
-  "scans_since_heartbeat": 5
+  "scans_since_heartbeat": 6
 }

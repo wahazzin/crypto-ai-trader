@@ -31,27 +31,6 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "BTC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-11-11T18:00Z"
-      }
-    ],
-    "exit_below": 70000,
-    "invalidation": [
-      "Price < $70,000"
-    ],
-    "opened_cycle": "2026-11-11T16:33Z-event",
-    "reasons": [
-      "Price above exit",
-      "No adverse movement"
-    ],
-    "review_above": 80000,
-    "status": "bullish",
-    "summary": "Price still above exit $70,000 and RSI remains low; thesis unchanged.",
-    "updated_cycle": "2026-11-13T03:00Z-event"
-  },
   "ETH-USD": {
     "confidence_history": [],
     "exit_below": 1900,
