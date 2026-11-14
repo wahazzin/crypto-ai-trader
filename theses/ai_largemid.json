@@ -20,12 +20,12 @@
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "Price above exit, still near recent lows; monitoring for further downside."
+      "Price above exit, still near recent lows; no breach of exit level."
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Holding; price still above exit $0.16, RSI low but no breach.",
-    "updated_cycle": "2026-11-14T06:00Z"
+    "summary": "Holding; price still above exit $0.16 but RSI low and 24h return -3.96%. Monitoring for further downside.",
+    "updated_cycle": "2026-11-14T07:02Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -40,14 +40,16 @@
   },
   "BTC-USD": {
     "confidence_history": [],
-    "invalidation": [],
+    "invalidation": [
+      "Price < $65,000 would trigger stop loss."
+    ],
     "opened_cycle": "2026-11-14T02:21Z-event",
     "reasons": [
-      "Large drawdown and low RSI suggest continued downside risk."
+      "24h return -2.39%, RSI 24.7, drawdown -20.7% from 30\u2011day high."
     ],
-    "status": "neutral",
-    "summary": "No active thesis; market broadly bearish.",
-    "updated_cycle": "2026-11-14T02:21Z-event"
+    "status": "bearish",
+    "summary": "Outlook strongly negative; price down 2.4% 24h, RSI low, drawdown deepening. Position closed.",
+    "updated_cycle": "2026-11-14T07:02Z-event"
   },
   "UNI-USD": {
     "confidence_history": [
