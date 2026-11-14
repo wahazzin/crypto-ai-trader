@@ -1,9 +1,9 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": "2026-11-13",
-      "calls_today": 7,
-      "last_call": "2026-11-13T23:06:58Z"
+      "calls_day": "2026-11-14",
+      "calls_today": 1,
+      "last_call": "2026-11-14T02:31:59Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-14",
@@ -89,7 +89,6 @@
     "ai_largemid|ZRO-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|ZRO-USD:volume": "2026-11-05T15:19:20Z",
     "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
-    "ai_large|ADA-USD:exit_below:0.22": "2026-10-15T02:27:40Z",
     "ai_large|ADA-USD:move": "2026-11-05T15:54:19Z",
     "ai_large|ADA-USD:volume": "2026-11-08T22:03:55Z",
     "ai_large|BTC-USD:exit_below:80000": "2026-10-24T15:21:13Z",
@@ -110,7 +109,7 @@
     "ai_large|QNT-USD:review_above:210.0": "2026-10-21T18:31:48Z",
     "ai_large|QNT-USD:volume": "2026-11-12T01:48:42Z",
     "ai_large|SOL-USD:move": "2026-11-05T15:54:19Z",
-    "ai_large|SOL-USD:volume": "2026-11-13T23:06:58Z",
+    "ai_large|SOL-USD:volume": "2026-11-14T02:31:59Z",
     "ai_large|SUI-USD:exit_below:0.965": "2026-10-18T14:02:35Z",
     "ai_large|SUI-USD:move": "2026-11-05T15:54:19Z",
     "ai_large|SUI-USD:volume": "2026-11-13T03:30:26Z",
@@ -142,5 +141,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-14T02:01:58Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
