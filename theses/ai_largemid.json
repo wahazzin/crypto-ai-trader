@@ -14,18 +14,18 @@
         "cycle": "2026-11-13T15:21Z-event"
       }
     ],
-    "exit_below": 0.155,
+    "exit_below": 0.16,
     "invalidation": [
-      "Price < $0.155"
+      "Price < $0.16"
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "Price below SMA20/50, RSI low, recent bounce uncertain"
+      "Price still above prior exit but RSI remains low; protect downside."
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Tightening exit level as price remains near recent lows; still above exit.",
-    "updated_cycle": "2026-11-13T22:21Z-event"
+    "summary": "Tightening exit level as price stays near recent lows.",
+    "updated_cycle": "2026-11-14T00:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -45,17 +45,17 @@
         "cycle": "2026-11-13T04:00Z-event"
       }
     ],
-    "exit_below": 1910,
+    "exit_below": 1920,
     "invalidation": [
-      "Price < $1910"
+      "Price < $1920"
     ],
     "opened_cycle": "2026-11-11T16:33Z-event",
     "reasons": [
-      "Price below SMA20/50, RSI low, 24h decline"
+      "Price above prior exit; 24h decline persists; tighter exit improves risk profile."
     ],
     "status": "bullish",
-    "summary": "Adjusting exit threshold tighter amid continued downtrend.",
-    "updated_cycle": "2026-11-13T22:21Z-event"
+    "summary": "Raising stop to limit further loss amid continued downtrend.",
+    "updated_cycle": "2026-11-14T00:00Z"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -72,18 +72,18 @@
         "cycle": "2026-11-09T13:04Z-event"
       }
     ],
-    "exit_below": 9.5,
+    "exit_below": 9.8,
     "invalidation": [
-      "Price < $9.5"
+      "Price < $9.8"
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Large drawdown, price near exit, RSI stable but low"
+      "Price still above exit; RSI low; tighter exit reduces potential loss."
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Reducing exit level to protect against further downside.",
-    "updated_cycle": "2026-11-13T22:21Z-event"
+    "summary": "Adjusting exit level closer to market price.",
+    "updated_cycle": "2026-11-14T00:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -100,18 +100,18 @@
         "cycle": "2026-11-13T15:21Z-event"
       }
     ],
-    "exit_below": 3.3,
+    "exit_below": 3.4,
     "invalidation": [
-      "Price < $3.3"
+      "Price < $3.4"
     ],
     "opened_cycle": "2026-11-11T12:00Z",
     "reasons": [
-      "Price below SMA20/50, RSI low, modest 24h gain insufficient"
+      "Price marginally above exit; want tighter protection given bearish market."
     ],
     "review_above": 4.5,
     "status": "bullish",
-    "summary": "Tightening exit as price stays above but close to prior level.",
-    "updated_cycle": "2026-11-13T22:21Z-event"
+    "summary": "Slightly raising exit to reflect current price level.",
+    "updated_cycle": "2026-11-14T00:00Z"
   },
   "UNI-USD": {
     "confidence_history": [

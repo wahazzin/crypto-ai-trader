@@ -1,23 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-13T23:01Z-event",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "SOL-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "SOL-USD",
-      "cause": "ai_event",
-      "price": 77.43351200000001,
-      "qty": 2.3800300540402604,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-11-14T00:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }
