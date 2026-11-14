@@ -20,12 +20,12 @@
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "Price still above prior exit but RSI remains low; protect downside."
+      "Price above exit, still near recent lows; monitoring for further downside."
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Tightening exit level as price stays near recent lows.",
-    "updated_cycle": "2026-11-14T00:00Z"
+    "summary": "Holding; price still above exit $0.16, RSI low but no breach.",
+    "updated_cycle": "2026-11-14T02:21Z-event"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -38,24 +38,16 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "ETH-USD": {
-    "confidence_history": [
-      {
-        "confidence": 78,
-        "cycle": "2026-11-13T04:00Z-event"
-      }
-    ],
-    "exit_below": 1920,
-    "invalidation": [
-      "Price < $1920"
-    ],
-    "opened_cycle": "2026-11-11T16:33Z-event",
+  "BTC-USD": {
+    "confidence_history": [],
+    "invalidation": [],
+    "opened_cycle": "2026-11-14T02:21Z-event",
     "reasons": [
-      "Price above prior exit; 24h decline persists; tighter exit improves risk profile."
+      "Large drawdown and low RSI suggest continued downside risk."
     ],
-    "status": "bullish",
-    "summary": "Raising stop to limit further loss amid continued downtrend.",
-    "updated_cycle": "2026-11-14T00:00Z"
+    "status": "neutral",
+    "summary": "No active thesis; market broadly bearish.",
+    "updated_cycle": "2026-11-14T02:21Z-event"
   },
   "LINK-USD": {
     "confidence_history": [
@@ -78,40 +70,12 @@
     ],
     "opened_cycle": "2026-10-13T01:45Z-event",
     "reasons": [
-      "Price still above exit; RSI low; tighter exit reduces potential loss."
+      "Price remains above exit; downside protection in place."
     ],
     "review_above": 13.5,
     "status": "bullish",
-    "summary": "Adjusting exit level closer to market price.",
-    "updated_cycle": "2026-11-14T00:00Z"
-  },
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-11-11T12:07Z-event"
-      },
-      {
-        "confidence": 74,
-        "cycle": "2026-11-13T04:00Z-event"
-      },
-      {
-        "confidence": 68,
-        "cycle": "2026-11-13T15:21Z-event"
-      }
-    ],
-    "exit_below": 3.4,
-    "invalidation": [
-      "Price < $3.4"
-    ],
-    "opened_cycle": "2026-11-11T12:00Z",
-    "reasons": [
-      "Price marginally above exit; want tighter protection given bearish market."
-    ],
-    "review_above": 4.5,
-    "status": "bullish",
-    "summary": "Slightly raising exit to reflect current price level.",
-    "updated_cycle": "2026-11-14T00:00Z"
+    "summary": "Holding; price above exit $9.8, no breach.",
+    "updated_cycle": "2026-11-14T02:21Z-event"
   },
   "UNI-USD": {
     "confidence_history": [

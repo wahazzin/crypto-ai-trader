@@ -1,11 +1,11 @@
 {
-  "cash": 6300.949643366484,
+  "cash": 6881.312163947254,
   "day_start_date": "2026-11-14",
   "day_start_equity": 7567.813692999804,
   "extra": {},
-  "fees_usd": 229.45820704478731,
+  "fees_usd": 231.7889802198105,
   "halted_until": null,
-  "last_ts": "2026-11-14T02:01:58Z",
+  "last_ts": "2026-11-14T02:21:58Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
@@ -24,42 +24,18 @@
       "qty": 0.003294817104498475,
       "stop_pct": 18.0
     },
-    "ETH-USD": {
-      "avg_cost": 2078.385585249086,
-      "opened_cycle": "2026-11-11T16:33Z-event",
-      "opened_ts": "2026-11-11T16:33:01Z",
-      "qty": 0.19018959967606222,
-      "stop_pct": 18.0
-    },
     "LINK-USD": {
       "avg_cost": 11.7010164,
       "opened_cycle": "2026-10-31T18:00Z",
       "opened_ts": "2026-10-31T18:06:41Z",
       "qty": 7.575204985960673,
       "stop_pct": 18.0
-    },
-    "NEAR-USD": {
-      "avg_cost": 3.487386603842312,
-      "opened_cycle": "2026-11-13T15:21Z-event",
-      "opened_ts": "2026-11-13T15:21:08Z",
-      "qty": 65.31226421726059,
-      "stop_pct": 18.0
     }
   },
-  "slippage_usd": 41.76099750377003,
-  "spread_usd": 14.095987617233556,
-  "traded_notional_usd": 57364.55176119686,
+  "slippage_usd": 41.88195680800434,
+  "spread_usd": 14.116532244497105,
+  "traded_notional_usd": 57947.24505495265,
   "trades": [
-    {
-      "cause": "ai_event",
-      "notional": 149.16785534180204,
-      "ts": "2026-11-11T23:08:21Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 591.518902368358,
-      "ts": "2026-11-11T23:08:21Z"
-    },
     {
       "cause": "stop",
       "notional": 882.7014313465553,
@@ -109,6 +85,16 @@
       "cause": "ai_event",
       "notional": 184.29408574988716,
       "ts": "2026-11-13T23:01:58Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 362.46120247267663,
+      "ts": "2026-11-14T02:21:58Z"
+    },
+    {
+      "cause": "ai_event",
+      "notional": 220.23209128311575,
+      "ts": "2026-11-14T02:21:58Z"
     }
   ]
 }
