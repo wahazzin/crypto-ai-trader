@@ -62,7 +62,6 @@
     "ai_largemid|ONDO-USD:volume": "2026-11-13T03:00:26Z",
     "ai_largemid|QNT-USD:exit_below:170": "2026-11-11T23:08:21Z",
     "ai_largemid|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
-    "ai_largemid|QNT-USD:exit_below:200": "2026-10-15T02:42:40Z",
     "ai_largemid|QNT-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|QNT-USD:review_above:220.0": "2026-10-26T12:23:41Z",
     "ai_largemid|QNT-USD:volume": "2026-11-12T01:48:42Z",
@@ -141,5 +140,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-14T02:01:58Z",
-  "scans_since_heartbeat": 4
+  "scans_since_heartbeat": 5
 }
