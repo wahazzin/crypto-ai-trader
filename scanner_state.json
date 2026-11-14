@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-14",
-      "calls_today": 3,
-      "last_call": "2026-11-14T07:02:20Z"
+      "calls_today": 4,
+      "last_call": "2026-11-14T14:02:40Z"
     }
   },
   "fired": {
@@ -16,6 +16,7 @@
     "ai_largemid|AAVE-USD:exit_below:130.0": "2026-10-27T09:50:01Z",
     "ai_largemid|AAVE-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|AAVE-USD:volume": "2026-11-10T16:11:39Z",
+    "ai_largemid|ADA-USD:exit_below:0.16": "2026-11-14T14:02:40Z",
     "ai_largemid|ADA-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|ADA-USD:volume": "2026-11-08T22:03:55Z",
     "ai_largemid|AERO-USD:exit_below:0.68": "2026-10-25T06:01:54Z",
@@ -140,5 +141,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-14T13:27:40Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }

@@ -1,32 +1,4 @@
 {
-  "ADA-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-10T12:01Z-event"
-      },
-      {
-        "confidence": 77,
-        "cycle": "2026-11-13T04:00Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-13T15:21Z-event"
-      }
-    ],
-    "exit_below": 0.16,
-    "invalidation": [
-      "Price < $0.16"
-    ],
-    "opened_cycle": "2026-11-10T12:01Z-event",
-    "reasons": [
-      "Price above exit, still near recent lows; low RSI may support rebound but downside risk remains."
-    ],
-    "review_above": 0.22,
-    "status": "bullish",
-    "summary": "Holding ADA; price still above exit $0.16, RSI low, 24h return -4.8%. No breach. Monitoring for downside or upside.",
-    "updated_cycle": "2026-11-14T12:00Z"
-  },
   "AVAX-USD": {
     "confidence_history": [],
     "exit_below": 7.5,
