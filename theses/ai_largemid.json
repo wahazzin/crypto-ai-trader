@@ -25,7 +25,7 @@
     "review_above": 0.22,
     "status": "bullish",
     "summary": "Holding; price still above exit $0.16, RSI low but no breach.",
-    "updated_cycle": "2026-11-14T02:21Z-event"
+    "updated_cycle": "2026-11-14T06:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
@@ -47,34 +47,6 @@
     ],
     "status": "neutral",
     "summary": "No active thesis; market broadly bearish.",
-    "updated_cycle": "2026-11-14T02:21Z-event"
-  },
-  "LINK-USD": {
-    "confidence_history": [
-      {
-        "confidence": 85,
-        "cycle": "2026-10-31T18:00Z"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-08T12:00Z"
-      },
-      {
-        "confidence": 55,
-        "cycle": "2026-11-09T13:04Z-event"
-      }
-    ],
-    "exit_below": 9.8,
-    "invalidation": [
-      "Price < $9.8"
-    ],
-    "opened_cycle": "2026-10-13T01:45Z-event",
-    "reasons": [
-      "Price remains above exit; downside protection in place."
-    ],
-    "review_above": 13.5,
-    "status": "bullish",
-    "summary": "Holding; price above exit $9.8, no breach.",
     "updated_cycle": "2026-11-14T02:21Z-event"
   },
   "UNI-USD": {
