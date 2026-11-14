@@ -10,19 +10,6 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
-  "BTC-USD": {
-    "confidence_history": [],
-    "invalidation": [
-      "Price < $65,000 would trigger stop loss."
-    ],
-    "opened_cycle": "2026-11-14T02:21Z-event",
-    "reasons": [
-      "24h return -2.39%, RSI 24.7, drawdown -20.7% from 30\u2011day high."
-    ],
-    "status": "bearish",
-    "summary": "Outlook strongly negative; price down 2.4% 24h, RSI low, drawdown deepening. Position closed.",
-    "updated_cycle": "2026-11-14T07:02Z-event"
-  },
   "UNI-USD": {
     "confidence_history": [
       {
