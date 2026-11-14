@@ -7,8 +7,8 @@
     },
     "ai_largemid": {
       "calls_day": "2026-11-14",
-      "calls_today": 7,
-      "last_call": "2026-11-14T16:13:01Z"
+      "calls_today": 8,
+      "last_call": "2026-11-14T16:48:02Z"
     }
   },
   "fired": {
@@ -74,10 +74,10 @@
     "ai_largemid|SUI-USD:volume": "2026-11-14T15:02:40Z",
     "ai_largemid|TAO-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|TAO-USD:volume": "2026-11-14T15:02:40Z",
-    "ai_largemid|UNI-USD:move": "2026-11-10T16:11:39Z",
+    "ai_largemid|UNI-USD:move": "2026-11-14T16:48:02Z",
     "ai_largemid|UNI-USD:volume": "2026-11-14T14:32:40Z",
     "ai_largemid|VVV-USD:move": "2026-11-14T07:02:20Z",
-    "ai_largemid|VVV-USD:volume": "2026-11-13T22:21:32Z",
+    "ai_largemid|VVV-USD:volume": "2026-11-14T16:48:02Z",
     "ai_largemid|XLM-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|XLM-USD:volume": "2026-11-14T16:13:01Z",
     "ai_largemid|XRP-USD:volume": "2026-11-10T14:16:19Z",
@@ -141,5 +141,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-14T16:28:01Z",
-  "scans_since_heartbeat": 2
+  "scans_since_heartbeat": 3
 }
