@@ -20,12 +20,12 @@
     ],
     "opened_cycle": "2026-11-10T12:01Z-event",
     "reasons": [
-      "Price above exit, still near recent lows; no breach of exit level."
+      "Price above exit, still near recent lows; low RSI may support rebound but downside risk remains."
     ],
     "review_above": 0.22,
     "status": "bullish",
-    "summary": "Holding; price still above exit $0.16 but RSI low and 24h return -3.96%. Monitoring for further downside.",
-    "updated_cycle": "2026-11-14T07:02Z-event"
+    "summary": "Holding ADA; price still above exit $0.16, RSI low, 24h return -4.8%. No breach. Monitoring for downside or upside.",
+    "updated_cycle": "2026-11-14T12:00Z"
   },
   "AVAX-USD": {
     "confidence_history": [],
