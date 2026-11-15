@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-15",
-      "calls_today": 1,
-      "last_call": "2026-11-15T00:13:21Z"
+      "calls_today": 2,
+      "last_call": "2026-11-15T01:43:21Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-15",
-      "calls_today": 1,
-      "last_call": "2026-11-15T00:13:21Z"
+      "calls_today": 2,
+      "last_call": "2026-11-15T01:43:21Z"
     }
   },
   "fired": {
@@ -34,7 +34,7 @@
     "ai_largemid|BTC-USD:exit_below:75000": "2026-11-08T22:03:55Z",
     "ai_largemid|BTC-USD:exit_below:77000": "2026-10-30T00:43:58Z",
     "ai_largemid|BTC-USD:move": "2026-11-05T15:54:19Z",
-    "ai_largemid|BTC-USD:volume": "2026-11-13T04:00:26Z",
+    "ai_largemid|BTC-USD:volume": "2026-11-15T01:43:21Z",
     "ai_largemid|ENA-USD:exit_below:0.14": "2026-11-12T12:29:13Z",
     "ai_largemid|ENA-USD:exit_below:0.15": "2026-11-08T22:03:55Z",
     "ai_largemid|ENA-USD:move": "2026-11-10T16:11:39Z",
@@ -93,7 +93,7 @@
     "ai_large|ADA-USD:volume": "2026-11-14T21:28:01Z",
     "ai_large|BTC-USD:exit_below:80000": "2026-10-24T15:21:13Z",
     "ai_large|BTC-USD:move": "2026-11-05T15:54:19Z",
-    "ai_large|BTC-USD:volume": "2026-11-13T04:00:26Z",
+    "ai_large|BTC-USD:volume": "2026-11-15T01:43:21Z",
     "ai_large|ETH-USD:move": "2026-11-08T22:03:55Z",
     "ai_large|ETH-USD:volume": "2026-11-14T21:28:01Z",
     "ai_large|LINK-USD:move": "2026-11-05T15:54:19Z",
@@ -141,5 +141,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-15T01:33:21Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
