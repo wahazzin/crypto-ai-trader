@@ -1,14 +1,14 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": "2026-11-14",
-      "calls_today": 8,
-      "last_call": "2026-11-14T22:18:21Z"
+      "calls_day": "2026-11-15",
+      "calls_today": 1,
+      "last_call": "2026-11-15T00:13:21Z"
     },
     "ai_largemid": {
-      "calls_day": "2026-11-14",
-      "calls_today": 10,
-      "last_call": "2026-11-14T18:13:01Z"
+      "calls_day": "2026-11-15",
+      "calls_today": 1,
+      "last_call": "2026-11-15T00:13:21Z"
     }
   },
   "fired": {
@@ -57,7 +57,7 @@
     "ai_largemid|NEAR-USD:exit_below:3.4": "2026-11-14T02:21:58Z",
     "ai_largemid|NEAR-USD:exit_below:4.05": "2026-11-02T14:24:03Z",
     "ai_largemid|NEAR-USD:exit_below:4.5": "2026-10-24T09:10:31Z",
-    "ai_largemid|NEAR-USD:move": "2026-11-13T06:50:50Z",
+    "ai_largemid|NEAR-USD:move": "2026-11-15T00:13:21Z",
     "ai_largemid|NEAR-USD:volume": "2026-11-14T15:02:40Z",
     "ai_largemid|ONDO-USD:move": "2026-11-09T15:24:51Z",
     "ai_largemid|ONDO-USD:volume": "2026-11-14T14:32:40Z",
@@ -81,7 +81,7 @@
     "ai_largemid|XLM-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|XLM-USD:volume": "2026-11-14T16:13:01Z",
     "ai_largemid|XRP-USD:volume": "2026-11-10T14:16:19Z",
-    "ai_largemid|ZEC-USD:move": "2026-11-13T05:10:26Z",
+    "ai_largemid|ZEC-USD:move": "2026-11-15T00:13:21Z",
     "ai_largemid|ZEC-USD:review_above:1300": "2026-11-04T10:17:31Z",
     "ai_largemid|ZEC-USD:volume": "2026-11-14T17:23:01Z",
     "ai_largemid|ZRO-USD:exit_below:1.6": "2026-11-05T22:24:58Z",
@@ -100,7 +100,7 @@
     "ai_large|LINK-USD:volume": "2026-11-14T21:28:01Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
     "ai_large|NEAR-USD:exit_below:5.0": "2026-10-16T17:15:01Z",
-    "ai_large|NEAR-USD:move": "2026-11-13T06:50:50Z",
+    "ai_large|NEAR-USD:move": "2026-11-15T00:13:21Z",
     "ai_large|NEAR-USD:volume": "2026-11-14T21:28:01Z",
     "ai_large|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_large|QNT-USD:exit_below:190.0": "2026-10-18T14:32:35Z",
@@ -141,5 +141,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-14T23:33:21Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
