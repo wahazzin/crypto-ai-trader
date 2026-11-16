@@ -432,3 +432,14 @@ work). Side effect: the real AI-failure check was blind for those 2.5 days (no A
 cycles.jsonl shows every cycle OK). Fix: tools/health_check.py reads the whole cycles.jsonl (~65 KB, +~2 KB/day)
 with one retry on 5xx, and the alert text now includes the error detail. Not fingerprinted; no rule, arm, prompt or
 risk limit changed. Test: tests/test_health_check.py. (Same bug fixed in memecoin-trader's health check.)
+
+## 2026-11-16 — Weekly review W47: stale theses cause ai_largemid AI_FAULTs (finding, NOT fixed — needs amendment)
+
+`theses/ai_largemid.json` keeps theses for coins the arm neither holds nor sees any more (AVAX-USD since ~10-24,
+UNI-USD out of view since 11-13). `agents/trader.py` shows all open theses to the model; `agents/schemas.py` accepts
+thesis_updates only for coins in this cycle's view, and any error rejects the whole answer. The model updates the
+stale theses → whole response rejected → AI_FAULT → DO_NOTHING. Confirmed from raw answers in event_prompts.jsonl
+(e.g. 2026-11-15T04:23Z-event: both attempts rejected only for the AVAX + UNI updates). 5 of 6 ai_largemid faults in
+W47 (11-09..11-16), 9 since start. Faults stay counted (85% coverage rule; 149/161 ≈ 92.5%). Not changed by the
+review because it alters what the AI sees/accepts in the locked experiment; proposed amendment A3 is a question to
+Yassin in reviews/2026-W47.md.
