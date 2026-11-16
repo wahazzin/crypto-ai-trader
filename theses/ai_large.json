@@ -16,13 +16,11 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Rotation pick remains rank 2",
-      "Price still above exit level",
-      "No adverse price movement observed"
+      "Market remains volatile but price above exit level; rotation rank still high despite negative 28d return."
     ],
     "review_above": 165.0,
     "status": "bullish",
     "summary": "Thesis unchanged: short\u2011term upside after recent rally, with defined exit at $147 and review at $165.",
-    "updated_cycle": "2026-11-16T12:45Z-event"
+    "updated_cycle": "2026-11-16T13:25Z-event"
   }
 }

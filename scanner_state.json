@@ -2,13 +2,13 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-16",
-      "calls_today": 1,
-      "last_call": "2026-11-16T12:45:36Z"
+      "calls_today": 2,
+      "last_call": "2026-11-16T13:25:56Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-16",
-      "calls_today": 1,
-      "last_call": "2026-11-16T12:45:36Z"
+      "calls_today": 2,
+      "last_call": "2026-11-16T13:25:56Z"
     }
   },
   "fired": {
@@ -84,7 +84,7 @@
     "ai_largemid|XRP-USD:volume": "2026-11-10T14:16:19Z",
     "ai_largemid|ZEC-USD:move": "2026-11-15T03:13:21Z",
     "ai_largemid|ZEC-USD:review_above:1300": "2026-11-04T10:17:31Z",
-    "ai_largemid|ZEC-USD:volume": "2026-11-14T17:23:01Z",
+    "ai_largemid|ZEC-USD:volume": "2026-11-16T13:25:56Z",
     "ai_largemid|ZRO-USD:exit_below:1.6": "2026-11-05T22:24:58Z",
     "ai_largemid|ZRO-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|ZRO-USD:volume": "2026-11-05T15:19:20Z",
@@ -118,7 +118,7 @@
     "ai_large|ZEC-USD:exit_below:1200.0": "2026-10-22T16:53:10Z",
     "ai_large|ZEC-USD:move": "2026-11-15T02:13:21Z",
     "ai_large|ZEC-USD:review_above:1300": "2026-10-27T16:35:19Z",
-    "ai_large|ZEC-USD:volume": "2026-11-14T21:28:01Z"
+    "ai_large|ZEC-USD:volume": "2026-11-16T13:25:56Z"
   },
   "heartbeat": {
     "equity": {
@@ -140,5 +140,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-16T12:50:36Z",
-  "scans_since_heartbeat": 2
+  "scans_since_heartbeat": 3
 }
