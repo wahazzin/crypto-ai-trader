@@ -18,11 +18,11 @@
     "reasons": [
       "Rotation pick remains rank 2",
       "Price still above exit level",
-      "Added position aligns with weight limits"
+      "No adverse price movement observed"
     ],
     "review_above": 165.0,
     "status": "bullish",
     "summary": "Thesis unchanged: short\u2011term upside after recent rally, with defined exit at $147 and review at $165.",
-    "updated_cycle": "2026-11-16T12:00Z"
+    "updated_cycle": "2026-11-16T12:45Z-event"
   }
 }
