@@ -122,23 +122,23 @@
   },
   "heartbeat": {
     "equity": {
-      "ai_large": 8136.94,
+      "ai_large": 8158.55,
       "ai_largemid": 7526.93,
-      "btc_hold": 7592.75,
-      "eth_hold": 6852.62,
-      "ew_basket": 6414.45,
+      "btc_hold": 7694.39,
+      "eth_hold": 7017.3,
+      "ew_basket": 6540.35,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
-    "scans": 4,
-    "ts": "2026-11-16T13:50:56Z"
+    "scans": 2,
+    "ts": "2026-11-16T14:50:56Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-11T08:22:19Z"
   },
-  "last_heartbeat": "2026-11-16T13:50:56Z",
-  "scans_since_heartbeat": 1
+  "last_heartbeat": "2026-11-16T14:50:56Z",
+  "scans_since_heartbeat": 0
 }
