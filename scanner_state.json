@@ -44,7 +44,6 @@
     "ai_largemid|ETH-USD:exit_below:2320.72": "2026-10-24T15:16:14Z",
     "ai_largemid|ETH-USD:move": "2026-11-15T02:43:21Z",
     "ai_largemid|ETH-USD:volume": "2026-11-14T16:13:01Z",
-    "ai_largemid|FET-USD:exit_below:0.19": "2026-10-17T16:26:23Z",
     "ai_largemid|FET-USD:move": "2026-10-30T01:28:57Z",
     "ai_largemid|FET-USD:volume": "2026-10-30T00:43:58Z",
     "ai_largemid|HBAR-USD:move": "2026-11-05T15:54:19Z",
@@ -140,5 +139,5 @@
     "ts": "2026-11-11T08:22:19Z"
   },
   "last_heartbeat": "2026-11-16T15:50:57Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
