@@ -86,7 +86,6 @@
     "ai_largemid|ZEC-USD:review_above:1300": "2026-11-04T10:17:31Z",
     "ai_largemid|ZEC-USD:volume": "2026-11-14T17:23:01Z",
     "ai_largemid|ZRO-USD:exit_below:1.6": "2026-11-05T22:24:58Z",
-    "ai_largemid|ZRO-USD:exit_below:1.98": "2026-10-17T00:25:21Z",
     "ai_largemid|ZRO-USD:move": "2026-11-05T15:54:19Z",
     "ai_largemid|ZRO-USD:volume": "2026-11-05T15:19:20Z",
     "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
@@ -125,21 +124,21 @@
     "equity": {
       "ai_large": 8150.12,
       "ai_largemid": 7526.93,
-      "btc_hold": 7709.33,
-      "eth_hold": 6972.45,
-      "ew_basket": 6576.3,
+      "btc_hold": 7670.66,
+      "eth_hold": 6899.52,
+      "ew_basket": 6510.75,
       "s_breakout": 9107.23,
       "s_dip": 9019.35,
       "s_rotation": 8816.02,
       "s_trend": 8891.36
     },
     "scans": 1,
-    "ts": "2026-11-15T23:49:47Z"
+    "ts": "2026-11-16T00:49:47Z"
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
     "ts": "2026-11-11T08:22:19Z"
   },
-  "last_heartbeat": "2026-11-15T23:49:47Z",
+  "last_heartbeat": "2026-11-16T00:49:47Z",
   "scans_since_heartbeat": 0
 }
