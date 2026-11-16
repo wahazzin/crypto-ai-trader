@@ -4,6 +4,10 @@
       {
         "confidence": 70,
         "cycle": "2026-11-16T06:00Z"
+      },
+      {
+        "confidence": 65,
+        "cycle": "2026-11-16T12:00Z"
       }
     ],
     "exit_below": 147.0,
@@ -12,13 +16,13 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Recent 6.2% gain indicates momentum",
-      "Relative strength in rotation ranking",
-      "Fundamentals still bearish long\u2011term, so position size is limited"
+      "Rotation pick remains rank 2",
+      "Price still above exit level",
+      "Added position aligns with weight limits"
     ],
     "review_above": 165.0,
     "status": "bullish",
-    "summary": "Short\u2011term upside after strong 24h rally; aim for modest profit while protecting against a deeper pullback.",
-    "updated_cycle": "2026-11-16T06:00Z"
+    "summary": "Thesis unchanged: short\u2011term upside after recent rally, with defined exit at $147 and review at $165.",
+    "updated_cycle": "2026-11-16T12:00Z"
   }
 }
