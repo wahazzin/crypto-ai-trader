@@ -1,4 +1,15 @@
 {
+  "NEAR-USD": {
+    "confidence_history": [],
+    "exit_below": 3.08,
+    "invalidation": [],
+    "opened_cycle": "2026-11-17T04:06Z-event",
+    "reasons": [],
+    "review_above": 3.5,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-17T04:06Z-event"
+  },
   "QNT-USD": {
     "confidence_history": [
       {
@@ -12,6 +23,10 @@
       {
         "confidence": 60,
         "cycle": "2026-11-16T18:00Z"
+      },
+      {
+        "confidence": 70,
+        "cycle": "2026-11-17T04:06Z-event"
       }
     ],
     "exit_below": 147.0,
@@ -20,11 +35,12 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Price remains above exit level and below review level; rotation rank remains high despite negative 28\u2011day return."
+      "Market remains bearish across major assets",
+      "QNT down 1.2% in the last 24h and drawdown approaching 32%"
     ],
     "review_above": 165.0,
     "status": "bullish",
-    "summary": "Thesis unchanged: short\u2011term upside after recent rally, with defined exit at $147 and review at $165.",
-    "updated_cycle": "2026-11-17T00:00Z"
+    "summary": "Thesis unchanged but confidence reduced due to broader market weakness.",
+    "updated_cycle": "2026-11-17T04:06Z-event"
   }
 }
