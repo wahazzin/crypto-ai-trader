@@ -1,23 +1,38 @@
 {
   "events": [],
-  "from": "2026-11-17T06:00Z",
+  "from": "2026-11-17T12:00Z",
   "risk_engine": [
     {
-      "action": "REDUCE",
-      "asset": "QNT-USD",
+      "action": "BUY",
+      "asset": "BTC-USD",
       "codes": [],
-      "final_weight": 0.08,
-      "requested_weight": 0.08,
+      "final_weight": 0.04,
+      "requested_weight": 0.04,
+      "status": "APPROVED"
+    },
+    {
+      "action": "BUY",
+      "asset": "ETH-USD",
+      "codes": [],
+      "final_weight": 0.04,
+      "requested_weight": 0.04,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "QNT-USD",
+      "asset": "BTC-USD",
       "cause": "ai",
-      "price": 152.18863199999998,
-      "qty": 1.0435469174168353,
-      "side": "sell"
+      "price": 64841.445696,
+      "qty": 0.005018925875215419,
+      "side": "buy"
+    },
+    {
+      "asset": "ETH-USD",
+      "cause": "ai",
+      "price": 1815.11295,
+      "qty": 0.17928363021784735,
+      "side": "buy"
     }
   ]
 }

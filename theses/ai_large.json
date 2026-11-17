@@ -1,4 +1,46 @@
 {
+  "BTC-USD": {
+    "confidence_history": [
+      {
+        "confidence": 65,
+        "cycle": "2026-11-17T12:00Z"
+      }
+    ],
+    "exit_below": 61600,
+    "invalidation": [
+      "Price falls to $61,600 or lower"
+    ],
+    "opened_cycle": "2026-11-17T12:00Z",
+    "reasons": [
+      "Positive 24\u2011hour return and very low RSI indicate a bounce may occur.",
+      "Price is significantly below recent moving averages, providing upside potential."
+    ],
+    "review_above": 70000,
+    "status": "bullish",
+    "summary": "Potential short\u2011term rebound after oversold move.",
+    "updated_cycle": "2026-11-17T12:00Z"
+  },
+  "ETH-USD": {
+    "confidence_history": [
+      {
+        "confidence": 60,
+        "cycle": "2026-11-17T12:00Z"
+      }
+    ],
+    "exit_below": 1700,
+    "invalidation": [
+      "Price drops to $1,700 or lower"
+    ],
+    "opened_cycle": "2026-11-17T12:00Z",
+    "reasons": [
+      "Positive 24\u2011hour return combined with low RSI suggests a corrective move upward.",
+      "Current price is far under its 30\u2011day high and moving averages."
+    ],
+    "review_above": 1900,
+    "status": "bullish",
+    "summary": "Short\u2011term upside expected as ETH appears oversold.",
+    "updated_cycle": "2026-11-17T12:00Z"
+  },
   "NEAR-USD": {
     "confidence_history": [],
     "exit_below": 3.08,

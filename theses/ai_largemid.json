@@ -13,13 +13,18 @@
   "SOL-USD": {
     "confidence_history": [],
     "exit_below": 68.0,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $68"
+    ],
     "opened_cycle": "2026-11-17T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price still above exit_below (68) and below review_above (78).",
+      "Short\u2011term momentum remains positive."
+    ],
     "review_above": 78.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-17T06:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and review target not yet reached.",
+    "updated_cycle": "2026-11-17T12:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -46,14 +51,24 @@
     "updated_cycle": "2026-11-13T04:00Z-event"
   },
   "ZEC-USD": {
-    "confidence_history": [],
+    "confidence_history": [
+      {
+        "confidence": 70,
+        "cycle": "2026-11-17T12:00Z"
+      }
+    ],
     "exit_below": 870.0,
-    "invalidation": [],
+    "invalidation": [
+      "Price < $870"
+    ],
     "opened_cycle": "2026-11-17T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price still above exit_below (870) and below review_above (970).",
+      "Strong 24h return supports upside view."
+    ],
     "review_above": 970.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-17T06:00Z"
+    "summary": "Thesis unchanged; price continues above exit level, review target not yet reached.",
+    "updated_cycle": "2026-11-17T12:00Z"
   }
 }
