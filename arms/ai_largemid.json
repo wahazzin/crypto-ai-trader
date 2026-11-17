@@ -1,33 +1,18 @@
 {
-  "cash": 5636.346605344202,
+  "cash": 7510.60947888228,
   "day_start_date": "2026-11-17",
   "day_start_equity": 7526.926926486525,
   "extra": {},
-  "fees_usd": 241.9140031059654,
-  "halted_until": null,
-  "last_ts": "2026-11-17T06:06:45Z",
+  "fees_usd": 249.44116324065646,
+  "halted_until": "2026-12-01T06:11:45Z",
+  "last_ts": "2026-11-17T06:11:45Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
-  "positions": {
-    "SOL-USD": {
-      "avg_cost": 72.57351799999999,
-      "opened_cycle": "2026-11-17T06:00Z",
-      "opened_ts": "2026-11-17T06:06:45Z",
-      "qty": 15.567584129237899,
-      "stop_pct": 18.0
-    },
-    "ZEC-USD": {
-      "avg_cost": 919.2697520997656,
-      "opened_cycle": "2026-11-17T06:00Z",
-      "opened_ts": "2026-11-17T06:06:45Z",
-      "qty": 0.819404510903893,
-      "stop_pct": 18.0
-    }
-  },
-  "slippage_usd": 43.5193209166279,
-  "spread_usd": 14.269420272297687,
-  "traded_notional_usd": 60478.500776491375,
+  "positions": {},
+  "slippage_usd": 44.64907278795442,
+  "spread_usd": 14.478362914688402,
+  "traded_notional_usd": 62360.290810164144,
   "trades": [
     {
       "cause": "ai",
@@ -38,6 +23,16 @@
       "cause": "ai",
       "notional": 753.2537816080513,
       "ts": "2026-11-17T06:06:45Z"
+    },
+    {
+      "cause": "breaker",
+      "notional": 1129.5284838180019,
+      "ts": "2026-11-17T06:11:45Z"
+    },
+    {
+      "cause": "breaker",
+      "notional": 752.2615498547682,
+      "ts": "2026-11-17T06:11:45Z"
     }
   ]
 }
