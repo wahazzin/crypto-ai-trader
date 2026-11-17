@@ -1,11 +1,11 @@
 {
   "cash": 7526.926926486525,
-  "day_start_date": "2026-11-16",
+  "day_start_date": "2026-11-17",
   "day_start_equity": 7526.926926486525,
   "extra": {},
   "fees_usd": 234.38181059145415,
   "halted_until": null,
-  "last_ts": "2026-11-16T23:01:25Z",
+  "last_ts": "2026-11-17T00:01:25Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
