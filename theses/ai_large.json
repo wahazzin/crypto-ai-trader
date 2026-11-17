@@ -27,20 +27,24 @@
       {
         "confidence": 70,
         "cycle": "2026-11-17T04:06Z-event"
+      },
+      {
+        "confidence": 60,
+        "cycle": "2026-11-17T06:00Z"
       }
     ],
-    "exit_below": 147.0,
+    "exit_below": 140.0,
     "invalidation": [
-      "Price drops to $147.0 or lower"
+      "Price drops to $140.0 or lower"
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Market remains bearish across major assets",
-      "QNT down 1.2% in the last 24h and drawdown approaching 32%"
+      "24\u2011hour return is negative and price is approaching the 147\u202f$ exit level.",
+      "30\u2011day drawdown at 32% and low RSI indicate further downside risk."
     ],
     "review_above": 165.0,
-    "status": "bullish",
-    "summary": "Thesis unchanged but confidence reduced due to broader market weakness.",
-    "updated_cycle": "2026-11-17T04:06Z-event"
+    "status": "bearish",
+    "summary": "Market weakness persists and QNT shows continued downside pressure; the bullish thesis is invalidated.",
+    "updated_cycle": "2026-11-17T06:00Z"
   }
 }

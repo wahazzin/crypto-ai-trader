@@ -1,78 +1,43 @@
 {
-  "cash": 7526.926926486525,
+  "cash": 5636.346605344202,
   "day_start_date": "2026-11-17",
   "day_start_equity": 7526.926926486525,
   "extra": {},
-  "fees_usd": 234.38181059145415,
+  "fees_usd": 241.9140031059654,
   "halted_until": null,
-  "last_ts": "2026-11-17T05:01:46Z",
+  "last_ts": "2026-11-17T06:06:45Z",
   "name": "ai_largemid",
   "no_buys_until": null,
   "peak_equity": 10032.534357417082,
-  "positions": {},
-  "slippage_usd": 42.32582907919273,
-  "spread_usd": 14.146515103551895,
-  "traded_notional_usd": 58595.45264786356,
+  "positions": {
+    "SOL-USD": {
+      "avg_cost": 72.57351799999999,
+      "opened_cycle": "2026-11-17T06:00Z",
+      "opened_ts": "2026-11-17T06:06:45Z",
+      "qty": 15.567584129237899,
+      "stop_pct": 18.0
+    },
+    "ZEC-USD": {
+      "avg_cost": 919.2697520997656,
+      "opened_cycle": "2026-11-17T06:00Z",
+      "opened_ts": "2026-11-17T06:06:45Z",
+      "qty": 0.819404510903893,
+      "stop_pct": 18.0
+    }
+  },
+  "slippage_usd": 43.5193209166279,
+  "spread_usd": 14.269420272297687,
+  "traded_notional_usd": 60478.500776491375,
   "trades": [
     {
-      "cause": "ai_event",
-      "notional": 250.7235512161704,
-      "ts": "2026-11-13T03:30:26Z"
+      "cause": "ai",
+      "notional": 1129.7943470197608,
+      "ts": "2026-11-17T06:06:45Z"
     },
     {
-      "cause": "ai_event",
-      "notional": 183.2100493071484,
-      "ts": "2026-11-13T03:30:26Z"
-    },
-    {
-      "cause": "stop",
-      "notional": 221.5357880000306,
-      "ts": "2026-11-13T04:40:00Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 149.31088989556363,
-      "ts": "2026-11-13T15:21:08Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 142.59876190811605,
-      "ts": "2026-11-13T15:21:08Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 227.76911529788418,
-      "ts": "2026-11-13T15:21:08Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 184.29408574988716,
-      "ts": "2026-11-13T23:01:58Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 362.46120247267663,
-      "ts": "2026-11-14T02:21:58Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 220.23209128311575,
-      "ts": "2026-11-14T02:21:58Z"
-    },
-    {
-      "cause": "stop",
-      "notional": 72.62012012792019,
-      "ts": "2026-11-14T02:35:00Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 221.7621989920398,
-      "ts": "2026-11-14T07:02:20Z"
-    },
-    {
-      "cause": "ai_event",
-      "notional": 353.82527379095507,
-      "ts": "2026-11-14T14:02:40Z"
+      "cause": "ai",
+      "notional": 753.2537816080513,
+      "ts": "2026-11-17T06:06:45Z"
     }
   ]
 }

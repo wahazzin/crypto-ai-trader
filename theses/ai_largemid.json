@@ -10,6 +10,17 @@
     "summary": "",
     "updated_cycle": "2026-10-24T06:00Z"
   },
+  "SOL-USD": {
+    "confidence_history": [],
+    "exit_below": 68.0,
+    "invalidation": [],
+    "opened_cycle": "2026-11-17T06:00Z",
+    "reasons": [],
+    "review_above": 78.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-17T06:00Z"
+  },
   "UNI-USD": {
     "confidence_history": [
       {
@@ -33,5 +44,16 @@
     "status": "bullish",
     "summary": "Price remains above exit $5.5; review target $9.5 not reached.",
     "updated_cycle": "2026-11-13T04:00Z-event"
+  },
+  "ZEC-USD": {
+    "confidence_history": [],
+    "exit_below": 870.0,
+    "invalidation": [],
+    "opened_cycle": "2026-11-17T06:00Z",
+    "reasons": [],
+    "review_above": 970.0,
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-17T06:00Z"
   }
 }
