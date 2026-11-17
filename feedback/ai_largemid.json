@@ -1,17 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-17T12:00Z",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "ZEC-USD",
-      "codes": [
-        "R12_ADD_NOT_HELD_USE_BUY"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.15,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-11-17T18:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
