@@ -1,37 +1,22 @@
 {
   "events": [],
-  "from": "2026-11-17T12:00Z",
+  "from": "2026-11-17T16:27Z-event",
   "risk_engine": [
     {
       "action": "BUY",
-      "asset": "BTC-USD",
+      "asset": "SOL-USD",
       "codes": [],
-      "final_weight": 0.04,
-      "requested_weight": 0.04,
-      "status": "APPROVED"
-    },
-    {
-      "action": "BUY",
-      "asset": "ETH-USD",
-      "codes": [],
-      "final_weight": 0.04,
-      "requested_weight": 0.04,
+      "final_weight": 0.025,
+      "requested_weight": 0.025,
       "status": "APPROVED"
     }
   ],
   "your_fills": [
     {
-      "asset": "BTC-USD",
-      "cause": "ai",
-      "price": 64841.445696,
-      "qty": 0.005018925875215419,
-      "side": "buy"
-    },
-    {
-      "asset": "ETH-USD",
-      "cause": "ai",
-      "price": 1815.11295,
-      "qty": 0.17928363021784735,
+      "asset": "SOL-USD",
+      "cause": "ai_event",
+      "price": 72.553506,
+      "qty": 2.792603832213426,
       "side": "buy"
     }
   ]

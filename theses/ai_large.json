@@ -18,7 +18,7 @@
     "review_above": 70000,
     "status": "bullish",
     "summary": "Potential short\u2011term rebound after oversold move.",
-    "updated_cycle": "2026-11-17T15:42Z-event"
+    "updated_cycle": "2026-11-17T16:27Z-event"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -39,7 +39,7 @@
     "review_above": 1900,
     "status": "bullish",
     "summary": "Short\u2011term upside expected as ETH appears oversold.",
-    "updated_cycle": "2026-11-17T15:42Z-event"
+    "updated_cycle": "2026-11-17T16:27Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [],
@@ -55,7 +55,7 @@
     "review_above": 3.5,
     "status": "bullish",
     "summary": "Potential bounce after recent oversold move.",
-    "updated_cycle": "2026-11-17T15:42Z-event"
+    "updated_cycle": "2026-11-17T16:27Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -92,6 +92,16 @@
     "review_above": 165.0,
     "status": "bearish",
     "summary": "Market weakness persists and QNT shows continued downside pressure; the bullish thesis is invalidated.",
-    "updated_cycle": "2026-11-17T15:42Z-event"
+    "updated_cycle": "2026-11-17T16:27Z-event"
+  },
+  "SOL-USD": {
+    "confidence_history": [],
+    "exit_below": 68.0,
+    "invalidation": [],
+    "opened_cycle": "2026-11-17T16:27Z-event",
+    "reasons": [],
+    "status": "bullish",
+    "summary": "",
+    "updated_cycle": "2026-11-17T16:27Z-event"
   }
 }
