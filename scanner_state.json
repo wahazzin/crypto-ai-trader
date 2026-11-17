@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-17",
-      "calls_today": 1,
-      "last_call": "2026-11-17T04:06:46Z"
+      "calls_today": 2,
+      "last_call": "2026-11-17T15:42:36Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-17",
@@ -96,7 +96,7 @@
     "ai_large|ETH-USD:move": "2026-11-15T02:43:21Z",
     "ai_large|ETH-USD:volume": "2026-11-14T21:28:01Z",
     "ai_large|LINK-USD:move": "2026-11-15T02:43:21Z",
-    "ai_large|LINK-USD:volume": "2026-11-16T14:45:56Z",
+    "ai_large|LINK-USD:volume": "2026-11-17T15:42:36Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
     "ai_large|NEAR-USD:move": "2026-11-15T00:13:21Z",
     "ai_large|NEAR-USD:volume": "2026-11-17T04:06:46Z",
@@ -136,5 +136,5 @@
     "ts": "2026-11-17T07:07:13Z"
   },
   "last_heartbeat": "2026-11-17T15:12:37Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }

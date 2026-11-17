@@ -12,13 +12,13 @@
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "Positive 24\u2011hour return and very low RSI indicate a bounce may occur.",
-      "Price is significantly below recent moving averages, providing upside potential."
+      "24\u2011hour return slightly negative but RSI is very low (23.9) indicating oversold conditions.",
+      "Price remains well below recent moving averages, leaving upside potential."
     ],
     "review_above": 70000,
     "status": "bullish",
     "summary": "Potential short\u2011term rebound after oversold move.",
-    "updated_cycle": "2026-11-17T12:00Z"
+    "updated_cycle": "2026-11-17T15:42Z-event"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -33,24 +33,29 @@
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "Positive 24\u2011hour return combined with low RSI suggests a corrective move upward.",
-      "Current price is far under its 30\u2011day high and moving averages."
+      "24\u2011hour return down 1.68% but RSI is low (25.6) suggesting a corrective bounce.",
+      "Price is far under its 30\u2011day high and moving averages."
     ],
     "review_above": 1900,
     "status": "bullish",
     "summary": "Short\u2011term upside expected as ETH appears oversold.",
-    "updated_cycle": "2026-11-17T12:00Z"
+    "updated_cycle": "2026-11-17T15:42Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [],
     "exit_below": 3.08,
-    "invalidation": [],
+    "invalidation": [
+      "Price falls to $3.00 or lower"
+    ],
     "opened_cycle": "2026-11-17T04:06Z-event",
-    "reasons": [],
+    "reasons": [
+      "24\u2011hour price up 1.33% while RSI is modest (34.3), still indicating oversold conditions.",
+      "Price remains below its 20\u2011day and 50\u2011day SMA, offering upside if buying pressure returns."
+    ],
     "review_above": 3.5,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-17T04:06Z-event"
+    "summary": "Potential bounce after recent oversold move.",
+    "updated_cycle": "2026-11-17T15:42Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -81,12 +86,12 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "24\u2011hour return is negative and price is approaching the 147\u202f$ exit level.",
-      "30\u2011day drawdown at 32% and low RSI indicate further downside risk."
+      "24\u2011hour return slightly positive but RSI remains low (37.4) and 30\u2011day drawdown is large (~31%).",
+      "Price is approaching the previously set exit level, suggesting further downside risk."
     ],
     "review_above": 165.0,
     "status": "bearish",
     "summary": "Market weakness persists and QNT shows continued downside pressure; the bullish thesis is invalidated.",
-    "updated_cycle": "2026-11-17T06:00Z"
+    "updated_cycle": "2026-11-17T15:42Z-event"
   }
 }
