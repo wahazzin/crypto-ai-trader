@@ -6,19 +6,19 @@
         "cycle": "2026-11-17T12:00Z"
       }
     ],
-    "exit_below": 61600,
+    "exit_below": 62000,
     "invalidation": [
-      "Price falls to $61,600 or lower"
+      "Price falls to $62,000 or lower"
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "24\u2011hour return slightly negative but RSI is very low (23.9) indicating oversold conditions.",
-      "Price remains well below recent moving averages, leaving upside potential."
+      "RSI remains very low (23.9) indicating oversold market.",
+      "Price still well below 20\u2011 and 50\u2011day averages, leaving upside room."
     ],
     "review_above": 70000,
     "status": "bullish",
-    "summary": "Potential short\u2011term rebound after oversold move.",
-    "updated_cycle": "2026-11-17T16:27Z-event"
+    "summary": "Oversold conditions persist; potential short\u2011term rebound.",
+    "updated_cycle": "2026-11-17T21:07Z-event"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -27,35 +27,35 @@
         "cycle": "2026-11-17T12:00Z"
       }
     ],
-    "exit_below": 1700,
+    "exit_below": 1720,
     "invalidation": [
-      "Price drops to $1,700 or lower"
+      "Price drops to $1,720 or lower"
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "24\u2011hour return down 1.68% but RSI is low (25.6) suggesting a corrective bounce.",
-      "Price is far under its 30\u2011day high and moving averages."
+      "RSI low (25.6) and price far under recent highs.",
+      "24\u2011hour return modestly negative, suggesting room for rebound."
     ],
     "review_above": 1900,
     "status": "bullish",
-    "summary": "Short\u2011term upside expected as ETH appears oversold.",
-    "updated_cycle": "2026-11-17T16:27Z-event"
+    "summary": "Corrective bounce likely as ETH stays oversold.",
+    "updated_cycle": "2026-11-17T21:07Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [],
-    "exit_below": 3.08,
+    "exit_below": 3.1,
     "invalidation": [
-      "Price falls to $3.00 or lower"
+      "Price falls to $3.10 or lower"
     ],
     "opened_cycle": "2026-11-17T04:06Z-event",
     "reasons": [
-      "24\u2011hour price up 1.33% while RSI is modest (34.3), still indicating oversold conditions.",
-      "Price remains below its 20\u2011day and 50\u2011day SMA, offering upside if buying pressure returns."
+      "24\u2011hour price up 1.33% while RSI still modest (34.3).",
+      "Volume spike (4.4\u00d7 normal) suggests renewed buying interest."
     ],
     "review_above": 3.5,
     "status": "bullish",
-    "summary": "Potential bounce after recent oversold move.",
-    "updated_cycle": "2026-11-17T16:27Z-event"
+    "summary": "Recent 1\u2011hour volume spike may trigger a bounce.",
+    "updated_cycle": "2026-11-17T21:07Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -82,26 +82,32 @@
     ],
     "exit_below": 140.0,
     "invalidation": [
-      "Price drops to $140.0 or lower"
+      "Price falls to $140.0 or lower"
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "24\u2011hour return slightly positive but RSI remains low (37.4) and 30\u2011day drawdown is large (~31%).",
-      "Price is approaching the previously set exit level, suggesting further downside risk."
+      "30\u2011day drawdown still large (~31%) and RSI only modestly improved.",
+      "Price approaching previously set exit level."
     ],
     "review_above": 165.0,
     "status": "bearish",
-    "summary": "Market weakness persists and QNT shows continued downside pressure; the bullish thesis is invalidated.",
-    "updated_cycle": "2026-11-17T16:27Z-event"
+    "summary": "Downward pressure continues; downside risk remains.",
+    "updated_cycle": "2026-11-17T21:07Z-event"
   },
   "SOL-USD": {
     "confidence_history": [],
-    "exit_below": 68.0,
-    "invalidation": [],
+    "exit_below": 70.0,
+    "invalidation": [
+      "Price falls to $70.0 or lower"
+    ],
     "opened_cycle": "2026-11-17T16:27Z-event",
-    "reasons": [],
+    "reasons": [
+      "24\u2011hour return positive (+2.35%) despite deep 30\u2011day downtrend.",
+      "RSI very low (20.5) indicating oversold conditions."
+    ],
+    "review_above": 80.0,
     "status": "bullish",
-    "summary": "",
-    "updated_cycle": "2026-11-17T16:27Z-event"
+    "summary": "Short\u2011term upside possible after recent 2.35% gain.",
+    "updated_cycle": "2026-11-17T21:07Z-event"
   }
 }
