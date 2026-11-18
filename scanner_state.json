@@ -132,8 +132,8 @@
   },
   "last_data_fault": {
     "error": "QNT-USD: stale or invalid quote (1 bad so far)",
-    "ts": "2026-11-17T07:07:13Z"
+    "ts": "2026-11-18T03:58:20Z"
   },
   "last_heartbeat": "2026-11-18T03:33:21Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
