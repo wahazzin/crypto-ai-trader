@@ -24,7 +24,7 @@
     "review_above": 78.0,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit level and review target not yet reached.",
-    "updated_cycle": "2026-11-17T18:00Z"
+    "updated_cycle": "2026-11-18T00:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -69,6 +69,6 @@
     "review_above": 970.0,
     "status": "bullish",
     "summary": "Thesis unchanged; price continues above exit level, review target not yet reached.",
-    "updated_cycle": "2026-11-17T18:00Z"
+    "updated_cycle": "2026-11-18T00:00Z"
   }
 }

@@ -1,23 +1,17 @@
 {
   "events": [],
-  "from": "2026-11-17T23:12Z-event",
+  "from": "2026-11-18T00:00Z",
   "risk_engine": [
     {
       "action": "ADD",
       "asset": "NEAR-USD",
-      "codes": [],
-      "final_weight": 0.07,
-      "requested_weight": 0.07,
-      "status": "APPROVED"
+      "codes": [
+        "R7_MIN_ORDER"
+      ],
+      "final_weight": null,
+      "requested_weight": 0.076,
+      "status": "REJECTED"
     }
   ],
-  "your_fills": [
-    {
-      "asset": "NEAR-USD",
-      "cause": "ai_event",
-      "price": 3.38112746,
-      "qty": 43.785758583420694,
-      "side": "buy"
-    }
-  ]
+  "your_fills": []
 }
