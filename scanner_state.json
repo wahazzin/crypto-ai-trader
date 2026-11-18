@@ -1,9 +1,9 @@
 {
   "arms": {
     "ai_large": {
-      "calls_day": "2026-11-17",
-      "calls_today": 5,
-      "last_call": "2026-11-17T23:12:59Z"
+      "calls_day": "2026-11-18",
+      "calls_today": 1,
+      "last_call": "2026-11-18T16:18:57Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-17",
@@ -98,7 +98,7 @@
     "ai_large|LINK-USD:volume": "2026-11-17T15:42:36Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
     "ai_large|NEAR-USD:move": "2026-11-15T00:13:21Z",
-    "ai_large|NEAR-USD:volume": "2026-11-17T21:07:59Z",
+    "ai_large|NEAR-USD:volume": "2026-11-18T16:18:57Z",
     "ai_large|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_large|QNT-USD:move": "2026-11-15T09:44:07Z",
     "ai_large|QNT-USD:review_above:210.0": "2026-10-21T18:31:48Z",
@@ -135,5 +135,5 @@
     "ts": "2026-11-18T03:58:20Z"
   },
   "last_heartbeat": "2026-11-18T15:38:57Z",
-  "scans_since_heartbeat": 1
+  "scans_since_heartbeat": 2
 }
