@@ -18,13 +18,12 @@
     ],
     "opened_cycle": "2026-11-17T06:00Z",
     "reasons": [
-      "Price still above exit_below (68) and below review_above (78).",
-      "Short\u2011term momentum remains positive."
+      "Price still above exit $68 and below review $78, short\u2011term momentum positive."
     ],
     "review_above": 78.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit level and review target not yet reached.",
-    "updated_cycle": "2026-11-18T00:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and below review target.",
+    "updated_cycle": "2026-11-18T12:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -63,12 +62,11 @@
     ],
     "opened_cycle": "2026-11-17T06:00Z",
     "reasons": [
-      "Price still above exit_below (870) and below review_above (970).",
-      "Strong 24h return supports upside view."
+      "Price still above exit $870 and below review $970, 24h return supportive."
     ],
     "review_above": 970.0,
     "status": "bullish",
-    "summary": "Thesis unchanged; price continues above exit level, review target not yet reached.",
-    "updated_cycle": "2026-11-18T00:00Z"
+    "summary": "Thesis unchanged; price remains above exit level and below review target.",
+    "updated_cycle": "2026-11-18T12:00Z"
   }
 }

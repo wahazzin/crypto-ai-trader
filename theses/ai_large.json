@@ -11,11 +11,13 @@
       "Price falls to $62,000 or lower"
     ],
     "opened_cycle": "2026-11-17T12:00Z",
-    "reasons": [],
+    "reasons": [
+      "RSI remains low (24) and price is still above the exit\u2011below level."
+    ],
     "review_above": 70000,
     "status": "bullish",
     "summary": "Oversold conditions persist; potential short\u2011term rebound.",
-    "updated_cycle": "2026-11-18T06:00Z"
+    "updated_cycle": "2026-11-18T12:00Z"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -29,11 +31,13 @@
       "Price drops to $1,720 or lower"
     ],
     "opened_cycle": "2026-11-17T12:00Z",
-    "reasons": [],
+    "reasons": [
+      "RSI low (26) and price remains above the exit\u2011below threshold."
+    ],
     "review_above": 1900,
     "status": "bullish",
     "summary": "Corrective bounce likely as ETH stays oversold.",
-    "updated_cycle": "2026-11-18T06:00Z"
+    "updated_cycle": "2026-11-18T12:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -51,11 +55,13 @@
       "Price falls to $3.10 or lower"
     ],
     "opened_cycle": "2026-11-17T04:06Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price rose 1.96% over the last 24\u202fh and volume is elevated."
+    ],
     "review_above": 3.8,
     "status": "bullish",
     "summary": "Recent 1\u2011hour volume spike may trigger a bounce.",
-    "updated_cycle": "2026-11-18T06:00Z"
+    "updated_cycle": "2026-11-18T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -85,11 +91,13 @@
       "Price falls to $140.0 or lower"
     ],
     "opened_cycle": "2026-11-16T06:00Z",
-    "reasons": [],
+    "reasons": [
+      "Price is near the upper side of the recent range and still below the review\u2011above level."
+    ],
     "review_above": 165.0,
     "status": "bearish",
     "summary": "Downward pressure continues; downside risk remains.",
-    "updated_cycle": "2026-11-18T06:00Z"
+    "updated_cycle": "2026-11-18T12:00Z"
   },
   "SOL-USD": {
     "confidence_history": [],
@@ -98,10 +106,12 @@
       "Price falls to $70.0 or lower"
     ],
     "opened_cycle": "2026-11-17T16:27Z-event",
-    "reasons": [],
+    "reasons": [
+      "Price up 1.24% in the last 24\u202fh with a low RSI (29)."
+    ],
     "review_above": 80.0,
     "status": "bullish",
     "summary": "Short\u2011term upside possible after recent 2.35% gain.",
-    "updated_cycle": "2026-11-18T06:00Z"
+    "updated_cycle": "2026-11-18T12:00Z"
   }
 }
