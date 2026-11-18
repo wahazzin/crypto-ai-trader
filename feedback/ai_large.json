@@ -1,17 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-18T00:00Z",
-  "risk_engine": [
-    {
-      "action": "ADD",
-      "asset": "NEAR-USD",
-      "codes": [
-        "R7_MIN_ORDER"
-      ],
-      "final_weight": null,
-      "requested_weight": 0.076,
-      "status": "REJECTED"
-    }
-  ],
+  "from": "2026-11-18T06:00Z",
+  "risk_engine": [],
   "your_fills": []
 }
