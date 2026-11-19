@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-19",
-      "calls_today": 1,
-      "last_call": "2026-11-19T15:30:56Z"
+      "calls_today": 2,
+      "last_call": "2026-11-19T20:30:56Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-17",
@@ -89,6 +89,7 @@
     "ai_large|ADA-USD:exit_below:0.208": "2026-10-24T08:05:31Z",
     "ai_large|ADA-USD:move": "2026-11-05T15:54:19Z",
     "ai_large|ADA-USD:volume": "2026-11-14T21:28:01Z",
+    "ai_large|BTC-USD:exit_below:62000": "2026-11-19T20:30:56Z",
     "ai_large|BTC-USD:exit_below:80000": "2026-10-24T15:21:13Z",
     "ai_large|BTC-USD:move": "2026-11-15T02:43:21Z",
     "ai_large|BTC-USD:volume": "2026-11-17T16:27:36Z",
@@ -135,5 +136,5 @@
     "ts": "2026-11-19T08:45:14Z"
   },
   "last_heartbeat": "2026-11-19T20:10:56Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }

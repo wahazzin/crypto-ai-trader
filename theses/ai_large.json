@@ -1,24 +1,4 @@
 {
-  "BTC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-11-17T12:00Z"
-      }
-    ],
-    "exit_below": 62000,
-    "invalidation": [
-      "Price falls to $62,000 or lower"
-    ],
-    "opened_cycle": "2026-11-17T12:00Z",
-    "reasons": [
-      "Price remains above exit\u2011below level, RSI still low, no new downside signals."
-    ],
-    "review_above": 70000,
-    "status": "bullish",
-    "summary": "Oversold conditions persist; potential short\u2011term rebound.",
-    "updated_cycle": "2026-11-19T12:00Z"
-  },
   "ETH-USD": {
     "confidence_history": [
       {
