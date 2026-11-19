@@ -12,12 +12,12 @@
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "Price remains above the exit\u2011below level and RSI stays low, no new downside signals."
+      "Price remains above exit\u2011below level, RSI still low, no new downside signals."
     ],
     "review_above": 70000,
     "status": "bullish",
     "summary": "Oversold conditions persist; potential short\u2011term rebound.",
-    "updated_cycle": "2026-11-19T00:00Z"
+    "updated_cycle": "2026-11-19T12:00Z"
   },
   "ETH-USD": {
     "confidence_history": [
@@ -32,12 +32,12 @@
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "Price stays above the exit\u2011below threshold and RSI is still low; no bearish breakout observed."
+      "Price stays above exit\u2011below threshold, RSI low, no bearish breakout observed."
     ],
     "review_above": 1900,
     "status": "bullish",
     "summary": "Corrective bounce likely as ETH stays oversold.",
-    "updated_cycle": "2026-11-19T00:00Z"
+    "updated_cycle": "2026-11-19T12:00Z"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -56,12 +56,12 @@
     ],
     "opened_cycle": "2026-11-17T04:06Z-event",
     "reasons": [
-      "Price is above the exit\u2011below level and volume remains elevated; no reversal signals."
+      "Price is above exit\u2011below level and volume remains elevated; no reversal signals."
     ],
     "review_above": 3.8,
     "status": "bullish",
     "summary": "Recent 1\u2011hour volume spike may trigger a bounce.",
-    "updated_cycle": "2026-11-19T00:00Z"
+    "updated_cycle": "2026-11-19T12:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -92,12 +92,12 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Price is still above the exit\u2011below level but remains in a weak range; no bullish reversal evidence."
+      "Price is still above exit\u2011below level but remains in a weak range; no bullish reversal evidence."
     ],
     "review_above": 165.0,
     "status": "bearish",
     "summary": "Downward pressure continues; downside risk remains.",
-    "updated_cycle": "2026-11-19T00:00Z"
+    "updated_cycle": "2026-11-19T12:00Z"
   },
   "SOL-USD": {
     "confidence_history": [],
@@ -107,11 +107,11 @@
     ],
     "opened_cycle": "2026-11-17T16:27Z-event",
     "reasons": [
-      "Price stays above the exit\u2011below threshold and RSI is low; no bearish trigger observed."
+      "Price stays above exit\u2011below threshold, RSI low, no bearish trigger observed."
     ],
     "review_above": 80.0,
     "status": "bullish",
     "summary": "Short\u2011term upside possible after recent 2.35% gain.",
-    "updated_cycle": "2026-11-19T00:00Z"
+    "updated_cycle": "2026-11-19T12:00Z"
   }
 }
