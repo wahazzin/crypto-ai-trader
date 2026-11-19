@@ -1,6 +1,15 @@
 {
   "events": [],
-  "from": "2026-11-19T12:00Z",
-  "risk_engine": [],
+  "from": "2026-11-19T15:30Z-event",
+  "risk_engine": [
+    {
+      "action": "HOLD",
+      "asset": "NEAR-USD",
+      "codes": [],
+      "final_weight": null,
+      "requested_weight": null,
+      "status": "NOOP"
+    }
+  ],
   "your_fills": []
 }
