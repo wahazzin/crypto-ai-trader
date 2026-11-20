@@ -16,12 +16,12 @@
     ],
     "opened_cycle": "2026-11-17T04:06Z-event",
     "reasons": [
-      "Price stays above exit_below, volume elevated, no reversal signals."
+      "Price remains above exit, no reversal signals."
     ],
     "review_above": 3.8,
     "status": "bullish",
-    "summary": "Recent 1\u2011hour volume spike may trigger a bounce.",
-    "updated_cycle": "2026-11-20T02:01Z-event"
+    "summary": "Thesis unchanged, expecting bounce if volume supports.",
+    "updated_cycle": "2026-11-20T06:00Z"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -52,12 +52,12 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Price above exit_below but remains in a weak range, no bullish reversal evidence."
+      "Price remains above exit but range weak, no bullish reversal."
     ],
     "review_above": 165.0,
     "status": "bearish",
-    "summary": "Downward pressure continues; downside risk remains.",
-    "updated_cycle": "2026-11-20T02:01Z-event"
+    "summary": "Downward pressure continues, maintaining bearish view.",
+    "updated_cycle": "2026-11-20T06:00Z"
   },
   "SOL-USD": {
     "confidence_history": [],
@@ -67,11 +67,11 @@
     ],
     "opened_cycle": "2026-11-17T16:27Z-event",
     "reasons": [
-      "Price above exit_below, RSI low, no bearish trigger observed."
+      "Price above exit, RSI low, no bearish trigger observed."
     ],
     "review_above": 80.0,
     "status": "bullish",
-    "summary": "Short\u2011term upside possible after recent 2.35% gain.",
-    "updated_cycle": "2026-11-20T02:01Z-event"
+    "summary": "Short\u2011term upside possible, maintaining bullish view.",
+    "updated_cycle": "2026-11-20T06:00Z"
   }
 }

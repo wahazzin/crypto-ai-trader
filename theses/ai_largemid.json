@@ -23,7 +23,7 @@
     "review_above": 78.0,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $68 and below review $78, short\u2011term momentum still positive.",
-    "updated_cycle": "2026-11-19T18:00Z"
+    "updated_cycle": "2026-11-20T06:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
@@ -48,25 +48,5 @@
     "status": "bullish",
     "summary": "Price remains above exit $5.5; review target $9.5 not reached.",
     "updated_cycle": "2026-11-13T04:00Z-event"
-  },
-  "ZEC-USD": {
-    "confidence_history": [
-      {
-        "confidence": 70,
-        "cycle": "2026-11-17T12:00Z"
-      }
-    ],
-    "exit_below": 870.0,
-    "invalidation": [
-      "Price < $870"
-    ],
-    "opened_cycle": "2026-11-17T06:00Z",
-    "reasons": [
-      "Price still above exit $870 and below review $970, 24h return supportive."
-    ],
-    "review_above": 970.0,
-    "status": "bullish",
-    "summary": "Thesis unchanged; price remains above exit $870 and below review $970, 24h return supportive.",
-    "updated_cycle": "2026-11-19T18:00Z"
   }
 }
