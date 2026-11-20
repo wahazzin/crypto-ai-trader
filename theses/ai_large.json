@@ -1,28 +1,4 @@
 {
-  "NEAR-USD": {
-    "confidence_history": [
-      {
-        "confidence": 65,
-        "cycle": "2026-11-17T23:12Z-event"
-      },
-      {
-        "confidence": 70,
-        "cycle": "2026-11-18T00:00Z"
-      }
-    ],
-    "exit_below": 3.0,
-    "invalidation": [
-      "Price falls to $3.10 or lower"
-    ],
-    "opened_cycle": "2026-11-17T04:06Z-event",
-    "reasons": [
-      "Price remains above exit, no reversal signals."
-    ],
-    "review_above": 3.8,
-    "status": "bullish",
-    "summary": "Thesis unchanged, expecting bounce if volume supports.",
-    "updated_cycle": "2026-11-20T06:00Z"
-  },
   "QNT-USD": {
     "confidence_history": [
       {
