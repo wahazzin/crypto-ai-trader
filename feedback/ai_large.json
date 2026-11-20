@@ -1,38 +1,6 @@
 {
   "events": [],
-  "from": "2026-11-20T15:17Z-event",
-  "risk_engine": [
-    {
-      "action": "SELL",
-      "asset": "QNT-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    },
-    {
-      "action": "SELL",
-      "asset": "SOL-USD",
-      "codes": [],
-      "final_weight": 0.0,
-      "requested_weight": null,
-      "status": "APPROVED"
-    }
-  ],
-  "your_fills": [
-    {
-      "asset": "QNT-USD",
-      "cause": "ai_event",
-      "price": 136.07652821229382,
-      "qty": 4.259926702816322,
-      "side": "sell"
-    },
-    {
-      "asset": "SOL-USD",
-      "cause": "ai_event",
-      "price": 69.23897655970123,
-      "qty": 2.792603832213426,
-      "side": "sell"
-    }
-  ]
+  "from": "2026-11-20T18:00Z",
+  "risk_engine": [],
+  "your_fills": []
 }

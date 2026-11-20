@@ -18,12 +18,12 @@
     ],
     "opened_cycle": "2026-11-17T06:00Z",
     "reasons": [
-      "Price still above exit $68 and below review $78, short\u2011term momentum positive."
+      "Price $69.105 > exit $68 and < review $78; RSI 27.3 still low but no reversal signal."
     ],
     "review_above": 78.0,
     "status": "bullish",
     "summary": "Thesis unchanged; price remains above exit $68 and below review $78, short\u2011term momentum still positive.",
-    "updated_cycle": "2026-11-20T06:00Z"
+    "updated_cycle": "2026-11-20T18:00Z"
   },
   "UNI-USD": {
     "confidence_history": [
