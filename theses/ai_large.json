@@ -12,12 +12,12 @@
     ],
     "opened_cycle": "2026-11-17T12:00Z",
     "reasons": [
-      "Price stays above exit\u2011below threshold, RSI low, no bearish breakout observed."
+      "Price remains above exit_below, RSI still low, no bearish breakout observed."
     ],
     "review_above": 1900,
     "status": "bullish",
     "summary": "Corrective bounce likely as ETH stays oversold.",
-    "updated_cycle": "2026-11-20T00:00Z"
+    "updated_cycle": "2026-11-20T02:01Z-event"
   },
   "NEAR-USD": {
     "confidence_history": [
@@ -36,12 +36,12 @@
     ],
     "opened_cycle": "2026-11-17T04:06Z-event",
     "reasons": [
-      "Price is above exit\u2011below level and volume remains elevated; no reversal signals."
+      "Price stays above exit_below, volume elevated, no reversal signals."
     ],
     "review_above": 3.8,
     "status": "bullish",
     "summary": "Recent 1\u2011hour volume spike may trigger a bounce.",
-    "updated_cycle": "2026-11-20T00:00Z"
+    "updated_cycle": "2026-11-20T02:01Z-event"
   },
   "QNT-USD": {
     "confidence_history": [
@@ -72,12 +72,12 @@
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Price is still above exit\u2011below level but remains in a weak range; no bullish reversal evidence."
+      "Price above exit_below but remains in a weak range, no bullish reversal evidence."
     ],
     "review_above": 165.0,
     "status": "bearish",
     "summary": "Downward pressure continues; downside risk remains.",
-    "updated_cycle": "2026-11-20T00:00Z"
+    "updated_cycle": "2026-11-20T02:01Z-event"
   },
   "SOL-USD": {
     "confidence_history": [],
@@ -87,11 +87,11 @@
     ],
     "opened_cycle": "2026-11-17T16:27Z-event",
     "reasons": [
-      "Price stays above exit\u2011below threshold, RSI low, no bearish trigger observed."
+      "Price above exit_below, RSI low, no bearish trigger observed."
     ],
     "review_above": 80.0,
     "status": "bullish",
     "summary": "Short\u2011term upside possible after recent 2.35% gain.",
-    "updated_cycle": "2026-11-20T00:00Z"
+    "updated_cycle": "2026-11-20T02:01Z-event"
   }
 }
