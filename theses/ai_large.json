@@ -1,24 +1,4 @@
 {
-  "ETH-USD": {
-    "confidence_history": [
-      {
-        "confidence": 60,
-        "cycle": "2026-11-17T12:00Z"
-      }
-    ],
-    "exit_below": 1720,
-    "invalidation": [
-      "Price drops to $1,720 or lower"
-    ],
-    "opened_cycle": "2026-11-17T12:00Z",
-    "reasons": [
-      "Price remains above exit_below, RSI still low, no bearish breakout observed."
-    ],
-    "review_above": 1900,
-    "status": "bullish",
-    "summary": "Corrective bounce likely as ETH stays oversold.",
-    "updated_cycle": "2026-11-20T02:01Z-event"
-  },
   "NEAR-USD": {
     "confidence_history": [
       {
