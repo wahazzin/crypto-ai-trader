@@ -22,18 +22,19 @@
         "cycle": "2026-11-17T06:00Z"
       }
     ],
-    "exit_below": 140.0,
+    "exit_below": 138.0,
     "invalidation": [
-      "Price falls to $140.0 or lower"
+      "Price falls to $138.0 or lower"
     ],
     "opened_cycle": "2026-11-16T06:00Z",
     "reasons": [
-      "Price remains above exit but range weak, no bullish reversal."
+      "Price down 7% in 24h, RSI still low, no bullish reversal signals.",
+      "Distanceto SMA20/50 remains large negative, indicating sustained downtrend."
     ],
     "review_above": 165.0,
     "status": "bearish",
-    "summary": "Downward pressure continues, maintaining bearish view.",
-    "updated_cycle": "2026-11-20T06:00Z"
+    "summary": "Downward pressure persists; price continues to fall and momentum remains weak.",
+    "updated_cycle": "2026-11-20T12:00Z"
   },
   "SOL-USD": {
     "confidence_history": [],
@@ -43,11 +44,12 @@
     ],
     "opened_cycle": "2026-11-17T16:27Z-event",
     "reasons": [
-      "Price above exit, RSI low, no bearish trigger observed."
+      "RSI at 27 suggests oversold condition, potential bounce.",
+      "No bearish trigger observed despite price below SMA averages."
     ],
     "review_above": 80.0,
     "status": "bullish",
-    "summary": "Short\u2011term upside possible, maintaining bullish view.",
-    "updated_cycle": "2026-11-20T06:00Z"
+    "summary": "Short\u2011term upside still possible; price near oversold levels may rebound.",
+    "updated_cycle": "2026-11-20T12:00Z"
   }
 }
