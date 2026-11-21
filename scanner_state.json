@@ -2,8 +2,8 @@
   "arms": {
     "ai_large": {
       "calls_day": "2026-11-21",
-      "calls_today": 4,
-      "last_call": "2026-11-21T04:22:59Z"
+      "calls_today": 5,
+      "last_call": "2026-11-21T06:48:22Z"
     },
     "ai_largemid": {
       "calls_day": "2026-11-17",
@@ -93,20 +93,20 @@
     "ai_large|BTC-USD:move": "2026-11-21T04:22:59Z",
     "ai_large|BTC-USD:volume": "2026-11-21T03:52:59Z",
     "ai_large|ETH-USD:exit_below:1720": "2026-11-20T04:36:36Z",
-    "ai_large|ETH-USD:move": "2026-11-20T15:47:12Z",
+    "ai_large|ETH-USD:move": "2026-11-21T06:48:22Z",
     "ai_large|ETH-USD:volume": "2026-11-20T15:47:12Z",
     "ai_large|LINK-USD:move": "2026-11-21T03:52:59Z",
     "ai_large|LINK-USD:volume": "2026-11-21T04:22:59Z",
     "ai_large|NEAR-USD:exit_below:3.0": "2026-11-20T09:06:54Z",
     "ai_large|NEAR-USD:exit_below:4.6": "2026-10-24T00:40:11Z",
-    "ai_large|NEAR-USD:move": "2026-11-20T15:47:12Z",
+    "ai_large|NEAR-USD:move": "2026-11-21T06:48:22Z",
     "ai_large|NEAR-USD:volume": "2026-11-21T04:22:59Z",
     "ai_large|QNT-USD:exit_below:138.0": "2026-11-20T15:17:12Z",
     "ai_large|QNT-USD:exit_below:180": "2026-10-23T14:19:34Z",
     "ai_large|QNT-USD:move": "2026-11-15T09:44:07Z",
     "ai_large|QNT-USD:volume": "2026-11-21T03:52:59Z",
     "ai_large|SOL-USD:exit_below:70.0": "2026-11-20T15:17:12Z",
-    "ai_large|SOL-USD:move": "2026-11-15T02:43:21Z",
+    "ai_large|SOL-USD:move": "2026-11-21T06:48:22Z",
     "ai_large|SOL-USD:volume": "2026-11-20T15:47:12Z",
     "ai_large|SUI-USD:move": "2026-11-21T03:52:59Z",
     "ai_large|SUI-USD:volume": "2026-11-20T19:17:13Z",
@@ -114,7 +114,7 @@
     "ai_large|XRP-USD:volume": "2026-11-21T04:22:59Z",
     "ai_large|ZEC-USD:exit_below:1150": "2026-11-02T19:39:23Z",
     "ai_large|ZEC-USD:exit_below:1200.0": "2026-10-22T16:53:10Z",
-    "ai_large|ZEC-USD:move": "2026-11-21T02:52:59Z",
+    "ai_large|ZEC-USD:move": "2026-11-21T06:48:22Z",
     "ai_large|ZEC-USD:review_above:1300": "2026-10-27T16:35:19Z",
     "ai_large|ZEC-USD:volume": "2026-11-21T03:22:59Z"
   },
@@ -138,5 +138,5 @@
     "ts": "2026-11-19T08:45:14Z"
   },
   "last_heartbeat": "2026-11-21T06:22:59Z",
-  "scans_since_heartbeat": 0
+  "scans_since_heartbeat": 1
 }
